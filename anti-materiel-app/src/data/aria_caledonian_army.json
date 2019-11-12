@@ -1,0 +1,199 @@
+[
+  {
+    "id": 3998,
+    "army": "Ariadna",
+    "army_id": 3999,
+    "name": "Caledonian Highlander Army",
+    "abbr": "Caledonian Army",
+    "units": [
+      {
+        "comment": "Caledonian Volunteers",
+        "id": 3022,
+        "ava": "T",
+        "childs": [
+          {
+            "comment": "LT is 0 SWC in CHA",
+            "id": 1,
+            "swc": "0"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Troopers with Inferior Infiltration cannot be members of a Fireteam in this Sectorial. Up to 5 Volunteers OR 1 3rd Grey Rifle + up to 4 Volunteers."
+          }
+        ]
+      },
+      {
+        "comment": "Highlander Caterans",
+        "id": 3025,
+        "ava": "4"
+      },
+      {
+        "comment": "Scot (2nd Battalion)",
+        "id": 3035,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "2nd Battalion",
+            "note": "Only the Scots Guards from the 1st Battalion can compose Fireteams in this Sectorial"
+          }
+        ]
+      },
+      {
+        "comment": "Scot (1st Battalion)",
+        "id": 3036,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Only the Scots Guards from the 1st Battalion can compose Fireteams in this Sectorial"
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "Only the Scots Guards from the 1st Battalion can compose Fireteams in this Sectorial"
+          }
+        ]
+      },
+      {
+        "comment": "3rd Highlander Greys",
+        "id": 3019,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Troopers with Inferior Infiltration cannot be members of a Fireteam in this Sectorial. Up to 5 Volunteers OR 1 3rd Grey Rifle + up to 4 Volunteers."
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 3rd Grey Rifle and up to 2 Mormaers"
+          }
+        ]
+      },
+      {
+        "comment": "Caledonian Mormaers",
+        "id": 3021,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 3rd Grey Rifle and up to 2 Mormaers"
+          }
+        ]
+      },
+      {
+        "comment": "S.A.S.",
+        "id": 3011,
+        "ava": "4"
+      },
+      {
+        "comment": "9th Wulver Grenadiers",
+        "id": 3020,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          }
+        ]
+      },
+      {
+        "comment": "45th Highlanders",
+        "id": 3013,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "William Wallace Lieutenant + up to 4 Galwegians"
+          }
+        ]
+      },
+      {
+        "comment": "2nd Irregular Cameronians Reg.",
+        "id": 3018,
+        "ava": "3"
+      },
+      {
+        "comment": "Traktor Mul, Artillery and Support Regiment",
+        "id": 3028,
+        "ava": "2"
+      },
+      {
+        "comment": "112, Emergency Service",
+        "id": 3017,
+        "ava": "2"
+      },
+      {
+        "comment": "112, Emergency Service (Motorized)",
+        "id": 3057,
+        "ava": "2"
+      },
+      {
+        "comment": "Dozers, Field Engineers",
+        "id": 3024,
+        "ava": "2"
+      },
+      {
+        "comment": "Uxia McNeill",
+        "id": 3033,
+        "ava": "1"
+      },
+      {
+        "comment": "William Wallace",
+        "id": 3029,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "William Wallace Lieutenant can join any Fireteam: Core or Haris in this Sectorial"
+          }
+        ]
+      },
+      {
+        "comment": "Intel Spec-Ops (Volunteer)",
+        "id": 3059,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Troopers with Inferior Infiltration cannot be members of a Fireteam in this Sectorial. Up to 5 Volunteers OR 1 3rd Grey Rifle + up to 4 Volunteers."
+          }
+        ]
+      },
+      {
+        "comment": "Volunteer Intel Isobel McGregor",
+        "id": 3032,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Isobel McGregor counts as a Volunteer for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "McMurrough",
+        "id": 9005,
+        "ava": "1"
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Wardrivers",
+        "id": 9021,
+        "ava": "1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,253 @@
+[
+  {
+    "id": 1998,
+    "army": "PanOceania",
+    "army_id": 1999,
+    "name": "Shock Army of Acontecimento",
+    "abbr": "Acontecimento",
+    "units": [
+      {
+        "comment": "Acontecimento Regulars",
+        "id": 1023,
+        "ava": "T",
+        "childs": [
+          {
+            "comment": "0 SWC Lieutenant is only available in Shock Army of Acontecimento",
+            "id": 9,
+            "swc": "0"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 2 Bagh-Maris can join any Fireteam Core of Regulars"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 1 Orc Troop can join any Fireteam Core of Regulars"
+          }
+        ]
+      },
+      {
+        "comment": "Akalis",
+        "id": 1004,
+        "ava": "4"
+      },
+      {
+        "comment": "Bagh-Mari",
+        "id": 1003,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 2 Bagh-Maris can join any Fireteam Core of Regulars"
+          }
+        ]
+      },
+      {
+        "comment": "Orc Troops",
+        "id": 1006,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 1 Orc Troop can join any Fireteam Core of Regulars"
+          }
+        ]
+      },
+      {
+        "comment": "Guarda de Assalto",
+        "id": 1032,
+        "ava": "4"
+      },
+      {
+        "comment": "Knights of Montesa",
+        "id": 1054,
+        "ava": "1"
+      },
+      {
+        "comment": "Dragoes",
+        "id": 1012,
+        "ava": "1"
+      },
+      {
+        "comment": "Tikbalangs, Armoured Chasseurs of Acontecimento",
+        "id": 1038,
+        "ava": "2",
+        "childs": [
+          {
+            "comment": "Montesa",
+            "id": 3,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Nagas",
+        "id": 7013,
+        "ava": "2"
+      },
+      {
+        "comment": "Teucer",
+        "id": 7039,
+        "ava": "1"
+      },
+      {
+        "comment": "Kirpal Singh, Akalis Sergeant",
+        "id": 1042,
+        "ava": "1"
+      },
+      {
+        "comment": "Lieutenant Stephen Rao",
+        "id": 1049,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Rao can join any Fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Drakios",
+        "id": 7040,
+        "ava": "1"
+      },
+      {
+        "comment": "Scylla",
+        "id": 7041,
+        "ava": "1"
+      },
+      {
+        "comment": "Pathfinder Dronbot",
+        "id": 1018,
+        "ava": "1"
+      },
+      {
+        "comment": "Sierra Dronbot",
+        "id": 1019,
+        "ava": "1"
+      },
+      {
+        "comment": "Clipper Dronbot",
+        "id": 1020,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "Varuna Div. is only available in Varuna",
+            "id": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Fugazi Dronbot",
+        "id": 1021,
+        "ava": "3"
+      },
+      {
+        "comment": "Armbots: Bulleteers",
+        "id": 1040,
+        "ava": "2"
+      },
+      {
+        "comment": "Armbots: Peacemakers",
+        "id": 1041,
+        "ava": "2"
+      },
+      {
+        "comment": "Palbots",
+        "id": 1028,
+        "ava": "4"
+      },
+      {
+        "comment": "Mulebots",
+        "id": 1027,
+        "ava": "2"
+      },
+      {
+        "comment": "Trauma-Doc",
+        "id": 1016,
+        "ava": "1"
+      },
+      {
+        "comment": "Machinist",
+        "id": 1017,
+        "ava": "2",
+        "childs": [
+          {
+            "comment": "NCA is only available in Neoterran Capitaline Army",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Varuna Div. is only available in Varuna",
+            "id": 4,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "The SSA option can join any Fireteam of Bagh-Mari"
+          }
+        ]
+      },
+      {
+        "comment": "Indigo Spec-Ops (Regular)",
+        "id": 1061,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 2 Bagh-Maris can join any Fireteam Core of Regulars"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 1 Orc Troop can join any Fireteam Core of Regulars"
+          }
+        ]
+      },
+      {
+        "comment": "Tech-Bees, Maintenance Battalions",
+        "id": 1053,
+        "ava": "1"
+      },
+      {
+        "comment": "Dart",
+        "id": 7048
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      }
+    ]
+  }
+]

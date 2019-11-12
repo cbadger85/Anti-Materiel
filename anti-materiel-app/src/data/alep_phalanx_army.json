@@ -1,0 +1,304 @@
+[
+  {
+    "id": 7998,
+    "army": "Aleph",
+    "army_id": 7999,
+    "name": "Steel Phalanx",
+    "units": [
+      {
+        "comment": "Myrmidons",
+        "id": 7012,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Fireteam: Enomotarchos",
+            "note": "1-4 troopers with Fireteam: Enomotarchos (Myrmidons) + Myrmidons"
+          }
+        ]
+      },
+      {
+        "comment": "Dactyls",
+        "id": 7038,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Enomotarchos",
+            "note": "1 or more troopers with Fireteam: Enomotarchos (Dactyls) + Dactyls"
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "Acmon + 1 Dactyl"
+          }
+        ]
+      },
+      {
+        "comment": "Thorakitai",
+        "id": 7027,
+        "ava": "6",
+        "notes": [
+          {
+            "title": "Fireteam: Enomotarchos",
+            "note": "1 or more troopers with Fireteam: Enomotarchos (Thorakitai) + Thorakitai"
+          }
+        ]
+      },
+      {
+        "comment": "Ekdromoi",
+        "id": 7024,
+        "ava": "4"
+      },
+      {
+        "comment": "Agema Marksman",
+        "id": 7028,
+        "ava": "2"
+      },
+      {
+        "comment": "Myrmidon Officer",
+        "id": 7011,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Fireteam: Enomotarchos (Myrmidons)"
+          }
+        ]
+      },
+      {
+        "comment": "Achilles",
+        "id": 7001,
+        "ava": "1"
+      },
+      {
+        "comment": "Achilles v2 (Hoplite Armor)",
+        "id": 7002,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "Patroclus (Fireteam: Duo (Achilles v2)) + Achilles v2"
+          }
+        ]
+      },
+      {
+        "comment": "Patroclus",
+        "id": 7015,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "Patroclus (Fireteam: Duo (Achilles v2)) + Achilles v2"
+          }
+        ]
+      },
+      {
+        "comment": "Nesaie Alke",
+        "id": 7030,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Enomotarchos (Thorakitai)"
+          }
+        ]
+      },
+      {
+        "comment": "Machaon",
+        "id": 7033,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Enomotarchos (Myrmidons)"
+          }
+        ]
+      },
+      {
+        "comment": "Eudoros",
+        "id": 7029,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Enomotarchos (Myrmidons)"
+          }
+        ]
+      },
+      {
+        "comment": "Phoenix",
+        "id": 7034,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Enomotarchos (Myrmidons)"
+          }
+        ]
+      },
+      {
+        "comment": "Ajax",
+        "id": 7035,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Enomotarchos (Myrmidons)"
+          }
+        ]
+      },
+      {
+        "comment": "Atalanta",
+        "id": 7031,
+        "ava": "1"
+      },
+      {
+        "comment": "Diomedes",
+        "id": 7032,
+        "ava": "1"
+      },
+      {
+        "comment": "Penthesilea",
+        "id": 7036,
+        "ava": "1"
+      },
+      {
+        "comment": "Thamyris",
+        "id": 7037,
+        "ava": "1"
+      },
+      {
+        "comment": "Drakios",
+        "id": 7040,
+        "ava": "1"
+      },
+      {
+        "comment": "Scylla",
+        "id": 7041,
+        "ava": "1"
+      },
+      {
+        "comment": "Acmon, Sergeant of Dactyls",
+        "id": 7042,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Enomotarchos (Dactyls)"
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "Acmon + 1 Dactyl"
+          }
+        ]
+      },
+      {
+        "comment": "Teucer",
+        "id": 7039,
+        "ava": "1"
+      },
+      {
+        "comment": "Andromeda",
+        "id": 7046,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "Superior Infiltration only in OSS",
+            "id": 5,
+            "hide": true
+          },
+          {
+            "comment": "Superior Infiltration only in OSS",
+            "id": 6,
+            "hide": true
+          },
+          {
+            "comment": "Superior Infiltration only in OSS",
+            "id": 7,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Hector, Homeridae's Champion",
+        "id": 7043,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Enomotarchos (Myrmidons)"
+          },
+          {
+            "title": "Fireteam: Enomotarchos (Dactyls)"
+          },
+          {
+            "title": "Fireteam: Enomotarchos (Thorakitai)"
+          }
+        ]
+      },
+      {
+        "comment": "Daleth Rebots",
+        "id": 7005,
+        "ava": "2"
+      },
+      {
+        "comment": "Zayin Rebots",
+        "id": 7020,
+        "ava": "1"
+      },
+      {
+        "comment": "Samekh Rebots",
+        "id": 7017,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "FTO only in OSS",
+            "id": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Lamedh Rebots",
+        "id": 7009,
+        "ava": "2"
+      },
+      {
+        "comment": "Yudbots",
+        "id": 7019,
+        "ava": "4"
+      },
+      {
+        "comment": "Netrods",
+        "id": 7014,
+        "ava": "2"
+      },
+      {
+        "comment": "Probots",
+        "id": 7016,
+        "ava": "1"
+      },
+      {
+        "comment": "Chandra Spec-Ops (Thorakitai)",
+        "id": 7056,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Enomotarchos",
+            "note": "1 or more troopers with Fireteam: Enomotarchos (Thorakitai) + Thorakitai"
+          }
+        ]
+      },
+      {
+        "comment": "Chandra Sergeant Thrasymedes",
+        "id": 7026,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Enomotarchos (Thorakitai)",
+            "note": "Only the Enomotarchos version of the Chandra Sergeant Thrasymedes can be part of a Thorakitai Fireteam in the Aleph’s Steel Phalanx (2+1 or 3+1)"
+          }
+        ]
+      },
+      {
+        "comment": "Hippolyta, Amazon Officer",
+        "id": 7058
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,323 @@
+[
+  {
+    "id": 7997,
+    "army": "Aleph",
+    "army_id": 7999,
+    "name": "Operations Subsection",
+    "units": [
+      {
+        "comment": "Netrods",
+        "id": 7014,
+        "ava": "2"
+      },
+      {
+        "comment": "Andromeda, Sophistes of the Steel Phalanx",
+        "id": 7046,
+        "ava": "1"
+      },
+      {
+        "comment": "Asparas",
+        "id": 7051,
+        "ava": "2",
+        "childs": [
+          {
+            "comment": "Jumper - SWC cost is 0 in Operations",
+            "id": 2,
+            "swc": "0"
+          }
+        ]
+      },
+      {
+        "comment": "Danavas Hackers",
+        "id": 7047,
+        "ava": "3"
+      },
+      {
+        "comment": "Deva Functionaries",
+        "id": 7007,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 CSU + 1 Deva Functionary"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Deva Functionaries + 1 Asura"
+          }
+        ]
+      },
+      {
+        "comment": "Posthumans Proxy Mk.1",
+        "id": 7021,
+        "ava": "1"
+      },
+      {
+        "comment": "Posthumans Proxy Mk.2",
+        "id": 7022,
+        "ava": "1"
+      },
+      {
+        "comment": "Posthumans Proxy Mk.3",
+        "id": 7023,
+        "ava": "1"
+      },
+      {
+        "comment": "Posthumans Proxy Mk.4",
+        "id": 7044,
+        "ava": "1"
+      },
+      {
+        "comment": "Posthumans Proxy Mk.5",
+        "id": 7045,
+        "ava": "1"
+      },
+      {
+        "comment": "Sophotects",
+        "id": 7018,
+        "ava": "2"
+      },
+      {
+        "comment": "Shukra",
+        "id": 7049,
+        "ava": "2"
+      },
+      {
+        "comment": "Arjuna Troops",
+        "id": 7052,
+        "ava": "2"
+      },
+      {
+        "comment": "Kiranbots",
+        "id": 7053,
+        "ava": "4"
+      },
+      {
+        "comment": "Yadu Officer Shakti",
+        "id": 7054,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Shakti counts as a Yadu Trooper for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Yadu",
+        "id": 7050,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Yadus + 1 Deva"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Yadus + 1 Asura"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "Up to 1 Rudras can join any Yadu Troops Fireteam"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "Shakti counts as a Yadu Trooper for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Asuras",
+        "id": 7003,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Yadus + 1 Asura"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Deva Functionaries + 1 Asura"
+          }
+        ]
+      },
+      {
+        "comment": "Maruts",
+        "id": 7010,
+        "ava": "2"
+      },
+      {
+        "comment": "Dakini Tacbots",
+        "id": 7004,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Dakinis and up to 2 Deva Functionaries"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "Up to 1 CSU can join any Dakinis Fireteam"
+          }
+        ]
+      },
+      {
+        "comment": "Daleth Rebots",
+        "id": 7005,
+        "ava": "2"
+      },
+      {
+        "comment": "Garuda Tacbots",
+        "id": 7008,
+        "ava": "3"
+      },
+      {
+        "comment": "Lamedh Rebots",
+        "id": 7009,
+        "ava": "2"
+      },
+      {
+        "comment": "Probots",
+        "id": 7016,
+        "ava": "2"
+      },
+      {
+        "comment": "Rudras GunBots",
+        "id": 7055,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Up to 1 Rudras can join any Yadu Troops Fireteam"
+          }
+        ]
+      },
+      {
+        "comment": "Samekh Rebots",
+        "id": 7017,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "The FTO option can join any Fireteam of the OperationS Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Yudbots",
+        "id": 7019,
+        "ava": "4"
+      },
+      {
+        "comment": "Zayin Rebots",
+        "id": 7020,
+        "ava": "1"
+      },
+      {
+        "comment": "Dart",
+        "id": 7048,
+        "ava": "1"
+      },
+      {
+        "comment": "Dasyus",
+        "id": 7006,
+        "ava": "3"
+      },
+      {
+        "comment": "Nagas",
+        "id": 7013,
+        "ava": "3"
+      },
+      {
+        "comment": "Chandra Spec-Ops (Deva)",
+        "id": 7057,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 CSU + 1 Deva Functionary"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Deva Functionaries + 1 Asura"
+          }
+        ]
+      },
+      {
+        "comment": "Authorized Bounty Hunters",
+        "id": 9033,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Mercenary - CSU, Corporate Security Unit",
+        "id": 9020,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 CSU + 1 Deva Functionary"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "Up to 1 CSU can join any Dakinis Fireteam"
+          }
+        ]
+      },
+      {
+        "comment": "Father Lucien Sforza, Registered Bounty Hunter",
+        "id": 2053,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "FTO only in Dahshat",
+            "id": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      }
+    ]
+  }
+]

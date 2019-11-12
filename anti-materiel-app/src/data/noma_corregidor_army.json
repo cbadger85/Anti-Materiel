@@ -1,0 +1,239 @@
+[
+  {
+    "id": 5998,
+    "army": "Nomads",
+    "army_id": 5999,
+    "name": "Corregidor Jurisdictional Command",
+    "abbr": "Corregidor",
+    "units": [
+      {
+        "comment": "Alguaciles",
+        "id": 5001,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 3 Alguaciles and up to 2 Mobile Brigadas"
+          }
+        ]
+      },
+      {
+        "comment": "Wildcats, Polyvalent Tactical Unit",
+        "id": 5044,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          }
+        ]
+      },
+      {
+        "comment": "Tomcats",
+        "id": 5034,
+        "ava": "4"
+      },
+      {
+        "comment": "Hellcats",
+        "id": 5004,
+        "ava": "5"
+      },
+      {
+        "comment": "Intruders",
+        "id": 5005,
+        "ava": "5"
+      },
+      {
+        "comment": "Mobile Brigada",
+        "id": 5008,
+        "ava": "6",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 3 Alguaciles and up to 2 Mobile Brigadas"
+          }
+        ]
+      },
+      {
+        "comment": "Iguana Squadron",
+        "id": 5026,
+        "ava": "1"
+      },
+      {
+        "comment": "Gecko",
+        "id": 5045,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 Gecko + 1 Mobile Brigada"
+          }
+        ]
+      },
+      {
+        "comment": "Moran, Maasai Hunter",
+        "id": 5029,
+        "ava": "2"
+      },
+      {
+        "comment": "Corregidor Bandits",
+        "id": 5013,
+        "ava": "2"
+      },
+      {
+        "comment": "Corregidor Jaguars",
+        "id": 5015,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Señor Massacre + up to 4 Jaguars"
+          },
+          {
+            "title": "Fireteam: Haris",
+            "note": "Señor Massacre (Fireteam: Haris) + up to 2 Jaguars"
+          }
+        ]
+      },
+      {
+        "comment": "Carlota Kowalsky, Tomcats Sergeant",
+        "id": 5040,
+        "ava": "1"
+      },
+      {
+        "comment": "Tsyklon Sputniks",
+        "id": 5035,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "The Tsyklons count as Mobile Brigada for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Lunokhod Sputniks",
+        "id": 5027,
+        "ava": "2"
+      },
+      {
+        "comment": "Stempler Zond",
+        "id": 5019,
+        "ava": "1"
+      },
+      {
+        "comment": "Reaktion Zond",
+        "id": 5020,
+        "ava": "1"
+      },
+      {
+        "comment": "Vertigo Zond",
+        "id": 5021,
+        "ava": "1"
+      },
+      {
+        "comment": "Transductor Zond",
+        "id": 5023,
+        "ava": "2"
+      },
+      {
+        "comment": "Zondbots",
+        "id": 5036,
+        "ava": "2"
+      },
+      {
+        "comment": "Salyut Zonds",
+        "id": 5032,
+        "ava": "1"
+      },
+      {
+        "comment": "Clockmakers",
+        "id": 5017,
+        "ava": "2"
+      },
+      {
+        "comment": "Daktaris",
+        "id": 5016,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "The Daktaris can be part of any fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Vortex Spec-Ops (Alguacil)",
+        "id": 5057,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 3 Alguaciles and up to 2 Mobile Brigadas"
+          }
+        ]
+      },
+      {
+        "comment": "Alguacil Vortex Lupe Balboa",
+        "id": 5043,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Lupe can be part of any fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Señor Massacre",
+        "id": 9011,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Señor Massacre + up to 4 Jaguars"
+          },
+          {
+            "title": "Fireteam: Haris",
+            "note": "Señor Massacre (Fireteam: Haris) + up to 2 Jaguars"
+          }
+        ]
+      },
+      {
+        "comment": "McMurrough",
+        "id": 9005,
+        "ava": "1"
+      },
+      {
+        "comment": "Valerya Gromoz, Mercenary Hacker",
+        "id": 9012,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Valerya counts as an Alguacil for Fireteam Composition"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+@import '../../styles/colors';
+
+.select-input {
+  width: 100%;
+  margin-bottom: 1.25rem;
+
+  .select-input__label {
+    display: flex;
+    flex-direction: column;
+    color: $primary-cyan-0;
+    margin-top: -0.5rem;
+  }
+}

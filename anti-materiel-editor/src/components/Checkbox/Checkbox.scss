@@ -1,0 +1,74 @@
+@import '../../styles/colors';
+
+.checkbox {
+  margin-bottom: 1.25rem;
+  height: 1.5rem;
+}
+
+.checkbox input[type='checkbox'] {
+  opacity: 0;
+}
+
+.checkbox__label {
+  padding: 0rem 0 0.2rem 1.25rem;
+  color: $primary-cyan-0;
+  margin-top: 0.25rem;
+}
+
+.checkbox__label::before {
+  content: '';
+  display: inline-block;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: $neutral-0;
+  border: 1px solid $neutral-5;
+}
+
+.checkbox__label::after {
+  content: '';
+  display: inline-block;
+  height: 0.6rem;
+  width: 1.2rem;
+  border-left: 3px solid;
+  border-bottom: 3px solid;
+  color: $neutral-4;
+  transform: rotate(-45deg);
+}
+
+.checkbox__label {
+  position: relative;
+}
+
+.checkbox__label::before,
+.checkbox__label::after {
+  position: absolute;
+}
+
+.checkbox__label::before {
+  left: -0.75rem;
+}
+
+.checkbox__label::after {
+  left: -0.6rem;
+  top: 0.3rem;
+}
+
+.checkbox input[type='checkbox'] + .checkbox__label::after {
+  content: none;
+}
+.checkbox input[type='checkbox']:checked + .checkbox__label::after {
+  content: '';
+}
+
+.checkbox input[type='checkbox']:checked + .checkbox__label::before {
+  content: '';
+}
+
+.checkbox input[type='checkbox']:focus + .checkbox__label::before {
+  outline: $supporting-pink-7;
+  border: 1px solid $supporting-pink-7;
+}
+
+.checkbox input[type='checkbox']:disabled + .checkbox__label::before {
+  background-color: $neutral-8;
+}

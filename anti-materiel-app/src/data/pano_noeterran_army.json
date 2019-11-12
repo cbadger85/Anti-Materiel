@@ -1,0 +1,261 @@
+[
+  {
+    "id": 1997,
+    "army": "PanOceania",
+    "army_id": 1999,
+    "name": "Neoterran Capitaline Army",
+    "abbr": "Neoterran",
+    "units": [
+      {
+        "comment": "Auxilia",
+        "id": 1024,
+        "ava": "T"
+      },
+      {
+        "comment": "Fusiliers",
+        "id": 1001,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          }
+        ]
+      },
+      {
+        "comment": "Hexas, Strategic Security Division",
+        "id": 1025,
+        "ava": "3"
+      },
+      {
+        "comment": "Neoterra Bolts",
+        "id": 1050,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          }
+        ]
+      },
+      {
+        "comment": "Black Friars",
+        "id": 1051,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Black Friars (Albedo, Biometric Visor L1) can be part of any Fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Orc Troop",
+        "id": 1006,
+        "ava": "5",
+        "childs": [
+          {
+            "comment": "Duo",
+            "id": 10,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          }
+        ]
+      },
+      {
+        "comment": "Aquila Guard",
+        "id": 1009,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Aquila Guards FTO can be part of any Fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Swiss Guard",
+        "id": 1010,
+        "ava": "2"
+      },
+      {
+        "comment": "Squalos",
+        "id": 1011,
+        "ava": "2",
+        "childs": [
+          {
+            "comment": "Varuna Div. is only available in Varuna",
+            "id": 4,
+            "hide": true
+          },
+          {
+            "comment": "Varuna Div. is only available in Varuna",
+            "id": 5,
+            "hide": true
+          },
+          {
+            "comment": "Varuna Div. is only available in Varuna",
+            "id": 6,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Clausewitz Uhlans",
+        "id": 1037,
+        "ava": "2"
+      },
+      {
+        "comment": "Locusts",
+        "id": 1052,
+        "ava": "2"
+      },
+      {
+        "comment": "Aleph - Deva Functionaries",
+        "id": 7007,
+        "ava": "2",
+        "childs": [
+          {
+            "comment": "Haris only in OSS",
+            "id": 9,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Aleph - Garuda Tacbots",
+        "id": 7008,
+        "ava": "1"
+      },
+      {
+        "comment": "Pathfinder Dronbot",
+        "id": 1018,
+        "ava": "2"
+      },
+      {
+        "comment": "Sierra Dronbot",
+        "id": 1019,
+        "ava": "2"
+      },
+      {
+        "comment": "Clipper Dronbot",
+        "id": 1020,
+        "ava": "2",
+        "childs": [
+          {
+            "comment": "Varuna Div. is only available in Varuna",
+            "id": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Fugazi Dronbot",
+        "id": 1021,
+        "ava": "3"
+      },
+      {
+        "comment": "Armbots: Bulleteers",
+        "id": 1040,
+        "ava": "2"
+      },
+      {
+        "comment": "Armbots: Peacemakers",
+        "id": 1041,
+        "ava": "2"
+      },
+      {
+        "comment": "Palbots",
+        "id": 1028,
+        "ava": "2"
+      },
+      {
+        "comment": "Mulebots",
+        "id": 1027,
+        "ava": "2"
+      },
+      {
+        "comment": "Trauma-Doc",
+        "id": 1016,
+        "ava": "1"
+      },
+      {
+        "comment": "Machinist",
+        "id": 1017,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "SAA is only available in Shock Army of Acontecimento",
+            "id": 2,
+            "hide": true
+          },
+          {
+            "comment": "Varuna Div. is only available in Varuna",
+            "id": 4,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "The NCA option can be part of any Fireteam of Neoterra Bolts"
+          }
+        ]
+      },
+      {
+        "comment": "Indigo Spec-Ops (Fusilier)",
+        "id": 1060,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          }
+        ]
+      },
+      {
+        "comment": "Fusilier Indigo Bipandra",
+        "id": 1046,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Bipandra can be part of any Fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Tech-Bees, Maintenance Battalions",
+        "id": 1053,
+        "ava": "1"
+      },
+      {
+        "comment": "Mercenary - CSU, Corporate Security Unit",
+        "id": 9020,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "The CSUs count as Fusiliers for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Mercenary - Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Aïda Swanson, Submondo Smuggler",
+        "id": 9065
+      }
+    ]
+  }
+]

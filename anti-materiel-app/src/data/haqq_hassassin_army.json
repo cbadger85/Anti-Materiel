@@ -1,0 +1,249 @@
+[
+  {
+    "id": 4997,
+    "army": "Haqqislam",
+    "army_id": 4999,
+    "name": "Hassassin Bahram",
+    "units": [
+      {
+        "comment": "Daylami Infantry",
+        "id": 4001,
+        "ava": "5"
+      },
+      {
+        "comment": "Ghulam",
+        "id": 4002,
+        "ava": "4",
+        "childs": [
+          {
+            "comment": "NCO is only available in Ramah/QK",
+            "id": 14,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          }
+        ]
+      },
+      {
+        "comment": "Hassassin Govads",
+        "id": 4042,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 2 Asawira can be part of any Fireteam: Core of Muyibs or Govads"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Avicenna can be part of any Fireteam: Core of Govads"
+          }
+        ]
+      },
+      {
+        "comment": "Hassassin Barid",
+        "id": 4040,
+        "ava": "2"
+      },
+      {
+        "comment": "Hassassin Muyibs",
+        "id": 4031,
+        "ava": "6",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 2 Asawira can be part of any Fireteam: Core of Muyibs or Govads"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "Up to 2 Muyibs can be part of a Fireteam: Haris of Asawiras"
+          }
+        ]
+      },
+      {
+        "comment": "Hassassin Ragiks",
+        "id": 4007,
+        "ava": "4"
+      },
+      {
+        "comment": "Hassassin Lasiqs",
+        "id": 4030,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          }
+        ]
+      },
+      {
+        "comment": "Asawira Regiment",
+        "id": 4025,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 2 Asawira can be part of any Fireteam: Core of Muyibs or Govads"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "Up to 2 Muyibs can be part of a Fireteam: Haris of Asawiras"
+          }
+        ]
+      },
+      {
+        "comment": "Hassassin Áyyār",
+        "id": 4047,
+        "ava": "2"
+      },
+      {
+        "comment": "Hassassin Fiday",
+        "id": 4013,
+        "ava": "2"
+      },
+      {
+        "comment": "Hassassin Farzans",
+        "id": 4029,
+        "ava": "3"
+      },
+      {
+        "comment": "Muttawi'ah",
+        "id": 4015,
+        "ava": "4"
+      },
+      {
+        "comment": "Hussein Al-Djabel",
+        "id": 4032,
+        "ava": "1"
+      },
+      {
+        "comment": "Rafiq Remote",
+        "id": 4017,
+        "ava": "2",
+        "childs": [
+          {
+            "comment": "Duo is only available in Ramah/Vanilla",
+            "id": 2,
+            "hide": true
+          },
+          {
+            "comment": "Duo Red Fury is only available in Ramah/Vanilla",
+            "id": 3,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Shihab Remote",
+        "id": 4018,
+        "ava": "1"
+      },
+      {
+        "comment": "Shaytaniyah Remote",
+        "id": 4019,
+        "ava": "1"
+      },
+      {
+        "comment": "Fanous Remote",
+        "id": 4020,
+        "ava": "1"
+      },
+      {
+        "comment": "Nasmat Remotes",
+        "id": 4034,
+        "ava": "2"
+      },
+      {
+        "comment": "Kameel Remotes",
+        "id": 4033,
+        "ava": "2"
+      },
+      {
+        "comment": "Najjarun Engineer",
+        "id": 4016,
+        "ava": "1"
+      },
+      {
+        "comment": "Husam Spec-Ops (Muyib)",
+        "id": 4055,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 2 Asawira can be part of any Fireteam: Core of Muyibs or Govads"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "Up to 2 Muyibs can be part of a Fireteam: Haris of Asawiras"
+          }
+        ]
+      },
+      {
+        "comment": "Hassassin Husam Yasbir",
+        "id": 4038,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Yasbir (non-Infiltrating option) can be part of any Fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Husam Operative Leila Sharif",
+        "id": 4048,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Leila Sharif can be part of any Fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Avicenna",
+        "id": 9009,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Avicenna can be part of any Fireteam: Core of Govads"
+          }
+        ]
+      }
+    ]
+  }
+]

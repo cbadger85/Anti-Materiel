@@ -1,0 +1,320 @@
+[
+  {
+    "id": 9996,
+    "army": "Non-Aligned Armies",
+    "army_id": 9999,
+    "name": "Ikari Company",
+    "units": [
+      {
+        "comment": "Authorized Bounty Hunters (special version)",
+        "id": 9033,
+        "ava": "2"
+      },
+      {
+        "comment": "Bashi Bazouk (special version)",
+        "id": 9034,
+        "ava": "4"
+      },
+      {
+        "comment": "Brawlers, Mercenary Enforcers",
+        "id": 9036,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Brawlers + 1 Tankō"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Tankōs + 1 Brawler"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Wú Míng + 1 Clipper FTS or 1 Brawler"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "3 Keisotus + 1 Tankō + 1 Brawler"
+          }
+        ]
+      },
+      {
+        "comment": "Cube Jäger, Mercenary Recoverers",
+        "id": 9030,
+        "ava": "1"
+      },
+      {
+        "comment": "Keisotsu",
+        "id": 9042,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "3 Keisotsus + 1 Tankō + 1 Brawler"
+          }
+        ]
+      },
+      {
+        "comment": "Krakot Renegades, Morat Fugitives",
+        "id": 9023,
+        "ava": "1"
+      },
+      {
+        "comment": "Tokusetsu Butai",
+        "id": 9047,
+        "ava": "2"
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Wardrivers",
+        "id": 9021,
+        "ava": "1"
+      },
+      {
+        "comment": "Armand 'Le Muet'",
+        "id": 9022
+      },
+      {
+        "comment": "Druze Shock Teams (special version)",
+        "id": 9031,
+        "ava": "4",
+        "childs": [
+          {
+            "comment": "Druze Sniper is not available in Ikari",
+            "id": 6,
+            "hide": true
+          },
+          {
+            "comment": "Druze Paramedic is not available in Ikari",
+            "id": 10,
+            "hide": true
+          },
+          {
+            "comment": "Druze Lieutenant is not available in Ikari",
+            "id": 11,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "4 Druze + 1 Tankō"
+          }
+        ]
+      },
+      {
+        "comment": "Al Fasid",
+        "id": 4009,
+        "ava": "1"
+      },
+      {
+        "comment": "Daiyōkai Dengekitai",
+        "id": 9048,
+        "ava": "1"
+      },
+      {
+        "comment": "Karakuri Special Project",
+        "id": 9049,
+        "ava": "2",
+        "childs": [
+          {
+            "comment": "Haris is not available in Ikari",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Tankō Zensenbutai",
+        "id": 9053,
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Brawlers + 1 Tankō"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Tankōs + 1 Brawler"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "3 Keisotsus + 1 Tankō + 1 Brawler"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "4 Druze + 1 Tankō"
+          }
+        ]
+      },
+      {
+        "comment": "Wu Ming",
+        "id": 2007,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "4 Wú Míng + 1 Clipper FTS"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Wú Míng + 1 Clipper FTS or 1 Brawler"
+          }
+        ]
+      },
+      {
+        "comment": "Scarface",
+        "id": 9015
+      },
+      {
+        "comment": "Clipper Dronbot (special)",
+        "id": 9035,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "4 Wú Míng + 1 Clipper FTS"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Wú Míng + 1 Clipper FTS or 1 Brawler"
+          }
+        ]
+      },
+      {
+        "comment": "Fugazi Dronbot",
+        "id": 1021,
+        "ava": "1"
+      },
+      {
+        "comment": "Pathfinder Dronbot",
+        "id": 1018,
+        "ava": "1"
+      },
+      {
+        "comment": "Sierra Dronbot",
+        "id": 1019,
+        "ava": "1"
+      },
+      {
+        "comment": "Yáopú Pangguling",
+        "id": 2026,
+        "ava": "2",
+        "childs": [
+          {
+            "comment": "FTO is not available in Ikari",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Yáoxiè Lù Duān",
+        "id": 2039,
+        "ava": "2"
+      },
+      {
+        "comment": "Yáoxiè Rui Shi",
+        "id": 2038,
+        "ava": "2",
+        "childs": [
+          {
+            "comment": "SWC increased to 1.5 in Ikari",
+            "id": 1,
+            "swc": "1.5"
+          }
+        ]
+      },
+      {
+        "comment": "Yáozăo",
+        "id": 2025,
+        "ava": "2"
+      },
+      {
+        "comment": "Ninjas",
+        "id": 9055,
+        "ava": "1"
+      },
+      {
+        "comment": "Desperadoes",
+        "id": 3045,
+        "ava": "2"
+      },
+      {
+        "comment": "Yojimbo",
+        "id": 9014
+      },
+      {
+        "comment": "Yuan Yuan",
+        "id": 9001,
+        "ava": "4"
+      },
+      {
+        "comment": "Brawler Spec-Ops",
+        "id": 9039,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Brawlers + 1 Tankō"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Tankōs + 1 Brawler"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Wú Míng + 1 Clipper FTS or 1 Brawler"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "3 Keisotus + 1 Tankō + 1 Brawler"
+          }
+        ]
+      },
+      {
+        "comment": "Libertos Freedom Fighters",
+        "id": 9067,
+        "childs": [
+          {
+            "comment": "Mimetism only in Dahshat",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Mimetism only in Dahshat",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "id": 4998,
+    "army": "Haqqislam",
+    "army_id": 4999,
+    "name": "Qapu Khalqi",
+    "units": [
+      {
+        "comment": "Ghulam",
+        "id": 4002,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          }
+        ]
+      },
+      {
+        "comment": "Odalisques",
+        "id": 4035,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Wildcard Trooper",
+            "note": "Up to 2 Odalisques can join any Fireteam of this Sectorial Army, but not those of Mercenary Troops (Druze and Kaplans)"
+          }
+        ]
+      },
+      {
+        "comment": "Bashi Bazouk",
+        "id": 4027,
+        "ava": "4"
+      },
+      {
+        "comment": "Hafza Unit",
+        "id": 4028,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Up to 2 Hafza can join any Fireteam of this Sectorial Army, but not those of Mercenary Troops (Druze and Kaplans)"
+          }
+        ]
+      },
+      {
+        "comment": "Sekban",
+        "id": 4041,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Djanbazan",
+        "id": 4006,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          }
+        ]
+      },
+      {
+        "comment": "Azra'il",
+        "id": 4026,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 Shaytaniyah Remote FTO + 1 Azra'il"
+          }
+        ]
+      },
+      {
+        "comment": "Janissaries",
+        "id": 4008,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          }
+        ]
+      },
+      {
+        "comment": "Al Hawwa' Unit",
+        "id": 4024,
+        "ava": "3"
+      },
+      {
+        "comment": "Druze Shock Teams",
+        "id": 4046,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "KTS, Kaplan Tactical Services",
+        "id": 4039,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Kaplans + Wild Bill"
+          }
+        ]
+      },
+      {
+        "comment": "Rafiq Remote",
+        "id": 4017,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "Duo is only available in Ramah/Vanilla",
+            "id": 2,
+            "hide": true
+          },
+          {
+            "comment": "Duo Red Fury is only available in Ramah/Vanilla",
+            "id": 3,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Shihab Remote",
+        "id": 4018,
+        "ava": "2"
+      },
+      {
+        "comment": "Shaytaniyah Remote",
+        "id": 4019,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 Shaytaniyah Remote FTO + 1 Azra'il"
+          }
+        ]
+      },
+      {
+        "comment": "Fanous Remote",
+        "id": 4020,
+        "ava": "3"
+      },
+      {
+        "comment": "Nasmat Remotes",
+        "id": 4034,
+        "ava": "2"
+      },
+      {
+        "comment": "Kameel Remotes",
+        "id": 4033,
+        "ava": "2"
+      },
+      {
+        "comment": "Najjarun Engineer",
+        "id": 4016,
+        "ava": "1"
+      },
+      {
+        "comment": "Husam Spec-Ops (Hafza)",
+        "id": 4056,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Up to 2 Hafza can join any Fireteam of this Sectorial Army, but not those of Mercenary Troops (Druze and Kaplans)"
+          }
+        ]
+      },
+      {
+        "comment": "Husam Operative Leila Sharif",
+        "id": 4048,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Leila Sharif can be part of any fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Alguaciles",
+        "id": 5001,
+        "ava": "4"
+      },
+      {
+        "comment": "Mobile Brigada",
+        "id": 5008,
+        "ava": "1"
+      },
+      {
+        "comment": "Iguana Squadron",
+        "id": 5026,
+        "ava": "1"
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Yuan Yuan",
+        "id": 9001,
+        "ava": "3"
+      },
+      {
+        "comment": "Scarface",
+        "id": 9015,
+        "ava": "1"
+      },
+      {
+        "comment": "Wild Bill, Legendary Gunslinger",
+        "id": 9074,
+        "notes": [
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Kaplans + Wild Bill"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "Wild Bill counts as a Janissary for Fireteam composition"
+          }
+        ]
+      }
+    ]
+  }
+]

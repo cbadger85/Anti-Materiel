@@ -1,0 +1,414 @@
+[
+  {
+    "id": 1999,
+    "army": "PanOceania",
+    "name": "PanOceania",
+    "units": [
+      {
+        "comment": "Fusiliers",
+        "id": 1001
+      },
+      {
+        "comment": "Kamau",
+        "id": 1002,
+        "childs": [
+          {
+            "comment": "Haris is only available in Varuna",
+            "id": 8,
+            "hide": true
+          },
+          {
+            "comment": "Lieutenant is only available in Varuna",
+            "id": 9,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Bagh-Mari",
+        "id": 1003,
+        "childs": [
+          {
+            "comment": "HMG Lieutenant is only available in Shock Army of Acontecimento",
+            "id": 1,
+            "hide": true
+          },
+          {
+            "comment": "Haris is only available in Shock Army of Acontecimento",
+            "id": 9,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Akalis",
+        "id": 1004
+      },
+      {
+        "comment": "Nisses",
+        "id": 1005
+      },
+      {
+        "comment": "Orc Troops",
+        "id": 1006,
+        "childs": [
+          {
+            "comment": "Haris is only available in sectorials",
+            "id": 9,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Duo",
+            "note": "Requires TeamPro"
+          }
+        ]
+      },
+      {
+        "comment": "Knights Hospitaller",
+        "id": 1007,
+        "childs": [
+          {
+            "comment": "Haris is only available in sectorials",
+            "id": 10,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Father-Knights",
+        "id": 1008,
+        "notes": [
+          {
+            "title": "Fireteam: Duo",
+            "note": "Requires TeamPro"
+          }
+        ]
+      },
+      {
+        "comment": "Aquila Guard",
+        "id": 1009
+      },
+      {
+        "comment": "Swiss Guard",
+        "id": 1010
+      },
+      {
+        "comment": "Squalos",
+        "id": 1011,
+        "childs": [
+          {
+            "comment": "Varuna Div. is only available in Varuna",
+            "id": 4,
+            "hide": true
+          },
+          {
+            "comment": "Varuna Div. is only available in Varuna",
+            "id": 5,
+            "hide": true
+          },
+          {
+            "comment": "Varuna Div. is only available in Varuna",
+            "id": 6,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Dragoes",
+        "id": 1012
+      },
+      {
+        "comment": "Cutters",
+        "id": 1013
+      },
+      {
+        "comment": "Jotums",
+        "id": 1014
+      },
+      {
+        "comment": "Croc Men",
+        "id": 1015
+      },
+      {
+        "comment": "Trauma-Doc",
+        "id": 1016
+      },
+      {
+        "comment": "Machinist",
+        "id": 1017,
+        "childs": [
+          {
+            "comment": "SAA is only available in Shock Army of Acontecimento",
+            "id": 2,
+            "hide": true
+          },
+          {
+            "comment": "NCA is only available in Neoterran Capitaline Army",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Varuna Div. is only available in Varuna",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Pathfinder Dronbot",
+        "id": 1018
+      },
+      {
+        "comment": "Sierra Dronbot",
+        "id": 1019
+      },
+      {
+        "comment": "Clipper Dronbot",
+        "id": 1020,
+        "childs": [
+          {
+            "comment": "Varuna Div. is only available in Varuna",
+            "id": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Fugazi Dronbot",
+        "id": 1021
+      },
+      {
+        "comment": "Joan of Arc",
+        "id": 1022
+      },
+      {
+        "comment": "Acontecimento Regulars",
+        "id": 1023
+      },
+      {
+        "comment": "Auxilia",
+        "id": 1024
+      },
+      {
+        "comment": "Hexas, Strategic Security Division",
+        "id": 1025
+      },
+      {
+        "comment": "Knights Of Santiago",
+        "id": 1026,
+        "skills": [
+          {
+            "name": "Fireteam: Duo",
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Mulebots",
+        "id": 1027
+      },
+      {
+        "comment": "Palbots",
+        "id": 1028
+      },
+      {
+        "comment": "Father-Officer Gabriele De Fersen",
+        "id": 1029
+      },
+      {
+        "comment": "Order Sergeants",
+        "id": 1030
+      },
+      {
+        "comment": "Guarda de Assalto",
+        "id": 1032
+      },
+      {
+        "comment": "Knights of Montesa",
+        "id": 1054,
+        "childs": [
+          {
+            "comment": "Paramedic is only available in sectorials",
+            "id": 3,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Knights of the Holy Sepulchre",
+        "id": 1034
+      },
+      {
+        "comment": "Teutonic Knights",
+        "id": 1035
+      },
+      {
+        "comment": "Magister Knights",
+        "id": 1036
+      },
+      {
+        "comment": "Clausewitz Uhlans",
+        "id": 1037
+      },
+      {
+        "comment": "Tikbalangs, Armoured Chasseurs of Acontecimento",
+        "id": 1038,
+        "childs": [
+          {
+            "comment": "Duo",
+            "id": 2,
+            "hide": true
+          },
+          {
+            "comment": "Montesa",
+            "id": 3,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Seraphs",
+        "id": 1039
+      },
+      {
+        "comment": "Armbots: Bulleteers",
+        "id": 1040
+      },
+      {
+        "comment": "Armbots: Peacemakers",
+        "id": 1041
+      },
+      {
+        "comment": "Kirpal Singh, Akalis Sergeant",
+        "id": 1042
+      },
+      {
+        "comment": "Joan of Arc 2.0 (Mobility Armor)",
+        "id": 1044
+      },
+      {
+        "comment": "Indigo Spec-Ops (Fusilier)",
+        "id": 1060
+      },
+      {
+        "comment": "Indigo Spec-Ops (Regular)",
+        "id": 1061
+      },
+      {
+        "comment": "Indigo Spec-Ops (Order Sergeant)",
+        "id": 1062
+      },
+      {
+        "comment": "Fusilier Indigo Bipandra",
+        "id": 1046
+      },
+      {
+        "comment": "Indigo Brother Konstantinos",
+        "id": 1047
+      },
+      {
+        "comment": "Crusader Brethren",
+        "id": 1048
+      },
+      {
+        "comment": "Lieutenant Stephen Rao",
+        "id": 1049
+      },
+      {
+        "comment": "Neoterra Bolts",
+        "id": 1050,
+        "childs": [
+          {
+            "comment": "Haris",
+            "id": 12,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Black Friars",
+        "id": 1051
+      },
+      {
+        "comment": "Locusts",
+        "id": 1052
+      },
+      {
+        "comment": "Tech-Bees, Maintenance Battalions",
+        "id": 1053
+      },
+      {
+        "comment": "Echo-Bravo",
+        "id": 1055
+      },
+      {
+        "comment": "Zulu-Cobra",
+        "id": 1056
+      },
+      {
+        "comment": "Patsy Garnett",
+        "id": 1058,
+        "skills": [
+          {
+            "name": "Fireteam: Haris",
+            "hide": true
+          },
+          {
+            "name": "Fireteam: Duo",
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Helot Militia",
+        "id": 1059
+      },
+      {
+        "comment": "Authorized Bounty Hunters",
+        "id": 9018,
+        "ava": "1"
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Miranda Ashcroft",
+        "id": 9019,
+        "ava": "1"
+      },
+      {
+        "comment": "Armand 'Le Muet'",
+        "id": 9022,
+        "ava": "1"
+      },
+      {
+        "comment": "Krakot Renegades, Morat Fugitives",
+        "id": 9023
+      },
+      {
+        "comment": "Knauf",
+        "id": 9028
+      },
+      {
+        "comment": "Cube Jäger, Mercenary Recoverers",
+        "id": 9030
+      },
+      {
+        "comment": "Aïda Swanson, Submondo Smuggler",
+        "id": 9065
+      },
+      {
+        "comment": "Monstruckers",
+        "id": 9068
+      },
+      {
+        "comment": "Wild Bill, Legendary Gunslinger",
+        "id": 9074
+      }
+    ]
+  }
+]

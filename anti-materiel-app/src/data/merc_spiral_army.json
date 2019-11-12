@@ -1,0 +1,264 @@
+[
+  {
+    "id": 9992,
+    "army": "Non-Aligned Armies",
+    "army_id": 9999,
+    "name": "Spiral Corps",
+    "units": [
+      {
+        "comment": "Kaauri Sentinels",
+        "id": 8024,
+        "ava": "6"
+      },
+      {
+        "comment": "Rasail Boarding Team",
+        "id": 8018,
+        "ava": "2"
+      },
+      {
+        "comment": "Kerail Preceptors",
+        "id": 8022,
+        "ava": "1"
+      },
+      {
+        "comment": "Kosuil Assault Pioneers",
+        "id": 8021,
+        "ava": "3"
+      },
+      {
+        "comment": "Kaeltar Specialists",
+        "id": 8019,
+        "ava": "1"
+      },
+      {
+        "comment": "Taagma Schemers",
+        "id": 8026,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Special Fireteam: Triad",
+            "note": "1 Taagma Schemer + 2 Chaksa Auxiliars (Fireteam: Special Triad)"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "The Taagma count as Brawlers for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Kriigel Agents",
+        "id": 8029,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Special Fireteam: Triad",
+            "note": "2 Reex + 1 Kriigel Agent"
+          }
+        ]
+      },
+      {
+        "comment": "Reex Escorts",
+        "id": 8030,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Special Fireteam: Triad",
+            "note": "2 Reex + 1 Kriigel Agent"
+          }
+        ]
+      },
+      {
+        "comment": "Kiel-Saan Covert Assault Unit",
+        "id": 8027,
+        "ava": "3",
+        "skills": [
+          {
+            "name": "Fireteam: Special Triad",
+            "add": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Special Fireteam: Triad A",
+            "note": "Only with Draal Saboteurs"
+          },
+          {
+            "title": "Special Fireteam: Triad B",
+            "note": "2 Kiel-Saan + 1 Kaauri (Fireteam: Special Triad)"
+          },
+          {
+            "title": "MetaChemistry",
+            "note": "MetaChemistry enhancements are applied to both troop profiles"
+          }
+        ]
+      },
+      {
+        "comment": "Chaksa Longarms",
+        "id": 8032,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Fireteam: Haris"
+          }
+        ]
+      },
+      {
+        "comment": "Draal Saboteurs",
+        "id": 8028,
+        "ava": "3"
+      },
+      {
+        "comment": "Kiiutan Imposters",
+        "id": 8031,
+        "ava": "2"
+      },
+      {
+        "comment": "Igao",
+        "id": 8020,
+        "ava": "2"
+      },
+      {
+        "comment": "Clipsos Infiltrators",
+        "id": 8004,
+        "ava": "2"
+      },
+      {
+        "comment": "Greif Operators",
+        "id": 6062,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "Impersonator - SWC cost is only 0.5 in Spiral",
+            "id": 3,
+            "swc": "0.5"
+          }
+        ]
+      },
+      {
+        "comment": "Kumotail",
+        "id": 8010,
+        "ava": "1"
+      },
+      {
+        "comment": "Tohaa Diplomatic Delegates",
+        "id": 8005,
+        "ava": "1"
+      },
+      {
+        "comment": "Neema Saatar",
+        "id": 8013,
+        "ava": "1"
+      },
+      {
+        "comment": "Hatail Aelis Keesan",
+        "id": 8015,
+        "ava": "1"
+      },
+      {
+        "comment": "Helot Militia",
+        "id": 1059,
+        "ava": "3"
+      },
+      {
+        "comment": "Brawlers, Mercenary Enforcers",
+        "id": 9036,
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 Brawler + 1 Anaconda"
+          }
+        ]
+      },
+      {
+        "comment": "Wardrivers",
+        "id": 9021,
+        "ava": "2"
+      },
+      {
+        "comment": "Cube Jäger, Mercenary Recoverers",
+        "id": 9030,
+        "ava": "2"
+      },
+      {
+        "comment": "Anaconda",
+        "id": 9016,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "Duo only in Starco",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Duo only in Starco",
+            "id": 4,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 Brawler + 1 Anaconda"
+          }
+        ]
+      },
+      {
+        "comment": "Monstruckers",
+        "id": 9068,
+        "ava": "2"
+      },
+      {
+        "comment": "Armand 'Le Muet'",
+        "id": 9022
+      },
+      {
+        "comment": "Chaksa Auxiliars",
+        "id": 8011,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Special Fireteam: Triad",
+            "note": "1 Taagma Schemer + 2 Chaksa Auxiliars (Fireteam: Special Triad)"
+          }
+        ]
+      },
+      {
+        "comment": "Chaksa Servant",
+        "id": 8012,
+        "ava": "2"
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Hatail Spec-Ops (Taagma)",
+        "id": 9073,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Triad",
+            "note": "1 Taagma Schemer + 2 Chaksa Auxiliars (Fireteam: Special Triad)"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "The Taagma count as Brawlers for Fireteam composition"
+          }
+        ]
+      }
+    ]
+  }
+]

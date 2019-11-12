@@ -1,0 +1,179 @@
+[
+  {
+    "id": 3996,
+    "army": "Ariadna",
+    "army_id": 3999,
+    "name": "USAriadna Ranger Force",
+    "abbr": "USAriadna",
+    "units": [
+      {
+        "comment": "USAriadna Grunts",
+        "id": 3004,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Troops possessing Inferior Infiltration cannot compose Fireteams in this Sectorial Army"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 1 Minuteman can be part of a Fireteam: Core of Grunts"
+          }
+        ]
+      },
+      {
+        "comment": "6th Airborne Rangers",
+        "id": 3044,
+        "ava": "4"
+      },
+      {
+        "comment": "Mavericks, 9th Motorized Recon Bat.",
+        "id": 3042,
+        "ava": "5"
+      },
+      {
+        "comment": "Marauders, 5307th Ranger Unit",
+        "id": 3041,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Minutemen",
+        "id": 3006,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 1 Minuteman can be part of a Fireteam: Core of Grunts"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Blackjacks",
+        "id": 3047,
+        "ava": "3"
+      },
+      {
+        "comment": "Foxtrot",
+        "id": 3009,
+        "ava": "4"
+      },
+      {
+        "comment": "Hardcases",
+        "id": 3010,
+        "ava": "3"
+      },
+      {
+        "comment": "Devil Dog Teams, 2nd Assault Bat.",
+        "id": 3043,
+        "ava": "3"
+      },
+      {
+        "comment": "Desperadoes",
+        "id": 3045,
+        "ava": "6"
+      },
+      {
+        "comment": "112, Emergency Service",
+        "id": 3017,
+        "ava": "2"
+      },
+      {
+        "comment": "112, Emergency Service (Motorized)",
+        "id": 3057,
+        "ava": "2"
+      },
+      {
+        "comment": "Dozers, Field Engineers",
+        "id": 3024,
+        "ava": "1"
+      },
+      {
+        "comment": "Traktor Mul, Artillery and Support Regiment",
+        "id": 3028,
+        "ava": "2"
+      },
+      {
+        "comment": "Intel Spec-Ops (Grunt)",
+        "id": 3061,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Troops possessing Inferior Infiltration cannot compose Fireteams in this Sectorial Army"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 1 Minuteman can be part of a Fireteam: Core of Grunts"
+          }
+        ]
+      },
+      {
+        "comment": "Van Zant",
+        "id": 3031,
+        "ava": "1"
+      },
+      {
+        "comment": "Unknown Ranger",
+        "id": 3048,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "The Unknown Ranger can be part of any Fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Rosie",
+        "id": 3049,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Rosie Munroe counts as a USAriadna Grunt for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Wardrivers",
+        "id": 9021,
+        "ava": "1"
+      },
+      {
+        "comment": "Wild Bill, Legendary Gunslinger",
+        "id": 9074,
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Wild Bill counts as a USAriadna Grunt for Fireteam composition"
+          }
+        ]
+      }
+    ]
+  }
+]

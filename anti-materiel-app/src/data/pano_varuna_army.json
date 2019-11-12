@@ -1,0 +1,258 @@
+[
+  {
+    "id": 1995,
+    "army": "PanOceania",
+    "army_id": 1999,
+    "name": "Varuna Immediate Reaction Division",
+    "abbr": "Varuna",
+    "units": [
+      {
+        "comment": "Echo-Bravo",
+        "id": 1055,
+        "ava": "3"
+      },
+      {
+        "comment": "Fusilier Indigo Bipandra",
+        "id": 1046,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Bipandra counts as a Fusilier for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Fusiliers",
+        "id": 1001,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 3 Fusiliers and up to 2 Orc Troops (Varuna Div.)"
+          }
+        ]
+      },
+      {
+        "comment": "Helot Militia",
+        "id": 1059,
+        "ava": "3"
+      },
+      {
+        "comment": "Kamau",
+        "id": 1002,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Wildcard Trooper",
+            "note": "The Kamaus can join any Fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Machinist",
+        "id": 1017,
+        "ava": "2",
+        "childs": [
+          {
+            "comment": "SAA is only available in Shock Army of Acontecimento",
+            "id": 2,
+            "hide": true
+          },
+          {
+            "comment": "NCA is only available in Neoterran Capitaline Army",
+            "id": 3,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "The Varuna Div. option can join any Fireteam: Core or Haris of Kamau"
+          }
+        ]
+      },
+      {
+        "comment": "Tech-Bees, Maintenance Battalions",
+        "id": 1053,
+        "ava": "1"
+      },
+      {
+        "comment": "Trauma-Doc",
+        "id": 1016,
+        "ava": "1"
+      },
+      {
+        "comment": "Zulu-Cobra",
+        "id": 1056,
+        "ava": "3",
+        "childs": [
+          {
+            "comment": "Lieutenant - SWC cost is only 0 in Varuna ",
+            "id": 6,
+            "swc": "0"
+          }
+        ]
+      },
+      {
+        "comment": "Knights of Montesa",
+        "id": 1054,
+        "ava": "1"
+      },
+      {
+        "comment": "Orc Troops",
+        "id": 1006,
+        "ava": "5",
+        "childs": [
+          {
+            "comment": "Haris is not in Varuna",
+            "id": 9,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Core",
+            "note": "Can include both regular and Varuna Orcs"
+          },
+          {
+            "title": "Fireteam: Haris",
+            "note": "Can include both regular and Varuna Orcs"
+          },
+          {
+            "title": "Fireteam: Duo",
+            "note": "Can include both regular and Varuna Orcs"
+          }
+        ]
+      },
+      {
+        "comment": "Orc Troops (Varuna Div.)",
+        "id": 1057,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core",
+            "note": "Can include both regular and Varuna Orcs"
+          },
+          {
+            "title": "Fireteam: Haris",
+            "note": "Can include both regular and Varuna Orcs"
+          },
+          {
+            "title": "Fireteam: Duo",
+            "note": "Can include both regular and Varuna Orcs"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 3 Fusiliers and up to 2 Orc Troops (Varuna Div.)"
+          }
+        ]
+      },
+      {
+        "comment": "Patsy Garnett",
+        "id": 1058,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Patsy Garnett can join any Fireteam of this Sectorial Army. Patsy counts as an Orc Troop for Fireteam composition."
+          }
+        ]
+      },
+      {
+        "comment": "Cutter",
+        "id": 1013,
+        "ava": "2"
+      },
+      {
+        "comment": "Squalo",
+        "id": 1011,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Armbots: Bulleteers",
+        "id": 1040,
+        "ava": "2"
+      },
+      {
+        "comment": "Clipper Dronbot",
+        "id": 1020,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "The Varuna Div. option can join any Fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Fugazi Dronbot",
+        "id": 1021,
+        "ava": "2"
+      },
+      {
+        "comment": "Mulebots",
+        "id": 1027,
+        "ava": "2"
+      },
+      {
+        "comment": "Palbots",
+        "id": 1028,
+        "ava": "2"
+      },
+      {
+        "comment": "Pathfinder Dronbot",
+        "id": 1018,
+        "ava": "2"
+      },
+      {
+        "comment": "Armbots: Peacemakers",
+        "id": 1041,
+        "ava": "1"
+      },
+      {
+        "comment": "Sierra Dronbot",
+        "id": 1019,
+        "ava": "2"
+      },
+      {
+        "comment": "Croc Men",
+        "id": 1015,
+        "ava": "4"
+      },
+      {
+        "comment": "Indigo Spec-Ops (Fusilier)",
+        "id": 1060,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 3 Fusiliers and up to 2 Orc Troops (Varuna Div.)"
+          }
+        ]
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      }
+    ]
+  }
+]

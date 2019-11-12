@@ -1,0 +1,30 @@
+@import '../../styles/colors';
+
+.side-drawer__container {
+  position: fixed;
+  width: 20rem; //add breakpoint that makes this full screen on smaller screen sizes.
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 1rem 2rem;
+  background: $neutral-2;
+  z-index: 10;
+  overflow-y: scroll;
+}
+
+.side-drawer__opaque-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.side-drawer__opaque-background--visible {
+  pointer-events: auto;
+}
+
+.side-drawer__opaque-background--invisible {
+  pointer-events: none;
+}

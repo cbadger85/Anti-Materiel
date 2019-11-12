@@ -1,0 +1,385 @@
+[
+  {
+    "id": 1996,
+    "army": "PanOceania",
+    "army_id": 1999,
+    "name": "Military Orders",
+    "units": [
+      {
+        "comment": "Order Sergeants",
+        "id": 1030,
+        "ava": "T",
+        "childs": [
+          {
+            "comment": "Infiltrator MULTI Sniper Rifle",
+            "id": 1,
+            "hide": true
+          },
+          {
+            "comment": "Infiltrator Observer",
+            "id": 2,
+            "hide": true
+          },
+          {
+            "comment": "MSV L2",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Hacker",
+            "id": 4,
+            "hide": true
+          },
+          {
+            "comment": "Combi Rifle + Auxbot",
+            "id": 5,
+            "hide": true
+          },
+          {
+            "comment": "HRL + Auxbot",
+            "id": 11,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "Up to 1 Order Sergeant can join a Knights Hospitallers or a Teuton Knights Fireteam. Except Crusade Fireteams"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 1 Black Friar (Albedo, Biometric Visor L1) can join a Fireteam: Core of Order Sergeants"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Father-Knights can join a Fireteam: Core of Order Sergeants"
+          }
+        ]
+      },
+      {
+        "comment": "Spec. Sergeants",
+        "id": 1031,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Specialist Sergeant",
+            "note": "Specialist Sergeants cannot be members of a Fireteam"
+          }
+        ]
+      },
+      {
+        "comment": "Crusader Brethren",
+        "id": 1048,
+        "ava": "4",
+        "childs": [
+          {
+            "comment": "HMG",
+            "id": 2,
+            "swc": "1.5"
+          },
+          {
+            "comment": "Spitfire",
+            "id": 5,
+            "swc": "1.5"
+          }
+        ]
+      },
+      {
+        "comment": "Black Friars",
+        "id": 1051,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 1 Black Friar (Albedo, Biometric Visor L1) can join a Fireteam: Core of Order Sergeants"
+          }
+        ]
+      },
+      {
+        "comment": "Knights Hospitaller",
+        "id": 1007,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Crusade Fireteam. Joan of Arc (any version) + 4 Knights Hospitallers"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "Up to 1 Order Sergeant can join a Knights Hospitallers or a Teuton Knights Fireteam. Except Crusade Fireteams"
+          }
+        ]
+      },
+      {
+        "comment": "Knights of Montesa",
+        "id": 1054,
+        "ava": "1"
+      },
+      {
+        "comment": "Knights Of Santiago",
+        "id": 1026,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Wildcard Trooper",
+            "note": "Knights of Santiago can join any Fireteam of this Sectorial Army"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Crusade Fireteam. Joan of Arc (any version) + 4 Knights Hospitallers"
+          }
+        ]
+      },
+      {
+        "comment": "Knights of the Holy Sepulchre",
+        "id": 1034,
+        "ava": "2"
+      },
+      {
+        "comment": "Teutonic Knights",
+        "id": 1035,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "Up to 1 Order Sergeant can join a Knights Hospitallers or a Teuton Knights Fireteam. Except Crusade Fireteams"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "Magister Knights count as Teuton Knights for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Father-Knights",
+        "id": 1008,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Father-Knights can join a Fireteam: Core of Order Sergeants"
+          }
+        ]
+      },
+      {
+        "comment": "Magister Knights",
+        "id": 1036,
+        "ava": "6",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "Magister Knights count as Teuton Knights for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Seraphs",
+        "id": 1039,
+        "ava": "2"
+      },
+      {
+        "comment": "Tikbalang",
+        "id": 1038,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "HMG",
+            "id": 1,
+            "hide": true
+          },
+          {
+            "comment": "HMG Duo",
+            "id": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Father-Officer Gabriele De Fersen",
+        "id": 1029,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "De Fersen counts as a Knight Hospitaller for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Joan of Arc",
+        "id": 1022,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Crusade Fireteam. Joan of Arc (any version) + 4 Knights Hospitallers. Example: Joan of Arc (any version) + De Fersen + 1 K. of Santiago + 2 K. Hospitallers"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "Joan of Arc (any version) can join any Fireteam: Duo of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Joan of Arc v2 (Mobility Armor)",
+        "id": 1044,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Crusade Fireteam. Joan of Arc (any version) + 4 Knights Hospitallers. Example: Joan of Arc (any version) + De Fersen + 1 K. of Santiago + 2 K. Hospitallers"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "Joan of Arc (any version) can join any Fireteam: Duo of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Pathfinder Dronbot",
+        "id": 1018,
+        "ava": "2"
+      },
+      {
+        "comment": "Sierra Dronbot",
+        "id": 1019,
+        "ava": "2"
+      },
+      {
+        "comment": "Clipper Dronbot",
+        "id": 1020,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "Varuna Div. is only available in Varuna",
+            "id": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Fugazi Dronbot",
+        "id": 1021,
+        "ava": "1"
+      },
+      {
+        "comment": "Armbots: Bulleteers",
+        "id": 1040,
+        "ava": "2"
+      },
+      {
+        "comment": "Armbots: Peacemakers",
+        "id": 1041,
+        "ava": "2"
+      },
+      {
+        "comment": "Palbots",
+        "id": 1028,
+        "ava": "2"
+      },
+      {
+        "comment": "Mulebots",
+        "id": 1027,
+        "ava": "2"
+      },
+      {
+        "comment": "Trauma-Doc",
+        "id": 1016,
+        "ava": "1"
+      },
+      {
+        "comment": "Machinist",
+        "id": 1017,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "SAA is only available in Shock Army of Acontecimento",
+            "id": 2,
+            "hide": true
+          },
+          {
+            "comment": "NCA is only available in Neoterran Capitaline Army",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Varuna Div. is only available in Varuna",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Indigo Spec-Ops (Order Sergeant)",
+        "id": 1062,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "Up to 1 Order Sergeant can join a Knights Hospitallers or a Teuton Knights Fireteam. Except Crusade Fireteams"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 1 Black Friar (Albedo, Biometric Visor L1) can join a Fireteam: Core of Order Sergeants"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Father-Knights can join a Fireteam: Core of Order Sergeants"
+          }
+        ]
+      },
+      {
+        "comment": "Indigo Brother Konstantinos",
+        "id": 1047,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Konstantinos (non-Infiltrating option) counts as an Order Sergeant for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Tech-Bees, Maintenance Battalions",
+        "id": 1053,
+        "ava": "1"
+      },
+      {
+        "comment": "Dart",
+        "id": 7048
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      }
+    ]
+  }
+]

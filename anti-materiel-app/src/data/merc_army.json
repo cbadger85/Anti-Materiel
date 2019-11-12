@@ -1,0 +1,197 @@
+[
+  {
+    "id": 9999,
+    "army": "Non-Aligned Armies",
+    "name": "Non-Aligned Armies",
+    "units": [
+      {
+        "comment": "Yuan Yuan",
+        "id": 9001
+      },
+      {
+        "comment": "Bashi Bazouk",
+        "id": 9002
+      },
+      {
+        "comment": "Druze Shock Teams",
+        "id": 9003
+      },
+      {
+        "comment": "Highlander Caterans",
+        "id": 9004
+      },
+      {
+        "comment": "McMurrough",
+        "id": 9005
+      },
+      {
+        "comment": "Kempeitai",
+        "id": 9006
+      },
+      {
+        "comment": "Saito Tōgan",
+        "id": 9007
+      },
+      {
+        "comment": "Miyamoto Mushashi",
+        "id": 9008
+      },
+      {
+        "comment": "Avicenna",
+        "id": 9009
+      },
+      {
+        "comment": "Father Lucien Sforza",
+        "id": 9010
+      },
+      {
+        "comment": "Señor Massacre",
+        "id": 9011,
+        "childs": [
+          {
+            "comment": "Haris is not available in Mercs",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Duo is not available in Mercs",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Valerya Gromoz, Mercenary Hacker",
+        "id": 9012
+      },
+      {
+        "comment": "KTS, Kaplan Tactical Services",
+        "id": 9013
+      },
+      {
+        "comment": "Yojimbo",
+        "id": 9014
+      },
+      {
+        "comment": "Scarface",
+        "id": 9015
+      },
+      {
+        "comment": "Anaconda",
+        "id": 9016,
+        "childs": [
+          {
+            "comment": "Duo only in Starco",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Duo only in Starco",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017
+      },
+      {
+        "comment": "Authorized Bounty Hunters",
+        "id": 9018
+      },
+      {
+        "comment": "Miranda Ashcroft",
+        "id": 9019
+      },
+      {
+        "comment": "CSU, Corporate Security Unit",
+        "id": 9020
+      },
+      {
+        "comment": "Wardrivers",
+        "id": 9021
+      },
+      {
+        "comment": "Armand 'Le Muet'",
+        "id": 9022
+      },
+      {
+        "comment": "Krakot Renegades, Morat Fugitives",
+        "id": 9023
+      },
+      {
+        "comment": "Knauf",
+        "id": 9028
+      },
+      {
+        "comment": "Major Lunah, ex-Ariesteia! Sniper",
+        "id": 9029
+      },
+      {
+        "comment": "Cube Jäger, Mercenary Recoverers",
+        "id": 9030
+      },
+      {
+        "comment": "Emily Handelman, Intel Agent",
+        "id": 9060
+      },
+      {
+        "comment": "Raoul Spector, Mercenary Operative (Irregular)",
+        "id": 9061
+      },
+      {
+        "comment": "Raoul Spector, Mercenary Operative (Regular)",
+        "id": 9062
+      },
+      {
+        "comment": "Uhahu",
+        "id": 9063
+      },
+      {
+        "comment": "Aïda Swanson, Submondo Smuggler",
+        "id": 9065
+      },
+      {
+        "comment": "Libertos",
+        "id": 9067,
+        "childs": [
+          {
+            "comment": "Mimetism only in Dahshat",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Mimetism only in Dahshat",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Monstruckers",
+        "id": 9068
+      },
+      {
+        "comment": "Valkyrie, Elite Bodyguard",
+        "id": 9069
+      },
+      {
+        "comment": "Laxmee, Hacker of Fortune",
+        "id": 9070
+      },
+      {
+        "comment": "Hannibal, Mercenary Team Leader",
+        "id": 9071
+      },
+      {
+        "comment": "Miranda Ashcroft, Registered Bounty Hunter",
+        "id": 9072
+      },
+      {
+        "comment": "Wild Bill, Legendary Gunslinger",
+        "id": 9074
+      }
+    ]
+  }
+]

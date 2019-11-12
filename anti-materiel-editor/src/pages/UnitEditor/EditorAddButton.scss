@@ -1,0 +1,6 @@
+@import '../../styles/mixins.scss';
+
+.editor__add-button {
+  @include vertically-horizontally-center;
+  margin-left: 0;
+}

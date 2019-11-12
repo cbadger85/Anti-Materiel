@@ -1,0 +1,837 @@
+{
+  "specopsisc": {
+    "1999": [
+      {
+        "comment": "Indigo Spec-Ops (Fusilier)",
+        "id": 1060,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Fusiliers / Combi",
+            "unit_id": 1060,
+            "child_id": 1
+          }
+        ]
+      },
+      {
+        "comment": "Indigo Spec-Ops (Regular)",
+        "id": 1061,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Acontecimento Regulars / Combi",
+            "unit_id": 1061,
+            "child_id": 1
+          }
+        ]
+      },
+      {
+        "comment": "Indigo Spec-Ops (Order Sergeant)",
+        "id": 1062,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Order Sergeants / Combi",
+            "unit_id": 1062,
+            "child_id": 1
+          }
+        ]
+      }
+    ],
+    "2999": [
+      {
+        "comment": "Guǐ Fēng Spec-Ops (Zhanshi)",
+        "id": 2061,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Zhanshi / Combi",
+            "unit_id": 2061,
+            "child_id": 1
+          }
+        ]
+      },
+      {
+        "comment": "Guǐ Fēng Spec-Ops (Celestial)",
+        "id": 2062,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Celestial Guard / Combi",
+            "unit_id": 2062,
+            "child_id": 1
+          }
+        ]
+      }
+    ],
+    "3999": [
+      {
+        "comment": "Intel Spec-Ops (Line Kazak)",
+        "id": 3058,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Line Kazak / Rifle",
+            "unit_id": 3058,
+            "child_id": 1
+          }
+        ]
+      },
+      {
+        "comment": "Intel Spec-Ops (Volunteer)",
+        "id": 3059,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Caledonian Volunteers / Rifle",
+            "unit_id": 3059,
+            "child_id": 1
+          }
+        ]
+      },
+      {
+        "comment": "Intel Spec-Ops (Metro)",
+        "id": 3060,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Métros / Rifle",
+            "unit_id": 3060,
+            "child_id": 1
+          }
+        ]
+      },
+      {
+        "comment": "Intel Spec-Ops (Grunt)",
+        "id": 3061,
+        "type": "MI",
+        "basemodels": [
+          {
+            "comment": "USAriadna Grunts / Rifle",
+            "unit_id": 3061,
+            "child_id": 1
+          }
+        ]
+      }
+    ],
+    "4999": [
+      {
+        "comment": "Husam Spec-Ops (Ghulam)",
+        "id": 4054,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Ghulam / Rifle",
+            "unit_id": 4054,
+            "child_id": 1
+          }
+        ]
+      },
+      {
+        "comment": "Husam Spec-Ops (Muyib)",
+        "id": 4055,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Hassassin Muyibs / Panzerfaust",
+            "unit_id": 4055,
+            "child_id": 1
+          }
+        ]
+      },
+      {
+        "comment": "Husam Spec-Ops (Hafza)",
+        "id": 4056,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Hafza Unit / Rifle",
+            "unit_id": 4056,
+            "child_id": 1
+          }
+        ]
+      }
+    ],
+    "5999": [
+      {
+        "comment": "Vortex Spec-Ops (Alguacil)",
+        "id": 5057,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Alguaciles / Combi",
+            "unit_id": 5057,
+            "child_id": 1
+          }
+        ]
+      },
+      {
+        "comment": "Vortex Spec-Ops (Moderator)",
+        "id": 5058,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Moderators from Bakunin / Combi",
+            "unit_id": 5058,
+            "child_id": 1
+          }
+        ]
+      },
+      {
+        "comment": "Vortex Spec-Ops (Securitate)",
+        "id": 5059,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Securitate / Combi",
+            "unit_id": 5059,
+            "child_id": 1
+          }
+        ]
+      }
+    ],
+    "6999": [
+      {
+        "comment": "Corax Spec-Ops",
+        "id": 6041,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Shasvastii Seed-Soldiers / Combi",
+            "unit_id": 6041,
+            "child_id": 1
+          }
+        ]
+      },
+      {
+        "comment": "Treitak Spec-Ops",
+        "id": 6039,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Morat Vanguard Infantry / Combi",
+            "unit_id": 6039,
+            "child_id": 1
+          }
+        ]
+      },
+      {
+        "comment": "Nexus Spec-Ops",
+        "id": 6065,
+        "type": "LI",
+        "basemodels": [
+          {
+            "unit_id": 6065,
+            "child_id": 1
+          }
+        ]
+      }
+    ],
+    "7999": [
+      {
+        "comment": "Chandra Spec-Ops (Thorakitai)",
+        "id": 7056,
+        "type": "MI",
+        "basemodels": [
+          {
+            "comment": "Thorakitai / Combi",
+            "unit_id": 7056,
+            "child_id": 1
+          }
+        ]
+      },
+      {
+          "comment": "Chandra Spec-Ops (Deva)",
+          "id": 7057,
+          "type": "LI",
+          "basemodels": [
+              {
+                  "comment": "Deva / Combi",
+                  "unit_id": 7057,
+                  "child_id": 1
+              }
+          ]
+      }
+    ],
+    "8999": [
+      {
+        "comment": "Hatail Spec-Ops (Kamael)",
+        "id": 8014,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Kamael Light Infantry / Combi",
+            "unit_id": 8014,
+            "child_id": 1
+          }
+        ]
+      }
+    ],
+    "9999": [
+      {
+        "comment": "Brawler Spec-Ops",
+        "id": 9039,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Brawler / Rifle + LSG",
+            "unit_id": 9039,
+            "child_id": 1
+          }
+        ]
+      },
+      {
+        "comment": "Kaizoku Spec-Ops (Keisotsu)",
+        "id": 9059,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Keisotsu / Combi",
+            "unit_id": 9059,
+            "child_id": 1
+          }
+        ]
+      },
+      {
+        "comment": "Hatail Spec-Ops (Taagma)",
+        "id": 9073,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Taagma / Combi",
+            "unit_id": 9073,
+            "child_id": 1
+          }
+        ]
+      }
+    ],
+    "10999": [
+      {
+        "comment": "Kappa Spec-Ops",
+        "id": 10022,
+        "type": "LI",
+        "basemodels": [
+          {
+            "comment": "Kappa / Combi",
+            "unit_id": 10022,
+            "child_id": 1
+          }
+        ]
+      },
+    ],
+  },
+  "gear": {
+    "1999": {
+      "weapons": {
+        "AP CCW": 1,
+        "EXP CCW": 1,
+        "D-Charges": 1,
+        "Drop Bears": 1,
+        "Stun Pistol": 1,
+        "Nanopulser": 2,
+        "Light Shotgun": 3,
+        "Assault Pistol": 3,
+        "Panzerfaust": 3,
+        "E/Mitter": 4,
+        "Boarding Shotgun": 4,
+        "Breaker Combi Rifle": 4,
+        "Shock Marksman Rifle": 4,
+        "Jammer": 4,
+        "Submachine Gun": 4,
+        "MULTI Rifle": 5,
+        "Light Rocket Launcher": 5,
+        "Feuerbach": 5,
+        "Red Fury": 5,
+        "MULTI Sniper Rifle": 6,
+        "Spitfire": 6,
+        "HMG": 8
+      },
+      "skills": {
+        "Hyper-Dynamics L1": 2,
+        "Medevac Plus": 2,
+        "Minelayer (3 AP Mines)": 2,
+        "CUBEvac Plus": 3,
+        "Free Agent": 3,
+        "Doctor (MediKit)": 3,
+        "Climbing Plus": 3,
+        "Super-Jump": 3,
+        "Forward Deployment L1": 4,
+        "Engineer": 4,
+        "Veteran L1": 4,
+        "CH: Mimetism": 5,
+        "Marksmanship L1": 5,
+        "Chain of Command": 8,
+        "AD: Combat Jump": 8,
+        "Counterintelligence": 8,
+        "V: No Wound Incapacitation": 8,
+        "Sapper": 8
+      },
+      "equipment": {
+        "360° Visor": 2,
+        "Albedo": 3,
+        "Hacking Device": 3,
+        "Multispectral Visor L1": 4,
+        "ODD": 7
+      }
+    },
+    "2999": {
+      "weapons": {
+        "AP CCW": 1,
+        "EXP CCW": 1,
+        "Monofilament CCW": 1,
+        "D-Charges": 1,
+        "Stun Pistol": 1,
+        "Breaker Pistol": 1,
+        "Akrylat-Kanone": 2,
+        "Chain Rifle": 2,
+        "Nanopulser": 2,
+        "Blitzen": 3,
+        "Assault Pistol": 3,
+        "E/Mitter": 4,
+        "Boarding Shotgun": 4,
+        "Breaker Combi Rifle": 4,
+        "Shock Marksman Rifle": 4,
+        "Submachine Gun": 4,
+        "MULTI Rifle": 5,
+        "Light Rocket Launcher": 5,
+        "Red Fury": 5,
+        "MULTI Sniper Rifle": 6,
+        "Spitfire": 6,
+        "HMG": 8
+      },
+      "skills": {
+        "Dual Wield": 1,
+        "Martial Arts L4": 2,
+        "Bioimmunity": 2,
+        "Hyper-Dynamics L2": 2,
+        "Medevac Plus": 2,
+        "Minelayer (3 AP Mines)": 2,
+        "CUBEvac Plus": 3,
+        "Free Agent": 3,
+        "Doctor (MediKit)": 3,
+        "Climbing Plus": 3,
+        "Super-Jump": 3,
+        "Forward Deployment L1": 4,
+        "Engineer": 4,
+        "Veteran L1": 4,
+        "CH: Mimetism": 5,
+        "Chain of Command": 8,
+        "V: No Wound Incapacitation": 8,
+        "Sapper": 8
+      },
+      "equipment": {
+        "Cube": 1,
+        "360° Visor": 2,
+        "Hacking Device": 3,
+        "Holoprojector L1": 3,
+        "Multispectral Visor L1": 4
+      }
+    },
+    "3999": {
+      "weapons": {
+        "AP CCW": 1,
+        "D-Charges": 1,
+        "Chain-Colt": 1,
+        "Stun Pistol": 1,
+        "AP Heavy Pistol": 1,
+        "Chain Rifle": 2,
+        "Grenades": 2,
+        "Adhesive Launcher": 2,
+        "E/Mauler": 3,
+        "Akrylat-Kanone": 3,
+        "Panzerfaust": 3,
+        "Boarding Shotgun": 4,
+        "AP Marksman Rifle": 4,
+        "Submachine Gun": 4,
+        "AP Sniper Rifle": 5,
+        "T2 Rifle": 5,
+        "Light Rocket Launcher": 5,
+        "Mk12": 5,
+        "Molotok": 6,
+        "AP HMG": 9
+      },
+      "skills": {
+        "Scavenger": 1,
+        "Berserk": 2,
+        "Natural Born Warrior": 2,
+        "Medevac Plus": 2,
+        "Minelayer (3 AP Mines)": 2,
+        "CUBEvac Plus": 3,
+        "Free Agent": 3,
+        "Doctor (MediKit)": 3,
+        "Forward Deployment L2": 4,
+        "Engineer": 4,
+        "Marksmanship L1": 4,
+        "Super-Jump": 4,
+        "Veteran L1": 4,
+        "CH: Mimetism": 5,
+        "V: Dogged": 6,
+        "AD: Airborne Infiltration": 7,
+        "Chain of Command": 8,
+        "Sapper": 8
+      },
+      "equipment": {
+        "Cube": 1,
+        "360° Visor": 2,
+        "Defensive Hacking Device": 3,
+        "X Visor": 3,
+        "Multispectral Visor L1": 5
+      }
+    },
+    "4999": {
+      "weapons": {
+        "EXP CCW": 1,
+        "Viral CCW": 1,
+        "D-Charges": 1,
+        "Stun Pistol": 1,
+        "Grenades": 2,
+        "Nanopulser": 2,
+        "Viral Pistol": 2,
+        "Contender": 3,
+        "E/Marat": 3,
+        "Panzerfaust": 3,
+        "Boarding Shotgun": 4,
+        "Jammer": 4,
+        "Submachine Gun": 4,
+        "Breaker Rifle + Light Shotgun": 5,
+        "Viral Rifle": 5,
+        "Light Rocket Launcher": 5,
+        "Red Fury": 5,
+        "Viral Sniper Rifle": 6,
+        "Spitfire": 6,
+        "HMG": 8
+      },
+      "skills": {
+        "Martial Arts L3": 2,
+        "Hyper-Dynamics L1": 2,
+        "Medevac Plus": 2,
+        "Minelayer (3 AP Mines)": 2,
+        "CUBEvac Plus": 3,
+        "I-Kohl L1": 3,
+        "Super-Jump": 3,
+        "Free Agent": 3,
+        "Doctor Plus (MediKit)": 3,
+        "Forward Deployment L1": 4,
+        "Engineer": 4,
+        "Veteran L1": 4,
+        "CH: Mimetism": 5,
+        "Total Immunity": 7,
+        "Chain of Command": 8,
+        "Regeneration": 8,
+        "V: No Wound Incapacitation": 8,
+        "Sapper": 8
+      },
+      "equipment": {
+        "Cube": 1,
+        "Paramedic (Medjector)": 2,
+        "Assault Hacking Device": 3,
+        "Holoprojector L1": 3
+      }
+    },
+    "5999": {
+      "weapons": {
+        "AP CCW": 1,
+        "EXP CCW": 1,
+        "D-Charges": 1,
+        "Stun Pistol": 1,
+        "Akrylat-Kanone": 2,
+        "Chain-Colt": 2,
+        "Grenades": 2,
+        "Cybermines": 3,
+        "Panzerfaust": 3,
+        "Assault Pistol": 3,
+        "Heavy Flamethrower": 3,
+        "Boarding Shotgun": 4,
+        "Shock Marksman Rifle": 4,
+        "Submachine Gun": 4,
+        "MULTI Rifle": 5,
+        "Light Rocket Launcher": 5,
+        "Red Fury": 5,
+        "MULTI Sniper Rifle": 6,
+        "Spitfire": 6,
+        "HMG": 8
+      },
+      "skills": {
+        "Martial Arts L3": 2,
+        "Bioimmunity": 2,
+        "Hyper-Dynamics L1": 2,
+        "Medevac Plus": 2,
+        "Minelayer (3 AP Mines)": 2,
+        "Multiterrain": 2,
+        "CUBEvac Plus": 3,
+        "Free Agent": 3,
+        "Doctor (MediKit)": 3,
+        "Super-Jump": 3,
+        "Climbing Plus": 3,
+        "Forward Deployment L1": 4,
+        "Engineer": 4,
+        "Veteran L1": 4,
+        "CH: Mimetism": 5,
+        "MetaChemistry L1": 5,
+        "Chain of Command": 8,
+        "V: No Wound Incapacitation": 8
+      },
+      "equipment": {
+        "Repeater": 1,
+        "Hacking Device": 3,
+        "Multispectral Visor L1": 4,
+        "AutoMediKit": 6
+      }
+    },
+    "6999": {
+      "weapons": {
+        "EXP CCW": 1,
+        "D-Charges": 1,
+        "Stun Pistol": 1,
+        "AP Heavy Pistol": 1,
+        "Monofilament CCW": 2,
+        "Grenades": 2,
+        "Nanopulser": 2,
+        "Pulzar": 3,
+        "Plasma Carbine": 4,
+        "Boarding Shotgun": 4,
+        "Breaker Combi Rifle": 4,
+        "K1 Combi Rifle": 4,
+        "Shock Marksman Rifle": 4,
+        "Submachine Gun": 4,
+        "Vulkan Shotgun": 5,
+        "MULTI Rifle": 5,
+        "Light Rocket Launcher": 5,
+        "Mk12": 5,
+        "Red Fury": 5,
+        "K1 Sniper Rifle": 6,
+        "MULTI Sniper Rifle": 6,
+        "Plasma Rifle": 6,
+        "Spitfire": 6,
+        "HMG": 8
+      },
+      "skills": {
+        "Martial Arts L3": 2,
+        "Bioimmunity": 2,
+        "Hyper-Dynamics L1": 2,
+        "Medevac Plus": 2,
+        "Minelayer (3 AP Mines)": 2,
+        "CUBEvac Plus": 3,
+        "Free Agent": 3,
+        "Doctor (MediKit)": 3,
+        "Forward Deployment L1": 4,
+        "Engineer": 4,
+        "Super-Jump + Climbing Plus": 4,
+        "Veteran L1": 4,
+        "CH: Mimetism": 5,
+        "Morpho-Scan": 5,
+        "Total Immunity": 7,
+        "Chain of Command": 8,
+        "V: No Wound Incapacitation": 8,
+        "Sapper": 8
+      },
+      "equipment": {
+        "EI Hacking Device": 3,
+        "Holoprojector L1": 3,
+        "Multispectral Visor L1": 4,
+        "AutoMediKit": 6,
+        "Nanoscreen": 7
+      }
+    },
+    "7999": {
+      "weapons": {
+        "AP CCW": 1,
+        "EXP CCW": 1,
+        "D-Charges": 1,
+        "Breaker Pistol": 1,
+        "Stun Pistol": 1,
+        "Nanopulser": 2,
+        "Contender": 3,
+        "Assault Pistol": 3,
+        "Boarding Shotgun": 4,
+        "Breaker Combi Rifle": 4,
+        "Shock Marksman Rifle": 4,
+        "Submachine Gun": 4,
+        "Feuerbach": 5,
+        "MULTI Rifle": 5,
+        "Light Rocket Launcher": 5,
+        "Red Fury": 5,
+        "K1 Sniper Rifle": 5,
+        "MULTI Sniper Rifle": 6,
+        "Spitfire": 6,
+        "HMG": 8
+      },
+      "skills": {
+        "Bioimmunity": 2,
+        "Medevac Plus": 2,
+        "Minelayer (3 AP Mines)": 2,
+        "Hyperdynamics L2": 2,
+        "Free Agent": 3,
+        "Doctor (MediKit)": 3,
+        "Climbing Plus": 3,
+        "Super-Jump": 3,
+        "Forward Deployment L1": 3,
+        "Engineer": 4,
+        "Veteran L1": 4,
+        "CH: Mimetism": 5,
+        "Marksmanship L1": 5,
+        "Chain of Command": 8,
+        "AD: Combat Jump": 8,
+        "Counterintelligence": 8,
+        "V: No Wound Incapacitation": 8,
+        "Sapper": 8
+      },
+      "equipment": {
+        "Hacking Device": 3,
+        "Multispectral Visor L1": 4,
+        "AutoMediKit": 6,
+        "ODD": 7
+      }
+    },
+    "8999": {
+      "weapons": {
+        "Viral CCW": 1,
+        "D-Charges": 1,
+        "Stun Pistol": 1,
+        "Adhesive Launcher": 2,
+        "Nanopulser": 2,
+        "Viral Pistol": 2,
+        "Flammenspeer": 3,
+        "Pulzar": 3,
+        "Vulkan Shotgun": 4,
+        "Heavy Flamethrower": 4,
+        "Shock Marksman Rifle": 4,
+        "Submachine Gun": 4,
+        "Breaker Combi Rifle": 4,
+        "Viral Combi Rifle": 5,
+        "Sniper Rifle": 5,
+        "Light Rocket Launcher": 5,
+        "Red Fury": 5,
+        "Phero-Booster": 6,
+        "Spitfire": 6,
+        "HMG": 8
+      },
+      "skills": {
+        "Bioimmunity": 1,
+        "Hyper-Dynamics L1": 2,
+        "Medevac Plus": 2,
+        "Minelayer (3 AP Mines)": 2,
+        "CUBEvac Plus": 3,
+        "I-Kohl L1": 3,
+        "Free Agent": 3,
+        "Doctor (MediKit)": 3,
+        "Climbing Plus": 3,
+        "Super-Jump": 3,
+        "Forward Deployment L1": 4,
+        "Engineer": 4,
+        "Veteran L1": 4,
+        "CH: Mimetism": 5,
+        "Chain of Command": 8,
+        "Regeneration": 8,
+        "V: No Wound Incapacitation": 8,
+        "Sapper": 8
+      },
+      "equipment": {
+        "Stratuscloud": 2,
+        "Nullifier": 3,
+        "White Hacking Device": 3,
+        "Multispectral Visor L1": 4
+      }
+    },
+    "9999": {
+      "weapons": {
+        "EXP CCW": 1,
+        "D-Charges": 1,
+        "Stun Pistol": 1,
+        "Heavy Pistol (2)": 1,
+        "Akrylat-Kanone": 2,
+        "Chain-Colt": 2,
+        "Grenades": 2,
+        "Panzerfaust": 2,
+        "Heavy Flamethrower": 3,
+        "Assault Pistol": 3,
+        "Boarding Shotgun": 4,
+        "Shock Marksman Rifle": 4,
+        "Submachine Gun": 4,
+        "MULTI Rifle": 5,
+        "Light Rocket Launcher": 5,
+        "Red Fury": 5,
+        "MULTI Sniper Rifle": 6,
+        "Molotok": 6,
+        "Spitfire": 6,
+        "HMG": 8
+      },
+      "skills": {
+        "Scavenger": 1,
+        "Martial Arts L3": 2,
+        "Natural Born Warrior": 2,
+        "Medevac Plus": 2,
+        "Minelayer (3 AP Mines)": 2,
+        "Multiterrain": 2,
+        "CUBEvac Plus": 3,
+        "Free Agent": 3,
+        "Doctor (MediKit)": 3,
+        "Super-Jump": 3,
+        "Climbing Plus": 3,
+        "Forward Deployment L1": 4,
+        "Engineer": 4,
+        "Veteran L1": 4,
+        "CH: Mimetism": 5,
+        "MetaChemistry L1": 5,
+        "AD: Airborne Infiltration": 7,
+        "V: No Wound Incapacitation": 8
+      },
+      "equipment": {
+        "Deployable Repeater": 2,
+        "Hacking Device": 3,
+        "X Visor": 4,
+        "Multispectral Visor L1": 4
+      },
+    },
+    "10999": {
+      "weapons": {
+        "Akrylat-Kanone": 1,
+        "AP CCW": 1,
+        "EXP CCW": 1,
+        "D-Charges": 1,
+        "Breaker Pistol": 1,
+        "Stun Pistol": 1,
+        "Nanopulser": 2,
+        "Contender": 3,
+        "Assault Pistol": 3,
+        "Heavy Riotstopper": 3,
+        "Boarding Shotgun": 4,
+        "Breaker Combi Rifle": 4,
+        "Shock Marksman Rifle": 4,
+        "Submachine Gun": 4,
+        "MULTI Rifle": 5,
+        "Light Rocket Launcher": 5,
+        "Red Fury": 5,
+        "K1 Sniper Rifle": 6,
+        "Spitfire": 6,
+        "HMG": 8
+      },
+      "skills": {
+        "Bioimmunity": 2,
+        "Natural Born Warrior": 2,
+        "Medevac Plus": 2,
+        "Minelayer (3 AP Mines)": 2,
+        "Hyperdynamics L2": 2,
+        "Free Agent": 2,
+        "CUBEvac Plus": 3,
+        "Doctor (MediKit)": 3,
+        "Super-Jump": 3,
+        "Climbing Plus": 3,
+        "Forward Deployment L1": 3,
+        "Engineer": 4,
+        "Veteran L1": 4,
+        "CH: Mimetism": 5,
+        "Chain of Command": 8,
+        "AD: Combat Jump": 8,
+        "V: No Wound Incapacitation": 8,
+        "Sapper": 8
+      },
+      "equipment": {
+        "Hacking Device": 3,
+        "Holoprojector L1": 3,
+        "Multispectral Visor L1": 4,
+        "AutoMediKit": 6
+      }
+    }
+  }
+}

@@ -1,0 +1,201 @@
+[
+  {
+    "id": 10999,
+    "army": "O-12",
+    "name": "O-12",
+    "units": [
+      {
+        "comment": "Alpha Unit",
+        "id": 10001
+      },
+      {
+        "comment": "Authorized Bounty Hunters",
+        "id": 9033,
+        "ava": "1",
+        "skills": [
+          {
+            "name": "Fireteam: Duo",
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Cyberghosts, Quantronic Intervention Unit",
+        "id": 10002
+      },
+      {
+        "comment": "Cube Jäger, Mercenary Recoverers",
+        "id": 9030,
+        "ava": "1"
+      },
+      {
+        "comment": "Deva Functionaries",
+        "id": 7007,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "Lt+Devabot not in O-12",
+            "id": 2,
+            "hide": true
+          },
+          {
+            "comment": "Devabot not in O-12",
+            "id": 6,
+            "hide": true
+          },
+          {
+            "comment": "Lt not in O-12",
+            "id": 7,
+            "hide": true
+          },
+          {
+            "comment": "Lt+Sensor not in O-12",
+            "id": 8,
+            "hide": true
+          },
+          {
+            "comment": "Sensor+Haris not in O-12",
+            "id": 9,
+            "hide": true
+          },
+          {
+            "comment": "Observer not in O-12",
+            "id": 10,
+            "hide": true
+          },
+          {
+            "comment": "Assault Hacker not in O-12",
+            "id": 11,
+            "hide": true
+          },
+          {
+            "comment": "MULTI Rifle not in O-12",
+            "id": 12,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Kappa Unit",
+        "id": 10003
+      },
+      {
+        "comment": "Knauf",
+        "id": 9028
+      },
+      {
+        "comment": "Lynx Unit",
+        "id": 10004
+      },
+      {
+        "comment": "Miranda Ashcroft",
+        "id": 9019,
+        "ava": "1"
+      },
+      {
+        "comment": "Monstruckers",
+        "id": 9068
+      },
+      {
+        "comment": "Specialized Support Unit Lambda",
+        "id": 10005
+      },
+      {
+        "comment": "Team Sirius",
+        "id": 10006
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Armand 'Le Muet'",
+        "id": 9022,
+        "ava": "1"
+      },
+      {
+        "comment": "Cuervo Goldstein, Basilisk Level Delta",
+        "id": 10007
+      },
+      {
+        "comment": "Delta Unit",
+        "id": 10008
+      },
+      {
+        "comment": "Epsilon Unit",
+        "id": 10009
+      },
+      {
+        "comment": "Betatroopers, Remote Activity Unit Beta",
+        "id": 10010
+      },
+      {
+        "comment": "Gamma Unit",
+        "id": 10011
+      },
+      {
+        "comment": "Omega Unit",
+        "id": 10012
+      },
+      {
+        "comment": "Zeta Unit",
+        "id": 10013
+      },
+      {
+        "comment": "Dakini Tacbots",
+        "id": 7004,
+        "ava": "3"
+      },
+      {
+        "comment": "Fuzzbots",
+        "id": 10014
+      },
+      {
+        "comment": "Kyttä Copperbots",
+        "id": 10015
+      },
+      {
+        "comment": "Millicent Copperbots",
+        "id": 10016
+      },
+      {
+        "comment": "Oko Copperbots",
+        "id": 10017
+      },
+      {
+        "comment": "Peeler Copperbots",
+        "id": 10018
+      },
+      {
+        "comment": "Yudbots",
+        "id": 7019,
+        "ava": "4"
+      },
+      {
+        "comment": "Gangbusters, Special Crime Squad",
+        "id": 10019
+      },
+      {
+        "comment": "Razor Unit",
+        "id": 10020
+      },
+      {
+        "comment": "Hippolyta, Amazon Officer",
+        "id": 7058
+      },
+      {
+        "comment": "Varangian Guard",
+        "id": 10021
+      },
+      {
+        "comment": "Kappa Spec-Ops",
+        "id": 10022
+      },
+      {
+        "comment": "Wild Bill, Legendary Gunslinger",
+        "id": 9074
+      }
+    ]
+  }
+]

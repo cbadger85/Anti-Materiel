@@ -1,0 +1,229 @@
+[
+  {
+    "id": 5997,
+    "army": "Nomads",
+    "army_id": 5999,
+    "name": "Bakunin Jurisdictional Command",
+    "abbr": "Bakunin",
+    "units": [
+      {
+        "comment": "Moderators from Bakunin",
+        "id": 5028,
+        "ava": "T",
+        "childs": [
+          {
+            "comment": "Lieutenant - SWC cost is only 0 in Bakunin",
+            "id": 2,
+            "swc": "0"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          }
+        ]
+      },
+      {
+        "comment": "Reverend Moiras",
+        "id": 5006,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Kusanagi or 1 Reverend Healer + up to 4 Reverend Moiras, OR Kusanagi + 1 Reverend Healer + up to 3 Reverend Moiras"
+          }
+        ]
+      },
+      {
+        "comment": "Reverend Custodiers",
+        "id": 5031,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "Kusanagi or 1 Reverend Healer + up to 2 Reverend Custodiers, OR Kusanagi + 1 Reverend Healer + 1 Reverend Custodier"
+          }
+        ]
+      },
+      {
+        "comment": "Reverend Healers",
+        "id": 5007,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Kusanagi or 1 Reverend Healer + up to 4 Reverend Moiras, OR Kusanagi + 1 Reverend Healer + up to 3 Reverend Moiras"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "Kusanagi or 1 Reverend Healer + up to 2 Reverend Custodiers, OR Kusanagi + 1 Reverend Healer + 1 Reverend Custodier"
+          }
+        ]
+      },
+      {
+        "comment": "Sin-Eater Observants",
+        "id": 5033,
+        "ava": "3"
+      },
+      {
+        "comment": "Riot Grrls",
+        "id": 5041,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          }
+        ]
+      },
+      {
+        "comment": "Taskmasters",
+        "id": 5046,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Prowlers",
+        "id": 5030,
+        "ava": "3"
+      },
+      {
+        "comment": "Lizard",
+        "id": 5009,
+        "ava": "1"
+      },
+      {
+        "comment": "Zeros",
+        "id": 5011,
+        "ava": "3"
+      },
+      {
+        "comment": "Die Morlock Gruppe",
+        "id": 5014,
+        "ava": "T"
+      },
+      {
+        "comment": "Bakunin Überfallkommando: Chimera",
+        "id": 5037,
+        "ava": "3"
+      },
+      {
+        "comment": "Bakunin Überfallkommando: Pupniks",
+        "id": 5038,
+        "ava": "9"
+      },
+      {
+        "comment": "Bran do Castro, Triple Zero",
+        "id": 5025,
+        "ava": "1"
+      },
+      {
+        "comment": "Reverend Superior CASSANDRA KUSANAGI",
+        "id": 5039,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Kusanagi or 1 Reverend Healer + up to 4 Reverend Moiras, OR Kusanagi + 1 Reverend Healer + up to 3 Reverend Moiras"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "Kusanagi or 1 Reverend Healer + up to 2 Reverend Custodiers, OR Kusanagi + 1 Reverend Healer + 1 Reverend Custodier"
+          }
+        ]
+      },
+      {
+        "comment": "Zoe",
+        "id": 5024,
+        "ava": "1"
+      },
+      {
+        "comment": "Tsyklon Sputniks",
+        "id": 5027,
+        "ava": "2"
+      },
+      {
+        "comment": "Lunokhod Sputniks",
+        "id": 5035,
+        "ava": "2"
+      },
+      {
+        "comment": "Stempler Zond",
+        "id": 5019,
+        "ava": "2"
+      },
+      {
+        "comment": "Reaktion Zond",
+        "id": 5020,
+        "ava": "1"
+      },
+      {
+        "comment": "Vertigo Zond",
+        "id": 5021,
+        "ava": "1"
+      },
+      {
+        "comment": "Meteor Zond",
+        "id": 5022,
+        "ava": "1"
+      },
+      {
+        "comment": "Transductor Zond",
+        "id": 5023,
+        "ava": "2"
+      },
+      {
+        "comment": "Zondbots",
+        "id": 5036,
+        "ava": "4"
+      },
+      {
+        "comment": "Salyut Zonds",
+        "id": 5032,
+        "ava": "2"
+      },
+      {
+        "comment": "Clockmakers",
+        "id": 5017,
+        "ava": "2"
+      },
+      {
+        "comment": "Daktaris",
+        "id": 5016,
+        "ava": "1"
+      },
+      {
+        "comment": "Vortex Spec-Ops (Moderator)",
+        "id": 5058,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          }
+        ]
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Avicenna",
+        "id": 9009,
+        "ava": "1"
+      }
+    ]
+  }
+]

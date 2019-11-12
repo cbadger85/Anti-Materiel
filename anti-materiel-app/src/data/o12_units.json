@@ -1,0 +1,1925 @@
+[
+  {
+    "id": 10001,
+    "army": "O-12",
+    "isc": "Alpha Unit",
+    "name": "Alpha",
+    "type": "LI",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "21",
+    "bs": "11",
+    "ph": "12",
+    "wip": "14",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "4",
+    "ava": "2",
+    "spec": [
+      "Biometric Visor L2",
+      "Peacekeeper",
+      "Counterintelligence",
+      "Guard L4"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Chain of Command",
+        "cost": "29",
+        "swc": "0",
+        "spec": [
+          "Chain of Command"
+        ],
+        "bsw": [
+          "Light Shotgun (2)",
+          "Nanopulser (2)"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Lieutenant",
+        "cost": "26",
+        "swc": "0",
+        "spec": [
+          "Lieutenant",
+          "Strategos L2"
+        ],
+        "bsw": [
+          "Light Shotgun (2)",
+          "Nanopulser (2)"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10002,
+    "army": "O-12",
+    "isc": "Cyberghosts, Quantronic Intervention Unit",
+    "name": "Cyberghost",
+    "type": "LI",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "11",
+    "ph": "10",
+    "wip": "14",
+    "arm": "1",
+    "bts": "6",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Peacekeeper",
+      "Stealth"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Hacker Plus",
+        "cost": "26",
+        "swc": "0.5",
+        "spec": [
+          "Hacking Device Plus"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Pitcher"
+        ],
+        "ccw": [
+          "Breaker Pistol",
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Killer Hacker",
+        "cost": "21",
+        "swc": "0",
+        "spec": [
+          "Killer Hacking Device"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Pitcher"
+        ],
+        "ccw": [
+          "Breaker Pistol",
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10003,
+    "army": "O-12",
+    "isc": "Kappa Unit",
+    "name": "Kappa",
+    "type": "LI",
+    "classification": "Line",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "12",
+    "ph": "10",
+    "wip": "13",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "T",
+    "spec": [
+      "Peacekeeper",
+      "Shock Immunity"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "12",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "HMG",
+        "cost": "20",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Sniper",
+        "cost": "20",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "MULTI Sniper Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Missile Launcher",
+        "cost": "17",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Missile Launcher"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Hacker",
+        "cost": "15",
+        "swc": "0.5",
+        "spec": [
+          "Hacking Device"
+        ],
+        "bsw": [
+          "Submachine Gun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Observer",
+        "cost": "14",
+        "swc": "0",
+        "spec": [
+          "Forward Observer",
+          "Deployable Repeater"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Paramedic",
+        "cost": "14",
+        "swc": "0",
+        "spec": [
+          "Paramedic",
+          "MediKit"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Lieutenant",
+        "cost": "12",
+        "swc": "1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10004,
+    "army": "O-12",
+    "isc": "Lynx Unit",
+    "name": "Lynx",
+    "type": "LI",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "14",
+    "bs": "13",
+    "ph": "10",
+    "wip": "14",
+    "arm": "1",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Peacekeeper",
+      "CH: TO Camouflage",
+      "V: Courage"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Sniper",
+        "cost": "34",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "MULTI Sniper Rifle",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Marksman",
+        "cost": "29",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Shock Marksman Rifle",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Killer Hacker",
+        "cost": "28",
+        "swc": "0",
+        "spec": [
+          "Killer Hacking Device"
+        ],
+        "bsw": [
+          "Breaker Combi Rifle",
+          "Cybermines"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Specialist",
+        "cost": "30",
+        "swc": "0",
+        "spec": [
+          "Specialist Operative"
+        ],
+        "bsw": [
+          "Plasma Carbine",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Assault Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10005,
+    "army": "O-12",
+    "isc": "Specialized Support Unit Lambda",
+    "name": "Lambda",
+    "type": "LI",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "11",
+    "ph": "10",
+    "wip": "14",
+    "arm": "1",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Peacekeeper"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Engineer",
+        "cost": "16",
+        "swc": "0",
+        "spec": [
+          "Engineer"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Doctor",
+        "cost": "16",
+        "swc": "0",
+        "spec": [
+          "Doctor",
+          "MediKit"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10006,
+    "army": "O-12",
+    "isc": "Team Sirius",
+    "name": "Sirius",
+    "ava": "2",
+    "spec": [],
+    "profiles": [
+      {
+        "id": 1,
+        "type": "LI",
+        "classification": "Specially Trained",
+        "imp": "",
+        "irr": "",
+        "cube": "X",
+        "mov": "4-4",
+        "cc": "13",
+        "bs": "12",
+        "ph": "10",
+        "wip": "13",
+        "arm": "2",
+        "bts": "0",
+        "w": "1",
+        "s": "2",
+        "spec": [
+          "Peacekeeper",
+          "CH: Mimetism",
+          "Forward Deployment L2"
+        ],
+        "bsw": [],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Siriusbot",
+        "type": "REM",
+        "imp": "",
+        "irr": "",
+        "cube": "",
+        "hackable": "X",
+        "mov": "6-4",
+        "cc": "8",
+        "bs": "8",
+        "ph": "10",
+        "wip": "13",
+        "arm": "0",
+        "bts": "3",
+        "w": "1",
+        "s": "3",
+        "spec": [
+          "Repeater",
+          "G: Synchronized",
+          "CH: Mimetism",
+          "Forward Deployment L2"
+        ],
+        "bsw": [
+          "Heavy Riotstopper"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ],
+        "independent": {
+          "cost": "5",
+          "swc": "0"
+        }
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Boarding Shotgun",
+        "cost": "23",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Red Fury",
+        "cost": "29",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Red Fury"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Assault Hacker",
+        "cost": "25",
+        "swc": "0.5",
+        "spec": [
+          "Assault Hacking Device"
+        ],
+        "bsw": [
+          "Submachine Gun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Observer",
+        "cost": "24",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Boarding Shotgun",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10007,
+    "army": "O-12",
+    "isc": "Cuervo Goldstein, Basilisk Level Delta",
+    "name": "Cuervo Goldstein",
+    "type": "MI",
+    "classification": "Character",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "23",
+    "bs": "13",
+    "ph": "13",
+    "wip": "13",
+    "arm": "3",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Peacekeeper",
+      "Martial Arts L4",
+      "AD: Combat Jump",
+      "Shock Immuity",
+      "V: No Wound Incapacitation"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Boarding Shotgun",
+        "cost": "42",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Pistol",
+          "Monofilament CCW",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "SMG",
+        "cost": "39",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Submachine Gun",
+          "Akrylat-Kanone",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Pistol",
+          "Monofilament CCW",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10008,
+    "army": "O-12",
+    "isc": "Delta Unit",
+    "name": "Delta",
+    "ava": "4",
+    "spec": [],
+    "profiles": [
+      {
+        "id": 1,
+        "type": "MI",
+        "classification": "Veteran",
+        "imp": "",
+        "irr": "",
+        "cube": "X",
+        "mov": "4-2",
+        "cc": "13",
+        "bs": "12",
+        "ph": "12",
+        "wip": "13",
+        "arm": "3",
+        "bts": "0",
+        "w": "1",
+        "s": "2",
+        "spec": [
+          "Peacekeeper",
+          "AD: Combat Jump",
+          "Multiterrain"
+        ],
+        "bsw": [],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "isc": "Yudbot-B",
+        "name": "Yudbot",
+        "optionSpecific": "X",
+        "type": "REM",
+        "imp": "",
+        "irr": "",
+        "cube": "",
+        "hackable": "X",
+        "mov": "6-4",
+        "cc": "8",
+        "bs": "8",
+        "ph": "10",
+        "wip": "13",
+        "arm": "0",
+        "bts": "3",
+        "w": "1",
+        "s": "1",
+        "spec": [
+          "G: Servant",
+          "CH: Mimetism",
+          "AD: Combat Jump",
+          "Multiterrain"
+        ],
+        "bsw": [],
+        "ccw": [
+          "Electric Pulse"
+        ],
+        "independent": {
+          "cost": "5",
+          "swc": "0"
+        }
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Boarding Shotgun",
+        "cost": "23",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun",
+          "Panzerfaust"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Spitfire",
+        "cost": "28",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Spitfire"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Killer Hacker",
+        "cost": "25",
+        "swc": "0",
+        "spec": [
+          "Killer Hacking Device"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Light Riotstopper",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Doctor",
+        "cost": "25",
+        "swc": "0",
+        "spec": [
+          "Doctor",
+          "MediKit"
+        ],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Doctor + Yudbot",
+        "cost": "30",
+        "swc": "0",
+        "profile": 2,
+        "spec": [
+          "Doctor",
+          "MediKit"
+        ],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Observer",
+        "cost": "23",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Light Riotstopper",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10009,
+    "army": "O-12",
+    "isc": "Epsilon Unit",
+    "name": "Epsilon",
+    "type": "MI",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-2",
+    "cc": "15",
+    "bs": "13",
+    "ph": "11",
+    "wip": "13",
+    "arm": "2",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Multispectral Visor L2",
+      "Peacekeeper",
+      "Bioimmunity",
+      "CH: Mimetism"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "HMG",
+        "cost": "30",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "HMG",
+          "Nanopulser"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Sniper",
+        "cost": "30",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "MULTI Sniper Rifle",
+          "Nanopulser"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Marksman",
+        "cost": "26",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Shock Marksman Rifle",
+          "Nanopulser"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10010,
+    "army": "O-12",
+    "isc": "Betatroopers, Remote Activity Unit Beta",
+    "name": "Betatrooper",
+    "type": "HI",
+    "classification": "Veteran",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "hackable": "X",
+    "mov": "6-2",
+    "cc": "15",
+    "bs": "13",
+    "ph": "12",
+    "wip": "13",
+    "arm": "3",
+    "bts": "3",
+    "w": "2",
+    "wtype": "str",
+    "s": "2",
+    "ava": "3",
+    "spec": [
+      "G: Remote Presence",
+      "Peacekeeper",
+      "CH: Mimetism",
+      "Hyper-Dynamics L1",
+      "Climbing Plus"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "MULTI Rifle Deflector",
+        "cost": "40",
+        "swc": "0",
+        "spec": [
+          "TinBot A (Deflector L1)"
+        ],
+        "bsw": [
+          "MULTI Rifle",
+          "Nanopulser (2)"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Spitfire",
+        "cost": "41",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "Spitfire",
+          "Nanopulser (2)"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Spitfire Deflector",
+        "cost": "42",
+        "swc": "2",
+        "spec": [
+          "TinBot A (Deflector L1)"
+        ],
+        "bsw": [
+          "Spitfire",
+          "Nanopulser (2)"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Killer Hacker",
+        "cost": "32",
+        "swc": "0",
+        "spec": [
+          "Killer Hacking Device"
+        ],
+        "bsw": [
+          "Submachine Gun",
+          "Nanopulser (2)"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Doctor",
+        "cost": "37",
+        "swc": "0",
+        "spec": [
+          "Doctor",
+          "MediKit"
+        ],
+        "bsw": [
+          "Boarding Shotgun",
+          "Nanopulser (2)"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Specialist",
+        "cost": "39",
+        "swc": "0",
+        "spec": [
+          "Specialist Operative"
+        ],
+        "bsw": [
+          "MULTI Rifle",
+          "Nanopulser (2)",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10011,
+    "army": "O-12",
+    "isc": "Gamma Unit",
+    "name": "Gamma",
+    "type": "HI",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "hackable": "X",
+    "mov": "4-4",
+    "cc": "15",
+    "bs": "14",
+    "ph": "14",
+    "wip": "13",
+    "arm": "6",
+    "bts": "6",
+    "w": "2",
+    "s": "5",
+    "ava": "2",
+    "spec": [
+      "Peacekeeper",
+      "Full Auto L1",
+      "V: No Wound Incapacitation"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "HMG",
+        "cost": "57",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Heavy Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Feuerbach",
+        "cost": "58",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Feuerbach"
+        ],
+        "ccw": [
+          "Heavy Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "HMG Lieutenant",
+        "cost": "57",
+        "swc": "2",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Heavy Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Feuerbach Lieutenant",
+        "cost": "58",
+        "swc": "1.5",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Feuerbach"
+        ],
+        "ccw": [
+          "Heavy Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10012,
+    "army": "O-12",
+    "isc": "Omega Unit",
+    "name": "Omega",
+    "type": "HI",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "hackable": "X",
+    "mov": "4-4",
+    "cc": "15",
+    "bs": "14",
+    "ph": "13",
+    "wip": "14",
+    "arm": "4",
+    "bts": "3",
+    "w": "2",
+    "s": "3",
+    "ava": "3",
+    "spec": [
+      "ODD: Optical Disruptor",
+      "Peacekeeper"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "MULTI Rifle",
+        "cost": "45",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "MULTI Rifle",
+          "Heavy Riotstopper"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "MULTI Rifle Deflector",
+        "cost": "47",
+        "swc": "0",
+        "spec": [
+          "TinBot A (Deflector L1)"
+        ],
+        "bsw": [
+          "MULTI Rifle",
+          "Heavy Riotstopper"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "HMG",
+        "cost": "48",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Observer",
+        "cost": "46",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "MULTI Rifle",
+          "Heavy Riotstopper"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "MULTI Rifle Lieutenant",
+        "cost": "45",
+        "swc": "0",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "MULTI Rifle",
+          "Heavy Riotstopper"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "MULTI Rifle Deflector Lieutenant",
+        "cost": "47",
+        "swc": "0",
+        "spec": [
+          "Lieutenant",
+          "TinBot A (Deflector L1)"
+        ],
+        "bsw": [
+          "MULTI Rifle",
+          "Heavy Riotstopper"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10013,
+    "army": "O-12",
+    "isc": "Zeta Unit",
+    "name": "Zeta",
+    "ava": "1",
+    "spec": [],
+    "profiles": [
+      {
+        "id": 1,
+        "type": "TAG",
+        "classification": "Mechanized",
+        "imp": "",
+        "irr": "",
+        "hackable": "X",
+        "mov": "6-4",
+        "cc": "17",
+        "bs": "14",
+        "ph": "16",
+        "wip": "13",
+        "arm": "8",
+        "bts": "6",
+        "w": "3",
+        "s": "7",
+        "spec": [
+          "ECM",
+          "G: Remote Presence",
+          "Peacekeeper",
+          "Climbing Plus",
+          "Fatality L1",
+          "Tactical Awareness"
+        ],
+        "bsw": [],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Zetabot",
+        "type": "REM",
+        "imp": "",
+        "irr": "",
+        "hackable": "X",
+        "mov": "4-4",
+        "cc": "12",
+        "bs": "10",
+        "ph": "10",
+        "wip": "10",
+        "arm": "0",
+        "bts": "0",
+        "w": "1",
+        "s": "1",
+        "ava": " ",
+        "spec": [
+          "G: Remote Presence",
+          "Peacekeeper",
+          "Specialist Operative",
+          "Remote Pilot"
+        ],
+        "bsw": [
+          "Flash Pulse"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "HMC",
+        "cost": "93",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "HMC",
+          "Heavy Riotstopper"
+        ],
+        "ccw": [
+          "AP CCW"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "HMC Lieutenant",
+        "cost": "93",
+        "swc": "3",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "HMC",
+          "Heavy Riotstopper"
+        ],
+        "ccw": [
+          "AP CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10014,
+    "army": "O-12",
+    "isc": "Fuzzbots",
+    "name": "Fuzzbot",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "hackable": "X",
+    "mov": "4-4",
+    "cc": "8",
+    "bs": "11",
+    "ph": "10",
+    "wip": "13",
+    "arm": "2",
+    "bts": "3",
+    "w": "1",
+    "s": "4",
+    "ava": "2",
+    "spec": [
+      "Baggage",
+      "G: Remote Presence",
+      "Peacekeeper"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Minesweeper",
+        "cost": "8",
+        "swc": "0",
+        "spec": [
+          "Minesweeper",
+          "Repeater"
+        ],
+        "bsw": [],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Combi",
+        "cost": "21",
+        "swc": "0",
+        "spec": [
+          "Total Reaction",
+          "Repeater"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "EVO",
+        "cost": "25",
+        "swc": "0.5",
+        "spec": [
+          "EVO Hacking Device"
+        ],
+        "bsw": [],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10015,
+    "army": "O-12",
+    "isc": "Kyttä Copperbots",
+    "name": "Kyttä",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "hackable": "X",
+    "mov": "6-6",
+    "cc": "8",
+    "bs": "8",
+    "ph": "11",
+    "wip": "13",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "s": "3",
+    "ava": "2",
+    "spec": [
+      "Repeater",
+      "G: Remote Presence",
+      "Peacekeeper",
+      "CH: Mimetism",
+      "Multiterrain",
+      "Sniffer"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Repeater",
+        "cost": "8",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Flash Pulse"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10016,
+    "army": "O-12",
+    "isc": "Millicent Copperbots",
+    "name": "Millicent",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "hackable": "X",
+    "mov": "6-4",
+    "cc": "8",
+    "bs": "12",
+    "ph": "10",
+    "wip": "13",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "s": "3",
+    "ava": "2",
+    "spec": [
+      "G: Remote Presence",
+      "Peacekeeper"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Missile Launcher",
+        "cost": "17",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Missile Launcher"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Smart Missile Launcher",
+        "cost": "18",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Smart Missile Launcher"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10017,
+    "army": "O-12",
+    "isc": "Oko Copperbots",
+    "name": "Oko",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "hackable": "X",
+    "mov": "6-4",
+    "cc": "8",
+    "bs": "11",
+    "ph": "10",
+    "wip": "13",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "s": "3",
+    "ava": "2",
+    "spec": [
+      "Deactivator",
+      "Repeater",
+      "G: Remote Presence",
+      "Peacekeeper",
+      "Forward Observer",
+      "Sat-Lock",
+      "Sensor",
+      "Climbing Plus",
+      "Sniffer"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "17",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10018,
+    "army": "O-12",
+    "isc": "Peeler Copperbots",
+    "name": "Peeler",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "hackable": "X",
+    "mov": "6-4",
+    "cc": "8",
+    "bs": "11",
+    "ph": "10",
+    "wip": "13",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "s": "3",
+    "ava": "2",
+    "spec": [
+      "360° Visor",
+      "G: Remote Presence",
+      "Peacekeeper",
+      "Total Reaction",
+      "Climbing Plus"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "HMG",
+        "cost": "26",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10019,
+    "army": "O-12",
+    "isc": "Gangbusters, Special Crime Squad",
+    "name": "Gangbusters",
+    "ava": "2",
+    "spec": [],
+    "profiles": [
+      {
+        "id": 1,
+        "type": "SK",
+        "classification": "Specially Trained",
+        "imp": "",
+        "irr": "",
+        "cube": "X",
+        "mov": "4-4",
+        "cc": "14",
+        "bs": "12",
+        "ph": "10",
+        "wip": "13",
+        "arm": "1",
+        "bts": "3",
+        "w": "1",
+        "s": "2",
+        "spec": [
+          "Multispectral Visor L1",
+          "Peacekeeper",
+          "CH: Mimetism",
+          "Infiltration"
+        ],
+        "bsw": [],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "MadTrap",
+        "optionSpecific": "X",
+        "type": " ",
+        "classification": "",
+        "hackable": "",
+        "mov": "6-4 ",
+        "cc": " ",
+        "bs": " ",
+        "ph": " ",
+        "wip": " ",
+        "arm": "0",
+        "bts": "0",
+        "w": "1 ",
+        "s": "1",
+        "ava": " ",
+        "spec": [
+          "Perimeter"
+        ],
+        "bsw": [],
+        "ccw": []
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "23",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Light Riotstopper",
+          "MadTraps"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Boarding Shotgun",
+        "cost": "21",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Killer Hacker MadTraps",
+        "cost": "21",
+        "swc": "0",
+        "spec": [
+          "Killer Hacking Device"
+        ],
+        "bsw": [
+          "Submachine Gun",
+          "MadTraps"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10020,
+    "army": "O-12",
+    "isc": "Razor Unit",
+    "name": "Razor",
+    "type": "SK",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "12",
+    "ph": "12",
+    "wip": "13",
+    "arm": "1",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Peacekeeper",
+      "CH: TO Camouflage",
+      "Infiltration",
+      "Multiterrain"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "31",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "D-Charges",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Boarding Shotgun",
+        "cost": "30",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Assault Hacker",
+        "cost": "37",
+        "swc": "0.5",
+        "spec": [
+          "Assault Hacking Device"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "D-Charges",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Minelayer",
+        "cost": "31",
+        "swc": "0.5",
+        "spec": [
+          "Minelayer"
+        ],
+        "bsw": [
+          "Boarding Shotgun",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Observer",
+        "cost": "31",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Boarding Shotgun",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10021,
+    "army": "O-12",
+    "isc": "Varangian Guard",
+    "name": "Varangian",
+    "type": "WB",
+    "classification": "Support",
+    "imp": "I",
+    "irr": "",
+    "cube": "",
+    "mov": "4-4",
+    "cc": "22",
+    "bs": "10",
+    "ph": "14",
+    "wip": "13",
+    "arm": "2",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "4",
+    "spec": [
+      "Berserk",
+      "Religious Troop",
+      "V: Dogged"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Chain Rifle / Light Shotgun",
+        "cost": "12",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Light Shotgun",
+          "Chain Rifle",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Boarding Shotgun",
+        "cost": "16",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Chain Rifle / SMG",
+        "cost": "12",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Submachine Gun",
+          "Chain Rifle",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Chain Colts / SMG",
+        "cost": "13",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Submachine Gun",
+          "Chain-Colt (2)",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10022,
+    "army": "O-12",
+    "isc": "Kappa Spec-Ops",
+    "name": "Kappa",
+    "type": "SPEC-OPS",
+    "classification": "Line",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "12",
+    "ph": "10",
+    "wip": "13",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "sharedAva": 10003,
+    "spec": [
+      "Peacekeeper",
+      "Shock Immunity"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "13",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  }
+]

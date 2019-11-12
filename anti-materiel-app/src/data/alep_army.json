@@ -1,0 +1,394 @@
+[
+  {
+    "id": 7999,
+    "army": "Aleph",
+    "name": "Aleph",
+    "units": [
+      {
+        "comment": "Achilles",
+        "id": 7001
+      },
+      {
+        "comment": "Achilles v2 (Hoplite Armor)",
+        "id": 7002,
+        "notes": [
+          {
+            "title": "Fireteam: Duo",
+            "note": "Requires TeamPro"
+          }
+        ]
+      },
+      {
+        "comment": "Asuras",
+        "id": 7003,
+        "childs": [
+          {
+            "comment": "Duo only in OSS",
+            "id": 7,
+            "hide": true
+          },
+          {
+            "comment": "Haris only in OSS",
+            "id": 8,
+            "hide": true
+          },
+          {
+            "comment": "Lt2 only in OSS",
+            "id": 9,
+            "hide": true
+          },
+          {
+            "comment": "Lt2 only in OSS",
+            "id": 10,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Dakini Tacbots",
+        "id": 7004
+      },
+      {
+        "comment": "Daleth Rebots",
+        "id": 7005
+      },
+      {
+        "comment": "Dasyus",
+        "id": 7006
+      },
+      {
+        "comment": "Deva Functionaries",
+        "id": 7007,
+        "childs": [
+          {
+            "comment": "Haris only in OSS",
+            "id": 9,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Garuda Tacbots",
+        "id": 7008
+      },
+      {
+        "comment": "Lamedh Rebots",
+        "id": 7009
+      },
+      {
+        "comment": "Maruts",
+        "id": 7010
+      },
+      {
+        "comment": "Myrmidon Officer",
+        "id": 7011
+      },
+      {
+        "comment": "Myrmidons",
+        "id": 7012
+      },
+      {
+        "comment": "Nagas",
+        "id": 7013
+      },
+      {
+        "comment": "Netrods",
+        "id": 7014
+      },
+      {
+        "comment": "Patroclus",
+        "id": 7015,
+        "notes": [
+          {
+            "title": "Fireteam: Duo",
+            "note": "Requires TeamPro"
+          }
+        ]
+      },
+      {
+        "comment": "Probots",
+        "id": 7016
+      },
+      {
+        "comment": "Samekh Rebots",
+        "id": 7017,
+        "childs": [
+          {
+            "comment": "FTO only in OSS",
+            "id": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Sophotects",
+        "id": 7018
+      },
+      {
+        "comment": "Yudbots",
+        "id": 7019
+      },
+      {
+        "comment": "Zayin Rebots",
+        "id": 7020
+      },
+      {
+        "comment": "Posthumans Proxy Mk.1",
+        "id": 7021
+      },
+      {
+        "comment": "Posthumans Proxy Mk.2",
+        "id": 7022
+      },
+      {
+        "comment": "Posthumans Proxy Mk.3",
+        "id": 7023
+      },
+      {
+        "comment": "Ekdromoi",
+        "id": 7024
+      },
+      {
+        "comment": "Chandra Spec-Ops (Thorakitai)",
+        "id": 7056
+      },
+      {
+        "comment": "Chandra Spec-Ops (Deva)",
+        "id": 7057
+      },
+      {
+        "comment": "Chandra Sergeant Thrasymedes",
+        "id": 7026
+      },
+      {
+        "comment": "Thorakitai",
+        "id": 7027
+      },
+      {
+        "comment": "Agema Marksman",
+        "id": 7028
+      },
+      {
+        "comment": "Eudoros",
+        "id": 7029
+      },
+      {
+        "comment": "Nesaie Alke",
+        "id": 7030
+      },
+      {
+        "comment": "Atalanta",
+        "id": 7031
+      },
+      {
+        "comment": "Diomedes",
+        "id": 7032
+      },
+      {
+        "comment": "Machaon",
+        "id": 7033
+      },
+      {
+        "comment": "Phoenix",
+        "id": 7034
+      },
+      {
+        "comment": "Ajax",
+        "id": 7035
+      },
+      {
+        "comment": "Penthesilea",
+        "id": 7036
+      },
+      {
+        "comment": "Thamyris",
+        "id": 7037
+      },
+      {
+        "comment": "Dactyls",
+        "id": 7038
+      },
+      {
+        "comment": "Teucer",
+        "id": 7039
+      },
+      {
+        "comment": "Drakios",
+        "id": 7040
+      },
+      {
+        "comment": "Scylla",
+        "id": 7041
+      },
+      {
+        "comment": "Acmon, Sergeant of Dactyls",
+        "id": 7042,
+        "skills": [
+          {
+            "name": "Fireteam: Duo",
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Hector, Homeridae's Champion",
+        "id": 7043
+      },
+      {
+        "comment": "Posthumans Proxy Mk.4",
+        "id": 7044
+      },
+      {
+        "comment": "Posthumans Proxy Mk.5",
+        "id": 7045
+      },
+      {
+        "comment": "Andromeda, Sophistes of the Steel Phalanx",
+        "id": 7046,
+        "childs": [
+          {
+            "comment": "Superior Infiltration only in OSS",
+            "id": 5,
+            "hide": true
+          },
+          {
+            "comment": "Superior Infiltration only in OSS",
+            "id": 6,
+            "hide": true
+          },
+          {
+            "comment": "Superior Infiltration only in OSS",
+            "id": 7,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Danavas Hackers",
+        "id": 7047
+      },
+      {
+        "comment": "Dart",
+        "id": 7048
+      },
+      {
+        "comment": "Shukra",
+        "id": 7049,
+        "childs": [
+          {
+            "comment": "Lieutenant only in OSS",
+            "id": 3,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Yadu",
+        "id": 7050,
+        "childs": [
+          {
+            "comment": "Haris only in OSS",
+            "id": 4,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Duo",
+            "note": "Requires TeamPro"
+          }
+        ]
+      },
+      {
+        "comment": "Apsaras",
+        "id": 7051
+      },
+      {
+        "comment": "Arjuna Troops",
+        "id": 7052
+      },
+      {
+        "comment": "Kiranbots",
+        "id": 7053
+      },
+      {
+        "comment": "Yadu Officer Shakti",
+        "id": 7054,
+        "skills": [
+          {
+            "name": "Fireteam: Duo",
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Rudras GunBots",
+        "id": 7055
+      },
+      {
+        "comment": "Hippolyta, Amazon Officer",
+        "id": 7058
+      },
+      {
+        "comment": "Authorized Bounty Hunters",
+        "id": 9018,
+        "ava": "1"
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Miranda Ashcroft",
+        "id": 9019,
+        "ava": "1"
+      },
+      {
+        "comment": "Armand 'Le Muet'",
+        "id": 9022,
+        "ava": "1"
+      },
+      {
+        "comment": "Krakot Renegades, Morat Fugitives",
+        "id": 9023
+      },
+      {
+        "comment": "Knauf",
+        "id": 9028
+      },
+      {
+        "comment": "Cube Jäger, Mercenary Recoverers",
+        "id": 9030
+      },
+      {
+        "comment": "Aïda Swanson, Submondo Smuggler",
+        "id": 9065
+      },
+      {
+        "comment": "Libertos Freedom Fighters",
+        "id": 9067,
+        "childs": [
+          {
+            "comment": "Mimetism only in Dahshat",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Mimetism only in Dahshat",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Monstruckers",
+        "id": 9068
+      },
+      {
+        "comment": "Wild Bill, Legendary Gunslinger",
+        "id": 9074
+      }
+    ]
+  }
+]

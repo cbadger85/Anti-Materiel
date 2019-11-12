@@ -1,0 +1,267 @@
+[
+  {
+    "id": 4996,
+    "army": "Haqqislam",
+    "army_id": 4999,
+    "name": "Ramah Taskforce",
+    "units": [
+      {
+        "comment": "Ghulam",
+        "id": 4002,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          }
+        ]
+      },
+      {
+        "comment": "Naffatun",
+        "id": 4003,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "The Naffatûn count as Ghulams for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Zhayedan",
+        "id": 4043,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          }
+        ]
+      },
+      {
+        "comment": "Khawarij",
+        "id": 4005,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "The Khawarijs count as Ghulams for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Hakim",
+        "id": 4049,
+        "ava": "2"
+      },
+      {
+        "comment": "Mukhtar",
+        "id": 4050,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Nahab",
+        "id": 4051,
+        "ava": "3"
+      },
+      {
+        "comment": "Namurr",
+        "id": 4052,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "The Namurr count as Ghulams for Fireteam composition"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Janissaries + 1 Namurr"
+          }
+        ]
+      },
+      {
+        "comment": "Janissaries",
+        "id": 4008,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Janissaries + 1 Namurr"
+          }
+        ]
+      },
+      {
+        "comment": "Hortlak Janissaries",
+        "id": 4053,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "The Hortlak count as Janissaries for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Al Fasid",
+        "id": 4009,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 Shaytaniyah Remote FTO + 1 Al Fasid"
+          }
+        ]
+      },
+      {
+        "comment": "Maghariba Guard",
+        "id": 4010,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 Rafiq Remote FTO + 1 Maghariba Guard"
+          }
+        ]
+      },
+      {
+        "comment": "Tuareg",
+        "id": 4012,
+        "ava": "3"
+      },
+      {
+        "comment": "Tarik Mansuri",
+        "id": 4021,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Tarik Mansuri can join any Fireteam Core or Haris of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Husam Operative Leila Sharif",
+        "id": 4048,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Leila Sharif can join any Fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Rafiq Remote",
+        "id": 4017,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 Rafiq Remote FTO + 1 Maghariba Guard"
+          }
+        ]
+      },
+      {
+        "comment": "Shihab Remote",
+        "id": 4018,
+        "ava": "2"
+      },
+      {
+        "comment": "Shaytaniyah Remote",
+        "id": 4019,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 Shaytaniyah Remote FTO + 1 Al Fasid"
+          }
+        ]
+      },
+      {
+        "comment": "Fanous Remote",
+        "id": 4020,
+        "ava": "3"
+      },
+      {
+        "comment": "Nasmat Remotes",
+        "id": 4034,
+        "ava": "4"
+      },
+      {
+        "comment": "Kameel Remotes",
+        "id": 4033,
+        "ava": "2"
+      },
+      {
+        "comment": "Najjarun Engineer",
+        "id": 4016,
+        "ava": "1"
+      },
+      {
+        "comment": "Husam Spec-Ops (Ghulam)",
+        "id": 4054,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          }
+        ]
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Carmen Johns",
+        "id": 9066,
+        "ava": "1"
+      },
+      {
+        "comment": "Monstruckers",
+        "id": 9068,
+        "ava": "2"
+      },
+      {
+        "comment": "Wild Bill, Legendary Gunslinger",
+        "id": 9074,
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Wild Bill counts as a Janissary for Fireteam composition"
+          }
+        ]
+      }
+    ]
+  }
+]

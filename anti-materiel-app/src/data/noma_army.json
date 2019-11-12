@@ -1,0 +1,365 @@
+[
+  {
+    "id": 5999,
+    "army": "Nomads",
+    "name": "Nomads",
+    "units": [
+      {
+        "comment": "Alguaciles",
+        "id": 5001
+      },
+      {
+        "comment": "Grenzers",
+        "id": 5002,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 8,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Securitate",
+        "id": 5003
+      },
+      {
+        "comment": "Hellcats",
+        "id": 5004
+      },
+      {
+        "comment": "Intruders",
+        "id": 5005
+      },
+      {
+        "comment": "Reverend Moiras",
+        "id": 5006
+      },
+      {
+        "comment": "Reverend Healers",
+        "id": 5007
+      },
+      {
+        "comment": "Mobile Brigada",
+        "id": 5008
+      },
+      {
+        "comment": "Lizard",
+        "id": 5009
+      },
+      {
+        "comment": "Szalamandra",
+        "id": 5010
+      },
+      {
+        "comment": "Zeros",
+        "id": 5011
+      },
+      {
+        "comment": "Spektrs",
+        "id": 5012,
+        "childs": [
+          {
+            "comment": "KHD is only available in Tunguska",
+            "id": 7,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Corregidor Bandits",
+        "id": 5013
+      },
+      {
+        "comment": "Die Morlock Gruppe",
+        "id": 5014
+      },
+      {
+        "comment": "Corregidor Jaguars",
+        "id": 5015
+      },
+      {
+        "comment": "Daktaris",
+        "id": 5016
+      },
+      {
+        "comment": "Clockmakers",
+        "id": 5017
+      },
+      {
+        "comment": "Interventor",
+        "id": 5018
+      },
+      {
+        "comment": "Stempler Zond",
+        "id": 5019
+      },
+      {
+        "comment": "Reaktion Zond",
+        "id": 5020
+      },
+      {
+        "comment": "Vertigo Zond",
+        "id": 5021
+      },
+      {
+        "comment": "Meteor Zond",
+        "id": 5022
+      },
+      {
+        "comment": "Transductor Zond",
+        "id": 5023
+      },
+      {
+        "comment": "Zoe",
+        "id": 5024
+      },
+      {
+        "comment": "Bran do Castro, Triple Zero",
+        "id": 5025
+      },
+      {
+        "comment": "Iguana Squadron",
+        "id": 5026
+      },
+      {
+        "comment": "Lunokhod Sputniks",
+        "id": 5027
+      },
+      {
+        "comment": "Moderators from Bakunin",
+        "id": 5028
+      },
+      {
+        "comment": "Moran, Maasai Hunter",
+        "id": 5029
+      },
+      {
+        "comment": "Prowlers",
+        "id": 5030
+      },
+      {
+        "comment": "Reverend Custodiers",
+        "id": 5031,
+        "skills": [
+          {
+            "name": "Fireteam: Haris",
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Salyut Zonds",
+        "id": 5032
+      },
+      {
+        "comment": "Sin-Eater Observants",
+        "id": 5033
+      },
+      {
+        "comment": "Tomcats",
+        "id": 5034
+      },
+      {
+        "comment": "Tsyklon Sputniks",
+        "id": 5035
+      },
+      {
+        "comment": "Zondbots",
+        "id": 5036
+      },
+      {
+        "comment": "Bakunin Überfallkommando : Chimera",
+        "id": 5037
+      },
+      {
+        "comment": "Bakunin Überfallkommando : Pupniks",
+        "id": 5038
+      },
+      {
+        "comment": "Reverend Superior CASSANDRA KUSANAGI",
+        "id": 5039
+      },
+      {
+        "comment": "Carlota Kowalsky, Tomcats Sergeant",
+        "id": 5040
+      },
+      {
+        "comment": "Riot Grrls",
+        "id": 5041,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 7,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Vortex Spec-Ops (Alguacil)",
+        "id": 5057
+      },
+      {
+        "comment": "Vortex Spec-Ops (Moderator)",
+        "id": 5058
+      },
+      {
+        "comment": "Vortex Spec-Ops (Securitate)",
+        "id": 5059
+      },
+      {
+        "comment": "Alguacil Vortex Lupe Balboa",
+        "id": 5043
+      },
+      {
+        "comment": "Wildcats, Polyvalent Tactical Unit",
+        "id": 5044,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 9,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Gecko",
+        "id": 5045,
+        "notes": [
+          {
+            "title": "Fireteam: Duo",
+            "note": "Requires TeamPro"
+          }
+        ]
+      },
+      {
+        "comment": "Taskmaster",
+        "id": 5046,
+        "notes": [
+          {
+            "title": "Fireteam: Duo",
+            "note": "Requires TeamPro"
+          }
+        ]
+      },
+      {
+        "comment": "Kriza Boracs",
+        "id": 5047,
+        "skills": [
+          {
+            "name": "Fireteam: Duo",
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Hecklers",
+        "id": 5048
+      },
+      {
+        "comment": "Mary Problems",
+        "id": 5049
+      },
+      {
+        "comment": "Puppet Masters",
+        "id": 5050
+      },
+      {
+        "comment": "Puppetbots",
+        "id": 5051
+      },
+      {
+        "comment": "Zondnautica",
+        "id": 5052
+      },
+      {
+        "comment": "Hollow Men",
+        "id": 5053,
+        "skills": [
+          {
+            "name": "Fireteam: Duo",
+            "hide": true
+          }
+        ],
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 6,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Perseus",
+        "id": 5054,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Authorized Bounty Hunters",
+        "id": 9018,
+        "ava": "1"
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Miranda Ashcroft",
+        "id": 9019,
+        "ava": "1"
+      },
+      {
+        "comment": "Armand 'Le Muet'",
+        "id": 9022,
+        "ava": "1"
+      },
+      {
+        "comment": "Krakot Renegades, Morat Fugitives",
+        "id": 9023
+      },
+      {
+        "comment": "Knauf",
+        "id": 9028
+      },
+      {
+        "comment": "Cube Jäger, Mercenary Recoverers",
+        "id": 9030
+      },
+      {
+        "comment": "Aïda Swanson, Submondo Smuggler",
+        "id": 9065
+      },
+      {
+        "comment": "Libertos Freedom Fighters",
+        "id": 9067,
+        "childs": [
+          {
+            "comment": "Mimetism only in Dahshat",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Mimetism only in Dahshat",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Monstruckers",
+        "id": 9068
+      },
+      {
+        "comment": "Wild Bill, Legendary Gunslinger",
+        "id": 9074
+      }
+    ]
+  }
+]

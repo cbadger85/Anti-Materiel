@@ -1,0 +1,6019 @@
+[
+  {
+    "id": 6001,
+    "army": "Combined Army",
+    "isc": "Morat Vanguard Infantry",
+    "name": "Vanguard",
+    "type": "LI",
+    "classification": "Line",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "14",
+    "bs": "11",
+    "ph": "12",
+    "wip": "13",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "T",
+    "spec": [
+      "Morat"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "14",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Hacker",
+        "cost": "22",
+        "swc": "0.5",
+        "spec": [
+          "EI Hacking Device"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "HMG",
+        "cost": "22",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Missile Launcher",
+        "cost": "19",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Missile Launcher"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Grenadier",
+        "cost": "18",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Light Grenade Launcher",
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "K1 Sniper Rifle",
+        "cost": "21",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "K1 Sniper Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Observer",
+        "cost": "15",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Lieutenant",
+        "cost": "14",
+        "swc": "1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Paramedic",
+        "cost": "16",
+        "swc": "0",
+        "spec": [
+          "Paramedic",
+          "MediKit"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6002,
+    "army": "Combined Army",
+    "isc": "Unidron Batroids",
+    "name": "Unidron",
+    "type": "REM",
+    "classification": "Line",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "hackable": "X",
+    "mov": "4-4",
+    "cc": "5",
+    "bs": "11",
+    "ph": "10",
+    "wip": "12",
+    "arm": "1",
+    "bts": "6",
+    "w": "1",
+    "s": "2",
+    "ava": "4",
+    "spec": [
+      "G: Autotool",
+      "V: Dogged"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Plasma",
+        "cost": "14",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Plasma Carbine"
+        ],
+        "ccw": [
+          "Pistol",
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "K1",
+        "cost": "16",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "K1 Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "K1 TinBot",
+        "cost": "17",
+        "swc": "0.5",
+        "spec": [
+          "TinBot A (Deflector L1)"
+        ],
+        "bsw": [
+          "K1 Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Plasma Sniper Rifle",
+        "cost": "24",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Plasma Sniper Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Missile Launcher",
+        "cost": "20",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Missile Launcher",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Spitfire",
+        "cost": "18",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Spitfire"
+        ],
+        "ccw": [
+          "Pistol",
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Observer",
+        "cost": "15",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Plasma Carbine"
+        ],
+        "ccw": [
+          "Pistol",
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6003,
+    "army": "Combined Army",
+    "isc": "Fraacta Drop Unit",
+    "name": "Fraacta",
+    "imp": "",
+    "ava": "2",
+    "spec": [],
+    "profiles": [
+      {
+        "id": 1,
+        "type": "LI",
+        "classification": "Specially Trained",
+        "imp": "",
+        "irr": "",
+        "cube": "X",
+        "mov": "4-4",
+        "cc": "14",
+        "bs": "12",
+        "ph": "12",
+        "wip": "12",
+        "arm": "1",
+        "bts": "3",
+        "w": "1",
+        "s": "2",
+        "spec": [
+          "AD: Combat Jump",
+          "Transmutation",
+          "V: Courage"
+        ],
+        "bsw": [],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Survival Form",
+        "type": "LI",
+        "imp": "",
+        "irr": "",
+        "cube": "X",
+        "mov": "4-2",
+        "cc": "14",
+        "bs": "12",
+        "ph": "10",
+        "wip": "12",
+        "arm": "2",
+        "bts": "6",
+        "w": "1",
+        "s": "2",
+        "ava": " ",
+        "spec": [
+          "V: Courage"
+        ],
+        "bsw": [],
+        "ccw": []
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "29",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Boarding Shotgun",
+        "cost": "28",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Spitfire",
+        "cost": "35",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "Spitfire"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Assault Hacker",
+        "cost": "35",
+        "swc": "0.5",
+        "spec": [
+          "EI Assault Hacking Device"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6004,
+    "army": "Combined Army",
+    "isc": "Umbra Legates",
+    "name": "Umbra Legate",
+    "type": "LI",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "6-2",
+    "cc": "21",
+    "bs": "12",
+    "ph": "13",
+    "wip": "14",
+    "arm": "1",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "CH: Mimetism",
+      "Forward Deployment L1",
+      "Kinematika L1",
+      "Martial Arts L4",
+      "V: No Wound Incapacitation"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "K1 Combi",
+        "cost": "40",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Flash Pulse",
+          "K1 Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Hacker",
+        "cost": "43",
+        "swc": "0.5",
+        "spec": [
+          "Hacking Device Plus"
+        ],
+        "bsw": [
+          "Flash Pulse",
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Spitfire",
+        "cost": "41",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Flash Pulse",
+          "Spitfire"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Spitfire Lieutenant",
+        "cost": "41",
+        "swc": "1.5",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Flash Pulse",
+          "Spitfire"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Lieutenant",
+        "cost": "40",
+        "swc": "0.5",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Flash Pulse",
+          "K1 Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6005,
+    "army": "Combined Army",
+    "isc": "Maakrep Trackers Unit",
+    "name": "Maakrep Tracker",
+    "type": "MI",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-2",
+    "cc": "15",
+    "bs": "12",
+    "ph": "11",
+    "wip": "13",
+    "arm": "2",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "3",
+    "spec": [
+      "AutoMediKit",
+      "Multispectral Visor L2",
+      "Sixth Sense L1",
+      "V: Courage"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "29",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "HMG",
+        "cost": "33",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "MULTI Sniper Rifle",
+        "cost": "33",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "MULTI Sniper Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Boarding Shotgun",
+        "cost": "26",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun",
+          "Grenades"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Hacker",
+        "cost": "34",
+        "swc": "0.5",
+        "spec": [
+          "EI Hacking Device"
+        ],
+        "bsw": [
+          "Boarding Shotgun",
+          "Grenades"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Lieutenant",
+        "cost": "29",
+        "swc": "1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6006,
+    "army": "Combined Army",
+    "isc": "Rodok",
+    "name": "Rodok",
+    "type": "MI",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-2",
+    "cc": "15",
+    "bs": "12",
+    "ph": "12",
+    "wip": "13",
+    "arm": "2",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "3",
+    "spec": [
+      "Morat",
+      "CH: Mimetism",
+      "Super-Jump"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "26",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Light Shotgun (2)"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "HMG",
+        "cost": "27",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Boarding Shotgun",
+        "cost": "19",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Missile Launcher",
+        "cost": "28",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Missile Launcher",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Paramedic",
+        "cost": "21",
+        "swc": "0",
+        "spec": [
+          "Paramedic",
+          "MediKit"
+        ],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Assault Hacker",
+        "cost": "25",
+        "swc": "0.5",
+        "spec": [
+          "EI Assault Hacking Device"
+        ],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Lieutenant",
+        "cost": "26",
+        "swc": "1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Light Shotgun (2)"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Haris",
+        "cost": "27",
+        "swc": "0.5",
+        "spec": [
+          "Fireteam: Haris"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Light Shotgun (2)"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Killer Hacker",
+        "cost": "22",
+        "swc": "0",
+        "spec": [
+          "EI Killer Hacking Device"
+        ],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6007,
+    "army": "Combined Army",
+    "isc": "The Charontids",
+    "name": "Charontid",
+    "type": "HI",
+    "classification": "Headquarters",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "hackable": "X",
+    "mov": "4-4",
+    "cc": "15",
+    "bs": "14",
+    "ph": "13",
+    "wip": "16",
+    "arm": "5",
+    "bts": "6",
+    "w": "2",
+    "s": "5",
+    "ava": "1",
+    "spec": [
+      "G: Mnemonica",
+      "V: No Wound Incapacitation"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Plasma",
+        "cost": "78",
+        "swc": "0",
+        "spec": [
+          "Multispectral Visor L3"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Plasma Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Heavy Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "HMG",
+        "cost": "79",
+        "swc": "2",
+        "spec": [
+          "Multispectral Visor L3"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "HMG"
+        ],
+        "ccw": [
+          "Knife",
+          "Heavy Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Sepsitor TinBot",
+        "cost": "78",
+        "swc": "0.5",
+        "spec": [
+          "TinBot A (Deflector L1)"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Sepsitor Plus",
+          "Plasma Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Heavy Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Hacker",
+        "cost": "73",
+        "swc": "0.5",
+        "spec": [
+          "Hacking Device Plus"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Plasma Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Heavy Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Lieutenant",
+        "cost": "78",
+        "swc": "0",
+        "spec": [
+          "Lieutenant",
+          "Multispectral Visor L3"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Plasma Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Heavy Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "HMG Lieutenant",
+        "cost": "79",
+        "swc": "2",
+        "spec": [
+          "Multispectral Visor L3",
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "HMG"
+        ],
+        "ccw": [
+          "Knife",
+          "Heavy Pistol"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Sepsitor Lieutenant",
+        "cost": "77",
+        "swc": "0",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Plasma Rifle",
+          "Sepsitor Plus"
+        ],
+        "ccw": [
+          "Knife",
+          "Heavy Pistol"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Sepsitor TinBot Lieutenant",
+        "cost": "78",
+        "swc": "0",
+        "spec": [
+          "TinBot A (Deflector L1)",
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Sepsitor Plus",
+          "Plasma Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Heavy Pistol"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Hacker Lieutenant",
+        "cost": "73",
+        "swc": "0.5",
+        "spec": [
+          "Hacking Device Plus",
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Plasma Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Heavy Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6008,
+    "army": "Combined Army",
+    "isc": "Raicho Armored Brigade",
+    "name": "Raicho",
+    "ava": "1",
+    "spec": [],
+    "profiles": [
+      {
+        "id": 1,
+        "type": "TAG",
+        "classification": "Mechanized",
+        "imp": "",
+        "irr": "",
+        "cube": "X",
+        "hackable": "X",
+        "mov": "6-4",
+        "cc": "19",
+        "bs": "14",
+        "ph": "17",
+        "wip": "13",
+        "arm": "8",
+        "bts": "6",
+        "w": "3",
+        "s": "7",
+        "spec": [
+          "ECM",
+          "Morat",
+          "Manned",
+          "Fatality L1",
+          "Tactical Awareness"
+        ],
+        "bsw": [],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Pilot",
+        "type": "LI",
+        "hackable": "",
+        "mov": "4-4",
+        "cc": "13",
+        "bs": "12",
+        "ph": "12",
+        "wip": "13",
+        "arm": "0",
+        "bts": "0",
+        "w": "1",
+        "s": "2",
+        "ava": "",
+        "spec": [
+          "Morat",
+          "Pilot",
+          "Specialist Operative"
+        ],
+        "bsw": [],
+        "ccw": [
+          "Heavy Pistol (2)",
+          "Knife",
+          "D-Charges"
+        ]
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Heavy Flamethrower",
+        "cost": "89",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "MULTI HMG",
+          "Heavy Flamethrower"
+        ],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Heavy Shotgun",
+        "cost": "94",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "MULTI HMG",
+          "Heavy Shotgun",
+          "Mine Dispenser"
+        ],
+        "ccw": []
+      }
+    ]
+  },
+  {
+    "id": 6009,
+    "army": "Combined Army",
+    "isc": "Avatar",
+    "name": "Avatar",
+    "ava": "1",
+    "spec": [],
+    "profiles": [
+      {
+        "id": 1,
+        "type": "TAG",
+        "classification": "Headquarters",
+        "imp": "",
+        "irr": "",
+        "cube": "M",
+        "hackable": "X",
+        "mov": "6-4",
+        "cc": "18",
+        "bs": "15",
+        "ph": "17",
+        "wip": "17",
+        "arm": "9",
+        "bts": "9",
+        "w": "3",
+        "s": "7",
+        "spec": [
+          "ODD: Optical Disruptor",
+          "ECM",
+          "G: Mnemonica",
+          "Immunity: POS",
+          "Fatality L1",
+          "Tactical Awareness"
+        ],
+        "bsw": [],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "isc": "Staldron Remote Ancillary Unit",
+        "name": "Staldron",
+        "type": "REM",
+        "hackable": "X",
+        "mov": "4-4",
+        "cc": "10",
+        "bs": "10",
+        "ph": "10",
+        "wip": "13",
+        "arm": "0",
+        "bts": "0",
+        "w": "1",
+        "s": "1",
+        "ava": "",
+        "spec": [
+          "G: Remote Presence",
+          "Remote Pilot",
+          "Specialist Operative"
+        ],
+        "bsw": [
+          "Flash Pulse"
+        ],
+        "ccw": [
+          "Knife"
+        ]
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Lieutenant",
+        "cost": "137",
+        "swc": "3.5",
+        "spec": [
+          "Lieutenant",
+          "Strategos L3"
+        ],
+        "bsw": [
+          "MULTI HMG",
+          "Sepsitor Plus"
+        ],
+        "ccw": [
+          "DA CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6010,
+    "army": "Combined Army",
+    "isc": "The Shrouded",
+    "name": "Shrouded",
+    "type": "SK",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "12",
+    "ph": "12",
+    "wip": "13",
+    "arm": "0",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "AutoMediKit",
+      "CH: Camouflage",
+      "Infiltration",
+      "Shasvastii",
+      "Multiterrain"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Minelayer",
+        "cost": "25",
+        "swc": "0.5",
+        "spec": [
+          "Minelayer"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Combi",
+        "cost": "24",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "MULTI Sniper Rifle",
+        "cost": "31",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "MULTI Sniper Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Boarding Shotgun",
+        "cost": "23",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Assault Hacker",
+        "cost": "30",
+        "swc": "0.5",
+        "spec": [
+          "EI Assault Hacking Device"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Observer",
+        "cost": "25",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Dazer",
+        "cost": "24",
+        "swc": "0.5",
+        "spec": [
+          "Minelayer",
+          "Dazer"
+        ],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Killer Hacker",
+        "cost": "27",
+        "swc": "0",
+        "spec": [
+          "EI Killer Hacking Device"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6011,
+    "army": "Combined Army",
+    "isc": "Malignos",
+    "name": "Malignos",
+    "type": "SK",
+    "classification": "Veteran",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "12",
+    "ph": "12",
+    "wip": "14",
+    "arm": "1",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "AutoMediKit",
+      "CH: TO Camouflage",
+      "Infiltration",
+      "Shasvastii",
+      "Multiterrain"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "35",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "MULTI Sniper Rifle",
+        "cost": "42",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Antipersonnel Mines",
+          "MULTI Sniper Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Monofilament",
+        "cost": "38",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Monofilament Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Boarding Shotgun",
+        "cost": "34",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Assault Hacker",
+        "cost": "41",
+        "swc": "0.5",
+        "spec": [
+          "EI Assault Hacking Device"
+        ],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Observer",
+        "cost": "36",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Combi Lieutenant",
+        "cost": "35",
+        "swc": "2",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Shotgun Lieutenant",
+        "cost": "34",
+        "swc": "2",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Killer Hacker",
+        "cost": "33",
+        "swc": "0",
+        "spec": [
+          "EI Killer Hacking Device",
+          "Dazer"
+        ],
+        "bsw": [
+          "Submachine Gun",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6012,
+    "army": "Combined Army",
+    "isc": "Speculo Killers",
+    "name": "Speculo Killer",
+    "type": "SK",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "20",
+    "bs": "12",
+    "ph": "12",
+    "wip": "14",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "AutoMediKit",
+      "Impersonation Plus",
+      "Martial Arts L3",
+      "Shasvastii",
+      "Multiterrain",
+      "Kinematika L1"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "35",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Smoke Grenades",
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Monofilament CCW",
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Boarding Shotgun",
+        "cost": "34",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Smoke Grenades",
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Monofilament CCW",
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Minelayer",
+        "cost": "39",
+        "swc": "1.5",
+        "spec": [
+          "Minelayer"
+        ],
+        "bsw": [
+          "Smoke Grenades",
+          "Combi Rifle",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Monofilament CCW",
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6013,
+    "army": "Combined Army",
+    "isc": "Dāturazi Witch-Soldiers",
+    "name": "Dāturazi",
+    "type": "WB",
+    "classification": "Line",
+    "imp": "X",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "21",
+    "bs": "11",
+    "ph": "14",
+    "wip": "13",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "4",
+    "spec": [
+      "CH: Mimetism",
+      "Kinematika L1",
+      "Martial Arts L4",
+      "Morat"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "21",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "Shock CCW"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "AP CCW",
+        "cost": "21",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "DA CCW",
+        "cost": "22",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Chain Rifle",
+        "cost": "14",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Chain Rifle",
+          "Smoke Grenades",
+          "Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Boarding Shotgun",
+        "cost": "20",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "Shock CCW"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Grenadier",
+        "cost": "21",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Smoke Light Grenade Launcher",
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Shock CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6014,
+    "army": "Combined Army",
+    "isc": "The Hungries: \"Gakis\"",
+    "name": "Gaki",
+    "type": "WB",
+    "classification": "Line",
+    "imp": "X",
+    "irr": "X",
+    "cube": "",
+    "mov": "6-6",
+    "cc": "19",
+    "bs": "9",
+    "ph": "14",
+    "wip": "12",
+    "arm": "0",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "T",
+    "spec": [
+      "Explode L1",
+      "Kinematika L1",
+      "Climbing Plus"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "AP CCW",
+        "cost": "4",
+        "swc": "0",
+        "spec": [],
+        "bsw": [],
+        "ccw": [
+          "AP CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6015,
+    "army": "Combined Army",
+    "isc": "The Hungries: \"Pretas\"",
+    "name": "Preta",
+    "image": 6014,
+    "type": "WB",
+    "classification": "Line",
+    "imp": "X",
+    "irr": "X",
+    "cube": "",
+    "mov": "6-6",
+    "cc": "19",
+    "bs": "9",
+    "ph": "14",
+    "wip": "12",
+    "arm": "0",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "T",
+    "spec": [
+      "Climbing Plus",
+      "Kinematika L1",
+      "V: Dogged"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Chain Rifle",
+        "cost": "7",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Chain Rifle"
+        ],
+        "ccw": [
+          "AP CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6016,
+    "army": "Combined Army",
+    "isc": "Med-Tech Obsidon Medchanoid",
+    "name": "Med-Tech",
+    "type": "LI",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "6-4",
+    "cc": "13",
+    "bs": "11",
+    "ph": "10",
+    "wip": "14",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "3",
+    "ava": "1",
+    "spec": [
+      "Doctor",
+      "Engineer",
+      "MediKit"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "23",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "D-Charges",
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "SMG Journalist",
+        "cost": "22",
+        "swc": "0",
+        "spec": [
+          "Journalist L1"
+        ],
+        "bsw": [
+          "Submachine Gun"
+        ],
+        "ccw": [
+          "D-Charges",
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6017,
+    "army": "Combined Army",
+    "isc": "M-Drone",
+    "name": "M-Drone",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "hackable": "X",
+    "mov": "6-4",
+    "cc": "8",
+    "bs": "11",
+    "ph": "10",
+    "wip": "13",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "s": "3",
+    "ava": "2",
+    "spec": [
+      "Forward Observer",
+      "G: Remote Presence",
+      "Multiterrain",
+      "Repeater",
+      "Sensor",
+      "Deactivator",
+      "Sat-Lock"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Sniffer",
+        "cost": "17",
+        "swc": "0",
+        "spec": [
+          "Sniffer"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Nanoscreen FTO",
+        "cost": "23",
+        "swc": "0",
+        "spec": [
+          "Nanoscreen"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6018,
+    "army": "Combined Army",
+    "isc": "Q-Drone",
+    "name": "Q-Drone",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "hackable": "X",
+    "mov": "6-4",
+    "cc": "8",
+    "bs": "11",
+    "ph": "10",
+    "wip": "13",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "s": "3",
+    "ava": "1",
+    "spec": [
+      "360° Visor",
+      "CH: Mimetism",
+      "G: Remote Presence",
+      "Total Reaction"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "HMG",
+        "cost": "26",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Plasma",
+        "cost": "25",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Plasma Rifle"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6019,
+    "army": "Combined Army",
+    "isc": "T-Drone",
+    "name": "T-Drone",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "hackable": "X",
+    "mov": "6-4",
+    "cc": "8",
+    "bs": "12",
+    "ph": "10",
+    "wip": "13",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "s": "3",
+    "ava": "1",
+    "spec": [
+      "G: Remote Presence"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Smart Missile Launcher",
+        "cost": "18",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Smart Missile Launcher"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Missile Launcher FTO",
+        "cost": "19",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Missile Launcher",
+          "Flash Pulse"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6020,
+    "army": "Combined Army",
+    "isc": "R-Drone",
+    "name": "R-Drone",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "hackable": "X",
+    "mov": "6-6",
+    "cc": "8",
+    "bs": "8",
+    "ph": "11",
+    "wip": "13",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "s": "3",
+    "ava": "2",
+    "spec": [
+      "CH: Mimetism",
+      "G: Remote Presence",
+      "Repeater",
+      "Sniffer"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Repeater",
+        "cost": "8",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Flash Pulse"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6021,
+    "army": "Combined Army",
+    "isc": "Ímetron",
+    "name": "Ímetron",
+    "type": "N/A",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "mov": "0-0",
+    "cc": "0",
+    "bs": "0",
+    "ph": "12",
+    "wip": "0",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "wtype": "str",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "AD: Combat Jump",
+      "AI Beacon"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "AI Beacon",
+        "cost": "4",
+        "swc": "0",
+        "spec": [],
+        "bsw": [],
+        "ccw": []
+      }
+    ]
+  },
+  {
+    "id": 6022,
+    "army": "Combined Army",
+    "isc": "Kurgat Reg. of Assault Engineers",
+    "name": "Kurgat",
+    "type": "LI",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "11",
+    "ph": "12",
+    "wip": "13",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Engineer",
+      "Morat"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Autocannon",
+        "cost": "28",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Autocannon"
+        ],
+        "ccw": [
+          "D-Charges",
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Mk12",
+        "cost": "23",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Mk12"
+        ],
+        "ccw": [
+          "D-Charges",
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Boarding Shotgun",
+        "cost": "17",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "D-Charges",
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Haris",
+        "cost": "24",
+        "swc": "1",
+        "spec": [
+          "Fireteam: Haris"
+        ],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Mk12"
+        ],
+        "ccw": [
+          "D-Charges",
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6023,
+    "army": "Combined Army",
+    "isc": "Rasyat Diplomatic Division",
+    "name": "Rasyat",
+    "type": "MI",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-2",
+    "cc": "21",
+    "bs": "12",
+    "ph": "13",
+    "wip": "13",
+    "arm": "2",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "AD: Combat Jump",
+      "Morat",
+      "Natural Born Warrior"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "29",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Eclipse Grenades",
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "D-Charges",
+          "DA CCW"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Spitfire",
+        "cost": "34",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Eclipse Grenades",
+          "Spitfire"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "E/Mitter",
+        "cost": "31",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Eclipse Grenades",
+          "E/Mitter",
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "D-Charges",
+          "DA CCW"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Boarding Shotgun",
+        "cost": "28",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Eclipse Grenades",
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "D-Charges",
+          "DA CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6024,
+    "obsolete": "X"
+  },
+  {
+    "id": 6025,
+    "army": "Combined Army",
+    "isc": "Shasvastii Cadmus",
+    "name": "Cadmus-Soldier",
+    "ava": "1",
+    "spec": [],
+    "profiles": [
+      {
+        "id": 1,
+        "name": "Developed Form",
+        "type": "LI",
+        "classification": "Specially Trained",
+        "imp": "",
+        "irr": "",
+        "cube": "X",
+        "mov": "4-4",
+        "cc": "13",
+        "bs": "11",
+        "ph": "12",
+        "wip": "12",
+        "arm": "1",
+        "bts": "0",
+        "w": "1",
+        "s": "2",
+        "spec": [
+          "Morpho-Scan",
+          "Scavenger",
+          "Shasvastii",
+          "Stealth"
+        ],
+        "bsw": [],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Seed-Embryo",
+        "cube": "",
+        "mov": "0-0",
+        "cc": "10",
+        "bs": "0",
+        "ph": "12",
+        "wip": "0",
+        "arm": "2",
+        "bts": "3",
+        "w": "1",
+        "s": "0",
+        "spec": [
+          "AD: Combat Jump",
+          "Decoy",
+          "Seed-Embryo",
+          "Shasvastii"
+        ],
+        "bsw": [
+          "Chest Mines"
+        ],
+        "ccw": []
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "25",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Assault Pistol",
+          "CCW"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Boarding Shotgun",
+        "cost": "21",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "CCW"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Red Fury",
+        "cost": "27",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Red Fury"
+        ],
+        "ccw": [
+          "Pistol",
+          "CCW"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Killer Hacker",
+        "cost": "24",
+        "swc": "0",
+        "spec": [
+          "EI Killer Hacking Device"
+        ],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6026,
+    "army": "Combined Army",
+    "isc": "Shasvastii Gwailos",
+    "name": "Gwailo",
+    "type": "HI",
+    "classification": "Veteran",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "hackable": "X",
+    "mov": "4-4",
+    "cc": "14",
+    "bs": "13",
+    "ph": "12",
+    "wip": "13",
+    "arm": "3",
+    "bts": "9",
+    "w": "2",
+    "s": "2",
+    "ava": "0",
+    "spec": [
+      "Nanoscreen",
+      "Albedo",
+      "Fireteam: Duo",
+      "Fireteam: Haris",
+      "Shasvastii",
+      "Stealth"
+    ],
+    "childs": [
+      {
+        "id": 4,
+        "name": "AP Spitfire",
+        "cost": "46",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "AP Spitfire"
+        ],
+        "ccw": [
+          "Breaker Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Heavy Rocket Launcher",
+        "cost": "43",
+        "swc": "2",
+        "spec": [
+          "Multispectral Visor L2"
+        ],
+        "bsw": [
+          "Heavy Rocket Launcher"
+        ],
+        "ccw": [
+          "Breaker Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "HMG",
+        "cost": "45",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Breaker Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Heavy Rocket Launcher Lieutenant",
+        "cost": "43",
+        "swc": "2",
+        "spec": [
+          "Multispectral Visor L2",
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Heavy Rocket Launcher"
+        ],
+        "ccw": [
+          "Breaker Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "HMG Lieutenant",
+        "cost": "45",
+        "swc": "2",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Breaker Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6027,
+    "army": "Combined Army",
+    "isc": "Shasvastii Haiduks",
+    "name": "Haiduk",
+    "type": "LI",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "12",
+    "bs": "12",
+    "ph": "10",
+    "wip": "13",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Multispectral Visor L2",
+      "Marksmanship L1",
+      "Sapper",
+      "Shasvastii"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "MULTI Sniper Rifle",
+        "cost": "26",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "MULTI Sniper Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "AP Marksman Rifle",
+        "cost": "22",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "AP Marksman Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6028,
+    "army": "Combined Army",
+    "isc": "Shasvastii Noctifers",
+    "name": "Noctifer",
+    "type": "LI",
+    "classification": "Headquarters",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "14",
+    "bs": "12",
+    "ph": "10",
+    "wip": "13",
+    "arm": "1",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "CH: TO Camouflage",
+      "Shasvastii",
+      "V: Dogged"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "24",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Lieutenant",
+        "cost": "24",
+        "swc": "1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Hacker",
+        "cost": "32",
+        "swc": "0.5",
+        "spec": [
+          "EI Hacking Device"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Missile Launcher",
+        "cost": "32",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Missile Launcher"
+        ],
+        "ccw": [
+          "Knife",
+          "Assault Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Spitfire",
+        "cost": "30",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Spitfire"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6029,
+    "army": "Combined Army",
+    "isc": "Shasvastii Sphinx",
+    "name": "Sphinx",
+    "ava": "1",
+    "spec": [],
+    "profiles": [
+      {
+        "id": 1,
+        "type": "TAG",
+        "classification": "Mechanized",
+        "imp": "",
+        "irr": "",
+        "cube": "",
+        "hackable": "X",
+        "mov": "6-6",
+        "cc": "18",
+        "bs": "14",
+        "ph": "16",
+        "wip": "13",
+        "arm": "6",
+        "bts": "6",
+        "w": "3",
+        "s": "6",
+        "spec": [
+          "ECM",
+          "G: Remote Presence",
+          "CH: TO Camouflage",
+          "Multiterrain",
+          "Climbing Plus",
+          "Fatality L1",
+          "Tactical Awareness"
+        ],
+        "bsw": [],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "isc": "Scindron Remote Ancillary Unit",
+        "name": "Scindron",
+        "type": "REM",
+        "hackable": "X",
+        "mov": "4-4",
+        "cc": "10",
+        "bs": "10",
+        "ph": "10",
+        "wip": "10",
+        "arm": "0",
+        "bts": "0",
+        "w": "1",
+        "s": "1",
+        "ava": "",
+        "spec": [
+          "G: Remote Presence",
+          "Remote Pilot",
+          "Specialist Operative"
+        ],
+        "bsw": [
+          "Flash Pulse"
+        ],
+        "ccw": [
+          "Knife"
+        ]
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Spitfire",
+        "cost": "106",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "Heavy Flamethrower (2)",
+          "Spitfire"
+        ],
+        "ccw": [
+          "EXP CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6030,
+    "army": "Combined Army",
+    "isc": "Shasvastii Seed-Soldiers",
+    "name": "Seed-Soldier",
+    "ava": "1",
+    "spec": [],
+    "profiles": [
+      {
+        "id": 1,
+        "name": "Developed Form",
+        "type": "LI",
+        "classification": "Line",
+        "imp": "",
+        "irr": "",
+        "cube": "X",
+        "mov": "4-4",
+        "cc": "14",
+        "bs": "11",
+        "ph": "10",
+        "wip": "13",
+        "arm": "0",
+        "bts": "3",
+        "w": "1",
+        "s": "2",
+        "spec": [
+          "Shasvastii"
+        ],
+        "bsw": [],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Seed-Embryo",
+        "cube": "",
+        "mov": "0-0",
+        "cc": "10",
+        "bs": "0",
+        "ph": "11",
+        "wip": "0",
+        "arm": "2",
+        "bts": "3",
+        "w": "1",
+        "s": "0",
+        "spec": [
+          "CH: Limited Camouflage",
+          "Forward Deployment L2",
+          "Seed-Embryo",
+          "Shasvastii"
+        ],
+        "bsw": [
+          "Chest Mines"
+        ],
+        "ccw": []
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "16",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "D.E.P."
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Grenadier",
+        "cost": "19",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Light Grenade Launcher"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Observer",
+        "cost": "17",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "D.E.P."
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Paramedic",
+        "cost": "18",
+        "swc": "0",
+        "spec": [
+          "Paramedic",
+          "MediKit"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "D.E.P."
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6031,
+    "army": "Combined Army",
+    "isc": "Shasvastii Corax Hasht",
+    "name": "Corax Hasht",
+    "image": 6998,
+    "type": "MI",
+    "classification": "Character",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "15",
+    "bs": "13",
+    "ph": "11",
+    "wip": "13",
+    "arm": "1",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Nanoscreen",
+      "Shasvastii",
+      "Specialist Operative",
+      "Shock Immunity",
+      "Stealth",
+      "V: No Wound Incapacitation"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Spitfire",
+        "cost": "34",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Spitfire"
+        ],
+        "ccw": [
+          "Knife",
+          "Breaker Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6032,
+    "army": "Combined Army",
+    "isc": "Skiávoros",
+    "name": "Skiávoro",
+    "type": "MI",
+    "classification": "Headquarters",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "mov": "4-2",
+    "cc": "17",
+    "bs": "13",
+    "ph": "12",
+    "wip": "16",
+    "arm": "3",
+    "bts": "3",
+    "w": "1",
+    "wtype": "str",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "CH: Mimetism",
+      "G: Mnemonica",
+      "Strategos L2",
+      "V: No Wound Incapacitation"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Sepsitor Lieutenant",
+        "cost": "64",
+        "swc": "1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Sepsitor Plus",
+          "Plasma Rifle"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Lieutenant",
+        "cost": "52",
+        "swc": "0",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Plasma Rifle"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Hacker",
+        "cost": "60",
+        "swc": "0.5",
+        "spec": [
+          "Hacking Device Plus"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Plasma Rifle"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Sepsitor",
+        "cost": "64",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "Sepsitor Plus",
+          "Plasma Rifle"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Spitfire",
+        "cost": "51",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "Spitfire"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Plasma",
+        "cost": "52",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "Plasma Rifle"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6033,
+    "army": "Combined Army",
+    "isc": "Slave Drones",
+    "name": "Slave Drone",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "hackable": "X",
+    "mov": "6-4",
+    "cc": "8",
+    "bs": "8",
+    "ph": "10",
+    "wip": "13",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "s": "1",
+    "ava": "2",
+    "spec": [
+      "CH: Mimetism",
+      "G: Servant"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Servant",
+        "cost": "3",
+        "swc": "0",
+        "spec": [],
+        "bsw": [],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6034,
+    "army": "Combined Army",
+    "isc": "Sogarat Tempest Regiment",
+    "name": "Sogarat",
+    "type": "HI",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "hackable": "X",
+    "mov": "4-4",
+    "cc": "20",
+    "bs": "13",
+    "ph": "15",
+    "wip": "13",
+    "arm": "6",
+    "bts": "3",
+    "w": "2",
+    "s": "5",
+    "ava": "1",
+    "spec": [
+      "AutoMediKit",
+      "Morat",
+      "Bioimmunity",
+      "Fireteam: Duo"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Feuerbach Lieutenant",
+        "cost": "57",
+        "swc": "1.5",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Feuerbach"
+        ],
+        "ccw": [
+          "AP CCW",
+          "Assault Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Feuerbach",
+        "cost": "57",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Feuerbach"
+        ],
+        "ccw": [
+          "AP CCW",
+          "Assault Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "AP HMG Lieutenant",
+        "cost": "56",
+        "swc": "2",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "AP HMG"
+        ],
+        "ccw": [
+          "AP CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "AP HMG",
+        "cost": "56",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "AP HMG"
+        ],
+        "ccw": [
+          "AP CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Full Auto Feuerbach",
+        "cost": "67",
+        "swc": "1.5",
+        "spec": [
+          "Full Auto L2"
+        ],
+        "bsw": [
+          "Feuerbach"
+        ],
+        "ccw": [
+          "AP CCW",
+          "Assault Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6035,
+    "army": "Combined Army",
+    "isc": "The Anathematics",
+    "name": "Anathematic",
+    "type": "HI",
+    "classification": "Headquarters",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "hackable": "X",
+    "mov": "4-4",
+    "cc": "17",
+    "bs": "13",
+    "ph": "13",
+    "wip": "16",
+    "arm": "5",
+    "bts": "6",
+    "w": "2",
+    "s": "6",
+    "ava": "1",
+    "spec": [
+      "CH: TO Camouflage",
+      "G: Mnemonica",
+      "V: No Wound Incapacitation"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Lieutenant",
+        "cost": "82",
+        "swc": "0",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Plasma Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Monofilament CCW"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Hacker",
+        "cost": "88",
+        "swc": "0.5",
+        "spec": [
+          "EI Hacking Device"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Plasma Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Shock CCW"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Sepsitor",
+        "cost": "88",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "Sepsitor",
+          "Plasma Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Shock CCW"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Spitfire",
+        "cost": "81",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "Spitfire"
+        ],
+        "ccw": [
+          "Pistol",
+          "Monofilament CCW"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Plasma",
+        "cost": "82",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "Plasma Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Monofilament CCW"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Hacker Lieutenant",
+        "cost": "88",
+        "swc": "0.5",
+        "spec": [
+          "EI Hacking Device",
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Plasma Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Shock CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6036,
+    "army": "Combined Army",
+    "isc": "Yaogat Strike Infantry",
+    "name": "Yaogat",
+    "type": "MI",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-2",
+    "cc": "16",
+    "bs": "12",
+    "ph": "12",
+    "wip": "13",
+    "arm": "3",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Morat",
+      "Multispectral Visor L2"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "29",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Panzerfaust"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Lieutenant",
+        "cost": "29",
+        "swc": "1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Panzerfaust"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Spitfire",
+        "cost": "32",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Spitfire"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "MULTI Sniper Rifle",
+        "cost": "34",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "MULTI Sniper Rifle"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Boarding Shotgun, Grenades",
+        "cost": "27",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun",
+          "Grenades"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Hacker",
+        "cost": "36",
+        "swc": "0.5",
+        "spec": [
+          "EI Hacking Device"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Grenades"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Haris",
+        "cost": "30",
+        "swc": "0.5",
+        "spec": [
+          "Fireteam: Haris"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Panzerfaust"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Number 2",
+        "cost": "28",
+        "swc": "0",
+        "spec": [
+          "Number 2"
+        ],
+        "bsw": [
+          "Boarding Shotgun",
+          "Grenades"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6037,
+    "army": "Combined Army",
+    "isc": "Zerat Special Missions Regiment",
+    "name": "Zerat",
+    "type": "SK",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "11",
+    "ph": "12",
+    "wip": "13",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "CH: Mimetism",
+      "Infiltration",
+      "Morat",
+      "Multiterrain"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Assault Hacker",
+        "cost": "25",
+        "swc": "0.5",
+        "spec": [
+          "EI Assault Hacking Device"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "D-Charges"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "MULTI Sniper Rifle",
+        "cost": "28",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "MULTI Sniper Rifle",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Boarding Shotgun",
+        "cost": "21",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun",
+          "Grenades",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "E/Mitter",
+        "cost": "22",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "E/Mitter",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Combi",
+        "cost": "21",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Light Flamethrower",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Observer",
+        "cost": "22",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Boarding Shotgun",
+          "Grenades",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Red Fury",
+        "cost": "25",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Red Fury",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Killer Hacker",
+        "cost": "22",
+        "swc": "0",
+        "spec": [
+          "EI Killer Hacking Device"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "D-Charges"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6038,
+    "army": "Combined Army",
+    "isc": "Cadmus-Naish Agent Sheskiin",
+    "name": "Sheskiin",
+    "type": "LI",
+    "classification": "Character",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "6-4",
+    "cc": "24",
+    "bs": "15",
+    "ph": "15",
+    "wip": "13",
+    "arm": "1",
+    "bts": "3",
+    "w": "2",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Nanoscreen",
+      "Fatality L2",
+      "Free Agent",
+      "Kinematika L2",
+      "Protheion L3",
+      "Shasvastii"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Lieutenant",
+        "cost": "53",
+        "swc": "1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "MULTI Rifle",
+          "Pulzar"
+        ],
+        "ccw": [
+          "D-Charges",
+          "Pistol",
+          "DA CCW"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "MULTI",
+        "cost": "53",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "MULTI Rifle",
+          "Pulzar"
+        ],
+        "ccw": [
+          "D-Charges",
+          "Pistol",
+          "DA CCW"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Red Fury Lieutenant",
+        "cost": "54",
+        "swc": "1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Red Fury",
+          "Pulzar"
+        ],
+        "ccw": [
+          "D-Charges",
+          "Pistol",
+          "DA CCW"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Red Fury",
+        "cost": "54",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Red Fury",
+          "Pulzar"
+        ],
+        "ccw": [
+          "D-Charges",
+          "Pistol",
+          "DA CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6039,
+    "army": "Combined Army",
+    "isc": "Treitak Spec-Ops (Vanguard)",
+    "name": "Treitak (Vanguard)",
+    "type": "SPEC-OPS",
+    "classification": "Line",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "14",
+    "bs": "11",
+    "ph": "12",
+    "wip": "13",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "sharedAva": 6001,
+    "spec": [
+      "Morat"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Spec-Ops",
+        "cost": "15",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6040,
+    "army": "Combined Army",
+    "isc": "Treitak Anyat",
+    "name": "Anyat",
+    "image": 6039,
+    "type": "LI",
+    "classification": "Character",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "16",
+    "bs": "12",
+    "ph": "12",
+    "wip": "13",
+    "arm": "1",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Morat",
+      "Climbing Plus",
+      "Specialist Operative"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "K1 Combi",
+        "cost": "25",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "K1 Combi Rifle",
+          "Chain-Colt",
+          "Smoke Grenades",
+          "E/M Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6041,
+    "army": "Combined Army",
+    "isc": "Corax Spec-Ops (Nox)",
+    "name": "Corax (Nox)",
+    "image": 6998,
+    "type": "SPEC-OPS",
+    "classification": "Line",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "14",
+    "bs": "11",
+    "ph": "10",
+    "wip": "13",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "sharedAva": 6058,
+    "spec": [
+      "Bioimmunity",
+      "Shasvastii",
+      "Stealth"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Spec-Ops",
+        "cost": "15",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Zapper"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6042,
+    "army": "Combined Army",
+    "isc": "Ikadron Batroids",
+    "name": "Ikadron",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "hackable": "X",
+    "mov": "6-2",
+    "cc": "7",
+    "bs": "11",
+    "ph": "10",
+    "wip": "13",
+    "arm": "1",
+    "bts": "6",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "G: Autotool"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Baggage",
+        "cost": "9",
+        "swc": "0",
+        "spec": [
+          "Baggage",
+          "Repeater"
+        ],
+        "bsw": [
+          "Light Flamethrower (2)",
+          "Flash Pulse"
+        ],
+        "ccw": [
+          "Pistol",
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6043,
+    "army": "Combined Army",
+    "isc": "Ko Dali",
+    "name": "Ko Dali",
+    "type": "MI",
+    "classification": "Character",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "19",
+    "bs": "14",
+    "ph": "13",
+    "wip": "13",
+    "arm": "2",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Multispectral Visor L2",
+      "Bioimmunity",
+      "Protheion L1"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combat Jump",
+        "cost": "39",
+        "swc": "0",
+        "spec": [
+          "AD: Combat Jump"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Nanopulser"
+        ],
+        "ccw": [
+          "D-Charges",
+          "Assault Pistol (2)",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Forward Deployment",
+        "cost": "36",
+        "swc": "0",
+        "spec": [
+          "CH: Mimetism",
+          "Forward Deployment L2"
+        ],
+        "bsw": [
+          "MULTI Rifle",
+          "Nanopulser"
+        ],
+        "ccw": [
+          "D-Charges",
+          "Assault Pistol (2)",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6044,
+    "obsolete": "X"
+  },
+  {
+    "id": 6045,
+    "obsolete": "X"
+  },
+  {
+    "id": 6046,
+    "army": "Combined Army",
+    "isc": "Shasvastii Caliban",
+    "name": "Caliban",
+    "type": "LI",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "23",
+    "bs": "12",
+    "ph": "13",
+    "wip": "13",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "CH: Camouflage",
+      "Forward Deployment L2",
+      "Kinematika L2",
+      "Protheion L3",
+      "Shasvastii"
+    ],
+    "childs": [
+      {
+        "id": 2,
+        "name": "Boarding Shotgun",
+        "cost": "29",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife",
+          "CCW"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Engineer",
+        "cost": "28",
+        "swc": "0",
+        "spec": [
+          "Engineer"
+        ],
+        "bsw": [
+          "Submachine Gun",
+          "Pulzar",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife",
+          "CCW"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Light Rocket Launcher",
+        "cost": "34",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun",
+          "Light Rocket Launcher"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife",
+          "CCW"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Spitfire",
+        "cost": "36",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Spitfire",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife",
+          "CCW"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Chain of Command",
+        "cost": "29",
+        "swc": "0",
+        "spec": [
+          "Chain of Command"
+        ],
+        "bsw": [
+          "Submachine Gun",
+          "Pulzar",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife",
+          "CCW"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Observer",
+        "cost": "30",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Boarding Shotgun",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife",
+          "CCW"
+        ]
+      },
+      {
+        "id": 11,
+        "name": "MSV1 Spitfire",
+        "cost": "40",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Spitfire",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife",
+          "CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6047,
+    "army": "Combined Army",
+    "isc": "Raktorak",
+    "name": "Raktorak",
+    "type": "MI",
+    "classification": "Veteran",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "14",
+    "bs": "12",
+    "ph": "12",
+    "wip": "13",
+    "arm": "2",
+    "bts": "6",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Morat",
+      "Jungle Terrain",
+      "Specialist Operative"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "23",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Heavy Flamethrower"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Vulkan",
+        "cost": "22",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Vulkan Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Red Fury",
+        "cost": "26",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Red Fury"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Vulkan NCO",
+        "cost": "24",
+        "swc": "0",
+        "spec": [
+          "NCO"
+        ],
+        "bsw": [
+          "Vulkan Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6048,
+    "army": "Combined Army",
+    "isc": "Suryats",
+    "name": "Suryat",
+    "type": "HI",
+    "classification": "Veteran",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "hackable": "X",
+    "mov": "4-4",
+    "cc": "16",
+    "bs": "13",
+    "ph": "13",
+    "wip": "13",
+    "arm": "4",
+    "bts": "6",
+    "w": "2",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Morat",
+      "Jungle Terrain",
+      "Fireteam: Duo"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Vulkan",
+        "cost": "37",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Vulkan Shotgun"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Combi",
+        "cost": "37",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Light Flamethrower"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "MULTI",
+        "cost": "41",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "MULTI Rifle",
+          "Light Flamethrower"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Heavy Rocket Launcher",
+        "cost": "39",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "Heavy Rocket Launcher",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "HMG",
+        "cost": "44",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Lieutenant",
+        "cost": "41",
+        "swc": "1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "MULTI Rifle",
+          "Light Flamethrower"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Lieutenant HMG",
+        "cost": "45",
+        "swc": "2",
+        "spec": [
+          "Lieutenant",
+          "TinBot A (Deflector L1)"
+        ],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "HMG TinBot",
+        "cost": "45",
+        "swc": "2",
+        "spec": [
+          "TinBot A (Deflector L1)"
+        ],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Haris",
+        "cost": "38",
+        "swc": "1",
+        "spec": [
+          "Fireteam: Haris",
+          "TinBot A (Deflector L1)"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Light Flamethrower"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Combi TinBot",
+        "cost": "38",
+        "swc": "0",
+        "spec": [
+          "TinBot A (Deflector L1)"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Light Flamethrower"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 11,
+        "name": "HMG Tactical Awareness",
+        "cost": "48",
+        "swc": "2",
+        "spec": [
+          "Tactical Awareness",
+          "TinBot A (Deflector L1)"
+        ],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6049,
+    "army": "Combined Army",
+    "isc": "Oznat",
+    "name": "Oznat",
+    "ava": "2",
+    "spec": [],
+    "profiles": [
+      {
+        "id": 1,
+        "type": "WB",
+        "classification": "Specially Trained",
+        "imp": "X",
+        "irr": "",
+        "cube": "X",
+        "mov": "6-4",
+        "cc": "21",
+        "bs": "11",
+        "ph": "13",
+        "wip": "13",
+        "arm": "1",
+        "bts": "0",
+        "w": "1",
+        "s": "2",
+        "spec": [
+          "Morat",
+          "Hungries Control Device",
+          "Kinematika L1"
+        ],
+        "bsw": [],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Sync Preta",
+        "optionSpecific": "X",
+        "type": "WB",
+        "classification": "Specially Trained",
+        "imp": "X",
+        "irr": "",
+        "cube": "",
+        "mov": "6-6",
+        "cc": "19",
+        "bs": "9",
+        "ph": "14",
+        "wip": "12",
+        "arm": "0",
+        "bts": "0",
+        "w": "1",
+        "s": "2",
+        "spec": [
+          "G: Synchronized",
+          "Kinematika L1",
+          "Climbing Plus",
+          "V: Dogged"
+        ],
+        "bsw": [
+          "Chain Rifle"
+        ],
+        "ccw": [
+          "AP CCW"
+        ],
+        "independent": {
+          "cost": "8",
+          "swc": "0"
+        }
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "18",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Smoke Light Grenade Launcher"
+        ],
+        "ccw": [
+          "Pistol",
+          "Shock CCW"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Vulkan Shotgun",
+        "cost": "20",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Vulkan Shotgun",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Stalker Unit",
+        "cost": "29",
+        "swc": "0",
+        "profile": 2,
+        "spec": [
+          "Sensor"
+        ],
+        "bsw": [
+          "Vulkan Shotgun",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6050,
+    "army": "Combined Army",
+    "isc": "Kornak Gazarot",
+    "name": "Kornak",
+    "type": "MI",
+    "classification": "Character",
+    "imp": "F",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "22",
+    "bs": "14",
+    "ph": "13",
+    "wip": "14",
+    "arm": "3",
+    "bts": "9",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Morat",
+      "Strategos L1",
+      "V: No Wound Incapacitation",
+      "Kinematika L1",
+      "Berserk",
+      "Fireteam: Haris"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Mk12",
+        "cost": "41",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Mk12",
+          "Light Flamethrower"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Lieutenant",
+        "cost": "41",
+        "swc": "1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Mk12",
+          "Light Flamethrower"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6051,
+    "army": "Combined Army",
+    "isc": "E-Drone",
+    "name": "E-Drone",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "hackable": "X",
+    "mov": "6-4",
+    "cc": "8",
+    "bs": "11",
+    "ph": "10",
+    "wip": "13",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "s": "3",
+    "ava": "2",
+    "spec": [
+      "EVO Hacking Device: UPGRADES: Exile, Goodnight",
+      "G: Remote Presence",
+      "Multiterrain"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "28",
+        "swc": "0.5",
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6052,
+    "army": "Combined Army",
+    "isc": "Umbra Samaritans",
+    "name": "Umbra Samaritan",
+    "type": "LI",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "6-2",
+    "cc": "24",
+    "bs": "12",
+    "ph": "12",
+    "wip": "14",
+    "arm": "2",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Fireteam: Haris",
+      "Hyper-Dynamics L1",
+      "Kinematika L2",
+      "Protheion L4",
+      "Super-Jump",
+      "V: No Wound Incapacitation"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Breaker Combi",
+        "cost": "40",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Breaker Combi Rifle",
+          "Flash Pulse"
+        ],
+        "ccw": [
+          "Pistol",
+          "Vorpal CCW"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Spitfire",
+        "cost": "44",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Spitfire",
+          "Flash Pulse"
+        ],
+        "ccw": [
+          "Pistol",
+          "Vorpal CCW"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Assault Hacker",
+        "cost": "43",
+        "swc": "0.5",
+        "spec": [
+          "EI Assault Hacking Device: UPGRADE: Goodnight"
+        ],
+        "bsw": [
+          "Plasma Carbine",
+          "Flash Pulse"
+        ],
+        "ccw": [
+          "Pistol",
+          "Vorpal CCW"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Breaker Combi Lieutenant",
+        "cost": "40",
+        "swc": "0.5",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Breaker Combi Rifle",
+          "Flash Pulse"
+        ],
+        "ccw": [
+          "Pistol",
+          "Vorpal CCW"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Spitfire Lieutenant",
+        "cost": "44",
+        "swc": "1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Spitfire",
+          "Flash Pulse"
+        ],
+        "ccw": [
+          "Pistol",
+          "Vorpal CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6053,
+    "army": "Combined Army",
+    "isc": "Nexus Operatives",
+    "name": "Nexus",
+    "type": "LI",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "12",
+    "ph": "11",
+    "wip": "13",
+    "arm": "1",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Hyper-Dynamics L1",
+      "V: Courage"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Specialist",
+        "cost": "16",
+        "swc": "0",
+        "spec": [
+          "Specialist Operative"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Hacker",
+        "cost": "24",
+        "swc": "0.5",
+        "spec": [
+          "EI Hacking Device",
+          "Nullifier"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Spitfire",
+        "cost": "26",
+        "swc": "1",
+        "spec": [
+          "Nanoscreen"
+        ],
+        "bsw": [
+          "Spitfire"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Specialist Lieutenant",
+        "cost": "16",
+        "swc": "1",
+        "spec": [
+          "Specialist Operative",
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Hacker Lieutenant",
+        "cost": "24",
+        "swc": "0.5",
+        "spec": [
+          "EI Hacking Device",
+          "Nullifier",
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Spitfire Lieutenant",
+        "cost": "26",
+        "swc": "1",
+        "spec": [
+          "Nanoscreen",
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Spitfire"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6054,
+    "army": "Combined Army",
+    "isc": "Xeodron Batroids",
+    "name": "Xeodron",
+    "ava": "1",
+    "spec": [],
+    "profiles": [
+      {
+        "id": 1,
+        "type": "TAG",
+        "classification": "Mechanized",
+        "imp": "",
+        "irr": "",
+        "cube": "",
+        "hackable": "X",
+        "mov": "4-4",
+        "cc": "14",
+        "bs": "13",
+        "ph": "13",
+        "wip": "13",
+        "arm": "5",
+        "bts": "6",
+        "w": "3",
+        "s": "6",
+        "spec": [
+          "G: Remote Presence",
+          "Bioimmunity",
+          "Super-Jump",
+          "Fatality L1",
+          "Tactical Awareness"
+        ],
+        "bsw": [],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "isc": "Staldron Remote Ancillary Unit",
+        "name": "Staldron",
+        "type": "REM",
+        "hackable": "X",
+        "mov": "4-4",
+        "cc": "10",
+        "bs": "10",
+        "ph": "10",
+        "wip": "13",
+        "arm": "0",
+        "bts": "0",
+        "w": "1",
+        "s": "1",
+        "ava": "",
+        "spec": [
+          "G: Remote Presence",
+          "Remote Pilot",
+          "Specialist Operative"
+        ],
+        "bsw": [
+          "Flash Pulse"
+        ],
+        "ccw": [
+          "Knife"
+        ]
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Red Fury",
+        "cost": "63",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Red Fury",
+          "Blitzen"
+        ],
+        "ccw": [
+          "Heavy Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "K1 Combi",
+        "cost": "63",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "K1 Combi Rifle",
+          "Blitzen"
+        ],
+        "ccw": [
+          "Heavy Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "MULTI Rifle",
+        "cost": "62",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "MULTI Rifle",
+          "Blitzen"
+        ],
+        "ccw": [
+          "Heavy Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6055,
+    "army": "Combined Army",
+    "isc": "Overdron Batroids",
+    "name": "Overdron",
+    "ava": "1",
+    "spec": [],
+    "profiles": [
+      {
+        "id": 1,
+        "type": "TAG",
+        "classification": "Mechanized",
+        "imp": "",
+        "irr": "",
+        "cube": "",
+        "hackable": "X",
+        "mov": "4-4",
+        "cc": "14",
+        "bs": "13",
+        "ph": "14",
+        "wip": "13",
+        "arm": "6",
+        "bts": "6",
+        "w": "3",
+        "s": "6",
+        "spec": [
+          "ECM",
+          "TinBot A (Deflector L1)",
+          "TinBot D (Albedo)",
+          "G: Remote Presence",
+          "Fatality L1",
+          "Tactical Awareness"
+        ],
+        "bsw": [],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "isc": "Staldron Remote Ancillary Unit",
+        "name": "Staldron",
+        "type": "REM",
+        "hackable": "X",
+        "mov": "4-4",
+        "cc": "10",
+        "bs": "10",
+        "ph": "10",
+        "wip": "13",
+        "arm": "0",
+        "bts": "0",
+        "w": "1",
+        "s": "1",
+        "ava": "",
+        "spec": [
+          "G: Remote Presence",
+          "Remote Pilot",
+          "Specialist Operative"
+        ],
+        "bsw": [
+          "Flash Pulse"
+        ],
+        "ccw": [
+          "Knife"
+        ]
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "HMC",
+        "cost": "78",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "HMC"
+        ],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Dual Plasma Sniper",
+        "cost": "72",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "Plasma Sniper Rifle (2)"
+        ],
+        "ccw": []
+      },
+      {
+        "id": 3,
+        "name": "Dual HRL",
+        "cost": "61",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "Heavy Rocket Launcher (2)"
+        ],
+        "ccw": []
+      }
+    ]
+  },
+  {
+    "id": 6056,
+    "army": "Combined Army",
+    "isc": "Bit & Kiss!",
+    "name": "Bit",
+    "ava": "1",
+    "spec": [],
+    "profiles": [
+      {
+        "id": 1,
+        "type": "LI",
+        "classification": "Character",
+        "imp": "",
+        "irr": "",
+        "cube": "X",
+        "mov": "4-4",
+        "cc": "13",
+        "bs": "11",
+        "ph": "10",
+        "wip": "13",
+        "arm": "0",
+        "bts": "6",
+        "w": "1",
+        "s": "2",
+        "spec": [
+          "EI Killer Hacking Device: UPGRADE: Expel",
+          "Minelayer"
+        ],
+        "bsw": [],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Kiss!",
+        "type": "REM",
+        "imp": "",
+        "irr": "",
+        "cube": "",
+        "hackable": "X",
+        "mov": "6-4",
+        "cc": "8",
+        "bs": "10",
+        "ph": "10",
+        "wip": "13",
+        "arm": "0",
+        "bts": "3",
+        "w": "1",
+        "s": "2",
+        "spec": [
+          "G: Synchronized",
+          "Repeater"
+        ],
+        "bsw": [
+          "Adhesive Launcher"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ],
+        "independent": {
+          "cost": "4",
+          "swc": "0"
+        }
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Killer Hacker",
+        "cost": "19",
+        "swc": "0.5",
+        "spec": [
+          "Deployable Repeater"
+        ],
+        "bsw": [
+          "Submachine Gun",
+          "Pitcher"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6057,
+    "army": "Combined Army",
+    "isc": "Nexus-7 Operative Kerr-Nau",
+    "name": "Kerr-Nau",
+    "type": "LI",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "12",
+    "ph": "11",
+    "wip": "14",
+    "arm": "1",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Bioimmunity",
+      "Kinematika L1",
+      "Hyper-Dynamics L1",
+      "V: Courage"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Killer Hacker",
+        "cost": "27",
+        "swc": "0",
+        "spec": [
+          "EI Killer Hacking Device: UPGRADE: White Noise"
+        ],
+        "bsw": [
+          "Plasma Rifle",
+          "Pitcher"
+        ],
+        "ccw": [
+          "D-Charges",
+          "Breaker Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6058,
+    "army": "Combined Army",
+    "isc": "Shasvastii Nox Troops",
+    "name": "Nox",
+    "type": "LI",
+    "classification": "Line",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "14",
+    "bs": "11",
+    "ph": "10",
+    "wip": "13",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "5",
+    "spec": [
+      "Bioimmunity",
+      "Shasvastii",
+      "Stealth"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "14",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Zapper"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "HMG",
+        "cost": "21",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Grenadier",
+        "cost": "17",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Light Grenade Launcher",
+          "Light Nimbus Plus Grenade Launcher"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Sniper",
+        "cost": "21",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "MULTI Sniper Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Smart Sniper",
+        "cost": "23",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Smart MULTI Sniper Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Hacker",
+        "cost": "22",
+        "swc": "0.5",
+        "spec": [
+          "EI Hacking Device"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Zapper"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "SMG Hacker",
+        "cost": "17",
+        "swc": "0.5",
+        "spec": [
+          "EI Hacking Device"
+        ],
+        "bsw": [
+          "Submachine Gun",
+          "Zapper"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Observer",
+        "cost": "15",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Zapper"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Paramedic",
+        "cost": "16",
+        "swc": "0",
+        "spec": [
+          "Paramedic",
+          "MediKit"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Zapper"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Lieutenant",
+        "cost": "14",
+        "swc": "0",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Zapper"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6059,
+    "army": "Combined Army",
+    "isc": "Shasvastii Mentors",
+    "name": "Mentor",
+    "type": "LI",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "14",
+    "bs": "12",
+    "ph": "10",
+    "wip": "14",
+    "arm": "1",
+    "bts": "6",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "CH: Ambush Camouflage",
+      "Counterintelligence",
+      "Shasvastii"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Shotgun",
+        "cost": "22",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Marksman",
+        "cost": "27",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Shock Marksman Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Hacker",
+        "cost": "30",
+        "swc": "0.5",
+        "spec": [
+          "EI Hacking Device"
+        ],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Shotgun Lieutenant",
+        "cost": "22",
+        "swc": "1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Marksman Lieutenant",
+        "cost": "27",
+        "swc": "1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Shock Marksman Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6060,
+    "army": "Combined Army",
+    "isc": "Jayth Cutthroats",
+    "name": "Jayth Cutthroat",
+    "ava": "1",
+    "spec": [],
+    "profiles": [
+      {
+        "id": 1,
+        "type": "LI",
+        "classification": "Veteran",
+        "imp": "F",
+        "irr": "",
+        "cube": "X",
+        "mov": "4-4",
+        "cc": "23",
+        "bs": "12",
+        "ph": "13",
+        "wip": "13",
+        "arm": "0",
+        "bts": "6",
+        "w": "1",
+        "s": "2",
+        "spec": [
+          "Multispectral Visor L1",
+          "ODD: Optical Disruptor",
+          "Fireteam: Duo",
+          "Natural Born Warrior",
+          "Shasvastii",
+          "Shock Immunity"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Sync Taigha Creature",
+        "optionSpecific": "X",
+        "type": "WB",
+        "classification": "Veteran",
+        "imp": "",
+        "irr": "",
+        "cube": "",
+        "mov": "6-6",
+        "cc": "21",
+        "bs": "9",
+        "ph": "13",
+        "wip": "11",
+        "arm": "0",
+        "bts": "0",
+        "w": "1",
+        "s": "1",
+        "spec": [
+          "Berserk",
+          "G: Synchronized",
+          "Hyper-Dynamics L1",
+          "Kinematika L2"
+        ],
+        "bsw": [
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "DA CCW"
+        ],
+        "independent": {
+          "cost": "6",
+          "swc": "0"
+        }
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Dual Chain Rifle",
+        "cost": "22",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Chain Rifle (2)",
+          "E/M Grenades",
+          "E/Mauler"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "SMG",
+        "cost": "25",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Submachine Gun",
+          "Chain Rifle",
+          "E/M Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Red Fury",
+        "cost": "35",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Red Fury",
+          "E/M Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "SMG Haris",
+        "cost": "26",
+        "swc": "0",
+        "spec": [
+          "Fireteam: Haris"
+        ],
+        "bsw": [
+          "Submachine Gun",
+          "Chain Rifle",
+          "E/M Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW",
+          "Knife"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Shotgun Specialist",
+        "cost": "32",
+        "swc": "0",
+        "spec": [
+          "Specialist Operative"
+        ],
+        "bsw": [
+          "Vulkan Shotgun",
+          "E/M Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW",
+          "Knife"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Pit Patrol",
+        "cost": "31",
+        "swc": "0",
+        "profile": 2,
+        "spec": [],
+        "bsw": [
+          "Submachine Gun",
+          "Chain Rifle",
+          "E/M Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6061,
+    "army": "Combined Army",
+    "isc": "Taigha Creatures",
+    "name": "Taigha",
+    "type": "WB",
+    "classification": "Support",
+    "imp": "X",
+    "irr": "X",
+    "cube": "",
+    "mov": "6-6",
+    "cc": "21",
+    "bs": "9",
+    "ph": "13",
+    "wip": "11",
+    "arm": "0",
+    "bts": "0",
+    "w": "1",
+    "s": "1",
+    "ava": "4",
+    "spec": [
+      "Berserk",
+      "Hyper-Dynamics L1",
+      "Kinematika L2",
+      "Sixth Sense L1"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "AP+Shock CCW",
+        "cost": "5",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Chain-Colt"
+        ],
+        "ccw": [
+          "AP+Shock CCW"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "DA CCW",
+        "cost": "6",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Chain-Colt"
+        ],
+        "ccw": [
+          "DA CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6062,
+    "army": "Combined Army",
+    "isc": "Greif Operators",
+    "name": "Greif-Op",
+    "type": "LI",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "15",
+    "bs": "11",
+    "ph": "11",
+    "wip": "13",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Multispectral Visor L1",
+      "V: Courage"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "22",
+        "swc": "0",
+        "spec": [
+          "CH: Mimetism",
+          "Forward Deployment L2"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Breaker Pistol (2)",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Marksman",
+        "cost": "25",
+        "swc": "0",
+        "spec": [
+          "CH: Mimetism",
+          "Forward Deployment L2"
+        ],
+        "bsw": [
+          "Shock Marksman Rifle",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Breaker Pistol (2)",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Infiltrator",
+        "cost": "21",
+        "swc": "1",
+        "spec": [
+          "Inferior Impersonation"
+        ],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Breaker Pistol (2)",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6063,
+    "army": "Combined Army",
+    "isc": "Victor Messer, Autonomous Agent of Chaos",
+    "name": "Victor Messer",
+    "type": "LI",
+    "classification": "Character",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "14",
+    "bs": "12",
+    "ph": "10",
+    "wip": "14",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Nanoscreen",
+      "Shasvastii",
+      "Stealth",
+      "V: No Wound Incapacitation"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "MULTI Rifle",
+        "cost": "34",
+        "swc": "0.5",
+        "spec": [
+          "Hacking Device Plus"
+        ],
+        "bsw": [
+          "MULTI Rifle",
+          "Nanopulser (2)",
+          "Cybermines",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Breaker Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shotgun",
+        "cost": "28",
+        "swc": "0.5",
+        "spec": [
+          "Hacking Device Plus"
+        ],
+        "bsw": [
+          "Boarding Shotgun",
+          "Nanopulser (2)",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Breaker Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6064,
+    "army": "Combined Army",
+    "isc": "Tensho Experts",
+    "name": "Tensho",
+    "type": "LI",
+    "classification": "Line",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "11",
+    "ph": "10",
+    "wip": "14",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "AutoMediKit",
+      "Shasvastii",
+      "Bioimmunity",
+      "Specialist Operative",
+      "Stealth",
+      "Veteran L1"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "FTO",
+        "cost": "16",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Journalist FTO",
+        "cost": "16",
+        "swc": "0",
+        "spec": [
+          "Journalist L1"
+        ],
+        "bsw": [
+          "Submachine Gun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6065,
+    "army": "Combined Army",
+    "isc": "Nexus Spec-Ops",
+    "name": "Nexus",
+    "type": "SPEC-OPS",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "12",
+    "ph": "11",
+    "wip": "13",
+    "arm": "1",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "sharedAva": 6053,
+    "spec": [
+      "Morat"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Spec-Ops",
+        "cost": "16",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  }
+]

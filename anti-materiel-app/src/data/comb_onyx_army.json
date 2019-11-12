@@ -1,0 +1,265 @@
+[
+  {
+    "id": 6996,
+    "army": "Combined Army",
+    "army_id": 6999,
+    "name": "Onyx Contact Force",
+    "units": [
+      {
+        "comment": "Unidron Batroids",
+        "id": 6002,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "1 Nexus Operative or 1 Umbra Legate + up to 4 Unidron Batroids, OR 1 Nexus Operative + 1 Umbra Legate + up to 3 Unidron Batroids"
+          }
+        ]
+      },
+      {
+        "comment": "Nexus Operative",
+        "id": 6053,
+        "ava": "3",
+        "childs": [
+          {
+            "comment": "Specialist Lieutenant - SWC cost is only 0 in Onyx",
+            "id": 4,
+            "swc": "0"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "1 Nexus Operative or 1 Umbra Legate + up to 4 Unidron Batroids, OR 1 Nexus Operative + 1 Umbra Legate + up to 3 Unidron Batroids"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "1 Nexus Operative or 1 Umbra Legate or 1 Umbra Samaritan + up to 4 Rodoks"
+          }
+        ]
+      },
+      {
+        "comment": "Fraacta Drop Unit",
+        "id": 6003,
+        "ava": "3"
+      },
+      {
+        "comment": "Noctifers",
+        "id": 6028,
+        "ava": "2"
+      },
+      {
+        "comment": "Rodok",
+        "id": 6006,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "1 Nexus Operative or 1 Umbra Legate or 1 Umbra Samaritan + up to 4 Rodoks"
+          }
+        ]
+      },
+      {
+        "comment": "Maakrep",
+        "id": 6005,
+        "ava": "2"
+      },
+      {
+        "comment": "Umbra Legate",
+        "id": 6004,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "1 Nexus Operative or 1 Umbra Legate + up to 4 Unidron Batroids, OR 1 Nexus Operative + 1 Umbra Legate + up to 3 Unidron Batroids"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "1 Nexus Operative or 1 Umbra Legate or 1 Umbra Samaritan + up to 4 Rodoks"
+          }
+        ]
+      },
+      {
+        "comment": "Umbra Samaritan",
+        "id": 6052,
+        "ava": "3",
+        "childs": [
+          {
+            "comment": "Lieutenant - SWC cost is only 0 in Onyx",
+            "id": 4,
+            "swc": "0"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "1 Nexus Operative or 1 Umbra Legate or 1 Umbra Samaritan + up to 4 Rodoks"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Umbra Samaritan + 2 Xeodron Batroids"
+          }
+        ]
+      },
+      {
+        "comment": "Suryats",
+        "id": 6048,
+        "ava": "2",
+        "childs": [
+          {
+            "comment": "Haris is only available in MAF",
+            "id": 9,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Xeodron",
+        "id": 6054,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Umbra Samaritan + 2 Xeodron Batroids"
+          }
+        ]
+      },
+      {
+        "comment": "Overdron",
+        "id": 6055,
+        "ava": "2"
+      },
+      {
+        "comment": "Sphinx",
+        "id": 6029,
+        "ava": "1"
+      },
+      {
+        "comment": "Malignos",
+        "id": 6011,
+        "ava": "2"
+      },
+      {
+        "comment": "Med-Tech Obsidon Medchanoid",
+        "id": 6016,
+        "ava": "1"
+      },
+      {
+        "comment": "M-Drone",
+        "id": 6017,
+        "ava": "2",
+        "childs": [
+          {
+            "comment": "FTO is only available in Shasvastii Expeditionary Force",
+            "id": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Q-Drone",
+        "id": 6018,
+        "ava": "1"
+      },
+      {
+        "comment": "T-Drone",
+        "id": 6019,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "FTO is only available in Shasvastii Expeditionary Force",
+            "id": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "R-Drone",
+        "id": 6020,
+        "ava": "1"
+      },
+      {
+        "comment": "E-Drone",
+        "id": 6051,
+        "ava": "1"
+      },
+      {
+        "comment": "Slave Drones",
+        "id": 6033,
+        "ava": "2"
+      },
+      {
+        "comment": "Ikadron Batroids",
+        "id": 6042,
+        "ava": "2"
+      },
+      {
+        "comment": "Nexus Spec-Ops",
+        "id": 6065,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "1 Nexus Operative or 1 Umbra Legate + up to 4 Unidron Batroids, OR 1 Nexus Operative + 1 Umbra Legate + up to 3 Unidron Batroids"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "1 Nexus Operative or 1 Umbra Legate or 1 Umbra Samaritan + up to 4 Rodoks"
+          }
+        ]
+      },
+      {
+        "comment": "Imetron",
+        "id": 6021,
+        "ava": "2"
+      },
+      {
+        "comment": "Bit & Kiss!",
+        "id": 6056,
+        "ava": "1"
+      },
+      {
+        "comment": "Kerr-Nau",
+        "id": 6057,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Kerr-Nau counts as a Nexus for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Greif Operators",
+        "id": 6062,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "Impersonator - SWC cost is only 0.5 in Onyx",
+            "id": 3,
+            "swc": "0.5"
+          }
+        ]
+      },
+      {
+        "comment": "Ko Dali",
+        "id": 6043,
+        "ava": "1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,231 @@
+[
+  {
+    "id": 2996,
+    "army": "Yu Jing",
+    "army_id": 2999,
+    "name": "Invincible Army",
+    "units": [
+      {
+        "comment": "Mech-Engineer",
+        "id": 2016,
+        "ava": "2"
+      },
+      {
+        "comment": "Zhanshi",
+        "id": 2002,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          }
+        ]
+      },
+      {
+        "comment": "Yisheng",
+        "id": 2015,
+        "ava": "1"
+      },
+      {
+        "comment": "Dāoyīng Operative Control Unit",
+        "id": 2054,
+        "ava": "3"
+      },
+      {
+        "comment": "Hac Tao",
+        "id": 2009,
+        "ava": "1"
+      },
+      {
+        "comment": "Húláng Shocktroopers",
+        "id": 2055,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Hǎidào Special Support Group",
+        "id": 2056,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Up to 1 Hǎidào can join any Fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Liú Xīng Jump Infantry",
+        "id": 2057,
+        "ava": "4"
+      },
+      {
+        "comment": "Mówáng Troops",
+        "id": 2058,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Shàng Jí",
+        "id": 2024,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Wildcard Trooper",
+            "note": "Up to 1 Shàng Jí can join any Fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Tai Sheng, Zúyong Invincibles NCO",
+        "id": 2059,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Tai Sheng counts as a Zúyŏng for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Yān Huǒ Invincibles",
+        "id": 2006,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Zúyŏng (Fireteam: Haris) + 2 Yān Huǒ FTO"
+          }
+        ]
+      },
+      {
+        "comment": "Zhēnchá, Armored Reconnaissance Regiment",
+        "id": 2060,
+        "ava": "4"
+      },
+      {
+        "comment": "Zúyong Invincibles",
+        "id": 2005,
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Zúyŏng (Fireteam: Haris) + 2 Yān Huǒ FTO"
+          }
+        ]
+      },
+      {
+        "comment": "Guijia",
+        "id": 2011,
+        "ava": "2"
+      },
+      {
+        "comment": "Yáokòng Chaīyì",
+        "id": 2020,
+        "ava": "2"
+      },
+      {
+        "comment": "Yáokòng Hùsòng",
+        "id": 2018,
+        "ava": "3"
+      },
+      {
+        "comment": "Yáokòng Son-Bae",
+        "id": 2019,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Up to 1 Son-Bae can join any Fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Yáokòng Wèibīng",
+        "id": 2017,
+        "ava": "2"
+      },
+      {
+        "comment": "Yáozăo",
+        "id": 2025,
+        "ava": "4"
+      },
+      {
+        "comment": "Yáopú Pangguling",
+        "id": 2026,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Up to 1 Pangguling FTO can join any Fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Yáoxiè Lù Duān",
+        "id": 2039,
+        "ava": "2"
+      },
+      {
+        "comment": "Yáoxiè Rui Shi",
+        "id": 2038,
+        "ava": "2"
+      },
+      {
+        "comment": "Guǐ Fēng Spec-Ops (Zhanshi)",
+        "id": 2061,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          }
+        ]
+      },
+      {
+        "comment": "Krit Kokram, Zúyong Invincibles Specialist",
+        "id": 2063,
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Kokram FTO counts as a Zúyong for Fireteam composition."
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "Kokram FTO can be part of a Fireteam: Duo with the Guijia Squadron."
+          }
+        ]
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+@import '../../styles/colors';
+
+.side-drawer-contents__container {
+  width: 100%;
+  min-height: calc(100vh - 3rem);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-drawer-contents__stat-input {
+  margin: 0;
+}
+
+.side-drawer-contents__stat-input-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+
+  .checkbox {
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+  }
+
+  .select-input {
+    width: 8rem;
+  }
+}
+
+.side-drawer-contents__add-ava-container {
+  // background-color: $neutral-1;
+  border: 2px dashed $neutral-4;
+  padding: 0.5rem;
+
+  button {
+    margin-left: 0;
+  }
+}
+
+.side-drawer-contents__add-ava-inputs {
+  display: flex;
+
+  input:first-of-type {
+    margin-right: 0.25rem;
+  }
+}

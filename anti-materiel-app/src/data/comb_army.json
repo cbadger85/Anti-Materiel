@@ -1,0 +1,407 @@
+[
+  {
+    "id": 6999,
+    "army": "Combined Army",
+    "name": "Combined Army",
+    "units": [
+      {
+        "comment": "Morat Vanguard Infantry",
+        "id": 6001
+      },
+      {
+        "comment": "Unidron Batroids",
+        "id": 6002
+      },
+      {
+        "comment": "Fraacta Drop Unit",
+        "id": 6003
+      },
+      {
+        "comment": "Umbra Legates",
+        "id": 6004
+      },
+      {
+        "comment": "Maakrep Trackers Unit",
+        "id": 6005
+      },
+      {
+        "comment": "Rodok",
+        "id": 6006,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 8,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "The Charontids",
+        "id": 6007
+      },
+      {
+        "comment": "Raicho Armoured Brigade",
+        "id": 6008
+      },
+      {
+        "comment": "Avatar",
+        "id": 6009
+      },
+      {
+        "comment": "The Shrouded",
+        "id": 6010
+      },
+      {
+        "comment": "Malignos",
+        "id": 6011
+      },
+      {
+        "comment": "Speculo Killers",
+        "id": 6012,
+        "childs": [
+          {
+            "comment": "Minelayer is only available in Sectorials",
+            "id": 3,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Dāturazi Witch-Soldiers",
+        "id": 6013
+      },
+      {
+        "comment": "The Hungries: \"Gakis\"",
+        "id": 6014
+      },
+      {
+        "comment": "The Hungries: \"Pretas\"",
+        "id": 6015
+      },
+      {
+        "comment": "Med-Tech Obsidon Medchanoid",
+        "id": 6016
+      },
+      {
+        "comment": "M-Drone",
+        "id": 6017,
+        "childs": [
+          {
+            "comment": "FTO is only available in Shasvastii Expeditionary Force",
+            "id": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Q-Drone",
+        "id": 6018
+      },
+      {
+        "comment": "T-Drone",
+        "id": 6019,
+        "childs": [
+          {
+            "comment": "FTO is only available in Shasvastii Expeditionary Force",
+            "id": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "R-Drone",
+        "id": 6020
+      },
+      {
+        "comment": "Imetron",
+        "id": 6021
+      },
+      {
+        "comment": "Kurgat Reg. of Assault Engineers",
+        "id": 6022,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Rasyat Diplomatic Division",
+        "id": 6023
+      },
+      {
+        "comment": "Shasvastii Cadmus",
+        "id": 6025
+      },
+      {
+        "comment": "Shasvastii Haiduks",
+        "id": 6027,
+        "childs": [
+          {
+            "comment": "Sniper is only available in Sectorials",
+            "id": 1,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Shasvastii Noctifers",
+        "id": 6028
+      },
+      {
+        "comment": "Shasvastii Special Armoured Corp Sphinx",
+        "id": 6029
+      },
+      {
+        "comment": "Shasvastii Seed-Soldiers",
+        "id": 6030
+      },
+      {
+        "comment": "Shasvastii Corax Hasht",
+        "id": 6031
+      },
+      {
+        "comment": "Skiávoros",
+        "id": 6032
+      },
+      {
+        "comment": "Slave Drones",
+        "id": 6033
+      },
+      {
+        "comment": "Sogarat Tempest Regiment",
+        "id": 6034,
+        "skills": [
+          {
+            "name": "Fireteam: Duo",
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "The Anathematics",
+        "id": 6035
+      },
+      {
+        "comment": "Yaogat Strike Infantry",
+        "id": 6036,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 7,
+            "hide": true
+          },
+          {
+            "comment": "No 2 is only available in Sectorials",
+            "id": 8,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Zerat Special Missions Regiment",
+        "id": 6037
+      },
+      {
+        "comment": "Cadmus-Naish Agent Sheskiin",
+        "id": 6038
+      },
+      {
+        "comment": "Treitak Spec-Ops",
+        "id": 6039
+      },
+      {
+        "comment": "Treitak Anyat",
+        "id": 6040
+      },
+      {
+        "comment": "Corax Spec-Ops",
+        "id": 6041
+      },
+      {
+        "comment": "Nexus Spec-Ops",
+        "id": 6065
+      },
+      {
+        "comment": "Ikadron Batroids",
+        "id": 6042
+      },
+      {
+        "comment": "Ko Dali",
+        "id": 6043
+      },
+      {
+        "comment": "Shasvastii Caliban",
+        "id": 6046
+      },
+      {
+        "comment": "Raktorak",
+        "id": 6047
+      },
+      {
+        "comment": "Suryats",
+        "id": 6048,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 9,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Duo",
+            "note": "Requires TeamPro"
+          }
+        ]
+      },
+      {
+        "comment": "Oznat",
+        "id": 6049
+      },
+      {
+        "comment": "Kornak Gazarot",
+        "id": 6050,
+        "skills": [
+          {
+            "name": "Fireteam: Haris",
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "E-Drone",
+        "id": 6051
+      },
+      {
+        "comment": "Umbra Samaritans",
+        "id": 6052,
+        "skills": [
+          {
+            "name": "Fireteam: Haris",
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Nexus Operatives",
+        "id": 6053
+      },
+      {
+        "comment": "Xeodron Batroids",
+        "id": 6054
+      },
+      {
+        "comment": "Overdron Batroids",
+        "id": 6055
+      },
+      {
+        "comment": "Bit & Kiss!",
+        "id": 6056
+      },
+      {
+        "comment": "Kerr-Nau",
+        "id": 6057
+      },
+      {
+        "comment": "Shasvastii Nox",
+        "id": 6058,
+        "childs": [
+          {
+            "comment": "Smart Sniper is only available in Sectorials",
+            "id": 5,
+            "hide": true
+          },
+          {
+            "comment": "SMG Hacker is only available in Sectorials",
+            "id": 7,
+            "hide": true
+          },
+          {
+            "comment": "Lieutenant is only available in Sectorials",
+            "id": 10,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Shasvastii Mentors",
+        "id": 6059
+      },
+      {
+        "comment": "Jayth Cutthroats",
+        "id": 6060,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 4,
+            "hide": true
+          },
+          {
+            "comment": "Pit Patrol is only available in Sectorials",
+            "id": 6,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Taigha Creatures",
+        "id": 6061
+      },
+      {
+        "comment": "Greif Operators",
+        "id": 6062
+      },
+      {
+        "comment": "Victor Messer",
+        "id": 6063
+      },
+      {
+        "comment": "Tensho Experts",
+        "id": 6064,
+        "childs": [
+          {
+            "comment": "Shotgun is only available in Sectorials",
+            "id": 1,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Armand 'Le Muet'",
+        "id": 9022,
+        "ava": "1"
+      },
+      {
+        "comment": "Krakot Renegades, Morat Fugitives",
+        "id": 9023
+      },
+      {
+        "comment": "Cube Jäger, Mercenary Recoverers",
+        "id": 9030
+      },
+      {
+        "comment": "Aïda Swanson, Submondo Smuggler",
+        "id": 9065
+      },
+      {
+        "comment": "Libertos Freedom Fighters",
+        "id": 9067,
+        "childs": [
+          {
+            "comment": "Mimetism only in Dahshat",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Mimetism only in Dahshat",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      }
+    ]
+  }
+]

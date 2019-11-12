@@ -1,0 +1,234 @@
+[
+  {
+    "id": 3995,
+    "army": "Ariadna",
+    "army_id": 3999,
+    "name": "Tartary Army Corps",
+    "units": [
+      {
+        "comment": "112, Emergency Service",
+        "id": 3017,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Frontoviks + 1 112"
+          }
+        ]
+      },
+      {
+        "comment": "112, Emergency Service (Motorized)",
+        "id": 3057,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Motorized Unit",
+            "note": "The 112 (Motorized) cannot be part of a fireteam"
+          }
+        ]
+      },
+      {
+        "comment": "Col. Yevgueni Voronin",
+        "id": 3046,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Voronin can join any Fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Dozers, Field Engineers",
+        "id": 3024,
+        "ava": "2"
+      },
+      {
+        "comment": "Dynamo",
+        "id": 3052,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Frontoviks",
+        "id": 3053,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Line Kazaks + 1 Frontovik"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Frontoviks + 1 112s"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 3 Veteran Kazaks + 2 Frontoviks"
+          }
+        ]
+      },
+      {
+        "comment": "Kazak Doktor",
+        "id": 3016,
+        "ava": "3"
+      },
+      {
+        "comment": "Kazak Spetsnazs",
+        "id": 3003,
+        "ava": "4"
+      },
+      {
+        "comment": "Line Kazak",
+        "id": 3001,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Line Kazaks + 1 Frontovik"
+          }
+        ]
+      },
+      {
+        "comment": "Streloks",
+        "id": 3050,
+        "ava": "4",
+        "childs": [
+          {
+            "comment": "K-9 - SWC cost is 0 in TAK",
+            "id": 1,
+            "swc": "0"
+          }
+        ]
+      },
+      {
+        "comment": "TankHunters",
+        "id": 3005,
+        "ava": "4",
+        "childs": [
+          {
+            "comment": "CoC - SWC cost is 0 in TAK",
+            "id": 6,
+            "swc": "0"
+          }
+        ]
+      },
+      {
+        "comment": "Vassily Plushenko, TankHunters Officer",
+        "id": 3054,
+        "ava": "1"
+      },
+      {
+        "comment": "Ratnik",
+        "id": 3051,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Veteran Kazaks",
+        "id": 3008,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 3 Veteran Kazaks + 2 Frontoviks"
+          },
+          {
+            "title": "Wildcard Trooper",
+            "note": "Veteran Kazaks can join any Fireteam of the Kazak Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Traktor Mul Kuryer, Mobile Artillery Regiment",
+        "id": 3055,
+        "ava": "2"
+      },
+      {
+        "comment": "Traktor Mul, Artillery and Support Regiment",
+        "id": 3028,
+        "ava": "2"
+      },
+      {
+        "comment": "Scouts",
+        "id": 3012,
+        "ava": "4"
+      },
+      {
+        "comment": "Pavel Aleksei McMannus, Spetsgruppa G",
+        "id": 3056,
+        "ava": "1"
+      },
+      {
+        "comment": "Assault Pack Controller",
+        "id": 3015,
+        "ava": "2"
+      },
+      {
+        "comment": "Dog-Warriors",
+        "id": 3039,
+        "ava": "3"
+      },
+      {
+        "comment": "Irmandinhos",
+        "id": 3014,
+        "ava": "4"
+      },
+      {
+        "comment": "Intel Spec-Ops (Line Kazak)",
+        "id": 3058,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Line Kazaks + 1 Frontovik"
+          }
+        ]
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Wardrivers",
+        "id": 9021,
+        "ava": "1"
+      },
+      {
+        "comment": "Carmen Johns & Bâtard",
+        "id": 9066,
+        "ava": "1"
+      }
+    ]
+  }
+]

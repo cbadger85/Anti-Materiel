@@ -1,0 +1,340 @@
+[
+  {
+    "id": 2997,
+    "army": "Yu Jing",
+    "army_id": 2999,
+    "name": "Imperial Service",
+    "units": [
+      {
+        "comment": "Celestial Guard",
+        "id": 2022,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 3 Imperial Agent Crane Rank + Celestial Guards"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "1 Celestial Guard with Kuang Shi Control Device + up to 4 Kuang Shi"
+          }
+        ]
+      },
+      {
+        "comment": "Bao Troop",
+        "id": 2045,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "1 Imperial Agent Pheasant Rank + up to 4 Bào Troops"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Imperial Agent Pheasant Rank + up to 2 Bào Troops, OR 2 Imperial Agent Pheasant Rank + 1 Bào Troop"
+          }
+        ]
+      },
+      {
+        "comment": "Zhànying Imperial Agents",
+        "id": 2003,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Hsien Warrior + up to 2 Zhànyīng Imperial Agents"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "1 Zhànyīng Imperial Agent + up to 4 Wú Míng"
+          }
+        ]
+      },
+      {
+        "comment": "Imperial Agent, Pheasant Rank",
+        "id": 2029,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "1 Imperial Agent Pheasant Rank + up to 4 Bào Troops"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Imperial Agent Pheasant Rank + up to 2 Bào Troops, OR 2 Imperial Agent Pheasant Rank + 1 Bào Troop"
+          }
+        ]
+      },
+      {
+        "comment": "Imperial Agents, Crane Rank",
+        "id": 2031,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 3 Imperial Agent Crane Rank + Celestial Guards"
+          }
+        ]
+      },
+      {
+        "comment": "Wu Ming",
+        "id": 2007,
+        "ava": "5",
+        "childs": [
+          {
+            "comment": "Haris is not available in ISS",
+            "id": 10,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "1 Zhànyīng Imperial Agent + up to 4 Wú Míng"
+          }
+        ]
+      },
+      {
+        "comment": "Hsien",
+        "id": 2010,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Hsien Warrior + up to 2 Zhànyīng Imperial Agents"
+          }
+        ]
+      },
+      {
+        "comment": "Su-Jian Immediate Action Unit",
+        "id": 2034,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Ninjas",
+        "id": 2013,
+        "ava": "1"
+      },
+      {
+        "comment": "Kǎnrèn Counter-Insurgency Group",
+        "id": 2048,
+        "ava": "3"
+      },
+      {
+        "comment": "Kuang Shi",
+        "id": 2027,
+        "ava": "8",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "1 Celestial Guard with Kuang Shi Control Device + up to 4 Kuang Shi"
+          }
+        ]
+      },
+      {
+        "comment": "Dakini Tacbots",
+        "id": 7004,
+        "ava": "2"
+      },
+      {
+        "comment": "Garuda Tacbots",
+        "id": 7008,
+        "ava": "1"
+      },
+      {
+        "comment": "Sophotects",
+        "id": 7018,
+        "ava": "1"
+      },
+      {
+        "comment": "Sun Tze",
+        "id": 2021,
+        "ava": "1"
+      },
+      {
+        "comment": "Sun Tze v.2 (Marksman Leader)",
+        "id": 2042,
+        "ava": "1"
+      },
+      {
+        "comment": "Yáoxiè Rui Shi",
+        "id": 2038,
+        "ava": "2"
+      },
+      {
+        "comment": "Yáoxiè Lù Duān",
+        "id": 2039,
+        "ava": "2"
+      },
+      {
+        "comment": "Yáokòng Wèibīng",
+        "id": 2017,
+        "ava": "2"
+      },
+      {
+        "comment": "Yáokòng Hùsòng",
+        "id": 2018,
+        "ava": "3"
+      },
+      {
+        "comment": "Yáokòng Son-Bae",
+        "id": 2019,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "plain ML is not available in ISS",
+            "id": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Yáokòng Chaīyì",
+        "id": 2020,
+        "ava": "1"
+      },
+      {
+        "comment": "Yudbots",
+        "id": 7019,
+        "ava": "2"
+      },
+      {
+        "comment": "Yáopú Pangguling",
+        "id": 2026,
+        "ava": "2",
+        "childs": [
+          {
+            "comment": "FTO is not available in ISS",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Guǐ Fēng Spec-Ops (Celestial)",
+        "id": 2062,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 3 Imperial Agent Crane Rank + Celestial Guards"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "1 Celestial Guard with Kuang Shi Control Device + up to 4 Kuang Shi"
+          }
+        ]
+      },
+      {
+        "comment": "Guǐ Fēng Xi Zhuang",
+        "id": 2050,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Gui Feng Xi Zhuang counts as a Celestial Guard for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Miranda Ashcroft (Ashcroft Hunting Party)",
+        "id": 2051,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "An Ashcroft Hunting Party is composed of one Miranda Ashcroft and one Authorized Bounty Hunter. An Ashcroft Hunting Party is considered a Fireteam: Duo."
+          }
+        ]
+      },
+      {
+        "comment": "Authorized Bounty Hunters (Ashcroft Hunting Party)",
+        "id": 2052,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "An Ashcroft Hunting Party is composed of one Miranda Ashcroft and one Authorized Bounty Hunter. An Ashcroft Hunting Party is considered a Fireteam: Duo."
+          }
+        ]
+      },
+      {
+        "comment": "Father Lucien Sforza, Registered Bounty Hunter",
+        "id": 2053,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "FTO only in Dahshat",
+            "id": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Authorized Bounty Hunters",
+        "id": 9018,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Miranda Ashcroft",
+        "id": 9019,
+        "ava": "1"
+      },
+      {
+        "comment": "Father Lucien Sforza",
+        "id": 9010,
+        "ava": "1"
+      },
+      {
+        "comment": "Major Lunah, ex-Ariesteia! Sniper",
+        "id": 9029
+      },
+      {
+        "comment": "Mercenary - CSU, Corporate Security Unit",
+        "id": 9020,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      }
+    ]
+  }
+]

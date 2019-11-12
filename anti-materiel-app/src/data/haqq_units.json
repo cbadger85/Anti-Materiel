@@ -1,0 +1,5555 @@
+[
+  {
+    "id": 4001,
+    "army": "Haqqislam",
+    "isc": "Daylami Infantry",
+    "name": "Daylami",
+    "type": "LI",
+    "classification": "Garrison",
+    "imp": "",
+    "irr": "X",
+    "cube": "",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "11",
+    "ph": "10",
+    "wip": "13",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "T",
+    "spec": [],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Shotgun",
+        "cost": "5",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Camo+Panzerfaust",
+        "cost": "8",
+        "swc": "0.5",
+        "spec": [
+          "CH: Limited Camouflage",
+          "Inferior Infiltration"
+        ],
+        "bsw": [
+          "Panzerfaust",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Camo",
+        "cost": "10",
+        "swc": "0",
+        "spec": [
+          "CH: Limited Camouflage",
+          "Inferior Infiltration"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "HMG",
+        "cost": "17",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Grenadier",
+        "cost": "8",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Light Shotgun",
+          "Light Grenade Launcher"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Panzerfaust",
+        "cost": "7",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Panzerfaust",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4002,
+    "army": "Haqqislam",
+    "isc": "Ghulam",
+    "name": "Ghulam",
+    "type": "LI",
+    "classification": "Line",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "11",
+    "ph": "10",
+    "wip": "14",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "T",
+    "spec": [],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Rifle",
+        "cost": "12",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Hacker",
+        "cost": "20",
+        "swc": "0.5",
+        "spec": [
+          "Hacking Device"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "HMG",
+        "cost": "20",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Missile Launcher",
+        "cost": "17",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Missile Launcher"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Grenadier",
+        "cost": "13",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Grenade Launcher"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Sniper Rifle",
+        "cost": "16",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Sniper Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Panzerfaust",
+        "cost": "15",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Panzerfaust",
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Doctor",
+        "cost": "16",
+        "swc": "0",
+        "spec": [
+          "Doctor Plus",
+          "MediKit"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Observer",
+        "cost": "13",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Deployable Repeater",
+        "cost": "14",
+        "swc": "0",
+        "spec": [
+          "Deployable Repeater"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "E/Mauler"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Lieutenant",
+        "cost": "12",
+        "swc": "0",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 12,
+        "name": "HMG Lieutenant",
+        "cost": "20",
+        "swc": "0.5",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Missile Launcher Lieutenant",
+        "cost": "17",
+        "swc": "1.5",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Missile Launcher"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 14,
+        "name": "NCO",
+        "cost": "16",
+        "swc": "1",
+        "spec": [
+          "NCO"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Grenade Launcher",
+          "Smoke Light Grenade Launcher"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4003,
+    "army": "Haqqislam",
+    "isc": "Naffatûn",
+    "name": "Naffatun",
+    "type": "LI",
+    "classification": "Line",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "11",
+    "ph": "11",
+    "wip": "14",
+    "arm": "1",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "4",
+    "spec": [],
+    "childs": [
+      {
+        "id": 1,
+        "name": "LFT",
+        "cost": "12",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Flamethrower",
+          "Grenades"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "HFT",
+        "cost": "13",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Heavy Flamethrower"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Lieutenant",
+        "cost": "12",
+        "swc": "0",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Flamethrower",
+          "Grenades"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4004,
+    "army": "Haqqislam",
+    "isc": "Halqa",
+    "name": "Halqa",
+    "type": "LI",
+    "classification": "Line",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "11",
+    "ph": "10",
+    "wip": "14",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "T",
+    "spec": [
+      "Mechanized Deployment"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Rifle",
+        "cost": "15",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Hacker",
+        "cost": "23",
+        "swc": "0.5",
+        "spec": [
+          "Hacking Device"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Doctor",
+        "cost": "19",
+        "swc": "0",
+        "spec": [
+          "Doctor Plus",
+          "MediKit"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Observer",
+        "cost": "16",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "HMG",
+        "cost": "23",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Missile Launcher",
+        "cost": "20",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Missile Launcher"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Grenadier",
+        "cost": "16",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Grenade Launcher"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Lieutenant",
+        "cost": "15",
+        "swc": "1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4005,
+    "army": "Haqqislam",
+    "isc": "Khawarijs",
+    "name": "Khawarij",
+    "type": "LI",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "20",
+    "bs": "13",
+    "ph": "13",
+    "wip": "14",
+    "arm": "1",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "3",
+    "spec": [
+      "Religious Troop",
+      "Bioimmunity",
+      "Super-Jump",
+      "Poison"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Rifle",
+        "cost": "27",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Panzerfaust",
+        "cost": "27",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun",
+          "Panzerfaust"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Spitfire",
+        "cost": "32",
+        "swc": "1.5",
+        "spec": [
+          "Fatality L2"
+        ],
+        "bsw": [
+          "Spitfire"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Doctor",
+        "cost": "30",
+        "swc": "0",
+        "spec": [
+          "Doctor Plus",
+          "MediKit"
+        ],
+        "bsw": [
+          "Boarding Shotgun",
+          "Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Lieutenant",
+        "cost": "27",
+        "swc": "0",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Spitfire Lieutenant",
+        "cost": "32",
+        "swc": "1.5",
+        "spec": [
+          "Lieutenant",
+          "Fatality L2"
+        ],
+        "bsw": [
+          "Spitfire"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Heavy Rocket Launcher",
+        "cost": "28",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Heavy Rocket Launcher",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Chain of Command",
+        "cost": "32",
+        "swc": "0",
+        "spec": [
+          "Chain of Command",
+          "Fatality L1"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Observer",
+        "cost": "29",
+        "swc": "0",
+        "spec": [
+          "Fatality L1",
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "MSV Mk12",
+        "cost": "36",
+        "swc": "0.5",
+        "spec": [
+          "Fatality L1",
+          "Multispectral Visor L2"
+        ],
+        "bsw": [
+          "Mk12"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Haris NCO",
+        "cost": "30",
+        "swc": "0.5",
+        "spec": [
+          "Fireteam: Haris",
+          "NCO"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4006,
+    "army": "Haqqislam",
+    "isc": "Djanbazan",
+    "name": "Djanbazan",
+    "type": "MI",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-2",
+    "cc": "14",
+    "bs": "12",
+    "ph": "11",
+    "wip": "14",
+    "arm": "3",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Multispectral Visor L2",
+      "Multiterrain",
+      "Regeneration"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Rifle",
+        "cost": "27",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Hacker",
+        "cost": "35",
+        "swc": "0.5",
+        "spec": [
+          "Hacking Device"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "HMG",
+        "cost": "35",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Sniper Rifle",
+        "cost": "31",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Sniper Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Lieutenant",
+        "cost": "27",
+        "swc": "1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Doctor",
+        "cost": "31",
+        "swc": "0",
+        "spec": [
+          "Doctor Plus",
+          "MediKit"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Marksman",
+        "cost": "29",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Shock Marksman Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Marksman Haris",
+        "cost": "30",
+        "swc": "0.5",
+        "spec": [
+          "Fireteam: Haris"
+        ],
+        "bsw": [
+          "Shock Marksman Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4007,
+    "army": "Haqqislam",
+    "isc": "Hassassin Ragiks",
+    "name": "Ragik",
+    "type": "MI",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-2",
+    "cc": "14",
+    "bs": "12",
+    "ph": "12",
+    "wip": "15",
+    "arm": "2",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "3",
+    "spec": [
+      "AD: Combat Jump",
+      "Religious Troop",
+      "V: Dogged"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Rifle",
+        "cost": "26",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Assault Hacker",
+        "cost": "32",
+        "swc": "0.5",
+        "spec": [
+          "Assault Hacking Device"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Spitfire",
+        "cost": "32",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Spitfire"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Boarding Shotgun",
+        "cost": "25",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4008,
+    "army": "Haqqislam",
+    "isc": "Janissaries",
+    "name": "Janissary",
+    "type": "HI",
+    "classification": "Veteran",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "hackable": "X",
+    "mov": "4-4",
+    "cc": "15",
+    "bs": "13",
+    "ph": "14",
+    "wip": "14",
+    "arm": "4",
+    "bts": "3",
+    "w": "2",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Religious Troop"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "AP Rifle",
+        "cost": "36",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "AP Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "TinBot",
+        "cost": "37",
+        "swc": "0.5",
+        "spec": [
+          "TinBot A (Deflector L1)"
+        ],
+        "bsw": [
+          "AP Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "HMG",
+        "cost": "40",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Boarding Shotgun",
+        "cost": "31",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Lieutenant",
+        "cost": "36",
+        "swc": "0.5",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "AP Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Doctor",
+        "cost": "41",
+        "swc": "0",
+        "spec": [
+          "Akbar Doctor",
+          "MediKit"
+        ],
+        "bsw": [
+          "AP Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Missile Launcher",
+        "cost": "37",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "Missile Launcher"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "BSG TinBot",
+        "cost": "32",
+        "swc": "0.5",
+        "spec": [
+          "TinBot A (Deflector L1)"
+        ],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4009,
+    "army": "Haqqislam",
+    "isc": "Al Fasid",
+    "name": "Fasid",
+    "type": "HI",
+    "classification": "Veteran",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "hackable": "X",
+    "mov": "4-2",
+    "cc": "15",
+    "bs": "13",
+    "ph": "14",
+    "wip": "14",
+    "arm": "5",
+    "bts": "6",
+    "w": "2",
+    "s": "5",
+    "ava": "2",
+    "spec": [
+      "Minelayer",
+      "Sixth Sense L1",
+      "Veteran L1"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Heavy Rocket Launcher",
+        "cost": "45",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "Heavy Rocket Launcher",
+          "Submachine Gun",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Heavy Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "HMG",
+        "cost": "53",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "HMG",
+          "Smoke Light Grenade Launcher",
+          "Light Grenade Launcher",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Heavy Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4010,
+    "army": "Haqqislam",
+    "isc": "Maghariba Guard",
+    "name": "Maghariba",
+    "ava": "1",
+    "spec": [],
+    "profiles": [
+      {
+        "id": 1,
+        "name": "Maghariba Guard",
+        "type": "TAG",
+        "classification": "Mechanized",
+        "imp": "",
+        "irr": "",
+        "cube": "X",
+        "hackable": "X",
+        "mov": "6-4",
+        "cc": "16",
+        "bs": "14",
+        "ph": "17",
+        "wip": "14",
+        "arm": "8",
+        "bts": "6",
+        "w": "3",
+        "s": "8",
+        "spec": [
+          "Advanced ECM",
+          "Manned",
+          "Heavyweight",
+          "Fatality L1",
+          "Tactical Awareness"
+        ],
+        "bsw": [],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Pilot",
+        "type": "LI",
+        "imp": "",
+        "irr": "",
+        "cube": "X",
+        "hackable": "",
+        "mov": "4-4",
+        "cc": "13",
+        "bs": "11",
+        "ph": "10",
+        "wip": "14",
+        "arm": "0",
+        "bts": "0",
+        "w": "1",
+        "s": "2",
+        "ava": " ",
+        "spec": [
+          "Pilot",
+          "Paramedic",
+          "MediKit"
+        ],
+        "bsw": [
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "HFT",
+        "cost": "78",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "MULTI HMG",
+          "Heavy Flamethrower"
+        ],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Heavy Pistols",
+        "cost": "79",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "MULTI HMG"
+        ],
+        "ccw": [
+          "Heavy Pistol (2)"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "360° Visor",
+        "cost": "98",
+        "swc": "2",
+        "spec": [
+          "360° Visor"
+        ],
+        "bsw": [
+          "MULTI HMG",
+          "Heavy Flamethrower"
+        ],
+        "ccw": []
+      },
+      {
+        "id": 4,
+        "name": "360° Mines+Pistol",
+        "cost": "99",
+        "swc": "2",
+        "spec": [
+          "360° Visor",
+          "Fireteam: Duo"
+        ],
+        "bsw": [
+          "MULTI HMG",
+          "Heavy Flamethrower",
+          "Mine Dispenser"
+        ],
+        "ccw": [
+          "AP Heavy Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "360° Mines+Fire",
+        "cost": "99",
+        "swc": "2",
+        "spec": [
+          "360° Visor",
+          "Fireteam: Duo"
+        ],
+        "bsw": [
+          "MULTI HMG",
+          "Heavy Flamethrower (2)",
+          "Mine Dispenser"
+        ],
+        "ccw": []
+      }
+    ]
+  },
+  {
+    "id": 4011,
+    "army": "Haqqislam",
+    "isc": "Hunzakuts",
+    "name": "Hunzakut",
+    "type": "SK",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "X",
+    "cube": "",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "11",
+    "ph": "12",
+    "wip": "14",
+    "arm": "0",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "CH: Camouflage",
+      "Multiterrain",
+      "Infiltration"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Grenadier",
+        "cost": "18",
+        "swc": "0.5",
+        "spec": [
+          "Deployable Repeater"
+        ],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Rifle",
+          "Light Grenade Launcher"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Sniper Rifle",
+        "cost": "21",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Sniper Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Observer+Repeater",
+        "cost": "18",
+        "swc": "0",
+        "spec": [
+          "Forward Observer",
+          "Deployable Repeater"
+        ],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4012,
+    "army": "Haqqislam",
+    "isc": "Murabids Tuareg",
+    "name": "Tuareg",
+    "type": "SK",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "11",
+    "ph": "12",
+    "wip": "15",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "CH: TO Camouflage",
+      "Infiltration",
+      "Multiterrain"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Rifle",
+        "cost": "29",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Assault Hacker",
+        "cost": "35",
+        "swc": "0.5",
+        "spec": [
+          "Assault Hacking Device"
+        ],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Sniper Rifle",
+        "cost": "33",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Sniper Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Boarding Shotgun",
+        "cost": "28",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Doctor",
+        "cost": "33",
+        "swc": "0",
+        "spec": [
+          "Doctor Plus",
+          "MediKit"
+        ],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4013,
+    "army": "Haqqislam",
+    "isc": "Hassassin Fiday",
+    "name": "Fiday",
+    "type": "SK",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "mov": "4-4",
+    "cc": "21",
+    "bs": "11",
+    "ph": "12",
+    "wip": "15",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Basic Impersonation",
+      "Martial Arts L3",
+      "Religious Troop",
+      "Multiterrain",
+      "Kinematika L1"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "DA CCW",
+        "cost": "31",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Mines",
+        "cost": "31",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Antipersonnel Mines",
+          "Rifle",
+          "Light Shotgun",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Boarding Shotgun",
+        "cost": "29",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "AP CCW",
+        "cost": "30",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4014,
+    "army": "Haqqislam",
+    "isc": "Kum",
+    "name": "Kum",
+    "ava": "T",
+    "spec": [
+      "V: Dogged"
+    ],
+    "profiles": [
+      {
+        "id": 1,
+        "type": "WB",
+        "classification": "Line",
+        "imp": "X",
+        "irr": "X",
+        "cube": "",
+        "mov": "8-6",
+        "cc": "20",
+        "bs": "11",
+        "ph": "13",
+        "wip": "14",
+        "arm": "1",
+        "bts": "0",
+        "w": "1",
+        "s": "4",
+        "spec": [
+          "Motorcycle",
+          "Kinematika L2"
+        ],
+        "bsw": [
+          "Smoke Light Grenade Launcher"
+        ],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Dismounted",
+        "mov": "4-4",
+        "s": "2",
+        "ava": "",
+        "spec": []
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Rifle",
+        "cost": "19",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Smoke Grenades",
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Shock CCW"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Chain Rifle",
+        "cost": "10",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Smoke Grenades",
+          "Chain Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "AP CCW"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "E/M CCW",
+        "cost": "14",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Smoke Grenades",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "E/M CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4015,
+    "army": "Haqqislam",
+    "isc": "Ghazi Muttawi'ah",
+    "name": "Muttawi'ah",
+    "type": "LI",
+    "classification": "Line",
+    "imp": "X",
+    "irr": "X",
+    "cube": "",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "11",
+    "ph": "12",
+    "wip": "15",
+    "arm": "0",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "4",
+    "spec": [
+      "Religious Troop",
+      "V: Dogged"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Chain Rifle",
+        "cost": "5",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "E/Marat",
+          "Jammer",
+          "Chain Rifle",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Boarding Shotgun",
+        "cost": "10",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "E/Marat",
+          "Jammer",
+          "Boarding Shotgun",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4016,
+    "army": "Haqqislam",
+    "isc": "Najjarun Engineer",
+    "name": "Najjarun",
+    "type": "LI",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "11",
+    "ph": "10",
+    "wip": "14",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Engineer",
+      "V: Courage"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Engineer",
+        "cost": "17",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "D-Charges",
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4017,
+    "army": "Haqqislam",
+    "isc": "Rafiq Remote",
+    "name": "Rafiq",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "hackable": "X",
+    "mov": "6-4",
+    "cc": "8",
+    "bs": "11",
+    "ph": "10",
+    "wip": "13",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "s": "3",
+    "ava": "1",
+    "spec": [
+      "Forward Observer",
+      "G: Remote Presence",
+      "Repeater",
+      "Sensor",
+      "Deactivator",
+      "Sat-Lock",
+      "Sniffer"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Rifle",
+        "cost": "16",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Light Shotgun",
+          "Rifle"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Duo Rifle",
+        "cost": "17",
+        "swc": "0",
+        "spec": [
+          "Fireteam: Duo"
+        ],
+        "bsw": [
+          "Light Shotgun",
+          "Rifle"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Red Fury",
+        "cost": "22",
+        "swc": "0.5",
+        "spec": [
+          "Fireteam: Duo"
+        ],
+        "bsw": [
+          "Red Fury"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4018,
+    "army": "Haqqislam",
+    "isc": "Shihab Remote",
+    "name": "Shihab",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "hackable": "X",
+    "mov": "6-4",
+    "cc": "8",
+    "bs": "11",
+    "ph": "10",
+    "wip": "13",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "s": "3",
+    "ava": "1",
+    "spec": [
+      "360° Visor",
+      "G: Remote Presence",
+      "Total Reaction"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "HMG",
+        "cost": "25",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4019,
+    "army": "Haqqislam",
+    "isc": "Shaytaniyah Remote",
+    "name": "Shaytaniyah",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "hackable": "X",
+    "mov": "6-4",
+    "cc": "8",
+    "bs": "12",
+    "ph": "10",
+    "wip": "13",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "s": "3",
+    "ava": "1",
+    "spec": [
+      "G: Remote Presence"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Smart Missile Launcher",
+        "cost": "18",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Smart Missile Launcher"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "FTO Missile Launcher",
+        "cost": "18",
+        "swc": "1.5",
+        "spec": [
+          "Fireteam: Duo"
+        ],
+        "bsw": [
+          "Missile Launcher"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4020,
+    "army": "Haqqislam",
+    "isc": "Fanous Remote",
+    "name": "Fanous",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "hackable": "X",
+    "mov": "6-6",
+    "cc": "8",
+    "bs": "8",
+    "ph": "11",
+    "wip": "13",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "s": "3",
+    "ava": "1",
+    "spec": [
+      "G: Remote Presence",
+      "CH: Mimetism",
+      "Repeater",
+      "Sniffer"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Repeater",
+        "cost": "8",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Flash Pulse"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4021,
+    "army": "Haqqislam",
+    "isc": "Tarik Mansuri",
+    "name": "Tarik Mansuri",
+    "image": 4005,
+    "type": "LI",
+    "classification": "Character",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "6-4",
+    "cc": "23",
+    "bs": "13",
+    "ph": "14",
+    "wip": "15",
+    "arm": "3",
+    "bts": "3",
+    "w": "2",
+    "s": "5",
+    "ava": "1",
+    "spec": [
+      "Martial Arts L1",
+      "Poison",
+      "Religious Troop",
+      "Super-Jump",
+      "Bioimmunity",
+      "Kinematika L1",
+      "Fatality L2"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "AP Rifle",
+        "cost": "53",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "Grenades",
+          "AP Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "DA CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Spitfire",
+        "cost": "55",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "Grenades",
+          "Spitfire"
+        ],
+        "ccw": [
+          "DA CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Lieutenant",
+        "cost": "53",
+        "swc": "-1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Grenades",
+          "AP Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "DA CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Spitfire Lieutenant",
+        "cost": "55",
+        "swc": "1.5",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Grenades",
+          "Spitfire"
+        ],
+        "ccw": [
+          "DA CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Lieutenant L2",
+        "cost": "57",
+        "swc": "-1",
+        "spec": [
+          "Lieutenant L2"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Grenades",
+          "AP Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "DA CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Spitfire Lieutenant L2",
+        "cost": "59",
+        "swc": "1.5",
+        "spec": [
+          "Lieutenant L2"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Grenades",
+          "Spitfire"
+        ],
+        "ccw": [
+          "DA CCW",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4022,
+    "army": "Haqqislam",
+    "isc": "Kasym Beg",
+    "name": "Kasym Beg",
+    "image": 4014,
+    "ava": "1",
+    "spec": [
+      "V: Dogged"
+    ],
+    "profiles": [
+      {
+        "id": 1,
+        "name": "Kasym Beg",
+        "type": "WB",
+        "classification": "Character",
+        "imp": "I",
+        "irr": "X",
+        "cube": "X",
+        "mov": "8-6",
+        "cc": "23",
+        "bs": "12",
+        "ph": "14",
+        "wip": "14",
+        "arm": "2",
+        "bts": "0",
+        "w": "1",
+        "s": "4",
+        "ava": "1",
+        "spec": [
+          "Motorcycle",
+          "Kinematika L2"
+        ],
+        "bsw": [
+          "Smoke Light Grenade Launcher"
+        ],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Dismounted",
+        "mov": "4-4",
+        "s": "2",
+        "ava": "",
+        "spec": [],
+        "bsw": [],
+        "ccw": []
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Chain Rifle",
+        "cost": "16",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Chain Rifle",
+          "Panzerfaust",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "EXP CCW",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4023,
+    "army": "Haqqislam",
+    "isc": "Kasym Beg (Lieutenant)",
+    "name": "Kasym Beg Lt.",
+    "image": 4014,
+    "ava": "1",
+    "sharedAva": 4022,
+    "spec": [
+      "V: Dogged"
+    ],
+    "profiles": [
+      {
+        "id": 1,
+        "name": "Kasym Beg",
+        "type": "WB",
+        "classification": "Character",
+        "imp": "I",
+        "irr": "",
+        "cube": "X",
+        "mov": "8-6",
+        "cc": "23",
+        "bs": "12",
+        "ph": "14",
+        "wip": "14",
+        "arm": "2",
+        "bts": "0",
+        "w": "1",
+        "s": "4",
+        "ava": "1",
+        "spec": [
+          "Motorcycle",
+          "Kinematika L2"
+        ],
+        "bsw": [
+          "Smoke Light Grenade Launcher"
+        ],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Dismounted",
+        "mov": "4-4",
+        "s": "2",
+        "ava": "",
+        "spec": [],
+        "bsw": [],
+        "ccw": []
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Lieutenant",
+        "cost": "26",
+        "swc": "-1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Chain Rifle",
+          "Panzerfaust",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "EXP CCW",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4024,
+    "army": "Haqqislam",
+    "isc": "Al Hawwa' Unit",
+    "name": "Hawwa'",
+    "type": "SK",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "11",
+    "ph": "11",
+    "wip": "14",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "CH: Camouflage",
+      "Infiltration",
+      "Multiterrain"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Sniper Rifle",
+        "cost": "27",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Sniper Rifle",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Observer",
+        "cost": "21",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "D-Charges"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Assault Hacker",
+        "cost": "26",
+        "swc": "0.5",
+        "spec": [
+          "Assault Hacking Device"
+        ],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "D-Charges"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4025,
+    "army": "Haqqislam",
+    "isc": "Asawira Regiment",
+    "name": "Asawira",
+    "type": "HI",
+    "classification": "Headquarters",
+    "imp": "F",
+    "irr": "",
+    "cube": "X",
+    "hackable": "X",
+    "mov": "4-4",
+    "cc": "21",
+    "bs": "14",
+    "ph": "14",
+    "wip": "14",
+    "arm": "3",
+    "bts": "9",
+    "w": "2",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Martial Arts L2",
+      "Regeneration",
+      "Fireteam: Duo",
+      "Religious Troop",
+      "Assault",
+      "Kinematika L2"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "AP Rifle",
+        "cost": "41",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "AP Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Shock CCW"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Lieutenant",
+        "cost": "41",
+        "swc": "0",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "AP Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Shock CCW"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Doctor",
+        "cost": "45",
+        "swc": "0",
+        "spec": [
+          "Doctor Plus",
+          "MediKit"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "AP Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Shock CCW"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Spitfire",
+        "cost": "43",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "Spitfire"
+        ],
+        "ccw": [
+          "Pistol",
+          "Shock CCW"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "DA CCW",
+        "cost": "42",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "AP Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "DA CCW"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Boarding Shotgun",
+        "cost": "35",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Shock CCW"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Shotgun Doctor",
+        "cost": "39",
+        "swc": "0",
+        "spec": [
+          "Doctor Plus",
+          "MediKit"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "Shock CCW"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Haris",
+        "cost": "44",
+        "swc": "2",
+        "spec": [
+          "Fireteam: Haris"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Spitfire"
+        ],
+        "ccw": [
+          "Pistol",
+          "Shock CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4026,
+    "army": "Haqqislam",
+    "isc": "Azra'il",
+    "name": "Azra'il",
+    "type": "HI",
+    "classification": "Veteran",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "hackable": "X",
+    "mov": "4-2",
+    "cc": "12",
+    "bs": "13",
+    "ph": "13",
+    "wip": "14",
+    "arm": "5",
+    "bts": "3",
+    "w": "2",
+    "s": "5",
+    "ava": "2",
+    "spec": [],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Feuerbach",
+        "cost": "39",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Feuerbach"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "AP HMG",
+        "cost": "41",
+        "swc": "2",
+        "spec": [],
+        "bsw": [
+          "AP HMG"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4027,
+    "army": "Haqqislam",
+    "isc": "Bashi Bazouks",
+    "name": "Bashi Bazouk",
+    "type": "LI",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "X",
+    "cube": "",
+    "mov": "4-4",
+    "cc": "15",
+    "bs": "11",
+    "ph": "10",
+    "wip": "12",
+    "arm": "2",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "AD: Parachutist / Zero-G",
+      "Holoprojector L2"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Rifle",
+        "cost": "16",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Boarding Shotgun",
+        "cost": "15",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "AP Rifle",
+        "cost": "17",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "AP Rifle"
+        ],
+        "ccw": [
+          "CCW",
+          "Breaker Pistol (2)"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "E/Mauler",
+        "cost": "17",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "E/Mauler"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Submachine Gun",
+        "cost": "12",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Submachine Gun",
+          "Chain-Colt"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4028,
+    "army": "Haqqislam",
+    "isc": "Hafza Unit",
+    "name": "Hafza",
+    "type": "LI",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "14",
+    "bs": "12",
+    "ph": "10",
+    "wip": "14",
+    "arm": "2",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Holoprojector L1"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Rifle",
+        "cost": "16",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Lieutenant+Spitfire",
+        "cost": "22",
+        "swc": "1",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Spitfire"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Lieutenant",
+        "cost": "16",
+        "swc": "0",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Observer",
+        "cost": "17",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Spitfire",
+        "cost": "22",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Spitfire"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Heavy Rocket Launcher",
+        "cost": "18",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Heavy Rocket Launcher"
+        ],
+        "ccw": [
+          "Knife",
+          "Assault Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4029,
+    "army": "Haqqislam",
+    "isc": "Hassassin Farzans",
+    "name": "Farzan",
+    "type": "SK",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "mov": "4-4",
+    "cc": "15",
+    "bs": "12",
+    "ph": "11",
+    "wip": "14",
+    "arm": "0",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "CH: Camouflage",
+      "Infiltration",
+      "Religious Troop",
+      "Multiterrain"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Chain Of Command",
+        "cost": "26",
+        "swc": "0",
+        "spec": [
+          "Chain of Command"
+        ],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Observer",
+        "cost": "23",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Minelayer",
+        "cost": "23",
+        "swc": "0",
+        "spec": [
+          "Minelayer"
+        ],
+        "bsw": [
+          "Boarding Shotgun",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Marksmanship Observer",
+        "cost": "24",
+        "swc": "0",
+        "spec": [
+          "Forward Observer",
+          "Marksmanship L1"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4030,
+    "army": "Haqqislam",
+    "isc": "Hassassin Lasiqs",
+    "name": "Lasiq",
+    "type": "MI",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "mov": "4-2",
+    "cc": "14",
+    "bs": "12",
+    "ph": "11",
+    "wip": "14",
+    "arm": "2",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "CH: Mimetism",
+      "Climbing Plus",
+      "Religious Troop",
+      "X Visor"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Viral Rifle",
+        "cost": "25",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Viral Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Viral Sniper Rifle",
+        "cost": "25",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Viral Sniper Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Haris",
+        "cost": "26",
+        "swc": "0",
+        "spec": [
+          "Fireteam: Haris"
+        ],
+        "bsw": [
+          "Viral Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Fatality Viral Rifle",
+        "cost": "27",
+        "swc": "0",
+        "spec": [
+          "Fatality L1"
+        ],
+        "bsw": [
+          "Viral Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Fatality Viral Sniper Rifle",
+        "cost": "27",
+        "swc": "2",
+        "spec": [
+          "Fatality L1"
+        ],
+        "bsw": [
+          "Viral Sniper Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4031,
+    "army": "Haqqislam",
+    "isc": "Hassassin Muyibs",
+    "name": "Muyib",
+    "type": "LI",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "mov": "4-4",
+    "cc": "17",
+    "bs": "12",
+    "ph": "11",
+    "wip": "14",
+    "arm": "2",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Religious Troop",
+      "V: Dogged",
+      "Number 2"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Panzerfaust",
+        "cost": "24",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "Panzerfaust"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "D-Charges"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Smoke",
+        "cost": "23",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Grenade Launcher",
+          "Smoke Light Grenade Launcher"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Smoke Lieutenant",
+        "cost": "23",
+        "swc": "1.5",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Grenade Launcher",
+          "Smoke Light Grenade Launcher"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Doctor",
+        "cost": "27",
+        "swc": "0",
+        "spec": [
+          "Doctor Plus",
+          "MediKit"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "D.E.P."
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Spitfire",
+        "cost": "28",
+        "swc": "1",
+        "spec": [
+          "X Visor"
+        ],
+        "bsw": [
+          "Spitfire"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "D-Charges"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Minelayer (Viral)",
+        "cost": "25",
+        "swc": "0",
+        "spec": [
+          "Minelayer"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "D.E.P.",
+          "Viral Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Minelayer (E/Mauler + Mines)",
+        "cost": "24",
+        "swc": "0",
+        "spec": [
+          "Minelayer"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "D.E.P.",
+          "E/Mauler",
+          "Antipersonnel Mines"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Heavy Rocket Launcher",
+        "cost": "22",
+        "swc": "1",
+        "spec": [
+          "X Visor"
+        ],
+        "bsw": [
+          "Heavy Rocket Launcher"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "D-Charges"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Observer",
+        "cost": "24",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "D.E.P."
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Haris",
+        "cost": "25",
+        "swc": "0.5",
+        "spec": [
+          "Fireteam: Haris"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "Panzerfaust"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "D-Charges"
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Lieutenant",
+        "cost": "24",
+        "swc": "0",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "Panzerfaust"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "D-Charges"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4032,
+    "army": "Haqqislam",
+    "isc": "Hussein Al-Djabel",
+    "name": "Al-Djabel",
+    "image": 4013,
+    "type": "SK",
+    "classification": "Character",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "mov": "4-4",
+    "cc": "23",
+    "bs": "12",
+    "ph": "13",
+    "wip": "15",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Basic Impersonation",
+      "Martial Arts L4",
+      "Religious Troop",
+      "Kinematika L1",
+      "Multiterrain"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Viral CCW",
+        "cost": "35",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "Viral CCW",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4033,
+    "army": "Haqqislam",
+    "isc": "Kameel Remotes",
+    "name": "Kameel",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "hackable": "X",
+    "mov": "4-4",
+    "cc": "8",
+    "bs": "11",
+    "ph": "10",
+    "wip": "13",
+    "arm": "2",
+    "bts": "3",
+    "w": "1",
+    "s": "4",
+    "ava": "2",
+    "spec": [
+      "Baggage",
+      "G: Remote Presence"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Minesweeper",
+        "cost": "8",
+        "swc": "0",
+        "spec": [
+          "Minesweeper",
+          "Repeater"
+        ],
+        "bsw": [],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Rifle",
+        "cost": "21",
+        "swc": "0",
+        "spec": [
+          "Total Reaction",
+          "Repeater"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "EVO",
+        "cost": "25",
+        "swc": "0.5",
+        "spec": [
+          "EVO Hacking Device"
+        ],
+        "bsw": [],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4034,
+    "army": "Haqqislam",
+    "isc": "Nasmat Remotes",
+    "name": "Nasmat",
+    "type": "REM",
+    "classification": "Support",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "hackable": "X",
+    "mov": "6-4",
+    "cc": "8",
+    "bs": "8",
+    "ph": "10",
+    "wip": "13",
+    "arm": "0",
+    "bts": "3",
+    "w": "1",
+    "s": "1",
+    "ava": "2",
+    "spec": [
+      "CH: Mimetism",
+      "G: Servant"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Servant",
+        "cost": "3",
+        "swc": "0",
+        "spec": [],
+        "bsw": [],
+        "ccw": [
+          "Electric Pulse"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4035,
+    "army": "Haqqislam",
+    "isc": "Odalisques",
+    "name": "Odalisque",
+    "type": "LI",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "15",
+    "bs": "12",
+    "ph": "10",
+    "wip": "14",
+    "arm": "2",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Sixth Sense L2 / 360° Visor",
+      "V: No Wound Incapacitation",
+      "I-Kohl L3"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Rifle",
+        "cost": "24",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Haris",
+        "cost": "25",
+        "swc": "0.5",
+        "spec": [
+          "Fireteam: Haris"
+        ],
+        "bsw": [
+          "Nanopulser",
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "SMG",
+        "cost": "22",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "Submachine Gun",
+          "Contender"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Boarding Shotgun",
+        "cost": "23",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Spitfire",
+        "cost": "30",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Nanopulser",
+          "Spitfire"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4036,
+    "army": "Haqqislam",
+    "isc": "Saladin, O-12 Liaison Officer",
+    "name": "Saladin",
+    "type": "MI",
+    "classification": "Character",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-2",
+    "cc": "15",
+    "bs": "13",
+    "ph": "12",
+    "wip": "16",
+    "arm": "3",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Repeater",
+      "Strategos L3",
+      "V: No Wound Incapacitation"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "36",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Nanopulser"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Lieutenant",
+        "cost": "36",
+        "swc": "0",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Nanopulser"
+        ],
+        "ccw": [
+          "CCW",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4037,
+    "obsolete": "X"
+  },
+  {
+    "id": 4038,
+    "army": "Haqqislam",
+    "isc": "Hassassin Husam Yasbir",
+    "name": "Hassassin Husam Yasbir",
+    "image": 4037,
+    "type": "LI",
+    "classification": "Character",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "22",
+    "bs": "12",
+    "ph": "13",
+    "wip": "14",
+    "arm": "1",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Martial Arts L3",
+      "Religious Troop",
+      "Specialist Operative"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Holoprojector L1",
+        "cost": "27",
+        "swc": "0",
+        "spec": [
+          "Holoprojector L1"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "Nanopulser"
+        ],
+        "ccw": [
+          "Pistol",
+          "Viral CCW",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Infiltration",
+        "cost": "34",
+        "swc": "0",
+        "spec": [
+          "Infiltration",
+          "Holoprojector L2"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "Nanopulser",
+          "Smoke Grenades"
+        ],
+        "ccw": [
+          "Pistol",
+          "Viral CCW",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4039,
+    "army": "Haqqislam",
+    "isc": "Kaplan Tactical Services (KTS)",
+    "name": "Kaplan",
+    "type": "LI",
+    "classification": "Veteran",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "12",
+    "ph": "11",
+    "wip": "14",
+    "arm": "2",
+    "bts": "6",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "CH: Mimetism",
+      "V: Courage"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "ADHL",
+        "cost": "23",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Adhesive Launcher"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife",
+          "D-Charges"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Blitzen",
+        "cost": "23",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Combi Rifle",
+          "Blitzen"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "MULTI Sniper Rifle",
+        "cost": "30",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "MULTI Sniper Rifle"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Spitfire",
+        "cost": "28",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Spitfire"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Engineer ADHL",
+        "cost": "27",
+        "swc": "0",
+        "spec": [
+          "Engineer"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Adhesive Launcher"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife",
+          "D-Charges"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Engineer Blitzen",
+        "cost": "27",
+        "swc": "0",
+        "spec": [
+          "Engineer"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Blitzen"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Doctor",
+        "cost": "27",
+        "swc": "0",
+        "spec": [
+          "Doctor",
+          "MediKit"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Blitzen"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Haris ADHL",
+        "cost": "24",
+        "swc": "0",
+        "spec": [
+          "Fireteam: Haris"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Adhesive Launcher"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife",
+          "D-Charges"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Haris Spitfire",
+        "cost": "29",
+        "swc": "1.5",
+        "spec": [
+          "Fireteam: Haris"
+        ],
+        "bsw": [
+          "Spitfire"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4040,
+    "army": "Haqqislam",
+    "isc": "Hassassin Barid",
+    "name": "Barid",
+    "type": "LI",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "mov": "4-4",
+    "cc": "14",
+    "bs": "12",
+    "ph": "10",
+    "wip": "14",
+    "arm": "1",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Religious Troop"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Hacker",
+        "cost": "21",
+        "swc": "0.5",
+        "spec": [
+          "Hacking Device"
+        ],
+        "bsw": [
+          "Rifle",
+          "Pitcher"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Assault Hacker",
+        "cost": "19",
+        "swc": "0.5",
+        "spec": [
+          "Assault Hacking Device: UPGRADE: Icebreaker"
+        ],
+        "bsw": [
+          "Rifle",
+          "Pitcher"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Observer",
+        "cost": "14",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Rifle",
+          "Pitcher"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Hacker+Lieutenant",
+        "cost": "21",
+        "swc": "1",
+        "spec": [
+          "Hacking Device",
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Rifle",
+          "Pitcher"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Observer+Lieutenant",
+        "cost": "14",
+        "swc": "0",
+        "spec": [
+          "Forward Observer",
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Rifle",
+          "Pitcher"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Killer Hacker",
+        "cost": "16",
+        "swc": "0",
+        "spec": [
+          "Killer Hacking Device: UPGRADE: Lightning"
+        ],
+        "bsw": [
+          "Rifle",
+          "Pitcher"
+        ],
+        "ccw": [
+          "Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4041,
+    "army": "Haqqislam",
+    "isc": "Sekban",
+    "name": "Sekban",
+    "type": "MI",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-2",
+    "cc": "14",
+    "bs": "13",
+    "ph": "11",
+    "wip": "14",
+    "arm": "3",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "360° Visor",
+      "Zero-G",
+      "Fireteam: Duo"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Boarding Shotgun",
+        "cost": "20",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun",
+          "Chain-Colt"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "Stun Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "AP Rifle",
+        "cost": "21",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "AP Rifle",
+          "Chain-Colt"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "Stun Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Spitfire",
+        "cost": "27",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Spitfire"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "Stun Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Heavy Rocket Launcher",
+        "cost": "23",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Heavy Rocket Launcher",
+          "Chain-Colt"
+        ],
+        "ccw": [
+          "Knife",
+          "Assault Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Haris",
+        "cost": "22",
+        "swc": "0",
+        "spec": [
+          "Fireteam: Haris"
+        ],
+        "bsw": [
+          "AP Rifle",
+          "Chain-Colt"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "Stun Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Doctor",
+        "cost": "24",
+        "swc": "0",
+        "spec": [
+          "Doctor Plus",
+          "MediKit"
+        ],
+        "bsw": [
+          "Boarding Shotgun",
+          "Chain-Colt"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "Stun Pistol"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Lieutenant",
+        "cost": "21",
+        "swc": "0",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "AP Rifle",
+          "Chain-Colt"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "Stun Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4042,
+    "army": "Haqqislam",
+    "isc": "Hassassin Govads",
+    "name": "Govad",
+    "type": "LI",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "14",
+    "bs": "12",
+    "ph": "11",
+    "wip": "14",
+    "arm": "2",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "3",
+    "spec": [
+      "Multispectral Visor L1",
+      "Religious Troop",
+      "Veteran L1"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Rifle",
+        "cost": "21",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Breaker Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "HMG",
+        "cost": "29",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Knife",
+          "Breaker Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Boarding Shotgun",
+        "cost": "20",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Breaker Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Sniper Rifle",
+        "cost": "25",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Sniper Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Breaker Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Missile Launcher",
+        "cost": "30",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Missile Launcher",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Breaker Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Hacker",
+        "cost": "28",
+        "swc": "0.5",
+        "spec": [
+          "Hacking Device"
+        ],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Breaker Pistol"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Lieutenant",
+        "cost": "21",
+        "swc": "0",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Breaker Pistol"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Haris",
+        "cost": "22",
+        "swc": "0.5",
+        "spec": [
+          "Fireteam: Haris"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Breaker Pistol"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Number 2",
+        "cost": "22",
+        "swc": "0",
+        "spec": [
+          "Number 2"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Breaker Pistol"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Killer Hacker",
+        "cost": "23",
+        "swc": "0.5",
+        "spec": [
+          "Killer Hacking Device"
+        ],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Breaker Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4043,
+    "army": "Haqqislam",
+    "isc": "Zhayedan Intervention Troops",
+    "name": "Zhayedan",
+    "type": "LI",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "15",
+    "bs": "12",
+    "ph": "11",
+    "wip": "14",
+    "arm": "2",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "3",
+    "spec": [
+      "AutoMediKit",
+      "Veteran L1"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Breaker Rifle",
+        "cost": "31",
+        "swc": "0",
+        "spec": [
+          "Marksmanship L2"
+        ],
+        "bsw": [
+          "Breaker Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "HMG",
+        "cost": "32",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Sniper Rifle",
+        "cost": "31",
+        "swc": "0.5",
+        "spec": [
+          "Marksmanship L2"
+        ],
+        "bsw": [
+          "Sniper Rifle"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Missile Launcher",
+        "cost": "30",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "Missile Launcher",
+          "Nimbus Grenades"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Doctor",
+        "cost": "27",
+        "swc": "0",
+        "spec": [
+          "Doctor Plus",
+          "MediKit"
+        ],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Lieutenant",
+        "cost": "31",
+        "swc": "0",
+        "spec": [
+          "Marksmanship L2",
+          "Lieutenant"
+        ],
+        "bsw": [
+          "Breaker Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "HMG Lieutenant",
+        "cost": "32",
+        "swc": "1.5",
+        "spec": [
+          "Lieutenant"
+        ],
+        "bsw": [
+          "HMG"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Haris",
+        "cost": "32",
+        "swc": "0.5",
+        "spec": [
+          "Marksmanship L2",
+          "Fireteam: Haris"
+        ],
+        "bsw": [
+          "Breaker Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4044,
+    "army": "Haqqislam",
+    "isc": "Zamira Nazarova",
+    "name": "Zamira",
+    "image": 4014,
+    "ava": "1",
+    "spec": [
+      "V: Dogged"
+    ],
+    "profiles": [
+      {
+        "id": 1,
+        "type": "WB",
+        "classification": "Character",
+        "imp": "X",
+        "irr": "X",
+        "cube": "",
+        "mov": "8-6",
+        "cc": "21",
+        "bs": "12",
+        "ph": "13",
+        "wip": "13",
+        "arm": "1",
+        "bts": "0",
+        "w": "1",
+        "s": "4",
+        "spec": [
+          "Motorcycle",
+          "Kinematika L2"
+        ],
+        "bsw": [
+          "Smoke Light Grenade Launcher"
+        ],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Dismounted",
+        "mov": "4-4",
+        "s": "2",
+        "ava": "",
+        "spec": [],
+        "bsw": []
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Light Shotgun",
+        "cost": "15",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Smoke Grenades",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Pistol",
+          "E/M CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4045,
+    "army": "Haqqislam",
+    "isc": "Zuleyka Nazarova",
+    "name": "Zuleyka",
+    "image": 4014,
+    "ava": "1",
+    "spec": [
+      "V: Dogged"
+    ],
+    "profiles": [
+      {
+        "id": 1,
+        "type": "WB",
+        "classification": "Character",
+        "imp": "X",
+        "irr": "X",
+        "cube": "",
+        "mov": "8-6",
+        "cc": "22",
+        "bs": "11",
+        "ph": "13",
+        "wip": "14",
+        "arm": "1",
+        "bts": "0",
+        "w": "1",
+        "s": "4",
+        "spec": [
+          "Motorcycle",
+          "Kinematika L2"
+        ],
+        "bsw": [
+          "Smoke Light Grenade Launcher"
+        ],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Dismounted",
+        "mov": "4-4",
+        "s": "2",
+        "ava": "",
+        "spec": [],
+        "bsw": []
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "LFT",
+        "cost": "14",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Smoke Grenades",
+          "Light Flamethrower (2)"
+        ],
+        "ccw": [
+          "Breaker Pistol (2)",
+          "DA CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4046,
+    "army": "Haqqislam",
+    "isc": "Druze Shock Teams",
+    "name": "Druze",
+    "image": 9003,
+    "type": "MI",
+    "classification": "Veteran",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-2",
+    "cc": "15",
+    "bs": "12",
+    "ph": "11",
+    "wip": "13",
+    "arm": "3",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Fireteam: Duo",
+      "Fatality L1",
+      "Veteran L1"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Combi",
+        "cost": "23",
+        "swc": "0",
+        "spec": [
+          "X Visor"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Chain-Colt"
+        ],
+        "ccw": [
+          "Viral Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Assault Hacker",
+        "cost": "28",
+        "swc": "0.5",
+        "spec": [
+          "Assault Hacking Device"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Pitcher",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Viral Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Light Grenade Launcher",
+        "cost": "27",
+        "swc": "0.5",
+        "spec": [
+          "X Visor"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "E/M Light Grenade Launcher",
+          "Light Nimbus Grenade Launcher"
+        ],
+        "ccw": [
+          "Viral Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "HMG",
+        "cost": "29",
+        "swc": "1.5",
+        "spec": [],
+        "bsw": [
+          "HMG",
+          "Chain-Colt"
+        ],
+        "ccw": [
+          "Viral Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Marksman Rifle",
+        "cost": "27",
+        "swc": "0",
+        "spec": [
+          "X Visor"
+        ],
+        "bsw": [
+          "Shock Marksman Rifle",
+          "Chain-Colt"
+        ],
+        "ccw": [
+          "Viral Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Killer Hacker",
+        "cost": "25",
+        "swc": "0",
+        "spec": [
+          "Killer Hacking Device"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Pitcher",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Viral Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Panzerfaust",
+        "cost": "25",
+        "swc": "0",
+        "spec": [
+          "X Visor"
+        ],
+        "bsw": [
+          "Combi Rifle",
+          "Chain-Colt",
+          "Panzerfaust"
+        ],
+        "ccw": [
+          "Viral Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4047,
+    "army": "Haqqislam",
+    "isc": "Hassassin Áyyār",
+    "name": "Áyyār",
+    "type": "HI",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "hackable": "X",
+    "mov": "4-4",
+    "cc": "17",
+    "bs": "13",
+    "ph": "13",
+    "wip": "14",
+    "arm": "3",
+    "bts": "3",
+    "w": "2",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Holoprojector L2",
+      "Free Agent",
+      "Religious Troop",
+      "Specialist Operative"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Rifle",
+        "cost": "37",
+        "swc": "0",
+        "spec": [
+          "Surprise Shot L2"
+        ],
+        "bsw": [
+          "Rifle",
+          "E/Mitter",
+          "D.E.P."
+        ],
+        "ccw": [
+          "Viral Pistol (2)",
+          "CCW",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shock Marksman Rifle",
+        "cost": "39",
+        "swc": "0",
+        "spec": [
+          "Surprise Shot L2"
+        ],
+        "bsw": [
+          "Shock Marksman Rifle"
+        ],
+        "ccw": [
+          "Viral Pistol (2)",
+          "CCW",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Sniper Rifle",
+        "cost": "39",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Sniper Rifle"
+        ],
+        "ccw": [
+          "Viral Pistol (2)",
+          "CCW",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4048,
+    "army": "Haqqislam",
+    "isc": "Husam Operative Leila Sharif",
+    "name": "Leila Sharif",
+    "image": 4037,
+    "type": "LI",
+    "classification": "Character",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "hackable": "",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "12",
+    "ph": "10",
+    "wip": "14",
+    "arm": "1",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Killer Hacker",
+        "cost": "20",
+        "swc": "0",
+        "spec": [
+          "Killer Hacking Device"
+        ],
+        "bsw": [
+          "Shock Marksman Rifle"
+        ],
+        "ccw": [
+          "D-Charges",
+          "Breaker Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4049,
+    "army": "Haqqislam",
+    "isc": "Hakims, Special Medical Assistance Team",
+    "name": "Hakim",
+    "ava": "1",
+    "spec": [],
+    "profiles": [
+      {
+        "id": 1,
+        "type": "LI",
+        "classification": "Specially Trained",
+        "imp": "",
+        "irr": "",
+        "cube": "X",
+        "mov": "4-4",
+        "cc": "13",
+        "bs": "11",
+        "ph": "11",
+        "wip": "15",
+        "arm": "2",
+        "bts": "3",
+        "w": "1",
+        "s": "2",
+        "spec": [
+          "Doctor Plus",
+          "Regeneration",
+          "AD: Airborne Infiltration",
+          "Medjector"
+        ],
+        "bsw": [],
+        "ccw": []
+      },
+      {
+        "id": 2,
+        "name": "Nasmat A2",
+        "optionSpecific": "X",
+        "type": "REM",
+        "imp": "",
+        "irr": "",
+        "cube": "",
+        "hackable": "X",
+        "mov": "6-4",
+        "cc": "8",
+        "bs": "8",
+        "ph": "10",
+        "wip": "13",
+        "arm": "0",
+        "bts": "3",
+        "w": "1",
+        "s": "1",
+        "spec": [
+          "G: Servant",
+          "CH: Mimetism",
+          "AD: Airborne Infiltration"
+        ],
+        "bsw": [],
+        "ccw": [
+          "Electric Pulse"
+        ],
+        "independent": {
+          "cost": "4",
+          "swc": "0"
+        }
+      }
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Boarding Shotgun",
+        "cost": "27",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "SMG",
+        "cost": "23",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Submachine Gun",
+          "Chain-Colt"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Boarding Shotgun + Nasmat",
+        "cost": "31",
+        "swc": "0.5",
+        "profile": 2,
+        "spec": [],
+        "bsw": [
+          "Boarding Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "SMG + Nasmat",
+        "cost": "27",
+        "swc": "0.5",
+        "profile": 2,
+        "spec": [],
+        "bsw": [
+          "Submachine Gun",
+          "Chain-Colt"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4050,
+    "army": "Haqqislam",
+    "isc": "Mukhtar Active Response Unit",
+    "name": "Mukhtar",
+    "type": "LI",
+    "classification": "Veteran",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "6-2",
+    "cc": "14",
+    "bs": "13",
+    "ph": "11",
+    "wip": "14",
+    "arm": "1",
+    "bts": "6",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "CH: Mimetism",
+      "Fireteam: Duo",
+      "Forward Deployment L1",
+      "Shock Immunity",
+      "V: No Wound Incapacitation"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Viral",
+        "cost": "30",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Viral Rifle",
+          "Nanopulser (2)"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Haris",
+        "cost": "31",
+        "swc": "0.5",
+        "spec": [
+          "Fireteam: Haris"
+        ],
+        "bsw": [
+          "Viral Rifle",
+          "Nanopulser (2)"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Doctor",
+        "cost": "30",
+        "swc": "0",
+        "spec": [
+          "Doctor Plus",
+          "MediKit"
+        ],
+        "bsw": [
+          "Boarding Shotgun",
+          "Nanopulser (2)"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Observer",
+        "cost": "28",
+        "swc": "0",
+        "spec": [
+          "Forward Observer"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "Nanopulser (2)",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Assault Hacker",
+        "cost": "33",
+        "swc": "0.5",
+        "spec": [
+          "Assault Hacking Device"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "Nanopulser (2)"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "MSV Red Fury",
+        "cost": "37",
+        "swc": "1",
+        "spec": [
+          "Multispectral Visor L2"
+        ],
+        "bsw": [
+          "Red Fury",
+          "Nanopulser (2)"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4051,
+    "army": "Haqqislam",
+    "isc": "Nahab Aeromobile Team",
+    "name": "Nahab",
+    "type": "LI",
+    "classification": "Veteran",
+    "imp": "F",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "22",
+    "bs": "12",
+    "ph": "13",
+    "wip": "14",
+    "arm": "1",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "AD: Airborne Infiltration / Infiltration",
+      "Assault",
+      "Kinematika L2",
+      "Natural Born Warrior",
+      "V: No Wound Incapacitation"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Red Fury",
+        "cost": "36",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Red Fury",
+          "Nanopulser"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "Viral CCW"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shotgun Specialist",
+        "cost": "30",
+        "swc": "0",
+        "spec": [
+          "Specialist Operative"
+        ],
+        "bsw": [
+          "Boarding Shotgun",
+          "Nanopulser",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "Viral CCW"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Killer Hacker",
+        "cost": "30",
+        "swc": "0",
+        "spec": [
+          "Killer Hacking Device"
+        ],
+        "bsw": [
+          "Submachine Gun",
+          "E/Mitter",
+          "Nanopulser"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "Viral CCW"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4052,
+    "army": "Haqqislam",
+    "isc": "Namurr Experimental Operative Group",
+    "name": "Namurr",
+    "type": "LI",
+    "classification": "Elite",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "6-2",
+    "cc": "18",
+    "bs": "12",
+    "ph": "12",
+    "wip": "14",
+    "arm": "2",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "spec": [
+      "Climbing Plus",
+      "Hyper-Dynamics L2",
+      "Multiterrain",
+      "Specialist Operative",
+      "Total Immunity",
+      "V: No Wound Incapacitation"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Spitfire",
+        "cost": "44",
+        "swc": "1",
+        "spec": [],
+        "bsw": [
+          "Spitfire",
+          "E/Marat",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Heavy Pistol",
+          "E/M CCW",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Rifle",
+        "cost": "38",
+        "swc": "0",
+        "spec": [
+          "Fireteam: Duo"
+        ],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "E/Marat",
+          "D-Charges"
+        ],
+        "ccw": [
+          "Heavy Pistol",
+          "E/M CCW",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4053,
+    "army": "Haqqislam",
+    "isc": "Hortlak Janissaries",
+    "name": "Hortlak",
+    "type": "HI",
+    "classification": "Veteran",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "hackable": "X",
+    "mov": "4-4",
+    "cc": "15",
+    "bs": "13",
+    "ph": "12",
+    "wip": "14",
+    "arm": "3",
+    "bts": "3",
+    "w": "1",
+    "s": "2",
+    "ava": "2",
+    "spec": [
+      "Multispectral Visor L1",
+      "Bioimmunity",
+      "CH: Mimetism",
+      "Religious Troop",
+      "Stealth",
+      "V: No Wound Incapacitation"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "SMG",
+        "cost": "28",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Submachine Gun",
+          "Blitzen"
+        ],
+        "ccw": [
+          "Viral Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Sniper",
+        "cost": "36",
+        "swc": "0.5",
+        "spec": [],
+        "bsw": [
+          "Sniper Rifle"
+        ],
+        "ccw": [
+          "Viral Pistol",
+          "Knife"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Chain of Command",
+        "cost": "33",
+        "swc": "0",
+        "spec": [
+          "Chain of Command"
+        ],
+        "bsw": [
+          "Submachine Gun",
+          "Blitzen"
+        ],
+        "ccw": [
+          "Viral Pistol",
+          "Knife"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4054,
+    "army": "Haqqislam",
+    "isc": "Husam Spec-Ops (Ghulam)",
+    "name": "Husam (Ghulam)",
+    "type": "SPEC-OPS",
+    "classification": "Line",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "13",
+    "bs": "11",
+    "ph": "10",
+    "wip": "14",
+    "arm": "1",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "sharedAva": 4002,
+    "spec": [],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Spec-Ops",
+        "cost": "13",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4055,
+    "army": "Haqqislam",
+    "isc": "Husam Spec-Ops (Muyib)",
+    "name": "Husam (Muyib)",
+    "type": "SPEC-OPS",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "",
+    "mov": "4-4",
+    "cc": "17",
+    "bs": "12",
+    "ph": "11",
+    "wip": "14",
+    "arm": "2",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "sharedAva": 4031,
+    "spec": [
+      "Religious Troop",
+      "V: Dogged",
+      "Number 2"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Spec-Ops",
+        "cost": "25",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun",
+          "Panzerfaust"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol",
+          "D-Charges"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4056,
+    "army": "Haqqislam",
+    "isc": "Husam Spec-Ops (Hafza)",
+    "name": "Husam (Hafza)",
+    "type": "SPEC-OPS",
+    "classification": "Specially Trained",
+    "imp": "",
+    "irr": "",
+    "cube": "X",
+    "mov": "4-4",
+    "cc": "14",
+    "bs": "12",
+    "ph": "10",
+    "wip": "14",
+    "arm": "2",
+    "bts": "0",
+    "w": "1",
+    "s": "2",
+    "ava": "1",
+    "sharedAva": 4028,
+    "spec": [
+      "Holoprojector L1"
+    ],
+    "childs": [
+      {
+        "id": 1,
+        "name": "Spec-Ops",
+        "cost": "17",
+        "swc": "0",
+        "spec": [],
+        "bsw": [
+          "Rifle",
+          "Light Shotgun"
+        ],
+        "ccw": [
+          "Knife",
+          "Pistol"
+        ]
+      }
+    ]
+  }
+]

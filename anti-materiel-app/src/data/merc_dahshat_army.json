@@ -1,0 +1,303 @@
+[
+  {
+    "id": 9993,
+    "army": "Non-Aligned Armies",
+    "army_id": 9999,
+    "name": "Dahshat Company",
+    "units": [
+      {
+        "comment": "Ghulam",
+        "id": 4002,
+        "ava": "6",
+        "childs": [
+          {
+            "comment": "NCO is only available in Ramah/QK",
+            "id": 14,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          }
+        ]
+      },
+      {
+        "comment": "Odalisques",
+        "id": 4035,
+        "ava": "5",
+        "skills": [
+          {
+            "name": "Fireteam: Duo",
+            "add": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Fireteam: Haris"
+          }
+        ]
+      },
+      {
+        "comment": "Bashi Bazouks",
+        "id": 9034,
+        "ava": "4"
+      },
+      {
+        "comment": "Authorized Bounty Hunters",
+        "id": 9018,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "The Bounty Hunters can join any Fireteam of this sectorial army"
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "Miranda Ashcroft + 1 Bounty Hunter"
+          }
+        ]
+      },
+      {
+        "comment": "Brawlers, Mercenary Enforcers",
+        "id": 9036,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Zúyong Invincibles",
+        "id": 2005,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "Up to 1 Rui Shi can join a Zúyong Invincibles Fireteam"
+          }
+        ]
+      },
+      {
+        "comment": "Húláng Shocktroopers",
+        "id": 2055,
+        "ava": "1",
+        "skills": [
+          {
+            "name": "Fireteam: Duo",
+            "option": 1,
+            "hide": true
+          },
+          {
+            "name": "Fireteam: Duo",
+            "option": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Al Fasid",
+        "id": 4009,
+        "ava": "1"
+      },
+      {
+        "comment": "Maghariba Guard",
+        "id": 4010,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 Rafiq Remote FTO + 1 Maghariba Guard"
+          }
+        ]
+      },
+      {
+        "comment": "Zhēnchá, Armored Reconnaissance Regiment",
+        "id": 2060,
+        "ava": "1"
+      },
+      {
+        "comment": "Hunzakuts",
+        "id": 4011,
+        "ava": "2"
+      },
+      {
+        "comment": "Libertos Freedom Fighters",
+        "id": 9067,
+        "ava": "2"
+      },
+      {
+        "comment": "Kum",
+        "id": 4014,
+        "ava": "4"
+      },
+      {
+        "comment": "Najjarun Engineer",
+        "id": 4016,
+        "ava": "1"
+      },
+      {
+        "comment": "112, Emergency Service",
+        "id": 3017,
+        "ava": "1"
+      },
+      {
+        "comment": "112, Emergency Service (Motorized)",
+        "id": 3057,
+        "ava": "1"
+      },
+      {
+        "comment": "Dozers, Field Engineers",
+        "id": 3024,
+        "ava": "1"
+      },
+      {
+        "comment": "McMurrough",
+        "id": 9005,
+        "ava": "1"
+      },
+      {
+        "comment": "Father Lucien Sforza, Registered Bounty Hunter",
+        "id": 2053,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Sforza FTO can join any Fireteam of this sectorial army"
+          }
+        ]
+      },
+      {
+        "comment": "Miranda Ashcroft, Registered Bounty Hunter",
+        "id": 9072,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "Miranda Ashcroft + 1 Bounty Hunter"
+          },
+          {
+            "title": "Wildcard Trooper",
+            "note": "Miranda Ashcroft can join any Fireteam of this sectorial army"
+          }
+        ]
+      },
+      {
+        "comment": "Valerya Gromoz, Mercenary Hacker",
+        "id": 9012,
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Valerya Gromoz can join any Fireteam of this sectorial army"
+          }
+        ]
+      },
+      {
+        "comment": "Saito Tōgan",
+        "id": 9007,
+        "ava": "1"
+      },
+      {
+        "comment": "Yáoxiè Rui Shi",
+        "id": 2038,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "SWC increased to 1.5 in Dahshat",
+            "id": 1,
+            "swc": "1.5"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Up to 1 Rui Shi can join a Zúyong Invincibles Fireteam"
+          }
+        ]
+      },
+      {
+        "comment": "Yáoxiè Lù Duān",
+        "id": 2039,
+        "ava": "1"
+      },
+      {
+        "comment": "Rafiq Remote",
+        "id": 4017,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 Rafiq Remote FTO + 1 Maghariba Guard"
+          }
+        ]
+      },
+      {
+        "comment": "Shihab Remote",
+        "id": 4018,
+        "ava": "1"
+      },
+      {
+        "comment": "Shaytaniyah Remote",
+        "id": 4019,
+        "ava": "1"
+      },
+      {
+        "comment": "Fanous Remote",
+        "id": 4020,
+        "ava": "3"
+      },
+      {
+        "comment": "Nasmat Remotes",
+        "id": 4034,
+        "ava": "4"
+      },
+      {
+        "comment": "Kameel Remotes",
+        "id": 4033,
+        "ava": "2"
+      },
+      {
+        "comment": "Traktor Mul, Artillery and Support Regiment",
+        "id": 3028,
+        "ava": "2"
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Brawler Spec-Ops",
+        "id": 9039,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "id": 9998,
+    "army": "Non-Aligned Armies",
+    "army_id": 9999,
+    "name": "Druze Bayram Security",
+    "units": [
+      {
+        "comment": "Druze Shock Teams (special version)",
+        "id": 9031,
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Can include 1 Brawler and/or 1 Clipper Dronbot"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "2 Druze and up to 3 Brawlers"
+          }
+        ]
+      },
+      {
+        "comment": "Security Chief Arslan",
+        "id": 9032,
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Chief Arslan counts as a Druze for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Authorized Bounty Hunters (special version)",
+        "id": 9033,
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Bashi Bazouk (special version)",
+        "id": 9034
+      },
+      {
+        "comment": "Anaconda",
+        "id": 9016,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "Duo only in Starco",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Duo only in Starco",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Hunzakuts",
+        "id": 4011,
+        "ava": "2"
+      },
+      {
+        "comment": "Armbots: Peacemakers",
+        "id": 1041,
+        "ava": "1"
+      },
+      {
+        "comment": "Pathfinder Dronbot",
+        "id": 1018,
+        "ava": "3"
+      },
+      {
+        "comment": "Sierra Dronbot",
+        "id": 1019,
+        "ava": "1"
+      },
+      {
+        "comment": "Clipper Dronbot (special)",
+        "id": 9035
+      },
+      {
+        "comment": "Fugazi Dronbot",
+        "id": 1021,
+        "ava": "2"
+      },
+      {
+        "comment": "Nasmat Remotes",
+        "id": 4034,
+        "ava": "2"
+      },
+      {
+        "comment": "Kameel Remotes",
+        "id": 4033,
+        "ava": "2"
+      },
+      {
+        "comment": "Brawlers, Mercenary Enforcers",
+        "id": 9036,
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "2 Druze and up to 3 Brawlers"
+          }
+        ]
+      },
+      {
+        "comment": "Valerya Gromoz, Mercenary Hacker",
+        "id": 9012,
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Valerya Gromoz can be part of any Fireteam of the Druze Bayram Security"
+          }
+        ]
+      },
+      {
+        "comment": "Saito Tōgan (special)",
+        "id": 9037
+      },
+      {
+        "comment": "Scarface & Cordelia (special)",
+        "id": 9038,
+        "notes": [
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "Scarface and Cordelia"
+          }
+        ]
+      },
+      {
+        "comment": "Armand 'Le Muet'",
+        "id": 9022
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Brawler Spec-Ops",
+        "id": 9039,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "2 Druze and up to 3 Brawlers"
+          }
+        ]
+      }
+    ]
+  }
+]

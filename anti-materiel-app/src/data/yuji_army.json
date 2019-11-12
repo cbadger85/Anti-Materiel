@@ -1,0 +1,347 @@
+[
+  {
+    "id": 2999,
+    "army": "Yu Jing",
+    "name": "Yu Jing",
+    "units": [
+      {
+        "comment": "Zhanshi",
+        "id": 2002
+      },
+      {
+        "comment": "Zhànying Imperial Agents",
+        "id": 2003
+      },
+      {
+        "comment": "Tiger Soldiers",
+        "id": 2004
+      },
+      {
+        "comment": "Zúyong Invincibles",
+        "id": 2005,
+        "childs": [
+          {
+            "comment": "Haris is not available in Yu Jing",
+            "id": 12,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Duo",
+            "note": "Requires TeamPro"
+          }
+        ]
+      },
+      {
+        "comment": "Yan Huo Invincibles",
+        "id": 2006,
+        "notes": [
+          {
+            "title": "Fireteam: Duo",
+            "note": "Requires TeamPro"
+          }
+        ]
+      },
+      {
+        "comment": "Wu Ming",
+        "id": 2007,
+        "childs": [
+          {
+            "comment": "Haris is not available in Yu Jing",
+            "id": 10,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Duo",
+            "note": "Requires TeamPro"
+          }
+        ]
+      },
+      {
+        "comment": "Daofei",
+        "id": 2008
+      },
+      {
+        "comment": "Hac Tao",
+        "id": 2009
+      },
+      {
+        "comment": "Hsien",
+        "id": 2010
+      },
+      {
+        "comment": "Guijia",
+        "id": 2011
+      },
+      {
+        "comment": "Guilang",
+        "id": 2012
+      },
+      {
+        "comment": "Ninjas",
+        "id": 2013
+      },
+      {
+        "comment": "Shaolin Warrior Monks",
+        "id": 2014
+      },
+      {
+        "comment": "Yisheng",
+        "id": 2015
+      },
+      {
+        "comment": "Mech-Engineer",
+        "id": 2016
+      },
+      {
+        "comment": "Yáokòng Wèibīng",
+        "id": 2017
+      },
+      {
+        "comment": "Yáokòng Hùsòng",
+        "id": 2018
+      },
+      {
+        "comment": "Yáokòng Son-bae",
+        "id": 2019
+      },
+      {
+        "comment": "Yáokòng Chaīyì",
+        "id": 2020
+      },
+      {
+        "comment": "Sun Tze",
+        "id": 2021
+      },
+      {
+        "comment": "Celestial Guard",
+        "id": 2022
+      },
+      {
+        "comment": "Shang Ji",
+        "id": 2024,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 9,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Duo",
+            "note": "Requires TeamPro"
+          }
+        ]
+      },
+      {
+        "comment": "Yáozăo",
+        "id": 2025
+      },
+      {
+        "comment": "Yáopú Pangguling",
+        "id": 2026
+      },
+      {
+        "comment": "Kuang Shi",
+        "id": 2027
+      },
+      {
+        "comment": "Imperial Agent, Pheasant Rank",
+        "id": 2029,
+        "skills": [
+          {
+            "name": "Fireteam: Duo",
+            "hide": true
+          }
+        ],
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 7,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Imperial Agents, Crane Rank",
+        "id": 2031
+      },
+      {
+        "comment": "Su-Jian Immediate Action Unit",
+        "id": 2034,
+        "skills": [
+          {
+            "name": "Fireteam: Duo",
+            "hide": true
+          },
+          {
+            "name": "Fireteam: Duo",
+            "profile": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Yáoxiè Rui Shi",
+        "id": 2038
+      },
+      {
+        "comment": "Yáoxiè Lù Duān",
+        "id": 2039
+      },
+      {
+        "comment": "Sun Tze v.2 (Marksman Leader)",
+        "id": 2042
+      },
+      {
+        "comment": "Guǐ Fēng Spec-Ops (Zhanshi)",
+        "id": 2061
+      },
+      {
+        "comment": "Guǐ Fēng Spec-Ops (Celestial)",
+        "id": 2062
+      },
+      {
+        "comment": "Bao Troop",
+        "id": 2045
+      },
+      {
+        "comment": "Kǎnrèn Counter-Insurgency Group",
+        "id": 2048
+      },
+      {
+        "comment": "Guǐ Fēng Xi Zhuang",
+        "id": 2050
+      },
+      {
+        "comment": "Dāoyīng Operative Control Unit",
+        "id": 2054
+      },
+      {
+        "comment": "Húláng Shocktroopers",
+        "id": 2055,
+        "notes": [
+          {
+            "title": "Fireteam: Duo",
+            "note": "Requires TeamPro"
+          }
+        ]
+      },
+      {
+        "comment": "Hǎidào Special Support Group",
+        "id": 2056,
+        "childs": [
+          {
+            "comment": "Chain of Command is not available in Yu Jing",
+            "id": 6,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Liú Xīng Jump Infantry",
+        "id": 2057
+      },
+      {
+        "comment": "Mówáng Troops",
+        "id": 2058,
+        "skills": [
+          {
+            "name": "Fireteam: Duo",
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Tai Sheng, Zúyong Invincibles NCO",
+        "id": 2059
+      },
+      {
+        "comment": "Zhēnchá, Armored Reconnaissance Regiment",
+        "id": 2060
+      },
+      {
+        "comment": "Krit Kokram, Zúyong Invincibles Specialist",
+        "id": 2063,
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Kokram FTO counts as a Zúyong for Fireteam composition."
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "Kokram FTO can be part of a Fireteam: Duo with the Guijia Squadron."
+          }
+        ]
+      },
+      {
+        "comment": "Authorized Bounty Hunters",
+        "id": 9018,
+        "ava": "1"
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Miranda Ashcroft",
+        "id": 9019,
+        "ava": "1"
+      },
+      {
+        "comment": "Armand 'Le Muet'",
+        "id": 9022,
+        "ava": "1"
+      },
+      {
+        "comment": "Krakot Renegades, Morat Fugitives",
+        "id": 9023
+      },
+      {
+        "comment": "Knauf",
+        "id": 9028
+      },
+      {
+        "comment": "Major Lunah, ex-Ariesteia! Sniper",
+        "id": 9029
+      },
+      {
+        "comment": "Cube Jäger, Mercenary Recoverers",
+        "id": 9030
+      },
+      {
+        "comment": "Aïda Swanson, Submondo Smuggler",
+        "id": 9065
+      },
+      {
+        "comment": "Libertos Freedom Fighters",
+        "id": 9067,
+        "childs": [
+          {
+            "comment": "Mimetism only in Dahshat",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Mimetism only in Dahshat",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Monstruckers",
+        "id": 9068
+      },
+      {
+        "comment": "Wild Bill, Legendary Gunslinger",
+        "id": 9074
+      }
+    ]
+  }
+]

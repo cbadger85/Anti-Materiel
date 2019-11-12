@@ -1,0 +1,23 @@
+@import '../../styles/colors';
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $neutral-8;
+  padding: 0.5rem 0.25rem;
+  font-size: 0.8rem;
+
+  .list-item__delete-icon {
+    font-size: 1.3rem;
+  }
+}
+
+.list-items__container {
+  margin: -0.5rem 0 1.5rem 0;
+  background-color: $neutral-3;
+
+  .list-items__title {
+    font-size: 1.1rem;
+  }
+}

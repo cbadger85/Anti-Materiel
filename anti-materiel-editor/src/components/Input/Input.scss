@@ -1,0 +1,26 @@
+@import '../../styles/colors';
+
+.input {
+  width: 100%;
+  margin-bottom: 1.25rem;
+
+  .input__label {
+    display: flex;
+    flex-direction: column;
+    color: $primary-cyan-0;
+    margin-top: -0.5rem;
+  }
+
+  .input__input-field {
+    padding: 0.57rem;
+    font-size: 1rem;
+    border: 1px solid $neutral-5;
+    background-color: $neutral-0;
+    color: $neutral-1;
+  }
+
+  .input__input-field:focus {
+    outline: none;
+    border: 1px solid $supporting-pink-7;
+  }
+}

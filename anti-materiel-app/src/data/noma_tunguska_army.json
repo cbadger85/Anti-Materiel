@@ -1,0 +1,286 @@
+[
+  {
+    "id": 5996,
+    "army": "Nomads",
+    "army_id": 5999,
+    "name": "Tunguska Jurisdictional Command",
+    "abbr": "Tunguska",
+    "units": [
+      {
+        "comment": "Grenzers",
+        "id": 5002,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "The Grenzers count as Securitates for Fireteam composition"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "Up to 1 Interventor can join a Grenzers Fireteam"
+          }
+        ]
+      },
+      {
+        "comment": "Securitate",
+        "id": 5003,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "The Grenzers count as Securitates for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Szalamandra",
+        "id": 5010,
+        "ava": "2"
+      },
+      {
+        "comment": "Spektrs",
+        "id": 5012,
+        "ava": "3"
+      },
+      {
+        "comment": "Daktaris",
+        "id": 5016,
+        "ava": "1"
+      },
+      {
+        "comment": "Clockmakers",
+        "id": 5017,
+        "ava": "2"
+      },
+      {
+        "comment": "Interventor",
+        "id": 5018,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Up to 1 Interventor can join a Grenzers Fireteam"
+          }
+        ]
+      },
+      {
+        "comment": "Stempler Zond",
+        "id": 5055,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "Perseus FTO + Spector FTO + 1 Stempler Zond"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Hollow Men + 1 Stempler Zond FTO"
+          }
+        ]
+      },
+      {
+        "comment": "Reaktion Zond",
+        "id": 5020,
+        "ava": "1"
+      },
+      {
+        "comment": "Vertigo Zond",
+        "id": 5021,
+        "ava": "1"
+      },
+      {
+        "comment": "Meteor Zond",
+        "id": 5022,
+        "ava": "1"
+      },
+      {
+        "comment": "Transductor Zond",
+        "id": 5023,
+        "ava": "2"
+      },
+      {
+        "comment": "Lunokhod Sputniks",
+        "id": 5027,
+        "ava": "2"
+      },
+      {
+        "comment": "Salyut Zonds",
+        "id": 5032,
+        "ava": "2"
+      },
+      {
+        "comment": "Tsyklon Sputniks",
+        "id": 5056,
+        "ava": "2"
+      },
+      {
+        "comment": "Zondbots",
+        "id": 5036,
+        "ava": "2"
+      },
+      {
+        "comment": "Vortex Spec-Ops",
+        "id": 5042
+      },
+      {
+        "comment": "Kriza Boracs",
+        "id": 5047,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 Hollow Man + 1 Kriza Borac"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Hollow Man (Fireteam: Haris) + 2 Kriza Boracs"
+          }
+        ]
+      },
+      {
+        "comment": "Hecklers",
+        "id": 5048,
+        "ava": "3"
+      },
+      {
+        "comment": "Mary Problems",
+        "id": 5049,
+        "ava": "1"
+      },
+      {
+        "comment": "Puppet Masters",
+        "id": 5050,
+        "ava": "1"
+      },
+      {
+        "comment": "Puppetbots",
+        "id": 5051,
+        "ava": "3"
+      },
+      {
+        "comment": "Zondnautica",
+        "id": 5052,
+        "ava": "3"
+      },
+      {
+        "comment": "Hollow Men",
+        "id": 5053,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Hollow Men + 1 Stempler Zond FTO"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Hollow Man (Fireteam: Haris) + 2 Kriza Boracs"
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 Hollow Man + 1 Kriza Borac"
+          }
+        ]
+      },
+      {
+        "comment": "Perseus",
+        "id": 5054,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Perseus FTO counts as a Securitate for Fireteam composition"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "Perseus FTO + Spector FTO + 1 Stempler Zond"
+          }
+        ]
+      },
+      {
+        "comment": "Vortex Spec-Ops (Securitate)",
+        "id": 5059,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "The Grenzers count as Securitates for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Miranda Ashcroft (Ashcroft Hunting Party)",
+        "id": 2051,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "An Ashcroft Hunting Party is composed of one Miranda Ashcroft and one Authorized Bounty Hunter. An Ashcroft Hunting Party is considered a Fireteam: Duo."
+          }
+        ]
+      },
+      {
+        "comment": "Authorized Bounty Hunters (Ashcroft Hunting Party)",
+        "id": 2052,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "An Ashcroft Hunting Party is composed of one Miranda Ashcroft and one Authorized Bounty Hunter. An Ashcroft Hunting Party is considered a Fireteam: Duo."
+          }
+        ]
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Miranda Ashcroft",
+        "id": 9019,
+        "ava": "1"
+      },
+      {
+        "comment": "Raoul Spector, Mercenary Operative (Irregular)",
+        "id": 9061
+      },
+      {
+        "comment": "Raoul Spector, Mercenary Operative (Regular)",
+        "id": 9062,
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Spector FTO count as a Securitate or as a Grenzer for Fireteam composition"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "Perseus FTO + Spector FTO + 1 Stempler Zond"
+          }
+        ]
+      }
+    ]
+  }
+]

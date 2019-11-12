@@ -1,0 +1,268 @@
+[
+  {
+    "id": 8999,
+    "army": "Tohaa",
+    "name": "Tohaa",
+    "units": [
+      {
+        "comment": "Kamael Light Infantry",
+        "id": 8001
+      },
+      {
+        "comment": "Sakiel Regiment",
+        "id": 8002
+      },
+      {
+        "comment": "Ectros Regiment",
+        "id": 8003
+      },
+      {
+        "comment": "Clipsos Infiltrators",
+        "id": 8004
+      },
+      {
+        "comment": "Tohaa Diplomatic Delegates",
+        "id": 8005
+      },
+      {
+        "comment": "Gao-Rael",
+        "id": 8006
+      },
+      {
+        "comment": "Gao-Tarsos",
+        "id": 8007
+      },
+      {
+        "comment": "Gorgos",
+        "id": 8008
+      },
+      {
+        "comment": "Makaul",
+        "id": 8009
+      },
+      {
+        "comment": "Kumotail",
+        "id": 8010
+      },
+      {
+        "comment": "Chaksa Auxiliars",
+        "id": 8011,
+        "childs": [
+          {
+            "comment": "Only in Spiral",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Chaksa Servant",
+        "id": 8012
+      },
+      {
+        "comment": "Neema Saatar",
+        "id": 8013
+      },
+      {
+        "comment": "Hatail Spec-Ops",
+        "id": 8014
+      },
+      {
+        "comment": "Hatail Aelis Keesan",
+        "id": 8015
+      },
+      {
+        "comment": "Nikoul Ambush Unit",
+        "id": 8016
+      },
+      {
+        "comment": "Kotail Mobile Unit",
+        "id": 8017
+      },
+      {
+        "comment": "Rasail Boarding Team",
+        "id": 8018
+      },
+      {
+        "comment": "Kaeltar Specialists",
+        "id": 8019
+      },
+      {
+        "comment": "Igao",
+        "id": 8020
+      },
+      {
+        "comment": "Kosuil Assault Pioneers",
+        "id": 8021
+      },
+      {
+        "comment": "Kerail Preceptors",
+        "id": 8022
+      },
+      {
+        "comment": "Sukeul Commandos",
+        "id": 8023
+      },
+      {
+        "comment": "Kaauri Sentinels",
+        "id": 8024,
+        "childs": [
+          {
+            "comment": "FT: Triad only in Spiral",
+            "id": 5,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Taqeul Officers",
+        "id": 8025
+      },
+      {
+        "comment": "Taagma Schemers",
+        "id": 8026,
+        "childs": [
+          {
+            "comment": "Only in Spiral",
+            "id": 2,
+            "hide": true
+          },
+          {
+            "comment": "Only in Spiral",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Only in Spiral",
+            "id": 4,
+            "hide": true
+          },
+          {
+            "comment": "Only in Spiral",
+            "id": 5,
+            "hide": true
+          },
+          {
+            "comment": "Only in Spiral",
+            "id": 6,
+            "hide": true
+          },
+          {
+            "comment": "Only in Spiral",
+            "id": 7,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Kiel-Saan Covert Assault Unit",
+        "id": 8027,
+        "notes": [
+          {
+            "title": "MetaChemistry",
+            "note": "MetaChemistry enhancements are applied to both troop profiles"
+          }
+        ]
+      },
+      {
+        "comment": "Draal Saboteurs",
+        "id": 8028
+      },
+      {
+        "comment": "Kriigel Agents",
+        "id": 8029,
+        "childs": [
+          {
+            "comment": "Only in Spiral",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Only in Spiral",
+            "id": 4,
+            "hide": true
+          },
+          {
+            "comment": "Only in Spiral",
+            "id": 5,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Reex Escorts",
+        "id": 8030
+      },
+      {
+        "comment": "Kiiutan Imposters",
+        "id": 8031,
+        "childs": [
+          {
+            "comment": "Only in Spiral",
+            "id": 2,
+            "hide": true
+          },
+          {
+            "comment": "Only in Spiral",
+            "id": 3,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Chaksa Longarms",
+        "id": 8032,
+        "childs": [
+          {
+            "comment": "Only in Spiral",
+            "id": 5,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Duo",
+            "note": "Requires TeamPro"
+          }
+        ]
+      },
+      {
+        "comment": "Greif Operators",
+        "id": 6062
+      },
+      {
+        "comment": "Armand 'Le Muet'",
+        "id": 9022,
+        "ava": "1"
+      },
+      {
+        "comment": "Krakot Renegades, Morat Fugitives",
+        "id": 9023
+      },
+      {
+        "comment": "Cube Jäger, Mercenary Recoverers",
+        "id": 9030
+      },
+      {
+        "comment": "Aïda Swanson, Submondo Smuggler",
+        "id": 9065
+      },
+      {
+        "comment": "Libertos Freedom Fighters",
+        "id": 9067,
+        "childs": [
+          {
+            "comment": "Mimetism only in Dahshat",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Mimetism only in Dahshat",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      }
+    ]
+  }
+]

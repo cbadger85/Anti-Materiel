@@ -1,0 +1,342 @@
+[
+  {
+    "id": 9995,
+    "army": "Non-Aligned Armies",
+    "army_id": 9999,
+    "name": "Starco, Free Company of the Star",
+    "abbr": "Starco",
+    "units": [
+      {
+        "comment": "Avicenna",
+        "id": 9009,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Riot Grrls + Avicenna or Emily Handelman"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "Up to 2 Riot Grrls + Avicenna"
+          }
+        ]
+      },
+      {
+        "comment": "Brawlers, Mercenary Enforcers",
+        "id": 9036,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Brawlers + 1 CSU or Spector FTO"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Brawler + 1 CSU + Spector FTO"
+          }
+        ]
+      },
+      {
+        "comment": "Mercenary - CSU, Corporate Security Unit",
+        "id": 9020,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 CSU + Spector FTO"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Brawlers + 1 CSU or Spector FTO"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Brawler + 1 CSU + Spector FTO"
+          }
+        ]
+      },
+      {
+        "comment": "Clockmakers",
+        "id": 5017,
+        "ava": "1"
+      },
+      {
+        "comment": "Alguaciles",
+        "id": 5001,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Alguaciles + Emily Handelman"
+          }
+        ]
+      },
+      {
+        "comment": "Daktaris",
+        "id": 5016,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 3 Mobile Brigadas + 1 Daktari + Señor Massacre"
+          }
+        ]
+      },
+      {
+        "comment": "Emily Handelman, Intel Agent",
+        "id": 9060,
+        "notes": [
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "Emily Handelman + Uhahu"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Riot Grrls + Avicenna or Emily Handelman"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Alguaciles + Emily Handelman"
+          }
+        ]
+      },
+      {
+        "comment": "Highlander Caterans",
+        "id": 9004,
+        "ava": "1"
+      },
+      {
+        "comment": "Knauf",
+        "id": 9028
+      },
+      {
+        "comment": "Emily Handelman, Intel Agent",
+        "id": 9060
+      },
+      {
+        "comment": "Raoul Spector, Mercenary Operative (Irregular)",
+        "id": 9061
+      },
+      {
+        "comment": "Raoul Spector, Mercenary Operative (Regular)",
+        "id": 9062,
+        "notes": [
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 CSU + Spector FTO"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Brawlers + 1 CSU or Spector FTO"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Brawler + 1 CSU + Spector FTO"
+          }
+        ]
+      },
+      {
+        "comment": "Uhahu",
+        "id": 9063,
+        "notes": [
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "Emily Handelman + Uhahu"
+          }
+        ]
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Hellcats",
+        "id": 5004,
+        "ava": "2"
+      },
+      {
+        "comment": "Mobile Brigada",
+        "id": 5008,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 Anaconda + 1 Mobile Brigada"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 3 Mobile Brigadas + 1 Daktari + Señor Massacre"
+          }
+        ]
+      },
+      {
+        "comment": "Riot Grrls",
+        "id": 5041,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Riot Grrls + Avicenna or Emily Handelman"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "Up to 2 Riot Grrls + Avicenna"
+          }
+        ]
+      },
+      {
+        "comment": "Anaconda (duo)",
+        "id": 9016,
+        "childs": [
+          {
+            "comment": "Non-duo not in Starco",
+            "id": 1,
+            "hide": true
+          },
+          {
+            "comment": "Non-duo not in Starco",
+            "id": 2,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Duo",
+            "note": "1 Anaconda + 1 Mobile Brigada"
+          }
+        ]
+      },
+      {
+        "comment": "Lunokhod Sputniks",
+        "id": 5035,
+        "ava": "2"
+      },
+      {
+        "comment": "Reaktion Zond",
+        "id": 5020,
+        "ava": "1"
+      },
+      {
+        "comment": "Salyut Zonds",
+        "id": 5032,
+        "ava": "1"
+      },
+      {
+        "comment": "Stempler Zond",
+        "id": 5019,
+        "ava": "1"
+      },
+      {
+        "comment": "Transductor Zond",
+        "id": 5023,
+        "ava": "1"
+      },
+      {
+        "comment": "Tsyklon Sputniks",
+        "id": 5027,
+        "ava": "1"
+      },
+      {
+        "comment": "Vertigo Zond",
+        "id": 5021,
+        "ava": "1"
+      },
+      {
+        "comment": "Zondbots",
+        "id": 5036,
+        "ava": "2"
+      },
+      {
+        "comment": "Al Hawwa' Unit",
+        "id": 4024,
+        "ava": "1"
+      },
+      {
+        "comment": "Corregidor Bandits",
+        "id": 5013,
+        "ava": "2"
+      },
+      {
+        "comment": "Corregidor Jaguars",
+        "id": 5015,
+        "ava": "4"
+      },
+      {
+        "comment": "Hardcases",
+        "id": 3010,
+        "ava": "1"
+      },
+      {
+        "comment": "Irmandinhos",
+        "id": 3014,
+        "ava": "1"
+      },
+      {
+        "comment": "Señor Massacre",
+        "id": 9011,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "Haris is not available in Starco",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Duo is not available in Starco",
+            "id": 4,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 3 Mobile Brigadas + 1 Daktari + Señor Massacre"
+          }
+        ]
+      },
+      {
+        "comment": "Brawler Spec-Ops",
+        "id": 9039,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Brawlers + 1 CSU or Spector FTO"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Brawler + 1 CSU + Spector FTO"
+          }
+        ]
+      }
+    ]
+  }
+]

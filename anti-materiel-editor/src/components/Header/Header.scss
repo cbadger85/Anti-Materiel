@@ -1,0 +1,22 @@
+@import '../../styles/colors';
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header__title {
+  color: $neutral-4;
+  margin: 0;
+  padding-right: 1.5rem;
+  line-height: 1;
+  font-size: 2rem;
+  display: inline-block;
+  border-bottom: 1px solid $supporting-pink-5;
+}
+
+.header__subtitle {
+  color: $primary-cyan-7;
+  margin: 0;
+  line-height: 1;
+  font-size: 1.6rem;
+}

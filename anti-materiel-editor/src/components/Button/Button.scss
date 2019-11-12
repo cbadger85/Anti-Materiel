@@ -1,0 +1,121 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/colors.scss';
+
+.button {
+  @include clear-button-defaults;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  margin: 0.5rem;
+  transition: all 100ms linear;
+  background-color: $neutral-9;
+  color: $neutral-1;
+
+  &:hover {
+    background-color: $neutral-8;
+    transform: translate3d(0, -0.05rem, 0);
+    transition: all 100ms linear;
+  }
+
+  &:active {
+    transition: all 100ms linear;
+    transform: translate3d(0, 0.05rem, 0);
+  }
+
+  &.button--primary {
+    background-color: $supporting-pink-4;
+    color: $supporting-yellow-0;
+    border-color: $primary-cyan-7;
+  }
+
+  &.button--primary:hover {
+    background-color: $supporting-pink-5;
+    color: $supporting-yellow-0;
+  }
+
+  &.button--primary:focus {
+    outline: 1px solid $primary-cyan-7;
+  }
+
+  &.button--secondary {
+    background-color: $neutral-4;
+    color: $supporting-indigo-0;
+    border-color: $supporting-pink-8;
+  }
+
+  &.button--secondary:hover {
+    background-color: $neutral-5;
+  }
+
+  &.button--secondary:focus {
+    border: 1px solid $supporting-pink-8;
+  }
+
+  &.button--transparent-dark {
+    background-color: inherit;
+    color: $primary-cyan-9;
+  }
+
+  &.button--transparent-dark:focus {
+    outline: 1px solid $primary-cyan-9;
+  }
+
+  &.button--transparent-light {
+    background-color: inherit;
+    color: $primary-cyan-3;
+  }
+
+  &.button--transparent-light:focus {
+    outline: 1px solid $primary-cyan-3;
+  }
+
+  &.button--transparent-dark:hover,
+  &.button--transparent-light:hover {
+    transition: all 100ms linear;
+    transform: translate3d(0, -0.05rem, 0);
+  }
+
+  &.button--transparent-dark:active,
+  &.button--transparent-dark:active {
+    transition: all 100ms linear;
+    transform: translate3d(0, 0.05rem, 0);
+  }
+
+  &.button--delete-light {
+    background-color: inherit;
+    color: $supporting-red-6;
+    padding: 0;
+    margin: 0;
+  }
+
+  &.button--delete-light:active {
+    color: $supporting-red-6;
+    transform: none;
+  }
+
+  &.button--delete-light:focus {
+    transform: scale(1.2);
+    color: $supporting-red-5;
+  }
+
+  &.button--delete-dark {
+    background-color: inherit;
+    color: $supporting-red-8;
+    padding: 0;
+    margin: 0;
+  }
+
+  &.button--delete-dark:active {
+    color: $supporting-red-8;
+    transform: none;
+  }
+
+  &.button--delete-dark:focus {
+    transform: scale(1.2);
+    color: $supporting-red-7;
+  }
+
+  &.button--delete-light:hover,
+  &.button--delete-dark:hover {
+    transform: scale(1.2);
+  }
+}

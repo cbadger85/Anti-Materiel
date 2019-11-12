@@ -1,0 +1,224 @@
+[
+  {
+    "id": 3997,
+    "army": "Ariadna",
+    "army_id": 3999,
+    "name": "Merovingian Rapid Response Force",
+    "abbr": "M.R.R.F.",
+    "units": [
+      {
+        "comment": "Métros",
+        "id": 3027,
+        "ava": "T",
+        "childs": [
+          {
+            "comment": "LT is 0 SWC in MRRF",
+            "id": 1,
+            "swc": "0"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Troops possessing Inferior Infiltration cannot compose Fireteams in this Sectorial Army"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Troops possessing Inferior Infiltration cannot compose Fireteams in this Sectorial Army. Up to 3 Moblots and up to 2 Métros."
+          }
+        ]
+      },
+      {
+        "comment": "Para-Commandos",
+        "id": 3002,
+        "ava": "6"
+      },
+      {
+        "comment": "Loup-Garous",
+        "id": 3026,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          }
+        ]
+      },
+      {
+        "comment": "Zouaves",
+        "id": 3030,
+        "ava": "5"
+      },
+      {
+        "comment": "Briscard",
+        "id": 3037,
+        "ava": "5",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          }
+        ]
+      },
+      {
+        "comment": "Moblots",
+        "id": 3007,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Troops possessing Infiltration cannot compose Fireteams in this Sectorial Army"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Troops possessing Infiltration cannot compose Fireteams in this Sectorial Army.  Up to 3 Moblots and up to 2 Métros"
+          }
+        ]
+      },
+      {
+        "comment": "Chasseurs",
+        "id": 3023,
+        "ava": "4"
+      },
+      {
+        "comment": "Traktor Mul, Artillery and Support Regiment",
+        "id": 3028,
+        "ava": "2"
+      },
+      {
+        "comment": "112, Emergency Service",
+        "id": 3017,
+        "ava": "3"
+      },
+      {
+        "comment": "112, Emergency Service (Motorized)",
+        "id": 3057,
+        "ava": "3"
+      },
+      {
+        "comment": "Dozers, Field Engineers",
+        "id": 3024,
+        "ava": "2"
+      },
+      {
+        "comment": "Alguaciles",
+        "id": 5001,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "only the hacker",
+            "id": 1,
+            "hide": true
+          },
+          {
+            "comment": "only the hacker",
+            "id": 2,
+            "hide": true
+          },
+          {
+            "comment": "only the hacker",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "only the hacker",
+            "id": 4,
+            "hide": true
+          },
+          {
+            "comment": "only the hacker",
+            "id": 5,
+            "hide": true
+          },
+          {
+            "comment": "only the hacker",
+            "id": 7,
+            "hide": true
+          },
+          {
+            "comment": "only the hacker",
+            "id": 8,
+            "hide": true
+          },
+          {
+            "comment": "only the hacker",
+            "id": 9,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "The Alguacil Hacker counts as a Métro for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Brigadier Jacques Bruant",
+        "id": 3034,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Troops possessing Inferior Infiltration cannot compose Fireteams in this Sectorial Army. Bruant counts as a Métro for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Margot Berthier, Mirage-5",
+        "id": 3038,
+        "ava": "1"
+      },
+      {
+        "comment": "Intel Spec-Ops (Métro)",
+        "id": 3060,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Troops possessing Inferior Infiltration cannot compose Fireteams in this Sectorial Army"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Troops possessing Inferior Infiltration cannot compose Fireteams in this Sectorial Army. Up to 3 Moblots and up to 2 Métros."
+          }
+        ]
+      },
+      {
+        "comment": "Anaconda",
+        "id": 9016,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "Duo only in Starco",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Duo only in Starco",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Wardrivers",
+        "id": 9021,
+        "ava": "1"
+      },
+      {
+        "comment": "Knauf",
+        "id": 9028
+      }
+    ]
+  }
+]

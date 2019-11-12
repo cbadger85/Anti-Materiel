@@ -1,0 +1,294 @@
+[
+  {
+    "id": 6997,
+    "army": "Combined Army",
+    "army_id": 6999,
+    "name": "Morat Aggression Force",
+    "units": [
+      {
+        "comment": "Morat Vanguard Infantry",
+        "id": 6001,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Vanguards + 1 Suryat"
+          }
+        ]
+      },
+      {
+        "comment": "Kurgat Reg. of Assault Engineers",
+        "id": 6022,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          }
+        ]
+      },
+      {
+        "comment": "Yaogat Strike Infantry",
+        "id": 6036,
+        "ava": "5",
+        "childs": [
+          {
+            "comment": "Lieutenant - SWC cost is only 0 in Morat Aggression Force ",
+            "id": 2,
+            "swc": "0"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          }
+        ]
+      },
+      {
+        "comment": "Rodok",
+        "id": 6006,
+        "ava": "5",
+        "childs": [
+          {
+            "comment": "Lieutenant - SWC cost is only 0 in Morat Aggression Force ",
+            "id": 7,
+            "swc": "0"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          }
+        ]
+      },
+      {
+        "comment": "Rasyat Diplomatic Division",
+        "id": 6023,
+        "ava": "3"
+      },
+      {
+        "comment": "Raktorak",
+        "id": 6047,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Wildcard Trooper",
+            "note": "Raktoraks can join any Fireteam of this Sectorial Army"
+          }
+        ]
+      },
+      {
+        "comment": "Suryats",
+        "id": 6048,
+        "ava": "5",
+        "childs": [
+          {
+            "comment": "Lieutenant - SWC cost is only 0 in Morat Aggression Force ",
+            "id": 6,
+            "swc": "0"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Vanguards + 1 Suryat"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Suryats + 1 Kornak"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "Kornak can compose a Fireteam: Haris with Suryats"
+          }
+        ]
+      },
+      {
+        "comment": "Sogarat Tempest Regiment",
+        "id": 6034,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          }
+        ]
+      },
+      {
+        "comment": "Raicho Armoured Brigade",
+        "id": 6008,
+        "ava": "2"
+      },
+      {
+        "comment": "Zerat Special Missions Regiment",
+        "id": 6037,
+        "ava": "3"
+      },
+      {
+        "comment": "Dāturazi Witch-Soldiers",
+        "id": 6013,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          }
+        ]
+      },
+      {
+        "comment": "Oznat",
+        "id": 6049,
+        "ava": "2",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Hungries (Gakis and/or Pretas) + 1 or 2 Oznats"
+          }
+        ]
+      },
+      {
+        "comment": "Kornak Gazarot",
+        "id": 6050,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "Lieutenant - SWC cost is only 0 in Morat Aggression Force ",
+            "id": 2,
+            "swc": "0"
+          }
+        ],
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Suryats + 1 Kornak"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "Kornak can compose a Fireteam: Haris with Suryats"
+          }
+        ]
+      },
+      {
+        "comment": "The Hungries: \"Gakis\"",
+        "id": 6014,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Hungries (Gakis and/or Pretas) + 1 or 2 Oznats"
+          }
+        ]
+      },
+      {
+        "comment": "The Hungries: \"Pretas\"",
+        "id": 6015,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Hungries (Gakis and/or Pretas) + 1 or 2 Oznats"
+          }
+        ]
+      },
+      {
+        "comment": "Med-Tech Obsidon Medchanoid",
+        "id": 6016,
+        "ava": "1"
+      },
+      {
+        "comment": "M-Drone",
+        "id": 6017,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "FTO is only available in Shasvastii Expeditionary Force",
+            "id": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Q-Drone",
+        "id": 6018,
+        "ava": "1"
+      },
+      {
+        "comment": "T-Drone",
+        "id": 6019,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "FTO is only available in Shasvastii Expeditionary Force",
+            "id": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "R-Drone",
+        "id": 6020,
+        "ava": "1"
+      },
+      {
+        "comment": "E-Drone",
+        "id": 6051,
+        "ava": "1"
+      },
+      {
+        "comment": "Slave Drones",
+        "id": 6033,
+        "ava": "2"
+      },
+      {
+        "comment": "Ikadron Batroids",
+        "id": 6042,
+        "ava": "2"
+      },
+      {
+        "comment": "Treitak Spec-Ops",
+        "id": 6039,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 4 Vanguards + 1 Suryat"
+          }
+        ]
+      },
+      {
+        "comment": "Treitak Anyat",
+        "id": 6040,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam",
+            "note": "Treitak Anyat counts as a Morat Vanguard Inf. for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Krakot Renegades, Morat Fugitives",
+        "id": 9023,
+        "ava": "3"
+      }
+    ]
+  }
+]

@@ -1,0 +1,902 @@
+{
+  "Hacking Devices": [
+    {
+      "name": "Hacking Device",
+      "groups": [
+        "CLAW-1",
+        "SWORD-1",
+        "SHIELD-1",
+        "GADGET-1",
+        "GADGET-2"
+      ],
+      "upgrades": []
+    },
+    {
+      "name": "Hacking Device: UPGRADE: Expel",
+      "groups": [
+        "CLAW-1",
+        "SWORD-1",
+        "SHIELD-1",
+        "GADGET-1",
+        "GADGET-2"
+      ],
+      "upgrades": [
+        "Expel"
+      ]
+    },
+    {
+      "name": "EI Hacking Device",
+      "groups": [
+        "CLAW-1",
+        "SWORD-1",
+        "SHIELD-1",
+        "GADGET-1",
+        "GADGET-2"
+      ],
+      "upgrades": [
+        "Sucker Punch"
+      ]
+    },
+    {
+      "name": "Defensive Hacking Device",
+      "groups": [
+        "SHIELD-1",
+        "SHIELD-2",
+        "SHIELD-3",
+        "GADGET-1"
+      ],
+      "upgrades": []
+    },
+    {
+      "name": "Hacking Device Plus",
+      "groups": [
+        "CLAW-1",
+        "CLAW-2",
+        "SWORD-1",
+        "SHIELD-1",
+        "SHIELD-2",
+        "GADGET-1",
+        "GADGET-2"
+      ],
+      "upgrades": [
+        "Cybermask",
+        "Sucker Punch",
+        "White Noise"
+      ]
+    },
+    {
+      "name": "Hacking Device Plus: UPGRADE: Redrum",
+      "groups": [
+        "CLAW-1",
+        "CLAW-2",
+        "SWORD-1",
+        "SHIELD-1",
+        "SHIELD-2",
+        "GADGET-1",
+        "GADGET-2"
+      ],
+      "upgrades": [
+        "Cybermask",
+        "Sucker Punch",
+        "White Noise",
+        "Redrum"
+      ]
+    },
+    {
+      "name": "Hacking Device Plus: UPGRADE: Maestro",
+      "groups": [
+        "CLAW-1",
+        "CLAW-2",
+        "SWORD-1",
+        "SHIELD-1",
+        "SHIELD-2",
+        "GADGET-1",
+        "GADGET-2"
+      ],
+      "upgrades": [
+        "Cybermask",
+        "Sucker Punch",
+        "White Noise",
+        "Maestro"
+      ]
+    },
+    {
+      "name": "Hacking Device Plus: UPGRADE: Icebreaker",
+      "groups": [
+        "CLAW-1",
+        "CLAW-2",
+        "SWORD-1",
+        "SHIELD-1",
+        "SHIELD-2",
+        "GADGET-1",
+        "GADGET-2"
+      ],
+      "upgrades": [
+        "Cybermask",
+        "Sucker Punch",
+        "White Noise",
+        "Icebreaker"
+      ]
+    },
+    {
+      "name": "Assault Hacking Device",
+      "groups": [
+        "CLAW-1",
+        "CLAW-2",
+        "CLAW-3"
+      ],
+      "upgrades": []
+    },
+    {
+      "name": "EI Assault Hacking Device",
+      "groups": [
+        "CLAW-1",
+        "CLAW-2",
+        "CLAW-3"
+      ],
+      "upgrades": [
+        "Stop!"
+      ]
+    },
+    {
+      "name": "Hacking Device: UPGRADE: Stop!",
+      "groups": [
+        "CLAW-1",
+        "SWORD-1",
+        "SHIELD-1",
+        "GADGET-1",
+        "GADGET-2"
+      ],
+      "upgrades": [
+        "Stop!"
+      ]
+    },
+    {
+      "name": "EI Assault Hacking Device: UPGRADE: Goodnight",
+      "groups": [
+        "CLAW-1",
+        "CLAW-2",
+        "CLAW-3"
+      ],
+      "upgrades": [
+        "Stop!",
+        "Goodnight"
+      ]
+    },
+    {
+      "name": "Assault Hacking Device: UPGRADE: Trinity",
+      "groups": [
+        "CLAW-1",
+        "CLAW-2",
+        "CLAW-3"
+      ],
+      "upgrades": [
+        "Trinity"
+      ]
+    },
+    {
+      "name": "Assault Hacking Device: UPGRADE: Icebreaker",
+      "groups": [
+        "CLAW-1",
+        "CLAW-2",
+        "CLAW-3"
+      ],
+      "upgrades": [
+        "Icebreaker"
+      ]
+    },
+    {
+      "name": "Assault Hacking Device: UPGRADE: Lightning",
+      "groups": [
+        "CLAW-1",
+        "CLAW-2",
+        "CLAW-3"
+      ],
+      "upgrades": [
+        "Lightning"
+      ]
+    },
+    {
+        "name": "Assault Hacking Device: UPGRADE: Stop!",
+        "groups": [
+            "CLAW-1",
+            "CLAW-2",
+            "CLAW-3"
+        ],
+        "upgrades": [
+            "Stop!"
+        ]
+    },
+    {
+      "name": "EVO Hacking Device",
+      "groups": [
+        "SWORD-1",
+        "SHIELD-1",
+        "SHIELD-2",
+        "GADGET-1",
+        "GADGET-2",
+        "GADGET-EVO"
+      ],
+      "upgrades": []
+    },
+    {
+      "name": "EVO Hacking Device: UPGRADES: Exile, Goodnight",
+      "groups": [
+        "SWORD-1",
+        "SHIELD-1",
+        "SHIELD-2",
+        "GADGET-1",
+        "GADGET-2",
+        "GADGET-EVO"
+      ],
+      "upgrades": [
+        "Exile",
+        "Goodnight"
+      ]
+    },
+    {
+      "name": "Killer Hacking Device",
+      "groups": [
+        "SWORD-1",
+        "SWORD-2"
+      ],
+      "upgrades": [
+        "Cybermask"
+      ]
+    },
+    {
+      "name": "Killer Hacking Device: UPGRADE: Maestro",
+      "groups": [
+        "SWORD-1",
+        "SWORD-2"
+      ],
+      "upgrades": [
+        "Cybermask",
+        "Maestro"
+      ]
+    },
+    {
+      "name": "Killer Hacking Device: UPGRADE: Lightning",
+      "groups": [
+        "SWORD-1",
+        "SWORD-2"
+      ],
+      "upgrades": [
+        "Cybermask",
+        "Lightning"
+      ]
+    },
+    {
+      "name": "Killer Hacking Device: UPGRADE: Sucker Punch",
+      "groups": [
+        "SWORD-1",
+        "SWORD-2"
+      ],
+      "upgrades": [
+        "Cybermask",
+        "Sucker Punch"
+      ]
+    },
+    {
+      "name": "EI Killer Hacking Device",
+      "groups": [
+        "SWORD-1",
+        "SWORD-2"
+      ],
+      "upgrades": [
+        "Cybermask",
+        "Maestro"
+      ]
+    },
+    {
+      "name": "EI Killer Hacking Device: UPGRADE: White Noise",
+      "groups": [
+        "SWORD-1",
+        "SWORD-2"
+      ],
+      "upgrades": [
+        "Cybermask",
+        "Maestro",
+        "White Noise"
+      ]
+    },
+    {
+      "name": "EI Killer Hacking Device: UPGRADE: Expel",
+      "groups": [
+        "SWORD-1",
+        "SWORD-2"
+      ],
+      "upgrades": [
+        "Cybermask",
+        "Maestro",
+        "Expel"
+      ]
+    },
+    {
+      "name": "White Hacking Device",
+      "groups": [
+        "SHIELD-1",
+        "SHIELD-2",
+        "SHIELD-3",
+        "GADGET-1"
+      ],
+      "upgrades": []
+    }
+  ],
+  "Hacking Program Groups": [
+    {
+      "name": "CLAW-1",
+      "programs": [
+        "Blackout",
+        "Gotcha!",
+        "Overlord",
+        "Spotlight"
+      ]
+    },
+    {
+      "name": "CLAW-2",
+      "programs": [
+        "Expel",
+        "Oblivion"
+      ]
+    },
+    {
+      "name": "CLAW-3",
+      "programs": [
+        "Basilisk",
+        "Carbonite",
+        "Total Control"
+      ]
+    },
+    {
+      "name": "SWORD-1",
+      "programs": [
+        "Brain Blast"
+      ]
+    },
+    {
+      "name": "SWORD-2",
+      "programs": [
+        "Redrum",
+        "Skullbuster",
+        "Trinity"
+      ]
+    },
+    {
+      "name": "SHIELD-1",
+      "programs": [
+        "Exorcism",
+        "Hack Transport Aircraft",
+        "U-Turn"
+      ]
+    },
+    {
+      "name": "SHIELD-2",
+      "programs": [
+        "Breakwater"
+      ]
+    },
+    {
+      "name": "SHIELD-3",
+      "programs": [
+        "Counterstrike",
+        "Zero Pain"
+      ]
+    },
+    {
+      "name": "GADGET-1",
+      "programs": [
+        "Fairy Dust",
+        "Lockpicker",
+        "Controlled Jump"
+      ]
+    },
+    {
+      "name": "GADGET-2",
+      "programs": [
+        "Assisted Fire",
+        "Enhanced Reaction"
+      ]
+    },
+    {
+      "name": "GADGET-EVO",
+      "programs": [
+        "Kaleidoscope",
+        "Overclock",
+        "Reboot",
+        "TeamPro"
+      ]
+    }
+  ],
+  "Hacking Programs": [
+    {
+      "name": "Blackout",
+      "range": "Hacking Area",
+      "att mod": "0",
+      "opp mod": "0",
+      "damage": "15",
+      "burst": "1",
+      "ammo": "",
+      "target": "Comms Equipment",
+      "effect": "Disabled state",
+      "skill": "Short Skill/ARO",
+      "special": ""
+    },
+    {
+      "name": "Gotcha!",
+      "range": "Hacking Area",
+      "att mod": "0",
+      "opp mod": "0",
+      "damage": "13",
+      "burst": "2",
+      "ammo": "",
+      "target": "TAG, HI, REM, Hacker",
+      "effect": "IMM-1 state",
+      "skill": "Short Skill/ARO",
+      "special": "2 Turns"
+    },
+    {
+      "name": "Overlord",
+      "range": "Hacking Area",
+      "att mod": "0",
+      "opp mod": "0",
+      "damage": "14",
+      "burst": "1",
+      "ammo": "BREAKER",
+      "target": "TAG",
+      "effect": "Possessed state",
+      "skill": "Short Skill/ARO",
+      "special": ""
+    },
+    {
+      "name": "Spotlight",
+      "range": "Hacking Area",
+      "att mod": "-3",
+      "opp mod": "0",
+      "damage": "--",
+      "burst": "1",
+      "ammo": "",
+      "target": "",
+      "effect": "Targeted state",
+      "skill": "Short Skill",
+      "special": "1 Turn"
+    },
+    {
+      "name": "Expel",
+      "range": "Hacking Area",
+      "att mod": "0",
+      "opp mod": "0",
+      "damage": "13",
+      "burst": "1",
+      "ammo": "",
+      "target": "Manned TAG",
+      "effect": "The TAG expels its Pilot",
+      "skill": "Short Skill",
+      "special": ""
+    },
+    {
+      "name": "Oblivion",
+      "range": "Hacking Area",
+      "att mod": "0",
+      "opp mod": "0",
+      "damage": "16",
+      "burst": "1",
+      "ammo": "",
+      "target": "TAG, HI, REM, Hacker",
+      "effect": "Isolated state",
+      "skill": "Short Skill/ARO",
+      "special": ""
+    },
+    {
+      "name": "Basilisk",
+      "range": "Hacking Area",
+      "att mod": "0",
+      "opp mod": "0",
+      "damage": "13",
+      "burst": "3",
+      "ammo": "",
+      "target": "TAG, HI, REM, Hacker",
+      "effect": "IMM-1 state",
+      "skill": "Short Skill/ARO",
+      "special": "2 Turns"
+    },
+    {
+      "name": "Carbonite",
+      "range": "Hacking Area",
+      "att mod": "+3",
+      "opp mod": "0",
+      "damage": "13",
+      "burst": "2",
+      "ammo": "DT",
+      "target": "TAG, HI, REM, Hacker",
+      "effect": "IMM-1 state",
+      "skill": "Short Skill/ARO",
+      "special": "1 Turn"
+    },
+    {
+      "name": "Total Control",
+      "range": "Hacking Area",
+      "att mod": "0",
+      "opp mod": "0",
+      "damage": "16",
+      "burst": "1",
+      "ammo": "DT",
+      "target": "TAG",
+      "effect": "Possessed state",
+      "skill": "Short Skill/ARO",
+      "special": ""
+    },
+    {
+      "name": "Brain Blast",
+      "range": "Hacking Area",
+      "att mod": "0",
+      "opp mod": "0",
+      "damage": "14",
+      "burst": "2",
+      "ammo": "",
+      "target": "Hacker",
+      "effect": "Loss of 1 Wounds/STR",
+      "skill": "Short Skill/ARO",
+      "special": ""
+    },
+    {
+      "name": "Exorcism",
+      "range": "Hacking Area",
+      "att mod": "0",
+      "opp mod": "-3",
+      "damage": "18",
+      "burst": "2",
+      "ammo": "DT",
+      "target": "Possessed TAG",
+      "effect": "Cancels Possessed state",
+      "skill": "Short Skill",
+      "special": ""
+    },
+    {
+      "name": "Hack Transport Aircraft",
+      "range": "Table",
+      "att mod": "-6",
+      "opp mod": "--",
+      "damage": "--",
+      "burst": "1",
+      "ammo": "",
+      "target": "",
+      "effect": "Apply Dispersion rules",
+      "skill": "ARO",
+      "special": "FtF Roll vs. PH of Combat Jumper"
+    },
+    {
+      "name": "U-Turn",
+      "range": "Table",
+      "att mod": "--",
+      "opp mod": "-3",
+      "damage": "--",
+      "burst": "1",
+      "ammo": "",
+      "target": "Guided Spec. Ammo",
+      "effect": "-3 MOD to Attacks with Guided Ammo",
+      "skill": "Automatic/ARO",
+      "special": "Cumulative"
+    },
+    {
+      "name": "Breakwater",
+      "range": "Table",
+      "att mod": "0",
+      "opp mod": "-6",
+      "damage": "--",
+      "burst": "1",
+      "ammo": "",
+      "target": "Hacker",
+      "effect": "Nullifies Hacking Attack",
+      "skill": "Short Skill/ARO",
+      "special": ""
+    },
+    {
+      "name": "Counterstrike",
+      "range": "Table",
+      "att mod": "-3",
+      "opp mod": "-3",
+      "damage": "--",
+      "burst": "1",
+      "ammo": "",
+      "target": "Hacker",
+      "effect": "Reflects Hacking Attack back onto attacker",
+      "skill": "Short Skill/ARO",
+      "special": ""
+    },
+    {
+      "name": "Zero Pain",
+      "range": "Table",
+      "att mod": "0",
+      "opp mod": "0",
+      "damage": "--",
+      "burst": "2*",
+      "ammo": "",
+      "target": "Hacker",
+      "effect": "Nullifies Hacking Attack",
+      "skill": "Short Skill/ARO",
+      "special": "Also B2 in ARO"
+    },
+    {
+      "name": "Fairy Dust",
+      "range": "Table",
+      "att mod": "--",
+      "opp mod": "--",
+      "damage": "--",
+      "burst": "1",
+      "ammo": "",
+      "target": "HI",
+      "effect": "All HIs gain Firewall MODs",
+      "skill": "Entire Order",
+      "special": "2 Turns; Supportware",
+      "hide_mods": 1
+    },
+    {
+      "name": "Lockpicker",
+      "range": "Base Contact",
+      "att mod": "0",
+      "opp mod": "0",
+      "damage": "--",
+      "burst": "1",
+      "ammo": "",
+      "target": "",
+      "effect": "Can open/activate Security terrain",
+      "skill": "Short Skill",
+      "special": ""
+    },
+    {
+      "name": "Controlled Jump",
+      "range": "Table",
+      "att mod": "--",
+      "opp mod": "--",
+      "damage": "--",
+      "burst": "1",
+      "ammo": "",
+      "target": "",
+      "effect": "+3 PH MOD to all Combat Jumps",
+      "skill": "Entire Order",
+      "special": "1 Turn; Not cumulative; Supportware",
+      "hide_mods": 1
+    },
+    {
+      "name": "Assisted Fire",
+      "range": "Hacking Area/Table",
+      "att mod": "--",
+      "opp mod": "--",
+      "damage": "--",
+      "burst": "1",
+      "ammo": "",
+      "target": "REM",
+      "effect": "Target gains Marksmanship L2",
+      "skill": "Entire Order",
+      "special": "2 Turns; Supportware",
+      "hide_mods": 1
+    },
+    {
+      "name": "Enhanced Reaction",
+      "range": "Hacking Area/Table",
+      "att mod": "--",
+      "opp mod": "--",
+      "damage": "--",
+      "burst": "1",
+      "ammo": "",
+      "target": "REM",
+      "effect": "Target gains B2 in ARO",
+      "skill": "Entire Order",
+      "special": "2 Turns; Supportware",
+      "hide_mods": 1
+    },
+    {
+      "name": "Cybermask",
+      "range": "User",
+      "att mod": "0",
+      "opp mod": "0",
+      "damage": "--",
+      "burst": "1",
+      "ammo": "",
+      "target": "",
+      "effect": "Replace user with IMP-2 Marker",
+      "skill": "Entire Order",
+      "special": "NFB"
+    },
+    {
+      "name": "Stop!",
+      "range": "Hacking Area",
+      "att mod": "0",
+      "opp mod": "0",
+      "damage": "16",
+      "burst": "2",
+      "ammo": "BREAKER",
+      "target": "TAG, HI, REM, Hacker",
+      "effect": "IMM-1 state",
+      "skill": "Short Skill/ARO",
+      "special": "2 Turns"
+    },
+    {
+      "name": "Sucker Punch",
+      "range": "Hacking Area",
+      "att mod": "0",
+      "opp mod": "-3",
+      "damage": "17",
+      "burst": "1",
+      "ammo": "DT",
+      "target": "Hacker",
+      "effect": "Loss of 1 Wound/STR",
+      "skill": "Short Skill/ARO",
+      "special": ""
+    },
+    {
+      "name": "White Noise",
+      "range": "Hacking Area",
+      "att mod": "0",
+      "opp mod": "0",
+      "damage": "--",
+      "burst": "1",
+      "ammo": "",
+      "target": "",
+      "effect": "White Noise Circular Template",
+      "skill": "Short Skill",
+      "special": "1 Turn; NFB"
+    },
+    {
+      "name": "Goodnight",
+      "range": "Hacking Area",
+      "att mod": "+3",
+      "opp mod": "--",
+      "damage": "16",
+      "burst": "2",
+      "ammo": "Breaker",
+      "target": "Unconscious G: Remote Presence",
+      "effect": "State: Dead",
+      "skill": "Short Skill",
+      "special": ""
+    },
+    {
+      "name": "Redrum",
+      "range": "Hacking Area",
+      "att mod": "0",
+      "opp mod": "-3",
+      "damage": "16",
+      "burst": "2",
+      "ammo": "DT",
+      "target": "Hacker",
+      "effect": "Loss of 1 Wound/STR",
+      "skill": "Short Skill/ARO",
+      "special": ""
+    },
+    {
+      "name": "Skullbuster",
+      "range": "Hacking Area",
+      "att mod": "+3",
+      "opp mod": "0",
+      "damage": "16",
+      "burst": "2",
+      "ammo": "Breaker",
+      "target": "Hacker",
+      "effect": "Loss of 1 Wound/STR",
+      "skill": "Short Skill/ARO",
+      "special": ""
+    },
+    {
+      "name": "Trinity",
+      "range": "Hacking Area",
+      "att mod": "0",
+      "opp mod": "0",
+      "damage": "16",
+      "burst": "3",
+      "ammo": "Shock",
+      "target": "Hacker",
+      "effect": "Loss of 1 Wound/STR",
+      "skill": "Short Skill/ARO",
+      "special": ""
+    },
+    {
+      "name": "Kaleidoscope",
+      "range": "Table",
+      "att mod": "--",
+      "opp mod": "--",
+      "damage": "--",
+      "burst": "1",
+      "ammo": "",
+      "target": "Hacker",
+      "effect": "Target imposes a WIP-3 MOD",
+      "skill": "Entire Order",
+      "special": "2 Turns; Supportware",
+      "hide_mods": 1
+    },
+    {
+      "name": "Overclock",
+      "range": "Table",
+      "att mod": "--",
+      "opp mod": "--",
+      "damage": "--",
+      "burst": "1",
+      "ammo": "",
+      "target": "REMs with Repeater",
+      "effect": "All targets gain B2 in ARO",
+      "skill": "Entire Order",
+      "special": "2 Turns; Supportware",
+      "hide_mods": 1
+    },
+    {
+      "name": "Reboot",
+      "range": "Table",
+      "att mod": "--",
+      "opp mod": "--",
+      "damage": "--",
+      "burst": "1",
+      "ammo": "",
+      "target": "TAG, HI, REM, Hacker",
+      "effect": "In FtF roll targets impose a WIP-3 MOD when declaring Reset",
+      "skill": "Entire Order",
+      "special": "2 Turns; Supportware",
+      "hide_mods": 1
+    },
+    {
+      "name": "TeamPro",
+      "range": "Table",
+      "att mod": "--",
+      "opp mod": "--",
+      "damage": "--",
+      "burst": "1",
+      "ammo": "",
+      "target": "Fireteams",
+      "effect": "Allows naming a new Team Leader and the use of Fireteam: Duo in Generic Armies",
+      "skill": "Entire Order",
+      "special": "Supportware",
+      "hide_mods": 1
+    },
+    {
+      "name": "Exile",
+      "range": "Hacking Area",
+      "att mod": "0",
+      "opp mod": "0",
+      "damage": "16",
+      "burst": "1",
+      "ammo": "BTS",
+      "target": "Fireteam Member",
+      "effect": "State: Isolated; Fireteam cancellation",
+      "skill": "Short Skill/ARO",
+      "special": ""
+    },
+    {
+      "name": "Icebreaker",
+      "range": "Hacking Area",
+      "att mod": "0",
+      "opp mod": "0",
+      "damage": "12",
+      "burst": "2",
+      "ammo": "*",
+      "target": "TAG, HI, REM, Hacker",
+      "effect": "State: IMM-1",
+      "skill": "Short Skill/ARO",
+      "special": "Reduces enemy BTS to 0"
+    },
+    {
+      "name": "Lightning",
+      "range": "Hacking Area",
+      "att mod": "0",
+      "opp mod": "-6",
+      "damage": "15",
+      "burst": "2",
+      "ammo": "Breaker",
+      "target": "Hacker",
+      "effect": "Loss of 1 Wound/STR",
+      "skill": "Short Skill/ARO",
+      "special": ""
+    },
+    {
+      "name": "Maestro",
+      "range": "Hacking Area",
+      "att mod": "+3",
+      "opp mod": "-3",
+      "damage": "14",
+      "burst": "2",
+      "ammo": "Breaker",
+      "target": "Hacker",
+      "effect": "State: Unconscious",
+      "skill": "Short Skill/ARO",
+      "special": ""
+    }
+  ]
+}

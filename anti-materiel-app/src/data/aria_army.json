@@ -1,0 +1,430 @@
+[
+  {
+    "id": 3999,
+    "army": "Ariadna",
+    "name": "Ariadna",
+    "units": [
+      {
+        "comment": "Line Kazak",
+        "id": 3001
+      },
+      {
+        "comment": "Para-Commandos",
+        "id": 3002
+      },
+      {
+        "comment": "Kazak Spetsnazs",
+        "id": 3003
+      },
+      {
+        "comment": "USAriadna Grunts",
+        "id": 3004
+      },
+      {
+        "comment": "TankHunters",
+        "id": 3005
+      },
+      {
+        "comment": "Minutemen",
+        "id": 3006,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 10,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Moblots",
+        "id": 3007
+      },
+      {
+        "comment": "Veteran Kazaks",
+        "id": 3008,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 11,
+            "hide": true
+          },
+          {
+            "comment": "Duo is only available in Sectorials",
+            "id": 9,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Duo",
+            "note": "Requires TeamPro"
+          }
+        ]
+      },
+      {
+        "comment": "Foxtrot",
+        "id": 3009
+      },
+      {
+        "comment": "Hardcases",
+        "id": 3010
+      },
+      {
+        "comment": "S.A.S.",
+        "id": 3011
+      },
+      {
+        "comment": "Scouts",
+        "id": 3012
+      },
+      {
+        "comment": "45th Highlanders",
+        "id": 3013
+      },
+      {
+        "comment": "Irmandinhos",
+        "id": 3014
+      },
+      {
+        "comment": "Assault Pack Controller",
+        "id": 3015
+      },
+      {
+        "comment": "Kazak Doktor",
+        "id": 3016
+      },
+      {
+        "comment": "112, Emergency Service",
+        "id": 3017
+      },
+      {
+        "comment": "112, Emergency Service (Motorized)",
+        "id": 3057
+      },
+      {
+        "comment": "2nd Irregular Cameronians Reg.",
+        "id": 3018
+      },
+      {
+        "comment": "3rd Highlander Greys",
+        "id": 3019
+      },
+      {
+        "comment": "9th Wulver Grenadiers",
+        "id": 3020,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Caledonian Mormaers",
+        "id": 3021,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 5,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Caledonian Volunteers",
+        "id": 3022
+      },
+      {
+        "comment": "Chasseurs",
+        "id": 3023
+      },
+      {
+        "comment": "Dozers, Field Engineers",
+        "id": 3024
+      },
+      {
+        "comment": "Highlander Caterans",
+        "id": 3025
+      },
+      {
+        "comment": "Loup-Garous",
+        "id": 3026,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 5,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Métros",
+        "id": 3027
+      },
+      {
+        "comment": "Traktor Mul, Artillery and Support Regiment",
+        "id": 3028
+      },
+      {
+        "comment": "William Wallace",
+        "id": 3029,
+        "childs": [
+          {
+            "id": 1,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Zouaves",
+        "id": 3030
+      },
+      {
+        "comment": "Van Zant",
+        "id": 3031
+      },
+      {
+        "comment": "Volunteer Intel Isobel McGregor",
+        "id": 3032
+      },
+      {
+        "comment": "Uxia McNeill",
+        "id": 3033
+      },
+      {
+        "comment": "Brigadier Jacques Bruant",
+        "id": 3034
+      },
+      {
+        "comment": "Scot (2nd Battalion)",
+        "id": 3035
+      },
+      {
+        "comment": "Scot (1st Battalion)",
+        "id": 3036,
+        "skills": [
+          {
+            "name": "Fireteam: Duo",
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Briscard",
+        "id": 3037,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 7,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Margot Berthier, Mirage-5",
+        "id": 3038
+      },
+      {
+        "comment": "Dog-Warriors",
+        "id": 3039
+      },
+      {
+        "comment": "Intel Spec-Ops (Line Kazak)",
+        "id": 3058
+      },
+      {
+        "comment": "Intel Spec-Ops (Volunteer)",
+        "id": 3059
+      },
+      {
+        "comment": "Intel Spec-Ops (Métro)",
+        "id": 3060
+      },
+      {
+        "comment": "Intel Spec-Ops (Grunt)",
+        "id": 3061
+      },
+      {
+        "comment": "Marauders, 5307th Ranger Unit",
+        "id": 3041,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 7,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Mavericks, 9th Motorized Recon Bat.",
+        "id": 3042
+      },
+      {
+        "comment": "Devil Dog Teams, 2nd Assault Bat.",
+        "id": 3043
+      },
+      {
+        "comment": "6th Airborne Rangers",
+        "id": 3044
+      },
+      {
+        "comment": "Desperadoes",
+        "id": 3045
+      },
+      {
+        "comment": "Col. Yevgueni Voronin",
+        "id": 3046,
+        "childs": [
+          {
+            "comment": "Sensor only available in TAK",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Sensor only available in TAK",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Blackjacks",
+        "id": 3047
+      },
+      {
+        "comment": "Unknown Ranger",
+        "id": 3048
+      },
+      {
+        "comment": "Rosie",
+        "id": 3049
+      },
+      {
+        "comment": "Streloks",
+        "id": 3050,
+        "childs": [
+          {
+            "comment": "Minelayer is only available in TAK",
+            "id": 6,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Ratnik",
+        "id": 3051,
+        "skills": [
+          {
+            "name": "Fireteam: Duo",
+            "hide": true
+          },
+          {
+            "name": "Fireteam: Duo",
+            "profile": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Dynamo",
+        "id": 3052,
+        "skills": [
+          {
+            "name": "Fireteam: Duo",
+            "hide": true
+          },
+          {
+            "name": "Fireteam: Duo",
+            "profile": 2,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Frontoviks",
+        "id": 3053,
+        "childs": [
+          {
+            "comment": "Haris is only available in Sectorials",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Vassily Plushenko, TankHunters Officer",
+        "id": 3054
+      },
+      {
+        "comment": "Pavel Aleksei McMannus, Spetsgruppa G",
+        "id": 3056
+      },
+      {
+        "comment": "Wardrivers",
+        "id": 9021,
+        "ava": "1"
+      },
+      {
+        "comment": "Authorized Bounty Hunters",
+        "id": 9018,
+        "ava": "1"
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "1"
+      },
+      {
+        "comment": "Miranda Ashcroft",
+        "id": 9019,
+        "ava": "1"
+      },
+      {
+        "comment": "Armand 'Le Muet'",
+        "id": 9022,
+        "ava": "1"
+      },
+      {
+        "comment": "Krakot Renegades, Morat Fugitives",
+        "id": 9023
+      },
+      {
+        "comment": "Knauf",
+        "id": 9028
+      },
+      {
+        "comment": "Cube Jäger, Mercenary Recoverers",
+        "id": 9030
+      },
+      {
+        "comment": "Aïda Swanson, Submondo Smuggler",
+        "id": 9065
+      },
+      {
+        "comment": "Libertos Freedom Fighters",
+        "id": 9067,
+        "childs": [
+          {
+            "comment": "Mimetism only in Dahshat",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Mimetism only in Dahshat",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Monstruckers",
+        "id": 9068
+      },
+      {
+        "comment": "Wild Bill, Legendary Gunslinger",
+        "id": 9074
+      }
+    ]
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Martial Arts L1",
+    "attack": "0",
+    "opponent": "-3",
+    "damage": "+1",
+    "burst": "0",
+    "type": "--",
+    "special": ""
+  },
+  {
+    "name": "Martial Arts L2",
+    "attack": "0",
+    "opponent": "0",
+    "damage": "+3",
+    "burst": "0",
+    "type": "--",
+    "special": ""
+  },
+  {
+    "name": "Martial Arts L3",
+    "attack": "+3",
+    "opponent": "-3",
+    "damage": "0",
+    "burst": "0",
+    "type": "--",
+    "special": ""
+  },
+  {
+    "name": "Martial Arts L4",
+    "attack": "0",
+    "opponent": "0",
+    "damage": "0",
+    "burst": "+1",
+    "type": "--",
+    "special": ""
+  },
+  {
+    "name": "Martial Arts L5",
+    "attack": "0",
+    "opponent": "-6",
+    "damage": "0",
+    "burst": "0",
+    "type": "--",
+    "special": "Hits all enemies / B matches attacker"
+  },
+  {
+    "name": "Berserk",
+    "attack": "+6",
+    "opponent": "0",
+    "damage": "0",
+    "burst": "0",
+    "type": "--",
+    "special": "All attacks are Normal Rolls"
+  },
+  {
+    "name": "Assault",
+    "attack": "-3",
+    "opponent": "0",
+    "damage": "0",
+    "burst": "0",
+    "type": "--",
+    "special": "Move both MOV values and CC Attack"
+  },
+  {
+    "name": "Protheion L1",
+    "attack": "+3",
+    "opponent": "0",
+    "damage": "+1",
+    "burst": "0",
+    "type": "--",
+    "special": "DAM = PH vs. BTS / Power Up"
+  },
+  {
+    "name": "Protheion L2",
+    "attack": "0",
+    "opponent": "-3",
+    "damage": "+1",
+    "burst": "0",
+    "type": "--",
+    "special": "DAM = PH vs. BTS / Power Up"
+  },
+  {
+    "name": "Protheion L3",
+    "attack": "0",
+    "opponent": "0",
+    "damage": "+3",
+    "burst": "0",
+    "type": "--",
+    "special": "DAM = PH vs. BTS / Power Up"
+  },
+  {
+    "name": "Protheion L4",
+    "attack": "0",
+    "opponent": "0",
+    "damage": "0",
+    "burst": "+1",
+    "type": "--",
+    "special": "DAM = PH vs. BTS / Power Up"
+  },
+  {
+    "name": "Protheion L5",
+    "attack": "+3",
+    "opponent": "-3",
+    "damage": "0",
+    "burst": "0",
+    "type": "--",
+    "special": "DAM = PH vs. BTS / Power Up"
+  },
+  {
+    "name": "Guard L1",
+    "attack": "0",
+    "opponent": "-3",
+    "damage": "+2",
+    "burst": "0",
+    "type": "--",
+    "special": ""
+  },
+  {
+    "name": "Guard L2",
+    "attack": "+3",
+    "opponent": "-3",
+    "damage": "+2",
+    "burst": "0",
+    "type": "--",
+    "special": ""
+  },
+  {
+    "name": "Guard L3",
+    "attack": "0",
+    "opponent": "-3",
+    "damage": "+2",
+    "burst": "+1",
+    "type": "--",
+    "special": ""
+  },
+  {
+    "name": "Guard L4",
+    "attack": "+3",
+    "opponent": "0",
+    "damage": "+3",
+    "burst": "+1",
+    "type": "--",
+    "special": ""
+  },
+  {
+    "name": "Natural Born Warrior Mode A",
+    "attack": "0",
+    "opponent": "0",
+    "damage": "0",
+    "burst": "0",
+    "type": "--",
+    "special": "Cancels enemy CC skills"
+  },
+  {
+    "name": "Natural Born Warrior Mode B",
+    "attack": "+3",
+    "opponent": "0",
+    "damage": "+1",
+    "burst": "0",
+    "type": "--",
+    "special": ""
+  }
+]

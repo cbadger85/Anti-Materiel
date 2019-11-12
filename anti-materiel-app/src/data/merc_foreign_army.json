@@ -1,0 +1,349 @@
+[
+  {
+    "id": 9994,
+    "army": "Non-Aligned Armies",
+    "army_id": 9999,
+    "name": "Foreign Company",
+    "units": [
+      {
+        "comment": "Securitate",
+        "id": 5003,
+        "ava": "T",
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          }
+        ]
+      },
+      {
+        "comment": "Brawlers, Mercenary Enforcers",
+        "id": 9036,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "Haris",
+            "id": 4,
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "KTS, Kaplan Tactical Services",
+        "id": 4039,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Kaplans + Laxmee"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Kaplans + Avicenna"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Kaplans + Wild Bill"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Kaplan + Avicenna + Wild Bill"
+          }
+        ]
+      },
+      {
+        "comment": "Mercenary - CSU, Corporate Security Unit",
+        "id": 9020,
+        "ava": "3",
+        "notes": [
+          {
+            "title": "Fireteam: Duo"
+          },
+          {
+            "title": "Special Fireteam",
+            "note": "The CSUs count as Securitate for Fireteam composition"
+          }
+        ]
+      },
+      {
+        "comment": "Neoterra Bolts",
+        "id": 1050,
+        "ava": "4",
+        "notes": [
+          {
+            "title": "Fireteam: Haris"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Bolts + Hannibal"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Bolt + Hannibal + Señor Massacre"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 2 Bolts + Hannibal + Valkyrie + Señor Massacre"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Hannibal + Valkyrie + Laxmee + Señor Massacre + 1 Bolt or 1 Orc Troop"
+          }
+        ]
+      },
+      {
+        "comment": "Akalis",
+        "id": 1004,
+        "ava": "1"
+      },
+      {
+        "comment": "Cube Jäger, Mercenary Recoverers",
+        "id": 9030,
+        "ava": "1"
+      },
+      {
+        "comment": "Orc Troop",
+        "id": 1006,
+        "ava": "4",
+        "childs": [
+          {
+            "comment": "Duo",
+            "id": 10,
+            "hide": true
+          },
+          {
+            "comment": "Haris",
+            "id": 9,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Fireteam: Core"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 3 Orc Troops + Avicenna + Valkyrie"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Hannibal + Valkyrie + Laxmee + Señor Massacre + 1 Bolt or 1 Orc Troop"
+          }
+        ]
+      },
+      {
+        "comment": "Kriza Boracs",
+        "id": 5047,
+        "ava": "1",
+        "skills": [
+          {
+            "name": "Fireteam: Duo",
+            "hide": true
+          }
+        ]
+      },
+      {
+        "comment": "Iguana Squadron",
+        "id": 5026,
+        "ava": "1"
+      },
+      {
+        "comment": "Zeros",
+        "id": 5011,
+        "ava": "2"
+      },
+      {
+        "comment": "Croc Men",
+        "id": 1015,
+        "ava": "1"
+      },
+      {
+        "comment": "Bakunin Überfallkommando: Chimera",
+        "id": 5037,
+        "ava": "1"
+      },
+      {
+        "comment": "Bakunin Überfallkommando: Pupniks",
+        "id": 5038,
+        "ava": "3"
+      },
+      {
+        "comment": "Señor Massacre",
+        "id": 9011,
+        "ava": "1",
+        "childs": [
+          {
+            "comment": "Haris",
+            "id": 3,
+            "hide": true
+          },
+          {
+            "comment": "Haris",
+            "id": 4,
+            "hide": true
+          }
+        ],
+        "notes": [
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Bolt + Hannibal + Señor Massacre"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 2 Bolts + Hannibal + Valkyrie + Señor Massacre"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Hannibal + Valkyrie + Laxmee + Señor Massacre + 1 Bolt or 1 Orc Troop"
+          }
+        ]
+      },
+      {
+        "comment": "Hannibal, Mercenary Team Leader",
+        "id": 9071,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Bolts + Hannibal"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Bolt + Hannibal + Señor Massacre"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 2 Bolts + Hannibal + Valkyrie + Señor Massacre"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Hannibal + Valkyrie + Laxmee + Señor Massacre + 1 Bolt or 1 Orc Troop"
+          }
+        ]
+      },
+      {
+        "comment": "Valkyrie, Elite Bodyguard",
+        "id": 9069,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 3 Orc Troops + Avicenna + Valkyrie"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 2 Bolts + Hannibal + Valkyrie + Señor Massacre"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Hannibal + Valkyrie + Laxmee + Señor Massacre + 1 Bolt or 1 Orc Troop"
+          }
+        ]
+      },
+      {
+        "comment": "Laxmee, Hacker of Fortune",
+        "id": 9070,
+        "ava": "1",
+        "notes": [
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Kaplans + Laxmee"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Hannibal + Valkyrie + Laxmee + Señor Massacre + 1 Bolt or 1 Orc Troop"
+          }
+        ]
+      },
+      {
+        "comment": "Avicenna, Mercenary Doctor",
+        "id": 9009,
+        "notes": [
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Kaplans + Avicenna"
+          },
+          {
+            "title": "Special Fireteam: Core",
+            "note": "Up to 3 Orc Troops + Avicenna + Valkyrie"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Kaplan + Avicenna + Wild Bill"
+          }
+        ]
+      },
+      {
+        "comment": "Pathfinder Dronbot",
+        "id": 1018,
+        "ava": "1"
+      },
+      {
+        "comment": "Sierra Dronbot",
+        "id": 1019,
+        "ava": "1"
+      },
+      {
+        "comment": "Clipper Dronbot",
+        "id": 9035,
+        "ava": "1"
+      },
+      {
+        "comment": "Fugazi Dronbot",
+        "id": 1021,
+        "ava": "1"
+      },
+      {
+        "comment": "Armbots: Peacemakers",
+        "id": 1041,
+        "ava": "1"
+      },
+      {
+        "comment": "Zondbots",
+        "id": 5036,
+        "ava": "2"
+      },
+      {
+        "comment": "Mulebots",
+        "id": 1027,
+        "ava": "1"
+      },
+      {
+        "comment": "Clockmakers",
+        "id": 5017,
+        "ava": "1"
+      },
+      {
+        "comment": "Daktaris",
+        "id": 5016,
+        "ava": "1"
+      },
+      {
+        "comment": "Warcor",
+        "id": 9017,
+        "ava": "2"
+      },
+      {
+        "comment": "Brawler Spec-Ops",
+        "id": 9039,
+        "ava": "1"
+      },
+      {
+        "comment": "Wild Bill, Legendary Gunslinger",
+        "id": 9074,
+        "notes": [
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "2 Kaplans + Wild Bill"
+          },
+          {
+            "title": "Special Fireteam: Haris",
+            "note": "1 Kaplan + Avicenna + Wild Bill"
+          }
+        ]
+      }
+    ]
+  }
+]
