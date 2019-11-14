@@ -27,14 +27,15 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
   removeUnitAva,
   ava,
 }) => {
-  const { state, onChangeInput, onLoadFormState } = useForm({
+  const { onChangeInput, fields } = useForm({
     ava: '',
     sectorial: '',
   });
 
   const handleAddUnitAva = () => {
-    addUnitAva(state);
-    onLoadFormState({ ava: '', sectorial: '' });
+    addUnitAva(fields);
+    onChangeInput('ava', '');
+    onChangeInput('sectorial', '');
   };
 
   return (
@@ -45,7 +46,7 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
             name="ava"
             label="AVA"
             onChange={onChangeInput}
-            value={state.ava}
+            value={fields.ava}
             width="3rem"
           />
           <Select
@@ -53,7 +54,7 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
             label="Sectorial"
             options={sectorialSelectOptions}
             onChange={onChangeInput}
-            selectedValue={state.sectorial}
+            selectedValue={fields.sectorial}
           />
         </div>
         <Button color="secondary" onClick={handleAddUnitAva}>

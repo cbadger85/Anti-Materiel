@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { FormValue } from '../../hooks/useForm.types';
 import './Input.scss';
 
 export const Input: React.FC<InputProps> = ({
@@ -8,10 +9,16 @@ export const Input: React.FC<InputProps> = ({
   className,
   onChange,
   width,
+  error,
+  value,
   ...props
 }) => {
+  useEffect(() => {
+    onChange(name, value, error);
+  });
+
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    onChange(e.target.name, e.target.value);
+    onChange(e.target.name, e.target.value, error);
   };
 
   return (
@@ -23,6 +30,7 @@ export const Input: React.FC<InputProps> = ({
           name={name}
           className="input__input-field"
           onChange={handleOnChange}
+          value={value}
           {...props}
         />
       </label>
@@ -40,5 +48,8 @@ interface InputProps
   > {
   name: string;
   label: string;
-  onChange: (key: string, value: string) => void;
+  onChange: (key: string, value: FormValue, isInvalid?: boolean) => void;
+  error?: boolean;
+  // fieldState: { value: FormValue; isInvalid?: boolean };
+  value: string;
 }

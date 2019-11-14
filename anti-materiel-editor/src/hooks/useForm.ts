@@ -1,21 +1,50 @@
+import mapValues from 'lodash/mapValues';
+import transform from 'lodash/transform';
 import { useReducer } from 'react';
 import {
-  FormState,
   FormAction,
   FormActionTypes,
-  UpdateAction,
-  LoadDataAction,
-  UseFormReturn,
+  FormFields,
   FormReducer,
+  FormState,
+  FormStateDictionary,
+  FormValue,
+  LoadDataAction,
+  UpdateAction,
+  UseFormReturn,
+  ValidateFieldAction,
 } from './useForm.types';
 
-export const formReducer = <T>(
-  state: FormState<T>,
-  action: FormAction<T>,
-): FormState<T> => {
+export const formReducer = <T, K extends keyof T>(
+  state: FormState<T, K>,
+  action: FormAction<T, K>,
+): FormState<T, K> => {
   switch (action.type) {
-    case FormActionTypes.UPDATE:
-      return { ...state, [action.payload.key]: action.payload.value };
+    case FormActionTypes.UPDATE: {
+      if (
+        state[action.payload.key].isInvalid !== action.payload.isInvalid ||
+        state[action.payload.key].value !== action.payload.value
+      ) {
+        return {
+          ...state,
+          [action.payload.key]: {
+            isInvalid: action.payload.isInvalid,
+            value: action.payload.value,
+          },
+        };
+      }
+
+      return state;
+    }
+
+    case FormActionTypes.VALIDATE_FIELD:
+      return {
+        ...state,
+        [action.payload.key]: {
+          ...state[action.payload.key],
+          isInvalid: action.payload.isInvalid,
+        },
+      };
     case FormActionTypes.LOAD_DATA:
       return { ...state, ...action.payload.data };
     default:
@@ -25,30 +54,78 @@ export const formReducer = <T>(
 
 export const updateFieldsInForm = (
   key: string,
-  value: string | string[] | boolean,
+  value: FormValue,
+  isInvalid?: boolean,
 ): UpdateAction => ({
   type: FormActionTypes.UPDATE,
-  payload: { key, value },
+  payload: { key, value, isInvalid },
 });
 
-export const loadFieldsInForm = <T>(data: FormState<T>): LoadDataAction<T> => ({
+export const validateFieldsInForm = (
+  key: string,
+  isInvalid?: boolean,
+): ValidateFieldAction => ({
+  type: FormActionTypes.VALIDATE_FIELD,
+  payload: { key, isInvalid },
+});
+
+export const loadFieldsInForm = <T, K extends keyof T>(
+  data: FormState<T, K>,
+): LoadDataAction<T, K> => ({
   type: FormActionTypes.LOAD_DATA,
   payload: { data },
 });
 
-export const useForm = <T>(intialState: FormState<T>): UseFormReturn<T> => {
-  const [state, dispatch] = useReducer<FormReducer<T>>(
+export const getStateFromFields = <T>(
+  fields: FormFields<T>,
+): FormStateDictionary =>
+  transform<FormValue, FormStateDictionary>(fields, (fields, value, key) => {
+    fields[key] = { value, isInvalid: true };
+  });
+
+export const getIsValid = <T, K extends keyof T>(
+  state: FormState<T, K>,
+): boolean => {
+  const validationList = Object.values(
+    mapValues(state as FormStateDictionary, field => field.isInvalid),
+  );
+
+  return !validationList.some(isInvalid => isInvalid);
+};
+
+export const useForm = <T, K extends keyof T>(
+  intialFields: FormFields<T>,
+): UseFormReturn<T, K> => {
+  const initialState = getStateFromFields(intialFields);
+
+  const [state, dispatch] = useReducer<FormReducer<T, K>>(
     formReducer,
-    intialState,
+    initialState as FormState<T, K>,
   );
 
   const onChangeInput = (
     key: string,
-    value: string | string[] | boolean,
-  ): void => dispatch(updateFieldsInForm(key, value));
+    value: FormValue,
+    isInvalid?: boolean,
+  ): void => dispatch(updateFieldsInForm(key, value, isInvalid));
 
-  const onLoadFormState = (state: FormState<T>): void =>
-    dispatch(loadFieldsInForm(state));
+  const validateField = (key: string, isInvalid?: boolean): void =>
+    dispatch(validateFieldsInForm(key, isInvalid));
 
-  return { state, onChangeInput, onLoadFormState };
+  const loadFormState = (fields: FormFields<T>): void => {
+    const state = getStateFromFields(fields);
+    dispatch(loadFieldsInForm(state as FormState<T, K>));
+  };
+
+  const fields = mapValues(state as FormStateDictionary, field => field.value);
+
+  const isValid = getIsValid(state);
+
+  return {
+    onChangeInput,
+    validateField,
+    loadFormState,
+    fields: fields as FormFields<T>,
+    isValid,
+  };
 };

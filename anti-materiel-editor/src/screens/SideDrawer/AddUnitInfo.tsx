@@ -11,29 +11,26 @@ import {
 import { SideDrawerButtonGroup } from './SideDrawerButtonGroup';
 import './SideDrawerContents.scss';
 import { Select } from '../../components/Select/Select';
-import { AddUnitInfoForm } from '../../types/addUnitTypes';
 import uuid from 'uuid/v4';
 import kebabCase from 'lodash/kebabCase';
 
 export const AddUnitInfo = (): React.ReactNode => {
-  const { state, onChangeInput } = useForm<AddUnitInfoForm>({
-    id: uuid(),
+  const { onChangeInput, fields, isValid } = useForm({
     name: '',
     isc: '',
     description: '',
-    unitSvgName: '',
     type: '',
     classification: '',
     sectorial: [],
   });
 
   const handleOnSubmit = () => {
-    const updatedState = {
-      ...state,
-      unitSvgName: kebabCase(state.name),
+    const updatedFields = {
+      ...fields,
+      unitSvgName: kebabCase(fields.name),
+      id: uuid(),
     };
-
-    console.log(updatedState);
+    console.log(updatedFields);
   };
 
   return (
@@ -44,21 +41,22 @@ export const AddUnitInfo = (): React.ReactNode => {
           id="unit-info-name"
           name="name"
           label="Name"
-          value={state.name}
+          value={fields.name}
           onChange={onChangeInput}
+          error={!fields.name.trim()}
         />
         <Input
           id="unit-info-isc"
           name="isc"
           label="ISC"
-          value={state.isc}
+          value={fields.isc}
           onChange={onChangeInput}
         />
         <Input
           id="unit-info-description"
           name="description"
           label="Description"
-          value={state.description}
+          value={fields.description}
           onChange={onChangeInput}
         />
         <Select
@@ -67,7 +65,7 @@ export const AddUnitInfo = (): React.ReactNode => {
           label="Type"
           options={unitTypeSelectOptions}
           onChange={onChangeInput}
-          selectedValue={state.type}
+          selectedValue={fields.type}
         />
         <Select
           id="unit-info-classification"
@@ -75,15 +73,17 @@ export const AddUnitInfo = (): React.ReactNode => {
           label="Classification"
           options={unitClassificationSelectOptions}
           onChange={onChangeInput}
-          selectedValue={state.classification}
+          selectedValue={fields.classification}
+          error={!fields.classification.trim()}
         />
         <MultiSelect
           id="unit-info-sectorial"
           name="sectorial"
           label="Sectorial"
           options={sectorialSelectOptions}
-          list={state.sectorial}
+          list={fields.sectorial}
           onChange={onChangeInput}
+          error={!fields.sectorial.length}
         />
       </div>
 

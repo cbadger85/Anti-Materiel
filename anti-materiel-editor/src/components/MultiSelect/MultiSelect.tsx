@@ -1,6 +1,6 @@
-import React from 'react';
-import { Select } from '../Select/Select';
+import React, { useEffect } from 'react';
 import { Button } from '../Button/Button';
+import { Select } from '../Select/Select';
 import './MultiSelect.scss';
 
 const ListItem: React.FC<ListItemProps> = ({ item, removeListItem }) => {
@@ -23,13 +23,18 @@ export const MultiSelect: React.FC<MultiSelectInputProps> = ({
   name,
   label,
   options,
-  list,
   onChange,
+  error,
+  list,
   id,
 }) => {
+  useEffect(() => {
+    onChange(name, list, error);
+  });
+
   const handleOnChange = (name: string, value: string): void => {
     if (list.includes(value)) {
-      onChange(name, list);
+      onChange(name, list, error);
       return;
     }
 
@@ -51,6 +56,7 @@ export const MultiSelect: React.FC<MultiSelectInputProps> = ({
         options={options}
         value={{ label: 'Select...', value: '' }}
         onChange={handleOnChange}
+        error={error}
       />
       {list.length > 0 && (
         <div className="list-items__container">
@@ -71,7 +77,13 @@ interface MultiSelectInputProps {
   name: string;
   label: string;
   options: { label: string; value: string }[];
-  list: string[];
-  onChange: (name: string, selectedValue: string[]) => void;
+  onChange: (
+    name: string,
+    selectedValue: string[],
+    isInvalid?: boolean,
+  ) => void;
   id?: string;
+  // fieldState: { value: FormValue; isInvalid?: boolean };
+  list: string[];
+  error?: boolean;
 }

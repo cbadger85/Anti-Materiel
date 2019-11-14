@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactSelect from 'react-select';
 import { Props } from 'react-select/src/Select';
-import './Select.scss';
 import { Styles } from 'react-select/src/styles';
 import { OptionTypeBase } from 'react-select/src/types';
+import './Select.scss';
 
 export const Select: React.FC<SelectInputProps> = ({
   className,
@@ -11,8 +11,9 @@ export const Select: React.FC<SelectInputProps> = ({
   id,
   label,
   onChange,
-  selectedValue,
   options,
+  error,
+  selectedValue,
   ...props
 }) => {
   const customStyles: Styles = {
@@ -58,16 +59,18 @@ export const Select: React.FC<SelectInputProps> = ({
     }),
   };
 
+  useEffect(() => {
+    selectedValue && onChange(name, selectedValue, error);
+  });
+
   const handleOnChange = (selected: OptionTypeBase) => {
-    onChange(name, (selected as OptionTypeBase).value);
+    onChange(name, (selected as OptionTypeBase).value, error);
   };
 
   const getValue = () => {
     const value = options.find(
-      (option: Option) => option.value === selectedValue,
+      (option: Option) => selectedValue && option.value === selectedValue,
     );
-
-    console.log(value);
 
     return value;
   };
@@ -80,7 +83,11 @@ export const Select: React.FC<SelectInputProps> = ({
           id={id}
           name={name}
           options={options}
-          value={selectedValue ? getValue() : { label: 'Select...', value: '' }}
+          value={
+            selectedValue && selectedValue
+              ? getValue()
+              : { label: 'Select...', value: '' }
+          }
           {...props}
           styles={customStyles}
           onChange={handleOnChange}
@@ -94,7 +101,8 @@ interface SelectInputProps extends Omit<Props, 'onChange'> {
   className?: string;
   name: string;
   label: string;
-  onChange: (name: string, selectedValue: string) => void;
+  onChange: (name: string, selectedValue: string, isInvalid?: boolean) => void;
+  error?: boolean;
   selectedValue?: string;
 }
 

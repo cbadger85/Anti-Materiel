@@ -4,7 +4,6 @@ import { Input } from '../../components/Input/Input';
 import { SectionHeading } from '../../components/SectionHeading/SectionHeading';
 import { Select } from '../../components/Select/Select';
 import { useForm } from '../../hooks/useForm';
-import { AddStatsAndAttributesForm } from '../../types/addUnitTypes';
 import {
   cubeTypeOptions,
   impetuousTypeOptions,
@@ -15,7 +14,7 @@ import { SideDrawerButtonGroup } from './SideDrawerButtonGroup';
 export const AddStatsAndAttributes = (): React.ReactNode => {
   const statInputWidth = '3rem';
 
-  const { state, onChangeInput } = useForm<AddStatsAndAttributesForm>({
+  const { fields, onChangeInput } = useForm({
     impetuous: false,
     impetuousType: '',
     cube: false,
@@ -71,7 +70,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             onChange={onChangeInput}
             className="side-drawer-contents__stat-input"
             width={statInputWidth}
-            value={state.mov}
+            value={fields.mov}
           />
           <Input
             id="unit-info-cc"
@@ -80,7 +79,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             onChange={onChangeInput}
             width={statInputWidth}
             className="side-drawer-contents__stat-input"
-            value={state.cc}
+            value={fields.cc}
           />
           <Input
             id="unit-info-bs"
@@ -89,7 +88,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             onChange={onChangeInput}
             width={statInputWidth}
             className="side-drawer-contents__stat-input"
-            value={state.bs}
+            value={fields.bs}
           />
         </div>
         <div className="side-drawer-contents__stat-input-row">
@@ -100,7 +99,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             onChange={onChangeInput}
             width={statInputWidth}
             className="side-drawer-contents__stat-input"
-            value={state.ph}
+            value={fields.ph}
           />
           <Input
             id="unit-info-wip"
@@ -109,7 +108,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             onChange={onChangeInput}
             width={statInputWidth}
             className="side-drawer-contents__stat-input"
-            value={state.wip}
+            value={fields.wip}
           />
           <Input
             id="unit-info-arm"
@@ -118,7 +117,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             onChange={onChangeInput}
             width={statInputWidth}
             className="side-drawer-contents__stat-input"
-            value={state.arm}
+            value={fields.arm}
           />
         </div>
         <div className="side-drawer-contents__stat-input-row">
@@ -129,16 +128,16 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             onChange={onChangeInput}
             width={statInputWidth}
             className="side-drawer-contents__stat-input"
-            value={state.bts}
+            value={fields.bts}
           />
           <Input
             id="unit-info-w"
             name="w"
-            label={state.structure ? 'STR' : 'W'}
+            label={fields.structure ? 'STR' : 'W'}
             onChange={onChangeInput}
             width={statInputWidth}
             className="side-drawer-contents__stat-input"
-            value={state.w}
+            value={fields.w}
           />
           <Input
             id="unit-info-s"
@@ -147,21 +146,21 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             onChange={onChangeInput}
             width={statInputWidth}
             className="side-drawer-contents__stat-input"
-            value={state.s}
+            value={fields.s}
           />
         </div>
         <Checkbox
           name="structure"
           onChange={onChangeInput}
           label="Structure"
-          checked={state.structure}
+          checked={fields.structure}
         />
         <div className="side-drawer-contents__stat-input-row">
           <Checkbox
             name="impetuous"
             onChange={onChangeInput}
             label="Impetuous"
-            checked={state.impetuous}
+            checked={fields.impetuous}
           />
           <Select
             id="unit-info-impetuous-type"
@@ -169,8 +168,8 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             label="Impetuous Type"
             options={impetuousTypeOptions}
             onChange={onChangeInput}
-            isDisabled={!state.impetuous}
-            selectedValue={state.impetuousType}
+            isDisabled={!fields.impetuous}
+            selectedValue={fields.impetuousType}
           />
         </div>
         <div className="side-drawer-contents__stat-input-row">
@@ -178,7 +177,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             name="cube"
             onChange={onChangeInput}
             label="Cube"
-            checked={state.cube}
+            checked={fields.cube}
             className="checkbox--cube"
           />
           <Select
@@ -187,8 +186,8 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             label="Cube Type"
             options={cubeTypeOptions}
             onChange={onChangeInput}
-            isDisabled={!state.cube}
-            selectedValue={state.cubeType}
+            isDisabled={!fields.cube}
+            selectedValue={fields.cubeType}
           />
         </div>
         <AddUnitAVA
@@ -197,7 +196,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
           ava={ava}
         />
       </div>
-      <SideDrawerButtonGroup onSubmit={() => console.log({ ...state, ava })} />
+      <SideDrawerButtonGroup onSubmit={() => console.log({ ...fields, ava })} />
     </div>
   );
 };
