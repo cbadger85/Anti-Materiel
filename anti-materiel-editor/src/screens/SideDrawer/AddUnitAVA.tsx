@@ -25,10 +25,10 @@ const AvaListItem: React.FC<AvaListItemProps> = ({
           {...provided.draggableProps}
           {...provided.dragHandleProps}
         >
-          <span style={{ flex: 4 }}>{item.sectorial}</span>
-          <span style={{ flex: 1, textAlign: 'center' }}>{item.ava}</span>
+          <span className="list-item-ava__sectorial">{item.sectorial}</span>
+          <span className="list-item-ava__ava">{item.ava}</span>
           <Button
-            style={{ flex: 1, textAlign: 'right' }}
+            className="list-item-ava__delete-button"
             color="delete-dark"
             onClick={() => removeListItem(item)}
           >
@@ -103,16 +103,20 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
             width="3rem"
           />
         </div>
-        <Button color="secondary" onClick={handleAddUnitAva}>
+        <Button
+          color="secondary"
+          onClick={handleAddUnitAva}
+          disabled={!fields.ava.trim() && !fields.sectorial.trim()}
+        >
           Add AVA
         </Button>
       </div>
       <DragDropContext onDragEnd={handleOnDragEnd}>
         {!!ava.length && (
-          <div className="list-item">
-            <span style={{ flex: 4 }}>Sectorial</span>
-            <span style={{ flex: 1, textAlign: 'center' }}>AVA</span>
-            <span style={{ flex: 1 }} />
+          <div className="list-item list-item-header">
+            <span className="list-item-ava__sectorial">Sectorial</span>
+            <span className="list-item-ava__ava">AVA</span>
+            <span className="list-item-ava__delete-button" />
           </div>
         )}
         <Droppable
@@ -124,15 +128,15 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
               {...provided.draggableProps}
               {...provided.dragHandleProps}
             >
-              <span style={{ flex: 4 }}>
+              <span className="list-item-ava__sectorial">
                 {ava[rubric.source.index].sectorial}
               </span>
-              <span style={{ flex: 1, textAlign: 'center' }}>
+              <span className="list-item-ava__ava">
                 {ava[rubric.source.index].ava}
               </span>
               <Button
                 color="delete-dark"
-                style={{ flex: 1, textAlign: 'right' }}
+                className="list-item-ava__delete-button"
               >
                 <span className="list-item__delete-icon">×</span>
               </Button>

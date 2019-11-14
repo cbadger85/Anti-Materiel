@@ -45,3 +45,23 @@
     margin-right: 0.25rem;
   }
 }
+
+.list-item-header {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  color: $neutral-0;
+}
+
+.list-item-ava__sectorial {
+  flex: 4;
+}
+
+.list-item-ava__ava {
+  text-align: center;
+  flex: 1;
+}
+
+.list-item-ava__delete-button {
+  text-align: right;
+  flex: 1;
+}

@@ -33,8 +33,6 @@ export const AddUnitInfo = (): React.ReactNode => {
     console.log(updatedFields);
   };
 
-  console.log(fields);
-
   return (
     <div className="side-drawer-contents__container ">
       <div>
@@ -53,6 +51,7 @@ export const AddUnitInfo = (): React.ReactNode => {
           label="ISC"
           value={fields.isc}
           onChange={onChangeInput}
+          error={!fields.isc.trim()}
         />
         <Input
           id="unit-info-description"
@@ -68,6 +67,7 @@ export const AddUnitInfo = (): React.ReactNode => {
           options={unitTypeSelectOptions}
           onChange={onChangeInput}
           selectedValue={fields.type}
+          error={!fields.type.trim()}
         />
         <Select
           id="unit-info-classification"

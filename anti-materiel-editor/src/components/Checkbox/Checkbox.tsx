@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Checkbox.scss';
 
 export const Checkbox: React.FC<CheckboxProps> = ({
@@ -8,10 +8,15 @@ export const Checkbox: React.FC<CheckboxProps> = ({
   checked,
   className,
   style,
+  error,
   ...props
 }) => {
+  useEffect(() => {
+    onChange(name, !!checked, error);
+  });
+
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    onChange(e.target.name, e.target.checked);
+    onChange(e.target.name, e.target.checked, error);
   };
 
   return (
@@ -41,5 +46,6 @@ interface CheckboxProps
   > {
   name: string;
   label: string;
-  onChange: (key: string, value: boolean) => void;
+  onChange: (key: string, value: boolean, error?: boolean) => void;
+  error?: boolean;
 }

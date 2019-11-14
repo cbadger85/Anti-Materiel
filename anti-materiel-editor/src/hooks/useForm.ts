@@ -132,5 +132,6 @@ export const useForm = <T, K extends keyof T>(
     loadFormState,
     fields: fields as FormFields<T>,
     isValid,
+    state,
   };
 };

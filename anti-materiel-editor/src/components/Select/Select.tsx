@@ -67,7 +67,7 @@ export const Select: React.FC<SelectInputProps> = ({
   };
 
   useEffect(() => {
-    selectedValue && onChange(name, selectedValue, error);
+    selectedValue !== undefined && onChange(name, selectedValue, error);
   });
 
   const handleOnChange = (selected: OptionTypeBase) => {

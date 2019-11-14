@@ -50,4 +50,5 @@ export interface UseFormReturn<T, K extends keyof T> {
   loadFormState: (fields: FormFields<T>) => void;
   fields: FormFields<T>;
   isValid: boolean;
+  state: FormState<T, K>;
 }
