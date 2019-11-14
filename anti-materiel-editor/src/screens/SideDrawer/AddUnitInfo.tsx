@@ -33,6 +33,8 @@ export const AddUnitInfo = (): React.ReactNode => {
     console.log(updatedFields);
   };
 
+  console.log(fields);
+
   return (
     <div className="side-drawer-contents__container ">
       <div>
@@ -87,7 +89,7 @@ export const AddUnitInfo = (): React.ReactNode => {
         />
       </div>
 
-      <SideDrawerButtonGroup onSubmit={handleOnSubmit} />
+      <SideDrawerButtonGroup onSubmit={handleOnSubmit} isDisabled={!isValid} />
     </div>
   );
 };

@@ -7,6 +7,7 @@ export const Button: React.FC<ButtonProps> = ({
   height,
   className,
   color,
+  disabled,
   ...props
 }) => {
   const buttonColorClass = color ? `button--${color}` : '';
@@ -14,6 +15,7 @@ export const Button: React.FC<ButtonProps> = ({
   return (
     <button
       {...props}
+      disabled={disabled}
       className={`button ${buttonColorClass} ${className ? className : ''}`}
       style={{ width, height }}
     >
@@ -33,4 +35,5 @@ interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
     | 'delete-light'
     | 'delete-dark';
   className?: string;
+  disabled?: boolean;
 }

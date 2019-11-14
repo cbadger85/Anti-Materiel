@@ -118,4 +118,16 @@
   &.button--delete-dark:hover {
     transform: scale(1.2);
   }
+
+  &:disabled {
+    background-color: $neutral-7;
+    color: $neutral-4;
+    transform: none;
+  }
+
+  &:disabled:hover {
+    background-color: $neutral-7;
+    color: $neutral-4;
+    transform: none;
+  }
 }

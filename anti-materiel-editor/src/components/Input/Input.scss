@@ -19,6 +19,10 @@
     color: $neutral-1;
   }
 
+  .input__field--error {
+    background-color: $supporting-red-9;
+  }
+
   .input__input-field:focus {
     outline: none;
     border: 1px solid $supporting-pink-7;

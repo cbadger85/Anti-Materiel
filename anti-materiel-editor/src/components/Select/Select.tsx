@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactSelect from 'react-select';
 import { Props } from 'react-select/src/Select';
 import { Styles } from 'react-select/src/styles';
@@ -16,6 +16,9 @@ export const Select: React.FC<SelectInputProps> = ({
   selectedValue,
   ...props
 }) => {
+  const [isBlurred, setIsBlurred] = useState(false);
+  const showError = isBlurred && error;
+
   const customStyles: Styles = {
     control: (base, state) => ({
       ...base,
@@ -26,7 +29,11 @@ export const Select: React.FC<SelectInputProps> = ({
         ? { border: '1px solid #e668a7' }
         : { border: '1px border #627d98' },
       borderRadius: 0,
-      backgroundColor: state.isDisabled ? '#bcccdc' : '#f0f4f8',
+      backgroundColor: state.isDisabled
+        ? '#bcccdc'
+        : showError
+        ? '#facdcd'
+        : '#f0f4f8',
       color: '#102a43',
     }),
     menu: (base, state) => ({
@@ -91,6 +98,7 @@ export const Select: React.FC<SelectInputProps> = ({
           {...props}
           styles={customStyles}
           onChange={handleOnChange}
+          onBlur={() => setIsBlurred(true)}
         />
       </label>
     </div>

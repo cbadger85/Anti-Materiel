@@ -1,5 +1,6 @@
 import mapValues from 'lodash/mapValues';
 import transform from 'lodash/transform';
+import isEqual from 'lodash/isEqual';
 import { useReducer } from 'react';
 import {
   FormAction,
@@ -20,23 +21,14 @@ export const formReducer = <T, K extends keyof T>(
   action: FormAction<T, K>,
 ): FormState<T, K> => {
   switch (action.type) {
-    case FormActionTypes.UPDATE: {
-      if (
-        state[action.payload.key].isInvalid !== action.payload.isInvalid ||
-        state[action.payload.key].value !== action.payload.value
-      ) {
-        return {
-          ...state,
-          [action.payload.key]: {
-            isInvalid: action.payload.isInvalid,
-            value: action.payload.value,
-          },
-        };
-      }
-
-      return state;
-    }
-
+    case FormActionTypes.UPDATE:
+      return {
+        ...state,
+        [action.payload.key]: {
+          isInvalid: action.payload.isInvalid,
+          value: action.payload.value,
+        },
+      };
     case FormActionTypes.VALIDATE_FIELD:
       return {
         ...state,
@@ -50,6 +42,19 @@ export const formReducer = <T, K extends keyof T>(
     default:
       return state;
   }
+};
+
+const updateState = <T, K extends keyof T>(
+  prevState: FormState<T, K>,
+  action: FormAction<T, K>,
+): FormState<T, K> => {
+  const state = formReducer(prevState, action);
+
+  if (isEqual(prevState, state)) {
+    return prevState;
+  }
+
+  return state;
 };
 
 export const updateFieldsInForm = (
@@ -99,7 +104,7 @@ export const useForm = <T, K extends keyof T>(
   const initialState = getStateFromFields(intialFields);
 
   const [state, dispatch] = useReducer<FormReducer<T, K>>(
-    formReducer,
+    updateState,
     initialState as FormState<T, K>,
   );
 

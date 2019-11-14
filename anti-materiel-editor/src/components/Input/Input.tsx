@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FormValue } from '../../hooks/useForm.types';
 import './Input.scss';
 
@@ -13,6 +13,9 @@ export const Input: React.FC<InputProps> = ({
   value,
   ...props
 }) => {
+  const [isBlurred, setIsBlurred] = useState(false);
+  const showError = isBlurred && error;
+
   useEffect(() => {
     onChange(name, value, error);
   });
@@ -28,8 +31,11 @@ export const Input: React.FC<InputProps> = ({
         <input
           id={id}
           name={name}
-          className="input__input-field"
+          className={`input__input-field ${
+            showError ? 'input__field--error' : ''
+          }`}
           onChange={handleOnChange}
+          onBlur={() => setIsBlurred(true)}
           value={value}
           {...props}
         />
@@ -50,6 +56,5 @@ interface InputProps
   label: string;
   onChange: (key: string, value: FormValue, isInvalid?: boolean) => void;
   error?: boolean;
-  // fieldState: { value: FormValue; isInvalid?: boolean };
   value: string;
 }
