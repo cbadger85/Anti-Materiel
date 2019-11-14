@@ -26,9 +26,9 @@ const AvaListItem: React.FC<AvaListItemProps> = ({
           {...provided.dragHandleProps}
         >
           <span style={{ flex: 4 }}>{item.sectorial}</span>
-          <span style={{ flex: 1 }}>{item.ava}</span>
+          <span style={{ flex: 1, textAlign: 'center' }}>{item.ava}</span>
           <Button
-            style={{ flex: 1 }}
+            style={{ flex: 1, textAlign: 'right' }}
             color="delete-dark"
             onClick={() => removeListItem(item)}
           >
@@ -88,19 +88,19 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
     <>
       <div className="side-drawer-contents__add-ava-container">
         <div className="side-drawer-contents__add-ava-inputs">
-          <Input
-            name="ava"
-            label="AVA"
-            onChange={onChangeInput}
-            value={fields.ava}
-            width="3rem"
-          />
           <Select
             name="sectorial"
             label="Sectorial"
             options={sectorialSelectOptions}
             onChange={onChangeInput}
             selectedValue={fields.sectorial}
+          />
+          <Input
+            name="ava"
+            label="AVA"
+            onChange={onChangeInput}
+            value={fields.ava}
+            width="3rem"
           />
         </div>
         <Button color="secondary" onClick={handleAddUnitAva}>
@@ -110,8 +110,9 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
       <DragDropContext onDragEnd={handleOnDragEnd}>
         {!!ava.length && (
           <div className="list-item">
-            <span style={{ flex: 5.5 }}>Sectorial</span>
-            <span style={{ flex: 2 }}>AVA</span>
+            <span style={{ flex: 4 }}>Sectorial</span>
+            <span style={{ flex: 1, textAlign: 'center' }}>AVA</span>
+            <span style={{ flex: 1 }} />
           </div>
         )}
         <Droppable
@@ -123,9 +124,16 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
               {...provided.draggableProps}
               {...provided.dragHandleProps}
             >
-              <span>{ava[rubric.source.index].sectorial}</span>
-              <span>{ava[rubric.source.index].sectorial}</span>
-              <Button color="delete-dark">
+              <span style={{ flex: 4 }}>
+                {ava[rubric.source.index].sectorial}
+              </span>
+              <span style={{ flex: 1, textAlign: 'center' }}>
+                {ava[rubric.source.index].ava}
+              </span>
+              <Button
+                color="delete-dark"
+                style={{ flex: 1, textAlign: 'right' }}
+              >
                 <span className="list-item__delete-icon">×</span>
               </Button>
             </div>

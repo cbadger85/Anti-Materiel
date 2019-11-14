@@ -17,7 +17,7 @@ export const Button: React.FC<ButtonProps> = ({
       {...props}
       disabled={disabled}
       className={`button ${buttonColorClass} ${className ? className : ''}`}
-      style={{ width, height }}
+      style={{ width, height, ...props.style }}
     >
       {children}
     </button>
