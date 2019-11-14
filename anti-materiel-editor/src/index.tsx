@@ -1,3 +1,4 @@
+///<reference path="./types/react-beautiful-dnd/index.d.ts" />
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.scss';

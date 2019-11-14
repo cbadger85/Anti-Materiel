@@ -56,6 +56,10 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
     setAva(updatedAva);
   };
 
+  const updateAvaList = (newAva: { ava: string; sectorial: string }[]) => {
+    setAva(newAva);
+  };
+
   return (
     <div className="side-drawer-contents__container ">
       <div style={{ height: '100%' }}>
@@ -193,6 +197,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
         <AddUnitAVA
           addUnitAva={addUnitAva}
           removeUnitAva={removeUnitAva}
+          updateAvaList={updateAvaList}
           ava={ava}
         />
       </div>

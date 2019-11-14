@@ -1,22 +1,44 @@
 import React, { useEffect } from 'react';
+import {
+  DragDropContext,
+  Droppable,
+  Draggable,
+  DropResult,
+} from 'react-beautiful-dnd';
 import { Button } from '../Button/Button';
 import { Select } from '../Select/Select';
 import './MultiSelect.scss';
 
-const ListItem: React.FC<ListItemProps> = ({ item, removeListItem }) => {
+const ListItem: React.FC<ListItemProps> = ({
+  item,
+  removeListItem,
+  id,
+  index,
+}) => {
   return (
-    <div className="list-item">
-      <span>{item}</span>
-      <Button color="delete-dark" onClick={() => removeListItem(item)}>
-        <span className="list-item__delete-icon">×</span>
-      </Button>
-    </div>
+    <Draggable draggableId={id} index={index}>
+      {provided => (
+        <div
+          className="list-item"
+          {...provided.draggableProps}
+          {...provided.dragHandleProps}
+          ref={provided.innerRef}
+        >
+          <span>{item}</span>
+          <Button color="delete-dark" onClick={() => removeListItem(item)}>
+            <span className="list-item__delete-icon">×</span>
+          </Button>
+        </div>
+      )}
+    </Draggable>
   );
 };
 
 interface ListItemProps {
   item: string;
   removeListItem: (item: string) => void;
+  id: string;
+  index: number;
 }
 
 export const MultiSelect: React.FC<MultiSelectInputProps> = ({
@@ -38,13 +60,28 @@ export const MultiSelect: React.FC<MultiSelectInputProps> = ({
       return;
     }
 
-    onChange(name, [...list, value]);
+    onChange(name, [...list, value], error);
   };
 
   const handleRemoveListItem = (listItem: string): void => {
     const updatedList = list.filter(item => item !== listItem);
 
     onChange(name, updatedList);
+  };
+
+  const handleOnDragEnd = (result: DropResult) => {
+    const { destination, source, draggableId } = result;
+
+    if (!destination) {
+      return;
+    }
+
+    const newList = [...list];
+
+    newList.splice(source.index, 1);
+    newList.splice(destination.index, 0, draggableId);
+
+    onChange(name, newList, error);
   };
 
   return (
@@ -58,17 +95,45 @@ export const MultiSelect: React.FC<MultiSelectInputProps> = ({
         onChange={handleOnChange}
         error={error}
       />
-      {list.length > 0 && (
-        <div className="list-items__container">
-          {list.map(listItem => (
-            <ListItem
-              key={listItem}
-              item={listItem}
-              removeListItem={handleRemoveListItem}
-            />
-          ))}
-        </div>
-      )}
+      <DragDropContext onDragEnd={handleOnDragEnd}>
+        {list.length > 0 && (
+          <Droppable
+            droppableId="multi-select-list"
+            renderClone={(provided, snapshot, rubric) => (
+              <div
+                className="list-item"
+                {...provided.draggableProps}
+                {...provided.dragHandleProps}
+                ref={provided.innerRef}
+              >
+                <span>{list[rubric.source.index]}</span>
+                <Button color="delete-dark">
+                  <span className="list-item__delete-icon">×</span>
+                </Button>
+              </div>
+            )}
+          >
+            {provided => (
+              <div
+                className="list-items__container"
+                ref={provided.innerRef}
+                {...provided.droppableProps}
+              >
+                {list.map((listItem, i) => (
+                  <ListItem
+                    key={listItem}
+                    id={listItem}
+                    index={i}
+                    item={listItem}
+                    removeListItem={handleRemoveListItem}
+                  />
+                ))}
+                {provided.placeholder}
+              </div>
+            )}
+          </Droppable>
+        )}
+      </DragDropContext>
     </div>
   );
 };
