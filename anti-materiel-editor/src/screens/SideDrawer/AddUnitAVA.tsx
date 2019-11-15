@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '../../components/Button/Button';
 import { Input } from '../../components/Input/Input';
 import { Select } from '../../components/Select/Select';
@@ -52,15 +52,20 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
   updateAvaList,
   ava,
 }) => {
-  const { onChangeInput, fields } = useForm({
+  const { onChangeInput, fields, loadFormState, isValid } = useForm({
     ava: '',
     sectorial: '',
   });
 
+  const avaRegex = new RegExp(/[1-9]|[tT]/);
+
   const handleAddUnitAva = () => {
     addUnitAva(fields);
-    onChangeInput('ava', '');
-    onChangeInput('sectorial', '');
+
+    loadFormState({
+      ava: '',
+      sectorial: '',
+    });
   };
 
   const handleOnDragEnd = (result: DropResult) => {
@@ -101,12 +106,13 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
             onChange={onChangeInput}
             value={fields.ava}
             width="3rem"
+            uppercase
           />
         </div>
         <Button
           color="secondary"
           onClick={handleAddUnitAva}
-          disabled={!fields.ava.trim() || !fields.sectorial.trim()}
+          disabled={!fields.ava.trim() || !avaRegex.test(fields.ava)}
         >
           Add AVA
         </Button>

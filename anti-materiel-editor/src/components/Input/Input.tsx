@@ -12,17 +12,22 @@ export const Input: React.FC<InputProps> = ({
   width,
   error,
   value,
+  uppercase,
   ...props
 }) => {
   const [isBlurred, setIsBlurred] = useState(false);
   const showError = isBlurred && error;
 
   useEffect(() => {
-    onChange(name, value, error);
+    onChange(name, uppercase ? value.toUpperCase() : value, error);
   });
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    onChange(e.target.name, e.target.value, error);
+    onChange(
+      e.target.name,
+      uppercase ? e.target.value.toUpperCase() : e.target.value,
+      error,
+    );
   };
 
   return (
@@ -59,4 +64,5 @@ interface InputProps
   onChange: (key: string, value: FormValue, isInvalid?: boolean) => void;
   error?: boolean;
   value: string;
+  uppercase?: boolean;
 }
