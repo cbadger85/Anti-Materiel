@@ -123,11 +123,13 @@
     background-color: $neutral-7;
     color: $neutral-4;
     transform: none;
+    cursor: auto;
   }
 
   &:disabled:hover {
     background-color: $neutral-7;
     color: $neutral-4;
     transform: none;
+    cursor: auto;
   }
 }

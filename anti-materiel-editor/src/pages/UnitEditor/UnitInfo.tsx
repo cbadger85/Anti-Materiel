@@ -1,14 +1,13 @@
 import React from 'react';
-import { EditorAddButton } from './EditorAddButton';
-import { useSideDrawer } from '../../components/SideDrawer';
 import { SectionHeading } from '../../components/SectionHeading/SectionHeading';
+import { SideDrawer } from '../../components/SideDrawer/SideDrawer';
+import { ToggleContent } from '../../components/ToggleContent/ToggleContent';
+import { AddUnitInfo } from '../../screens/SideDrawer/AddUnitInfo';
+import { EditorAddButton } from './EditorAddButton';
 
-export const UnitInfo = () => {
-  const { openSideDrawer, setRoute } = useSideDrawer();
-
-  const handleOnEditorButtonClick = () => {
-    setRoute('addUnitInfo');
-    openSideDrawer();
+export const UnitInfo: React.FC = () => {
+  const handleCancel = (hide: () => void) => {
+    hide();
   };
 
   return (
@@ -16,7 +15,17 @@ export const UnitInfo = () => {
       <SectionHeading className="editor__section-header" color="page">
         Unit Info
       </SectionHeading>
-      <EditorAddButton onClick={handleOnEditorButtonClick} />
+      <ToggleContent
+        toggle={show => <EditorAddButton onClick={show} />}
+        content={(isShown, hide) => (
+          <SideDrawer
+            isOpen={isShown}
+            closeSideDrawer={() => handleCancel(hide)}
+          >
+            <AddUnitInfo closeSideDrawer={hide} />
+          </SideDrawer>
+        )}
+      />
     </div>
   );
 };

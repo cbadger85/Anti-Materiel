@@ -1,13 +1,12 @@
 import React from 'react';
 import { IconProps } from './iconProps';
+import { getClasses } from '../../utils/getClasses';
 
 export const AddIcon: React.FC<IconProps> = ({ color }) => {
-  const colorClass = color ? `icon--${color}` : '';
-
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`icon ${colorClass}`}
+      className={getClasses('icon', color && `icon--${color}`)}
       width="1.2rem"
       height="1.2rem"
       viewBox="0 0 24 24"

@@ -49,6 +49,7 @@ export const MultiSelect: React.FC<MultiSelectInputProps> = ({
   error,
   list,
   id,
+  className,
 }) => {
   useEffect(() => {
     onChange(name, list, error);
@@ -85,7 +86,7 @@ export const MultiSelect: React.FC<MultiSelectInputProps> = ({
   };
 
   return (
-    <div>
+    <div className={className}>
       <Select
         name={name}
         id={id}
@@ -148,7 +149,7 @@ interface MultiSelectInputProps {
     isInvalid?: boolean,
   ) => void;
   id?: string;
-  // fieldState: { value: FormValue; isInvalid?: boolean };
   list: string[];
   error?: boolean;
+  className?: string;
 }

@@ -11,7 +11,9 @@ import {
 import { AddUnitAVA } from './AddUnitAVA';
 import { SideDrawerButtonGroup } from './SideDrawerButtonGroup';
 
-export const AddStatsAndAttributes = (): React.ReactNode => {
+export const AddStatsAndAttributes: React.FC<AddStatsAndAttributesProps> = ({
+  closeSideDrawer,
+}) => {
   const statInputWidth = '3rem';
 
   const { fields, onChangeInput, isValid } = useForm({
@@ -32,7 +34,11 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
   });
   const [ava, setAva] = useState<{ ava: string; sectorial: string }[]>([]);
 
-  const regex = new RegExp(/(0-9]-[0-9])/);
+  const movRegex = new RegExp(/([0-9]-[0-9])/);
+
+  console.log(movRegex.test(fields.mov));
+
+  const numberRegex = new RegExp(/[0-9]/);
 
   const addUnitAva = (availability: { ava: string; sectorial: string }) => {
     if (!availability.ava || !availability.sectorial) {
@@ -62,16 +68,10 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
     setAva(newAva);
   };
 
-  const isNumber = (number: unknown): number is number => {
-    if (typeof number === 'string') {
-      return !isNaN(parseInt(number, 10));
-    }
+  const isBTS = (bts: string): boolean => {
+    const btsNum = parseInt(bts, 10);
 
-    if (typeof number === 'number') {
-      return true;
-    }
-
-    return false;
+    return btsNum % 3 === 0;
   };
 
   return (
@@ -89,7 +89,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             className="side-drawer-contents__stat-input"
             width={statInputWidth}
             value={fields.mov}
-            error={!fields.mov.trim() && !regex.test(fields.mov)}
+            error={!movRegex.test(fields.mov)}
           />
           <Input
             id="unit-info-cc"
@@ -99,7 +99,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             width={statInputWidth}
             className="side-drawer-contents__stat-input"
             value={fields.cc}
-            error={!fields.cc.trim() || !isNumber(fields.cc)}
+            error={!numberRegex.test(fields.cc)}
           />
           <Input
             id="unit-info-bs"
@@ -109,7 +109,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             width={statInputWidth}
             className="side-drawer-contents__stat-input"
             value={fields.bs}
-            error={!fields.bs.trim() || !isNumber(fields.bs)}
+            error={!numberRegex.test(fields.bs)}
           />
         </div>
         <div className="side-drawer-contents__stat-input-row">
@@ -121,7 +121,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             width={statInputWidth}
             className="side-drawer-contents__stat-input"
             value={fields.ph}
-            error={!fields.ph.trim() || !isNumber(fields.ph)}
+            error={!numberRegex.test(fields.ph)}
           />
           <Input
             id="unit-info-wip"
@@ -131,7 +131,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             width={statInputWidth}
             className="side-drawer-contents__stat-input"
             value={fields.wip}
-            error={!fields.wip.trim() || !isNumber(fields.wip)}
+            error={!numberRegex.test(fields.wip)}
           />
           <Input
             id="unit-info-arm"
@@ -141,7 +141,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             width={statInputWidth}
             className="side-drawer-contents__stat-input"
             value={fields.arm}
-            error={!fields.arm.trim() || !isNumber(fields.arm)}
+            error={!numberRegex.test(fields.arm)}
           />
         </div>
         <div className="side-drawer-contents__stat-input-row">
@@ -153,7 +153,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             width={statInputWidth}
             className="side-drawer-contents__stat-input"
             value={fields.bts}
-            error={!fields.bts.trim() || !isNumber(fields.bts)}
+            error={!numberRegex.test(fields.bts) || !isBTS(fields.bts)} // add check that bts is divisble by 3
           />
           <Input
             id="unit-info-w"
@@ -163,7 +163,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             width={statInputWidth}
             className="side-drawer-contents__stat-input"
             value={fields.w}
-            error={!fields.w.trim() || !isNumber(fields.w)}
+            error={!numberRegex.test(fields.w)}
           />
           <Input
             id="unit-info-s"
@@ -173,7 +173,7 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
             width={statInputWidth}
             className="side-drawer-contents__stat-input"
             value={fields.s}
-            error={!fields.s.trim() || !isNumber(fields.s)}
+            error={!numberRegex.test(fields.s)}
           />
         </div>
         <Checkbox
@@ -229,7 +229,12 @@ export const AddStatsAndAttributes = (): React.ReactNode => {
       <SideDrawerButtonGroup
         onSubmit={() => console.log({ ...fields, ava })}
         isDisabled={!isValid || !ava.length}
+        closeSideDrawer={closeSideDrawer}
       />
     </div>
   );
 };
+
+interface AddStatsAndAttributesProps {
+  closeSideDrawer: () => void;
+}

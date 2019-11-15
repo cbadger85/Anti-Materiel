@@ -106,7 +106,7 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
         <Button
           color="secondary"
           onClick={handleAddUnitAva}
-          disabled={!fields.ava.trim() && !fields.sectorial.trim()}
+          disabled={!fields.ava.trim() || !fields.sectorial.trim()}
         >
           Add AVA
         </Button>

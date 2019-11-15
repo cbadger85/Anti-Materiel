@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './Checkbox.scss';
+import { getClasses } from '../../utils/getClasses';
 
 export const Checkbox: React.FC<CheckboxProps> = ({
   name,
@@ -20,7 +21,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
   };
 
   return (
-    <div className={`checkbox ${className ? className : ''}`} style={style}>
+    <div className={getClasses('checkbox', className)} style={style}>
       <input
         type="checkbox"
         checked={checked}

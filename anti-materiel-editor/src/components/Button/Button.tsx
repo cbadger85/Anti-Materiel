@@ -1,5 +1,6 @@
 import React from 'react';
 import './Button.scss';
+import { getClasses } from '../../utils/getClasses';
 
 export const Button: React.FC<ButtonProps> = ({
   children,
@@ -10,13 +11,11 @@ export const Button: React.FC<ButtonProps> = ({
   disabled,
   ...props
 }) => {
-  const buttonColorClass = color ? `button--${color}` : '';
-
   return (
     <button
       {...props}
       disabled={disabled}
-      className={`button ${buttonColorClass} ${className ? className : ''}`}
+      className={getClasses('button', color && `button--${color}`, className)}
       style={{ width, height, ...props.style }}
     >
       {children}

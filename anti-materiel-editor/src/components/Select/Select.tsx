@@ -4,6 +4,7 @@ import { Props } from 'react-select/src/Select';
 import { Styles } from 'react-select/src/styles';
 import { OptionTypeBase } from 'react-select/src/types';
 import './Select.scss';
+import { getClasses } from '../../utils/getClasses';
 
 export const Select: React.FC<SelectInputProps> = ({
   className,
@@ -83,7 +84,7 @@ export const Select: React.FC<SelectInputProps> = ({
   };
 
   return (
-    <div className={`select-input ${className ? className : ''}`}>
+    <div className={getClasses('select-input', className)}>
       <label htmlFor={name}>
         <span className="select-input__label">{label}</span>
         <ReactSelect

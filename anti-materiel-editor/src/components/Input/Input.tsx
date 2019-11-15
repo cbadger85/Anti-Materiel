@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FormValue } from '../../hooks/useForm.types';
 import './Input.scss';
+import { getClasses } from '../../utils/getClasses';
 
 export const Input: React.FC<InputProps> = ({
   name,
@@ -31,9 +32,10 @@ export const Input: React.FC<InputProps> = ({
         <input
           id={id}
           name={name}
-          className={`input__input-field ${
-            showError ? 'input__field--error' : ''
-          }`}
+          className={getClasses(
+            'input__input-field',
+            showError && 'input__field--error',
+          )}
           onChange={handleOnChange}
           onBlur={() => setIsBlurred(true)}
           value={value}

@@ -14,7 +14,9 @@ import { Select } from '../../components/Select/Select';
 import uuid from 'uuid/v4';
 import kebabCase from 'lodash/kebabCase';
 
-export const AddUnitInfo = (): React.ReactNode => {
+export const AddUnitInfo: React.FC<AddUnitInfoProps> = ({
+  closeSideDrawer,
+}) => {
   const { onChangeInput, fields, isValid } = useForm({
     name: '',
     isc: '',
@@ -89,7 +91,15 @@ export const AddUnitInfo = (): React.ReactNode => {
         />
       </div>
 
-      <SideDrawerButtonGroup onSubmit={handleOnSubmit} isDisabled={!isValid} />
+      <SideDrawerButtonGroup
+        onSubmit={handleOnSubmit}
+        isDisabled={!isValid}
+        closeSideDrawer={closeSideDrawer}
+      />
     </div>
   );
 };
+
+interface AddUnitInfoProps {
+  closeSideDrawer: () => void;
+}

@@ -1,18 +1,19 @@
 import React from 'react';
 import './SectionHeading.scss';
+import { getClasses } from '../../utils/getClasses';
 
 export const SectionHeading: React.FC<SectionHeadingProps> = ({
   color,
   children,
   className,
 }) => {
-  const sectionHeadingColorClass = color ? `section-heading--${color}` : '';
-
   return (
     <h3
-      className={`section-heading ${sectionHeadingColorClass} ${
-        className ? className : ''
-      }`}
+      className={getClasses(
+        'section-heading',
+        color && `section-heading--${color}`,
+        className,
+      )}
     >
       {children}
     </h3>
