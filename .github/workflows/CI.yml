@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Test and lint project
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js v10.x
+      uses: action/setup-node@v1
+      with:
+        version: '10.x'
+        
+    - name: Install yarn and test
+      run: |
+        npm install -g yarn
+        yarn install
+        yarn test
