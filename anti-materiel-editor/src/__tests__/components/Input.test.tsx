@@ -9,19 +9,19 @@ describe('<Input />', () => {
   const name = 'field1';
   const label = 'field 1';
 
-  const wrapper = shallow(
-    <Input
-      name={name}
-      label={label}
-      onChange={(name, value) => {
-        fieldName = name;
-        fieldValue = value as string;
-      }}
-      value=""
-    />,
-  );
-
   it('should provide the name and value of the input in the onChange callback', () => {
+    const wrapper = shallow(
+      <Input
+        name={name}
+        label={label}
+        onChange={(name, value) => {
+          fieldName = name;
+          fieldValue = value as string;
+        }}
+        value=""
+      />,
+    );
+
     const expectedValue = 'data';
 
     wrapper
@@ -33,8 +33,41 @@ describe('<Input />', () => {
   });
 
   it('should display the provided label', () => {
+    const wrapper = shallow(
+      <Input
+        name={name}
+        label={label}
+        onChange={(name, value) => {
+          fieldName = name;
+          fieldValue = value as string;
+        }}
+        value=""
+      />,
+    );
+
     const labelText = wrapper.find('label').text();
 
     expect(labelText).toBe(label);
+  });
+
+  it('should diplay the error state when error is true', () => {
+    const wrapper = shallow(
+      <Input
+        name={name}
+        label={label}
+        onChange={(name, value) => {
+          fieldName = name;
+          fieldValue = value as string;
+        }}
+        value=""
+        error
+      />,
+    );
+
+    wrapper.find('input').simulate('blur');
+
+    const classes = wrapper.find('input').props().className;
+
+    expect(classes).toContain('input__field--error');
   });
 });
