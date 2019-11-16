@@ -100,7 +100,7 @@ describe('useForm', () => {
   describe('useForm hook', () => {
     let inputField: any = null;
 
-    const Dummy = () => {
+    const Dummy = (): void => {
       const { fields, onChangeInput, loadFormState } = useForm({
         field1: '',
       });

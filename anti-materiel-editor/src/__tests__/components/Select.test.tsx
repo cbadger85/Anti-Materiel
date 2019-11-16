@@ -4,8 +4,8 @@ import ReactSelect from 'react-select';
 import { Select } from '../../components/Select/Select';
 
 describe('<Select />', () => {
-  let fieldName: string = '';
-  let fieldValue: string = '';
+  let fieldName = '';
+  let fieldValue = '';
 
   const name = 'field1';
   const label = 'Select';

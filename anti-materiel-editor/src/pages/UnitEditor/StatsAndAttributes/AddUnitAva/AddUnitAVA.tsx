@@ -23,7 +23,7 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
   const avaRegex = new RegExp(/[1-9]|[tT]/);
   const addButtonDisabled = !fields.ava.trim() || !avaRegex.test(fields.ava);
 
-  const handleAddUnitAva = () => {
+  const handleAddUnitAva = (): void => {
     addUnitAva(fields);
 
     loadFormState({
@@ -32,7 +32,7 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
     });
   };
 
-  const handleOnDragEnd = (result: DropResult) => {
+  const handleOnDragEnd = (result: DropResult): void => {
     const { destination, source, draggableId } = result;
 
     if (!destination) {

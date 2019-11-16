@@ -12,7 +12,7 @@ export const ManagedContent: React.FC<ManagedContentProps> = ({
   content,
   form,
 }) => {
-  const handleCancel = (hide: () => void) => {
+  const handleCancel = (hide: () => void): void => {
     if (warn) {
       console.log('WARNING!');
     }

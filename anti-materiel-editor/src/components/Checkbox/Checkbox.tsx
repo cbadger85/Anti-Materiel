@@ -16,7 +16,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
     onChange(name, !!checked, error);
   });
 
-  const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     onChange(e.target.name, e.target.checked, error);
   };
 

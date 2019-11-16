@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ReactSelect from 'react-select';
 import { Props } from 'react-select/src/Select';
 import { Styles } from 'react-select/src/styles';
-import { OptionTypeBase } from 'react-select/src/types';
+import { OptionTypeBase, ValueType } from 'react-select/src/types';
 import './Select.scss';
 import { getClasses } from '../../utils/getClasses';
 
@@ -71,11 +71,11 @@ export const Select: React.FC<SelectInputProps> = ({
     selectedValue !== undefined && onChange(name, selectedValue, error);
   });
 
-  const handleOnChange = (selected: OptionTypeBase) => {
+  const handleOnChange = (selected: OptionTypeBase): void => {
     onChange(name, (selected as OptionTypeBase).value, error);
   };
 
-  const getValue = () => {
+  const getValue = (): ValueType<OptionTypeBase> => {
     const value = options.find(
       (option: Option) => selectedValue && option.value === selectedValue,
     );

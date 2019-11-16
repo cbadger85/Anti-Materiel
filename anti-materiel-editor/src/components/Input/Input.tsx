@@ -22,7 +22,7 @@ export const Input: React.FC<InputProps> = ({
     onChange(name, uppercase ? value.toUpperCase() : value, error);
   });
 
-  const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     onChange(
       e.target.name,
       uppercase ? e.target.value.toUpperCase() : e.target.value,

@@ -24,7 +24,7 @@ export const AddUnitInfo: React.FC<AddUnitInfoProps> = ({
     sectorial: [],
   });
 
-  const handleOnSubmit = () => {
+  const handleOnSubmit = (): void => {
     const updatedFields = {
       ...fields,
       unitSvgName: kebabCase(fields.name),
