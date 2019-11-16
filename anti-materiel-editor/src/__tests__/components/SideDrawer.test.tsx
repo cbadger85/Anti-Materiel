@@ -1,6 +1,6 @@
 import { mount } from 'enzyme';
 import React from 'react';
-import { SideDrawer, SideDrawerContext } from '../../components/SideDrawer';
+import { SideDrawer } from '../../components/SideDrawer/SideDrawer';
 
 beforeEach(() => {
   jest.clearAllMocks();
@@ -16,11 +16,7 @@ describe('<SideDrawer />', () => {
       setRoute: () => {},
     };
 
-    const wrapper = mount(
-      <SideDrawerContext.Provider value={sideDrawerContextValues}>
-        <SideDrawer />
-      </SideDrawerContext.Provider>,
-    );
+    const wrapper = mount(<SideDrawer isOpen={false} />);
 
     it('should not show the side drawer', () => {
       const sideDrawer = wrapper.find('#side-drawer');
@@ -36,19 +32,7 @@ describe('<SideDrawer />', () => {
   });
 
   describe('SideDrawer Open', () => {
-    const sideDrawerContextValues = {
-      isSideDrawerOpen: true,
-      openSideDrawer: () => {},
-      closeSideDrawer: () => {},
-      route: '',
-      setRoute: () => {},
-    };
-
-    const wrapper = mount(
-      <SideDrawerContext.Provider value={sideDrawerContextValues}>
-        <SideDrawer />
-      </SideDrawerContext.Provider>,
-    );
+    const wrapper = mount(<SideDrawer isOpen />);
 
     it('Should show the side drawer', () => {
       const sideDrawer = wrapper
