@@ -38,7 +38,10 @@ export const AddStatsAndAttributes: React.FC<AddStatsAndAttributesProps> = ({
 
   const numberRegex = new RegExp(/[0-9]/);
 
-  const addUnitAva = (availability: { ava: string; sectorial: string }) => {
+  const addUnitAva = (availability: {
+    ava: string;
+    sectorial: string;
+  }): void => {
     if (!availability.ava || !availability.sectorial) {
       return;
     }
@@ -54,7 +57,10 @@ export const AddStatsAndAttributes: React.FC<AddStatsAndAttributesProps> = ({
     setAva(state => [...state, availability]);
   };
 
-  const removeUnitAva = (availability: { ava: string; sectorial: string }) => {
+  const removeUnitAva = (availability: {
+    ava: string;
+    sectorial: string;
+  }): void => {
     const updatedAva = ava.filter(
       unitAva => unitAva.sectorial !== availability.sectorial,
     );
@@ -62,7 +68,9 @@ export const AddStatsAndAttributes: React.FC<AddStatsAndAttributesProps> = ({
     setAva(updatedAva);
   };
 
-  const updateAvaList = (newAva: { ava: string; sectorial: string }[]) => {
+  const updateAvaList = (
+    newAva: { ava: string; sectorial: string }[],
+  ): void => {
     setAva(newAva);
   };
 

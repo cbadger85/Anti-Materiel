@@ -6,8 +6,8 @@ export const ToggleContent: React.FC<ToggleContentProps> = ({
   handleMount,
 }) => {
   const [isShown, setIsShown] = useState(false);
-  const hide = () => setIsShown(false);
-  const show = () => setIsShown(true);
+  const hide = (): void => setIsShown(false);
+  const show = (): void => setIsShown(true);
 
   return (
     <>

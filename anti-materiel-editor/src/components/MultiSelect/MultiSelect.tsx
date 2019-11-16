@@ -33,7 +33,7 @@ export const MultiSelect: React.FC<MultiSelectInputProps> = ({
     onChange(name, updatedList);
   };
 
-  const handleOnDragEnd = (result: DropResult) => {
+  const handleOnDragEnd = (result: DropResult): void => {
     const { destination, source, draggableId } = result;
 
     if (!destination) {

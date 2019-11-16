@@ -1,12 +1,12 @@
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import React from 'react';
 import ReactSelect from 'react-select';
 import { MultiSelect } from '../../components/MultiSelect/MultiSelect';
 
 describe('<MultiSelect />', () => {
   it('should add selected items to the list', () => {
-    let fieldName: string = '';
-    let fieldValue: string[] = [''];
+    let fieldName = '';
+    let fieldValue = [''];
 
     const name = 'field1';
     const label = 'Select';
@@ -48,8 +48,8 @@ describe('<MultiSelect />', () => {
   });
 
   it('should not add selected items to the list if it is already there', () => {
-    let fieldName: string = '';
-    let fieldValue: string[] = [''];
+    let fieldName = '';
+    let fieldValue = [''];
 
     const name = 'field1';
     const label = 'Select';
@@ -91,8 +91,8 @@ describe('<MultiSelect />', () => {
   });
 
   it('should remove an item from the list when the delete button is pressed', () => {
-    let fieldName: string = '';
-    let fieldValue: string[] = [''];
+    let fieldName = '';
+    let fieldValue = [''];
 
     const name = 'field1';
     const label = 'Select';

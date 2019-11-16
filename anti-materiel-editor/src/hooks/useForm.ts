@@ -1,7 +1,7 @@
 import mapValues from 'lodash/mapValues';
 import transform from 'lodash/transform';
 import isEqual from 'lodash/isEqual';
-import { useReducer } from 'react';
+import { useReducer, useCallback } from 'react';
 import {
   FormAction,
   FormActionTypes,
@@ -108,19 +108,22 @@ export const useForm = <T, K extends keyof T>(
     initialState as FormState<T, K>,
   );
 
-  const onChangeInput = (
-    key: string,
-    value: FormValue,
-    isInvalid?: boolean,
-  ): void => dispatch(updateFieldsInForm(key, value, isInvalid));
+  const onChangeInput = useCallback(
+    (key: string, value: FormValue, isInvalid?: boolean): void =>
+      dispatch(updateFieldsInForm(key, value, isInvalid)),
+    [],
+  );
 
-  const validateField = (key: string, isInvalid?: boolean): void =>
-    dispatch(validateFieldsInForm(key, isInvalid));
+  const validateField = useCallback(
+    (key: string, isInvalid?: boolean): void =>
+      dispatch(validateFieldsInForm(key, isInvalid)),
+    [],
+  );
 
-  const loadFormState = (fields: FormFields<T>): void => {
+  const loadFormState = useCallback((fields: FormFields<T>): void => {
     const state = getStateFromFields(fields);
     dispatch(loadFieldsInForm(state as FormState<T, K>));
-  };
+  }, []);
 
   const fields = mapValues(state as FormStateDictionary, field => field.value);
 

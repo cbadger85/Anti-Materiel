@@ -8,14 +8,6 @@ beforeEach(() => {
 
 describe('<SideDrawer />', () => {
   describe('SideDrawer Closed', () => {
-    const sideDrawerContextValues = {
-      isSideDrawerOpen: false,
-      openSideDrawer: () => {},
-      closeSideDrawer: () => {},
-      route: '',
-      setRoute: () => {},
-    };
-
     const wrapper = mount(<SideDrawer isOpen={false} />);
 
     it('should not show the side drawer', () => {

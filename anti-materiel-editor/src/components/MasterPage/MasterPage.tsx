@@ -18,7 +18,7 @@ export const MasterPage: React.FC<MasterPageProps> = ({
   }, []);
 
   useEffect(() => {
-    const getSidePanelHeightAfterResize = () => {
+    const getSidePanelHeightAfterResize = (): void => {
       contentRef.current &&
         setSidePanelHeight(contentRef.current.getBoundingClientRect().height);
     };

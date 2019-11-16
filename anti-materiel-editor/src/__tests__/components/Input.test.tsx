@@ -3,8 +3,8 @@ import React from 'react';
 import { Input } from '../../components/Input/Input';
 
 describe('<Input />', () => {
-  let fieldName: string = '';
-  let fieldValue: string = '';
+  let fieldName = '';
+  let fieldValue = '';
 
   const name = 'field1';
   const label = 'field 1';
@@ -15,8 +15,9 @@ describe('<Input />', () => {
       label={label}
       onChange={(name, value) => {
         fieldName = name;
-        fieldValue = value;
+        fieldValue = value as string;
       }}
+      value=""
     />,
   );
 
