@@ -100,14 +100,14 @@ describe('useForm', () => {
   describe('useForm hook', () => {
     let inputField: any = null;
 
-    const Dummy = (): void => {
+    const Dummy = (): JSX.Element => {
       const { fields, onChangeInput, loadFormState } = useForm({
         field1: '',
       });
 
       useEffect(() => {
         loadFormState({ field1: 'foo' });
-      }, []);
+      }, [loadFormState]);
 
       inputField = fields;
 
