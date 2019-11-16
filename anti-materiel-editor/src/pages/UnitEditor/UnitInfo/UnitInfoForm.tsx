@@ -47,6 +47,7 @@ export const AddUnitInfo: React.FC<AddUnitInfoProps> = ({
         value={fields.name}
         onChange={onChangeInput}
         error={!fields.name.trim()}
+        placeholder="Fusiliers"
       />
       <Input
         id="unit-info-isc"
@@ -55,6 +56,7 @@ export const AddUnitInfo: React.FC<AddUnitInfoProps> = ({
         value={fields.isc}
         onChange={onChangeInput}
         error={!fields.isc.trim()}
+        placeholder="Fusiliers"
       />
       <Input
         id="unit-info-description"
@@ -62,6 +64,7 @@ export const AddUnitInfo: React.FC<AddUnitInfoProps> = ({
         label="Description"
         value={fields.description}
         onChange={onChangeInput}
+        placeholder="Notes..."
       />
       <Select
         id="unit-info-type"

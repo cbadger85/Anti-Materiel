@@ -71,6 +71,7 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
             value={fields.ava}
             width="3rem"
             uppercase
+            placeholder="T"
           />
         </div>
         <Button

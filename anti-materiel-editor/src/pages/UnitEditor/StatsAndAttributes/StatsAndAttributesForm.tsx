@@ -97,6 +97,7 @@ export const AddStatsAndAttributes: React.FC<AddStatsAndAttributesProps> = ({
           width={statInputWidth}
           value={fields.mov}
           error={!movRegex.test(fields.mov)}
+          placeholder="4-4"
         />
         <Input
           id="unit-info-cc"
@@ -107,6 +108,7 @@ export const AddStatsAndAttributes: React.FC<AddStatsAndAttributesProps> = ({
           className="side-drawer-contents__stat-input"
           value={fields.cc}
           error={!numberRegex.test(fields.cc)}
+          placeholder="13"
         />
         <Input
           id="unit-info-bs"
@@ -117,6 +119,7 @@ export const AddStatsAndAttributes: React.FC<AddStatsAndAttributesProps> = ({
           className="side-drawer-contents__stat-input"
           value={fields.bs}
           error={!numberRegex.test(fields.bs)}
+          placeholder="12"
         />
       </div>
       <div className="side-drawer-contents__stat-input-row">
@@ -129,6 +132,7 @@ export const AddStatsAndAttributes: React.FC<AddStatsAndAttributesProps> = ({
           className="side-drawer-contents__stat-input"
           value={fields.ph}
           error={!numberRegex.test(fields.ph)}
+          placeholder="10"
         />
         <Input
           id="unit-info-wip"
@@ -139,6 +143,7 @@ export const AddStatsAndAttributes: React.FC<AddStatsAndAttributesProps> = ({
           className="side-drawer-contents__stat-input"
           value={fields.wip}
           error={!numberRegex.test(fields.wip)}
+          placeholder="12"
         />
         <Input
           id="unit-info-arm"
@@ -149,6 +154,7 @@ export const AddStatsAndAttributes: React.FC<AddStatsAndAttributesProps> = ({
           className="side-drawer-contents__stat-input"
           value={fields.arm}
           error={!numberRegex.test(fields.arm)}
+          placeholder="1"
         />
       </div>
       <div className="side-drawer-contents__stat-input-row">
@@ -160,7 +166,8 @@ export const AddStatsAndAttributes: React.FC<AddStatsAndAttributesProps> = ({
           width={statInputWidth}
           className="side-drawer-contents__stat-input"
           value={fields.bts}
-          error={!numberRegex.test(fields.bts) || !isBTS(fields.bts)} // add check that bts is divisble by 3
+          error={!numberRegex.test(fields.bts) || !isBTS(fields.bts)}
+          placeholder="3"
         />
         <Input
           id="unit-info-w"
@@ -171,6 +178,7 @@ export const AddStatsAndAttributes: React.FC<AddStatsAndAttributesProps> = ({
           className="side-drawer-contents__stat-input"
           value={fields.w}
           error={!numberRegex.test(fields.w)}
+          placeholder="1"
         />
         <Input
           id="unit-info-s"
@@ -181,6 +189,7 @@ export const AddStatsAndAttributes: React.FC<AddStatsAndAttributesProps> = ({
           className="side-drawer-contents__stat-input"
           value={fields.s}
           error={!numberRegex.test(fields.s)}
+          placeholder="2"
         />
       </div>
       <Checkbox
