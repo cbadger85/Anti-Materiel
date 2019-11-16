@@ -20,5 +20,6 @@ jobs:
     - name: Install yarn and test
       run: |
         npm install -g yarn
+        cd anti-materiel-editor
         yarn install
         yarn test
