@@ -5,7 +5,7 @@ import { Header } from './components/Header/Header';
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Header title="Anti-Materiel" />\
+      <Header title="Anti-Materiel" />
       <UnitEditor />
     </div>
   );

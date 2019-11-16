@@ -4,10 +4,12 @@ import { EditorMenu } from '../EditorMenu/EditorMenu';
 
 export const Header: React.FC<HeaderProps> = ({ title }) => {
   return (
-    <header className="header">
-      <h1 className="header__title">{title}</h1>
+    <>
+      <header className="header">
+        <h1 className="header__title">{title}</h1>
+      </header>
       <EditorMenu />
-    </header>
+    </>
   );
 };
 

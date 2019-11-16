@@ -9,6 +9,8 @@ import { mount } from 'enzyme';
 import { Input } from '../../components/Input/Input';
 import React, { useEffect } from 'react';
 
+// TODO write tests for validation
+
 describe('useForm', () => {
   describe('useForm state', () => {
     describe('updateFieldsInForm', () => {
@@ -33,9 +35,9 @@ describe('useForm', () => {
     describe('loadFieldsInForm', () => {
       it('should create the correct loadFieldsInForm action', () => {
         const newState = {
-          field1: 'field1',
-          field2: ['field2a', 'field2b'],
-          field3: false,
+          field1: { value: 'field1' },
+          field2: { value: ['field2a', 'field2b'] },
+          field3: { value: false },
         };
 
         const action = loadFieldsInForm(newState);
@@ -53,9 +55,9 @@ describe('useForm', () => {
 
     describe('form reducer', () => {
       const initialState = {
-        field1: 'field1',
-        field2: ['field2a', 'field2b'],
-        field3: false,
+        field1: { value: 'field1' },
+        field2: { value: ['field2a', 'field2b'] },
+        field3: { value: false },
       };
 
       it('should update only one field when a updateFieldsInForm action is provided', () => {
@@ -65,9 +67,9 @@ describe('useForm', () => {
         );
 
         const expectedState = {
-          field1: 'field1',
-          field2: ['field2a', 'field2b'],
-          field3: true,
+          field1: { value: 'field1' },
+          field2: { value: ['field2a', 'field2b'] },
+          field3: { value: true },
         };
 
         expect(newState).toEqual(expectedState);
@@ -75,8 +77,8 @@ describe('useForm', () => {
 
       it('should update all fields when loadFieldsInForm action is procided', () => {
         const newFieldsData = {
-          field1: 'field1 data',
-          field3: true,
+          field1: { value: 'field1 data' },
+          field3: { value: true },
         };
 
         const newState = formReducer(
@@ -85,9 +87,9 @@ describe('useForm', () => {
         );
 
         const expectedState = {
-          field1: 'field1 data',
-          field2: ['field2a', 'field2b'],
-          field3: true,
+          field1: { value: 'field1 data' },
+          field2: { value: ['field2a', 'field2b'] },
+          field3: { value: true },
         };
 
         expect(newState).toEqual(expectedState);
@@ -96,23 +98,23 @@ describe('useForm', () => {
   });
 
   describe('useForm hook', () => {
-    let formState: any = null;
+    let inputField: any = null;
 
     const Dummy = () => {
-      const { state, onChangeInput, onLoadFormState } = useForm({
+      const { fields, onChangeInput, loadFormState } = useForm({
         field1: '',
       });
 
       useEffect(() => {
-        onLoadFormState({ field1: 'foo' });
+        loadFormState({ field1: 'foo' });
       }, []);
 
-      formState = state;
+      inputField = fields;
 
       return (
         <Input
           onChange={onChangeInput}
-          value={state.field1}
+          value={fields.field1}
           name="field1"
           label="Field 1"
         />
@@ -122,9 +124,9 @@ describe('useForm', () => {
     it('should load the new form data into state', () => {
       mount(<Dummy />);
 
-      const expectedFormState = { field1: 'foo' };
+      const expectedInput = { field1: 'foo' };
 
-      expect(formState).toEqual(expectedFormState);
+      expect(inputField).toEqual(expectedInput);
     });
 
     it('should update state when the input changes', () => {
@@ -134,9 +136,9 @@ describe('useForm', () => {
         .find('input')
         .simulate('change', { target: { value: 'bar', name: 'field1' } });
 
-      const expectedFormState = { field1: 'bar' };
+      const expectedInput = { field1: 'bar' };
 
-      expect(formState).toEqual(expectedFormState);
+      expect(inputField).toEqual(expectedInput);
     });
   });
 });
