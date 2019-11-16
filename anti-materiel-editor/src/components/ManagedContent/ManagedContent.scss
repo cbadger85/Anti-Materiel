@@ -1,0 +1,23 @@
+@import '../../styles/colors';
+
+.managed-content__container {
+  margin: 0 0 2rem 0;
+}
+
+.managed-content__title {
+  font-size: 1.2rem;
+  display: inline-block;
+  padding-right: 1.25rem;
+  border-bottom: 1px solid $neutral-4;
+  color: $neutral-4;
+  border-bottom-color: $primary-cyan-5;
+  margin: 0 0 1rem 0;
+}
+
+.managed-content__content {
+  // TODO style stuff here
+}
+
+.managed-content__button-container {
+  margin: 1rem auto;
+}

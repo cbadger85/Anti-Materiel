@@ -1,17 +1,21 @@
 import React from 'react';
-import { Header } from '../../components/Header/Header';
-import './UnitEditor.scss';
-import { UnitInfo } from './UnitInfo';
-import { StatsAndAttributes } from './StatsAndAttributes';
+import { MasterPage } from '../../components/MasterPage/MasterPage';
+import { StatsAndAttributes } from './StatsAndAttributes/StatsAndAttributes';
+import { UnitInfo } from './UnitInfo/UnitInfo';
 
 export const UnitEditor = () => {
   return (
     <>
-      <Header title="Anti-Materiel" subtitle="Unit Editor" />
-      <main>
-        <UnitInfo />
-        <StatsAndAttributes />
-      </main>
+      <MasterPage
+        pageTitle="Unit Editor"
+        sidePanelContent={() => null}
+        mainContent={() => (
+          <>
+            <UnitInfo />
+            <StatsAndAttributes />
+          </>
+        )}
+      />
     </>
   );
 };

@@ -1,2 +1,2 @@
-export const getClasses = (...args: (string | boolean | undefined)[]): string =>
+export const getClasses = (...args: unknown[]): string =>
   args.filter(arg => typeof arg === 'string' && !!arg.trim()).join(' ');

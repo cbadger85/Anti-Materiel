@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
-import { Button } from '../../components/Button/Button';
-import { Input } from '../../components/Input/Input';
-import { Select } from '../../components/Select/Select';
-import { useForm } from '../../hooks/useForm';
-import { sectorialSelectOptions } from './addUnitInfoFormOptions';
+import React from 'react';
 import {
-  DropResult,
   DragDropContext,
-  Droppable,
   Draggable,
+  Droppable,
+  DropResult,
 } from 'react-beautiful-dnd';
+import { Button } from '../../../components/Button/Button';
+import { Input } from '../../../components/Input/Input';
+import { Select } from '../../../components/Select/Select';
+import { useForm } from '../../../hooks/useForm';
+import { sectorialSelectOptions } from '../UnitInfo/UnitInfoFormOptions';
+import { AddIcon } from '../../../components/Icons';
 
 const AvaListItem: React.FC<AvaListItemProps> = ({
   item,
@@ -52,12 +53,13 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
   updateAvaList,
   ava,
 }) => {
-  const { onChangeInput, fields, loadFormState, isValid } = useForm({
+  const { onChangeInput, fields, loadFormState } = useForm({
     ava: '',
     sectorial: '',
   });
 
   const avaRegex = new RegExp(/[1-9]|[tT]/);
+  const addButtonDisabled = !fields.ava.trim() || !avaRegex.test(fields.ava);
 
   const handleAddUnitAva = () => {
     addUnitAva(fields);
@@ -112,9 +114,11 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
         <Button
           color="secondary"
           onClick={handleAddUnitAva}
-          disabled={!fields.ava.trim() || !avaRegex.test(fields.ava)}
+          disabled={addButtonDisabled}
+          width="100%"
         >
-          Add AVA
+          <AddIcon color={addButtonDisabled ? 'disabled' : 'secondary'} />
+          <span>Add AVA</span>
         </Button>
       </div>
       <DragDropContext onDragEnd={handleOnDragEnd}>

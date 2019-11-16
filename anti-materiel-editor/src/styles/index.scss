@@ -13,7 +13,6 @@ html {
 }
 
 body {
-  padding: 2rem 25rem;
   box-sizing: border-box;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -22,6 +21,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: $neutral-0;
 }
+
+// .App {
+//   // min-height: 75vh;
+//   height: 75vh;
+// }
 
 .icon {
   fill: $neutral-1;
@@ -37,4 +41,8 @@ body {
 
 .icon--transparent {
   fill: $supporting-pink-0;
+}
+
+.icon--disabled {
+  fill: $neutral-4;
 }

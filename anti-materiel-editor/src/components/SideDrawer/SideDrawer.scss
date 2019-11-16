@@ -2,7 +2,7 @@
 
 .side-drawer__container {
   position: fixed;
-  width: 20rem; //add breakpoint that makes this full screen on smaller screen sizes.
+  width: 21.5rem; // TODO: add breakpoint that makes this full screen on smaller screen sizes.
   right: 0;
   top: 0;
   bottom: 0;
@@ -10,6 +10,8 @@
   background: $neutral-2;
   z-index: 10;
   overflow-y: scroll;
+  box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.19),
+    -6px 10px 14px rgba(0, 0, 0, 0.23);
 }
 
 .side-drawer__opaque-background {

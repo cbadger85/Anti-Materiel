@@ -1,4 +1,4 @@
-import { ImpetuousType, CubeType } from '../../types/antiMaterielTypes';
+import { ImpetuousType, CubeType } from '../../../types/antiMaterielTypes';
 
 export const impetuousTypeOptions = [
   {

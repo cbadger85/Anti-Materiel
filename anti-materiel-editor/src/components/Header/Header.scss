@@ -2,21 +2,18 @@
 
 .header {
   margin-bottom: 2rem;
+  padding: 2rem;
+  padding-bottom: 0;
+  background-color: $neutral-1;
+  box-shadow: 0 3px 6px #00000029, 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .header__title {
-  color: $neutral-4;
+  color: $primary-cyan-7;
   margin: 0;
   padding-right: 1.5rem;
   line-height: 1;
   font-size: 2rem;
   display: inline-block;
   border-bottom: 1px solid $supporting-pink-5;
-}
-
-.header__subtitle {
-  color: $primary-cyan-7;
-  margin: 0;
-  line-height: 1;
-  font-size: 1.6rem;
 }

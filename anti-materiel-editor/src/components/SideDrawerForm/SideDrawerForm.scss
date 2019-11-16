@@ -1,0 +1,34 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+
+.side-drawer-form__container {
+  width: 100%;
+  min-height: calc(100vh - 3rem);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-drawer-form__heading {
+  font-size: 1.2rem;
+  color: $neutral-8;
+  display: inline-block;
+  padding-right: 1.25rem;
+  border-bottom: 1px solid $supporting-pink-7;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.side-drawer-form-button-container {
+  display: flex;
+  justify-content: space-between;
+
+  button:first-of-type {
+    margin-left: 0;
+  }
+
+  button:last-of-type {
+    margin-right: 0;
+  }
+}
