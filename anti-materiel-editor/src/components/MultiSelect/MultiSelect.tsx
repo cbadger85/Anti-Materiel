@@ -3,6 +3,7 @@ import { DragDropContext, DropResult } from 'react-beautiful-dnd';
 import { Select } from '../Select/Select';
 import './MultiSelect.scss';
 import { MultiSelectItemContainer } from './MultiSelectItemContainer';
+import { getClasses } from '../../utils/getClasses';
 
 export const MultiSelect: React.FC<MultiSelectInputProps> = ({
   name,
@@ -49,7 +50,7 @@ export const MultiSelect: React.FC<MultiSelectInputProps> = ({
   };
 
   return (
-    <div className={className}>
+    <div className={getClasses(className)}>
       <Select
         name={name}
         id={id}

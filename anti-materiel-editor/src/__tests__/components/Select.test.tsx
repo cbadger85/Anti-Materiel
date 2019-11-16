@@ -4,9 +4,6 @@ import ReactSelect from 'react-select';
 import { Select } from '../../components/Select/Select';
 
 describe('<Select />', () => {
-  let fieldName = '';
-  let fieldValue = '';
-
   const name = 'field1';
   const label = 'Select';
   const options = [
@@ -20,20 +17,24 @@ describe('<Select />', () => {
     },
   ];
 
-  const wrapper = mount(
-    <Select
-      classNamePrefix="list"
-      name={name}
-      label={label}
-      option={options}
-      onChange={(name, value) => {
-        fieldName = name;
-        fieldValue = value;
-      }}
-    />,
-  );
-
   it('should provide the name and value of the input in the onChange callback', () => {
+    let fieldName = '';
+    let fieldValue = '';
+
+    const wrapper = mount(
+      <Select
+        classNamePrefix="list"
+        name={name}
+        label={label}
+        option={options}
+        onChange={(name, value) => {
+          fieldName = name;
+          fieldValue = value;
+        }}
+        selectedValue={fieldValue}
+      />,
+    );
+
     const expectedValue = '1';
 
     wrapper
@@ -52,15 +53,41 @@ describe('<Select />', () => {
         name={name}
         label={label}
         option={options}
-        onChange={(name, value) => {
-          fieldName = name;
-          fieldValue = value;
-        }}
+        onChange={() => jest.fn()}
       />,
     );
 
     const labelText = shallowWrapper.find('span').text();
 
     expect(labelText).toBe(label);
+  });
+
+  it('should display the error state when the input is invalid', () => {
+    let fieldName = '';
+    let fieldValue = '';
+
+    const wrapper = mount(
+      <Select
+        classNamePrefix="list"
+        name={name}
+        label={label}
+        option={options}
+        onChange={(name, value) => {
+          fieldName = name;
+          fieldValue = value;
+        }}
+        value={fieldValue}
+        error
+      />,
+    );
+
+    wrapper
+      .find(ReactSelect)
+      .props()
+      .onChange({ value: '1' });
+
+    const error = wrapper.find('.__error');
+
+    expect(error).toHaveLength(1);
   });
 });

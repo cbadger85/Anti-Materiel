@@ -132,4 +132,47 @@ describe('<MultiSelect />', () => {
     expect(fieldValue).toEqual(expectedValue);
     expect(fieldName).toBe(name);
   });
+
+  it('should display the error state when the input is invalid', () => {
+    let fieldName = '';
+    let fieldValue = [''];
+
+    const name = 'field1';
+    const label = 'Select';
+    const options = [
+      {
+        label: 'option1',
+        value: '1',
+      },
+      {
+        label: 'option2',
+        value: '2',
+      },
+    ];
+
+    const list = ['1', '2'];
+
+    const wrapper = mount(
+      <MultiSelect
+        name={name}
+        label={label}
+        options={options}
+        list={list}
+        onChange={(name, value) => {
+          fieldName = name;
+          fieldValue = value;
+        }}
+        error
+      />,
+    );
+
+    wrapper
+      .find('button')
+      .first()
+      .simulate('click');
+
+    const error = wrapper.find('.__error');
+
+    expect(error).toHaveLength(1);
+  });
 });
