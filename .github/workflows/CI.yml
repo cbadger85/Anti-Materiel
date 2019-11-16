@@ -20,13 +20,15 @@ jobs:
 
       - name: Install yarn and test editor
         run: |
+          echo Running CI test on the editor...
           npm install -g yarn
           cd anti-materiel-editor
           yarn install
           yarn ci
 
-      - name: Install yarn and test editor
+      - name: Install yarn and test app
         run: |
+          echo Running CI test on the app...
           npm install -g yarn
           cd anti-materiel-app
           yarn install
