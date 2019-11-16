@@ -1,45 +1,8 @@
 import React, { useEffect } from 'react';
-import {
-  DragDropContext,
-  Droppable,
-  Draggable,
-  DropResult,
-} from 'react-beautiful-dnd';
-import { Button } from '../Button/Button';
+import { DragDropContext, DropResult } from 'react-beautiful-dnd';
 import { Select } from '../Select/Select';
 import './MultiSelect.scss';
-
-const ListItem: React.FC<ListItemProps> = ({
-  item,
-  removeListItem,
-  id,
-  index,
-}) => {
-  return (
-    <Draggable draggableId={id} index={index}>
-      {provided => (
-        <div
-          className="list-item"
-          {...provided.draggableProps}
-          {...provided.dragHandleProps}
-          ref={provided.innerRef}
-        >
-          <span>{item}</span>
-          <Button color="delete-dark" onClick={() => removeListItem(item)}>
-            <span className="list-item__delete-icon">×</span>
-          </Button>
-        </div>
-      )}
-    </Draggable>
-  );
-};
-
-interface ListItemProps {
-  item: string;
-  removeListItem: (item: string) => void;
-  id: string;
-  index: number;
-}
+import { MultiSelectItemContainer } from './MultiSelectItemContainer';
 
 export const MultiSelect: React.FC<MultiSelectInputProps> = ({
   name,
@@ -97,43 +60,10 @@ export const MultiSelect: React.FC<MultiSelectInputProps> = ({
         error={error}
       />
       <DragDropContext onDragEnd={handleOnDragEnd}>
-        {list.length > 0 && (
-          <Droppable
-            droppableId="multi-select-list"
-            renderClone={(provided, snapshot, rubric) => (
-              <div
-                className="list-item"
-                {...provided.draggableProps}
-                {...provided.dragHandleProps}
-                ref={provided.innerRef}
-              >
-                <span>{list[rubric.source.index]}</span>
-                <Button color="delete-dark">
-                  <span className="list-item__delete-icon">×</span>
-                </Button>
-              </div>
-            )}
-          >
-            {provided => (
-              <div
-                className="list-items__container"
-                ref={provided.innerRef}
-                {...provided.droppableProps}
-              >
-                {list.map((listItem, i) => (
-                  <ListItem
-                    key={listItem}
-                    id={listItem}
-                    index={i}
-                    item={listItem}
-                    removeListItem={handleRemoveListItem}
-                  />
-                ))}
-                {provided.placeholder}
-              </div>
-            )}
-          </Droppable>
-        )}
+        <MultiSelectItemContainer
+          list={list}
+          removeListItem={handleRemoveListItem}
+        />
       </DragDropContext>
     </div>
   );

@@ -8,7 +8,7 @@ import {
   cubeTypeOptions,
   impetuousTypeOptions,
 } from './StatsAndAttributesFormOptions';
-import { AddUnitAVA } from './AddUnitAVA';
+import { AddUnitAVA } from './AddUnitAva/AddUnitAVA';
 import './StatsAndAttributesForm.scss';
 
 export const AddStatsAndAttributes: React.FC<AddStatsAndAttributesProps> = ({
