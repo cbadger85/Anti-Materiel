@@ -19,6 +19,6 @@ export const ToggleContent: React.FC<ToggleContentProps> = ({
 
 interface ToggleContentProps {
   toggle: (show: () => void) => React.ReactNode;
-  content: (isShown: boolean, show: () => void) => React.ReactNode;
+  content: (isShown: boolean, hide: () => void) => React.ReactNode;
   handleMount?: boolean;
 }
