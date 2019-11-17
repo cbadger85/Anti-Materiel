@@ -1,7 +1,6 @@
 export enum FormActionTypes {
   UPDATE,
   LOAD_DATA,
-  VALIDATE_FIELD,
 }
 
 export interface UpdateAction {
@@ -14,14 +13,8 @@ export interface LoadDataAction<T, K extends keyof T> {
   payload: { data: FormState<T, K> };
 }
 
-export interface ValidateFieldAction {
-  type: FormActionTypes.VALIDATE_FIELD;
-  payload: { key: string; isInvalid?: boolean };
-}
-
 export type FormAction<T, K extends keyof T> =
   | UpdateAction
-  | ValidateFieldAction
   | LoadDataAction<T, K>;
 
 export type FormValue = string | string[] | boolean;
@@ -46,7 +39,6 @@ export type FormReducer<T, K extends keyof T> = (
 
 export interface UseFormReturn<T, K extends keyof T> {
   onChangeInput: (key: string, value: FormValue) => void;
-  validateField: (key: string, isInvalid?: boolean) => void;
   loadFormState: (fields: FormFields<T>) => void;
   fields: FormFields<T>;
   isValid: boolean;

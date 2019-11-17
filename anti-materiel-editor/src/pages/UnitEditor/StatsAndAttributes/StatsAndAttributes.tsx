@@ -1,6 +1,6 @@
 import React from 'react';
 import { ManagedContent } from '../../../components/ManagedContent/ManagedContent';
-import { AddStatsAndAttributes } from './StatsAndAttributesForm';
+import { StatsAndAttributesForm } from './StatsAndAttributesForm';
 
 export const StatsAndAttributes: React.FC = () => {
   return (
@@ -8,7 +8,10 @@ export const StatsAndAttributes: React.FC = () => {
       title="Stats and Attributes"
       content={() => null}
       form={hideSideBar => (
-        <AddStatsAndAttributes closeSideDrawer={hideSideBar} />
+        <StatsAndAttributesForm
+          closeSideDrawer={hideSideBar}
+          onSubmit={data => console.log(data)}
+        />
       )}
     />
   );
