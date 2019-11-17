@@ -31,12 +31,11 @@ export const AvaListItemContainer: React.FC<AvaListItemContainerProps> = ({
             <span className="list-item-ava__ava">
               {ava[rubric.source.index].ava}
             </span>
-            <Button
-              color="delete-dark"
-              className="list-item-ava__delete-button"
-            >
-              <span className="list-item__delete-icon">×</span>
-            </Button>
+            <div className="list-item-ava__delete-button">
+              <Button color="delete-dark">
+                <span className="list-item__delete-icon">×</span>
+              </Button>
+            </div>
           </div>
         )}
       >

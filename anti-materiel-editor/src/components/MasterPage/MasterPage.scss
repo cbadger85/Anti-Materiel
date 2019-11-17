@@ -17,10 +17,14 @@
   height: inherit;
   display: flex;
   padding: 2rem;
+  margin: auto;
+  justify-content: center;
+  overflow-x: scroll;
+  width: 100%;
 
   .side-panel {
     background-color: white;
-    flex: 1;
+    flex: 0 0 18rem;
     margin: 0 1rem;
     overflow-y: scroll;
     border-radius: 4px;
@@ -30,7 +34,7 @@
 
   .editor {
     order: 1;
-    flex: 3;
+    flex: 6;
     background-color: white;
     border-radius: 4px;
     padding: 0.5rem 1rem;
@@ -41,9 +45,16 @@
   }
 
   .page-content__spacer {
+    content: '';
     order: 2;
-    flex: 1;
+    flex: 0 0 18rem;
     height: 100%;
     margin: 0 1rem;
+  }
+}
+
+@media (max-width: 1450px) {
+  .page-content__spacer {
+    display: none;
   }
 }
