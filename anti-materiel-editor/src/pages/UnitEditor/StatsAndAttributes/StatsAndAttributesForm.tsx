@@ -47,10 +47,6 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
     ava: string;
     sectorial: string;
   }): void => {
-    if (!availability.ava || !availability.sectorial) {
-      return;
-    }
-
     const avaAlreadyAdded = ava.find(
       unitAva => unitAva.sectorial === availability.sectorial,
     );

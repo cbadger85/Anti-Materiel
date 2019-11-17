@@ -60,7 +60,61 @@ describe('<AddUnitAva />', () => {
         .simulate('click');
     });
 
-    expect(addUnitAva).toHaveBeenCalled();
+    expect(addUnitAva).toHaveBeenCalledWith({
+      sectorial: 'Panoceania',
+      ava: 'T',
+    });
+  });
+
+  it('should show the ava header if items are present', () => {
+    const wrapper = mount(
+      <AddUnitAVA
+        addUnitAva={jest.fn}
+        removeUnitAva={jest.fn}
+        updateAvaList={jest.fn}
+        ava={[{ sectorial: 'Panoceania', ava: 'T' }]}
+      />,
+    );
+
+    const sectorialHeader = wrapper.find(
+      '.list-item-header .list-item-ava__sectorial',
+    );
+    const avaHeader = wrapper.find('.list-item-header .list-item-ava__ava');
+
+    expect(sectorialHeader.text()).toBe('Sectorial');
+    expect(avaHeader.text()).toBe('AVA');
+  });
+
+  it('should not show the ava header if no items are present', () => {
+    const wrapper = mount(
+      <AddUnitAVA
+        addUnitAva={jest.fn}
+        removeUnitAva={jest.fn}
+        updateAvaList={jest.fn}
+        ava={[]}
+      />,
+    );
+
+    const listItemHeader = wrapper.find('.list-item-header');
+
+    expect(listItemHeader).toHaveLength(0);
+  });
+
+  it('should show list items that are passed in', () => {
+    const wrapper = mount(
+      <AddUnitAVA
+        addUnitAva={jest.fn}
+        removeUnitAva={jest.fn}
+        updateAvaList={jest.fn}
+        ava={[{ sectorial: 'Panoceania', ava: 'T' }]}
+      />,
+    );
+
+    const sectorial = wrapper.find('.list-item-ava__sectorial').last();
+    const ava = wrapper.find('.list-item-ava__ava').last();
+
+    expect(sectorial.text()).toBe('Panoceania');
+    expect(ava.text()).toBe('T');
   });
 
   it('should delete an item when the delete button is pressed', () => {
