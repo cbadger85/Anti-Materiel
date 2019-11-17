@@ -26,7 +26,7 @@ describe('<StatsAndAttributesForm />', () => {
 
     const wrapper = mount(
       <StatsAndAttributesForm
-        onSubmit={() => onSubmit()}
+        onSubmit={onSubmit}
         closeSideDrawer={jest.fn}
         initialData={initialData}
       />,
@@ -37,7 +37,7 @@ describe('<StatsAndAttributesForm />', () => {
       .last()
       .simulate('click');
 
-    expect(onSubmit).toBeCalled();
+    expect(onSubmit).toBeCalledWith(initialData);
   });
 
   it('should call closeSideDrawer() when cancel is pressed', () => {

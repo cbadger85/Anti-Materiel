@@ -36,7 +36,7 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
     structure: initialData ? initialData.structure : false,
   });
   const [ava, setAva] = useState<{ ava: string; sectorial: string }[]>(
-    initialData ? initialData.ava : [],
+    initialData && initialData.ava.length ? initialData.ava : [],
   );
 
   const movRegex = new RegExp(/^([0-9]-[0-9])*$/);
@@ -81,10 +81,14 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
     return btsNum % 3 === 0;
   };
 
+  const handleOnSubmit = (): void => {
+    onSubmit({ ...fields, ava: [...ava] });
+  };
+
   return (
     <SideDrawerForm
       title="Add Unit Stats and Attributes"
-      onSubmit={() => onSubmit({ ...fields, ava: [...ava] })}
+      onSubmit={handleOnSubmit}
       disableSubmit={!isValid || !ava.length}
       onCancel={closeSideDrawer}
     >

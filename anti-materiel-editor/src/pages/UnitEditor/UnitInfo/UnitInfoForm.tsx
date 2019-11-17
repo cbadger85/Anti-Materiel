@@ -11,26 +11,31 @@ import {
   unitClassificationSelectOptions,
   unitTypeSelectOptions,
 } from './UnitInfoFormOptions';
+import { UnitInfoData } from './UnitInfoTypes';
 
-export const AddUnitInfo: React.FC<AddUnitInfoProps> = ({
+export const UnitInfoForm: React.FC<UnitInfoFormProps> = ({
   closeSideDrawer,
+  onSubmit,
+  initialData,
 }) => {
   const { onChangeInput, fields, isValid } = useForm({
-    name: '',
-    isc: '',
-    description: '',
-    type: '',
-    classification: '',
-    sectorial: [],
+    name: initialData ? initialData.name : '',
+    isc: initialData ? initialData.isc : '',
+    description: initialData ? initialData.description : '',
+    type: initialData ? initialData.type : '',
+    classification: initialData ? initialData.classification : '',
+    sectorial:
+      initialData && initialData.sectorial.length ? initialData.sectorial : [],
   });
 
   const handleOnSubmit = (): void => {
     const updatedFields = {
       ...fields,
       unitSvgName: kebabCase(fields.name),
-      id: uuid(),
+      id: initialData && initialData.id ? initialData.id : uuid(),
     };
-    console.log(updatedFields);
+
+    onSubmit(updatedFields);
   };
 
   return (
@@ -97,6 +102,8 @@ export const AddUnitInfo: React.FC<AddUnitInfoProps> = ({
   );
 };
 
-interface AddUnitInfoProps {
+interface UnitInfoFormProps {
   closeSideDrawer: () => void;
+  onSubmit: (data: UnitInfoData) => void;
+  initialData?: UnitInfoData;
 }
