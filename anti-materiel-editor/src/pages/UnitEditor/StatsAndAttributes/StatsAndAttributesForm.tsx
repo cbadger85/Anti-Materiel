@@ -12,6 +12,16 @@ import { AddUnitAVA } from './AddUnitAva/AddUnitAVA';
 import './StatsAndAttributesForm.scss';
 import { StatsAndAttributesFormData } from './StatsAndAttributesTypes';
 
+export const isBTS = (bts: string): boolean => {
+  const btsNum = parseInt(bts, 10);
+
+  return btsNum % 3 === 0;
+};
+
+export const movRegex = new RegExp(/^([0-9]-[0-9])*$/);
+
+export const numberRegex = new RegExp(/^[0-9]*$/);
+
 export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
   closeSideDrawer,
   onCancel,
@@ -39,10 +49,6 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
   const [ava, setAva] = useState<{ ava: string; sectorial: string }[]>(
     initialData && initialData.ava.length ? initialData.ava : [],
   );
-
-  const movRegex = new RegExp(/^([0-9]-[0-9])*$/);
-
-  const numberRegex = new RegExp(/^[0-9]*$/);
 
   const addUnitAva = (availability: {
     ava: string;
@@ -74,12 +80,6 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
     newAva: { ava: string; sectorial: string }[],
   ): void => {
     setAva(newAva);
-  };
-
-  const isBTS = (bts: string): boolean => {
-    const btsNum = parseInt(bts, 10);
-
-    return btsNum % 3 === 0;
   };
 
   const handleOnSubmit = (): void => {
@@ -114,7 +114,7 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
           width={statInputWidth}
           className="side-drawer-contents__stat-input"
           value={fields.cc}
-          error={!numberRegex.test(fields.cc)}
+          error={!numberRegex.test(fields.cc) || !fields.cc.trim()}
           placeholder="13"
         />
         <Input
