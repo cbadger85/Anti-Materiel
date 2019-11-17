@@ -18,14 +18,15 @@ export const AvaListItem: React.FC<AvaListItemProps> = ({
         >
           <span className="list-item-ava__sectorial">{item.sectorial}</span>
           <span className="list-item-ava__ava">{item.ava}</span>
-          <Button
-            className="list-item-ava__delete-button"
-            id="ava-list-item-delete"
-            color="delete-dark"
-            onClick={() => removeListItem(item)}
-          >
-            <span className="list-item__delete-icon">×</span>
-          </Button>
+          <div className="list-item-ava__delete-button">
+            <Button
+              id="ava-list-item-delete"
+              color="delete-dark"
+              onClick={() => removeListItem(item)}
+            >
+              <span className="list-item__delete-icon">×</span>
+            </Button>
+          </div>
         </div>
       )}
     </Draggable>
