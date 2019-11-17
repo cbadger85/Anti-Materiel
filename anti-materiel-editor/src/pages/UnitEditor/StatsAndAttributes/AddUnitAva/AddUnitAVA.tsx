@@ -8,6 +8,7 @@ import { useForm } from '../../../../hooks/useForm';
 import { sectorialSelectOptions } from '../../UnitInfo/UnitInfoFormOptions';
 import './AddUnitAva.scss';
 import { AvaListItemContainer } from './AvaListItemContainer';
+import { move } from '../../../../utils/move';
 
 export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
   addUnitAva,
@@ -33,22 +34,13 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
   };
 
   const handleOnDragEnd = (result: DropResult): void => {
-    const { destination, source, draggableId } = result;
+    const { destination, source } = result;
 
     if (!destination) {
       return;
     }
 
-    const newAva = [...ava];
-
-    const movedAva = ava.find(item => item.sectorial === draggableId);
-
-    if (!movedAva) {
-      return;
-    }
-
-    newAva.splice(source.index, 1);
-    newAva.splice(destination.index, 0, movedAva);
+    const newAva = move(ava, source.index, destination.index);
 
     updateAvaList(newAva);
   };

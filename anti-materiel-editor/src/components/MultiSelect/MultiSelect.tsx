@@ -4,6 +4,7 @@ import { Select } from '../Select/Select';
 import './MultiSelect.scss';
 import { MultiSelectItemContainer } from './MultiSelectItemContainer';
 import { getClasses } from '../../utils/getClasses';
+import { move } from '../../utils/move';
 
 export const MultiSelect: React.FC<MultiSelectInputProps> = ({
   name,
@@ -35,16 +36,18 @@ export const MultiSelect: React.FC<MultiSelectInputProps> = ({
   };
 
   const handleOnDragEnd = (result: DropResult): void => {
-    const { destination, source, draggableId } = result;
+    const { destination, source } = result;
 
     if (!destination) {
       return;
     }
 
-    const newList = [...list];
+    // const newList = [...list];
 
-    newList.splice(source.index, 1);
-    newList.splice(destination.index, 0, draggableId);
+    // newList.splice(source.index, 1);
+    // newList.splice(destination.index, 0, draggableId);
+
+    const newList = move(list, source.index, destination.index);
 
     onChange(name, newList, error);
   };
