@@ -16,6 +16,7 @@ import { UnitInfoData } from './UnitInfoTypes';
 export const UnitInfoForm: React.FC<UnitInfoFormProps> = ({
   closeSideDrawer,
   onSubmit,
+  onCancel,
   initialData,
 }) => {
   const { onChangeInput, fields, isValid } = useForm({
@@ -36,13 +37,14 @@ export const UnitInfoForm: React.FC<UnitInfoFormProps> = ({
     };
 
     onSubmit(updatedFields);
+    closeSideDrawer();
   };
 
   return (
     <SideDrawerForm
       title="Add Unit Info"
       onSubmit={handleOnSubmit}
-      onCancel={closeSideDrawer}
+      onCancel={onCancel}
       disableSubmit={!isValid}
     >
       <Input
@@ -78,7 +80,6 @@ export const UnitInfoForm: React.FC<UnitInfoFormProps> = ({
         options={unitTypeSelectOptions}
         onChange={onChangeInput}
         selectedValue={fields.type}
-        error={!fields.type.trim()}
       />
       <Select
         id="unit-info-classification"
@@ -104,6 +105,7 @@ export const UnitInfoForm: React.FC<UnitInfoFormProps> = ({
 
 interface UnitInfoFormProps {
   closeSideDrawer: () => void;
+  onCancel: () => void;
   onSubmit: (data: UnitInfoData) => void;
   initialData?: UnitInfoData;
 }

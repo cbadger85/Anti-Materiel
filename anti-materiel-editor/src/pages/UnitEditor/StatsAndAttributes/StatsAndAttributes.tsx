@@ -7,10 +7,11 @@ export const StatsAndAttributes: React.FC = () => {
     <ManagedContent
       title="Stats and Attributes"
       content={() => null}
-      form={hideSideBar => (
+      form={(hideSideDrawer, hideSideDrawerWarn) => (
         <StatsAndAttributesForm
-          closeSideDrawer={hideSideBar}
+          closeSideDrawer={hideSideDrawer}
           onSubmit={data => console.log(data)}
+          onCancel={hideSideDrawerWarn}
         />
       )}
     />

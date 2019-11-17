@@ -14,6 +14,7 @@ import { StatsAndAttributesFormData } from './StatsAndAttributesTypes';
 
 export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
   closeSideDrawer,
+  onCancel,
   onSubmit,
   initialData,
 }) => {
@@ -83,6 +84,7 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
 
   const handleOnSubmit = (): void => {
     onSubmit({ ...fields, ava: [...ava] });
+    closeSideDrawer();
   };
 
   return (
@@ -90,7 +92,7 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
       title="Add Unit Stats and Attributes"
       onSubmit={handleOnSubmit}
       disableSubmit={!isValid || !ava.length}
-      onCancel={closeSideDrawer}
+      onCancel={onCancel}
     >
       <div className="side-drawer-contents__stat-input-row side-drawer-contents__stat-input-row--first">
         <Input
@@ -252,6 +254,7 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
 
 interface StatsAndAttributesFormProps {
   closeSideDrawer: () => void;
+  onCancel: () => void;
   onSubmit: (data: StatsAndAttributesFormData) => void;
   initialData?: StatsAndAttributesFormData;
 }

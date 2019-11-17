@@ -49,7 +49,7 @@ export const ManagedContent: React.FC<ManagedContentProps> = ({
             isOpen={isShown}
             closeSideDrawer={() => handleCancel(hide)}
           >
-            {form(() => handleCancel(hide))}
+            {form(hide, () => handleCancel(hide))}
           </SideDrawer>
         )}
       />
@@ -62,5 +62,8 @@ interface ManagedContentProps {
   warn?: boolean;
   edit?: boolean;
   content: () => React.ReactNode;
-  form: (closeSideDrawer: () => void) => React.ReactNode;
+  form: (
+    closeSideDrawer: () => void,
+    closeSideDrawerWarn: () => void,
+  ) => React.ReactNode;
 }

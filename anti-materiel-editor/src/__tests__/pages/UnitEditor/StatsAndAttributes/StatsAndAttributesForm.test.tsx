@@ -3,7 +3,7 @@ import React from 'react';
 import { StatsAndAttributesForm } from '../../../../pages/UnitEditor/StatsAndAttributes/StatsAndAttributesForm';
 
 describe('<StatsAndAttributesForm />', () => {
-  it('should allow submit if the data is correct', () => {
+  describe('onSubmit', () => {
     const initialData = {
       impetuous: true,
       impetuousType: 'FRENZY',
@@ -23,12 +23,14 @@ describe('<StatsAndAttributesForm />', () => {
     };
 
     const onSubmit = jest.fn();
+    const closeSideDrawer = jest.fn();
 
     const wrapper = mount(
       <StatsAndAttributesForm
         onSubmit={onSubmit}
-        closeSideDrawer={jest.fn}
+        onCancel={jest.fn}
         initialData={initialData}
+        closeSideDrawer={closeSideDrawer}
       />,
     );
 
@@ -37,16 +39,23 @@ describe('<StatsAndAttributesForm />', () => {
       .last()
       .simulate('click');
 
-    expect(onSubmit).toBeCalledWith(initialData);
+    it('should allow submit if the data is correct', () => {
+      expect(onSubmit).toBeCalledWith(initialData);
+    });
+
+    it('should close the side drawer after submission', () => {
+      expect(closeSideDrawer).toBeCalled();
+    });
   });
 
   it('should call closeSideDrawer() when cancel is pressed', () => {
-    const closeSideDrawer = jest.fn();
+    const onCancel = jest.fn();
 
     const wrapper = mount(
       <StatsAndAttributesForm
         onSubmit={jest.fn}
-        closeSideDrawer={closeSideDrawer}
+        closeSideDrawer={jest.fn}
+        onCancel={onCancel}
       />,
     );
 
@@ -55,7 +64,7 @@ describe('<StatsAndAttributesForm />', () => {
       .last()
       .simulate('click');
 
-    expect(closeSideDrawer).toBeCalled();
+    expect(onCancel).toBeCalled();
   });
 
   it('should have a disabled submit button if the form is invalid', () => {
@@ -84,6 +93,7 @@ describe('<StatsAndAttributesForm />', () => {
         onSubmit={() => onSubmit()}
         closeSideDrawer={jest.fn}
         initialData={initialData}
+        onCancel={jest.fn}
       />,
     );
 
