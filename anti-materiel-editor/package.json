@@ -23,7 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:ci": "CI=true react-scripts test --env=jsdom --verbose --coverage --collectCoverageFrom=src/**/*.tsx",
+    "test:ci": "CI=true react-scripts test --env=jsdom --verbose --coverage --collectCoverageFrom=src/**/*.{ts,tsx}",
     "lint": "eslint './src/**/*.{ts,tsx}'",
     "ci": "yarn lint && yarn test:ci",
     "eject": "react-scripts eject"

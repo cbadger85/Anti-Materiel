@@ -4,18 +4,6 @@ import { mount } from 'enzyme';
 import { Button } from '../../components/Button/Button';
 
 describe('<ToggleContent />', () => {
-  const wrapper = mount(
-    <ToggleContent
-      toggle={show => <Button onClick={show} id="test-1" />}
-      content={(isShown, hide) => (
-        <div id="test-2">
-          <Button onClick={hide} />
-        </div>
-      )}
-      handleMount
-    />,
-  );
-
   it('should not be shown by default', () => {
     const wrapper = mount(
       <ToggleContent
