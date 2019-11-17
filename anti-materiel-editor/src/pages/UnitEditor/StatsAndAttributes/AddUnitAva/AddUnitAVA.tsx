@@ -72,6 +72,7 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
             width="3rem"
             uppercase
             placeholder="T"
+            id="add-ava-input"
           />
         </div>
         <Button
@@ -79,6 +80,7 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
           onClick={handleAddUnitAva}
           disabled={addButtonDisabled}
           width="100%"
+          id="add-unit-ava-button"
         >
           <AddIcon color={addButtonDisabled ? 'disabled' : 'secondary'} />
           <span>Add AVA</span>
