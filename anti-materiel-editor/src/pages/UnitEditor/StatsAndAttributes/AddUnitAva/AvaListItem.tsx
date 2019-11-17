@@ -20,6 +20,7 @@ export const AvaListItem: React.FC<AvaListItemProps> = ({
           <span className="list-item-ava__ava">{item.ava}</span>
           <Button
             className="list-item-ava__delete-button"
+            id="ava-list-item-delete"
             color="delete-dark"
             onClick={() => removeListItem(item)}
           >

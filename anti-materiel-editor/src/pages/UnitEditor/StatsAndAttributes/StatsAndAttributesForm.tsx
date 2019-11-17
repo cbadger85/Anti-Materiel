@@ -10,42 +10,43 @@ import {
 } from './StatsAndAttributesFormOptions';
 import { AddUnitAVA } from './AddUnitAva/AddUnitAVA';
 import './StatsAndAttributesForm.scss';
+import { StatsAndAttributesFormData } from './StatsAndAttributesTypes';
 
-export const AddStatsAndAttributes: React.FC<AddStatsAndAttributesProps> = ({
+export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
   closeSideDrawer,
+  onSubmit,
+  initialData,
 }) => {
   const statInputWidth = '3rem';
 
   const { fields, onChangeInput, isValid } = useForm({
-    impetuous: false,
-    impetuousType: '',
-    cube: false,
-    cubeType: '',
-    mov: '',
-    cc: '',
-    bs: '',
-    ph: '',
-    wip: '',
-    arm: '',
-    bts: '',
-    w: '',
-    s: '',
-    structure: false,
+    impetuous: initialData ? initialData.impetuous : false,
+    impetuousType: initialData ? initialData.impetuousType : '',
+    cube: initialData ? initialData.cube : false,
+    cubeType: initialData ? initialData.cubeType : '',
+    mov: initialData ? initialData.mov : '',
+    cc: initialData ? initialData.cc : '',
+    bs: initialData ? initialData.bs : '',
+    ph: initialData ? initialData.ph : '',
+    wip: initialData ? initialData.wip : '',
+    arm: initialData ? initialData.arm : '',
+    bts: initialData ? initialData.bts : '',
+    w: initialData ? initialData.w : '',
+    s: initialData ? initialData.s : '',
+    structure: initialData ? initialData.structure : false,
   });
-  const [ava, setAva] = useState<{ ava: string; sectorial: string }[]>([]);
+  const [ava, setAva] = useState<{ ava: string; sectorial: string }[]>(
+    initialData && initialData.ava.length ? initialData.ava : [],
+  );
 
-  const movRegex = new RegExp(/([0-9]-[0-9])/);
+  const movRegex = new RegExp(/^([0-9]-[0-9])*$/);
 
-  const numberRegex = new RegExp(/[0-9]/);
+  const numberRegex = new RegExp(/^[0-9]*$/);
 
   const addUnitAva = (availability: {
     ava: string;
     sectorial: string;
   }): void => {
-    if (!availability.ava || !availability.sectorial) {
-      return;
-    }
-
     const avaAlreadyAdded = ava.find(
       unitAva => unitAva.sectorial === availability.sectorial,
     );
@@ -80,10 +81,14 @@ export const AddStatsAndAttributes: React.FC<AddStatsAndAttributesProps> = ({
     return btsNum % 3 === 0;
   };
 
+  const handleOnSubmit = (): void => {
+    onSubmit({ ...fields, ava: [...ava] });
+  };
+
   return (
     <SideDrawerForm
       title="Add Unit Stats and Attributes"
-      onSubmit={() => console.log({ ...fields, ava })}
+      onSubmit={handleOnSubmit}
       disableSubmit={!isValid || !ava.length}
       onCancel={closeSideDrawer}
     >
@@ -245,6 +250,8 @@ export const AddStatsAndAttributes: React.FC<AddStatsAndAttributesProps> = ({
   );
 };
 
-interface AddStatsAndAttributesProps {
+interface StatsAndAttributesFormProps {
   closeSideDrawer: () => void;
+  onSubmit: (data: StatsAndAttributesFormData) => void;
+  initialData?: StatsAndAttributesFormData;
 }

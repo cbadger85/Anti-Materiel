@@ -13,7 +13,6 @@ import {
   LoadDataAction,
   UpdateAction,
   UseFormReturn,
-  ValidateFieldAction,
 } from './useForm.types';
 
 export const formReducer = <T, K extends keyof T>(
@@ -27,14 +26,6 @@ export const formReducer = <T, K extends keyof T>(
         [action.payload.key]: {
           isInvalid: action.payload.isInvalid,
           value: action.payload.value,
-        },
-      };
-    case FormActionTypes.VALIDATE_FIELD:
-      return {
-        ...state,
-        [action.payload.key]: {
-          ...state[action.payload.key],
-          isInvalid: action.payload.isInvalid,
         },
       };
     case FormActionTypes.LOAD_DATA:
@@ -64,14 +55,6 @@ export const updateFieldsInForm = (
 ): UpdateAction => ({
   type: FormActionTypes.UPDATE,
   payload: { key, value, isInvalid },
-});
-
-export const validateFieldsInForm = (
-  key: string,
-  isInvalid?: boolean,
-): ValidateFieldAction => ({
-  type: FormActionTypes.VALIDATE_FIELD,
-  payload: { key, isInvalid },
 });
 
 export const loadFieldsInForm = <T, K extends keyof T>(
@@ -114,12 +97,6 @@ export const useForm = <T, K extends keyof T>(
     [],
   );
 
-  const validateField = useCallback(
-    (key: string, isInvalid?: boolean): void =>
-      dispatch(validateFieldsInForm(key, isInvalid)),
-    [],
-  );
-
   const loadFormState = useCallback((fields: FormFields<T>): void => {
     const state = getStateFromFields(fields);
     dispatch(loadFieldsInForm(state as FormState<T, K>));
@@ -131,7 +108,6 @@ export const useForm = <T, K extends keyof T>(
 
   return {
     onChangeInput,
-    validateField,
     loadFormState,
     fields: fields as FormFields<T>,
     isValid,

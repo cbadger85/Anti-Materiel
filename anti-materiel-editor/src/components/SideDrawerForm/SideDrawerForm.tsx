@@ -16,12 +16,18 @@ export const SideDrawerForm: React.FC<SideDrawerFormProps> = ({
         {children}
       </div>
       <div className="side-drawer-form-button-container">
-        <Button color="transparent-dark" width="7rem" onClick={onCancel}>
+        <Button
+          color="transparent-dark"
+          width="7rem"
+          id="side-drawer-form-cancel"
+          onClick={onCancel}
+        >
           Cancel
         </Button>
         <Button
           color="primary"
           width="7rem"
+          id="side-drawer-form-submit"
           onClick={onSubmit}
           disabled={disableSubmit}
         >
@@ -34,7 +40,7 @@ export const SideDrawerForm: React.FC<SideDrawerFormProps> = ({
 
 interface SideDrawerFormProps {
   title: string;
-  onSubmit: () => void;
+  onSubmit: (data: any) => void;
   disableSubmit?: boolean;
   onCancel: () => void;
 }
