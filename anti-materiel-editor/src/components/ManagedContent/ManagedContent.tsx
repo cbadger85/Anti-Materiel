@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { SideDrawer } from '../../components/SideDrawer/SideDrawer';
 import { Button } from '../Button/Button';
+import { ConfirmModal } from '../Modal/ConfirmModal';
 import { AddIcon, EditIcon } from '../Icons';
-import { Modal } from '../Modal/Modal';
 import './ManagedContent.scss';
 
 export const ManagedContent: React.FC<ManagedContentProps> = ({
-  warn = true,
+  warn,
   edit,
   title,
   content,
@@ -21,7 +21,6 @@ export const ManagedContent: React.FC<ManagedContentProps> = ({
 
   const handleCancel = (): void => {
     if (warn) {
-      console.log('WARNING!');
       setIsModalShown(true);
       return;
     }
@@ -52,26 +51,12 @@ export const ManagedContent: React.FC<ManagedContentProps> = ({
       <SideDrawer isOpen={isSideDrawerOpen} closeSideDrawer={handleCancel}>
         {form(closeSideDrawer, handleCancel)}
       </SideDrawer>
-      <Modal isShown={isModalShown}>
-        Hello World
-        <div>
-          <Button
-            onClick={() => setIsModalShown(false)}
-            color="transparent-light"
-          >
-            Cancel
-          </Button>
-          <Button
-            onClick={() => {
-              setIsSideDrawerOpen(false);
-              setIsModalShown(false);
-            }}
-            color="secondary"
-          >
-            Close
-          </Button>
-        </div>
-      </Modal>
+      <ConfirmModal
+        text="Are you sure you want to discard changes?"
+        closeModal={() => setIsModalShown(false)}
+        confirmAction={closeSideDrawer}
+        isShown={isModalShown}
+      />
     </div>
   );
 };
