@@ -6,11 +6,19 @@ import { act } from 'react-dom/test-utils';
 
 describe('<AddUnitAva />', () => {
   let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
+  let root: any;
+
+  beforeEach(() => {
+    root = document.createElement('div');
+    root.id = 'root';
+    document.body.appendChild(root);
+  });
 
   afterEach(() => {
     if (wrapper && wrapper.length) {
       wrapper.unmount();
     }
+    document.body.removeChild(root);
   });
 
   it('should prevent adding a ava selections if the fields are blank', () => {
@@ -23,6 +31,7 @@ describe('<AddUnitAva />', () => {
         updateAvaList={jest.fn}
         ava={[]}
       />,
+      { attachTo: root },
     );
 
     wrapper
@@ -44,6 +53,7 @@ describe('<AddUnitAva />', () => {
           updateAvaList={jest.fn}
           ava={[]}
         />,
+        { attachTo: root },
       );
     });
 
@@ -80,6 +90,7 @@ describe('<AddUnitAva />', () => {
         updateAvaList={jest.fn}
         ava={[{ sectorial: 'Panoceania', ava: 'T' }]}
       />,
+      { attachTo: root },
     );
 
     const sectorialHeader = wrapper.find(
@@ -99,6 +110,7 @@ describe('<AddUnitAva />', () => {
         updateAvaList={jest.fn}
         ava={[]}
       />,
+      { attachTo: root },
     );
 
     const listItemHeader = wrapper.find('.list-item-header');
@@ -114,6 +126,7 @@ describe('<AddUnitAva />', () => {
         updateAvaList={jest.fn}
         ava={[{ sectorial: 'Panoceania', ava: 'T' }]}
       />,
+      { attachTo: root },
     );
 
     const sectorial = wrapper.find('.list-item-ava__sectorial').last();
@@ -133,6 +146,7 @@ describe('<AddUnitAva />', () => {
         updateAvaList={jest.fn}
         ava={[{ sectorial: 'Panoceania', ava: 'T' }]}
       />,
+      { attachTo: root },
     );
 
     wrapper
