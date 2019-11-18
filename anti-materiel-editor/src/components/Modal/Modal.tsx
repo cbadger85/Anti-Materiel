@@ -20,6 +20,7 @@ export const Modal: React.FC<ModalProps> = ({ children, isShown }) => {
               key={key}
               style={{ opacity: props.opacity }}
               className="modal"
+              id="modal"
             >
               <FocusLock>
                 <animated.div style={props} className="modal-card">
