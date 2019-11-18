@@ -52,7 +52,26 @@ export const ManagedContent: React.FC<ManagedContentProps> = ({
       <SideDrawer isOpen={isSideDrawerOpen} closeSideDrawer={handleCancel}>
         {form(closeSideDrawer, handleCancel)}
       </SideDrawer>
-      <Modal isShown={isModalShown}>Hello World</Modal>
+      <Modal isShown={isModalShown}>
+        Hello World
+        <div>
+          <Button
+            onClick={() => setIsModalShown(false)}
+            color="transparent-light"
+          >
+            Cancel
+          </Button>
+          <Button
+            onClick={() => {
+              setIsSideDrawerOpen(false);
+              setIsModalShown(false);
+            }}
+            color="secondary"
+          >
+            Close
+          </Button>
+        </div>
+      </Modal>
     </div>
   );
 };
