@@ -1,0 +1,47 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 15;
+}
+
+.modal-card {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0 10px 14px rgba(0, 0, 0, 0.23);
+  padding: 2rem;
+  max-width: 30rem;
+  width: 100%;
+}
+
+.modal__text {
+  margin-bottom: 1.5rem;
+  line-height: 1rem;
+}
+
+.modal__button-group {
+  display: flex;
+  width: 100%;
+}
+
+.modal__button-group--ok {
+  justify-content: center;
+}
+
+.modal__button-group--confirm {
+  justify-content: space-between;
+
+  button:first-of-type {
+    margin-left: 0;
+  }
+
+  button:last-of-type {
+    margin-right: 0;
+  }
+}

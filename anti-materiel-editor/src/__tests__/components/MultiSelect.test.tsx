@@ -1,9 +1,15 @@
-import { mount } from 'enzyme';
+import { mount, ReactWrapper } from 'enzyme';
 import React from 'react';
 import ReactSelect from 'react-select';
 import { MultiSelect } from '../../components/MultiSelect/MultiSelect';
 
 describe('<MultiSelect />', () => {
+  let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
+
+  afterEach(() => {
+    wrapper.unmount();
+  });
+
   it('should add selected items to the list', () => {
     let fieldName = '';
     let fieldValue = [''];
@@ -23,7 +29,7 @@ describe('<MultiSelect />', () => {
 
     const list = ['1'];
 
-    const wrapper = mount(
+    wrapper = mount(
       <MultiSelect
         name={name}
         label={label}
@@ -66,7 +72,7 @@ describe('<MultiSelect />', () => {
 
     const list = ['1'];
 
-    const wrapper = mount(
+    wrapper = mount(
       <MultiSelect
         name={name}
         label={label}
@@ -109,7 +115,7 @@ describe('<MultiSelect />', () => {
 
     const list = ['1', '2'];
 
-    const wrapper = mount(
+    wrapper = mount(
       <MultiSelect
         name={name}
         label={label}
@@ -152,7 +158,7 @@ describe('<MultiSelect />', () => {
 
     const list = ['1', '2'];
 
-    const wrapper = mount(
+    wrapper = mount(
       <MultiSelect
         name={name}
         label={label}

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SideDrawer } from '../../components/SideDrawer/SideDrawer';
-import { ToggleContent } from '../../components/ToggleContent/ToggleContent';
 import { Button } from '../Button/Button';
+import { ConfirmModal } from '../Modal/ConfirmModal';
 import { AddIcon, EditIcon } from '../Icons';
 import './ManagedContent.scss';
 
@@ -12,46 +12,50 @@ export const ManagedContent: React.FC<ManagedContentProps> = ({
   content,
   form,
 }) => {
-  const handleCancel = (hide: () => void): void => {
+  const [isModalShown, setIsModalShown] = useState(false);
+  const [isSideDrawerOpen, setIsSideDrawerOpen] = useState(false);
+
+  const openSideDrawer = (): void => setIsSideDrawerOpen(true);
+
+  const closeSideDrawer = (): void => setIsSideDrawerOpen(false);
+
+  const handleCancel = (): void => {
     if (warn) {
-      console.log('WARNING!');
+      setIsModalShown(true);
+      return;
     }
-    hide();
+    closeSideDrawer();
   };
 
   return (
     <div className="managed-content__container">
       <h3 className={'managed-content__title'}>{title}</h3>
       <div className="mananged-content__content">{content()}</div>
-      <ToggleContent
-        toggle={show => (
-          <div className="managed-content__button-container">
-            <Button
-              onClick={show}
-              color="secondary"
-              className="editor__open-form-button"
-              width="7.5rem"
-            >
-              {edit ? (
-                <>
-                  <EditIcon color="secondary" /> Edit
-                </>
-              ) : (
-                <>
-                  <AddIcon color="secondary" /> Add
-                </>
-              )}
-            </Button>
-          </div>
+      <Button
+        onClick={openSideDrawer}
+        color="secondary"
+        className="managed-content__open-form-button"
+        width="7.5rem"
+      >
+        {edit ? (
+          <>
+            <EditIcon color="secondary" /> Edit
+          </>
+        ) : (
+          <>
+            <AddIcon color="secondary" /> Add
+          </>
         )}
-        content={(isShown, hide) => (
-          <SideDrawer
-            isOpen={isShown}
-            closeSideDrawer={() => handleCancel(hide)}
-          >
-            {form(hide, () => handleCancel(hide))}
-          </SideDrawer>
-        )}
+      </Button>
+
+      <SideDrawer isOpen={isSideDrawerOpen} closeSideDrawer={handleCancel}>
+        {form(closeSideDrawer, handleCancel)}
+      </SideDrawer>
+      <ConfirmModal
+        text="Are you sure you want to discard changes?"
+        closeModal={() => setIsModalShown(false)}
+        confirmAction={closeSideDrawer}
+        isShown={isModalShown}
       />
     </div>
   );

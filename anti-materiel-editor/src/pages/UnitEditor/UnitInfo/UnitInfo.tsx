@@ -7,11 +7,11 @@ export const UnitInfo: React.FC = () => {
     <ManagedContent
       title="Unit Info"
       content={() => null}
-      form={(hideSideBar, hideSideBarWarn) => (
+      form={(hideSideBar, onCancel) => (
         <UnitInfoForm
           closeSideDrawer={hideSideBar}
           onSubmit={data => console.log(data)}
-          onCancel={hideSideBarWarn}
+          onCancel={onCancel}
         />
       )}
     />

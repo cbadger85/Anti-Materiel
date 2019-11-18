@@ -1,8 +1,16 @@
 import React from 'react';
 import { SideDrawerForm } from '../../components/SideDrawerForm/SideDrawerForm';
-import { mount, shallow } from 'enzyme';
+import { mount, shallow, ReactWrapper } from 'enzyme';
 
 describe('todo', () => {
+  let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
+
+  afterEach(() => {
+    if (wrapper && wrapper.length) {
+      wrapper.unmount();
+    }
+  });
+
   const title = 'Test Title';
   it('should display the title', () => {
     const wrapper = shallow(
@@ -27,7 +35,7 @@ describe('todo', () => {
 
   it('should not call onSubmit when the submit button is pressed and it is disabled', () => {
     const onSubmit = jest.fn();
-    const wrapper = mount(
+    wrapper = mount(
       <SideDrawerForm
         onCancel={jest.fn}
         onSubmit={onSubmit}
