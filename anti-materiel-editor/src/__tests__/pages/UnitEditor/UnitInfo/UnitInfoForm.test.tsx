@@ -4,51 +4,93 @@ import { mount, ReactWrapper } from 'enzyme';
 
 describe('<UnitInfoForm />', () => {
   let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
+  let root: any;
+
+  beforeEach(() => {
+    root = document.createElement('div');
+    root.id = 'root';
+    document.body.appendChild(root);
+  });
 
   afterEach(() => {
     if (wrapper && wrapper.length) {
       wrapper.unmount();
     }
+    document.body.removeChild(root);
   });
 
   describe('onSubmit', () => {
-    const initialData = {
-      name: 'Fusiliers',
-      isc: 'Fusiliers',
-      description: '',
-      type: 'LI',
-      classification: 'Line Troops',
-      sectorial: [
-        'Panoceania',
-        'Neoterra Capitaline Army',
-        'Varuna Immediate Reaction Division',
-      ],
-      id: '1234',
-      unitSvgName: 'fusiliers',
-    };
-
-    const onSubmit = jest.fn();
-    const closeSideDrawer = jest.fn();
-
-    wrapper = mount(
-      <UnitInfoForm
-        onSubmit={onSubmit}
-        onCancel={jest.fn}
-        closeSideDrawer={closeSideDrawer}
-        initialData={initialData}
-      />,
-    );
-
-    wrapper
-      .find('#side-drawer-form-submit')
-      .last()
-      .simulate('click');
-
     it('should allow submit if the data is correct', () => {
+      const initialData = {
+        name: 'Fusiliers',
+        isc: 'Fusiliers',
+        description: '',
+        type: 'LI',
+        classification: 'Line Troops',
+        sectorial: [
+          'Panoceania',
+          'Neoterra Capitaline Army',
+          'Varuna Immediate Reaction Division',
+        ],
+        id: '1234',
+        unitSvgName: 'fusiliers',
+      };
+
+      const onSubmit = jest.fn();
+      const closeSideDrawer = jest.fn();
+
+      wrapper = mount(
+        <UnitInfoForm
+          onSubmit={onSubmit}
+          onCancel={jest.fn}
+          closeSideDrawer={closeSideDrawer}
+          initialData={initialData}
+        />,
+        { attachTo: root },
+      );
+
+      wrapper
+        .find('#side-drawer-form-submit')
+        .last()
+        .simulate('click');
+
       expect(onSubmit).toBeCalledWith(initialData);
     });
 
     it('should close the side drawer after submisstion', () => {
+      const initialData = {
+        name: 'Fusiliers',
+        isc: 'Fusiliers',
+        description: '',
+        type: 'LI',
+        classification: 'Line Troops',
+        sectorial: [
+          'Panoceania',
+          'Neoterra Capitaline Army',
+          'Varuna Immediate Reaction Division',
+        ],
+        id: '1234',
+        unitSvgName: 'fusiliers',
+      };
+
+      const onSubmit = jest.fn();
+      const closeSideDrawer = jest.fn();
+
+      wrapper = mount(
+        <UnitInfoForm
+          onSubmit={onSubmit}
+          onCancel={jest.fn}
+          closeSideDrawer={closeSideDrawer}
+          initialData={initialData}
+        />,
+        { attachTo: root },
+      );
+
+      wrapper
+        .find('#side-drawer-form-submit')
+        .last()
+        .simulate('click');
+
       expect(closeSideDrawer).toBeCalled();
     });
   });
@@ -78,6 +120,7 @@ describe('<UnitInfoForm />', () => {
         closeSideDrawer={jest.fn}
         initialData={initialData}
       />,
+      { attachTo: root },
     );
 
     wrapper
@@ -97,6 +140,7 @@ describe('<UnitInfoForm />', () => {
         closeSideDrawer={jest.fn}
         onCancel={onCancel}
       />,
+      { attachTo: root },
     );
 
     wrapper
@@ -128,6 +172,7 @@ describe('<UnitInfoForm />', () => {
         initialData={initialData}
         onCancel={jest.fn}
       />,
+      { attachTo: root },
     );
 
     wrapper

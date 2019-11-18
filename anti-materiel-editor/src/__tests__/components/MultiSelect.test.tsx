@@ -5,8 +5,16 @@ import { MultiSelect } from '../../components/MultiSelect/MultiSelect';
 
 describe('<MultiSelect />', () => {
   let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
+  let root: any;
+
+  beforeEach(() => {
+    root = document.createElement('div');
+    root.id = 'root';
+    document.body.appendChild(root);
+  });
 
   afterEach(() => {
+    document.body.removeChild(root);
     wrapper.unmount();
   });
 
@@ -40,6 +48,7 @@ describe('<MultiSelect />', () => {
           fieldValue = value;
         }}
       />,
+      { attachTo: root },
     );
 
     wrapper
@@ -83,6 +92,7 @@ describe('<MultiSelect />', () => {
           fieldValue = value;
         }}
       />,
+      { attachTo: root },
     );
 
     wrapper
@@ -126,6 +136,7 @@ describe('<MultiSelect />', () => {
           fieldValue = value;
         }}
       />,
+      { attachTo: root },
     );
 
     wrapper
@@ -170,6 +181,7 @@ describe('<MultiSelect />', () => {
         }}
         error
       />,
+      { attachTo: root },
     );
 
     wrapper
