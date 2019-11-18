@@ -1,4 +1,4 @@
-import { mount } from 'enzyme';
+import { mount, ReactWrapper } from 'enzyme';
 import React from 'react';
 import {
   StatsAndAttributesForm,
@@ -8,6 +8,14 @@ import {
 } from '../../../../pages/UnitEditor/StatsAndAttributes/StatsAndAttributesForm';
 
 describe('<StatsAndAttributesForm />', () => {
+  let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
+
+  afterEach(() => {
+    if (wrapper && wrapper.length) {
+      wrapper.unmount();
+    }
+  });
+
   describe('onSubmit', () => {
     const initialData = {
       impetuous: true,
@@ -30,7 +38,7 @@ describe('<StatsAndAttributesForm />', () => {
     const onSubmit = jest.fn();
     const closeSideDrawer = jest.fn();
 
-    const wrapper = mount(
+    wrapper = mount(
       <StatsAndAttributesForm
         onSubmit={onSubmit}
         onCancel={jest.fn}
@@ -56,7 +64,7 @@ describe('<StatsAndAttributesForm />', () => {
   it('should call closeSideDrawer() when cancel is pressed', () => {
     const onCancel = jest.fn();
 
-    const wrapper = mount(
+    wrapper = mount(
       <StatsAndAttributesForm
         onSubmit={jest.fn}
         closeSideDrawer={jest.fn}
@@ -93,7 +101,7 @@ describe('<StatsAndAttributesForm />', () => {
 
     const onSubmit = jest.fn();
 
-    const wrapper = mount(
+    wrapper = mount(
       <StatsAndAttributesForm
         onSubmit={() => onSubmit()}
         closeSideDrawer={jest.fn}
@@ -131,7 +139,7 @@ describe('<StatsAndAttributesForm />', () => {
 
     const onSubmit = jest.fn();
 
-    const wrapper = mount(
+    wrapper = mount(
       <StatsAndAttributesForm
         onSubmit={() => onSubmit()}
         closeSideDrawer={jest.fn}
@@ -170,7 +178,7 @@ describe('<StatsAndAttributesForm />', () => {
     const onSubmit = jest.fn();
     const closeSideDrawer = jest.fn();
 
-    const wrapper = mount(
+    wrapper = mount(
       <StatsAndAttributesForm
         onSubmit={onSubmit}
         onCancel={jest.fn}

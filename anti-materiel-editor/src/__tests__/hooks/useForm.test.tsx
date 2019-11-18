@@ -5,13 +5,21 @@ import {
   useForm,
 } from '../../hooks/useForm';
 import { FormActionTypes } from '../../hooks/useForm.types';
-import { mount } from 'enzyme';
+import { mount, ReactWrapper } from 'enzyme';
 import { Input } from '../../components/Input/Input';
 import React, { useEffect } from 'react';
 
 // TODO write tests for validation
 
 describe('useForm', () => {
+  let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
+
+  afterEach(() => {
+    if (wrapper && wrapper.length) {
+      wrapper.unmount();
+    }
+  });
+
   describe('useForm state', () => {
     describe('updateFieldsInForm', () => {
       it('should create the correct updateFieldsInForm action', () => {
@@ -130,7 +138,7 @@ describe('useForm', () => {
     });
 
     it('should update state when the input changes', () => {
-      const wrapper = mount(<Dummy />);
+      wrapper = mount(<Dummy />);
 
       wrapper
         .find('input')

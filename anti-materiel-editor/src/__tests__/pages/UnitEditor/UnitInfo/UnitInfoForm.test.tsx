@@ -1,8 +1,16 @@
 import React from 'react';
 import { UnitInfoForm } from '../../../../pages/UnitEditor/UnitInfo/UnitInfoForm';
-import { mount } from 'enzyme';
+import { mount, ReactWrapper } from 'enzyme';
 
 describe('<UnitInfoForm />', () => {
+  let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
+
+  afterEach(() => {
+    if (wrapper && wrapper.length) {
+      wrapper.unmount();
+    }
+  });
+
   describe('onSubmit', () => {
     const initialData = {
       name: 'Fusiliers',
@@ -22,7 +30,7 @@ describe('<UnitInfoForm />', () => {
     const onSubmit = jest.fn();
     const closeSideDrawer = jest.fn();
 
-    const wrapper = mount(
+    wrapper = mount(
       <UnitInfoForm
         onSubmit={onSubmit}
         onCancel={jest.fn}
@@ -63,7 +71,7 @@ describe('<UnitInfoForm />', () => {
 
     const onSubmit = jest.fn();
 
-    const wrapper = mount(
+    wrapper = mount(
       <UnitInfoForm
         onSubmit={onSubmit}
         onCancel={jest.fn}
@@ -83,7 +91,7 @@ describe('<UnitInfoForm />', () => {
   it('should call onCancel() when cancel is pressed', () => {
     const onCancel = jest.fn();
 
-    const wrapper = mount(
+    wrapper = mount(
       <UnitInfoForm
         onSubmit={jest.fn}
         closeSideDrawer={jest.fn}
@@ -113,7 +121,7 @@ describe('<UnitInfoForm />', () => {
 
     const onSubmit = jest.fn();
 
-    const wrapper = mount(
+    wrapper = mount(
       <UnitInfoForm
         onSubmit={onSubmit}
         closeSideDrawer={jest.fn}

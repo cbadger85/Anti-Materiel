@@ -28,6 +28,7 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
             <animated.div
               key={key}
               style={props}
+              id="opaque-background"
               className={`side-drawer__opaque-background side-drawer__opaque-background--${
                 isOpen ? 'visible' : 'invisible'
               }`}

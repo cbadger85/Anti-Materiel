@@ -1,14 +1,22 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { mount, ReactWrapper } from 'enzyme';
 import { AddUnitAVA } from '../../../../pages/UnitEditor/StatsAndAttributes/AddUnitAva/AddUnitAVA';
 import ReactSelect from 'react-select';
 import { act } from 'react-dom/test-utils';
 
 describe('<AddUnitAva />', () => {
+  let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
+
+  afterEach(() => {
+    if (wrapper && wrapper.length) {
+      wrapper.unmount();
+    }
+  });
+
   it('should prevent adding a ava selections if the fields are blank', () => {
     const addUnitAva = jest.fn();
 
-    const wrapper = mount(
+    wrapper = mount(
       <AddUnitAVA
         addUnitAva={addUnitAva}
         removeUnitAva={jest.fn}
@@ -27,8 +35,6 @@ describe('<AddUnitAva />', () => {
 
   it('should add an ava if the fields are correct', () => {
     const addUnitAva = jest.fn();
-
-    let wrapper: any;
 
     act(() => {
       wrapper = mount(
@@ -67,7 +73,7 @@ describe('<AddUnitAva />', () => {
   });
 
   it('should show the ava header if items are present', () => {
-    const wrapper = mount(
+    wrapper = mount(
       <AddUnitAVA
         addUnitAva={jest.fn}
         removeUnitAva={jest.fn}
@@ -86,7 +92,7 @@ describe('<AddUnitAva />', () => {
   });
 
   it('should not show the ava header if no items are present', () => {
-    const wrapper = mount(
+    wrapper = mount(
       <AddUnitAVA
         addUnitAva={jest.fn}
         removeUnitAva={jest.fn}
@@ -101,7 +107,7 @@ describe('<AddUnitAva />', () => {
   });
 
   it('should show list items that are passed in', () => {
-    const wrapper = mount(
+    wrapper = mount(
       <AddUnitAVA
         addUnitAva={jest.fn}
         removeUnitAva={jest.fn}
@@ -120,7 +126,7 @@ describe('<AddUnitAva />', () => {
   it('should delete an item when the delete button is pressed', () => {
     const removeUnitAva = jest.fn();
 
-    const wrapper = mount(
+    wrapper = mount(
       <AddUnitAVA
         addUnitAva={jest.fn}
         removeUnitAva={removeUnitAva}

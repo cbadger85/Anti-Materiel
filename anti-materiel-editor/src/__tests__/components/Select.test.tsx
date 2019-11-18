@@ -1,9 +1,17 @@
-import { mount, shallow } from 'enzyme';
+import { mount, shallow, ReactWrapper } from 'enzyme';
 import React from 'react';
 import ReactSelect from 'react-select';
 import { Select } from '../../components/Select/Select';
 
 describe('<Select />', () => {
+  let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
+
+  afterEach(() => {
+    if (wrapper.length) {
+      wrapper.unmount();
+    }
+  });
+
   const name = 'field1';
   const label = 'Select';
   const options = [
@@ -21,7 +29,7 @@ describe('<Select />', () => {
     let fieldName = '';
     let fieldValue = '';
 
-    const wrapper = mount(
+    wrapper = mount(
       <Select
         classNamePrefix="list"
         name={name}
@@ -66,7 +74,7 @@ describe('<Select />', () => {
     let fieldName = '';
     let fieldValue = '';
 
-    const wrapper = mount(
+    wrapper = mount(
       <Select
         classNamePrefix="list"
         name={name}
