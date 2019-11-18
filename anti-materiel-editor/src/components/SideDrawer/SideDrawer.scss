@@ -2,7 +2,7 @@
 
 .side-drawer__container {
   position: fixed;
-  width: 21.5rem; // TODO: add breakpoint that makes this full screen on smaller screen sizes.
+  width: 21.5rem;
   right: 0;
   top: 0;
   bottom: 0;
@@ -23,10 +23,8 @@
   background-color: black;
 }
 
-.side-drawer__opaque-background--visible {
-  pointer-events: auto;
-}
-
-.side-drawer__opaque-background--invisible {
-  pointer-events: none;
+@media (max-width: 420px) {
+  .side-drawer__container {
+    width: 100%;
+  }
 }

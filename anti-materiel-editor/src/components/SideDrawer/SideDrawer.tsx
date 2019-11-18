@@ -9,9 +9,9 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
   closeSideDrawer,
 }) => {
   const transitionSideDrawer = useTransition(isOpen, null, {
-    from: { opacity: 0, transform: 'translate3d(100%, 0, 0)' },
-    enter: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
-    leave: { opacity: 0, transform: 'translate3d(100%, 0, 0)' },
+    from: { transform: 'translate3d(100%, 0, 0)' },
+    enter: { transform: 'translate3d(0, 0, 0)' },
+    leave: { transform: 'translate3d(100%, 0, 0)' },
   });
 
   const transitionBackground = useTransition(isOpen, null, {
@@ -29,9 +29,7 @@ export const SideDrawer: React.FC<SideDrawerProps> = ({
               key={key}
               style={props}
               id="opaque-background"
-              className={`side-drawer__opaque-background side-drawer__opaque-background--${
-                isOpen ? 'visible' : 'invisible'
-              }`}
+              className="side-drawer__opaque-background"
               onClick={closeSideDrawer}
             />
           ),
