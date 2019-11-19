@@ -20,7 +20,7 @@ export const ToastHub: React.FC = () => {
       opacity: 0,
     },
     onRest: toast => {
-      setTimeout(() => dismissToast(toast.id), 500);
+      setTimeout(() => dismissToast(toast.id), toast.duration);
     },
     config: { mass: 1, tension: 250, friction: 15 },
   });
