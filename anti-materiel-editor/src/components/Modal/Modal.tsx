@@ -8,7 +8,7 @@ export const Modal: React.FC<ModalProps> = ({ children, isShown }) => {
   const transition = useTransition(isShown, null, {
     from: { opacity: 0, transform: 'translate3d(0, -2rem, 0)' },
     enter: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
-    leave: { opacity: 0, transform: 'translate3d(0, 2rem, 0)' },
+    leave: { opacity: 0, transform: 'translate3d(0, -2rem, 0)' },
   });
 
   return ReactDOM.createPortal(

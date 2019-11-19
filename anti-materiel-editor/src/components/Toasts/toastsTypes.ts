@@ -4,11 +4,11 @@ export enum ToastActionTypes {
 }
 
 export interface ToastOptions {
-  color: string;
-  id: string;
+  color?: 'info' | 'warn' | 'danger';
+  duration?: number;
 }
 
-export type Toast = ToastOptions & { text: string };
+export type Toast = Required<ToastOptions> & { text: string; id: string };
 
 export interface AddToastAction {
   type: ToastActionTypes.ADD_TOAST;

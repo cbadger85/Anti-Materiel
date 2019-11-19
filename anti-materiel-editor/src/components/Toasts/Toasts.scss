@@ -1,39 +1,44 @@
+@import '../../styles/colors';
+
 .toast {
   align-items: flex-start;
   border-radius: 4px;
-  color: #ffffff;
   display: flex;
-  padding: 16px;
-}
+  padding: 1rem;
 
-.toast:not(:last-child) {
-  margin: 0 0 12px;
-}
+  &:not(:last-child) {
+    margin: 0 0 0.5rem;
+  }
 
-.toast__content {
-  flex: 1 1 auto;
-  margin: 0 12px 0 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+  .toast__content {
+    flex: 1 1 auto;
+    margin: 0 0.5rem 0 0;
+  }
 
-.toast__dismiss {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: transparent;
-  border: 0;
-  color: inherit;
-  cursor: pointer;
-  display: block;
-  flex: 0 0 auto;
-  font: inherit;
-  padding: 0;
+  .toast__delete-icon {
+    font-size: 1.2rem;
+  }
 }
 
 .toasts {
-  bottom: 24px;
+  bottom: 1rem;
   position: fixed;
-  right: 24px;
-  width: 240px;
+  right: 1rem;
+  width: 16rem;
   z-index: 20;
+}
+
+.toast--info {
+  background-color: $primary-cyan-4;
+  color: $primary-cyan-0;
+}
+
+.toast--warn {
+  background-color: $supporting-yellow-5;
+  color: $supporting-red-6;
+}
+
+.toast--danger {
+  background-color: $supporting-red-3;
+  color: $supporting-yellow-0;
 }

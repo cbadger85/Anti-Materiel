@@ -8,11 +8,32 @@ export const UnitInfo: React.FC = () => {
   const makeToast = useToast();
   return (
     <ManagedContent
+      warn
       title="Unit Info"
       content={() => (
-        <Button onClick={() => makeToast(`Everyday I'm toasting...`)}>
-          Toast
-        </Button>
+        <>
+          <Button
+            onClick={() =>
+              makeToast(`Everyday I'm toasting more and more and more...`)
+            }
+          >
+            Toast
+          </Button>
+          <Button
+            onClick={() =>
+              makeToast(`Everyday I'm toasting`, { color: 'warn' })
+            }
+          >
+            Toast
+          </Button>
+          <Button
+            onClick={() =>
+              makeToast(`Everyday I'm toasting`, { color: 'danger' })
+            }
+          >
+            Toast
+          </Button>
+        </>
       )}
       form={(hideSideBar, onCancel) => (
         <UnitInfoForm

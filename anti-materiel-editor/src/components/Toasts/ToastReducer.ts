@@ -10,7 +10,7 @@ import { createToast } from './createToast';
 
 export const addToast = (
   text: string,
-  options?: ToastOptions,
+  options?: Partial<ToastOptions>,
 ): AddToastAction => ({
   type: ToastActionTypes.ADD_TOAST,
   payload: createToast(text, options),
