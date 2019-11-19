@@ -21,14 +21,18 @@ export const UnitInfo: React.FC = () => {
           </Button>
           <Button
             onClick={() =>
-              makeToast(`Everyday I'm toasting`, { color: 'warn' })
+              makeToast(`Everyday I'm toasting`, {
+                color: 'warn',
+              })
             }
           >
             Toast
           </Button>
           <Button
             onClick={() =>
-              makeToast(`Everyday I'm toasting`, { color: 'danger' })
+              makeToast(`Everyday I'm toasting`, {
+                color: 'danger',
+              })
             }
           >
             Toast
