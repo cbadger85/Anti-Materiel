@@ -1,22 +1,28 @@
 import React, { memo } from 'react';
+import { animated } from 'react-spring';
+import { SpringValue } from 'react-spring';
 
 export const Toast = memo(function _Toast({
   onDismiss,
   text,
-  color,
+  style,
 }: ToastProps) {
   return (
-    <li className="toast" style={{ backgroundColor: color }}>
+    <animated.li className="toast" style={style}>
       <p className="toast__content">{text}</p>
       <button className="toast__dismiss" onClick={onDismiss}>
         x
       </button>
-    </li>
+    </animated.li>
   );
 });
 
 interface ToastProps {
   onDismiss: () => void;
   text: string;
-  color: string;
+  style: {
+    backgroundColor: SpringValue<string>;
+    transform: SpringValue<string>;
+    // opacity: SpringValue<number>;
+  };
 }
