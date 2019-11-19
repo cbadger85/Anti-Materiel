@@ -244,6 +244,46 @@ describe('<StatsAndAttributesForm />', () => {
     expect(onSubmit).toBeCalledTimes(0);
   });
 
+  it('should have a disabled button if the mov is empty', () => {
+    const initialData = {
+      impetuous: true,
+      impetuousType: 'FRENZY',
+      cube: true,
+      cubeType: 'CUBE',
+      mov: '',
+      cc: '13',
+      bs: '12',
+      ph: '10',
+      wip: '12',
+      arm: '1',
+      bts: '3',
+      w: '1',
+      s: '2',
+      structure: false,
+      ava: [{ sectorial: 'Panoceania', ava: 'T' }],
+    };
+
+    const onSubmit = jest.fn();
+    const closeSideDrawer = jest.fn();
+
+    wrapper = mount(
+      <StatsAndAttributesForm
+        onSubmit={onSubmit}
+        onCancel={jest.fn}
+        initialData={initialData}
+        closeSideDrawer={closeSideDrawer}
+      />,
+      { attachTo: root },
+    );
+
+    wrapper
+      .find('#side-drawer-form-submit')
+      .last()
+      .simulate('click');
+
+    expect(onSubmit).toBeCalledTimes(0);
+  });
+
   describe('isBTS', () => {
     it('should return true if the number is divisible by 3', () => {
       const validBTS = '3';
