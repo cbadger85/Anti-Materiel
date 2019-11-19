@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './MasterPage.scss';
-import { ToastProvider } from '../Toasts/ToastProvider';
-import { ToastHub } from '../Toasts/ToastHub';
 
 export const MasterPage: React.FC<MasterPageProps> = ({
   pageTitle,
