@@ -32,19 +32,16 @@ export const MasterPage: React.FC<MasterPageProps> = ({
   });
 
   return (
-    <ToastProvider>
-      <div className="page-content__container">
-        <main className="editor" ref={contentRef}>
-          <h2 className="page-title">{pageTitle}</h2>
-          {mainContent()}
-        </main>
-        <section className="side-panel" style={{ height: sidePanelHeight }}>
-          {sidePanelContent()}
-        </section>
-        <div className="page-content__spacer" />
-      </div>
-      <ToastHub />
-    </ToastProvider>
+    <div className="page-content__container">
+      <main className="editor" ref={contentRef}>
+        <h2 className="page-title">{pageTitle}</h2>
+        {mainContent()}
+      </main>
+      <section className="side-panel" style={{ height: sidePanelHeight }}>
+        {sidePanelContent()}
+      </section>
+      <div className="page-content__spacer" />
+    </div>
   );
 };
 
