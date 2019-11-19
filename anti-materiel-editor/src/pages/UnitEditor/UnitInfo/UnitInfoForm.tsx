@@ -12,6 +12,7 @@ import {
   unitTypeSelectOptions,
 } from './UnitInfoFormOptions';
 import { UnitInfoData } from './UnitInfoTypes';
+import { useToast } from '../../../components/Toasts/useToast';
 
 export const UnitInfoForm: React.FC<UnitInfoFormProps> = ({
   closeSideDrawer,
@@ -29,6 +30,8 @@ export const UnitInfoForm: React.FC<UnitInfoFormProps> = ({
       initialData && initialData.sectorial.length ? initialData.sectorial : [],
   });
 
+  const makeToast = useToast();
+
   const handleOnSubmit = (): void => {
     const updatedFields = {
       ...fields,
@@ -37,7 +40,8 @@ export const UnitInfoForm: React.FC<UnitInfoFormProps> = ({
     };
 
     onSubmit(updatedFields);
-    closeSideDrawer();
+    // closeSideDrawer();
+    makeToast('Is this a toast?');
   };
 
   return (

@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './MasterPage.scss';
+import { ToastProvider } from '../Toasts/ToastProvider';
+import { ToastHub } from '../Toasts/ToastHub';
 
 export const MasterPage: React.FC<MasterPageProps> = ({
   pageTitle,
@@ -30,7 +32,7 @@ export const MasterPage: React.FC<MasterPageProps> = ({
   });
 
   return (
-    <>
+    <ToastProvider>
       <div className="page-content__container">
         <main className="editor" ref={contentRef}>
           <h2 className="page-title">{pageTitle}</h2>
@@ -41,7 +43,8 @@ export const MasterPage: React.FC<MasterPageProps> = ({
         </section>
         <div className="page-content__spacer" />
       </div>
-    </>
+      <ToastHub />
+    </ToastProvider>
   );
 };
 
