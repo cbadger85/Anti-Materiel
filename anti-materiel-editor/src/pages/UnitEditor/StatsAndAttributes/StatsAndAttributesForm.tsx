@@ -103,7 +103,7 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
           className="side-drawer-contents__stat-input"
           width={statInputWidth}
           value={fields.mov}
-          error={!movRegex.test(fields.mov)}
+          error={!movRegex.test(fields.mov) || !fields.mov.trim()}
           placeholder="4-4"
         />
         <Input
