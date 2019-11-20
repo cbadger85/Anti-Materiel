@@ -15,5 +15,10 @@
   line-height: 1;
   font-size: 2rem;
   display: inline-block;
-  border-bottom: 1px solid $supporting-pink-5;
+  border-bottom: 3px solid $supporting-pink-5;
+}
+
+.link--active {
+  pointer-events: none;
+  outline: none;
 }
