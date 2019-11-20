@@ -3,7 +3,7 @@ import { UnitEditor } from './pages/UnitEditor/UnitEditor';
 import { Header } from './components/Header/Header';
 import { ToastProvider } from './components/Toasts/ToastProvider';
 import { ToastHub } from './components/Toasts/ToastHub';
-import {} from 'react-router';
+import { BrowserRouter as Router, Switch, Route } from 'react-router';
 
 const App: React.FC = () => {
   return (
