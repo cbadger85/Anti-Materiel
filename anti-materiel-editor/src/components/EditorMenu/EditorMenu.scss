@@ -13,28 +13,45 @@
     box-shadow: 0 3px 6px #00000029, 0 3px 6px rgba(0, 0, 0, 0.23);
   }
 
+  a,
+  a:visited,
+  a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+
   .menu__item {
     margin-right: 2rem;
     margin-left: 2rem;
     cursor: pointer;
   }
 
+  .menu__item:after {
+    position: absolute;
+    bottom: -3px;
+    left: -10%;
+    content: '';
+    height: 3px;
+    width: 0%;
+    border-radius: 4px;
+    background-color: $supporting-pink-5;
+    transition: width 300ms linear;
+  }
+
   .menu__item--active {
     position: relative;
+    pointer-events: none;
   }
 
   .menu__item--active:after {
-    position: absolute;
-    bottom: 0;
-    left: -10%;
-    content: '';
-    height: 2px;
     width: 120%;
-    border-radius: 4px;
-    background-color: $supporting-pink-5;
   }
 
   .menu__item:hover {
     color: $neutral-9;
   }
+}
+
+.nav-link--active {
+  pointer-events: none;
 }
