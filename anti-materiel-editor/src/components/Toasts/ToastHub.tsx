@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useTransition } from 'react-spring';
 import { Toast } from './Toast';
 import './Toasts.scss';
-import { useToastState } from './useToast';
+import { toastContext } from './ToastProvider';
 
 export const ToastHub: React.FC = () => {
-  const { toasts, dismissToast } = useToastState();
+  const { toasts, dismissToast } = useContext(toastContext);
   const transitions = useTransition(toasts, toast => toast.id, {
     from: {
       transform: 'translate3d(4rem,0,0)',

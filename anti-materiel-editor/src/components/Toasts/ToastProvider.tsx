@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react';
-import { addToast, removeToast, toastReducer } from './ToastReducer';
+import { addToast, removeToast, toastReducer } from './toastReducer';
 import { ToastContext, ToastOptions } from './toastsTypes';
 
 export const toastContext = React.createContext<ToastContext>({
