@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { toastContext } from './ToastProvider';
-import { ToastOptions, ToastContext } from './toastsTypes';
+import { ToastOptions } from './toastsTypes';
 
 export const useToast = (): ((
   text: string,
@@ -10,5 +10,3 @@ export const useToast = (): ((
 
   return makeToast;
 };
-
-export const useToastState = (): ToastContext => useContext(toastContext);
