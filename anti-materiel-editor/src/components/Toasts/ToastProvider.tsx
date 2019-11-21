@@ -1,6 +1,7 @@
 import React, { useReducer } from 'react';
 import { addToast, removeToast, toastReducer } from './toastReducer';
 import { ToastContext, ToastOptions } from './toastsTypes';
+import { ToastHub } from './ToastHub';
 
 export const toastContext = React.createContext<ToastContext>({
   toasts: [],
@@ -19,6 +20,7 @@ export const ToastProvider: React.FC = ({ children }) => {
   return (
     <toastContext.Provider value={{ toasts, makeToast, dismissToast }}>
       {children}
+      <ToastHub />
     </toastContext.Provider>
   );
 };

@@ -10,7 +10,6 @@ export const App: React.FC = () => (
       <Router>
         <Routes />
       </Router>
-      <ToastHub />
     </ToastProvider>
   </div>
 );
