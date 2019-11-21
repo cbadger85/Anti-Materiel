@@ -12,9 +12,9 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
     <>
       <header className="header">
         {isActive ? (
-          <div>
+          <span>
             <h1 className="header__title">{title}</h1>
-          </div>
+          </span>
         ) : (
           <Link to="/">
             <h1 className="header__title">{title}</h1>

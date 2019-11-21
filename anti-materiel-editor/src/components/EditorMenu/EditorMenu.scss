@@ -23,7 +23,15 @@
   .menu__item {
     margin-right: 2rem;
     margin-left: 2rem;
-    cursor: pointer;
+
+    &:hover {
+      color: $neutral-9;
+    }
+
+    &:focus {
+      color: $neutral-9;
+      outline: none;
+    }
   }
 
   .menu__item:after {
@@ -41,14 +49,14 @@
   .menu__item--active {
     position: relative;
     pointer-events: none;
+
+    &:focus {
+      color: inherit;
+    }
   }
 
   .menu__item--active:after {
     width: 120%;
-  }
-
-  .menu__item:hover {
-    color: $neutral-9;
   }
 }
 

@@ -4,21 +4,26 @@
   padding: 3rem 2rem;
   background-color: $neutral-1;
   box-shadow: 0 3px 6px #00000029, 0 3px 6px rgba(0, 0, 0, 0.23);
-}
 
-.header__title {
-  color: $primary-cyan-7;
-  letter-spacing: 0.5rem;
-  text-transform: uppercase;
-  margin: 0;
-  padding-right: 1.5rem;
-  line-height: 1;
-  font-size: 2rem;
-  display: inline-block;
-  border-bottom: 3px solid $supporting-pink-5;
-}
+  a:focus {
+    outline: none;
+  }
 
-.link--active {
-  pointer-events: none;
-  outline: none;
+  a:focus h1,
+  a:hover h1 {
+    color: $primary-cyan-8;
+    border-bottom: 3px solid $supporting-pink-6;
+  }
+
+  h1 {
+    color: $primary-cyan-7;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding-right: 1.5rem;
+    line-height: 1;
+    font-size: 2rem;
+    display: inline-block;
+    border-bottom: 3px solid $supporting-pink-5;
+  }
 }
