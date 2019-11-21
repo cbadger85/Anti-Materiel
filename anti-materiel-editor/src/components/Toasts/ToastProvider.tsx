@@ -4,9 +4,7 @@ import { ToastContext, ToastOptions } from './toastsTypes';
 import { ToastHub } from './ToastHub';
 
 export const toastContext = React.createContext<ToastContext>({
-  toasts: [],
   makeToast: (text: string, options?: ToastOptions) => {},
-  dismissToast: (id: string) => {},
 });
 
 export const ToastProvider: React.FC = ({ children }) => {
@@ -18,9 +16,9 @@ export const ToastProvider: React.FC = ({ children }) => {
   const dismissToast = (id: string): void => dispatch(removeToast(id));
 
   return (
-    <toastContext.Provider value={{ toasts, makeToast, dismissToast }}>
+    <toastContext.Provider value={{ makeToast }}>
       {children}
-      <ToastHub />
+      <ToastHub toasts={toasts} dismissToast={dismissToast} />
     </toastContext.Provider>
   );
 };

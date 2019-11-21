@@ -1,11 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useTransition } from 'react-spring';
 import { Toast } from './Toast';
 import './Toasts.scss';
-import { toastContext } from './ToastProvider';
+import { Toast as ToastMessage } from './toastsTypes';
 
-export const ToastHub: React.FC = () => {
-  const { toasts, dismissToast } = useContext(toastContext);
+export const ToastHub: React.FC<ToastHubProps> = ({ toasts, dismissToast }) => {
   const transitions = useTransition(toasts, toast => toast.id, {
     from: {
       transform: 'translate3d(4rem,0,0)',
@@ -38,3 +37,8 @@ export const ToastHub: React.FC = () => {
     </ul>
   );
 };
+
+interface ToastHubProps {
+  toasts: ToastMessage[];
+  dismissToast: (id: string) => void;
+}
