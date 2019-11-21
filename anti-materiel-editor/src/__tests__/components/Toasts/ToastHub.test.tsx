@@ -1,58 +1,61 @@
-import React, { useContext } from 'react';
-import { mount, ReactWrapper } from 'enzyme';
-import {
-  ToastProvider,
-  toastContext,
-} from '../../../components/Toasts/ToastProvider';
-import { ToastHub } from '../../../components/Toasts/ToastHub';
-import { useToast } from '../../../components/Toasts/useToast';
+import { mount, shallow } from 'enzyme';
+import React from 'react';
 import { Button } from '../../../components/Button/Button';
+import { ToastHub } from '../../../components/Toasts/ToastHub';
+import { Toast as ToastMessage } from '../../../components/Toasts/toastsTypes';
 import { Toast } from '../../../components/Toasts/Toast';
 
-const Dummy: React.FC = () => {
-  const makeToast = useToast();
-
-  return <Button onClick={() => makeToast('test')} />;
-};
+beforeAll(done => {
+  done();
+});
 
 jest.useFakeTimers();
 
 describe('<ToastHub />', () => {
   it('should remove the toast if the delete button is pressed', () => {
+    const toasts: ToastMessage[] = [
+      { text: 'test', color: 'info', duration: 0, id: '1234' },
+    ];
+
+    const dismissToast = jest.fn();
+
     const wrapper = mount(
-      <ToastProvider>
-        <Dummy />
-      </ToastProvider>,
+      <ToastHub toasts={toasts} dismissToast={dismissToast} />,
     );
 
     wrapper.find(Button).simulate('click');
-
-    const toast = wrapper.find(Toast);
 
     wrapper
       .find(Button)
       .last()
       .simulate('click');
 
-    const leaveAnimation = wrapper
-      .find(Toast)
-      .render()
-      .attr().style;
-
-    expect(leaveAnimation).toBe(
-      'transform: translate3d(4rem,0,0); opacity: 0;',
-    );
+    expect(dismissToast).toHaveBeenCalledWith('1234');
   });
 
   it('should remove the toast after the timer is out', () => {
-    const wrapper = mount(
-      <ToastProvider>
-        <Dummy />
-      </ToastProvider>,
-    );
+    const toasts: ToastMessage[] = [
+      { text: 'test', color: 'info', duration: 0, id: '1234' },
+    ];
+    const dismissToast = jest.fn();
 
-    wrapper.find(Button).simulate('click');
+    shallow(<ToastHub toasts={toasts} dismissToast={dismissToast} />);
 
     expect(setTimeout).toBeCalled();
+  });
+
+  it('should create a Toast if an array of toasts is passed in', () => {
+    const toasts: ToastMessage[] = [
+      { text: 'test', color: 'info', duration: 0, id: '1234' },
+    ];
+    const dismissToast = jest.fn();
+
+    const wrapper = shallow(
+      <ToastHub toasts={toasts} dismissToast={dismissToast} />,
+    );
+
+    const toast = wrapper.find(Toast);
+
+    expect(toast).toHaveLength(1);
   });
 });

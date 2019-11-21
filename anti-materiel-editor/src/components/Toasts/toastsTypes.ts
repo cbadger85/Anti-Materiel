@@ -23,7 +23,5 @@ export interface RemoveToastAction {
 export type ToastActions = AddToastAction | RemoveToastAction;
 
 export interface ToastContext {
-  toasts: Toast[];
   makeToast: (text: string, options?: ToastOptions) => void;
-  dismissToast: (id: string) => void;
 }
