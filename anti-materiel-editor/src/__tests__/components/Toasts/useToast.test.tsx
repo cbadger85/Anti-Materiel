@@ -16,7 +16,6 @@ describe('useToast', () => {
   const wrapper = mount(
     <ToastProvider>
       <Dummy />
-      <ToastHub />
     </ToastProvider>,
   );
 

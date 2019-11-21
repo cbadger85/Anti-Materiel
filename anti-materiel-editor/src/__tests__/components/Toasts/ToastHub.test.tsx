@@ -22,7 +22,6 @@ describe('<ToastHub />', () => {
     const wrapper = mount(
       <ToastProvider>
         <Dummy />
-        <ToastHub />
       </ToastProvider>,
     );
 
@@ -49,7 +48,6 @@ describe('<ToastHub />', () => {
     const wrapper = mount(
       <ToastProvider>
         <Dummy />
-        <ToastHub />
       </ToastProvider>,
     );
 
