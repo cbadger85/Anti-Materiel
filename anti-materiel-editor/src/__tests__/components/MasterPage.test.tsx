@@ -1,8 +1,7 @@
+import { mount, shallow } from 'enzyme';
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { MemoryRouter } from 'react-router-dom';
 import { MasterPage } from '../../components/MasterPage/MasterPage';
-
-// TODO write tests for this
 
 describe('<MasterPage />', () => {
   it('Shows the provided side panel', () => {
@@ -10,8 +9,8 @@ describe('<MasterPage />', () => {
 
     const wrapper = shallow(
       <MasterPage
-        pageTitle="test"
         mainContent={jest.fn}
+        buttonRow={jest.fn}
         sidePanelContent={SidePanel}
       />,
     );
@@ -24,12 +23,45 @@ describe('<MasterPage />', () => {
 
     const wrapper = shallow(
       <MasterPage
-        pageTitle="test"
-        mainContent={jest.fn}
-        sidePanelContent={Main}
+        title=""
+        mainContent={Main}
+        buttonRow={jest.fn}
+        sidePanelContent={jest.fn}
       />,
     );
 
     expect(Main).toHaveBeenCalled();
+  });
+
+  it('Shows the provided main content', () => {
+    const ButtonRow = jest.fn();
+
+    const wrapper = shallow(
+      <MasterPage
+        title=""
+        mainContent={jest.fn}
+        buttonRow={ButtonRow}
+        sidePanelContent={jest.fn}
+      />,
+    );
+
+    expect(ButtonRow).toHaveBeenCalled();
+  });
+
+  it('Shows the title', () => {
+    const title = 'test title';
+
+    const wrapper = shallow(
+      <MasterPage
+        title={title}
+        mainContent={jest.fn}
+        buttonRow={jest.fn}
+        sidePanelContent={jest.fn}
+      />,
+    );
+
+    const foundTitle = wrapper.find('h1');
+
+    expect(foundTitle.text()).toBe(title);
   });
 });

@@ -29,7 +29,7 @@ export const ManagedContent: React.FC<ManagedContentProps> = ({
 
   return (
     <div className="managed-content__container">
-      <h3 className={'managed-content__title'}>{title}</h3>
+      <h2 className={'managed-content__title'}>{title}</h2>
       <div className="mananged-content__content">{content()}</div>
       <Button
         onClick={openSideDrawer}

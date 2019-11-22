@@ -2,9 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import './MasterPage.scss';
 
 export const MasterPage: React.FC<MasterPageProps> = ({
-  pageTitle,
   sidePanelContent,
   mainContent,
+  buttonRow,
+  title,
 }) => {
   const [sidePanelHeight, setSidePanelHeight] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -30,21 +31,26 @@ export const MasterPage: React.FC<MasterPageProps> = ({
   });
 
   return (
-    <div className="page-content__container">
-      <main className="editor" ref={contentRef}>
-        <h2 className="page-title">{pageTitle}</h2>
-        {mainContent()}
-      </main>
-      <section className="side-panel" style={{ height: sidePanelHeight }}>
-        {sidePanelContent()}
-      </section>
-      <div className="page-content__spacer" />
-    </div>
+    <>
+      <div className="top-row">
+        <h1>{title}</h1>
+        {buttonRow()}
+      </div>
+      <div className="page-content__container">
+        <main className="editor" ref={contentRef}>
+          <div>{mainContent()}</div>
+        </main>
+        <section className="side-panel" style={{ height: sidePanelHeight }}>
+          {sidePanelContent()}
+        </section>
+      </div>
+    </>
   );
 };
 
 interface MasterPageProps {
-  pageTitle: string;
+  title: string;
   sidePanelContent: () => React.ReactNode;
   mainContent: () => React.ReactNode;
+  buttonRow: () => React.ReactNode;
 }
