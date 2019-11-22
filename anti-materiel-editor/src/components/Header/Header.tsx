@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { EditorMenu } from '../EditorMenu/EditorMenu';
 import './Header.scss';
 
-export const Header: React.FC<HeaderProps> = ({ title }) => {
+export const Header: React.FC = () => {
   const location = useLocation();
 
   const isActive = location.pathname === '/';
@@ -11,21 +11,27 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
   return (
     <>
       <header className="header">
-        {isActive ? (
-          <span>
-            <h1 className="header__title">{title}</h1>
-          </span>
-        ) : (
-          <Link to="/">
-            <h1 className="header__title">{title}</h1>
-          </Link>
-        )}
+        <div>
+          {isActive ? (
+            <span>
+              <img
+                src="/anti-materiel.png"
+                alt="anti-materiel logo"
+                className="header-logo"
+              />
+            </span>
+          ) : (
+            <Link to="/">
+              <img
+                src="/anti-materiel.png"
+                alt="anti-materiel logo"
+                className="header-logo"
+              />
+            </Link>
+          )}
+        </div>
       </header>
       <EditorMenu />
     </>
   );
 };
-
-interface HeaderProps {
-  title: string;
-}

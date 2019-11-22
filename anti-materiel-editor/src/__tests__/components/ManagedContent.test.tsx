@@ -25,7 +25,7 @@ describe('<ManagedContent />', () => {
       <ManagedContent title="test" content={jest.fn()} form={jest.fn()} />,
     );
 
-    const title = wrapper.find('h3');
+    const title = wrapper.find('h2');
 
     expect(title.text()).toBe('test');
   });

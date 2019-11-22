@@ -24,9 +24,12 @@ export const Routes: React.FC = () => {
 
   return (
     <>
-      <Header title="Anti-Materiel" />
+      <Header />
       {transitions.map(({ item, props, key }) => (
-        <animated.div key={key} style={{ position: 'absolute', ...props }}>
+        <animated.div
+          key={key}
+          style={{ position: 'absolute', height: 'auto', ...props }}
+        >
           <Switch location={item}>
             <Route exact path="/unit-editor" component={UnitEditor} />
             <Route exact path="/weapon-editor" component={WeaponEditor} />

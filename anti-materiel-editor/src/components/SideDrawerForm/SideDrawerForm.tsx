@@ -12,7 +12,7 @@ export const SideDrawerForm: React.FC<SideDrawerFormProps> = ({
   return (
     <div className="side-drawer-form__container">
       <div style={{ height: '100%' }}>
-        <h3 className="side-drawer-form__heading">{title}</h3>
+        <h2 className="side-drawer-form__heading">{title}</h2>
         {children}
       </div>
       <div className="side-drawer-form-button-container">
@@ -40,7 +40,7 @@ export const SideDrawerForm: React.FC<SideDrawerFormProps> = ({
 
 interface SideDrawerFormProps {
   title: string;
-  onSubmit: (data: any) => void;
+  onSubmit: () => void;
   disableSubmit?: boolean;
   onCancel: () => void;
 }

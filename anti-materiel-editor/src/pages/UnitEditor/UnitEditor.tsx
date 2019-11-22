@@ -2,12 +2,24 @@ import React from 'react';
 import { MasterPage } from '../../components/MasterPage/MasterPage';
 import { StatsAndAttributes } from './StatsAndAttributes/StatsAndAttributes';
 import { UnitInfo } from './UnitInfo/UnitInfo';
+import { Button } from '../../components/Button/Button';
+import { useToast } from '../../components/Toasts/useToast';
 
 export const UnitEditor: React.FC = () => {
+  const makeToast = useToast();
   return (
     <>
       <MasterPage
-        pageTitle="Unit Editor"
+        title="Unit Editor"
+        buttonRow={() => (
+          <Button
+            width="7.5rem"
+            color="primary"
+            onClick={() => makeToast('Saved!')}
+          >
+            Save
+          </Button>
+        )}
         sidePanelContent={() => null}
         mainContent={() => (
           <>

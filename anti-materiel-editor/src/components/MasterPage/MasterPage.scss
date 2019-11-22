@@ -2,23 +2,29 @@
 
 // TODO Do something with sidebar on smaller screen sizes
 
-.page-title {
-  color: $neutral-3;
-  margin: 0;
-  line-height: 1;
-  font-size: 1.6rem;
-  border-bottom: 1px solid $supporting-indigo-7;
-  padding-right: 1.5rem;
-  display: inline-block;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.top-row {
+  margin: 2rem 3rem 0 3rem;
+  display: flex;
+  justify-content: space-between;
+
+  h1 {
+    color: $neutral-4;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-right: 1.5rem;
+    line-height: 1;
+    font-size: 2rem;
+    display: inline-block;
+    border-bottom: 3px solid $supporting-pink-6;
+  }
 }
 
 .page-content__container {
-  height: inherit;
+  height: auto;
   display: flex;
   padding: 2rem;
+  padding-top: 1rem;
   margin: auto;
   justify-content: center;
   overflow-x: scroll;
@@ -41,22 +47,8 @@
     border-radius: 4px;
     padding: 0.5rem 1rem;
     margin: 0 1rem;
-    min-height: 75vh;
+    min-height: 70vh;
     height: inherit;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  }
-
-  .page-content__spacer {
-    content: '';
-    order: 2;
-    flex: 0 0 18rem;
-    height: 100%;
-    margin: 0 1rem;
-  }
-}
-
-@media (max-width: 1450px) {
-  .page-content__spacer {
-    display: none;
   }
 }

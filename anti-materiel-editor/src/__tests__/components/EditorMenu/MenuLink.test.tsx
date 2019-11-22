@@ -1,8 +1,7 @@
-import React from 'react';
-import { MemoryRouter, Link, Route } from 'react-router-dom';
 import { mount } from 'enzyme';
+import React from 'react';
+import { Link, MemoryRouter, Route } from 'react-router-dom';
 import { MenuLink } from '../../../components/EditorMenu/MenuLink';
-import { act } from 'react-dom/test-utils';
 
 describe('<MenuLink />', () => {
   const activeClass = 'active';
@@ -41,8 +40,6 @@ describe('<MenuLink />', () => {
 
     wrapper.find(Link).simulate('click', { preventDefault });
 
-    console.log(location.pathname);
-
     expect(preventDefault).toHaveBeenCalled();
   });
 
@@ -66,8 +63,6 @@ describe('<MenuLink />', () => {
     const preventDefault = jest.fn();
 
     wrapper.find(Link).simulate('click', { preventDefault });
-
-    console.log(location.pathname);
 
     expect(preventDefault).toHaveBeenCalledTimes(0);
   });
