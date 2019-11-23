@@ -12,11 +12,12 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "start:editor": "lerna run --scope @anti-materiel/editor start",
-    "build:editor": "lerna run --scope @anti-materiel/editor build",
-    "start:app": "lerna run --scope @anti-materiel/app start",
-    "lint": "lerna run lint",
-    "ci": "lerna run ci"
+    "start:editor": "cd packages/anti-materiel-editor && yarn start",
+    "test:editor": "cd packages/anti-materiel-editor && yarn test",
+    "build:editor": "lerna run --scope @anti-materiel/editor build --stream",
+    "start:app": "cd packages/anti-materiel-app && yarn start",
+    "lint": "lerna run lint --stream",
+    "ci": "lerna run ci --stream"
   },
   "devDependencies": {
     "@types/enzyme": "^3.10.3",
