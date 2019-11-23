@@ -16,11 +16,7 @@ export const Header: React.FC = () => {
           {isActive ? (
             <span>
               <img
-<<<<<<< HEAD
                 src={antiMaterielLogo}
-=======
-                src="/anti-materiel.png"
->>>>>>> :lipstick: added logo and moved menu to allow components to line up better
                 alt="anti-materiel logo"
                 className="header-logo"
               />
@@ -28,11 +24,7 @@ export const Header: React.FC = () => {
           ) : (
             <Link to="/">
               <img
-<<<<<<< HEAD
                 src={antiMaterielLogo}
-=======
-                src="/anti-materiel.png"
->>>>>>> :lipstick: added logo and moved menu to allow components to line up better
                 alt="anti-materiel logo"
                 className="header-logo"
               />
