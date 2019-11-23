@@ -1,7 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { ArmyListUnit } from '@types';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+
+interface Test {
+  test: React.ReactText[];
+}
 
 const App: React.FC = () => {
   return (

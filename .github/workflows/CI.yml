@@ -18,22 +18,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install yarn and test editor
+      - name: Install yarn, bootstrap lerna, and run tests
         run: |
-          echo Running CI test on the editor...
+          echo Running tests...
           npm install -g yarn
-          cd anti-materiel-editor
-          yarn install
+          yarn
+          yarn bootstrap
           yarn ci
-        env:
-          CI: true
-
-      - name: Install yarn and test app
-        run: |
-          echo Running CI test on the app...
-          npm install -g yarn
-          cd anti-materiel-app
-          yarn install
-          yarn test
         env:
           CI: true

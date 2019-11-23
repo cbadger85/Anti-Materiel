@@ -1,5 +1,5 @@
 {
-  "name": "anti-material-editor",
+  "name": "anti-materiel-editor",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +16,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-select": "^3.0.8",
-    "react-spring": "^9.0.0-beta.34",
+    "react-spring": "9.0.0-beta.34",
     "typescript": "^3.7.2",
     "uuid": "^3.3.3"
   },
@@ -43,33 +43,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/enzyme": "^3.10.3",
-    "@types/enzyme-adapter-react-16": "^1.0.5",
-    "@types/lodash": "^4.14.144",
-    "@types/react-router-dom": "^5.1.2",
-    "@types/react-select": "^3.0.5",
-    "@types/react-test-renderer": "^16.9.1",
-    "@types/uuid": "^3.4.6",
-    "@typescript-eslint/eslint-plugin": "^2.8.0",
-    "@typescript-eslint/parser": "^2.7.0",
-    "babel-eslint": "10.x",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.15.1",
-    "eslint": "^6.6.0",
-    "eslint-config-prettier": "^6.5.0",
-    "eslint-config-react-app": "^5.0.2",
-    "eslint-plugin-flowtype": "3.x",
-    "eslint-plugin-import": "2.x",
-    "eslint-plugin-jsx-a11y": "6.x",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "1.x",
-    "jest": "24.9.0",
-    "prettier": "^1.19.1",
-    "react-test-renderer": "^16.10.2",
-    "ts-jest": "^24.1.0"
   },
   "jest": {
     "collectCoverageFrom": [

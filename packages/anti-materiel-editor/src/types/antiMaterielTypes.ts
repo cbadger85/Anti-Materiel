@@ -1,79 +1,80 @@
 export type ArmyType =
-  | 'PanOceania'
-  | 'Yu Jing'
-  | 'Ariadna'
-  | 'Haqqislam'
-  | 'Nomads'
-  | 'Combined Army'
-  | 'ALEPH'
-  | 'Tohaa'
-  | 'Non-Aligned Armies'
-  | 'O-12';
+  | "PanOceania"
+  | "Yu Jing"
+  | "Ariadna"
+  | "Haqqislam"
+  | "Nomads"
+  | "Combined Army"
+  | "ALEPH"
+  | "Tohaa"
+  | "Non-Aligned Armies"
+  | "O-12"
+  | "NA-2 Mercenaries";
 
 export type Sectorial =
-  | 'PanOceania'
-  | 'Shock Army of Acontecimento'
-  | 'Military Orders'
-  | 'Neoterran Capitaline Army'
-  | 'Varuna Immediate Reaction Division'
-  | 'Yu Jing'
-  | 'Imperial Service'
-  | 'Invincible Army'
-  | 'Ariadna'
-  | 'Caledonian Highlander Army'
-  | 'Force de Résponse Rapide Merovingienne'
-  | 'USAriadna Ranger Force'
-  | 'Tartary Army Corps'
-  | 'Haqqislam'
-  | 'Qapu Khalqi'
-  | 'Ramah Taskforce'
-  | 'Nomads'
-  | 'Jurisdicitonial Command of Corregidor'
-  | 'Jurisdicitonial Command of Bakunin'
-  | 'Jurisdicitonial Command of Tunguska'
-  | 'Combined Army'
-  | 'Morat Agression Force'
-  | 'Shasvastii Expeditionary Force'
-  | 'Onyx Contact Force'
-  | 'ALEPH'
-  | 'Steel Phalanx'
-  | 'Operations Subsection of the S.S.S.'
-  | 'Tohaa'
-  | 'Druze Bayram Security'
-  | 'Japanese Secessionist Army'
-  | 'Ikari Company'
-  | 'Starco. Free Company of the Star'
-  | 'Spiral Corps'
-  | 'Foreign Company'
-  | 'Dahshat Company'
-  | 'O-12';
+  | "PanOceania"
+  | "Shock Army of Acontecimento"
+  | "Military Orders"
+  | "Neoterran Capitaline Army"
+  | "Varuna Immediate Reaction Division"
+  | "Yu Jing"
+  | "Imperial Service"
+  | "Invincible Army"
+  | "Ariadna"
+  | "Caledonian Highlander Army"
+  | "Force de Résponse Rapide Merovingienne"
+  | "USAriadna Ranger Force"
+  | "Tartary Army Corps"
+  | "Haqqislam"
+  | "Qapu Khalqi"
+  | "Ramah Taskforce"
+  | "Nomads"
+  | "Jurisdicitonial Command of Corregidor"
+  | "Jurisdicitonial Command of Bakunin"
+  | "Jurisdicitonial Command of Tunguska"
+  | "Combined Army"
+  | "Morat Agression Force"
+  | "Shasvastii Expeditionary Force"
+  | "Onyx Contact Force"
+  | "ALEPH"
+  | "Steel Phalanx"
+  | "Operations Subsection of the S.S.S."
+  | "Tohaa"
+  | "Druze Bayram Security"
+  | "Japanese Secessionist Army"
+  | "Ikari Company"
+  | "Starco. Free Company of the Star"
+  | "Spiral Corps"
+  | "Foreign Company"
+  | "Dahshat Company"
+  | "O-12";
 
-export type UnitType = 'LI' | 'MI' | 'HI' | 'REM' | 'SK' | 'WB' | 'TAG';
+export type UnitType = "LI" | "MI" | "HI" | "REM" | "SK" | "WB" | "TAG";
 
 export type UnitClassification =
-  | 'Line Troop'
-  | 'Veteran Troop'
-  | 'Garrison Troop'
-  | 'Mechanized Troop'
-  | 'Elite Troop'
-  | 'Headquarters Troop'
-  | 'Spec. Trained Troop'
-  | 'Support Troop'
-  | 'Character'
-  | 'Mercanary Troop';
+  | "Line Troop"
+  | "Veteran Troop"
+  | "Garrison Troop"
+  | "Mechanized Troop"
+  | "Elite Troop"
+  | "Headquarters Troop"
+  | "Spec. Trained Troop"
+  | "Support Troop"
+  | "Character"
+  | "Mercanary Troop";
 
 export enum ImpetuousType {
-  FRENZY = 'FRENZY',
-  IMPETUOUS = 'IMPETUOUS',
-  EXTREMELY_IMPETUOUS = 'EXTREMELY_IMPETUOUS',
+  FRENZY = "FRENZY",
+  IMPETUOUS = "IMPETUOUS",
+  EXTREMELY_IMPETUOUS = "EXTREMELY_IMPETUOUS"
 }
 
 export enum CubeType {
-  CUBE = 'CUBE',
-  CUBE_2 = 'CUBE_2',
+  CUBE = "CUBE",
+  CUBE_2 = "CUBE_2"
 }
 
-export type MovValue = '4-4' | '4-2' | '6-4' | '6-6' | '6-2' | '8-4' | '8-6';
+export type MovValue = "4-4" | "4-2" | "6-4" | "6-6" | "6-2" | "8-4" | "8-6";
 
 export interface WikiInfo {
   id: string;
@@ -81,14 +82,22 @@ export interface WikiInfo {
   wikiLink: string;
 }
 
-export interface SpecialRule extends WikiInfo {}
+export type SkillType =
+  | "Short Skill"
+  | "ARO"
+  | "Automatic Skill"
+  | "Entire Order";
+
+export interface SpecialRule extends WikiInfo {
+  skillType: SkillType[];
+}
 
 export interface Equipment extends WikiInfo {}
 
 export enum RangeBandModifier {
   PLUS_THREE,
   ZERO,
-  MINUS_THREE,
+  MINUS_THREE
 }
 
 export interface WeaponRangeBand {
@@ -110,7 +119,7 @@ export interface WeaponTrait extends WikiInfo {}
 
 export enum WeaponType {
   RANGED,
-  CC,
+  CC
 }
 
 export interface WeaponMode {
@@ -129,14 +138,7 @@ export interface Weapon extends WikiInfo {
   weaponModes: WeaponMode[];
 }
 
-export type HackingRange = 'Hacking Area' | 'Table' | 'User' | 'Base Contact';
-
-export type SkillType =
-  | 'Short/ARO'
-  | 'Short Skill'
-  | 'ARO'
-  | 'Automatic ARO'
-  | 'Entire Order';
+export type HackingRange = "Hacking Area" | "Table" | "User" | "Base Contact";
 
 export interface HackingProgram extends WikiInfo {
   range: HackingRange;
@@ -147,7 +149,7 @@ export interface HackingProgram extends WikiInfo {
   ammo: AmmoType;
   target: string;
   effect: string;
-  skillType: SkillType;
+  skillType: SkillType[];
   special: string;
 }
 

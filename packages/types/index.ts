@@ -64,14 +64,14 @@ export type UnitClassification =
   | 'Mercanary Troop';
 
 export enum ImpetuousType {
-  FRENZY,
-  IMPETUOUS,
-  EXTREMELY_IMPETUOUS,
+  FRENZY = 'FRENZY',
+  IMPETUOUS = 'IMPETUOUS',
+  EXTREMELY_IMPETUOUS = 'EXTREMELY_IMPETUOUS',
 }
 
-export enum cubeType {
-  CUBE,
-  CUBE_2,
+export enum CubeType {
+  CUBE = 'CUBE',
+  CUBE_2 = 'CUBE_2',
 }
 
 export type MovValue = '4-4' | '4-2' | '6-4' | '6-6' | '6-2' | '8-4' | '8-6';
@@ -154,9 +154,8 @@ export interface HackingProgram extends WikiInfo {
 }
 
 export interface Availability {
-  id: string;
   ava: number;
-  army: Sectorial;
+  sectorial: Sectorial;
 }
 
 export interface Note {
@@ -169,14 +168,14 @@ export interface SecondaryUnitStats {
   name: string;
   id: string;
   mov: MovValue;
-  cc: number;
-  bs: number;
-  ph: number;
-  wip: number;
-  arm: number;
-  bts: number;
-  w: number;
-  s: number;
+  cc: string;
+  bs: string;
+  ph: string;
+  wip: string;
+  arm: string;
+  bts: string;
+  w: string;
+  s: string;
   specialRulesById: string[];
   EquipmentById: string[];
   bswById: string[];
@@ -223,14 +222,14 @@ export interface GSyncUnit {
   name: string;
   unitSvgName: string;
   mov: MovValue;
-  cc: number;
-  bs: number;
-  ph: number;
-  wip: number;
-  arm: number;
-  bts: number;
-  w: number;
-  s: number;
+  cc: string;
+  bs: string;
+  ph: string;
+  wip: string;
+  arm: string;
+  bts: string;
+  w: string;
+  s: string;
   structure?: boolean;
   specialRulesById: string[];
   EquipmentById: string[];
@@ -247,17 +246,18 @@ export interface ArmyListUnitAndStats {
   unitSvgName: string;
   classification: UnitClassification;
   type: UnitType;
-  imp?: ImpetuousType;
-  cube?: cubeType;
+  impetuous?: ImpetuousType;
+  cube?: CubeType;
   mov: MovValue;
-  cc: number;
-  bs: number;
-  ph: number;
-  wip: number;
-  arm: number;
-  bts: number;
-  w: number;
-  s: number;
+  cc: string;
+  bs: string;
+  ph: string;
+  wip: string;
+  arm: string;
+  bts: string;
+  w: string;
+  s: string;
+  structure?: boolean;
   ava: Availability;
   specialRulesById: string[];
   EquipmentById: string[];
@@ -265,7 +265,6 @@ export interface ArmyListUnitAndStats {
   secondaryStats?: SecondaryUnitStats;
   gSync: GSyncUnit[];
   unitProfiles: UnitProfile[];
-  structure?: boolean;
 }
 
 export interface ArmyListUnitWithRelatedUnits {
@@ -275,7 +274,6 @@ export interface ArmyListUnitWithRelatedUnits {
   sectorial: Sectorial[];
   unitSvgName: string;
   unitProfiles: UnitProfile[]; // for combined units like zoe ∏-well
-  sectorial: Sectorial[];
   // seperate?: boolean; //? what was this for?
   relatedProfilesById: RelatedUnits[];
   notes: Note[];
@@ -288,6 +286,4 @@ export interface RelatedUnits {
   relatedProfilesById: string;
 }
 
-export type ArmyListUnit =
-  | ArmyListUnitAndStats
-  | ArmyListUnitWithRelatedProfiles;
+export type ArmyListUnit = ArmyListUnitAndStats | ArmyListUnitWithRelatedUnits;
