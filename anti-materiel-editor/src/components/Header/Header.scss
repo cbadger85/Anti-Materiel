@@ -1,7 +1,7 @@
 @import '../../styles/colors';
 
 .header {
-  padding: 1rem 0 0.5rem 3rem;
+  padding: 1rem 0 1rem 3rem;
   background-color: $neutral-1;
   box-shadow: 0 3px 6px #00000029, 0 3px 6px rgba(0, 0, 0, 0.23);
 
@@ -9,13 +9,13 @@
     outline: none;
   }
 
-  a:focus h1,
-  a:hover h1 {
+  img:focus h1,
+  img:hover h1 {
     color: $primary-cyan-8;
     border-bottom: 3px solid $supporting-pink-6;
   }
 
   .header-logo {
-    width: 350px;
+    width: 300px;
   }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { EditorMenu } from '../EditorMenu/EditorMenu';
 import './Header.scss';
+import antiMaterielLogo from '../../images/anti-materiel.svg';
 
 export const Header: React.FC = () => {
   const location = useLocation();
@@ -15,7 +16,7 @@ export const Header: React.FC = () => {
           {isActive ? (
             <span>
               <img
-                src="/anti-materiel.png"
+                src={antiMaterielLogo}
                 alt="anti-materiel logo"
                 className="header-logo"
               />
@@ -23,7 +24,7 @@ export const Header: React.FC = () => {
           ) : (
             <Link to="/">
               <img
-                src="/anti-materiel.png"
+                src={antiMaterielLogo}
                 alt="anti-materiel logo"
                 className="header-logo"
               />
