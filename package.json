@@ -12,9 +12,9 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "start:editor": "lerna run --scope anti-materiel-editor start",
-    "build:editor": "lerna run --scope anti-materiel-editor build",
-    "start:app": "cd packages/anti-materiel-app && yarn start",
+    "start:editor": "lerna run --scope @anti-materiel/editor start",
+    "build:editor": "lerna run --scope @anti-materiel/editor build",
+    "start:app": "lerna run --scope @anti-materiel/app start",
     "lint": "lerna run lint",
     "ci": "lerna run ci"
   },
