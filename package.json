@@ -13,10 +13,9 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
     "start:editor": "cd packages/anti-materiel-editor && yarn start",
-    "lint:editor": "cd packages/anti-materiel-editor && yarn lint",
     "start:app": "cd packages/anti-materiel-app && yarn start",
-    "lint:app": "cd packages/anti-materiel-app && yarn lint",
-    "lint": "yarn lint:editor && yarn lint:app"
+    "lint": "lerna run lint",
+    "ci": "lerna run ci"
   },
   "devDependencies": {
     "@types/enzyme": "^3.10.3",

@@ -1,2 +1,3 @@
 packages/*/src/__tests__/**/*
 packages/*/node_modules/**/*
+node_modules/**/*
