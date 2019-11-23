@@ -22,6 +22,7 @@ jobs:
         run: |
           echo Running tests...
           npm install -g yarn
+          yarn
           yarn bootstrap
           yarn ci
         env:
