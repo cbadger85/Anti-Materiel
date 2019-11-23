@@ -8,7 +8,8 @@ export type ArmyType =
   | 'ALEPH'
   | 'Tohaa'
   | 'Non-Aligned Armies'
-  | 'O-12';
+  | 'O-12'
+  | 'NA-2 Mercenaries';
 
 export type Sectorial =
   | 'PanOceania'
@@ -81,7 +82,15 @@ export interface WikiInfo {
   wikiLink: string;
 }
 
-export interface SpecialRule extends WikiInfo {}
+export type SkillType =
+  | 'Short Skill'
+  | 'ARO'
+  | 'Automatic Skill'
+  | 'Entire Order';
+
+export interface SpecialRule extends WikiInfo {
+  skillType: SkillType[];
+}
 
 export interface Equipment extends WikiInfo {}
 
@@ -131,13 +140,6 @@ export interface Weapon extends WikiInfo {
 
 export type HackingRange = 'Hacking Area' | 'Table' | 'User' | 'Base Contact';
 
-export type SkillType =
-  | 'Short/ARO'
-  | 'Short Skill'
-  | 'ARO'
-  | 'Automatic ARO'
-  | 'Entire Order';
-
 export interface HackingProgram extends WikiInfo {
   range: HackingRange;
   attackerModifier: number;
@@ -147,7 +149,7 @@ export interface HackingProgram extends WikiInfo {
   ammo: AmmoType;
   target: string;
   effect: string;
-  skillType: SkillType;
+  skillType: SkillType[];
   special: string;
 }
 
