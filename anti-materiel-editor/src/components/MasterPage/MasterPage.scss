@@ -6,16 +6,17 @@
   margin: 2rem 3rem 0 3rem;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 
   h1 {
     color: $neutral-4;
     text-transform: uppercase;
     margin: 0;
-    padding-right: 2rem;
-    line-height: 1;
-    font-size: 2rem;
+    padding-right: 1.5rem;
+    font-size: 1.6rem;
     display: inline-block;
     border-bottom: 3px solid $supporting-pink-6;
+    letter-spacing: -1px;
   }
 }
 
