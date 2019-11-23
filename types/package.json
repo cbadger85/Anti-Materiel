@@ -1,9 +1,13 @@
 {
-  "name": "types",
+  "name": "@anti-materiel/types",
   "version": "1.0.0",
   "main": "index.js",
+  "private": true,
   "license": "MIT",
   "devDependencies": {
     "typescript": "^3.6.4"
+  },
+  "scripts": {
+    "lint": "eslint './**/*.{ts,tsx}'"
   }
 }
