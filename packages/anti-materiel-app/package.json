@@ -17,7 +17,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint './src/**/*.{ts,tsx}'"
+    "test:ci": "CI=true react-scripts test --env=jsdom --verbose --coverage --collectCoverageFrom=src/**/*.{ts,tsx}",
+    "lint": "eslint './src/**/*.{ts,tsx}'",
+    "ci": "yarn lint && yarn test:ci"
   },
   "eslintConfig": {
     "extends": "react-app"
