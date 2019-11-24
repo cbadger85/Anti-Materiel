@@ -165,4 +165,8 @@ export const sectorialSelectOptions = [
     label: 'O-12',
     value: 'O-12',
   },
+  {
+    label: 'NA-2 Mercenaries',
+    value: 'NA-2 Mercenaries',
+  },
 ];
