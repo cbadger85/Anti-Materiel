@@ -47,7 +47,8 @@ export type Sectorial =
   | 'Spiral Corps'
   | 'Foreign Company'
   | 'Dahshat Company'
-  | 'O-12';
+  | 'O-12'
+  | 'NA-2 Mercenaries';
 
 export type UnitType = 'LI' | 'MI' | 'HI' | 'REM' | 'SK' | 'WB' | 'TAG';
 
