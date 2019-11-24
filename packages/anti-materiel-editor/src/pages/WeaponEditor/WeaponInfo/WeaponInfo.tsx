@@ -1,17 +1,17 @@
 import React from 'react';
 import { ManagedContent } from '../../../components/ManagedContent/ManagedContent';
-import { UnitInfoForm } from './UnitInfoForm';
+import { WeaponInfoForm } from './WeaponInfoForm';
 
-export const UnitInfo: React.FC = () => {
+export const WeaponInfo: React.FC = () => {
   return (
     <ManagedContent
-      title="Unit Info"
+      title="Weapon Info"
       content={() => null}
       form={(closeSideDrawer, onCancel) => (
-        <UnitInfoForm
+        <WeaponInfoForm
           closeSideDrawer={closeSideDrawer}
-          onSubmit={data => console.log(data)}
           onCancel={onCancel}
+          onSubmit={data => console.log(data)}
         />
       )}
     />
