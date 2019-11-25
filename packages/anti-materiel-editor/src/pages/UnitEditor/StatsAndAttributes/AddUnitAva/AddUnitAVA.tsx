@@ -47,6 +47,7 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
 
   return (
     <>
+      <h4 className="side-drawer-contents__add-ava-title">add AVA</h4>
       <div className="side-drawer-contents__add-ava-container">
         <div className="side-drawer-contents__add-ava-inputs">
           <Select

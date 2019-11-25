@@ -27,10 +27,10 @@ export const Checkbox: React.FC<CheckboxProps> = ({
         checked={checked}
         onChange={handleOnChange}
         name={name}
-        id={name}
+        id={props.id ? props.id : name}
         {...props}
       />
-      <label htmlFor={name} className="checkbox__label">
+      <label htmlFor={props.id ? props.id : name} className="checkbox__label">
         {label}
       </label>
     </div>

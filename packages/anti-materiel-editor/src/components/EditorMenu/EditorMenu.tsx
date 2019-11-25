@@ -23,7 +23,6 @@ export const EditorMenu: React.FC = () => {
         <span className="menu__item">Equipment</span>
         <span className="menu__item">Special Rules</span>
         <span className="menu__item">Hacking Programs</span>
-        <span className="menu__item">Hacking Programs</span>
         <span className="menu__item">Pheroware</span>
       </div>
     </div>

@@ -4,17 +4,26 @@ import { useForm } from '../../../hooks/useForm';
 import uuid from 'uuid/v4';
 import { SideDrawerForm } from '../../../components/SideDrawerForm/SideDrawerForm';
 import { Input } from '../../../components/Input/Input';
+import { useEffect } from 'react';
 
 export const WeaponInfoForm: React.FC<WeaponInfoFormProps> = ({
   closeSideDrawer,
   onCancel,
   onSubmit,
   initialData,
+  onDataChange,
 }) => {
   const { onChangeInput, fields, isValid } = useForm({
     name: initialData ? initialData.name : '',
     wikiLink: initialData ? initialData.wikiLink : '',
   });
+
+  useEffect(() => {
+    const isChanged =
+      !initialData && (!!fields.name.trim() || !!fields.wikiLink.trim());
+
+    onDataChange(isChanged);
+  }, [fields, initialData, onDataChange]);
 
   const handleOnSubmit = (): void => {
     const updatedFields = {
@@ -48,7 +57,7 @@ export const WeaponInfoForm: React.FC<WeaponInfoFormProps> = ({
         label="Wiki Link"
         value={fields.wikiLink}
         onChange={onChangeInput}
-        placeholder="http://infinitythewiki.com/en/Rifle#Combi_Rifle"
+        placeholder="http://infinitythewiki.com/..."
       />
     </SideDrawerForm>
   );
@@ -59,4 +68,5 @@ interface WeaponInfoFormProps {
   onCancel: () => void;
   onSubmit: (data: WeaponInfoData) => void;
   initialData?: WeaponInfoData;
+  onDataChange: (isChanged: boolean) => void;
 }

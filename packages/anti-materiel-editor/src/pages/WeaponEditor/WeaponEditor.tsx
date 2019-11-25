@@ -3,6 +3,7 @@ import { MasterPage } from '../../components/MasterPage/MasterPage';
 import { Button } from '../../components/Button/Button';
 import { useToast } from '../../components/Toasts/useToast';
 import { WeaponInfo } from './WeaponInfo/WeaponInfo';
+import { WeaponMode } from './WeaponMode/WeaponMode';
 
 export const WeaponEditor: React.FC = () => {
   const makeToast = useToast();
@@ -20,7 +21,12 @@ export const WeaponEditor: React.FC = () => {
           </Button>
         )}
         sidePanelContent={() => null}
-        mainContent={() => <WeaponInfo />}
+        mainContent={() => (
+          <>
+            <WeaponInfo />
+            <WeaponMode />
+          </>
+        )}
       />
     </>
   );

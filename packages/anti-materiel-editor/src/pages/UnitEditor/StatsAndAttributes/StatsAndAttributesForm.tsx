@@ -11,16 +11,7 @@ import {
 import { AddUnitAVA } from './AddUnitAva/AddUnitAVA';
 import './StatsAndAttributesForm.scss';
 import { StatsAndAttributesFormData } from './StatsAndAttributesTypes';
-
-export const isBTS = (bts: string): boolean => {
-  const btsNum = parseInt(bts, 10);
-
-  return btsNum % 3 === 0;
-};
-
-export const movRegex = new RegExp(/^([0-9]-[0-9])*$/);
-
-export const numberRegex = new RegExp(/^[0-9]*$/);
+import { isMov, isEmpty, isInt, isBTS } from '../../../utils/formValidators';
 
 export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
   closeSideDrawer,
@@ -103,7 +94,7 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
           className="side-drawer-contents__stat-input"
           width={statInputWidth}
           value={fields.mov}
-          error={!movRegex.test(fields.mov) || !fields.mov.trim()}
+          error={!isMov(fields.mov) || isEmpty(fields.mov)}
           placeholder="4-4"
         />
         <Input
@@ -114,7 +105,7 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
           width={statInputWidth}
           className="side-drawer-contents__stat-input"
           value={fields.cc}
-          error={!numberRegex.test(fields.cc) || !fields.cc.trim()}
+          error={!isInt(fields.cc) || isEmpty(fields.cc)}
           placeholder="13"
         />
         <Input
@@ -125,7 +116,7 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
           width={statInputWidth}
           className="side-drawer-contents__stat-input"
           value={fields.bs}
-          error={!numberRegex.test(fields.bs)}
+          error={!isInt(fields.bs) || isEmpty(fields.bs)}
           placeholder="12"
         />
       </div>
@@ -138,7 +129,7 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
           width={statInputWidth}
           className="side-drawer-contents__stat-input"
           value={fields.ph}
-          error={!numberRegex.test(fields.ph)}
+          error={!isInt(fields.ph) || isEmpty(fields.ph)}
           placeholder="10"
         />
         <Input
@@ -149,7 +140,7 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
           width={statInputWidth}
           className="side-drawer-contents__stat-input"
           value={fields.wip}
-          error={!numberRegex.test(fields.wip)}
+          error={!isInt(fields.wip) || isEmpty(fields.wip)}
           placeholder="12"
         />
         <Input
@@ -160,7 +151,7 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
           width={statInputWidth}
           className="side-drawer-contents__stat-input"
           value={fields.arm}
-          error={!numberRegex.test(fields.arm)}
+          error={!isInt(fields.arm) || isEmpty(fields.arm)}
           placeholder="1"
         />
       </div>
@@ -173,7 +164,9 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
           width={statInputWidth}
           className="side-drawer-contents__stat-input"
           value={fields.bts}
-          error={!numberRegex.test(fields.bts) || !isBTS(fields.bts)}
+          error={
+            !isInt(fields.bts) || !isBTS(fields.bts) || isEmpty(fields.bts)
+          }
           placeholder="3"
         />
         <Input
@@ -184,7 +177,7 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
           width={statInputWidth}
           className="side-drawer-contents__stat-input"
           value={fields.w}
-          error={!numberRegex.test(fields.w)}
+          error={!isInt(fields.w) || isEmpty(fields.w)}
           placeholder="1"
         />
         <Input
@@ -195,7 +188,7 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
           width={statInputWidth}
           className="side-drawer-contents__stat-input"
           value={fields.s}
-          error={!numberRegex.test(fields.s)}
+          error={!isInt(fields.s) || isEmpty(fields.s)}
           placeholder="2"
         />
       </div>

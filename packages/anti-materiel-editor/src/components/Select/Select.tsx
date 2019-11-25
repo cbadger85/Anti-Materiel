@@ -59,7 +59,7 @@ export const Select: React.FC<SelectInputProps> = ({
     }),
     singleValue: (base, state) => ({
       ...base,
-      color: '#334e68',
+      color: state.isDisabled ? '#486581' : '#334e68',
     }),
     dropdownIndicator: (base, state) => ({
       ...base,

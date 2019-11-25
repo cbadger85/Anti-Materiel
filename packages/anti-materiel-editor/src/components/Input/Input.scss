@@ -27,4 +27,12 @@
     outline: none;
     border: 1px solid $supporting-pink-7;
   }
+
+  .input__input-field:disabled {
+    background-color: $neutral-8;
+  }
+
+  .input__input-field:disabled::placeholder {
+    color: $neutral-4;
+  }
 }
