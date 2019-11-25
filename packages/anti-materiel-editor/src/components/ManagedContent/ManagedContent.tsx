@@ -11,20 +11,29 @@ export const ManagedContent: React.FC<ManagedContentProps> = ({
   title,
   content,
   form,
+  onClearForm,
 }) => {
   const [isModalShown, setIsModalShown] = useState(false);
   const [isSideDrawerOpen, setIsSideDrawerOpen] = useState(false);
 
   const openSideDrawer = (): void => setIsSideDrawerOpen(true);
 
-  const closeSideDrawer = (): void => setIsSideDrawerOpen(false);
+  const handleCloseSideDrawer = (): void => {
+    onClearForm();
+    setIsSideDrawerOpen(false);
+  };
 
   const handleCancel = (): void => {
     if (warn) {
       setIsModalShown(true);
       return;
     }
-    closeSideDrawer();
+
+    handleCloseSideDrawer();
+  };
+
+  const handleOnCancelModal = (): void => {
+    setIsModalShown(false);
   };
 
   return (
@@ -49,12 +58,12 @@ export const ManagedContent: React.FC<ManagedContentProps> = ({
       </Button>
 
       <SideDrawer isOpen={isSideDrawerOpen} closeSideDrawer={handleCancel}>
-        {form(closeSideDrawer, handleCancel)}
+        {form(handleCloseSideDrawer, handleCancel)}
       </SideDrawer>
       <ConfirmModal
         text="Are you sure you want to discard changes?"
-        closeModal={() => setIsModalShown(false)}
-        confirmAction={closeSideDrawer}
+        closeModal={handleOnCancelModal}
+        confirmAction={handleCloseSideDrawer}
         isShown={isModalShown}
       />
     </div>
@@ -70,4 +79,5 @@ interface ManagedContentProps {
     closeSideDrawer: () => void,
     closeSideDrawerWarn: () => void,
   ) => React.ReactNode;
+  onClearForm: () => void;
 }

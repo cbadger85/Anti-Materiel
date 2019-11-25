@@ -64,21 +64,11 @@ export type UnitClassification =
   | 'Character'
   | 'Mercanary Troop';
 
-export enum ImpetuousType {
-  FRENZY = 'FRENZY',
-  IMPETUOUS = 'IMPETUOUS',
-  EXTREMELY_IMPETUOUS = 'EXTREMELY_IMPETUOUS',
-}
+export type ImpetuousType = 'FRENZY' | 'IMPETUOUS' | 'EXTREMELY_IMPETUOUS';
 
-export enum CubeType {
-  CUBE = 'CUBE',
-  CUBE_2 = 'CUBE_2',
-}
-
-export type MovValue = '4-4' | '4-2' | '6-4' | '6-6' | '6-2' | '8-4' | '8-6';
+export type CubeType = 'CUBE' | 'CUBE_2';
 
 export interface WikiInfo {
-  id: string;
   name: string;
   wikiLink: string;
 }
@@ -90,16 +80,15 @@ export type SkillType =
   | 'Entire Order';
 
 export interface SpecialRule extends WikiInfo {
+  id: string;
   skillType: SkillType[];
 }
 
-export interface Equipment extends WikiInfo {}
-
-export enum RangeBandModifier {
-  PLUS_THREE,
-  ZERO,
-  MINUS_THREE,
+export interface Equipment extends WikiInfo {
+  id: string;
 }
+
+export type RangeBandModifier = '+6' | '+3' | '0' | '-3' | '-6';
 
 export interface WeaponRangeBand {
   min: number;
@@ -114,25 +103,15 @@ export interface WeaponRange {
   maximum?: WeaponRangeBand;
 }
 
-export interface AmmoType extends WikiInfo {}
-
-export interface WeaponTrait extends WikiInfo {}
-
-export enum WeaponType {
-  RANGED,
-  CC,
-}
-
 export interface WeaponMode {
   id: string;
   name: string;
-  rule: string;
   weaponRange?: WeaponRange;
-  damage: number;
-  burst: number;
-  ammo: AmmoType[];
-  traits: WeaponTrait[];
-  type: WeaponType;
+  damage: string;
+  burst: string;
+  ammo: WikiInfo[];
+  combinedAmmo: boolean;
+  traits: WikiInfo[];
 }
 
 export interface Weapon extends WikiInfo {
@@ -147,7 +126,7 @@ export interface HackingProgram extends WikiInfo {
   opponentModifier: number;
   damage: number;
   burst: number;
-  ammo: AmmoType;
+  ammo: WikiInfo;
   target: string;
   effect: string;
   skillType: SkillType[];
@@ -168,7 +147,7 @@ export interface Note {
 export interface SecondaryUnitStats {
   name: string;
   id: string;
-  mov: MovValue;
+  mov: string;
   cc: string;
   bs: string;
   ph: string;
@@ -222,7 +201,7 @@ export interface GSyncUnit {
   id: string;
   name: string;
   unitSvgName: string;
-  mov: MovValue;
+  mov: string;
   cc: string;
   bs: string;
   ph: string;
@@ -249,7 +228,7 @@ export interface ArmyListUnitAndStats {
   type: UnitType;
   impetuous?: ImpetuousType;
   cube?: CubeType;
-  mov: MovValue;
+  mov: string;
   cc: string;
   bs: string;
   ph: string;

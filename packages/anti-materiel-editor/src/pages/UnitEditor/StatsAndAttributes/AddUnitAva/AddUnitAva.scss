@@ -3,12 +3,20 @@
 
 .side-drawer-contents__add-ava-container {
   border: 2px dashed $neutral-4;
-  padding: 1rem 0.5rem 0.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
 
   button {
     @include vertically-horizontally-center;
     margin-left: 0;
   }
+}
+
+.side-drawer-contents__add-ava-title {
+  color: $neutral-9;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .side-drawer-contents__add-ava-inputs {

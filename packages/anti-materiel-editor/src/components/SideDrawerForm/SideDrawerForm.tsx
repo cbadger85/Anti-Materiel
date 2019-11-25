@@ -12,7 +12,7 @@ export const SideDrawerForm: React.FC<SideDrawerFormProps> = ({
   return (
     <div className="side-drawer-form__container">
       <div style={{ height: '100%' }}>
-        <h2 className="side-drawer-form__heading">{title}</h2>
+        <h3 className="side-drawer-form__heading">{title}</h3>
         {children}
       </div>
       <div className="side-drawer-form-button-container">

@@ -1,30 +1,23 @@
 import React, { useState } from 'react';
 import { ManagedContent } from '../../../components/ManagedContent/ManagedContent';
-import { WeaponInfoForm } from './WeaponInfoForm';
+import { WeaponModeForm } from './WeaponModeForm';
 
-export const WeaponInfo: React.FC = () => {
+export const WeaponMode: React.FC = () => {
   const [warn, setWarn] = useState(false);
-
-  const handleOnDataChange = (isChanged: boolean): void => {
-    setWarn(isChanged);
-  };
-
   return (
     <ManagedContent
       warn={warn}
-      title="Weapon Info"
+      title="Weapon Mode"
       content={() => null}
       form={(closeSideDrawer, onCancel) => (
-        <WeaponInfoForm
+        <WeaponModeForm
           closeSideDrawer={closeSideDrawer}
-          onCancel={onCancel}
           onSubmit={data => console.log(data)}
-          onDataChange={handleOnDataChange}
+          onCancel={onCancel}
+          onDataChange={isChanged => setWarn(isChanged)}
         />
       )}
-      onClearForm={() => {
-        setWarn(false);
-      }}
+      onClearForm={() => null}
     />
   );
 };

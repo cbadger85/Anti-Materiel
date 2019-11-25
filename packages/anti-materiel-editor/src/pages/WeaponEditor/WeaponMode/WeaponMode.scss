@@ -1,0 +1,66 @@
+@import '../../../styles/colors';
+
+.weapon-mode-range-band-title,
+.weapon-mode-item-title {
+  color: $neutral-9;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.weapon-mode-range-band-row {
+  display: flex;
+  justify-content: space-between;
+
+  .weapon-mode-min-range {
+    margin: 0 0.5rem;
+  }
+}
+
+.list-item-header {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  color: $neutral-0;
+}
+
+.list-item__name {
+  flex: 4;
+  margin-right: 0.5rem;
+}
+
+.list-item__wiki-link {
+  flex: 4;
+  margin-right: 0.5rem;
+
+  a,
+  a:visited {
+    color: inherit;
+  }
+
+  a:hover {
+    color: $neutral-9;
+  }
+}
+
+.weapon-mode__list-item-container {
+  margin-bottom: 1rem;
+}
+
+.list-item__delete-button {
+  text-align: right;
+}
+
+.item-form__input-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-item__form-container {
+  border: 2px dashed $neutral-4;
+  padding: 1rem 0.5rem 0.5rem;
+}
+
+.add-ammo-form {
+  margin-bottom: 1rem;
+}

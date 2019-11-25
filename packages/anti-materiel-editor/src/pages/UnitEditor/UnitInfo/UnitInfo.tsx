@@ -14,6 +14,7 @@ export const UnitInfo: React.FC = () => {
           onCancel={onCancel}
         />
       )}
+      onClearForm={() => null}
     />
   );
 };
