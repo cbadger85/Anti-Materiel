@@ -21,7 +21,6 @@ describe('<ToggleContent />', () => {
             <Button onClick={hide} />
           </div>
         )}
-        handleMount
       />,
     );
 
@@ -39,7 +38,6 @@ describe('<ToggleContent />', () => {
             <Button onClick={hide} />
           </div>
         )}
-        handleMount
       />,
     );
 
@@ -59,7 +57,6 @@ describe('<ToggleContent />', () => {
             <Button onClick={hide} />
           </div>
         )}
-        handleMount
       />,
     );
 

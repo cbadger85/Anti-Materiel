@@ -24,7 +24,7 @@ export type FormFields<T> = T & {
 };
 
 export type FormState<T, K extends keyof T> = {
-  [keys in K]: { value: T[K]; isInvalid?: boolean };
+  [keys in K & keyof T]: { value: T[K]; isInvalid?: boolean };
 } &
   FormStateDictionary;
 

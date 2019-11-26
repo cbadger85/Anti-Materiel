@@ -1,11 +1,6 @@
 import { mount, ReactWrapper } from 'enzyme';
 import React from 'react';
-import {
-  StatsAndAttributesForm,
-  isBTS,
-  movRegex,
-  numberRegex,
-} from '../../../../pages/UnitEditor/StatsAndAttributes/StatsAndAttributesForm';
+import { StatsAndAttributesForm } from '../../../../pages/UnitEditor/StatsAndAttributes/StatsAndAttributesForm';
 
 describe('<StatsAndAttributesForm />', () => {
   let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
@@ -282,87 +277,5 @@ describe('<StatsAndAttributesForm />', () => {
       .simulate('click');
 
     expect(onSubmit).toBeCalledTimes(0);
-  });
-
-  describe('isBTS', () => {
-    it('should return true if the number is divisible by 3', () => {
-      const validBTS = '3';
-
-      const valid = isBTS(validBTS);
-
-      expect(valid).toBeTruthy();
-    });
-
-    it('should return true if the number is 0', () => {
-      const validBTS = '0';
-
-      const valid = isBTS(validBTS);
-
-      expect(valid).toBeTruthy();
-    });
-
-    it('should return false if the number is not divisible by three', () => {
-      const validBTS = '4';
-
-      const valid = isBTS(validBTS);
-
-      expect(valid).toBeFalsy();
-    });
-
-    it('should return false if the number is not a number', () => {
-      const validBTS = 'a';
-
-      const valid = isBTS(validBTS);
-
-      expect(valid).toBeFalsy();
-    });
-
-    it('should return false if the input is blank', () => {
-      const validBTS = '';
-
-      const valid = isBTS(validBTS);
-
-      expect(valid).toBeFalsy();
-    });
-  });
-
-  describe('movRegex', () => {
-    it('should match a valid mov value', () => {
-      const mov = '4-4';
-
-      expect(movRegex.test(mov)).toBeTruthy();
-    });
-
-    it('should not match if the mov is invalid', () => {
-      const mov = '4-';
-
-      expect(movRegex.test(mov)).toBeFalsy();
-    });
-
-    it('should not match if the mov is invalid', () => {
-      const mov = '4-4a';
-
-      expect(movRegex.test(mov)).toBeFalsy();
-    });
-  });
-
-  describe('numRegex', () => {
-    it('should match only numbers', () => {
-      const num = '12';
-
-      expect(numberRegex.test(num)).toBeTruthy();
-    });
-
-    it('should not match non-numbers', () => {
-      const num = 'a';
-
-      expect(numberRegex.test(num)).toBeFalsy();
-    });
-
-    it('should not match non-numbers', () => {
-      const num = '1a';
-
-      expect(numberRegex.test(num)).toBeFalsy();
-    });
   });
 });

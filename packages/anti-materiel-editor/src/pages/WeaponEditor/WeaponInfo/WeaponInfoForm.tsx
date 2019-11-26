@@ -1,10 +1,11 @@
 import React from 'react';
-import { WeaponInfoData } from './WeaponInfoTypes';
-import { useForm } from '../../../hooks/useForm';
 import uuid from 'uuid/v4';
-import { SideDrawerForm } from '../../../components/SideDrawerForm/SideDrawerForm';
 import { Input } from '../../../components/Input/Input';
-import { useEffect } from 'react';
+import { SideDrawerForm } from '../../../components/SideDrawerForm/SideDrawerForm';
+import { useForm } from '../../../hooks/useForm';
+import { useOnDataChange } from '../../../hooks/useOnDataChange';
+import { isEmpty } from '../../../utils/formValidators';
+import { WeaponInfoData } from './WeaponInfoTypes';
 
 export const WeaponInfoForm: React.FC<WeaponInfoFormProps> = ({
   closeSideDrawer,
@@ -18,12 +19,11 @@ export const WeaponInfoForm: React.FC<WeaponInfoFormProps> = ({
     wikiLink: initialData ? initialData.wikiLink : '',
   });
 
-  useEffect(() => {
-    const isChanged =
-      !initialData && (!!fields.name.trim() || !!fields.wikiLink.trim());
-
-    onDataChange(isChanged);
-  }, [fields, initialData, onDataChange]);
+  useOnDataChange<WeaponInfoData>(
+    isChanged => onDataChange(isChanged),
+    fields,
+    initialData,
+  );
 
   const handleOnSubmit = (): void => {
     const updatedFields = {
@@ -48,7 +48,7 @@ export const WeaponInfoForm: React.FC<WeaponInfoFormProps> = ({
         label="Name"
         value={fields.name}
         onChange={onChangeInput}
-        error={!fields.name.trim()}
+        error={isEmpty(fields.name)}
         placeholder="Combi Rifle"
       />
       <Input

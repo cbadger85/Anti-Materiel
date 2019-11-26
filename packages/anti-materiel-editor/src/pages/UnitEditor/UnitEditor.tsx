@@ -16,6 +16,7 @@ export const UnitEditor: React.FC = () => {
             width="7.5rem"
             color="primary"
             onClick={() => makeToast('Saved!')}
+            id="unit-editor-save-button"
           >
             Save
           </Button>

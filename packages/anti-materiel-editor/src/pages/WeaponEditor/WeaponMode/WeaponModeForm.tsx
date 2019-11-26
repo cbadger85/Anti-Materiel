@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Checkbox } from '../../../components/Checkbox/Checkbox';
 import { Input } from '../../../components/Input/Input';
 import { SideDrawerForm } from '../../../components/SideDrawerForm/SideDrawerForm';
 import { useForm } from '../../../hooks/useForm';
+import { useOnDataChange } from '../../../hooks/useOnDataChange';
+import { isEmpty, isInt } from '../../../utils/formValidators';
+import { ItemForm } from './ItemForm';
 import { RangeBandForm } from './RangeBandForm';
 import './WeaponMode.scss';
 import { WeaponModeData } from './WeaponModeTypes';
-import { ItemForm } from './ItemForm';
-import { isEmpty, isInt } from '../../../utils/formValidators';
 
 export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
   onCancel,
@@ -37,6 +38,7 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
   const {
     onChangeInput: onChangeShortRangeBand,
     fields: shortRangeBandFields,
+    isValid: isShortRangeBandFieldValid,
   } = useForm({
     min:
       initialData && initialData.shortRangeBand
@@ -55,6 +57,7 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
   const {
     onChangeInput: onChangeMediumRangeBand,
     fields: mediumRangeBandFields,
+    isValid: isMediumRangeBandFieldValid,
   } = useForm({
     min:
       initialData && initialData.mediumRangeBand
@@ -73,6 +76,7 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
   const {
     onChangeInput: onChangeLongRangeBand,
     fields: longRangeBandFields,
+    isValid: isLongRangeBandFieldValid,
   } = useForm({
     min:
       initialData && initialData.longRangeBand
@@ -91,6 +95,7 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
   const {
     onChangeInput: onChangeMaximumRangeBand,
     fields: maximumRangeBandFields,
+    isValid: isMaximumRangeBandFieldValid,
   } = useForm({
     min:
       initialData && initialData.maximumRangeBand
@@ -106,38 +111,23 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
         : '',
   });
 
-  useEffect(() => {
-    const fields = {
-      ...modeInfoFields,
-      ...shortRangeBandFields,
-      ...mediumRangeBandFields,
-      ...longRangeBandFields,
-      ...maximumRangeBandFields,
-    };
-    const isFieldsChanged = Object.values(fields).some(field => {
-      if (typeof field === 'string') {
-        return !!field.trim();
-      }
-
-      return field;
-    });
-
-    const isAmmoChanged = ammo.length > 0;
-    const isTraitsChanged = traits.length > 0;
-
-    const isChanged = isFieldsChanged || isAmmoChanged || isTraitsChanged;
-
-    onDataChange(isChanged);
-  }, [
-    ammo.length,
-    longRangeBandFields,
-    maximumRangeBandFields,
-    mediumRangeBandFields,
-    modeInfoFields,
-    onDataChange,
-    shortRangeBandFields,
-    traits.length,
-  ]);
+  useOnDataChange(
+    isChanged => onDataChange(isChanged),
+    {
+      id: initialData && initialData.id,
+      name: modeInfoFields.name,
+      burst: modeInfoFields.burst,
+      damage: modeInfoFields.damage,
+      combinedAmmo: modeInfoFields.combinedAmmo,
+      ammo,
+      traits,
+      shortRangeBand: shortRangeBandFields,
+      mediumRangeBand: mediumRangeBandFields,
+      longRangeBand: longRangeBandFields,
+      maximumRangeBand: maximumRangeBandFields,
+    },
+    initialData,
+  );
 
   const handleOnSubmit = (): void => {
     const updatedFields = {
@@ -183,7 +173,14 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
       title="Add Weapon Mode"
       onSubmit={handleOnSubmit}
       onCancel={onCancel}
-      disableSubmit={!modeInfoIsValid || !traits.length}
+      disableSubmit={
+        !modeInfoIsValid ||
+        !traits.length ||
+        !isShortRangeBandFieldValid ||
+        !isMediumRangeBandFieldValid ||
+        !isLongRangeBandFieldValid ||
+        !isMaximumRangeBandFieldValid
+      }
     >
       <Input
         id="weapon-mode-name"
