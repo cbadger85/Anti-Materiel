@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 export const ToggleContent: React.FC<ToggleContentProps> = ({
   toggle,
   content,
-  handleMount,
 }) => {
   const [isShown, setIsShown] = useState(false);
   const hide = (): void => setIsShown(false);
@@ -12,7 +11,7 @@ export const ToggleContent: React.FC<ToggleContentProps> = ({
   return (
     <>
       {toggle(show)}
-      {handleMount ? isShown && content(isShown, hide) : content(isShown, hide)}
+      {isShown && content(isShown, hide)}
     </>
   );
 };
@@ -20,5 +19,4 @@ export const ToggleContent: React.FC<ToggleContentProps> = ({
 interface ToggleContentProps {
   toggle: (show: () => void) => React.ReactNode;
   content: (isShown: boolean, hide: () => void) => React.ReactNode;
-  handleMount?: boolean;
 }

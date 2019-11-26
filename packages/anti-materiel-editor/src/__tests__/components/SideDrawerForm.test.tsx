@@ -17,7 +17,7 @@ describe('todo', () => {
       <SideDrawerForm onCancel={jest.fn} onSubmit={jest.fn} title={title} />,
     );
 
-    const foundTitle = wrapper.find('h2');
+    const foundTitle = wrapper.find('h3');
 
     expect(foundTitle.text()).toBe(title);
   });
