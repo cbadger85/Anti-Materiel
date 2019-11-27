@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import isEqual from 'lodash/isEqual';
 
-export const isEmpty = <T>(data: T): boolean => {
+export const isEmptyObj = <T>(data: T): boolean => {
   const hasEmptyValues = (data: T): boolean =>
     Object.values(data).find(value => {
       if (Array.isArray(value)) {
@@ -29,13 +29,10 @@ export const useOnDataChange = <T>(
 ): void => {
   useEffect(() => {
     if (!initialData) {
-      onDataChange(!isEmpty(data));
-
+      onDataChange(!isEmptyObj(data));
       return;
     }
 
-    const isFieldsChanged = !isEqual(data, initialData);
-
-    onDataChange(isFieldsChanged);
+    onDataChange(!isEqual(data, initialData));
   }, [data, initialData, onDataChange]);
 };

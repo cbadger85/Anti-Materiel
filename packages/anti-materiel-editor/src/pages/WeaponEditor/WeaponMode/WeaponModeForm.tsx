@@ -191,24 +191,28 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
         error={isEmpty(modeInfoFields.name)}
         placeholder="D-Charges (CC Mode)"
       />
-      <Input
-        id="weapon-mode-damage"
-        name="damage"
-        label="Damage"
-        value={modeInfoFields.damage}
-        onChange={onChangeModeInfo}
-        error={isEmpty(modeInfoFields.damage)}
-        placeholder="14"
-      />
-      <Input
-        id="weapon-mode-burst"
-        name="burst"
-        label="Burst"
-        value={modeInfoFields.burst}
-        onChange={onChangeModeInfo}
-        error={isEmpty(modeInfoFields.burst) || !isInt(modeInfoFields.burst)}
-        placeholder="1"
-      />
+      <div className="item-form__input-row">
+        <Input
+          id="weapon-mode-damage"
+          name="damage"
+          label="Damage"
+          value={modeInfoFields.damage}
+          onChange={onChangeModeInfo}
+          error={isEmpty(modeInfoFields.damage)}
+          placeholder="14"
+          width="8.5rem"
+        />
+        <Input
+          id="weapon-mode-burst"
+          name="burst"
+          label="Burst"
+          value={modeInfoFields.burst}
+          onChange={onChangeModeInfo}
+          error={isEmpty(modeInfoFields.burst) || !isInt(modeInfoFields.burst)}
+          placeholder="1"
+          width="8.5rem"
+        />
+      </div>
       <ItemForm
         addItem={addItem(ammo, setAmmo)}
         removeItem={removeItem(ammo, setAmmo)}

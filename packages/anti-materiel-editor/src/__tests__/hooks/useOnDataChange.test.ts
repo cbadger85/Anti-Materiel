@@ -1,4 +1,4 @@
-import { isEmpty } from '../../hooks/useOnDataChange';
+import { isEmptyObj } from '../../hooks/useOnDataChange';
 
 describe('useOnDataChange', () => {
   describe('isNotEmpty', () => {
@@ -19,7 +19,7 @@ describe('useOnDataChange', () => {
         bang: {},
       };
 
-      const data = isEmpty(initialData);
+      const data = isEmptyObj(initialData);
 
       expect(data).toBe(true);
     });
@@ -41,7 +41,7 @@ describe('useOnDataChange', () => {
         bang: {},
       };
 
-      const data = isEmpty(initialData);
+      const data = isEmptyObj(initialData);
 
       expect(data).toBe(false);
     });
@@ -63,7 +63,7 @@ describe('useOnDataChange', () => {
         bang: {},
       };
 
-      const data = isEmpty(initialData);
+      const data = isEmptyObj(initialData);
 
       expect(data).toBe(false);
     });
@@ -85,7 +85,7 @@ describe('useOnDataChange', () => {
         bang: {},
       };
 
-      const data = isEmpty(initialData);
+      const data = isEmptyObj(initialData);
 
       expect(data).toBe(false);
     });
