@@ -91,6 +91,7 @@ export const ItemForm: React.FC<ItemFormProps> = ({
           onClick={handleOnClick}
           disabled={isEmpty(fields.wikiLink) || isEmpty(fields.name)}
           width="100%"
+          id={`weapon-mode-add-${id}-button`}
         >
           Add
         </Button>
@@ -102,7 +103,7 @@ export const ItemForm: React.FC<ItemFormProps> = ({
               key={item.name}
               item={item}
               removeItem={removeItem}
-              id={id}
+              id={`${item.name}-${id}`}
             />
           ))}
         </div>

@@ -1,5 +1,4 @@
 export interface WeaponModeData {
-  id?: string;
   name: string;
   damage: string;
   burst: string;

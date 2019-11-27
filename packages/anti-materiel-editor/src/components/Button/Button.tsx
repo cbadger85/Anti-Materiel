@@ -9,11 +9,13 @@ export const Button: React.FC<ButtonProps> = ({
   className,
   color,
   disabled,
+  id,
   ...props
 }) => {
   return (
     <button
       {...props}
+      id={id}
       disabled={disabled}
       className={getClasses('button', color && `button--${color}`, className)}
       style={{ width, height, ...props.style }}
@@ -35,4 +37,5 @@ interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
     | 'delete-dark';
   className?: string;
   disabled?: boolean;
+  id?: string;
 }
