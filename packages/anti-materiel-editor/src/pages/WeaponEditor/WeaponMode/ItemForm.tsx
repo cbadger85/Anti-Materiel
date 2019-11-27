@@ -3,6 +3,7 @@ import { useForm } from '../../../hooks/useForm';
 import { Input } from '../../../components/Input/Input';
 import { Button } from '../../../components/Button/Button';
 import { getClasses } from '../../../utils/getClasses';
+import { isEmpty } from '../../../utils/formValidators';
 
 export const ListItem: React.FC<AvaListItemProps> = ({
   item,
@@ -88,7 +89,7 @@ export const ItemForm: React.FC<ItemFormProps> = ({
         <Button
           color="secondary"
           onClick={handleOnClick}
-          disabled={!fields.wikiLink.trim() || !fields.name.trim()}
+          disabled={isEmpty(fields.wikiLink) || isEmpty(fields.name)}
           width="100%"
         >
           Add
