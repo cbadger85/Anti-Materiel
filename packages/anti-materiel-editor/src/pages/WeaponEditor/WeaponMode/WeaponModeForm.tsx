@@ -114,7 +114,6 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
   useOnDataChange(
     isChanged => onDataChange(isChanged),
     {
-      id: initialData && initialData.id,
       name: modeInfoFields.name,
       burst: modeInfoFields.burst,
       damage: modeInfoFields.damage,
@@ -137,7 +136,7 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
       shortRangeBand: shortRangeBandFields,
       mediumRangeBand: mediumRangeBandFields,
       longRangeBand: longRangeBandFields,
-      maxiumumRangeBand: maximumRangeBandFields,
+      maximumRangeBand: maximumRangeBandFields,
     };
 
     onSubmit(updatedFields);
