@@ -36,6 +36,11 @@ export const ManagedContent: React.FC<ManagedContentProps> = ({
     setIsModalShown(false);
   };
 
+  const handleOnConfirmModal = (): void => {
+    setIsModalShown(false);
+    handleCloseSideDrawer();
+  };
+
   return (
     <div className="managed-content__container">
       <h2 className={'managed-content__title'}>{title}</h2>
@@ -61,9 +66,8 @@ export const ManagedContent: React.FC<ManagedContentProps> = ({
         {form(handleCloseSideDrawer, handleCancel)}
       </SideDrawer>
       <ConfirmModal
-        text="Are you sure you want to discard changes?"
-        closeModal={handleOnCancelModal}
-        confirmAction={handleCloseSideDrawer}
+        onCancel={handleOnCancelModal}
+        onConfirm={handleOnConfirmModal}
         isShown={isModalShown}
       />
     </div>

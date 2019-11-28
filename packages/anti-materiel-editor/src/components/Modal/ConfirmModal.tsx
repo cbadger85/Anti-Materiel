@@ -2,23 +2,18 @@ import React from 'react';
 import { Modal } from './Modal';
 import { Button } from '../Button/Button';
 
-export const ConfirmModal: React.FC<DiscardChangesModalProps> = ({
-  text,
-  closeModal,
-  confirmAction,
+export const ConfirmModal: React.FC<ConfirmModalProps> = ({
+  text = 'Are you sure you want to discard changes?',
+  onConfirm,
+  onCancel,
   isShown,
 }) => {
-  const handleConfirm = (): void => {
-    closeModal();
-    confirmAction();
-  };
-
   return (
     <Modal isShown={isShown}>
       <div className="modal__text">{text}</div>
       <div className="modal__button-group modal__button-group--confirm">
         <Button
-          onClick={closeModal}
+          onClick={onCancel}
           color="transparent-light"
           width="7rem"
           id="confirm-modal-cancel"
@@ -26,7 +21,7 @@ export const ConfirmModal: React.FC<DiscardChangesModalProps> = ({
           Cancel
         </Button>
         <Button
-          onClick={handleConfirm}
+          onClick={onConfirm}
           color="secondary"
           width="7rem"
           id="confirm-modal-ok"
@@ -38,9 +33,9 @@ export const ConfirmModal: React.FC<DiscardChangesModalProps> = ({
   );
 };
 
-interface DiscardChangesModalProps {
-  text: React.ReactText | JSX.Element;
-  closeModal: () => void;
-  confirmAction: () => void;
+interface ConfirmModalProps {
+  onConfirm: () => void;
+  onCancel: () => void;
+  text?: React.ReactText | JSX.Element;
   isShown?: boolean;
 }
