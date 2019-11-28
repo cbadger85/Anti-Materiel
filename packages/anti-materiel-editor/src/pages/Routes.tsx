@@ -38,14 +38,4 @@ export const Routes: React.FC = () => {
       ))}
     </>
   );
-
-  // return (
-  //   <>
-  //     <Header title="Anti-Materiel" />
-  //     <Switch>
-  //       <Route exact path="/unit-editor" component={UnitEditor} />
-  //       <Route exact path="/weapon-editor" component={WeaponEditor} />
-  //     </Switch>
-  //   </>
-  // );
 };
