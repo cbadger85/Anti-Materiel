@@ -7,11 +7,7 @@ describe('<ConfirmModal />', () => {
   const modalText = 'test';
   it('should display the text', () => {
     const wrapper = shallow(
-      <ConfirmModal
-        text={modalText}
-        closeModal={jest.fn}
-        confirmAction={jest.fn}
-      />,
+      <ConfirmModal text={modalText} onCancel={jest.fn} onConfirm={jest.fn} />,
     );
 
     const text = wrapper.find('.modal__text');
@@ -19,39 +15,33 @@ describe('<ConfirmModal />', () => {
     expect(text.text()).toBe(modalText);
   });
 
-  it('should call closeModal when cancel is pressed', () => {
-    const closeModal = jest.fn();
+  it('should call onCancel when cancel is pressed', () => {
+    const onCancel = jest.fn();
 
     const wrapper = shallow(
-      <ConfirmModal
-        text={modalText}
-        closeModal={closeModal}
-        confirmAction={jest.fn}
-      />,
+      <ConfirmModal text={modalText} onCancel={onCancel} onConfirm={jest.fn} />,
     );
 
     const cancelButton = wrapper.find(Button).first();
     cancelButton.simulate('click');
 
-    expect(closeModal).toBeCalled();
+    expect(onCancel).toBeCalled();
   });
 
-  it('should call closeModal  and confirmAction when ok is pressed', () => {
-    const closeModal = jest.fn();
-    const confirmAction = jest.fn();
+  it('should call onConfirm when ok is pressed', () => {
+    const onConfirm = jest.fn();
 
     const wrapper = shallow(
       <ConfirmModal
         text={modalText}
-        closeModal={closeModal}
-        confirmAction={confirmAction}
+        onCancel={jest.fn()}
+        onConfirm={onConfirm}
       />,
     );
 
     const okButton = wrapper.find(Button).last();
     okButton.simulate('click');
 
-    expect(closeModal).toBeCalled();
-    expect(confirmAction).toBeCalled();
+    expect(onConfirm).toBeCalled();
   });
 });
