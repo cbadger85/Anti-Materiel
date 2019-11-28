@@ -16,7 +16,7 @@ export const ErrorModalManager: React.FC<ModalManager> = ({
   };
 
   return (
-    <Modal isShown={isShown}>
+    <Modal isShown={isShown} onClickOutside={closeModal}>
       <div className="modal__text">{errorMessage}</div>
       <div className="modal__button-group modal__button-group--ok">
         <Button
