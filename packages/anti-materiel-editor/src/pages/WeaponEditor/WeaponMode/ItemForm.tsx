@@ -63,9 +63,9 @@ export const ItemForm: React.FC<ItemFormProps> = ({
   };
 
   return (
-    <>
+    <div className={getClasses('add-item__form-container', className)}>
       <h4 className="weapon-mode-item-title">Add {id}</h4>
-      <div className={getClasses('add-item__form-container', className)}>
+      <div className={getClasses('add-item__form-control-container')}>
         <div className="item-form__input-row">
           <Input
             id={`weapon-mode-add-${id}-name`}
@@ -108,7 +108,7 @@ export const ItemForm: React.FC<ItemFormProps> = ({
           ))}
         </div>
       )}
-    </>
+    </div>
   );
 };
 
