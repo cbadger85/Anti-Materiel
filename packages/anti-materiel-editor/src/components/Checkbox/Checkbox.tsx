@@ -10,6 +10,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
   className,
   style,
   error,
+  fullRow = true,
   ...props
 }) => {
   useEffect(() => {
@@ -21,7 +22,14 @@ export const Checkbox: React.FC<CheckboxProps> = ({
   };
 
   return (
-    <div className={getClasses('checkbox', className)} style={style}>
+    <div
+      className={getClasses(
+        'checkbox',
+        fullRow && 'checkbox--full-row',
+        className,
+      )}
+      style={style}
+    >
       <input
         type="checkbox"
         checked={checked}
@@ -46,6 +54,7 @@ interface CheckboxProps
     'onChange'
   > {
   name: string;
+  fullRow?: boolean;
   label: string;
   onChange: (key: string, value: boolean, error?: boolean) => void;
   error?: boolean;

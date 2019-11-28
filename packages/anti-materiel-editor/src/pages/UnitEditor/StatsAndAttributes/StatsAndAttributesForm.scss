@@ -1,12 +1,16 @@
 .side-drawer-contents__stat-input {
   margin: 0;
+  margin-bottom: 1rem;
 }
 
 .side-drawer-contents__stat-input-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.25rem;
+
+  // .side-drawer-contents__stat-input-row--stats {
+  //   margin-bottom: 1rem;
+  // }
 
   .checkbox {
     margin-top: 0.5rem;
@@ -16,4 +20,8 @@
   .select-input {
     width: 8rem;
   }
+}
+
+.side-drawer-contents__stat-input-row--group {
+  margin-bottom: 0.5rem;
 }
