@@ -2,18 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Modal } from '../components/Modal/Modal';
 import { Button } from '../components/Button/Button';
+import { useState } from 'react';
 
-export const ErrorModal = (errorMessage: string): void => {
-  const container = document.createElement('div');
-  const root = document.getElementById('modal-root') as Element;
-  document.body.appendChild(root);
+export const ErrorModalManager: React.FC<ModalManager> = ({
+  unMount,
+  errorMessage,
+}) => {
+  const [isShown, setIsShown] = useState(true);
 
   const closeModal = (): void => {
-    ReactDOM.unmountComponentAtNode(container);
+    setIsShown(false);
+    unMount();
   };
 
-  ReactDOM.render(
-    <Modal isShown={true}>
+  return (
+    <Modal isShown={isShown}>
       <div className="modal__text">{errorMessage}</div>
       <div className="modal__button-group modal__button-group--ok">
         <Button
@@ -25,7 +28,28 @@ export const ErrorModal = (errorMessage: string): void => {
           OK
         </Button>
       </div>
-    </Modal>,
+    </Modal>
+  );
+};
+
+interface ModalManager {
+  unMount: () => void;
+  errorMessage: string;
+}
+
+export const errorModal = (errorMessage: string): void => {
+  const container = document.createElement('div');
+  const root = document.getElementById('modal-root') as Element;
+  document.body.appendChild(root);
+
+  const unMount = (): void => {
+    setTimeout(() => {
+      ReactDOM.unmountComponentAtNode(container);
+    }, 300);
+  };
+
+  ReactDOM.render(
+    <ErrorModalManager errorMessage={errorMessage} unMount={unMount} />,
     container,
   );
 };
