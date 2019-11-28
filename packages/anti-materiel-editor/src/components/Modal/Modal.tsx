@@ -21,6 +21,7 @@ export const Modal: React.FC<ModalProps> = ({ children, isShown }) => {
               style={{ opacity: props.opacity }}
               className="modal"
               id="modal"
+              open={isShown}
             >
               <FocusLock>
                 <animated.div style={props} className="modal-card">
