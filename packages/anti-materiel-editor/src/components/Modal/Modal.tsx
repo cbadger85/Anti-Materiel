@@ -12,11 +12,11 @@ export const Modal: React.FC<ModalProps> = ({ children, isShown }) => {
   });
 
   return ReactDOM.createPortal(
-    <div>
+    <>
       {transition.map(
         ({ item, key, props }) =>
           item && (
-            <animated.div
+            <animated.dialog
               key={key}
               style={{ opacity: props.opacity }}
               className="modal"
@@ -27,10 +27,10 @@ export const Modal: React.FC<ModalProps> = ({ children, isShown }) => {
                   {children}
                 </animated.div>
               </FocusLock>
-            </animated.div>
+            </animated.dialog>
           ),
       )}
-    </div>,
+    </>,
     document.getElementById('modal-root') as Element,
   );
 };
