@@ -33,6 +33,18 @@ describe('<Modal />', () => {
     expect(modal.length).toBeTruthy();
   });
 
+  it('should call onClickOutside when the background is clicked', () => {
+    const onClickOutside = jest.fn();
+    wrapper = mount(<Modal isShown onClickOutside={onClickOutside} />);
+
+    wrapper
+      .find('.modal')
+      .hostNodes()
+      .simulate('click');
+
+    expect(onClickOutside).toBeCalled();
+  });
+
   it('should render its children', () => {
     const Dummy = () => <div />;
     wrapper = mount(

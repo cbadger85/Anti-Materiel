@@ -9,7 +9,7 @@ export const ConfirmModal: React.FC<ConfirmModalProps> = ({
   isShown,
 }) => {
   return (
-    <Modal isShown={isShown}>
+    <Modal isShown={isShown} onClickOutside={onCancel}>
       <div className="modal__text">{text}</div>
       <div className="modal__button-group modal__button-group--confirm">
         <Button
