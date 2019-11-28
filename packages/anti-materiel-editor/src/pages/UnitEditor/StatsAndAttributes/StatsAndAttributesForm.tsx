@@ -85,162 +85,170 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
       disableSubmit={!isValid || !ava.length}
       onCancel={onCancel}
     >
-      <div className="side-drawer-contents__stat-input-row side-drawer-contents__stat-input-row--first">
-        <Input
-          id="unit-info-mov"
-          name="mov"
-          label="MOV"
-          onChange={onChangeInput}
-          className="side-drawer-contents__stat-input"
-          width={statInputWidth}
-          value={fields.mov}
-          error={!isMov(fields.mov) || isEmpty(fields.mov)}
-          placeholder="4-4"
-        />
-        <Input
-          id="unit-info-cc"
-          name="cc"
-          label="CC"
-          onChange={onChangeInput}
-          width={statInputWidth}
-          className="side-drawer-contents__stat-input"
-          value={fields.cc}
-          error={!isInt(fields.cc) || isEmpty(fields.cc)}
-          placeholder="13"
-        />
-        <Input
-          id="unit-info-bs"
-          name="bs"
-          label="BS"
-          onChange={onChangeInput}
-          width={statInputWidth}
-          className="side-drawer-contents__stat-input"
-          value={fields.bs}
-          error={!isInt(fields.bs) || isEmpty(fields.bs)}
-          placeholder="12"
-        />
-      </div>
-      <div className="side-drawer-contents__stat-input-row">
-        <Input
-          id="unit-info-ph"
-          name="ph"
-          label="PH"
-          onChange={onChangeInput}
-          width={statInputWidth}
-          className="side-drawer-contents__stat-input"
-          value={fields.ph}
-          error={!isInt(fields.ph) || isEmpty(fields.ph)}
-          placeholder="10"
-        />
-        <Input
-          id="unit-info-wip"
-          name="wip"
-          label="WIP"
-          onChange={onChangeInput}
-          width={statInputWidth}
-          className="side-drawer-contents__stat-input"
-          value={fields.wip}
-          error={!isInt(fields.wip) || isEmpty(fields.wip)}
-          placeholder="12"
-        />
-        <Input
-          id="unit-info-arm"
-          name="arm"
-          label="ARM"
-          onChange={onChangeInput}
-          width={statInputWidth}
-          className="side-drawer-contents__stat-input"
-          value={fields.arm}
-          error={!isInt(fields.arm) || isEmpty(fields.arm)}
-          placeholder="1"
-        />
-      </div>
-      <div className="side-drawer-contents__stat-input-row">
-        <Input
-          id="unit-info-bts"
-          name="bts"
-          label="BTS"
-          onChange={onChangeInput}
-          width={statInputWidth}
-          className="side-drawer-contents__stat-input"
-          value={fields.bts}
-          error={
-            !isInt(fields.bts) || !isBTS(fields.bts) || isEmpty(fields.bts)
-          }
-          placeholder="3"
-        />
-        <Input
-          id="unit-info-w"
-          name="w"
-          label={fields.structure ? 'STR' : 'W'}
-          onChange={onChangeInput}
-          width={statInputWidth}
-          className="side-drawer-contents__stat-input"
-          value={fields.w}
-          error={!isInt(fields.w) || isEmpty(fields.w)}
-          placeholder="1"
-        />
-        <Input
-          id="unit-info-s"
-          name="s"
-          label="S"
-          onChange={onChangeInput}
-          width={statInputWidth}
-          className="side-drawer-contents__stat-input"
-          value={fields.s}
-          error={!isInt(fields.s) || isEmpty(fields.s)}
-          placeholder="2"
-        />
-      </div>
-      <Checkbox
-        name="structure"
-        onChange={onChangeInput}
-        label="Structure"
-        checked={fields.structure}
-      />
-      <div className="side-drawer-contents__stat-input-row">
+      <div className="side-drawer-form-group">
+        <div className="side-drawer-contents__stat-input-row">
+          <Input
+            id="unit-info-mov"
+            name="mov"
+            label="MOV"
+            onChange={onChangeInput}
+            className="side-drawer-contents__stat-input"
+            width={statInputWidth}
+            value={fields.mov}
+            error={!isMov(fields.mov) || isEmpty(fields.mov)}
+            placeholder="4-4"
+          />
+          <Input
+            id="unit-info-cc"
+            name="cc"
+            label="CC"
+            onChange={onChangeInput}
+            width={statInputWidth}
+            className="side-drawer-contents__stat-input"
+            value={fields.cc}
+            error={!isInt(fields.cc) || isEmpty(fields.cc)}
+            placeholder="13"
+          />
+          <Input
+            id="unit-info-bs"
+            name="bs"
+            label="BS"
+            onChange={onChangeInput}
+            width={statInputWidth}
+            className="side-drawer-contents__stat-input"
+            value={fields.bs}
+            error={!isInt(fields.bs) || isEmpty(fields.bs)}
+            placeholder="12"
+          />
+        </div>
+        <div className="side-drawer-contents__stat-input-row">
+          <Input
+            id="unit-info-ph"
+            name="ph"
+            label="PH"
+            onChange={onChangeInput}
+            width={statInputWidth}
+            className="side-drawer-contents__stat-input"
+            value={fields.ph}
+            error={!isInt(fields.ph) || isEmpty(fields.ph)}
+            placeholder="10"
+          />
+          <Input
+            id="unit-info-wip"
+            name="wip"
+            label="WIP"
+            onChange={onChangeInput}
+            width={statInputWidth}
+            className="side-drawer-contents__stat-input"
+            value={fields.wip}
+            error={!isInt(fields.wip) || isEmpty(fields.wip)}
+            placeholder="12"
+          />
+          <Input
+            id="unit-info-arm"
+            name="arm"
+            label="ARM"
+            onChange={onChangeInput}
+            width={statInputWidth}
+            className="side-drawer-contents__stat-input"
+            value={fields.arm}
+            error={!isInt(fields.arm) || isEmpty(fields.arm)}
+            placeholder="1"
+          />
+        </div>
+        <div className="side-drawer-contents__stat-input-row">
+          <Input
+            id="unit-info-bts"
+            name="bts"
+            label="BTS"
+            onChange={onChangeInput}
+            width={statInputWidth}
+            className="side-drawer-contents__stat-input"
+            value={fields.bts}
+            error={
+              !isInt(fields.bts) || !isBTS(fields.bts) || isEmpty(fields.bts)
+            }
+            placeholder="3"
+          />
+          <Input
+            id="unit-info-w"
+            name="w"
+            label={fields.structure ? 'STR' : 'W'}
+            onChange={onChangeInput}
+            width={statInputWidth}
+            className="side-drawer-contents__stat-input"
+            value={fields.w}
+            error={!isInt(fields.w) || isEmpty(fields.w)}
+            placeholder="1"
+          />
+          <Input
+            id="unit-info-s"
+            name="s"
+            label="S"
+            onChange={onChangeInput}
+            width={statInputWidth}
+            className="side-drawer-contents__stat-input"
+            value={fields.s}
+            error={!isInt(fields.s) || isEmpty(fields.s)}
+            placeholder="2"
+          />
+        </div>
         <Checkbox
-          name="impetuous"
+          name="structure"
           onChange={onChangeInput}
-          label="Impetuous"
-          checked={fields.impetuous}
-        />
-        <Select
-          id="unit-info-impetuous-type"
-          name="impetuousType"
-          label="Impetuous Type"
-          options={impetuousTypeOptions}
-          onChange={onChangeInput}
-          isDisabled={!fields.impetuous}
-          selectedValue={fields.impetuousType}
-          error={fields.impetuous ? !fields.impetuousType.trim() : undefined}
+          label="Structure"
+          checked={fields.structure}
         />
       </div>
-      <div className="side-drawer-contents__stat-input-row">
-        <Checkbox
-          name="cube"
-          onChange={onChangeInput}
-          label="Cube"
-          checked={fields.cube}
-          className="checkbox--cube"
-        />
-        <Select
-          id="unit-info-impetuous-type"
-          name="cubeType"
-          label="Cube Type"
-          options={cubeTypeOptions}
-          onChange={onChangeInput}
-          isDisabled={!fields.cube}
-          selectedValue={fields.cubeType}
-          error={fields.cube ? !fields.cubeType.trim() : undefined}
+      <div className="side-drawer-contents__stat-input-row--group">
+        <div className="side-drawer-contents__stat-input-row">
+          <Checkbox
+            name="impetuous"
+            fullRow={false}
+            onChange={onChangeInput}
+            label="Impetuous"
+            checked={fields.impetuous}
+          />
+          <Select
+            id="unit-info-impetuous-type"
+            name="impetuousType"
+            label="Impetuous Type"
+            options={impetuousTypeOptions}
+            onChange={onChangeInput}
+            isDisabled={!fields.impetuous}
+            selectedValue={fields.impetuousType}
+            error={fields.impetuous ? !fields.impetuousType.trim() : undefined}
+          />
+        </div>
+        <div className="side-drawer-contents__stat-input-row">
+          <Checkbox
+            name="cube"
+            fullRow={false}
+            onChange={onChangeInput}
+            label="Cube"
+            checked={fields.cube}
+            className="checkbox--cube"
+          />
+          <Select
+            id="unit-info-impetuous-type"
+            name="cubeType"
+            label="Cube Type"
+            options={cubeTypeOptions}
+            onChange={onChangeInput}
+            isDisabled={!fields.cube}
+            selectedValue={fields.cubeType}
+            error={fields.cube ? !fields.cubeType.trim() : undefined}
+          />
+        </div>
+      </div>
+      <div className="side-drawer-form-group">
+        <AddUnitAVA
+          addUnitAva={addUnitAva}
+          removeUnitAva={removeUnitAva}
+          updateAvaList={updateAvaList}
+          ava={ava}
         />
       </div>
-      <AddUnitAVA
-        addUnitAva={addUnitAva}
-        removeUnitAva={removeUnitAva}
-        updateAvaList={updateAvaList}
-        ava={ava}
-      />
     </SideDrawerForm>
   );
 };

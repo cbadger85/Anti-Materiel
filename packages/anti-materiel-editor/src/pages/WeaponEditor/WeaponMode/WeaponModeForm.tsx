@@ -181,92 +181,101 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
         !isMaximumRangeBandFieldValid
       }
     >
-      <Input
-        id="weapon-mode-name"
-        name="name"
-        label="Name"
-        value={modeInfoFields.name}
-        onChange={onChangeModeInfo}
-        error={isEmpty(modeInfoFields.name)}
-        placeholder="D-Charges (CC Mode)"
-      />
-      <div className="item-form__input-row">
+      <div className="side-drawer-form-group">
         <Input
-          id="weapon-mode-damage"
-          name="damage"
-          label="Damage"
-          value={modeInfoFields.damage}
+          id="weapon-mode-name"
+          name="name"
+          label="Name"
+          value={modeInfoFields.name}
           onChange={onChangeModeInfo}
-          error={isEmpty(modeInfoFields.damage)}
-          placeholder="14"
-          width="8.5rem"
+          error={isEmpty(modeInfoFields.name)}
+          placeholder="D-Charges (CC Mode)"
         />
-        <Input
-          id="weapon-mode-burst"
-          name="burst"
-          label="Burst"
-          value={modeInfoFields.burst}
+        <div className="item-form__input-row">
+          <Input
+            id="weapon-mode-damage"
+            name="damage"
+            label="Damage"
+            value={modeInfoFields.damage}
+            onChange={onChangeModeInfo}
+            error={isEmpty(modeInfoFields.damage)}
+            placeholder="14"
+            width="8.5rem"
+          />
+          <Input
+            id="weapon-mode-burst"
+            name="burst"
+            label="Burst"
+            value={modeInfoFields.burst}
+            onChange={onChangeModeInfo}
+            error={
+              isEmpty(modeInfoFields.burst) || !isInt(modeInfoFields.burst)
+            }
+            placeholder="1"
+            width="8.5rem"
+          />
+        </div>
+      </div>
+      <div className="side-drawer-form-group">
+        <ItemForm
+          addItem={addItem(ammo, setAmmo)}
+          removeItem={removeItem(ammo, setAmmo)}
+          items={ammo}
+          id="ammo"
+          placeholder="EXP"
+        />
+        <Checkbox
+          id="weapon-mode-combined-ammo"
+          name="combinedAmmo"
+          label="Combined Ammo"
+          checked={modeInfoFields.combinedAmmo}
           onChange={onChangeModeInfo}
-          error={isEmpty(modeInfoFields.burst) || !isInt(modeInfoFields.burst)}
-          placeholder="1"
-          width="8.5rem"
         />
       </div>
-      <ItemForm
-        addItem={addItem(ammo, setAmmo)}
-        removeItem={removeItem(ammo, setAmmo)}
-        items={ammo}
-        id="ammo"
-        placeholder="EXP"
-        className="add-ammo-form"
-      />
-      <Checkbox
-        id="weapon-mode-combined-ammo"
-        name="combinedAmmo"
-        label="Combined Ammo"
-        checked={modeInfoFields.combinedAmmo}
-        onChange={onChangeModeInfo}
-      />
-      <RangeBandForm
-        onChange={onChangeShortRangeBand}
-        rangeBandFields={shortRangeBandFields}
-        range="short"
-        placeholder={['0', '8']}
-      />
-      <RangeBandForm
-        onChange={onChangeMediumRangeBand}
-        rangeBandFields={mediumRangeBandFields}
-        range="medium"
-        placeholder={['8', '16']}
-        isDisabled={Object.values(shortRangeBandFields).some(
-          field => !field.toString().trim(),
-        )}
-      />
-      <RangeBandForm
-        onChange={onChangeLongRangeBand}
-        rangeBandFields={longRangeBandFields}
-        range="long"
-        placeholder={['16', '32']}
-        isDisabled={Object.values(mediumRangeBandFields).some(
-          field => !field.toString().trim(),
-        )}
-      />
-      <RangeBandForm
-        onChange={onChangeMaximumRangeBand}
-        rangeBandFields={maximumRangeBandFields}
-        range="maximum"
-        placeholder={['32', '96']}
-        isDisabled={Object.values(longRangeBandFields).some(
-          field => !field.toString().trim(),
-        )}
-      />
-      <ItemForm
-        addItem={addItem(traits, setTraits)}
-        removeItem={removeItem(traits, setTraits)}
-        items={traits}
-        id="traits"
-        placeholder="CC"
-      />
+      <div className="side-drawer-form-group">
+        <ItemForm
+          addItem={addItem(traits, setTraits)}
+          removeItem={removeItem(traits, setTraits)}
+          items={traits}
+          id="traits"
+          placeholder="CC"
+        />
+      </div>
+      <div className="side-drawer-form-group">
+        <RangeBandForm
+          onChange={onChangeShortRangeBand}
+          rangeBandFields={shortRangeBandFields}
+          range="short"
+          placeholder={['0', '8']}
+        />
+        <RangeBandForm
+          onChange={onChangeMediumRangeBand}
+          rangeBandFields={mediumRangeBandFields}
+          range="medium"
+          placeholder={['8', '16']}
+          isDisabled={Object.values(shortRangeBandFields).some(
+            field => !field.toString().trim(),
+          )}
+        />
+        <RangeBandForm
+          onChange={onChangeLongRangeBand}
+          rangeBandFields={longRangeBandFields}
+          range="long"
+          placeholder={['16', '32']}
+          isDisabled={Object.values(mediumRangeBandFields).some(
+            field => !field.toString().trim(),
+          )}
+        />
+        <RangeBandForm
+          onChange={onChangeMaximumRangeBand}
+          rangeBandFields={maximumRangeBandFields}
+          range="maximum"
+          placeholder={['32', '96']}
+          isDisabled={Object.values(longRangeBandFields).some(
+            field => !field.toString().trim(),
+          )}
+        />
+      </div>
     </SideDrawerForm>
   );
 };
