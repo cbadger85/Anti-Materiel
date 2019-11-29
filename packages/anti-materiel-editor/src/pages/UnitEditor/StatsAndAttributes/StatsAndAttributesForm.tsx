@@ -200,46 +200,44 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
           checked={fields.structure}
         />
       </div>
-      <div className="side-drawer-contents__stat-input-row--group">
-        <div className="side-drawer-contents__stat-input-row">
-          <Checkbox
-            name="impetuous"
-            fullRow={false}
-            onChange={onChangeInput}
-            label="Impetuous"
-            checked={fields.impetuous}
-          />
-          <Select
-            id="unit-info-impetuous-type"
-            name="impetuousType"
-            label="Impetuous Type"
-            options={impetuousTypeOptions}
-            onChange={onChangeInput}
-            isDisabled={!fields.impetuous}
-            selectedValue={fields.impetuousType}
-            error={fields.impetuous ? !fields.impetuousType.trim() : undefined}
-          />
-        </div>
-        <div className="side-drawer-contents__stat-input-row">
-          <Checkbox
-            name="cube"
-            fullRow={false}
-            onChange={onChangeInput}
-            label="Cube"
-            checked={fields.cube}
-            className="checkbox--cube"
-          />
-          <Select
-            id="unit-info-impetuous-type"
-            name="cubeType"
-            label="Cube Type"
-            options={cubeTypeOptions}
-            onChange={onChangeInput}
-            isDisabled={!fields.cube}
-            selectedValue={fields.cubeType}
-            error={fields.cube ? !fields.cubeType.trim() : undefined}
-          />
-        </div>
+      <div className="side-drawer-form-group">
+        <Checkbox
+          name="impetuous"
+          fullRow={false}
+          onChange={onChangeInput}
+          label="Impetuous"
+          checked={fields.impetuous}
+        />
+        <Select
+          id="unit-info-impetuous-type"
+          name="impetuousType"
+          label="Impetuous Type"
+          options={impetuousTypeOptions}
+          onChange={onChangeInput}
+          isDisabled={!fields.impetuous}
+          selectedValue={fields.impetuousType}
+          error={fields.impetuous ? !fields.impetuousType.trim() : undefined}
+        />
+      </div>
+      <div className="side-drawer-form-group">
+        <Checkbox
+          name="cube"
+          fullRow={false}
+          onChange={onChangeInput}
+          label="Cube"
+          checked={fields.cube}
+          className="checkbox--cube"
+        />
+        <Select
+          id="unit-info-impetuous-type"
+          name="cubeType"
+          label="Cube Type"
+          options={cubeTypeOptions}
+          onChange={onChangeInput}
+          isDisabled={!fields.cube}
+          selectedValue={fields.cubeType}
+          error={fields.cube ? !fields.cubeType.trim() : undefined}
+        />
       </div>
       <div className="side-drawer-form-group">
         <AddUnitAVA

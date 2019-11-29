@@ -32,7 +32,7 @@ export const Input: React.FC<InputProps> = ({
 
   return (
     <div className={`input ${className ? className : ''}`} style={{ width }}>
-      <label htmlFor={name} className="input__label">
+      <label htmlFor={id ? id : name} className="input__label">
         {label}
         <input
           id={id}

@@ -85,7 +85,7 @@ export const Select: React.FC<SelectInputProps> = ({
 
   return (
     <div className={getClasses('select-input', error && '__error', className)}>
-      <label htmlFor={name}>
+      <label htmlFor={id ? id : name}>
         <span className="select-input__label">{label}</span>
         <ReactSelect
           id={id}

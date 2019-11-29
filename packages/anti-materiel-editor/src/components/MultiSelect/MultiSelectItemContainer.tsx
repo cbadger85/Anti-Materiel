@@ -26,7 +26,7 @@ export const MultiSelectItemContainer: React.FC<MultiSelectItemContainerProps> =
     >
       {provided => (
         <div
-          className="list-items__container"
+          className="list-items__droppable-container"
           ref={provided.innerRef}
           {...provided.droppableProps}
         >

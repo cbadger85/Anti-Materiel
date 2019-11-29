@@ -4,6 +4,7 @@ import { Input } from '../../../components/Input/Input';
 import { Button } from '../../../components/Button/Button';
 import { getClasses } from '../../../utils/getClasses';
 import { isEmpty } from '../../../utils/formValidators';
+import { AddIcon } from '../../../components/Icons';
 
 export const ListItem: React.FC<AvaListItemProps> = ({
   item,
@@ -93,11 +94,25 @@ export const ItemForm: React.FC<ItemFormProps> = ({
           width="100%"
           id={`weapon-mode-add-${id}-button`}
         >
-          Add
+          <AddIcon
+            color={
+              isEmpty(fields.wikiLink) || isEmpty(fields.name)
+                ? 'disabled'
+                : 'secondary'
+            }
+          />
+          <span className="weapon-mode__item-form-control-button-label">
+            Add {id}
+          </span>
         </Button>
       </div>
       {!!items.length && (
         <div className="weapon-mode__list-item-container">
+          <div className="list-item weapon-mode__list-item-header">
+            <span className="list-item__name">Name</span>
+            <span className="list-item__wiki-link">Wiki Link</span>
+            <span className="list-item__delete-button" />
+          </div>
           {items.map(item => (
             <ListItem
               key={item.name}

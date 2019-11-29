@@ -58,12 +58,19 @@ export const MultiSelect: React.FC<MultiSelectInputProps> = ({
         onChange={handleOnChange}
         error={error}
       />
-      <DragDropContext onDragEnd={handleOnDragEnd}>
-        <MultiSelectItemContainer
-          list={list}
-          removeListItem={handleRemoveListItem}
-        />
-      </DragDropContext>
+      {!!list.length && (
+        <div className="list-items__container">
+          <div className="list-item-header list-item-header--multi-select">
+            {label}
+          </div>
+          <DragDropContext onDragEnd={handleOnDragEnd}>
+            <MultiSelectItemContainer
+              list={list}
+              removeListItem={handleRemoveListItem}
+            />
+          </DragDropContext>
+        </div>
+      )}
     </div>
   );
 };
