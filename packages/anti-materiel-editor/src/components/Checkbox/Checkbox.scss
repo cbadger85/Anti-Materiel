@@ -2,7 +2,7 @@
 
 .checkbox {
   margin-bottom: 1rem;
-  height: 1.5rem;
+  height: 1rem;
 }
 
 .checkbox--full-row {
@@ -22,8 +22,9 @@
 .checkbox__label::before {
   content: '';
   display: inline-block;
-  height: 1.5rem;
-  width: 1.5rem;
+  margin-top: 0.25rem;
+  height: 1rem;
+  width: 1rem;
   background-color: $neutral-0;
   border: 1px solid $neutral-5;
 }
@@ -31,8 +32,9 @@
 .checkbox__label::after {
   content: '';
   display: inline-block;
-  height: 0.6rem;
-  width: 1.2rem;
+  margin-top: 0.25rem;
+  height: 0.4rem;
+  width: 0.75rem;
   border-left: 3px solid;
   border-bottom: 3px solid;
   color: $neutral-4;

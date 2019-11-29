@@ -15,7 +15,32 @@ export const WeaponEditor: React.FC = () => {
     setWeaponInfo(data);
   };
 
-  const addWeaponMode = (data: WeaponModeData): void => {
+  const removeWeaponMode = (modeName: string): void => {
+    const updatedModes = weaponModes.filter(
+      weaponMode => weaponMode.name !== modeName,
+    );
+
+    setWeaponModes(updatedModes);
+  };
+
+  const updateWeaponModes = (data: WeaponModeData): void => {
+    const isAdded = weaponModes.find(
+      weaponMode => weaponMode.name === data.name,
+    );
+
+    if (isAdded) {
+      const updatedModes = weaponModes.map(weaponMode => {
+        if (weaponMode.name === data.name) {
+          return data;
+        }
+
+        return weaponMode;
+      });
+
+      setWeaponModes(updatedModes);
+      return;
+    }
+
     setWeaponModes([...weaponModes, data]);
   };
 
@@ -37,7 +62,11 @@ export const WeaponEditor: React.FC = () => {
         mainContent={() => (
           <>
             <WeaponInfo weaponInfo={weaponInfo} addWeaponInfo={addWeaponInfo} />
-            <WeaponMode />
+            <WeaponMode
+              weaponModes={weaponModes}
+              removeWeaponMode={removeWeaponMode}
+              updateWeaponModes={updateWeaponModes}
+            />
           </>
         )}
       />

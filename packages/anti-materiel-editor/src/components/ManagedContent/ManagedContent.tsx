@@ -42,7 +42,7 @@ export const ManagedContent: React.FC<ManagedContentProps> = ({
   return (
     <div className="managed-content__container">
       <h2 className={'managed-content__title'}>{title}</h2>
-      <div className="mananged-content__content">{content()}</div>
+      <div className="mananged-content__content">{content(openSideDrawer)}</div>
       <Button
         onClick={openSideDrawer}
         color="secondary"
@@ -76,7 +76,7 @@ interface ManagedContentProps {
   title: string;
   warn?: boolean;
   edit?: boolean;
-  content: () => React.ReactNode;
+  content: (openSideDrawer: () => void) => React.ReactNode;
   form: (
     closeSideDrawer: () => void,
     closeSideDrawerWarn: () => void,

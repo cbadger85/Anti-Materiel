@@ -1,4 +1,5 @@
 @import '../../../styles/colors';
+@import '../../../styles/mixins';
 
 .weapon-mode-range-band-title,
 .weapon-mode-item-title {
@@ -18,20 +19,16 @@
   }
 }
 
-.list-item-header {
-  margin-top: 0.5rem;
-  text-transform: uppercase;
-  color: $neutral-0;
-}
-
 .list-item__name {
-  flex: 4;
+  flex: 3;
   margin-right: 0.5rem;
 }
 
 .list-item__wiki-link {
   flex: 4;
   margin-right: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   a,
   a:visited {
@@ -47,8 +44,19 @@
   margin-top: 1rem;
 }
 
+.weapon-mode__list-item-header {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  color: $neutral-9;
+
+  span {
+    margin-right: 0;
+  }
+}
+
 .list-item__delete-button {
   text-align: right;
+  flex: 1;
 }
 
 .item-form__input-row {
@@ -59,6 +67,15 @@
 .add-item__form-control-container {
   border: 2px dashed $neutral-4;
   padding: 1rem 0.5rem 0.5rem;
+
+  button {
+    @include vertically-horizontally-center;
+    margin-left: 0;
+  }
+}
+
+.weapon-mode__item-form-control-button-label {
+  text-transform: capitalize;
 }
 
 .add-item__form-container {
