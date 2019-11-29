@@ -19,9 +19,9 @@ export const WeaponInfoForm: React.FC<WeaponInfoFormProps> = ({
     wikiLink: initialData ? initialData.wikiLink : '',
   });
 
-  useOnDataChange<WeaponInfoData>(
+  useOnDataChange(
     isChanged => onDataChange(isChanged),
-    fields,
+    { ...fields, id: initialData && initialData.id },
     initialData,
   );
 

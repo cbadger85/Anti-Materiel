@@ -17,7 +17,6 @@ export const WeaponMode: React.FC = () => {
           onDataChange={isChanged => setWarn(isChanged)}
         />
       )}
-      onClearForm={() => null}
     />
   );
 };

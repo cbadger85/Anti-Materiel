@@ -1,0 +1,48 @@
+@import '../../../styles/colors';
+
+.weapon-info-content__wrapper {
+  margin-bottom: 1rem;
+  width: 60%;
+  min-width: 35rem;
+  color: $neutral-1;
+}
+
+.weapon-info-content-table__header,
+.weapon-info-content-table__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.25rem;
+
+  a,
+  a:visited {
+    color: inherit;
+  }
+
+  a:hover {
+    color: $neutral-3;
+  }
+}
+
+.weapon-info-content-table__header {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 0.75rem;
+  color: $neutral-2;
+  background-color: $neutral-0;
+}
+
+.weapon-info-content-table__row:nth-child(even) {
+  background-color: $neutral-9;
+}
+.weapon-info-content-table__row:nth-child(even) {
+  background-color: $neutral-8;
+}
+
+.weapon-info-content__cell--column-1 {
+  flex: 1;
+}
+
+.weapon-info-content__cell--column-2 {
+  flex: 2;
+}

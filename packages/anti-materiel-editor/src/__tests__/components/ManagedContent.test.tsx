@@ -22,12 +22,7 @@ describe('<ManagedContent />', () => {
 
   it('should display the title', () => {
     wrapper = mount(
-      <ManagedContent
-        title="test"
-        content={jest.fn()}
-        form={jest.fn()}
-        onClearForm={jest.fn()}
-      />,
+      <ManagedContent title="test" content={jest.fn()} form={jest.fn()} />,
     );
 
     const title = wrapper.find('h2');
@@ -37,12 +32,7 @@ describe('<ManagedContent />', () => {
 
   it('should show the AddIcon when edit is false', () => {
     wrapper = mount(
-      <ManagedContent
-        title="test"
-        content={jest.fn()}
-        form={jest.fn()}
-        onClearForm={jest.fn()}
-      />,
+      <ManagedContent title="test" content={jest.fn()} form={jest.fn()} />,
     );
 
     const addIcon = wrapper.find(AddIcon);
@@ -52,13 +42,7 @@ describe('<ManagedContent />', () => {
 
   it('should show the EditIcon when edit is true', () => {
     wrapper = mount(
-      <ManagedContent
-        title="test"
-        content={jest.fn()}
-        form={jest.fn()}
-        edit
-        onClearForm={jest.fn()}
-      />,
+      <ManagedContent title="test" content={jest.fn()} form={jest.fn()} edit />,
     );
 
     const editIcon = wrapper.find(EditIcon);
@@ -68,12 +52,7 @@ describe('<ManagedContent />', () => {
 
   it('should should show the SideDrawer when the button is pressed', () => {
     wrapper = mount(
-      <ManagedContent
-        title="test"
-        content={jest.fn()}
-        form={jest.fn()}
-        onClearForm={jest.fn()}
-      />,
+      <ManagedContent title="test" content={jest.fn()} form={jest.fn()} />,
     );
 
     const button = wrapper.find('button');
@@ -87,13 +66,7 @@ describe('<ManagedContent />', () => {
 
   it('should show the modal when closing the side drawer if warn is true', () => {
     wrapper = mount(
-      <ManagedContent
-        title="test"
-        content={jest.fn()}
-        form={jest.fn()}
-        warn
-        onClearForm={jest.fn()}
-      />,
+      <ManagedContent title="test" content={jest.fn()} form={jest.fn()} warn />,
     );
 
     const button = wrapper.find('button');
@@ -112,12 +85,7 @@ describe('<ManagedContent />', () => {
 
   it('should close the side drawer if warn is false', () => {
     wrapper = mount(
-      <ManagedContent
-        title="test"
-        content={jest.fn()}
-        form={jest.fn()}
-        onClearForm={jest.fn()}
-      />,
+      <ManagedContent title="test" content={jest.fn()} form={jest.fn()} />,
     );
 
     const button = wrapper.find('button');
@@ -135,14 +103,8 @@ describe('<ManagedContent />', () => {
   });
 
   it('should close the side drawer if warn is false', () => {
-    const onClearForm = jest.fn();
     wrapper = mount(
-      <ManagedContent
-        title="test"
-        content={jest.fn()}
-        form={jest.fn()}
-        onClearForm={onClearForm}
-      />,
+      <ManagedContent title="test" content={jest.fn()} form={jest.fn()} />,
     );
 
     const button = wrapper.find('button');
@@ -154,6 +116,8 @@ describe('<ManagedContent />', () => {
     const background = openedSideDrawer.find('#opaque-background').first();
     background.simulate('click');
 
-    expect(onClearForm).toBeCalled();
+    const closedSideDrawer = wrapper.find(SideDrawer);
+
+    expect(closedSideDrawer.props().isOpen).toBe(false);
   });
 });

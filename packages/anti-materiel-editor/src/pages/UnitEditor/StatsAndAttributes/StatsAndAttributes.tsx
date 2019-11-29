@@ -14,7 +14,6 @@ export const StatsAndAttributes: React.FC = () => {
           onCancel={hideSideDrawerWarn}
         />
       )}
-      onClearForm={() => null}
     />
   );
 };

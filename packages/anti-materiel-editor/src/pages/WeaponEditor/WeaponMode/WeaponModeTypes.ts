@@ -14,5 +14,5 @@ export interface WeaponModeData {
 export interface WeaponRangeBand {
   min: string;
   max: string;
-  rangeBandModifier: string;
+  modifier: string;
 }

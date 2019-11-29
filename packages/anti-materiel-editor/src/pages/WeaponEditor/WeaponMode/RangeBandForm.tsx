@@ -1,36 +1,34 @@
 import React from 'react';
-import { rangBandModifierOptions } from './WeaponModeFormOptions';
-import { FormValue } from '../../../hooks/useForm.types';
-import { Select } from '../../../components/Select/Select';
 import { Input } from '../../../components/Input/Input';
+import { Select } from '../../../components/Select/Select';
+import { FormValue } from '../../../hooks/useForm.types';
 import { isEmpty, isInt } from '../../../utils/formValidators';
+import { rangBandModifierOptions } from './WeaponModeFormOptions';
 
 export const isRangeBandSelectError = (rangeBandFields: {
   min: string;
   max: string;
-  rangeBandModifier: string;
+  modifier: string;
 }): boolean =>
-  !isEmpty(rangeBandFields.rangeBandModifier) &&
+  !isEmpty(rangeBandFields.modifier) &&
   (isEmpty(rangeBandFields.min) || isEmpty(rangeBandFields.max));
 
 export const isMinInputError = (rangeBandFields: {
   min: string;
   max: string;
-  rangeBandModifier: string;
+  modifier: string;
 }): boolean =>
   (!isEmpty(rangeBandFields.min) &&
-    (isEmpty(rangeBandFields.rangeBandModifier) ||
-      isEmpty(rangeBandFields.max))) ||
+    (isEmpty(rangeBandFields.modifier) || isEmpty(rangeBandFields.max))) ||
   !isInt(rangeBandFields.min);
 
 export const isMaxInputError = (rangeBandFields: {
   min: string;
   max: string;
-  rangeBandModifier: string;
+  modifier: string;
 }): boolean =>
   (!isEmpty(rangeBandFields.max) &&
-    (isEmpty(rangeBandFields.rangeBandModifier) ||
-      isEmpty(rangeBandFields.min))) ||
+    (isEmpty(rangeBandFields.modifier) || isEmpty(rangeBandFields.min))) ||
   !isInt(rangeBandFields.max);
 
 export const RangeBandForm: React.FC<RangeBandFormProps> = ({
@@ -48,11 +46,11 @@ export const RangeBandForm: React.FC<RangeBandFormProps> = ({
       <div className="weapon-mode-range-band-row">
         <Select
           id={`weapon-mode-${range}-range-band-modifier`}
-          name="rangeBandModifier"
+          name="modifier"
           label="Modifier"
           options={rangBandModifierOptions}
           onChange={onChange}
-          selectedValue={rangeBandFields.rangeBandModifier}
+          selectedValue={rangeBandFields.modifier}
           error={isRangeBandSelectError(rangeBandFields)}
           isDisabled={isDisabled}
         />
@@ -86,7 +84,7 @@ export const RangeBandForm: React.FC<RangeBandFormProps> = ({
 
 interface RangeBandFormProps {
   onChange: (key: string, value: FormValue) => void;
-  rangeBandFields: { min: string; max: string; rangeBandModifier: string };
+  rangeBandFields: { min: string; max: string; modifier: string };
   range: 'short' | 'medium' | 'long' | 'maximum';
   placeholder: [string, string];
   isDisabled?: boolean;
