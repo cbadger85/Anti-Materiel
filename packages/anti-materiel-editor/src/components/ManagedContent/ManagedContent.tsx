@@ -11,7 +11,6 @@ export const ManagedContent: React.FC<ManagedContentProps> = ({
   title,
   content,
   form,
-  onClearForm,
 }) => {
   const [isModalShown, setIsModalShown] = useState(false);
   const [isSideDrawerOpen, setIsSideDrawerOpen] = useState(false);
@@ -19,7 +18,6 @@ export const ManagedContent: React.FC<ManagedContentProps> = ({
   const openSideDrawer = (): void => setIsSideDrawerOpen(true);
 
   const handleCloseSideDrawer = (): void => {
-    onClearForm();
     setIsSideDrawerOpen(false);
   };
 
@@ -83,5 +81,4 @@ interface ManagedContentProps {
     closeSideDrawer: () => void,
     closeSideDrawerWarn: () => void,
   ) => React.ReactNode;
-  onClearForm: () => void;
 }

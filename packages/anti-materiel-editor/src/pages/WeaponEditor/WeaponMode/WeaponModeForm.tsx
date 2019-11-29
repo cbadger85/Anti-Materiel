@@ -48,9 +48,9 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
       initialData && initialData.shortRangeBand
         ? initialData.shortRangeBand.max
         : '',
-    rangeBandModifier:
+    modifier:
       initialData && initialData.shortRangeBand
-        ? initialData.shortRangeBand.rangeBandModifier
+        ? initialData.shortRangeBand.modifier
         : '',
   });
 
@@ -67,9 +67,9 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
       initialData && initialData.mediumRangeBand
         ? initialData.mediumRangeBand.max
         : '',
-    rangeBandModifier:
+    modifier:
       initialData && initialData.mediumRangeBand
-        ? initialData.mediumRangeBand.rangeBandModifier
+        ? initialData.mediumRangeBand.modifier
         : '',
   });
 
@@ -86,9 +86,9 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
       initialData && initialData.longRangeBand
         ? initialData.longRangeBand.max
         : '',
-    rangeBandModifier:
+    modifier:
       initialData && initialData.longRangeBand
-        ? initialData.longRangeBand.rangeBandModifier
+        ? initialData.longRangeBand.modifier
         : '',
   });
 
@@ -105,9 +105,9 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
       initialData && initialData.maximumRangeBand
         ? initialData.maximumRangeBand.max
         : '',
-    rangeBandModifier:
+    modifier:
       initialData && initialData.maximumRangeBand
-        ? initialData.maximumRangeBand.rangeBandModifier
+        ? initialData.maximumRangeBand.modifier
         : '',
   });
 

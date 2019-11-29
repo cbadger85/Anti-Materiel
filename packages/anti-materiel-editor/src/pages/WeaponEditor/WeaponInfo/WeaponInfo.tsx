@@ -1,30 +1,35 @@
 import React, { useState } from 'react';
 import { ManagedContent } from '../../../components/ManagedContent/ManagedContent';
 import { WeaponInfoForm } from './WeaponInfoForm';
+import { WeaponInfoData } from './WeaponInfoTypes';
+import { WeaponInfoContent } from './WeaponInfoContent';
 
-export const WeaponInfo: React.FC = () => {
+export const WeaponInfo: React.FC<WeaponInfoProps> = ({
+  weaponInfo,
+  addWeaponInfo,
+}) => {
   const [warn, setWarn] = useState(false);
-
-  const handleOnDataChange = (isChanged: boolean): void => {
-    setWarn(isChanged);
-  };
 
   return (
     <ManagedContent
+      edit={!!weaponInfo}
       warn={warn}
       title="Weapon Info"
-      content={() => null}
+      content={() => <WeaponInfoContent weaponInfo={weaponInfo} />}
       form={(closeSideDrawer, onCancel) => (
         <WeaponInfoForm
           closeSideDrawer={closeSideDrawer}
           onCancel={onCancel}
-          onSubmit={data => console.log(data)}
-          onDataChange={handleOnDataChange}
+          onSubmit={addWeaponInfo}
+          onDataChange={setWarn}
+          initialData={weaponInfo}
         />
       )}
-      onClearForm={() => {
-        setWarn(false);
-      }}
     />
   );
 };
+
+interface WeaponInfoProps {
+  weaponInfo?: WeaponInfoData;
+  addWeaponInfo: (data: WeaponInfoData) => void;
+}

@@ -27,10 +27,10 @@ describe('<WeaponModeForm />', () => {
     ammo: [{ name: 'EXP', wikiLink: 'foo.com' }],
     combinedAmmo: false,
     traits: [{ name: 'anti-materiel', wikiLink: 'foo.com' }],
-    shortRangeBand: { min: '0', max: '8', rangeBandModifier: '-3' },
-    mediumRangeBand: { min: '8', max: '24', rangeBandModifier: '0' },
-    longRangeBand: { min: '24', max: '40', rangeBandModifier: '+3' },
-    maximumRangeBand: { min: '40', max: '96', rangeBandModifier: '-3' },
+    shortRangeBand: { min: '0', max: '8', modifier: '-3' },
+    mediumRangeBand: { min: '8', max: '24', modifier: '0' },
+    longRangeBand: { min: '24', max: '40', modifier: '+3' },
+    maximumRangeBand: { min: '40', max: '96', modifier: '-3' },
   };
 
   it('should submit the data when the form is filled out and the submit button is pressed', () => {
@@ -108,10 +108,10 @@ describe('<WeaponModeForm />', () => {
       ammo: [],
       combinedAmmo: false,
       traits: [{ name: 'anti-materiel', wikiLink: 'foo.com' }],
-      shortRangeBand: { min: '0', max: '8', rangeBandModifier: '-3' },
-      mediumRangeBand: { min: '8', max: '24', rangeBandModifier: '0' },
-      longRangeBand: { min: '24', max: '40', rangeBandModifier: '+3' },
-      maximumRangeBand: { min: '40', max: '96', rangeBandModifier: '-3' },
+      shortRangeBand: { min: '0', max: '8', modifier: '-3' },
+      mediumRangeBand: { min: '8', max: '24', modifier: '0' },
+      longRangeBand: { min: '24', max: '40', modifier: '+3' },
+      maximumRangeBand: { min: '40', max: '96', modifier: '-3' },
     };
 
     wrapper = mount(
@@ -160,10 +160,10 @@ describe('<WeaponModeForm />', () => {
       ammo: [{ name: 'foo', wikiLink: 'bar' }],
       combinedAmmo: false,
       traits: [{ name: 'anti-materiel', wikiLink: 'foo.com' }],
-      shortRangeBand: { min: '0', max: '8', rangeBandModifier: '-3' },
-      mediumRangeBand: { min: '8', max: '24', rangeBandModifier: '0' },
-      longRangeBand: { min: '24', max: '40', rangeBandModifier: '+3' },
-      maximumRangeBand: { min: '40', max: '96', rangeBandModifier: '-3' },
+      shortRangeBand: { min: '0', max: '8', modifier: '-3' },
+      mediumRangeBand: { min: '8', max: '24', modifier: '0' },
+      longRangeBand: { min: '24', max: '40', modifier: '+3' },
+      maximumRangeBand: { min: '40', max: '96', modifier: '-3' },
     };
 
     wrapper = mount(
@@ -209,10 +209,10 @@ describe('<WeaponModeForm />', () => {
       ammo: [{ name: 'faa', wikiLink: 'bor' }],
       combinedAmmo: false,
       traits: [{ name: 'anti-materiel', wikiLink: 'foo.com' }],
-      shortRangeBand: { min: '0', max: '8', rangeBandModifier: '-3' },
-      mediumRangeBand: { min: '8', max: '24', rangeBandModifier: '0' },
-      longRangeBand: { min: '24', max: '40', rangeBandModifier: '+3' },
-      maximumRangeBand: { min: '40', max: '96', rangeBandModifier: '-3' },
+      shortRangeBand: { min: '0', max: '8', modifier: '-3' },
+      mediumRangeBand: { min: '8', max: '24', modifier: '0' },
+      longRangeBand: { min: '24', max: '40', modifier: '+3' },
+      maximumRangeBand: { min: '40', max: '96', modifier: '-3' },
     };
 
     wrapper = mount(

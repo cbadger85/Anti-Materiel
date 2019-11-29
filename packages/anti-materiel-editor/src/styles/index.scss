@@ -41,3 +41,9 @@ body {
 .icon--disabled {
   fill: $neutral-4;
 }
+
+.empty-content {
+  color: $neutral-1;
+  font-style: italic;
+  font-size: 1rem;
+}

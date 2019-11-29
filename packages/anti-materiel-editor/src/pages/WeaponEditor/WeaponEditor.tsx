@@ -1,11 +1,24 @@
-import React from 'react';
-import { MasterPage } from '../../components/MasterPage/MasterPage';
+import React, { useState } from 'react';
 import { Button } from '../../components/Button/Button';
+import { MasterPage } from '../../components/MasterPage/MasterPage';
 import { useToast } from '../../components/Toasts/useToast';
 import { WeaponInfo } from './WeaponInfo/WeaponInfo';
+import { WeaponInfoData } from './WeaponInfo/WeaponInfoTypes';
 import { WeaponMode } from './WeaponMode/WeaponMode';
+import { WeaponModeData } from './WeaponMode/WeaponModeTypes';
 
 export const WeaponEditor: React.FC = () => {
+  const [weaponInfo, setWeaponInfo] = useState<WeaponInfoData>();
+  const [weaponModes, setWeaponModes] = useState<WeaponModeData[]>([]);
+
+  const addWeaponInfo = (data: WeaponInfoData): void => {
+    setWeaponInfo(data);
+  };
+
+  const addWeaponMode = (data: WeaponModeData): void => {
+    setWeaponModes([...weaponModes, data]);
+  };
+
   const makeToast = useToast();
   return (
     <>
@@ -23,7 +36,7 @@ export const WeaponEditor: React.FC = () => {
         sidePanelContent={() => null}
         mainContent={() => (
           <>
-            <WeaponInfo />
+            <WeaponInfo weaponInfo={weaponInfo} addWeaponInfo={addWeaponInfo} />
             <WeaponMode />
           </>
         )}
