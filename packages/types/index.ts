@@ -91,9 +91,9 @@ export interface Equipment extends WikiInfo {
 export type RangeBandModifier = '+6' | '+3' | '0' | '-3' | '-6';
 
 export interface WeaponRangeBand {
-  min: number;
-  max: number;
-  modifier: RangeBandModifier;
+  min: string;
+  max: string;
+  modifier: RangeBandModifier | string;
 }
 
 export interface WeaponRange {
@@ -104,7 +104,6 @@ export interface WeaponRange {
 }
 
 export interface WeaponMode {
-  id: string;
   name: string;
   weaponRange?: WeaponRange;
   damage: string;
