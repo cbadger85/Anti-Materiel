@@ -70,7 +70,7 @@ export type CubeType = 'CUBE' | 'CUBE_2';
 
 export interface WikiInfo {
   name: string;
-  wikiLink: string;
+  wikiLink?: string;
 }
 
 export type SkillType =

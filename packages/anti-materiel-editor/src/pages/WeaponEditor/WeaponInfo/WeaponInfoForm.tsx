@@ -16,7 +16,7 @@ export const WeaponInfoForm: React.FC<WeaponInfoFormProps> = ({
 }) => {
   const { onChangeInput, fields, isValid } = useForm({
     name: initialData ? initialData.name : '',
-    wikiLink: initialData ? initialData.wikiLink : '',
+    wikiLink: initialData && initialData.wikiLink ? initialData.wikiLink : '',
   });
 
   useOnDataChange(

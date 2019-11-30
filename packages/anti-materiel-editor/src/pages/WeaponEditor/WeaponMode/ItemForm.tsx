@@ -90,7 +90,7 @@ export const ItemForm: React.FC<ItemFormProps> = ({
         <Button
           color="secondary"
           onClick={handleOnClick}
-          disabled={isEmpty(fields.wikiLink) || isEmpty(fields.name)}
+          disabled={isEmpty(fields.name)}
           width="100%"
           id={`weapon-mode-add-${id}-button`}
         >

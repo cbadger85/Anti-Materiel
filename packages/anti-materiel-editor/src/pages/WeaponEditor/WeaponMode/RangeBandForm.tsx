@@ -2,7 +2,7 @@ import React from 'react';
 import { Input } from '../../../components/Input/Input';
 import { Select } from '../../../components/Select/Select';
 import { FormValue } from '../../../hooks/useForm.types';
-import { isEmpty, isInt } from '../../../utils/formValidators';
+import { isEmpty, isInt, isValidRange } from '../../../utils/formValidators';
 import { rangBandModifierOptions } from './WeaponModeFormOptions';
 
 export const isRangeBandSelectError = (rangeBandFields: {
@@ -10,26 +10,30 @@ export const isRangeBandSelectError = (rangeBandFields: {
   max: string;
   modifier: string;
 }): boolean =>
-  !isEmpty(rangeBandFields.modifier) &&
-  (isEmpty(rangeBandFields.min) || isEmpty(rangeBandFields.max));
+  isEmpty(rangeBandFields.modifier) &&
+  (!isEmpty(rangeBandFields.min) || !isEmpty(rangeBandFields.max));
 
 export const isMinInputError = (rangeBandFields: {
   min: string;
   max: string;
   modifier: string;
 }): boolean =>
-  (!isEmpty(rangeBandFields.min) &&
-    (isEmpty(rangeBandFields.modifier) || isEmpty(rangeBandFields.max))) ||
-  !isInt(rangeBandFields.min);
+  (isEmpty(rangeBandFields.min) &&
+    (!isEmpty(rangeBandFields.max) || !isEmpty(rangeBandFields.modifier))) ||
+  !isInt(rangeBandFields.min) ||
+  (!isEmpty(rangeBandFields.min) && !isValidRange(rangeBandFields.min)) ||
+  parseInt(rangeBandFields.min, 10) > parseInt(rangeBandFields.max, 10);
 
 export const isMaxInputError = (rangeBandFields: {
   min: string;
   max: string;
   modifier: string;
 }): boolean =>
-  (!isEmpty(rangeBandFields.max) &&
-    (isEmpty(rangeBandFields.modifier) || isEmpty(rangeBandFields.min))) ||
-  !isInt(rangeBandFields.max);
+  (isEmpty(rangeBandFields.max) &&
+    (!isEmpty(rangeBandFields.min) || !isEmpty(rangeBandFields.modifier))) ||
+  !isInt(rangeBandFields.max) ||
+  (!isEmpty(rangeBandFields.max) && !isValidRange(rangeBandFields.max)) ||
+  parseInt(rangeBandFields.min, 10) > parseInt(rangeBandFields.max, 10);
 
 export const RangeBandForm: React.FC<RangeBandFormProps> = ({
   onChange,
@@ -44,16 +48,6 @@ export const RangeBandForm: React.FC<RangeBandFormProps> = ({
     <>
       <h4 className="weapon-mode-range-band-title">{range} range band</h4>
       <div className="weapon-mode-range-band-row">
-        <Select
-          id={`weapon-mode-${range}-range-band-modifier`}
-          name="modifier"
-          label="Modifier"
-          options={rangBandModifierOptions}
-          onChange={onChange}
-          selectedValue={rangeBandFields.modifier}
-          error={isRangeBandSelectError(rangeBandFields)}
-          isDisabled={isDisabled}
-        />
         <Input
           id={`weapon-mode-${range}-range-band-min`}
           name="min"
@@ -63,7 +57,6 @@ export const RangeBandForm: React.FC<RangeBandFormProps> = ({
           error={isMinInputError(rangeBandFields)}
           placeholder={placeholder[0]}
           width={weaponRangeInputWidth}
-          className="weapon-mode-min-range"
           disabled={isDisabled}
         />
         <Input
@@ -75,7 +68,18 @@ export const RangeBandForm: React.FC<RangeBandFormProps> = ({
           error={isMaxInputError(rangeBandFields)}
           placeholder={placeholder[1]}
           width={weaponRangeInputWidth}
+          className="weapon-mode-max-range"
           disabled={isDisabled}
+        />
+        <Select
+          id={`weapon-mode-${range}-range-band-modifier`}
+          name="modifier"
+          label="Modifier"
+          options={rangBandModifierOptions}
+          onChange={onChange}
+          selectedValue={rangeBandFields.modifier}
+          error={isRangeBandSelectError(rangeBandFields)}
+          isDisabled={isDisabled}
         />
       </div>
     </>

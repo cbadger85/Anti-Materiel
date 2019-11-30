@@ -41,7 +41,7 @@ export const AvaListItemContainer: React.FC<AvaListItemContainerProps> = ({
       >
         {provided => (
           <div
-            className="list-items__container"
+            className="add-ava__list-items-container"
             ref={provided.innerRef}
             {...provided.droppableProps}
           >

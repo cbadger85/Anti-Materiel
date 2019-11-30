@@ -10,25 +10,21 @@ export const WeaponInfoContent: React.FC<WeaponInfoContentProps> = ({
       {weaponInfo ? (
         <div className="weapon-info-content-table">
           <div className="weapon-info-content-table__header">
-            <h3 className="weapon-info-content__cell weapon-info-content__cell--column-1">
-              Name
-            </h3>
-            <h3 className="weapon-info-content__cell weapon-info-content__cell--column-2">
-              Wiki Link
-            </h3>
+            <span>Name</span>
           </div>
           <div className="weapon-info-content-table__row">
-            <span className="weapon-info-content__cell weapon-info-content__cell--column-1">
-              {weaponInfo.name}
-            </span>
-            <a
-              href={weaponInfo.wikiLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="weapon-info-content__cell weapon-info-content__cell--column-2"
-            >
-              {weaponInfo.wikiLink}
-            </a>
+            {weaponInfo.wikiLink ? (
+              <a
+                href={weaponInfo.wikiLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={weaponInfo.wikiLink}
+              >
+                {weaponInfo.name}
+              </a>
+            ) : (
+              <span>{weaponInfo.name}</span>
+            )}
           </div>
         </div>
       ) : (

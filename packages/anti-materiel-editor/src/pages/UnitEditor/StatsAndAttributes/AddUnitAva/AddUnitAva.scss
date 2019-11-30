@@ -27,10 +27,20 @@
   }
 }
 
+.add-ava__list-items-container {
+  margin-bottom: 1.5rem;
+}
+
 .list-item-header {
   margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 0.75rem;
   text-transform: uppercase;
   color: $neutral-0;
+
+  &.list-item {
+    background-color: $neutral-4;
+  }
 }
 
 .list-item-ava__sectorial {

@@ -9,8 +9,6 @@ import { mount, ReactWrapper } from 'enzyme';
 import { Input } from '../../components/Input/Input';
 import React, { useEffect } from 'react';
 
-// TODO write tests for validation
-
 describe('useForm', () => {
   let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
 

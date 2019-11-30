@@ -6,10 +6,15 @@ import { WeaponInfo } from './WeaponInfo/WeaponInfo';
 import { WeaponInfoData } from './WeaponInfo/WeaponInfoTypes';
 import { WeaponMode } from './WeaponMode/WeaponMode';
 import { WeaponModeData } from './WeaponMode/WeaponModeTypes';
+import { Prompt } from 'react-router-dom';
 
 export const WeaponEditor: React.FC = () => {
   const [weaponInfo, setWeaponInfo] = useState<WeaponInfoData>();
   const [weaponModes, setWeaponModes] = useState<WeaponModeData[]>([]);
+
+  const isSaveDisabled = !weaponInfo || !weaponModes.length;
+
+  const shouldPropmt = !!weaponInfo || !!weaponModes.length;
 
   const addWeaponInfo = (data: WeaponInfoData): void => {
     setWeaponInfo(data);
@@ -54,6 +59,7 @@ export const WeaponEditor: React.FC = () => {
             width="7.5rem"
             color="primary"
             onClick={() => makeToast('Saved!')}
+            disabled={isSaveDisabled}
           >
             Save
           </Button>
@@ -69,6 +75,10 @@ export const WeaponEditor: React.FC = () => {
             />
           </>
         )}
+      />
+      <Prompt
+        when={shouldPropmt}
+        message="Are you sure you want to discard changes?"
       />
     </>
   );

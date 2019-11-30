@@ -174,7 +174,6 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
       onCancel={onCancel}
       disableSubmit={
         !modeInfoIsValid ||
-        !traits.length ||
         !isShortRangeBandFieldValid ||
         !isMediumRangeBandFieldValid ||
         !isLongRangeBandFieldValid ||
@@ -230,6 +229,7 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
           label="Combined Ammo"
           checked={modeInfoFields.combinedAmmo}
           onChange={onChangeModeInfo}
+          disabled={ammo.length !== 2}
         />
       </div>
       <div className="side-drawer-form-group">

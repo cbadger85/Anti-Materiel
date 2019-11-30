@@ -20,12 +20,12 @@
 }
 
 .list-items__container {
-  margin: -0.5rem 0 1.5rem 0;
+  margin-bottom: 1.5rem;
+  margin-top: -0.5rem;
 }
 
 .list-item-header--multi-select {
-  font-size: 0.8rem;
-  background-color: $neutral-3;
+  background-color: $neutral-4;
   color: $neutral-9;
   padding: 0.5rem 0.25rem;
 }

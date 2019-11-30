@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ManagedContent } from '../../../components/ManagedContent/ManagedContent';
 import { WeaponModeForm } from './WeaponModeForm';
 import { WeaponModeData } from './WeaponModeTypes';
+import { WeaponModesContent } from './WeaponModesContent';
 
 export const WeaponMode: React.FC<WeaponModeProps> = ({
   updateWeaponModes,
@@ -17,18 +18,28 @@ export const WeaponMode: React.FC<WeaponModeProps> = ({
     <ManagedContent
       warn={warn}
       title="Weapon Mode"
-      content={openSideDrawer => null}
+      content={openSideDrawer => (
+        <WeaponModesContent
+          weaponModes={weaponModes}
+          editWeaponMode={modeName => {
+            setSelectedWeaponModeName(modeName);
+            openSideDrawer();
+          }}
+          removeWeaponMode={removeWeaponMode}
+        />
+      )}
       form={(closeSideDrawer, onCancel) => (
         <WeaponModeForm
           closeSideDrawer={closeSideDrawer}
-          onSubmit={updateWeaponModes}
           onCancel={onCancel}
+          onSubmit={updateWeaponModes}
           onDataChange={isChanged => setWarn(isChanged)}
           initialData={weaponModes.find(
             weaponMode => weaponMode.name === selectedWeaponModeName,
           )}
         />
       )}
+      onCloseSideDrawer={() => setSelectedWeaponModeName(undefined)}
     />
   );
 };
