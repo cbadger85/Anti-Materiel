@@ -4,6 +4,7 @@ import { ManagedContent } from '../../components/ManagedContent/ManagedContent';
 import { SideDrawer } from '../../components/SideDrawer/SideDrawer';
 import { ConfirmModal } from '../../components/Modal/ConfirmModal';
 import { AddIcon, EditIcon } from '../../components/Icons';
+import { Button } from '../../components/Button/Button';
 
 describe('<ManagedContent />', () => {
   let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
@@ -83,22 +84,61 @@ describe('<ManagedContent />', () => {
     expect(confirmModal).toHaveLength(1);
   });
 
-  it('should close the side drawer if warn is false', () => {
+  it('should close the modal when cancel is clicked but leave the SideDrawer open', () => {
     wrapper = mount(
-      <ManagedContent title="test" content={jest.fn()} form={jest.fn()} />,
+      <ManagedContent title="test" content={jest.fn()} form={jest.fn()} warn />,
     );
 
     const button = wrapper.find('button');
 
     button.simulate('click');
 
+    const sideDrawer = wrapper.find(SideDrawer);
+    const background = sideDrawer.find('#opaque-background').last();
+
+    background.simulate('click');
+
+    const confirmModal = wrapper.find(ConfirmModal);
+
+    confirmModal
+      .find(Button)
+      .first()
+      .simulate('click');
+
+    const closedConfirmModal = wrapper.find(ConfirmModal);
+
     const openedSideDrawer = wrapper.find(SideDrawer);
 
-    const background = openedSideDrawer.find('#opaque-background').first();
+    expect(closedConfirmModal.props().isShown).toBe(false);
+    expect(openedSideDrawer.props().isOpen).toBe(true);
+  });
+
+  it('should close the modal and the SideDrawer when ok is clicked', () => {
+    wrapper = mount(
+      <ManagedContent title="test" content={jest.fn()} form={jest.fn()} warn />,
+    );
+
+    const button = wrapper.find('button');
+
+    button.simulate('click');
+
+    const sideDrawer = wrapper.find(SideDrawer);
+    const background = sideDrawer.find('#opaque-background').last();
+
     background.simulate('click');
+
+    const confirmModal = wrapper.find(ConfirmModal);
+
+    confirmModal
+      .find(Button)
+      .last()
+      .simulate('click');
+
+    const closedConfirmModal = wrapper.find(ConfirmModal);
 
     const closedSideDrawer = wrapper.find(SideDrawer);
 
+    expect(closedConfirmModal.props().isShown).toBe(false);
     expect(closedSideDrawer.props().isOpen).toBe(false);
   });
 
@@ -119,5 +159,28 @@ describe('<ManagedContent />', () => {
     const closedSideDrawer = wrapper.find(SideDrawer);
 
     expect(closedSideDrawer.props().isOpen).toBe(false);
+  });
+
+  it('should call onCloseSideDrawer when the SideDrawer is closed', () => {
+    const onCloseSideDrawer = jest.fn();
+    wrapper = mount(
+      <ManagedContent
+        title="test"
+        content={jest.fn()}
+        form={jest.fn()}
+        onCloseSideDrawer={onCloseSideDrawer}
+      />,
+    );
+
+    const button = wrapper.find('button');
+
+    button.simulate('click');
+
+    const openedSideDrawer = wrapper.find(SideDrawer);
+
+    const background = openedSideDrawer.find('#opaque-background').first();
+    background.simulate('click');
+
+    expect(onCloseSideDrawer).toBeCalled();
   });
 });
