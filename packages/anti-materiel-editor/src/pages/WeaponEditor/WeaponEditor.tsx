@@ -8,10 +8,13 @@ import { WeaponMode } from './WeaponMode/WeaponMode';
 import { WeaponModeData } from './WeaponMode/WeaponModeTypes';
 import { Prompt } from 'react-router-dom';
 import { convertWeaponDataToWeapon } from './utils';
+import { useDispatch } from 'react-redux';
+import { addWeapon } from '../../store/weaponsSlice';
 
 export const WeaponEditor: React.FC = () => {
   const [weaponInfo, setWeaponInfo] = useState<WeaponInfoData>();
   const [weaponModes, setWeaponModes] = useState<WeaponModeData[]>([]);
+  const dispatch = useDispatch();
 
   const isSaveDisabled = !weaponInfo || !weaponModes.length;
 
@@ -57,6 +60,8 @@ export const WeaponEditor: React.FC = () => {
     });
 
     console.log(weapon);
+
+    dispatch(addWeapon(weapon));
 
     makeToast('Saved!');
   };
