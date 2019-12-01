@@ -93,7 +93,7 @@ export type RangeBandModifier = '+6' | '+3' | '0' | '-3' | '-6';
 export interface WeaponRangeBand {
   min: string;
   max: string;
-  modifier: RangeBandModifier | string;
+  modifier: RangeBandModifier;
 }
 
 export interface WeaponRange {
@@ -114,6 +114,7 @@ export interface WeaponMode {
 }
 
 export interface Weapon extends WikiInfo {
+  id: string;
   weaponModes: WeaponMode[];
 }
 
