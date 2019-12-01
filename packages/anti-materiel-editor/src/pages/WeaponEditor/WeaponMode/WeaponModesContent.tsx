@@ -21,7 +21,7 @@ export const WeaponModeRangeBandCell: React.FC<WeaponModeRangeBandCellProps> = (
   rangeBand,
   className,
 }) => {
-  if (!rangeBand) {
+  if (!rangeBand || !rangeBand.max || !rangeBand.min || !rangeBand.modifier) {
     return <span className={className}>--</span>;
   }
 

@@ -95,6 +95,18 @@ describe('<WeaonModeContent />', () => {
 
       expect(wrapper.text()).toBe(expectedText);
     });
+
+    it('should show a placeholder if rangebands are provided but the fields are empty', () => {
+      const weaponRangeBand = { min: '', max: '', modifier: '' };
+
+      const wrapper = shallow(
+        <WeaponModeRangeBandCell rangeBand={weaponRangeBand} />,
+      );
+
+      const expectedText = `--`;
+
+      expect(wrapper.text()).toBe(expectedText);
+    });
   });
 
   describe('<ItemLink />', () => {

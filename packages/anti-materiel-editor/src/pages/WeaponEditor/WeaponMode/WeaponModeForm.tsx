@@ -4,7 +4,7 @@ import { Input } from '../../../components/Input/Input';
 import { SideDrawerForm } from '../../../components/SideDrawerForm/SideDrawerForm';
 import { useForm } from '../../../hooks/useForm';
 import { useOnDataChange } from '../../../hooks/useOnDataChange';
-import { isEmpty, isInt } from '../../../utils/formValidators';
+import { isEmpty } from '../../../utils/formValidators';
 import { ItemForm } from './ItemForm';
 import { RangeBandForm } from './RangeBandForm';
 import './WeaponMode.scss';
@@ -207,9 +207,7 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
             label="Burst"
             value={modeInfoFields.burst}
             onChange={onChangeModeInfo}
-            error={
-              isEmpty(modeInfoFields.burst) || !isInt(modeInfoFields.burst)
-            }
+            error={isEmpty(modeInfoFields.burst)}
             placeholder="1"
             width="8.5rem"
           />
