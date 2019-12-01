@@ -2,9 +2,9 @@ export interface WeaponModeData {
   name: string;
   damage: string;
   burst: string;
-  ammo: { name: string; wikiLink: string }[];
+  ammo: { name: string; wikiLink?: string }[];
   combinedAmmo: boolean;
-  traits: { name: string; wikiLink: string }[];
+  traits: { name: string; wikiLink?: string }[];
   shortRangeBand?: WeaponRangeBand;
   mediumRangeBand?: WeaponRangeBand;
   longRangeBand?: WeaponRangeBand;
