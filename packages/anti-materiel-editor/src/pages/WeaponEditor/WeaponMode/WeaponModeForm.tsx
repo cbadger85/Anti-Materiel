@@ -28,10 +28,10 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
     combinedAmmo: initialData ? initialData.combinedAmmo : false,
   });
 
-  const [ammo, setAmmo] = useState<{ name: string; wikiLink: string }[]>(
+  const [ammo, setAmmo] = useState<{ name: string; wikiLink?: string }[]>(
     initialData ? initialData.ammo : [],
   );
-  const [traits, setTraits] = useState<{ name: string; wikiLink: string }[]>(
+  const [traits, setTraits] = useState<{ name: string; wikiLink?: string }[]>(
     initialData ? initialData.traits : [],
   );
 
@@ -144,9 +144,9 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
   };
 
   const addItem = (
-    state: { name: string; wikiLink: string }[],
-    setState: (item: { name: string; wikiLink: string }[]) => void,
-  ) => (item: { name: string; wikiLink: string }): void => {
+    state: { name: string; wikiLink?: string }[],
+    setState: (item: { name: string; wikiLink?: string }[]) => void,
+  ) => (item: { name: string; wikiLink?: string }): void => {
     const itemAlreadyAdded = state.find(
       stateItem => stateItem.name === item.name,
     );
@@ -159,8 +159,8 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
   };
 
   const removeItem = (
-    state: { name: string; wikiLink: string }[],
-    setState: (item: { name: string; wikiLink: string }[]) => void,
+    state: { name: string; wikiLink?: string }[],
+    setState: (item: { name: string; wikiLink?: string }[]) => void,
   ) => (itemName: string): void => {
     const updatedState = state.filter(itemState => itemState.name !== itemName);
 

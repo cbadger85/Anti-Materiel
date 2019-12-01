@@ -38,7 +38,7 @@ export const ListItem: React.FC<AvaListItemProps> = ({
 };
 
 interface AvaListItemProps {
-  item: { name: string; wikiLink: string };
+  item: { name: string; wikiLink?: string };
   removeItem: (itemName: string) => void;
   id: string;
 }
@@ -130,8 +130,8 @@ export const ItemForm: React.FC<ItemFormProps> = ({
 interface ItemFormProps {
   id: 'ammo' | 'traits';
   placeholder: string;
-  addItem: (item: { name: string; wikiLink: string }) => void;
+  addItem: (item: { name: string; wikiLink?: string }) => void;
   removeItem: (itemName: string) => void;
-  items: { name: string; wikiLink: string }[];
+  items: { name: string; wikiLink?: string }[];
   className?: string;
 }

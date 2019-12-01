@@ -7,6 +7,7 @@ import { WeaponInfoData } from './WeaponInfo/WeaponInfoTypes';
 import { WeaponMode } from './WeaponMode/WeaponMode';
 import { WeaponModeData } from './WeaponMode/WeaponModeTypes';
 import { Prompt } from 'react-router-dom';
+import { convertWeaponDataToWeapon } from './utils';
 
 export const WeaponEditor: React.FC = () => {
   const [weaponInfo, setWeaponInfo] = useState<WeaponInfoData>();
@@ -49,6 +50,17 @@ export const WeaponEditor: React.FC = () => {
     setWeaponModes([...weaponModes, data]);
   };
 
+  const handleOnSave = (): void => {
+    const weapon = convertWeaponDataToWeapon({
+      weaponInfoData: weaponInfo,
+      weaponModesData: weaponModes,
+    });
+
+    console.log(weapon);
+
+    makeToast('Saved!');
+  };
+
   const makeToast = useToast();
   return (
     <>
@@ -58,7 +70,7 @@ export const WeaponEditor: React.FC = () => {
           <Button
             width="7.5rem"
             color="primary"
-            onClick={() => makeToast('Saved!')}
+            onClick={handleOnSave}
             disabled={isSaveDisabled}
           >
             Save

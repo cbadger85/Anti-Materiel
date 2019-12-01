@@ -14,3 +14,14 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin content-anchor-tags {
+  a,
+  a:visited {
+    color: inherit;
+  }
+
+  a:hover {
+    color: $neutral-3;
+  }
+}
