@@ -120,7 +120,7 @@ export const WeaponEditor: React.FC = () => {
   const handleOnSave = (): void => {
     const weapon = convertWeaponDataToWeapon({
       weaponInfoData: weaponInfo,
-      weaponModesData: weaponModes,
+      weaponModesData: sortBy(weaponModes, ['name']),
     });
 
     if (selectedWeaponId) {
