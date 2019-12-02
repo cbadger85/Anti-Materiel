@@ -43,6 +43,7 @@ export const WeaponEditor: React.FC = () => {
     const weapon = weaponList.find(weapon => weapon.id === selectedWeaponId);
 
     if (!weapon) {
+      selectedWeaponId && history.replace('/weapon-editor');
       setWeaponInfo(undefined);
       setWeaponModes([]);
       return;
@@ -52,7 +53,7 @@ export const WeaponEditor: React.FC = () => {
 
     setWeaponInfo(info);
     setWeaponModes(modes);
-  }, [weaponList, selectedWeaponId]);
+  }, [weaponList, selectedWeaponId, history]);
 
   const editedWeapon = weaponList.find(
     weapon => weapon.id === selectedWeaponId,
@@ -128,7 +129,9 @@ export const WeaponEditor: React.FC = () => {
 
     makeToast(`${weapon.name} has been saved!`);
 
-    history.replace('/weapon-editor');
+    setTimeout(() => {
+      history.replace('/weapon-editor');
+    }, 0);
   };
 
   const handleRemoveWeapon = (): void => {

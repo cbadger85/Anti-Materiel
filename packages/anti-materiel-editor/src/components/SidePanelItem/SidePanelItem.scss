@@ -1,8 +1,9 @@
 @import '../../styles/colors';
 @import '../../styles/mixins';
 
-.side-panel-item {
-  @include clear-button-defaults;
+.side-panel-item,
+.side-panel-item--active {
+  text-decoration: none;
   margin: 0.5rem;
   padding: 0.5rem;
   width: calc(100% - 1rem);
@@ -26,4 +27,8 @@
     letter-spacing: 1px;
     text-transform: uppercase;
   }
+}
+
+.side-panel-item--active {
+  background-color: $neutral-0;
 }
