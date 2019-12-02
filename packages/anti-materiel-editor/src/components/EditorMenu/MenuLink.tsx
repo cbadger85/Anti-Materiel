@@ -11,14 +11,14 @@ export const MenuLink: React.FC<NavLinkProps> = ({
 }) => {
   const location = useLocation();
 
-  const isActive = location.pathname === to;
+  const isActive = location.pathname.includes(to.toString());
 
   return (
     <Link
       {...props}
       to={to}
       className={getClasses(className, isActive && activeClassName)}
-      onClick={e => isActive && e.preventDefault()}
+      onClick={e => location.pathname === to && e.preventDefault()}
     >
       {children}
     </Link>

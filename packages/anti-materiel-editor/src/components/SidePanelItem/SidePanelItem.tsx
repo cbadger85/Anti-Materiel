@@ -1,20 +1,23 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { EditIcon } from '../Icons';
 import './SidePanelItem.scss';
 
 export const SidePanelItem: React.FC<SidePanelItemProps> = ({
   name,
-  onClick,
+  uri,
+  id,
 }) => {
   return (
-    <button className="side-panel-item" onClick={onClick}>
+    <NavLink replace to={`/${uri}/${id}`} className="side-panel-item">
       <span className="side-panel-item__name">{name}</span>
       <EditIcon />
-    </button>
+    </NavLink>
   );
 };
 
 interface SidePanelItemProps {
   name: string;
-  onClick: () => void;
+  uri: string;
+  id: string;
 }

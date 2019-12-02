@@ -3,8 +3,8 @@ import React from 'react';
 import { SidePanelItem } from '../../components/SidePanelItem/SidePanelItem';
 
 export const SidePanelWeaponList: React.FC<SidePanelWeaponListProps> = ({
-  editWeapon,
   weaponList,
+  uri,
 }) => {
   return (
     <div>
@@ -12,7 +12,8 @@ export const SidePanelWeaponList: React.FC<SidePanelWeaponListProps> = ({
         <SidePanelItem
           key={weapon.id}
           name={weapon.name}
-          onClick={() => editWeapon(weapon.id)}
+          uri={uri}
+          id={weapon.id}
         />
       ))}
     </div>
@@ -20,6 +21,6 @@ export const SidePanelWeaponList: React.FC<SidePanelWeaponListProps> = ({
 };
 
 interface SidePanelWeaponListProps {
-  editWeapon: (id: string) => void;
   weaponList: Weapon[];
+  uri: string;
 }
