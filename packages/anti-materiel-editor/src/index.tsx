@@ -8,8 +8,6 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 const render = (): void => {
-  // const App = require('./components/App/App');
-
   ReactDOM.render(
     <Provider store={store}>
       <App />
