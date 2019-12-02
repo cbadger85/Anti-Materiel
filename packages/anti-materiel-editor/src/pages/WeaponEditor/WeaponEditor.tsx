@@ -43,10 +43,12 @@ export const WeaponEditor: React.FC = () => {
     const weapon = weaponList.find(weapon => weapon.id === selectedWeaponId);
 
     if (!weapon) {
-      selectedWeaponId && history.replace('/weapon-editor');
       setWeaponInfo(undefined);
       setWeaponModes([]);
-      return;
+      const redirect = setTimeout(() => {
+        selectedWeaponId && history.replace('/weapon-editor');
+      }, 0);
+      return () => clearTimeout(redirect);
     }
 
     const [info, modes] = convertWeaponToWeaponData(weapon);
