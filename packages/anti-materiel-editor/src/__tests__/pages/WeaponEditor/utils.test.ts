@@ -3,6 +3,7 @@ import {
   convertWeaponRange,
   convertWeaponDataToWeapon,
   convertWeaponToWeaponData,
+  convertWeaponRangeData,
 } from '../../../pages/WeaponEditor/utils';
 
 describe('WeaponEditor/utils', () => {
@@ -222,10 +223,10 @@ describe('WeaponEditor/utils', () => {
           ammo: [],
           combinedAmmo: false,
           traits: [],
-          shortRangeBand: undefined,
-          mediumRangeBand: undefined,
-          longRangeBand: undefined,
-          maxiumumRangeBand: undefined,
+          shortRangeBand: { min: '', max: '', modifier: '' },
+          mediumRangeBand: { min: '', max: '', modifier: '' },
+          longRangeBand: { min: '', max: '', modifier: '' },
+          maximumRangeBand: { min: '', max: '', modifier: '' },
         },
       ];
 
@@ -271,14 +272,32 @@ describe('WeaponEditor/utils', () => {
           traits: [],
           shortRangeBand: { min: '0', max: '8', modifier: '+3' },
           mediumRangeBand: { min: '8', max: '24', modifier: '-3' },
-          longRangeBand: undefined,
-          maxiumumRangeBand: undefined,
+          longRangeBand: { min: '', max: '', modifier: '' },
+          maximumRangeBand: { min: '', max: '', modifier: '' },
         },
       ];
 
       const expectedWeaponData = [weaponInfoData, weaponModesData];
 
       expect(weaponData).toEqual(expectedWeaponData);
+    });
+  });
+
+  describe('convertWeaponRangeData', () => {
+    it('should return the rangeBand if it exists', () => {
+      const rangeBand = { min: '8', max: '24', modifier: '-3' };
+
+      const rangeBandData = convertWeaponRangeData(rangeBand as any);
+
+      expect(rangeBandData).toEqual(rangeBand);
+    });
+
+    it('should return an empty rangeBand if undefined', () => {
+      const rangeBandData = convertWeaponRangeData(undefined);
+
+      const rangeBand = { min: '', max: '', modifier: '' };
+
+      expect(rangeBandData).toEqual(rangeBand);
     });
   });
 });

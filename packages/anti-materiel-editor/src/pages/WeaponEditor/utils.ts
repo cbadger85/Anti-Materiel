@@ -101,6 +101,16 @@ export const convertWeaponDataToWeapon = ({
   };
 };
 
+export const convertWeaponRangeData = (
+  rangeBand: WeaponRangeBand | undefined,
+): { min: string; max: string; modifier: string } => {
+  if (!rangeBand) {
+    return { min: '', max: '', modifier: '' };
+  }
+
+  return rangeBand;
+};
+
 export const convertWeaponToWeaponData = (
   weapon: Weapon,
 ): [WeaponInfoData, WeaponModeData[]] => {
@@ -113,10 +123,18 @@ export const convertWeaponToWeaponData = (
     combinedAmmo: !!mode.combinedAmmo,
     traits: mode.traits,
     ammo: mode.ammo,
-    shortRangeBand: mode.weaponRange ? mode.weaponRange.short : undefined,
-    mediumRangeBand: mode.weaponRange ? mode.weaponRange.medium : undefined,
-    longRangeBand: mode.weaponRange ? mode.weaponRange.long : undefined,
-    maximumRangeBand: mode.weaponRange ? mode.weaponRange.maximum : undefined,
+    shortRangeBand: mode.weaponRange
+      ? convertWeaponRangeData(mode.weaponRange.short)
+      : { min: '', max: '', modifier: '' },
+    mediumRangeBand: mode.weaponRange
+      ? convertWeaponRangeData(mode.weaponRange.medium)
+      : { min: '', max: '', modifier: '' },
+    longRangeBand: mode.weaponRange
+      ? convertWeaponRangeData(mode.weaponRange.long)
+      : { min: '', max: '', modifier: '' },
+    maximumRangeBand: mode.weaponRange
+      ? convertWeaponRangeData(mode.weaponRange.maximum)
+      : { min: '', max: '', modifier: '' },
   }));
 
   const weaponInfoData = { id, name, wikiLink };
