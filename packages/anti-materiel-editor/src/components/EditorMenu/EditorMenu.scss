@@ -51,7 +51,6 @@
 
   .menu__item--active {
     position: relative;
-    pointer-events: none;
 
     &:focus {
       color: inherit;

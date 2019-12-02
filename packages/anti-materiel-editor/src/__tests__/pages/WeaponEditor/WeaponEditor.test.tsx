@@ -13,6 +13,7 @@ import { WeaponInfo } from '../../../pages/WeaponEditor/WeaponInfo/WeaponInfo';
 import { WeaponInfoForm } from '../../../pages/WeaponEditor/WeaponInfo/WeaponInfoForm';
 import rootReducer from '../../../store/rootReducer';
 import { ConfirmModal } from '../../../components/Modal/ConfirmModal';
+import { Route, Link } from 'react-router-dom';
 
 const weapon: Weapon = {
   name: 'foo',
@@ -53,6 +54,58 @@ describe('<WeaponEditor />', () => {
   const body = global.document.querySelector('body');
   body.appendChild(modalRoot);
 
+  it('should have no content if there is no id in the path', () => {
+    const store = configureStore({
+      reducer: rootReducer,
+      preloadedState: {
+        weapons: [weapon],
+      },
+    });
+
+    wrapper = mount(
+      <Provider store={store}>
+        <MemoryRouter initialEntries={['/weapon-editor']}>
+          <Route exact path="/weapon-editor">
+            <WeaponEditor />
+          </Route>
+        </MemoryRouter>
+      </Provider>,
+    );
+
+    const emptyContent = wrapper
+      .find(WeaponEditor)
+      .find('.empty-content')
+      .hostNodes();
+
+    expect(emptyContent).toHaveLength(2);
+  });
+
+  it('should have content if there is an id in the path', () => {
+    const store = configureStore({
+      reducer: rootReducer,
+      preloadedState: {
+        weapons: [weapon],
+      },
+    });
+
+    wrapper = mount(
+      <Provider store={store}>
+        <MemoryRouter initialEntries={['/weapon-editor/1234']}>
+          <Route exact path="/weapon-editor/:id">
+            <WeaponEditor />
+          </Route>
+        </MemoryRouter>
+      </Provider>,
+    );
+
+    const emptyContent = wrapper
+      .find(WeaponEditor)
+      .find('.empty-content')
+      .hostNodes();
+
+    expect(emptyContent).toHaveLength(0);
+  });
+
   it('should have a disabled save button if nothing has been added', () => {
     const store = configureStore({
       reducer: rootReducer,
@@ -84,16 +137,13 @@ describe('<WeaponEditor />', () => {
 
     wrapper = mount(
       <Provider store={store}>
-        <MemoryRouter>
-          <WeaponEditor />
+        <MemoryRouter initialEntries={['/weapon-editor/1234']}>
+          <Route exact path="/weapon-editor/:id">
+            <WeaponEditor />
+          </Route>
         </MemoryRouter>
       </Provider>,
     );
-
-    wrapper
-      .find(SidePanelItem)
-      .find('button')
-      .simulate('click');
 
     const saveButton = wrapper.find('#weapon-editor-save-button').hostNodes();
 
@@ -110,16 +160,13 @@ describe('<WeaponEditor />', () => {
 
     wrapper = mount(
       <Provider store={store}>
-        <MemoryRouter>
-          <WeaponEditor />
+        <MemoryRouter initialEntries={['/weapon-editor/1234']}>
+          <Route exact path="/weapon-editor/:id">
+            <WeaponEditor />
+          </Route>
         </MemoryRouter>
       </Provider>,
     );
-
-    wrapper
-      .find(SidePanelItem)
-      .find('button')
-      .simulate('click');
 
     wrapper
       .find(WeaponInfo)
@@ -153,17 +200,17 @@ describe('<WeaponEditor />', () => {
     wrapper = mount(
       <Provider store={store}>
         <ToastProvider>
-          <MemoryRouter>
-            <WeaponEditor />
+          <MemoryRouter
+            initialEntries={['/weapon-editor/1234']}
+            getUserConfirmation={(message, callback) => callback(false)}
+          >
+            <Route exact path="/weapon-editor/:id">
+              <WeaponEditor />
+            </Route>
           </MemoryRouter>
         </ToastProvider>
       </Provider>,
     );
-
-    wrapper
-      .find(SidePanelItem)
-      .find('button')
-      .simulate('click');
 
     wrapper
       .find(WeaponInfo)
@@ -201,16 +248,16 @@ describe('<WeaponEditor />', () => {
 
     wrapper = mount(
       <Provider store={store}>
-        <MemoryRouter>
-          <WeaponEditor />
+        <MemoryRouter
+          initialEntries={['/weapon-editor/1234']}
+          getUserConfirmation={(message, callback) => callback(false)}
+        >
+          <Route exact path="/weapon-editor/:id">
+            <WeaponEditor />
+          </Route>
         </MemoryRouter>
       </Provider>,
     );
-
-    wrapper
-      .find(SidePanelItem)
-      .find('button')
-      .simulate('click');
 
     wrapper
       .find(WeaponInfo)
@@ -248,16 +295,16 @@ describe('<WeaponEditor />', () => {
 
     wrapper = mount(
       <Provider store={store}>
-        <MemoryRouter>
-          <WeaponEditor />
+        <MemoryRouter
+          initialEntries={['/weapon-editor/1234']}
+          getUserConfirmation={(message, callback) => callback(false)}
+        >
+          <Route exact path="/weapon-editor/:id">
+            <WeaponEditor />
+          </Route>
         </MemoryRouter>
       </Provider>,
     );
-
-    wrapper
-      .find(SidePanelItem)
-      .find('button')
-      .simulate('click');
 
     wrapper
       .find('#weapon-editor-delete-button')
@@ -279,16 +326,16 @@ describe('<WeaponEditor />', () => {
 
     wrapper = mount(
       <Provider store={store}>
-        <MemoryRouter>
-          <WeaponEditor />
+        <MemoryRouter
+          initialEntries={['/weapon-editor/1234']}
+          getUserConfirmation={(message, callback) => callback(false)}
+        >
+          <Route exact path="/weapon-editor/:id">
+            <WeaponEditor />
+          </Route>
         </MemoryRouter>
       </Provider>,
     );
-
-    wrapper
-      .find(SidePanelItem)
-      .find('button')
-      .simulate('click');
 
     wrapper
       .find('#weapon-editor-delete-button')
@@ -317,16 +364,16 @@ describe('<WeaponEditor />', () => {
 
     wrapper = mount(
       <Provider store={store}>
-        <MemoryRouter>
-          <WeaponEditor />
+        <MemoryRouter
+          initialEntries={['/weapon-editor/1234']}
+          getUserConfirmation={(message, callback) => callback(false)}
+        >
+          <Route exact path="/weapon-editor/:id">
+            <WeaponEditor />
+          </Route>
         </MemoryRouter>
       </Provider>,
     );
-
-    wrapper
-      .find(SidePanelItem)
-      .find('button')
-      .simulate('click');
 
     wrapper
       .find('#weapon-editor-delete-button')
@@ -340,9 +387,9 @@ describe('<WeaponEditor />', () => {
       .last()
       .simulate('click');
 
-    const modal = wrapper.find(ConfirmModal).last();
+    const modal = wrapper.find(ConfirmModal);
 
-    expect(modal.props().isShown).toBe(false);
+    expect(modal).toHaveLength(0);
   });
 
   it('should remove the item if ok is clicked', () => {
@@ -355,16 +402,16 @@ describe('<WeaponEditor />', () => {
 
     wrapper = mount(
       <Provider store={store}>
-        <MemoryRouter>
-          <WeaponEditor />
+        <MemoryRouter
+          initialEntries={['/weapon-editor/1234']}
+          getUserConfirmation={(message, callback) => callback(false)}
+        >
+          <Route exact path="/weapon-editor/:id">
+            <WeaponEditor />
+          </Route>
         </MemoryRouter>
       </Provider>,
     );
-
-    wrapper
-      .find(SidePanelItem)
-      .find('button')
-      .simulate('click');
 
     wrapper
       .find('#weapon-editor-delete-button')
@@ -394,17 +441,17 @@ describe('<WeaponEditor />', () => {
     wrapper = mount(
       <Provider store={store}>
         <ToastProvider>
-          <MemoryRouter>
-            <WeaponEditor />
+          <MemoryRouter
+            initialEntries={['/weapon-editor/1234']}
+            getUserConfirmation={(message, callback) => callback(false)}
+          >
+            <Route exact path="/weapon-editor/:id">
+              <WeaponEditor />
+            </Route>
           </MemoryRouter>
         </ToastProvider>
       </Provider>,
     );
-
-    wrapper
-      .find(SidePanelItem)
-      .find('button')
-      .simulate('click');
 
     wrapper
       .find('#weapon-editor-delete-button')

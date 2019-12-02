@@ -6,6 +6,7 @@ export const MasterPage: React.FC<MasterPageProps> = ({
   mainContent,
   buttonRow,
   title,
+  uri,
 }) => {
   const [sidePanelHeight, setSidePanelHeight] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -41,7 +42,7 @@ export const MasterPage: React.FC<MasterPageProps> = ({
           <div>{mainContent()}</div>
         </main>
         <section className="side-panel" style={{ height: sidePanelHeight }}>
-          {sidePanelContent()}
+          {sidePanelContent(uri)}
         </section>
       </div>
     </>
@@ -50,7 +51,8 @@ export const MasterPage: React.FC<MasterPageProps> = ({
 
 interface MasterPageProps {
   title: string;
-  sidePanelContent: () => React.ReactNode;
+  sidePanelContent: (uri: string) => React.ReactNode;
   mainContent: () => React.ReactNode;
   buttonRow: () => React.ReactNode;
+  uri: string;
 }

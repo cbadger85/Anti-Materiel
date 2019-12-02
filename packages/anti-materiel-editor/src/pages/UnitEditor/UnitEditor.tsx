@@ -11,6 +11,7 @@ export const UnitEditor: React.FC = () => {
     <>
       <MasterPage
         title="Unit Editor"
+        uri="/unit-editor"
         buttonRow={() => (
           <Button
             width="7.5rem"
