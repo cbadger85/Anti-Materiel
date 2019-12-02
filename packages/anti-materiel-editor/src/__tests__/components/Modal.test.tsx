@@ -45,6 +45,18 @@ describe('<Modal />', () => {
     expect(onClickOutside).toBeCalled();
   });
 
+  it('should call not onClickOutside when the modal is clicked', () => {
+    const onClickOutside = jest.fn();
+    wrapper = mount(<Modal isShown onClickOutside={onClickOutside} />);
+
+    wrapper
+      .find('.modal-card')
+      .hostNodes()
+      .simulate('click');
+
+    expect(onClickOutside).toBeCalledTimes(0);
+  });
+
   it('should render its children', () => {
     const Dummy = () => <div />;
     wrapper = mount(

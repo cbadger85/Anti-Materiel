@@ -28,7 +28,11 @@ export const Modal: React.FC<ModalProps> = ({
               id="modal"
             >
               <FocusLock>
-                <animated.div style={props} className="modal-card">
+                <animated.div
+                  style={props}
+                  className="modal-card"
+                  onClick={e => e.stopPropagation()}
+                >
                   {children}
                 </animated.div>
               </FocusLock>

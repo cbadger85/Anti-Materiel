@@ -12,6 +12,7 @@ import { WeaponEditor } from '../../../pages/WeaponEditor/WeaponEditor';
 import { WeaponInfo } from '../../../pages/WeaponEditor/WeaponInfo/WeaponInfo';
 import { WeaponInfoForm } from '../../../pages/WeaponEditor/WeaponInfo/WeaponInfoForm';
 import rootReducer from '../../../store/rootReducer';
+import { ConfirmModal } from '../../../components/Modal/ConfirmModal';
 
 const weapon: Weapon = {
   name: 'foo',
@@ -235,5 +236,190 @@ describe('<WeaponEditor />', () => {
     const item = wrapper.find(SidePanelItem).find('span');
 
     expect(item.text()).toBe('baz');
+  });
+
+  it('should prompt with a modal if you remove an item', () => {
+    const store = configureStore({
+      reducer: rootReducer,
+      preloadedState: {
+        weapons: [weapon],
+      },
+    });
+
+    wrapper = mount(
+      <Provider store={store}>
+        <MemoryRouter>
+          <WeaponEditor />
+        </MemoryRouter>
+      </Provider>,
+    );
+
+    wrapper
+      .find(SidePanelItem)
+      .find('button')
+      .simulate('click');
+
+    wrapper
+      .find('#weapon-editor-delete-button')
+      .hostNodes()
+      .simulate('click');
+
+    const modal = wrapper.find(ConfirmModal).last();
+
+    expect(modal.props().isShown).toBe(true);
+  });
+
+  it('should hide the modal if cancel is clicked', () => {
+    const store = configureStore({
+      reducer: rootReducer,
+      preloadedState: {
+        weapons: [weapon],
+      },
+    });
+
+    wrapper = mount(
+      <Provider store={store}>
+        <MemoryRouter>
+          <WeaponEditor />
+        </MemoryRouter>
+      </Provider>,
+    );
+
+    wrapper
+      .find(SidePanelItem)
+      .find('button')
+      .simulate('click');
+
+    wrapper
+      .find('#weapon-editor-delete-button')
+      .hostNodes()
+      .simulate('click');
+
+    wrapper
+      .find(ConfirmModal)
+      .last()
+      .find(Button)
+      .first()
+      .simulate('click');
+
+    const modal = wrapper.find(ConfirmModal).last();
+
+    expect(modal.props().isShown).toBe(false);
+  });
+
+  it('should hide the modal if ok is clicked', () => {
+    const store = configureStore({
+      reducer: rootReducer,
+      preloadedState: {
+        weapons: [weapon],
+      },
+    });
+
+    wrapper = mount(
+      <Provider store={store}>
+        <MemoryRouter>
+          <WeaponEditor />
+        </MemoryRouter>
+      </Provider>,
+    );
+
+    wrapper
+      .find(SidePanelItem)
+      .find('button')
+      .simulate('click');
+
+    wrapper
+      .find('#weapon-editor-delete-button')
+      .hostNodes()
+      .simulate('click');
+
+    wrapper
+      .find(ConfirmModal)
+      .last()
+      .find(Button)
+      .last()
+      .simulate('click');
+
+    const modal = wrapper.find(ConfirmModal).last();
+
+    expect(modal.props().isShown).toBe(false);
+  });
+
+  it('should remove the item if ok is clicked', () => {
+    const store = configureStore({
+      reducer: rootReducer,
+      preloadedState: {
+        weapons: [weapon],
+      },
+    });
+
+    wrapper = mount(
+      <Provider store={store}>
+        <MemoryRouter>
+          <WeaponEditor />
+        </MemoryRouter>
+      </Provider>,
+    );
+
+    wrapper
+      .find(SidePanelItem)
+      .find('button')
+      .simulate('click');
+
+    wrapper
+      .find('#weapon-editor-delete-button')
+      .hostNodes()
+      .simulate('click');
+
+    wrapper
+      .find(ConfirmModal)
+      .last()
+      .find(Button)
+      .last()
+      .simulate('click');
+
+    const item = wrapper.find(SidePanelItem);
+
+    expect(item).toHaveLength(0);
+  });
+
+  it('should show the toast when removed', () => {
+    const store = configureStore({
+      reducer: rootReducer,
+      preloadedState: {
+        weapons: [weapon],
+      },
+    });
+
+    wrapper = mount(
+      <Provider store={store}>
+        <ToastProvider>
+          <MemoryRouter>
+            <WeaponEditor />
+          </MemoryRouter>
+        </ToastProvider>
+      </Provider>,
+    );
+
+    wrapper
+      .find(SidePanelItem)
+      .find('button')
+      .simulate('click');
+
+    wrapper
+      .find('#weapon-editor-delete-button')
+      .hostNodes()
+      .simulate('click');
+
+    wrapper
+      .find(ConfirmModal)
+      .last()
+      .find(Button)
+      .last()
+      .simulate('click');
+
+    const toast = wrapper.find(Toast);
+
+    expect(toast).toHaveLength(1);
   });
 });

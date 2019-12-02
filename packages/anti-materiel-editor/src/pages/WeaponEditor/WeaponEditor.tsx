@@ -8,13 +8,18 @@ import { Button } from '../../components/Button/Button';
 import { MasterPage } from '../../components/MasterPage/MasterPage';
 import { useToast } from '../../components/Toasts/useToast';
 import { RootState } from '../../store/rootReducer';
-import { addWeapon, updateWeapon } from '../../store/weaponsSlice';
+import {
+  addWeapon,
+  updateWeapon,
+  removeWeapon,
+} from '../../store/weaponsSlice';
 import { SidePanelWeaponList } from './SidePanelWeaponList';
 import { convertWeaponDataToWeapon, convertWeaponToWeaponData } from './utils';
 import { WeaponInfo } from './WeaponInfo/WeaponInfo';
 import { WeaponInfoData } from './WeaponInfo/WeaponInfoTypes';
 import { WeaponMode } from './WeaponMode/WeaponMode';
 import { WeaponModeData } from './WeaponMode/WeaponModeTypes';
+import { ConfirmModal } from '../../components/Modal/ConfirmModal';
 
 const filteredWeaponList = createSelector(
   (state: RootState) => state.weapons,
@@ -25,9 +30,11 @@ export const WeaponEditor: React.FC = () => {
   const [weaponInfo, setWeaponInfo] = useState<WeaponInfoData>();
   const [weaponModes, setWeaponModes] = useState<WeaponModeData[]>([]);
   const [selectedWeaponId, setSelectedWeaponId] = useState<string>();
+  const [isModalShown, setIsModalShown] = useState(false);
 
   const weaponList = useSelector(filteredWeaponList);
 
+  const makeToast = useToast();
   const dispatch = useDispatch();
 
   const editedWeapon = weaponList.find(
@@ -71,6 +78,9 @@ export const WeaponEditor: React.FC = () => {
   };
 
   const updateWeaponModes = (data: WeaponModeData): void => {
+    const sortedTraits = sortBy(data.traits, ['name']);
+    const sortedData = { ...data, traits: sortedTraits };
+
     const isAdded = weaponModes.find(
       weaponMode => weaponMode.name === data.name,
     );
@@ -78,7 +88,7 @@ export const WeaponEditor: React.FC = () => {
     if (isAdded) {
       const updatedModes = weaponModes.map(weaponMode => {
         if (weaponMode.name === data.name) {
-          return data;
+          return sortedData;
         }
 
         return weaponMode;
@@ -88,7 +98,7 @@ export const WeaponEditor: React.FC = () => {
       return;
     }
 
-    setWeaponModes([...weaponModes, data]);
+    setWeaponModes([...weaponModes, sortedData]);
   };
 
   const handleOnSave = (): void => {
@@ -107,7 +117,7 @@ export const WeaponEditor: React.FC = () => {
     setWeaponInfo(undefined);
     setWeaponModes([]);
 
-    makeToast('Saved!');
+    makeToast(`${weapon.name} has been saved!`);
   };
 
   const handleEditWeapon = (id: string): void => {
@@ -123,21 +133,48 @@ export const WeaponEditor: React.FC = () => {
     setWeaponModes(modes);
   };
 
-  const makeToast = useToast();
+  const handleRemoveWeapon = (): void => {
+    setIsModalShown(false);
+
+    if (!selectedWeaponId || !editedWeapon) {
+      return;
+    }
+
+    dispatch(removeWeapon({ id: selectedWeaponId }));
+    setSelectedWeaponId(undefined);
+    setWeaponInfo(undefined);
+    setWeaponModes([]);
+
+    makeToast(`${editedWeapon.name} has been removed!`, { color: 'danger' });
+  };
+
   return (
     <>
       <MasterPage
         title="Weapons Editor"
         buttonRow={() => (
-          <Button
-            id="weapon-editor-save-button"
-            width="7.5rem"
-            color="primary"
-            onClick={handleOnSave}
-            disabled={isSaveDisabled}
-          >
-            Save
-          </Button>
+          <div>
+            {!!selectedWeaponId && (
+              <Button
+                id="weapon-editor-delete-button"
+                width="7.5rem"
+                color="delete-light"
+                onClick={() => setIsModalShown(true)}
+                style={{ marginRight: '1rem' }}
+              >
+                Delete
+              </Button>
+            )}
+            <Button
+              id="weapon-editor-save-button"
+              width="7.5rem"
+              color="primary"
+              onClick={handleOnSave}
+              disabled={isSaveDisabled}
+            >
+              Save
+            </Button>
+          </div>
         )}
         sidePanelContent={() => (
           <SidePanelWeaponList
@@ -159,6 +196,12 @@ export const WeaponEditor: React.FC = () => {
       <Prompt
         when={shouldPrompt}
         message="Are you sure you want to discard changes?"
+      />
+      <ConfirmModal
+        isShown={isModalShown}
+        text="Are you want to delete this weapon?"
+        onConfirm={handleRemoveWeapon}
+        onCancel={() => setIsModalShown(false)}
       />
     </>
   );
