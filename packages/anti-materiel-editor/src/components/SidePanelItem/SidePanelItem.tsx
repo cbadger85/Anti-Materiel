@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { EditIcon } from '../Icons';
 import './SidePanelItem.scss';
 
 export const SidePanelItem: React.FC<SidePanelItemProps> = ({
@@ -9,9 +8,13 @@ export const SidePanelItem: React.FC<SidePanelItemProps> = ({
   id,
 }) => {
   return (
-    <NavLink replace to={`/${uri}/${id}`} className="side-panel-item">
+    <NavLink
+      replace
+      to={`/${uri}/${id}`}
+      className="side-panel-item"
+      activeClassName="side-panel-item--active"
+    >
       <span className="side-panel-item__name">{name}</span>
-      <EditIcon />
     </NavLink>
   );
 };
