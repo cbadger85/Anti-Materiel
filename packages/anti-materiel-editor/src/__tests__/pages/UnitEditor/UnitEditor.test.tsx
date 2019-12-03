@@ -1,6 +1,7 @@
 import React from 'react';
 import { mount, ReactWrapper } from 'enzyme';
 import { UnitEditor } from '../../../pages/UnitEditor/UnitEditor';
+import { MemoryRouter } from 'react-router-dom';
 
 // TODO write tests for this
 
@@ -20,7 +21,14 @@ describe('<UnitEditor />', () => {
   });
 
   it('should mount successfully', () => {
-    wrapper = mount(<UnitEditor />);
+    wrapper = mount(
+      <MemoryRouter
+        initialEntries={['/unit-editor']}
+        getUserConfirmation={(message, callback) => callback(false)}
+      >
+        <UnitEditor />
+      </MemoryRouter>,
+    );
 
     const unitEditor = wrapper.find(UnitEditor);
 
