@@ -55,7 +55,7 @@ export const MasterPage: React.FC<MasterPageProps> = ({
             <Button
               id="editor-delete-button"
               width="7.5rem"
-              color="delete-light"
+              color="delete-ghost"
               onClick={() => setIsDeleteModalShown(true)}
               style={{ marginRight: '1rem' }}
             >

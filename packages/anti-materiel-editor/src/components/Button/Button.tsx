@@ -33,6 +33,8 @@ interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
     | 'secondary'
     | 'transparent-dark'
     | 'transparent-light'
+    | 'delete'
+    | 'delete-ghost'
     | 'delete-light'
     | 'delete-dark';
   className?: string;

@@ -33,6 +33,7 @@
 
   &.button--primary:focus {
     outline: 1px solid $primary-cyan-7;
+    text-decoration: underline;
   }
 
   &.button--secondary {
@@ -47,6 +48,7 @@
 
   &.button--secondary:focus {
     outline: 1px solid $supporting-pink-8;
+    text-decoration: underline;
   }
 
   &.button--transparent-dark {
@@ -56,6 +58,7 @@
 
   &.button--transparent-dark:focus {
     outline: 1px solid $primary-cyan-9;
+    text-decoration: underline;
   }
 
   &.button--transparent-light {
@@ -65,6 +68,7 @@
 
   &.button--transparent-light:focus {
     outline: 1px solid $primary-cyan-3;
+    text-decoration: underline;
   }
 
   &.button--transparent-dark:hover,
@@ -77,6 +81,17 @@
   &.button--transparent-dark:active {
     transition: all 100ms linear;
     transform: translate3d(0, 0.05rem, 0);
+    text-decoration: underline;
+  }
+
+  &.button--delete-ghost {
+    background: transparent;
+    color: $supporting-red-6;
+    border: 1px solid $supporting-red-6;
+  }
+
+  &.button--delete-ghost:focus {
+    text-decoration: underline;
   }
 
   &.button--delete-light {
