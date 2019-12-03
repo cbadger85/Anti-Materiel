@@ -23,6 +23,7 @@ export const UnitEditor: React.FC = () => {
         isDeleteShown={false}
         onDelete={() => null}
         confirmDeleteText="Are you sure you want to delete this unit?"
+        shouldPromptOnRedirect={false}
       />
     </>
   );
