@@ -8,7 +8,6 @@ import { isEmpty } from '../../../utils/formValidators';
 import { WeaponInfoData } from './WeaponInfoTypes';
 
 export const WeaponInfoForm: React.FC<WeaponInfoFormProps> = ({
-  closeSideDrawer,
   onCancel,
   onSubmit,
   initialData,
@@ -32,7 +31,6 @@ export const WeaponInfoForm: React.FC<WeaponInfoFormProps> = ({
     };
 
     onSubmit(updatedFields);
-    closeSideDrawer();
   };
 
   return (
@@ -64,7 +62,6 @@ export const WeaponInfoForm: React.FC<WeaponInfoFormProps> = ({
 };
 
 interface WeaponInfoFormProps {
-  closeSideDrawer: () => void;
   onCancel: () => void;
   onSubmit: (data: WeaponInfoData) => void;
   initialData?: WeaponInfoData;

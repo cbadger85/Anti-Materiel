@@ -28,9 +28,11 @@ export const WeaponMode: React.FC<WeaponModeProps> = ({
       )}
       form={(closeSideDrawer, onCancel) => (
         <WeaponModeForm
-          closeSideDrawer={closeSideDrawer}
           onCancel={onCancel}
-          onSubmit={updateWeaponModes}
+          onSubmit={data => {
+            updateWeaponModes(data);
+            closeSideDrawer();
+          }}
           onDataChange={isChanged => setWarn(isChanged)}
           initialData={weaponModes.find(
             weaponMode => weaponMode.id === selectedWeaponModeId,

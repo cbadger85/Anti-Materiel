@@ -40,14 +40,12 @@ describe('<StatsAndAttributesForm />', () => {
       };
 
       const onSubmit = jest.fn();
-      const closeSideDrawer = jest.fn();
 
       wrapper = mount(
         <StatsAndAttributesForm
           onSubmit={onSubmit}
           onCancel={jest.fn}
           initialData={initialData}
-          closeSideDrawer={closeSideDrawer}
         />,
         { attachTo: root },
       );
@@ -59,57 +57,13 @@ describe('<StatsAndAttributesForm />', () => {
 
       expect(onSubmit).toBeCalledWith(initialData);
     });
-
-    it('should close the side drawer after submission', () => {
-      const initialData = {
-        impetuous: true,
-        impetuousType: 'FRENZY',
-        cube: true,
-        cubeType: 'CUBE',
-        mov: '4-4',
-        cc: '13',
-        bs: '12',
-        ph: '10',
-        wip: '12',
-        arm: '1',
-        bts: '3',
-        w: '1',
-        s: '2',
-        structure: false,
-        ava: [{ sectorial: 'Panoceania', ava: 'T' }],
-      };
-
-      const onSubmit = jest.fn();
-      const closeSideDrawer = jest.fn();
-
-      wrapper = mount(
-        <StatsAndAttributesForm
-          onSubmit={onSubmit}
-          onCancel={jest.fn}
-          initialData={initialData}
-          closeSideDrawer={closeSideDrawer}
-        />,
-        { attachTo: root },
-      );
-
-      wrapper
-        .find('#side-drawer-form-submit')
-        .last()
-        .simulate('click');
-
-      expect(closeSideDrawer).toBeCalled();
-    });
   });
 
   it('should call closeSideDrawer() when cancel is pressed', () => {
     const onCancel = jest.fn();
 
     wrapper = mount(
-      <StatsAndAttributesForm
-        onSubmit={jest.fn}
-        closeSideDrawer={jest.fn}
-        onCancel={onCancel}
-      />,
+      <StatsAndAttributesForm onSubmit={jest.fn} onCancel={onCancel} />,
       { attachTo: root },
     );
 
@@ -145,7 +99,6 @@ describe('<StatsAndAttributesForm />', () => {
     wrapper = mount(
       <StatsAndAttributesForm
         onSubmit={() => onSubmit()}
-        closeSideDrawer={jest.fn}
         initialData={initialData}
         onCancel={jest.fn}
       />,
@@ -184,7 +137,6 @@ describe('<StatsAndAttributesForm />', () => {
     wrapper = mount(
       <StatsAndAttributesForm
         onSubmit={() => onSubmit()}
-        closeSideDrawer={jest.fn}
         initialData={initialData}
         onCancel={jest.fn}
       />,
@@ -226,7 +178,6 @@ describe('<StatsAndAttributesForm />', () => {
         onSubmit={onSubmit}
         onCancel={jest.fn}
         initialData={initialData}
-        closeSideDrawer={closeSideDrawer}
       />,
       { attachTo: root },
     );
@@ -266,7 +217,6 @@ describe('<StatsAndAttributesForm />', () => {
         onSubmit={onSubmit}
         onCancel={jest.fn}
         initialData={initialData}
-        closeSideDrawer={closeSideDrawer}
       />,
       { attachTo: root },
     );

@@ -18,9 +18,11 @@ export const WeaponInfo: React.FC<WeaponInfoProps> = ({
       content={() => <WeaponInfoContent weaponInfo={weaponInfo} />}
       form={(closeSideDrawer, onCancel) => (
         <WeaponInfoForm
-          closeSideDrawer={closeSideDrawer}
           onCancel={onCancel}
-          onSubmit={addWeaponInfo}
+          onSubmit={data => {
+            addWeaponInfo(data);
+            closeSideDrawer();
+          }}
           onDataChange={setWarn}
           initialData={weaponInfo}
         />

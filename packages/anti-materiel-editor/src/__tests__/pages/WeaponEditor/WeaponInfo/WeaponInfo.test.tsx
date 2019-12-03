@@ -1,9 +1,8 @@
-import React from 'react';
-import { WeaponInfo } from '../../../../pages/WeaponEditor/WeaponInfo/WeaponInfo';
 import { mount, ReactWrapper } from 'enzyme';
-import { ManagedContent } from '../../../../components/ManagedContent/ManagedContent';
+import React from 'react';
 import { Button } from '../../../../components/Button/Button';
-import { SideDrawer } from '../../../../components/SideDrawer/SideDrawer';
+import { ManagedContent } from '../../../../components/ManagedContent/ManagedContent';
+import { WeaponInfo } from '../../../../pages/WeaponEditor/WeaponInfo/WeaponInfo';
 
 describe('<WeaponInfo />', () => {
   let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
