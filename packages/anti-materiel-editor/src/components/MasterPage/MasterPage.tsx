@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './MasterPage.scss';
 import { Button } from '../Button/Button';
 import { ConfirmModal } from '../Modal/ConfirmModal';
+import { Prompt } from 'react-router-dom';
 
 export const MasterPage: React.FC<MasterPageProps> = ({
   sidePanelContent,
@@ -13,6 +14,7 @@ export const MasterPage: React.FC<MasterPageProps> = ({
   title,
   uri,
   confirmDeleteText = 'Are you sure you want to delete this?',
+  shouldPromptOnRedirect,
 }) => {
   const [sidePanelHeight, setSidePanelHeight] = useState(0);
   const [isDeleteModalShown, setIsDeleteModalShown] = useState(false);
@@ -85,6 +87,10 @@ export const MasterPage: React.FC<MasterPageProps> = ({
         onConfirm={handleModalConfirm}
         onCancel={() => setIsDeleteModalShown(false)}
       />
+      <Prompt
+        when={shouldPromptOnRedirect}
+        message="Are you sure you want to discard changes?"
+      />
     </>
   );
 };
@@ -99,4 +105,5 @@ interface MasterPageProps {
   onDelete: () => void;
   confirmDeleteText?: string;
   uri: string;
+  shouldPromptOnRedirect?: boolean;
 }

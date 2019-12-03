@@ -3,7 +3,7 @@ import isEqual from 'lodash/isEqual';
 import sortBy from 'lodash/sortBy';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Prompt, useHistory, useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import { MasterPage } from '../../components/MasterPage/MasterPage';
 import { useToast } from '../../components/Toasts/useToast';
 import { RootState } from '../../store/rootReducer';
@@ -151,35 +151,30 @@ export const WeaponEditor: React.FC = () => {
   };
 
   return (
-    <>
-      <MasterPage
-        title="Weapons Editor"
-        uri="weapon-editor"
-        sidePanelContent={uri => (
-          <SidePanelWeaponList uri={uri} weaponList={weaponList} />
-        )}
-        mainContent={() => (
-          <>
-            <WeaponInfo weaponInfo={weaponInfo} addWeaponInfo={setWeaponInfo} />
-            <WeaponMode
-              weaponModes={weaponModes}
-              removeWeaponMode={removeWeaponMode}
-              updateWeaponModes={updateWeaponModes}
-            />
-          </>
-        )}
-        isSaveDisabled={isSaveDisabled}
-        onSave={handleOnSave}
-        isDeleteShown={!!selectedWeaponId}
-        onDelete={handleRemoveWeapon}
-        confirmDeleteText={`Are you want to delete ${
-          editedWeapon ? editedWeapon.name : 'this weapon?'
-        }`}
-      />
-      <Prompt
-        when={shouldPrompt}
-        message="Are you sure you want to discard changes?"
-      />
-    </>
+    <MasterPage
+      title="Weapons Editor"
+      uri="weapon-editor"
+      sidePanelContent={uri => (
+        <SidePanelWeaponList uri={uri} weaponList={weaponList} />
+      )}
+      mainContent={() => (
+        <>
+          <WeaponInfo weaponInfo={weaponInfo} addWeaponInfo={setWeaponInfo} />
+          <WeaponMode
+            weaponModes={weaponModes}
+            removeWeaponMode={removeWeaponMode}
+            updateWeaponModes={updateWeaponModes}
+          />
+        </>
+      )}
+      isSaveDisabled={isSaveDisabled}
+      onSave={handleOnSave}
+      isDeleteShown={!!selectedWeaponId}
+      onDelete={handleRemoveWeapon}
+      confirmDeleteText={`Are you want to delete ${
+        editedWeapon ? editedWeapon.name : 'this weapon?'
+      }`}
+      shouldPromptOnRedirect={shouldPrompt}
+    />
   );
 };

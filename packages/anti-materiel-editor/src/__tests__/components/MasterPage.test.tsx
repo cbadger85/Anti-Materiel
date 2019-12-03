@@ -3,6 +3,7 @@ import React from 'react';
 import { MasterPage } from '../../components/MasterPage/MasterPage';
 import { ConfirmModal } from '../../components/Modal/ConfirmModal';
 import { Button } from '../../components/Button/Button';
+import { MemoryRouter } from 'react-router-dom';
 
 describe('<MasterPage />', () => {
   let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
@@ -189,15 +190,19 @@ describe('<MasterPage />', () => {
     const onDelete = jest.fn();
 
     wrapper = mount(
-      <MasterPage
-        title=""
-        uri="test"
-        mainContent={jest.fn()}
-        sidePanelContent={jest.fn()}
-        onSave={jest.fn()}
-        onDelete={onDelete}
-        isDeleteShown
-      />,
+      <MemoryRouter
+        getUserConfirmation={(message, callback) => callback(false)}
+      >
+        <MasterPage
+          title=""
+          uri="test"
+          mainContent={jest.fn()}
+          sidePanelContent={jest.fn()}
+          onSave={jest.fn()}
+          onDelete={onDelete}
+          isDeleteShown
+        />
+      </MemoryRouter>,
     );
 
     wrapper
@@ -220,15 +225,19 @@ describe('<MasterPage />', () => {
     const onDelete = jest.fn();
 
     wrapper = mount(
-      <MasterPage
-        title=""
-        uri="test"
-        mainContent={jest.fn()}
-        sidePanelContent={jest.fn()}
-        onSave={jest.fn()}
-        onDelete={onDelete}
-        isDeleteShown
-      />,
+      <MemoryRouter
+        getUserConfirmation={(message, callback) => callback(false)}
+      >
+        <MasterPage
+          title=""
+          uri="test"
+          mainContent={jest.fn()}
+          sidePanelContent={jest.fn()}
+          onSave={jest.fn()}
+          onDelete={onDelete}
+          isDeleteShown
+        />
+      </MemoryRouter>,
     );
 
     wrapper
@@ -249,15 +258,19 @@ describe('<MasterPage />', () => {
     const onDelete = jest.fn();
 
     wrapper = mount(
-      <MasterPage
-        title=""
-        uri="test"
-        mainContent={jest.fn()}
-        sidePanelContent={jest.fn()}
-        onSave={jest.fn()}
-        onDelete={onDelete}
-        isDeleteShown
-      />,
+      <MemoryRouter
+        getUserConfirmation={(message, callback) => callback(false)}
+      >
+        <MasterPage
+          title=""
+          uri="test"
+          mainContent={jest.fn()}
+          sidePanelContent={jest.fn()}
+          onSave={jest.fn()}
+          onDelete={onDelete}
+          isDeleteShown
+        />
+      </MemoryRouter>,
     );
 
     wrapper
