@@ -14,7 +14,6 @@ import {
 import { UnitInfoData } from './UnitInfoTypes';
 
 export const UnitInfoForm: React.FC<UnitInfoFormProps> = ({
-  closeSideDrawer,
   onSubmit,
   onCancel,
   initialData,
@@ -37,7 +36,6 @@ export const UnitInfoForm: React.FC<UnitInfoFormProps> = ({
     };
 
     onSubmit(updatedFields);
-    closeSideDrawer();
   };
 
   return (
@@ -110,7 +108,6 @@ export const UnitInfoForm: React.FC<UnitInfoFormProps> = ({
 };
 
 interface UnitInfoFormProps {
-  closeSideDrawer: () => void;
   onCancel: () => void;
   onSubmit: (data: UnitInfoData) => void;
   initialData?: UnitInfoData;

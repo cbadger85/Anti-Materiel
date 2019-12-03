@@ -37,13 +37,11 @@ describe('<UnitInfoForm />', () => {
       };
 
       const onSubmit = jest.fn();
-      const closeSideDrawer = jest.fn();
 
       wrapper = mount(
         <UnitInfoForm
           onSubmit={onSubmit}
           onCancel={jest.fn}
-          closeSideDrawer={closeSideDrawer}
           initialData={initialData}
         />,
         { attachTo: root },
@@ -55,43 +53,6 @@ describe('<UnitInfoForm />', () => {
         .simulate('click');
 
       expect(onSubmit).toBeCalledWith(initialData);
-    });
-
-    it('should close the side drawer after submisstion', () => {
-      const initialData = {
-        name: 'Fusiliers',
-        isc: 'Fusiliers',
-        description: '',
-        type: 'LI',
-        classification: 'Line Troops',
-        sectorial: [
-          'Panoceania',
-          'Neoterra Capitaline Army',
-          'Varuna Immediate Reaction Division',
-        ],
-        id: '1234',
-        unitSvgName: 'fusiliers',
-      };
-
-      const onSubmit = jest.fn();
-      const closeSideDrawer = jest.fn();
-
-      wrapper = mount(
-        <UnitInfoForm
-          onSubmit={onSubmit}
-          onCancel={jest.fn}
-          closeSideDrawer={closeSideDrawer}
-          initialData={initialData}
-        />,
-        { attachTo: root },
-      );
-
-      wrapper
-        .find('#side-drawer-form-submit')
-        .last()
-        .simulate('click');
-
-      expect(closeSideDrawer).toBeCalled();
     });
   });
 
@@ -117,7 +78,6 @@ describe('<UnitInfoForm />', () => {
       <UnitInfoForm
         onSubmit={onSubmit}
         onCancel={jest.fn}
-        closeSideDrawer={jest.fn}
         initialData={initialData}
       />,
       { attachTo: root },
@@ -134,14 +94,9 @@ describe('<UnitInfoForm />', () => {
   it('should call onCancel() when cancel is pressed', () => {
     const onCancel = jest.fn();
 
-    wrapper = mount(
-      <UnitInfoForm
-        onSubmit={jest.fn}
-        closeSideDrawer={jest.fn}
-        onCancel={onCancel}
-      />,
-      { attachTo: root },
-    );
+    wrapper = mount(<UnitInfoForm onSubmit={jest.fn} onCancel={onCancel} />, {
+      attachTo: root,
+    });
 
     wrapper
       .find('#side-drawer-form-cancel')
@@ -168,7 +123,6 @@ describe('<UnitInfoForm />', () => {
     wrapper = mount(
       <UnitInfoForm
         onSubmit={onSubmit}
-        closeSideDrawer={jest.fn}
         initialData={initialData}
         onCancel={jest.fn}
       />,

@@ -1,8 +1,7 @@
 import { mount, ReactWrapper } from 'enzyme';
 import React from 'react';
-import { Input } from '../../../../components/Input/Input';
-import { WeaponInfoForm } from '../../../../pages/WeaponEditor/WeaponInfo/WeaponInfoForm';
 import uuid from 'uuid/v4';
+import { WeaponInfoForm } from '../../../../pages/WeaponEditor/WeaponInfo/WeaponInfoForm';
 
 jest.mock('uuid/v4', () => jest.fn().mockReturnValue('5678'));
 
@@ -27,7 +26,6 @@ describe('<WeaponInfoForm />', () => {
     const onSubmit = jest.fn();
     wrapper = mount(
       <WeaponInfoForm
-        closeSideDrawer={jest.fn()}
         onCancel={jest.fn()}
         onDataChange={jest.fn()}
         onSubmit={onSubmit}
@@ -43,31 +41,10 @@ describe('<WeaponInfoForm />', () => {
     expect(onSubmit).toHaveBeenCalledWith(initialData);
   });
 
-  it('should close the side drawer after the form is submitted', () => {
-    const closeSideDrawer = jest.fn();
-    wrapper = mount(
-      <WeaponInfoForm
-        closeSideDrawer={closeSideDrawer}
-        onCancel={jest.fn()}
-        onDataChange={jest.fn()}
-        onSubmit={jest.fn()}
-        initialData={initialData}
-      />,
-    );
-
-    wrapper
-      .find('#side-drawer-form-submit')
-      .last()
-      .simulate('click');
-
-    expect(closeSideDrawer).toHaveBeenCalled();
-  });
-
   it('should call onDataChange if the there is no initialData and the fields have data', () => {
     const onDataChange = jest.fn();
     wrapper = mount(
       <WeaponInfoForm
-        closeSideDrawer={jest.fn()}
         onCancel={jest.fn()}
         onDataChange={onDataChange}
         onSubmit={jest.fn()}
@@ -75,7 +52,7 @@ describe('<WeaponInfoForm />', () => {
     );
 
     wrapper
-      .find(Input)
+      .find('input')
       .first()
       .simulate('change', { target: { name: 'name', value: 'test' } });
 
@@ -84,14 +61,13 @@ describe('<WeaponInfoForm />', () => {
       .last()
       .simulate('click');
 
-    expect(onDataChange).not.toHaveBeenCalledWith(true);
+    expect(onDataChange).lastCalledWith(true);
   });
 
   it('should not allow submission if the data is invalid', () => {
     const closeSideDrawer = jest.fn();
     wrapper = mount(
       <WeaponInfoForm
-        closeSideDrawer={closeSideDrawer}
         onCancel={jest.fn()}
         onDataChange={jest.fn()}
         onSubmit={jest.fn()}
@@ -111,7 +87,6 @@ describe('<WeaponInfoForm />', () => {
 
     wrapper = mount(
       <WeaponInfoForm
-        closeSideDrawer={jest.fn()}
         onCancel={jest.fn()}
         onDataChange={jest.fn()}
         onSubmit={onSubmit}

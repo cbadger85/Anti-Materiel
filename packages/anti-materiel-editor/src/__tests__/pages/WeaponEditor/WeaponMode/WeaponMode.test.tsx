@@ -5,6 +5,7 @@ import { ManagedContent } from '../../../../components/ManagedContent/ManagedCon
 import { WeaponMode } from '../../../../pages/WeaponEditor/WeaponMode/WeaponMode';
 import { WeaponModeForm } from '../../../../pages/WeaponEditor/WeaponMode/WeaponModeForm';
 import { WeaponModesContent } from '../../../../pages/WeaponEditor/WeaponMode/WeaponModesContent';
+import { SideDrawer } from '../../../../components/SideDrawer/SideDrawer';
 
 describe('<WeaonMode />', () => {
   let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
@@ -125,5 +126,36 @@ describe('<WeaonMode />', () => {
     const weaponModeForm = wrapper.find(WeaponModeForm);
 
     expect(weaponModeForm.props().initialData).toEqual(undefined);
+  });
+
+  it('should close the SideDrawer when the form is submitted', () => {
+    wrapper = mount(
+      <WeaponMode
+        updateWeaponModes={updateWeaponModes}
+        removeWeaponMode={removeWeaponMode}
+        weaponModes={weaponModes}
+      />,
+    );
+
+    wrapper
+      .find(WeaponModesContent)
+      .find(Button)
+      .first()
+      .simulate('click');
+
+    wrapper
+      .find(WeaponModeForm)
+      .find('input')
+      .first()
+      .simulate('change', { target: { name: 'name', value: 'foo' } });
+
+    wrapper
+      .find('#side-drawer-form-submit')
+      .hostNodes()
+      .simulate('click');
+
+    const sideDrawer = wrapper.find(SideDrawer);
+
+    expect(sideDrawer.props().isOpen).toBe(false);
   });
 });

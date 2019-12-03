@@ -9,8 +9,10 @@ export const UnitInfo: React.FC = () => {
       content={() => null}
       form={(closeSideDrawer, onCancel) => (
         <UnitInfoForm
-          closeSideDrawer={closeSideDrawer}
-          onSubmit={data => console.log(data)}
+          onSubmit={data => {
+            console.log(data);
+            closeSideDrawer();
+          }}
           onCancel={onCancel}
         />
       )}

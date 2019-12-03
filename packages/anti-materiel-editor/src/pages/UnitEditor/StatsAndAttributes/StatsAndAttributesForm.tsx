@@ -14,7 +14,6 @@ import { StatsAndAttributesFormData } from './StatsAndAttributesTypes';
 import { isMov, isEmpty, isInt, isBTS } from '../../../utils/formValidators';
 
 export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
-  closeSideDrawer,
   onCancel,
   onSubmit,
   initialData,
@@ -75,7 +74,6 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
 
   const handleOnSubmit = (): void => {
     onSubmit({ ...fields, ava: [...ava] });
-    closeSideDrawer();
   };
 
   return (
@@ -252,7 +250,6 @@ export const StatsAndAttributesForm: React.FC<StatsAndAttributesFormProps> = ({
 };
 
 interface StatsAndAttributesFormProps {
-  closeSideDrawer: () => void;
   onCancel: () => void;
   onSubmit: (data: StatsAndAttributesFormData) => void;
   initialData?: StatsAndAttributesFormData;

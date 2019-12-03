@@ -16,7 +16,6 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
   onSubmit,
   onDataChange,
   initialData,
-  closeSideDrawer,
 }) => {
   const id = initialData ? initialData.id : '';
 
@@ -145,7 +144,6 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
     };
 
     onSubmit(updatedFields);
-    closeSideDrawer();
   };
 
   const addItem = (
@@ -284,7 +282,6 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
 };
 
 interface WeaponModeFormProps {
-  closeSideDrawer: () => void;
   onCancel: () => void;
   onSubmit: (data: WeaponModeData) => void;
   initialData?: WeaponModeData;
