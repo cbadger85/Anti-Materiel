@@ -178,7 +178,7 @@ export const WeaponModeContentItem: React.FC<WeaponModeContentItem> = ({
       <div className="weapon-mode-table__row-edit-delete weapon-mode-table__col-7">
         <Button
           color="delete-light"
-          onClick={() => editWeaponMode(weaponMode.name)}
+          onClick={() => editWeaponMode(weaponMode.id)}
         >
           <EditIcon />
         </Button>
@@ -188,7 +188,7 @@ export const WeaponModeContentItem: React.FC<WeaponModeContentItem> = ({
       </div>
       <ConfirmModal
         isShown={isModalShown}
-        onConfirm={() => removeWeaponMode(weaponMode.name)}
+        onConfirm={() => removeWeaponMode(weaponMode.id)}
         onCancel={() => setIsModalShown(false)}
         text="Are you sure you want to delete this mode?"
       />
@@ -198,8 +198,8 @@ export const WeaponModeContentItem: React.FC<WeaponModeContentItem> = ({
 
 interface WeaponModeContentItem {
   weaponMode: WeaponModeData;
-  editWeaponMode: (modeName: string) => void;
-  removeWeaponMode: (modeName: string) => void;
+  editWeaponMode: (id: string) => void;
+  removeWeaponMode: (id: string) => void;
 }
 
 export const WeaponModesContent: React.FC<WeaponModeContentProps> = ({
@@ -232,7 +232,7 @@ export const WeaponModesContent: React.FC<WeaponModeContentProps> = ({
           </div>
           {weaponModes.map(weaponMode => (
             <WeaponModeContentItem
-              key={weaponMode.name}
+              key={weaponMode.id}
               weaponMode={weaponMode}
               editWeaponMode={editWeaponMode}
               removeWeaponMode={removeWeaponMode}
@@ -248,6 +248,6 @@ export const WeaponModesContent: React.FC<WeaponModeContentProps> = ({
 
 interface WeaponModeContentProps {
   weaponModes: WeaponModeData[];
-  editWeaponMode: (modeName: string) => void;
-  removeWeaponMode: (modeName: string) => void;
+  editWeaponMode: (id: string) => void;
+  removeWeaponMode: (id: string) => void;
 }

@@ -7,6 +7,7 @@ import {
   WeaponRange,
 } from '@anti-materiel/types';
 import { WeaponRangeBand as WeaponRangeBandData } from './WeaponMode/WeaponModeTypes';
+import uuid from 'uuid/v4';
 
 export const convertRangeBand = (
   rangeBand: WeaponRangeBandData | undefined,
@@ -117,6 +118,7 @@ export const convertWeaponToWeaponData = (
   const { id, name, wikiLink, weaponModes } = weapon;
 
   const weaponModesData = weaponModes.map<WeaponModeData>(mode => ({
+    id: uuid(),
     name: mode.name,
     damage: mode.damage,
     burst: mode.burst,

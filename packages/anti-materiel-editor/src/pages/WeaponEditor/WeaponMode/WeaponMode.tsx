@@ -10,9 +10,7 @@ export const WeaponMode: React.FC<WeaponModeProps> = ({
   weaponModes,
 }) => {
   const [warn, setWarn] = useState(false);
-  const [selectedWeaponModeName, setSelectedWeaponModeName] = useState<
-    string
-  >();
+  const [selectedWeaponModeId, setSelectedWeaponModeId] = useState<string>();
 
   return (
     <ManagedContent
@@ -21,8 +19,8 @@ export const WeaponMode: React.FC<WeaponModeProps> = ({
       content={openSideDrawer => (
         <WeaponModesContent
           weaponModes={weaponModes}
-          editWeaponMode={modeName => {
-            setSelectedWeaponModeName(modeName);
+          editWeaponMode={id => {
+            setSelectedWeaponModeId(id);
             openSideDrawer();
           }}
           removeWeaponMode={removeWeaponMode}
@@ -35,11 +33,11 @@ export const WeaponMode: React.FC<WeaponModeProps> = ({
           onSubmit={updateWeaponModes}
           onDataChange={isChanged => setWarn(isChanged)}
           initialData={weaponModes.find(
-            weaponMode => weaponMode.name === selectedWeaponModeName,
+            weaponMode => weaponMode.id === selectedWeaponModeId,
           )}
         />
       )}
-      onCloseSideDrawer={() => setSelectedWeaponModeName(undefined)}
+      onCloseSideDrawer={() => setSelectedWeaponModeId(undefined)}
     />
   );
 };
@@ -47,5 +45,5 @@ export const WeaponMode: React.FC<WeaponModeProps> = ({
 interface WeaponModeProps {
   weaponModes: WeaponModeData[];
   updateWeaponModes: (data: WeaponModeData) => void;
-  removeWeaponMode: (modeName: string) => void;
+  removeWeaponMode: (id: string) => void;
 }

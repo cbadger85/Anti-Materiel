@@ -28,6 +28,7 @@ describe('<WeaonMode />', () => {
 
   const weaponModes = [
     {
+      id: '1234',
       name: 'ML (blast mode)',
       damage: '14',
       burst: '1',
