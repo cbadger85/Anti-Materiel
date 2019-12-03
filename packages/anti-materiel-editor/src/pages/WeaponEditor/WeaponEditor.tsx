@@ -178,3 +178,5 @@ export const WeaponEditor: React.FC = () => {
     />
   );
 };
+
+export default WeaponEditor;

@@ -28,3 +28,5 @@ export const UnitEditor: React.FC = () => {
     </>
   );
 };
+
+export default UnitEditor;

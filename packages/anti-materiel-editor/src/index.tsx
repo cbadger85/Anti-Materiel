@@ -7,13 +7,24 @@ import { App } from './components/App/App';
 import { Provider } from 'react-redux';
 import store from './store';
 
+//! won't work until concurrent mode is released
+
 const render = (): void => {
-  ReactDOM.render(
+  ReactDOM.unstable_createRoot(
+    document.getElementById('root') as Element,
+  ).render(
     <Provider store={store}>
       <App />
     </Provider>,
-    document.getElementById('root'),
   );
+
+  // ReactDOM.render(
+
+  //   <Provider store={store}>
+  //     <App />
+  //   </Provider>,
+  //   document.getElementById('root'),
+  // );
 };
 
 render();
