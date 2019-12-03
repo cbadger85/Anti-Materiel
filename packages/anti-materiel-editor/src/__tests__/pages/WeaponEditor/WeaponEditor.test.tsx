@@ -4,7 +4,9 @@ import { mount, ReactWrapper } from 'enzyme';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router';
+import { Route } from 'react-router-dom';
 import { Button } from '../../../components/Button/Button';
+import { ConfirmModal } from '../../../components/Modal/ConfirmModal';
 import { SidePanelItem } from '../../../components/SidePanelItem/SidePanelItem';
 import { Toast } from '../../../components/Toasts/Toast';
 import { ToastProvider } from '../../../components/Toasts/ToastProvider';
@@ -12,14 +14,48 @@ import { WeaponEditor } from '../../../pages/WeaponEditor/WeaponEditor';
 import { WeaponInfo } from '../../../pages/WeaponEditor/WeaponInfo/WeaponInfo';
 import { WeaponInfoForm } from '../../../pages/WeaponEditor/WeaponInfo/WeaponInfoForm';
 import rootReducer from '../../../store/rootReducer';
-import { ConfirmModal } from '../../../components/Modal/ConfirmModal';
-import { Route, Link } from 'react-router-dom';
 
 const weapon: Weapon = {
   name: 'foo',
   id: '1234',
   wikiLink: undefined,
   weaponModes: [
+    {
+      name: 'bar',
+      damage: '1',
+      burst: '2',
+      ammo: [],
+      combinedAmmo: false,
+      traits: [],
+      weaponRange: {
+        short: { min: '0', max: '8', modifier: '+3' },
+        medium: { min: '8', max: '24', modifier: '-3' },
+        long: undefined,
+        maximum: undefined,
+      },
+    },
+  ],
+};
+
+const weapon2: Weapon = {
+  name: 'foo',
+  id: '1234',
+  wikiLink: undefined,
+  weaponModes: [
+    {
+      name: 'bar',
+      damage: '1',
+      burst: '2',
+      ammo: [],
+      combinedAmmo: false,
+      traits: [],
+      weaponRange: {
+        short: { min: '0', max: '8', modifier: '+3' },
+        medium: { min: '8', max: '24', modifier: '-3' },
+        long: undefined,
+        maximum: undefined,
+      },
+    },
     {
       name: 'bar',
       damage: '1',
@@ -187,6 +223,45 @@ describe('<WeaponEditor />', () => {
     const saveButton = wrapper.find('#weapon-editor-save-button').hostNodes();
 
     expect(saveButton.props().disabled).toBe(false);
+  });
+
+  it('should have a disabled save button if two modes have the same name', () => {
+    const store = configureStore({
+      reducer: rootReducer,
+      preloadedState: {
+        weapons: [weapon2],
+      },
+    });
+
+    wrapper = mount(
+      <Provider store={store}>
+        <MemoryRouter initialEntries={['/weapon-editor/1234']}>
+          <Route exact path="/weapon-editor/:id">
+            <WeaponEditor />
+          </Route>
+        </MemoryRouter>
+      </Provider>,
+    );
+
+    wrapper
+      .find(WeaponInfo)
+      .find(Button)
+      .simulate('click');
+
+    wrapper
+      .find(WeaponInfoForm)
+      .find('input')
+      .first()
+      .simulate('change', { target: { name: 'name', value: 'baz' } });
+
+    wrapper
+      .find('#side-drawer-form-submit')
+      .hostNodes()
+      .simulate('click');
+
+    const saveButton = wrapper.find('#weapon-editor-save-button').hostNodes();
+
+    expect(saveButton.props().disabled).toBe(true);
   });
 
   it('should show a toast after save', () => {

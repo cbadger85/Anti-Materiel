@@ -61,6 +61,12 @@ export const WeaponEditor: React.FC = () => {
     weapon => weapon.id === selectedWeaponId,
   );
 
+  const hasDuplicateNames = (): boolean => {
+    const modeNames = weaponModes.map(mode => mode.name);
+
+    return new Set(modeNames).size !== weaponModes.length;
+  };
+
   const isEditedWeaponChanged = (): boolean => {
     if (!weaponInfo || !weaponModes.length) {
       return false;
@@ -79,16 +85,15 @@ export const WeaponEditor: React.FC = () => {
   const isSaveDisabled =
     !weaponInfo ||
     !weaponModes.length ||
+    hasDuplicateNames() ||
     (!!selectedWeaponId && !isEditedWeaponChanged());
 
   const shouldPrompt =
     (!selectedWeaponId && (!!weaponInfo || !!weaponModes.length)) ||
     isEditedWeaponChanged();
 
-  const removeWeaponMode = (modeName: string): void => {
-    const updatedModes = weaponModes.filter(
-      weaponMode => weaponMode.name !== modeName,
-    );
+  const removeWeaponMode = (id: string): void => {
+    const updatedModes = weaponModes.filter(weaponMode => weaponMode.id !== id);
 
     setWeaponModes(updatedModes);
   };
@@ -97,13 +102,11 @@ export const WeaponEditor: React.FC = () => {
     const sortedTraits = sortBy(data.traits, ['name']);
     const sortedData = { ...data, traits: sortedTraits };
 
-    const isAdded = weaponModes.find(
-      weaponMode => weaponMode.name === data.name,
-    );
+    const isAdded = weaponModes.find(weaponMode => weaponMode.id === data.id);
 
     if (isAdded) {
       const updatedModes = weaponModes.map(weaponMode => {
-        if (weaponMode.name === data.name) {
+        if (weaponMode.id === data.id) {
           return sortedData;
         }
 

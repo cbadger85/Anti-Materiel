@@ -6,6 +6,8 @@ import {
   convertWeaponRangeData,
 } from '../../../pages/WeaponEditor/utils';
 
+jest.mock('uuid/v4', () => jest.fn().mockReturnValue('1234'));
+
 describe('WeaponEditor/utils', () => {
   describe('convertRangeBand', () => {
     it('should return undefined if there are empty strings', () => {
@@ -105,12 +107,17 @@ describe('WeaponEditor/utils', () => {
       const weaponInfo = { id: '1234', name: 'foo' };
       const weaponModes = [
         {
+          id: '1234',
           name: 'bar',
           damage: '1',
           burst: '2',
           ammo: [],
           combinedAmmo: false,
           traits: [],
+          shortRangeBand: { min: '', max: '', modifier: '' },
+          mediumRangeBand: { min: '', max: '', modifier: '' },
+          longRangeBand: { min: '', max: '', modifier: '' },
+          maximumRangeBand: { min: '', max: '', modifier: '' },
         },
       ];
 
@@ -142,12 +149,17 @@ describe('WeaponEditor/utils', () => {
     it('should throw an error if weaponInfoData is undefined', () => {
       const weaponModes = [
         {
+          id: '1234',
           name: 'bar',
           damage: '1',
           burst: '2',
           ammo: [],
           combinedAmmo: false,
           traits: [],
+          shortRangeBand: { min: '', max: '', modifier: '' },
+          mediumRangeBand: { min: '', max: '', modifier: '' },
+          longRangeBand: { min: '', max: '', modifier: '' },
+          maximumRangeBand: { min: '', max: '', modifier: '' },
         },
       ];
 
@@ -174,12 +186,17 @@ describe('WeaponEditor/utils', () => {
       const weaponInfo = { name: 'foo' };
       const weaponModes = [
         {
+          id: '1234',
           name: 'bar',
           damage: '1',
           burst: '2',
           ammo: [],
           combinedAmmo: false,
           traits: [],
+          shortRangeBand: { min: '', max: '', modifier: '' },
+          mediumRangeBand: { min: '', max: '', modifier: '' },
+          longRangeBand: { min: '', max: '', modifier: '' },
+          maximumRangeBand: { min: '', max: '', modifier: '' },
         },
       ];
 
@@ -217,6 +234,7 @@ describe('WeaponEditor/utils', () => {
 
       const weaponModesData = [
         {
+          id: '1234',
           name: 'bar',
           damage: '1',
           burst: '2',
@@ -264,6 +282,7 @@ describe('WeaponEditor/utils', () => {
 
       const weaponModesData = [
         {
+          id: '1234',
           name: 'bar',
           damage: '1',
           burst: '2',

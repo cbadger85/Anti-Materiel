@@ -30,20 +30,30 @@ describe('<WeaonModeContent />', () => {
 
   const weaponModes = [
     {
+      id: '1234',
       name: 'foo',
       damage: '12',
       burst: '1',
       ammo: [],
       combinedAmmo: false,
       traits: [],
+      shortRangeBand: { min: '', max: '', modifier: '' },
+      mediumRangeBand: { min: '', max: '', modifier: '' },
+      longRangeBand: { min: '', max: '', modifier: '' },
+      maximumRangeBand: { min: '', max: '', modifier: '' },
     },
     {
+      id: '5678',
       name: 'bar',
       damage: '12',
       burst: '1',
       ammo: [],
       combinedAmmo: false,
       traits: [],
+      shortRangeBand: { min: '', max: '', modifier: '' },
+      mediumRangeBand: { min: '', max: '', modifier: '' },
+      longRangeBand: { min: '', max: '', modifier: '' },
+      maximumRangeBand: { min: '', max: '', modifier: '' },
     },
   ];
 
@@ -171,12 +181,17 @@ describe('<WeaonModeContent />', () => {
 
   describe('<WeaponModeContentItem', () => {
     const weaponMode = {
+      id: '1234',
       name: 'foo',
       damage: '12',
       burst: '1',
       ammo: [],
       combinedAmmo: false,
       traits: [],
+      shortRangeBand: { min: '', max: '', modifier: '' },
+      mediumRangeBand: { min: '', max: '', modifier: '' },
+      longRangeBand: { min: '', max: '', modifier: '' },
+      maximumRangeBand: { min: '', max: '', modifier: '' },
     };
     const editWeaponMode = jest.fn();
     const removeWeaponMode = jest.fn();
@@ -195,7 +210,7 @@ describe('<WeaonModeContent />', () => {
         .first()
         .simulate('click');
 
-      expect(editWeaponMode).toBeCalledWith('foo');
+      expect(editWeaponMode).toBeCalledWith('1234');
     });
 
     it('should show the modal if the delete button is pressed', () => {
@@ -262,7 +277,7 @@ describe('<WeaonModeContent />', () => {
         .last()
         .simulate('click');
 
-      expect(removeWeaponMode).toBeCalledWith('foo');
+      expect(removeWeaponMode).toBeCalledWith('1234');
     });
   });
 });

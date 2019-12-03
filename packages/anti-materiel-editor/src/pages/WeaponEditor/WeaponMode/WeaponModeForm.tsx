@@ -9,6 +9,7 @@ import { ItemForm } from './ItemForm';
 import { RangeBandForm } from './RangeBandForm';
 import './WeaponMode.scss';
 import { WeaponModeData } from './WeaponModeTypes';
+import uuid from 'uuid/v4';
 
 export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
   onCancel,
@@ -17,6 +18,8 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
   initialData,
   closeSideDrawer,
 }) => {
+  const id = initialData ? initialData.id : '';
+
   const {
     onChangeInput: onChangeModeInfo,
     fields: modeInfoFields,
@@ -114,6 +117,7 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
   useOnDataChange(
     isChanged => onDataChange(isChanged),
     {
+      id,
       name: modeInfoFields.name,
       burst: modeInfoFields.burst,
       damage: modeInfoFields.damage,
@@ -133,6 +137,7 @@ export const WeaponModeForm: React.FC<WeaponModeFormProps> = ({
       ...modeInfoFields,
       ammo,
       traits,
+      id: id ? id : uuid(),
       shortRangeBand: shortRangeBandFields,
       mediumRangeBand: mediumRangeBandFields,
       longRangeBand: longRangeBandFields,

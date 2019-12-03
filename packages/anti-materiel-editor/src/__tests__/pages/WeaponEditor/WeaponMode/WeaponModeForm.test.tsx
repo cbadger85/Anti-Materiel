@@ -1,9 +1,9 @@
+import { mount, ReactWrapper } from 'enzyme';
 import React from 'react';
-import { ReactWrapper, mount } from 'enzyme';
-import { WeaponModeForm } from '../../../../pages/WeaponEditor/WeaponMode/WeaponModeForm';
 import { Input } from '../../../../components/Input/Input';
-import { ItemForm } from '../../../../pages/WeaponEditor/WeaponMode/ItemForm';
-import { Button } from '../../../../components/Button/Button';
+import { WeaponModeForm } from '../../../../pages/WeaponEditor/WeaponMode/WeaponModeForm';
+
+jest.mock('uuid/v4', () => jest.fn().mockReturnValue('1234'));
 
 describe('<WeaponModeForm />', () => {
   let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
@@ -21,6 +21,7 @@ describe('<WeaponModeForm />', () => {
   });
 
   const initialData = {
+    id: '1234',
     name: 'ML (blast mode)',
     damage: '14',
     burst: '1',
@@ -102,6 +103,7 @@ describe('<WeaponModeForm />', () => {
     const onSubmit = jest.fn();
 
     const initialData = {
+      id: '1234',
       name: 'ML (blast mode)',
       damage: '14',
       burst: '1',
@@ -154,6 +156,7 @@ describe('<WeaponModeForm />', () => {
     const onSubmit = jest.fn();
 
     const initialData = {
+      id: '1234',
       name: 'ML (blast mode)',
       damage: '14',
       burst: '1',
@@ -203,6 +206,7 @@ describe('<WeaponModeForm />', () => {
     const onSubmit = jest.fn();
 
     const initialData = {
+      id: '1234',
       name: 'ML (blast mode)',
       damage: '14',
       burst: '1',
