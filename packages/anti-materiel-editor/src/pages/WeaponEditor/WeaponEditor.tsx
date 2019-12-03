@@ -150,7 +150,9 @@ export const WeaponEditor: React.FC = () => {
 
     makeToast(`${editedWeapon.name} has been removed!`, { color: 'danger' });
 
-    history.replace('/weapon-editor');
+    setTimeout(() => {
+      history.replace('/weapon-editor');
+    }, 0);
   };
 
   return (
