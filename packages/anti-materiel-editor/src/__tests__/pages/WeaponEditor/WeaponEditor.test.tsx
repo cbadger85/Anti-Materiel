@@ -462,9 +462,9 @@ describe('<WeaponEditor />', () => {
       .last()
       .simulate('click');
 
-    const modal = wrapper.find(ConfirmModal);
+    const modal = wrapper.find(ConfirmModal).last();
 
-    expect(modal).toHaveLength(0);
+    expect(modal.props().isShown).toBe(false);
   });
 
   it('should remove the item if ok is clicked', () => {
