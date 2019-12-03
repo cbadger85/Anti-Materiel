@@ -1,17 +1,16 @@
 import { createSelector } from '@reduxjs/toolkit';
 import isEqual from 'lodash/isEqual';
 import sortBy from 'lodash/sortBy';
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Prompt, useParams, useHistory } from 'react-router-dom';
-import { Button } from '../../components/Button/Button';
+import { Prompt, useHistory, useParams } from 'react-router-dom';
 import { MasterPage } from '../../components/MasterPage/MasterPage';
 import { useToast } from '../../components/Toasts/useToast';
 import { RootState } from '../../store/rootReducer';
 import {
   addWeapon,
-  updateWeapon,
   removeWeapon,
+  updateWeapon,
 } from '../../store/weaponsSlice';
 import { SidePanelWeaponList } from './SidePanelWeaponList';
 import { convertWeaponDataToWeapon, convertWeaponToWeaponData } from './utils';
@@ -19,7 +18,6 @@ import { WeaponInfo } from './WeaponInfo/WeaponInfo';
 import { WeaponInfoData } from './WeaponInfo/WeaponInfoTypes';
 import { WeaponMode } from './WeaponMode/WeaponMode';
 import { WeaponModeData } from './WeaponMode/WeaponModeTypes';
-import { ConfirmModal } from '../../components/Modal/ConfirmModal';
 
 const filteredWeaponList = createSelector(
   (state: RootState) => state.weapons,
@@ -29,7 +27,6 @@ const filteredWeaponList = createSelector(
 export const WeaponEditor: React.FC = () => {
   const [weaponInfo, setWeaponInfo] = useState<WeaponInfoData>();
   const [weaponModes, setWeaponModes] = useState<WeaponModeData[]>([]);
-  const [isDeleteModalShown, setIsDeleteModalShown] = useState(false);
 
   const { id: selectedWeaponId } = useParams();
   const history = useHistory();
@@ -140,8 +137,6 @@ export const WeaponEditor: React.FC = () => {
   };
 
   const handleRemoveWeapon = (): void => {
-    setIsDeleteModalShown(false);
-
     if (!selectedWeaponId || !editedWeapon) {
       return;
     }
@@ -160,30 +155,6 @@ export const WeaponEditor: React.FC = () => {
       <MasterPage
         title="Weapons Editor"
         uri="weapon-editor"
-        buttonRow={() => (
-          <div>
-            {!!selectedWeaponId && (
-              <Button
-                id="weapon-editor-delete-button"
-                width="7.5rem"
-                color="delete-light"
-                onClick={() => setIsDeleteModalShown(true)}
-                style={{ marginRight: '1rem' }}
-              >
-                Delete
-              </Button>
-            )}
-            <Button
-              id="weapon-editor-save-button"
-              width="7.5rem"
-              color="primary"
-              onClick={handleOnSave}
-              disabled={isSaveDisabled}
-            >
-              Save
-            </Button>
-          </div>
-        )}
         sidePanelContent={uri => (
           <SidePanelWeaponList uri={uri} weaponList={weaponList} />
         )}
@@ -197,16 +168,17 @@ export const WeaponEditor: React.FC = () => {
             />
           </>
         )}
+        isSaveDisabled={isSaveDisabled}
+        onSave={handleOnSave}
+        isDeleteShown={!!selectedWeaponId}
+        onDelete={handleRemoveWeapon}
+        confirmDeleteText={`Are you want to delete ${
+          editedWeapon ? editedWeapon.name : 'this weapon?'
+        }`}
       />
       <Prompt
         when={shouldPrompt}
         message="Are you sure you want to discard changes?"
-      />
-      <ConfirmModal
-        isShown={isDeleteModalShown}
-        text="Are you want to delete this weapon?"
-        onConfirm={handleRemoveWeapon}
-        onCancel={() => setIsDeleteModalShown(false)}
       />
     </>
   );

@@ -158,7 +158,7 @@ describe('<WeaponEditor />', () => {
       </Provider>,
     );
 
-    const saveButton = wrapper.find('#weapon-editor-save-button').hostNodes();
+    const saveButton = wrapper.find('#editor-save-button').hostNodes();
 
     expect(saveButton.props().disabled).toBe(true);
   });
@@ -181,7 +181,7 @@ describe('<WeaponEditor />', () => {
       </Provider>,
     );
 
-    const saveButton = wrapper.find('#weapon-editor-save-button').hostNodes();
+    const saveButton = wrapper.find('#editor-save-button').hostNodes();
 
     expect(saveButton.props().disabled).toBe(true);
   });
@@ -220,7 +220,7 @@ describe('<WeaponEditor />', () => {
       .hostNodes()
       .simulate('click');
 
-    const saveButton = wrapper.find('#weapon-editor-save-button').hostNodes();
+    const saveButton = wrapper.find('#editor-save-button').hostNodes();
 
     expect(saveButton.props().disabled).toBe(false);
   });
@@ -259,7 +259,7 @@ describe('<WeaponEditor />', () => {
       .hostNodes()
       .simulate('click');
 
-    const saveButton = wrapper.find('#weapon-editor-save-button').hostNodes();
+    const saveButton = wrapper.find('#editor-save-button').hostNodes();
 
     expect(saveButton.props().disabled).toBe(true);
   });
@@ -304,7 +304,7 @@ describe('<WeaponEditor />', () => {
       .simulate('click');
 
     wrapper
-      .find('#weapon-editor-save-button')
+      .find('#editor-save-button')
       .hostNodes()
       .simulate('click');
 
@@ -351,7 +351,7 @@ describe('<WeaponEditor />', () => {
       .simulate('click');
 
     wrapper
-      .find('#weapon-editor-save-button')
+      .find('#editor-save-button')
       .hostNodes()
       .simulate('click');
 
@@ -382,7 +382,7 @@ describe('<WeaponEditor />', () => {
     );
 
     wrapper
-      .find('#weapon-editor-delete-button')
+      .find('#editor-delete-button')
       .hostNodes()
       .simulate('click');
 
@@ -413,7 +413,7 @@ describe('<WeaponEditor />', () => {
     );
 
     wrapper
-      .find('#weapon-editor-delete-button')
+      .find('#editor-delete-button')
       .hostNodes()
       .simulate('click');
 
@@ -451,7 +451,7 @@ describe('<WeaponEditor />', () => {
     );
 
     wrapper
-      .find('#weapon-editor-delete-button')
+      .find('#editor-delete-button')
       .hostNodes()
       .simulate('click');
 
@@ -489,7 +489,7 @@ describe('<WeaponEditor />', () => {
     );
 
     wrapper
-      .find('#weapon-editor-delete-button')
+      .find('#editor-delete-button')
       .hostNodes()
       .simulate('click');
 
@@ -529,7 +529,7 @@ describe('<WeaponEditor />', () => {
     );
 
     wrapper
-      .find('#weapon-editor-delete-button')
+      .find('#editor-delete-button')
       .hostNodes()
       .simulate('click');
 
