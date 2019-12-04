@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './MasterPage.scss';
+import './Layouts.scss';
 import { Button } from '../Button/Button';
 import { ConfirmModal } from '../Modal/ConfirmModal';
-import { Prompt } from 'react-router-dom';
+import { Prompt, useHistory } from 'react-router-dom';
 
-export const MasterPage: React.FC<MasterPageProps> = ({
+export const TwoPaneLayout: React.FC<MasterPageProps> = ({
   sidePanelContent,
   mainContent,
   isDeleteShown,
@@ -18,6 +18,8 @@ export const MasterPage: React.FC<MasterPageProps> = ({
 }) => {
   const [sidePanelHeight, setSidePanelHeight] = useState(0);
   const [isDeleteModalShown, setIsDeleteModalShown] = useState(false);
+
+  const history = useHistory();
 
   const contentRef = useRef<HTMLDivElement>(null);
 
@@ -51,17 +53,15 @@ export const MasterPage: React.FC<MasterPageProps> = ({
       <div className="top-row">
         <h1>{title}</h1>
         <div>
-          {isDeleteShown && (
-            <Button
-              id="editor-delete-button"
-              width="7.5rem"
-              color="delete-ghost"
-              onClick={() => setIsDeleteModalShown(true)}
-              style={{ marginRight: '1rem' }}
-            >
-              Delete
-            </Button>
-          )}
+          <Button
+            id="editor-cancel-button"
+            width="7.5rem"
+            color="transparent-light"
+            onClick={() => history.replace(uri)}
+            style={{ marginRight: '1rem' }}
+          >
+            Cancel
+          </Button>
           <Button
             id="editor-save-button"
             width="7.5rem"
@@ -73,14 +73,36 @@ export const MasterPage: React.FC<MasterPageProps> = ({
           </Button>
         </div>
       </div>
-      <div className="page-content__container">
-        <main className="editor" ref={contentRef}>
-          <div>{mainContent()}</div>
-        </main>
+      <main className="page-content__container">
+        <div className="editor" ref={contentRef}>
+          <div className="editor-content">
+            <div>{mainContent()}</div>
+            {isDeleteShown && (
+              <div className="danger-zone">
+                <h2>Danger Zone</h2>
+                <div className="danger-zone__content">
+                  <Button
+                    id="editor-delete-button"
+                    width="7.5rem"
+                    color="delete-ghost"
+                    onClick={() => setIsDeleteModalShown(true)}
+                    style={{ marginRight: '1rem' }}
+                  >
+                    Delete
+                  </Button>
+                  <div>
+                    <p>Click here to delete this item.</p>
+                    <p>Warning! This cannot be undone!</p>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
         <section className="side-panel" style={{ height: sidePanelHeight }}>
           {sidePanelContent(uri)}
         </section>
-      </div>
+      </main>
       <ConfirmModal
         isShown={isDeleteModalShown}
         text={confirmDeleteText}
