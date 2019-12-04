@@ -221,7 +221,7 @@ export interface ArmyListUnitAndStats {
   id: string;
   name: string;
   isc: string;
-  description: string;
+  descriptionTag: string;
   sectorial: Sectorial[];
   unitSvgName: string;
   classification: UnitClassification;
@@ -250,20 +250,15 @@ export interface ArmyListUnitAndStats {
 export interface ArmyListUnitWithRelatedUnits {
   name: string;
   isc: string;
-  description: string;
+  descriptionTag: string;
   sectorial: Sectorial[];
   unitSvgName: string;
-  unitProfiles: UnitProfile[]; // for combined units like zoe ∏-well
-  // seperate?: boolean; //? what was this for?
-  relatedProfilesById: RelatedUnits[];
+  seperate?: boolean; //? miranda ashcroft hunting party or alive crew
+  relatedUnitsById: string[];
+  primaryUnitId: string;
   notes: Note[];
   type?: UnitType;
   classification?: UnitClassification;
-}
-
-export interface RelatedUnits {
-  primary?: boolean;
-  relatedProfilesById: string;
 }
 
 export type ArmyListUnit = ArmyListUnitAndStats | ArmyListUnitWithRelatedUnits;
