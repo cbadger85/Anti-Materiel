@@ -1,5 +1,5 @@
 import React from 'react';
-import { MasterPage } from '../../components/MasterPage/MasterPage';
+import { TwoPaneLayout } from '../../components/Layouts/TwoPaneLayout';
 import { useToast } from '../../components/Toasts/useToast';
 import { StatsAndAttributes } from './StatsAndAttributes/StatsAndAttributes';
 import { UnitInfo } from './UnitInfo/UnitInfo';
@@ -8,7 +8,7 @@ export const UnitEditor: React.FC = () => {
   const makeToast = useToast();
   return (
     <>
-      <MasterPage
+      <TwoPaneLayout
         title="Unit Editor"
         uri="/unit-editor"
         sidePanelContent={() => null}

@@ -4,7 +4,7 @@ import sortBy from 'lodash/sortBy';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory, useParams } from 'react-router-dom';
-import { MasterPage } from '../../components/MasterPage/MasterPage';
+import { TwoPaneLayout } from '../../components/Layouts/TwoPaneLayout';
 import { useToast } from '../../components/Toasts/useToast';
 import { RootState } from '../../store/rootReducer';
 import {
@@ -151,7 +151,7 @@ export const WeaponEditor: React.FC = () => {
   };
 
   return (
-    <MasterPage
+    <TwoPaneLayout
       title="Weapons Editor"
       uri="weapon-editor"
       sidePanelContent={uri => (
@@ -171,9 +171,7 @@ export const WeaponEditor: React.FC = () => {
       onSave={handleOnSave}
       isDeleteShown={!!selectedWeaponId}
       onDelete={handleRemoveWeapon}
-      confirmDeleteText={`Are you want to delete ${
-        editedWeapon ? editedWeapon.name : 'this weapon?'
-      }`}
+      confirmDeleteText="Are you want to delete this weapon?"
       shouldPromptOnRedirect={shouldPrompt}
     />
   );
