@@ -4,6 +4,7 @@ import { animated, config, useTransition } from 'react-spring';
 import { Header } from '../components/Header/Header';
 import { UnitEditor } from './UnitEditor/UnitEditor';
 import { WeaponEditor } from './WeaponEditor/WeaponEditor';
+import { Index } from './Index';
 
 export const Routes: React.FC = () => {
   const location = useLocation();
@@ -31,6 +32,9 @@ export const Routes: React.FC = () => {
           style={{ position: 'absolute', height: 'auto', ...props }}
         >
           <Switch location={item}>
+            <Route exact path="/">
+              <Index />
+            </Route>
             <Route exact path="/unit-editor">
               <UnitEditor />
             </Route>
