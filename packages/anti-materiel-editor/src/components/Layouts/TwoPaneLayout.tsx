@@ -48,6 +48,12 @@ export const TwoPaneLayout: React.FC<MasterPageProps> = ({
     onDelete();
   };
 
+  const handleCancel = (): void => {
+    setTimeout(() => {
+      history.replace(`/${uri}`);
+    }, 0);
+  };
+
   return (
     <>
       <div className="top-row">
@@ -57,7 +63,7 @@ export const TwoPaneLayout: React.FC<MasterPageProps> = ({
             id="editor-cancel-button"
             width="7.5rem"
             color="transparent-light"
-            onClick={() => history.replace(uri)}
+            onClick={handleCancel}
             style={{ marginRight: '1rem' }}
           >
             Cancel
