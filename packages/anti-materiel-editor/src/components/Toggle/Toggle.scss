@@ -1,0 +1,47 @@
+@import '../../styles/colors';
+
+.toggle {
+  padding-top: 1rem;
+}
+
+.toggle__label {
+  position: relative;
+  padding-left: 6rem;
+  padding-top: 0.5rem;
+}
+
+.toggle__label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5rem;
+  height: 2.5rem;
+  background-color: $neutral-9;
+  border-radius: 2.5rem;
+  transition: background-color 0.3s;
+}
+
+.toggle__label:after {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: white;
+  top: 0.25rem;
+  left: 0.25rem;
+  transition: transform 0.3s;
+}
+
+.toggle input[type='checkbox']:checked + .toggle__label::after {
+  transform: translateX(2.5rem);
+}
+
+.toggle input[type='checkbox']:checked + .toggle__label::before {
+  background-color: $supporting-pink-7;
+}
+
+.toggle input[type='checkbox'] {
+  display: none;
+}
