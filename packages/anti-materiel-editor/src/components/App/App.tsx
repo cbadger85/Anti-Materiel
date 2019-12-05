@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Routes } from '../../pages/Routes';
 import { ConfirmModal } from '../Modal/ConfirmModal';
 import { ToastProvider } from '../Toasts/ToastProvider';
+import { ErrorBoundary } from '../ErrorBoundary/ErrorBoundary';
 
 export const App: React.FC = () => {
   const initialNavigationModalState = {
@@ -33,17 +34,19 @@ export const App: React.FC = () => {
 
   return (
     <div className="App">
-      <ToastProvider>
-        <Router getUserConfirmation={handleConfirmNavigation}>
-          <Routes />
-        </Router>
-        <ConfirmModal
-          isShown={navigationModal.isShown}
-          text={navigationModal.message}
-          onConfirm={handleOnConfirmModal}
-          onCancel={handleOnCancelModal}
-        />
-      </ToastProvider>
+      <ErrorBoundary>
+        <ToastProvider>
+          <Router getUserConfirmation={handleConfirmNavigation}>
+            <Routes />
+          </Router>
+          <ConfirmModal
+            isShown={navigationModal.isShown}
+            text={navigationModal.message}
+            onConfirm={handleOnConfirmModal}
+            onCancel={handleOnCancelModal}
+          />
+        </ToastProvider>
+      </ErrorBoundary>
     </div>
   );
 };
