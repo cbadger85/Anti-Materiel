@@ -90,6 +90,12 @@
     border: 1px solid $supporting-red-6;
   }
 
+  &.button--delete-ghost:hover {
+    background: $supporting-red-6;
+    color: $supporting-red-0;
+    border: none;
+  }
+
   &.button--delete-ghost:focus {
     text-decoration: underline;
   }
