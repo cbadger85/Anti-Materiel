@@ -8,6 +8,7 @@ export const Toggle: React.FC<ToggleProps> = ({
   name,
   checked,
   onChange,
+  disabled,
 }) => {
   const getId = (): string => {
     if (id) {
@@ -21,6 +22,10 @@ export const Toggle: React.FC<ToggleProps> = ({
     return uuid();
   };
 
+  const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    onChange(e.target.checked);
+  };
+
   const toggleId = getId();
 
   return (
@@ -28,8 +33,9 @@ export const Toggle: React.FC<ToggleProps> = ({
       <input
         type="checkbox"
         checked={checked}
-        onChange={onChange}
+        onChange={handleOnChange}
         id={toggleId}
+        disabled
       />
       <label className="toggle__label" htmlFor={toggleId}>
         {label}
@@ -39,9 +45,10 @@ export const Toggle: React.FC<ToggleProps> = ({
 };
 
 interface ToggleProps {
-  label: string;
+  label?: string;
   id?: string;
   name?: string;
+  disabled?: boolean;
   checked?: boolean;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (checked: boolean) => void;
 }

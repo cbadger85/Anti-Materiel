@@ -11,7 +11,8 @@ export const Index: React.FC = () => {
         <Toggle
           label="toggle component"
           checked={toggle}
-          onChange={e => setToggle(e.target.checked)}
+          onChange={value => setToggle(value)}
+          disabled
         />
       )}
     />
