@@ -17,7 +17,7 @@
   left: -0.8rem;
   width: 5rem;
   height: 2.5rem;
-  background-color: $neutral-9;
+  background-color: $neutral-7;
   border-radius: 2.5rem;
   transition: background-color 0.3s;
 }
@@ -42,12 +42,20 @@
   background-color: $supporting-pink-7;
 }
 
+.toggle input[type='checkbox']:checked:focus + .toggle__label::before {
+  border: 2px solid $supporting-pink-4;
+}
+
 .toggle input[type='checkbox']:focus + .toggle__label::before {
-  border: 2px solid $supporting-pink-1;
+  border: 2px solid $neutral-3;
+}
+
+.toggle input[type='checkbox']:disabled + .toggle__label::before {
+  background-color: $neutral-6;
 }
 
 .toggle input[type='checkbox']:disabled + .toggle__label::after {
-  background-color: $neutral-0;
+  background-color: $neutral-9;
 }
 
 .toggle input[type='checkbox'] {

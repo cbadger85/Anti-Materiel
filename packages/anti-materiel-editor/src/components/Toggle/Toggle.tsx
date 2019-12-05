@@ -35,7 +35,7 @@ export const Toggle: React.FC<ToggleProps> = ({
         checked={checked}
         onChange={handleOnChange}
         id={toggleId}
-        disabled
+        disabled={disabled}
       />
       <label className="toggle__label" htmlFor={toggleId}>
         {label}

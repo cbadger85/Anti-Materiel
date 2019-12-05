@@ -12,7 +12,7 @@ export const Index: React.FC = () => {
           label="toggle component"
           checked={toggle}
           onChange={value => setToggle(value)}
-          disabled
+          // disabled
         />
       )}
     />
