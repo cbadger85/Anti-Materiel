@@ -64,7 +64,8 @@
 
   .danger-zone {
     justify-self: flex-end;
-    border: 2px dashed $supporting-red-8;
+    align-self: flex-end;
+    border: 2px dashed $neutral-7;
     padding: 2rem 1rem 1.5rem 1rem;
     width: fit-content;
 
@@ -74,7 +75,7 @@
       display: block;
       width: fit-content;
       padding: 0 0.5rem;
-      color: $supporting-red-5;
+      color: $neutral-4;
     }
 
     .danger-zone__content {
