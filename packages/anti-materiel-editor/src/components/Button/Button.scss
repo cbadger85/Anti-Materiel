@@ -8,6 +8,7 @@
   transition: all 100ms linear;
   background-color: $neutral-9;
   color: $neutral-1;
+  display: inline-block;
 
   &:hover {
     background-color: $neutral-8;

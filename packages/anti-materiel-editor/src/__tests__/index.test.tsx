@@ -1,6 +1,10 @@
 import React from 'react';
 import { mount, ReactWrapper } from 'enzyme';
 import { App } from '../components/App/App';
+import { Provider } from 'react-redux';
+import { MemoryRouter } from 'react-router-dom';
+import { configureStore } from '@reduxjs/toolkit';
+import rootReducer from '../store/rootReducer';
 
 describe('<App />', () => {
   let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
@@ -17,8 +21,21 @@ describe('<App />', () => {
     wrapper.unmount();
   });
 
+  const store = configureStore({
+    reducer: rootReducer,
+    preloadedState: {
+      weapons: [],
+    },
+  });
+
   it('should render without crashing', () => {
-    wrapper = mount(<App />);
+    wrapper = mount(
+      <Provider store={store}>
+        <MemoryRouter initialEntries={['/']}>
+          <App />
+        </MemoryRouter>
+      </Provider>,
+    );
 
     const app = wrapper.find('.App');
 
