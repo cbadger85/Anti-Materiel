@@ -30,8 +30,6 @@ const weapon: Weapon = {
       weaponRange: {
         short: { min: '0', max: '8', modifier: '+3' },
         medium: { min: '8', max: '24', modifier: '-3' },
-        long: undefined,
-        maximum: undefined,
       },
     },
   ],

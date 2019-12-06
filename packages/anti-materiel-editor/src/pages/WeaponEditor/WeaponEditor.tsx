@@ -74,9 +74,6 @@ export const WeaponEditor: React.FC = () => {
       weaponModesData: weaponModes,
     });
 
-    console.table('weapon', weapon);
-    console.table('edited weapon', editedWeapon);
-
     const isWeaponsEqual = !isEqual(weapon, editedWeapon);
 
     return isWeaponsEqual;

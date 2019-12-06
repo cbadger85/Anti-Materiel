@@ -8,6 +8,7 @@ import {
 } from '@anti-materiel/types';
 import { WeaponRangeBand as WeaponRangeBandData } from './WeaponMode/WeaponModeTypes';
 import uuid from 'uuid/v4';
+import pickBy from 'lodash/pickBy';
 
 export const convertRangeBand = (
   rangeBand: WeaponRangeBandData | undefined,
@@ -79,20 +80,31 @@ export const convertWeaponDataToWeapon = ({
     throw new Error('An ID is required');
   }
 
-  const weaponModes = weaponModesData.map<WeaponMode>(mode => ({
-    name: mode.name,
-    damage: mode.damage,
-    burst: mode.burst,
-    combinedAmmo: !!mode.combinedAmmo,
-    traits: mode.traits,
-    ammo: mode.ammo,
-    weaponRange: convertWeaponRange({
-      short: mode.shortRangeBand,
-      medium: mode.mediumRangeBand,
-      long: mode.longRangeBand,
-      maximum: mode.maximumRangeBand,
-    }),
-  }));
+  const weaponModes = weaponModesData
+    .map<WeaponMode>(mode => ({
+      name: mode.name,
+      damage: mode.damage,
+      burst: mode.burst,
+      combinedAmmo: !!mode.combinedAmmo,
+      traits: mode.traits,
+      ammo: mode.ammo,
+      weaponRange: convertWeaponRange({
+        short: mode.shortRangeBand,
+        medium: mode.mediumRangeBand,
+        long: mode.longRangeBand,
+        maximum: mode.maximumRangeBand,
+      }),
+    }))
+    .map(mode => {
+      const { weaponRange: range, ...weaponMode } = mode;
+      const weaponRange = pickBy(mode.weaponRange);
+
+      if (Object.values(weaponRange).some(value => !!value)) {
+        return { ...weaponMode, weaponRange };
+      }
+
+      return weaponMode;
+    });
 
   return {
     id: weaponInfoData.id,

@@ -5,10 +5,10 @@ import { loadWeapons } from '../../store/weaponsSlice';
 import { useToast } from '../Toasts/useToast';
 import { useRef } from 'react';
 import { Button } from '../Button/Button';
+import './Upload.scss';
 
 // TODO: add other keys to data object
 // TODO: add validation
-// TODO: write function to add possibly undefined fields back into object
 
 export const Upload: React.FC = () => {
   const reader = new FileReader();
@@ -62,7 +62,7 @@ export const Upload: React.FC = () => {
         type="file"
         onChange={handleOnChange}
         accept="application/json"
-        multiple
+        className="upload__input"
       />
       <Button color="secondary" onClick={handleOnClick}>
         Upload
