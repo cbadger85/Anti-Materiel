@@ -2,6 +2,16 @@ import React from 'react';
 import { Download } from '../../components/Download/Download';
 import { shallow } from 'enzyme';
 
+beforeAll(() => {
+  delete window.URL;
+
+  //@ts-ignore
+  window.URL = {
+    createObjectURL: jest.fn(() => 'url'),
+    revokeObjectURL: jest.fn(),
+  };
+});
+
 describe('<Download />', () => {
   it('should convert the data to json and put it in the href attribute', () => {
     const data = {
@@ -17,9 +27,7 @@ describe('<Download />', () => {
       .hostNodes()
       .props().href;
 
-    expect(href).toBe(
-      'data:text/json;charset=utf-8,%7B%22foo%22%3A%22bar%22%7D',
-    );
+    expect(href).toBe('url');
   });
 
   it('should convert the data to json and put it in the href attribute', () => {
