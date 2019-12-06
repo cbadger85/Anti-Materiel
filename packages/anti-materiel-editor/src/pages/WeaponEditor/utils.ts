@@ -1,14 +1,16 @@
-import { WeaponInfoData } from './WeaponInfo/WeaponInfoTypes';
-import { WeaponModeData } from './WeaponMode/WeaponModeTypes';
 import {
   Weapon,
   WeaponMode,
-  WeaponRangeBand,
   WeaponRange,
+  WeaponRangeBand,
 } from '@anti-materiel/types';
-import { WeaponRangeBand as WeaponRangeBandData } from './WeaponMode/WeaponModeTypes';
 import uuid from 'uuid/v4';
-import pickBy from 'lodash/pickBy';
+import { removeUndefinedValues } from '../../utils/removeUndefinedValues';
+import { WeaponInfoData } from './WeaponInfo/WeaponInfoTypes';
+import {
+  WeaponModeData,
+  WeaponRangeBand as WeaponRangeBandData,
+} from './WeaponMode/WeaponModeTypes';
 
 export const convertRangeBand = (
   rangeBand: WeaponRangeBandData | undefined,
@@ -80,38 +82,27 @@ export const convertWeaponDataToWeapon = ({
     throw new Error('An ID is required');
   }
 
-  const weaponModes = weaponModesData
-    .map<WeaponMode>(mode => ({
-      name: mode.name,
-      damage: mode.damage,
-      burst: mode.burst,
-      combinedAmmo: !!mode.combinedAmmo,
-      traits: mode.traits,
-      ammo: mode.ammo,
-      weaponRange: convertWeaponRange({
-        short: mode.shortRangeBand,
-        medium: mode.mediumRangeBand,
-        long: mode.longRangeBand,
-        maximum: mode.maximumRangeBand,
-      }),
-    }))
-    .map(mode => {
-      const { weaponRange: range, ...weaponMode } = mode;
-      const weaponRange = pickBy(mode.weaponRange);
+  const weaponModes = weaponModesData.map<WeaponMode>(mode => ({
+    name: mode.name,
+    damage: mode.damage,
+    burst: mode.burst,
+    combinedAmmo: !!mode.combinedAmmo,
+    traits: mode.traits,
+    ammo: mode.ammo,
+    weaponRange: convertWeaponRange({
+      short: mode.shortRangeBand,
+      medium: mode.mediumRangeBand,
+      long: mode.longRangeBand,
+      maximum: mode.maximumRangeBand,
+    }),
+  }));
 
-      if (Object.values(weaponRange).some(value => !!value)) {
-        return { ...weaponMode, weaponRange };
-      }
-
-      return weaponMode;
-    });
-
-  return {
+  return removeUndefinedValues({
     id: weaponInfoData.id,
     name: weaponInfoData.name,
     wikiLink: weaponInfoData.wikiLink,
     weaponModes,
-  };
+  });
 };
 
 export const convertWeaponRangeData = (
