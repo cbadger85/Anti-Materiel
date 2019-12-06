@@ -6,6 +6,16 @@ import { MemoryRouter } from 'react-router-dom';
 import { configureStore } from '@reduxjs/toolkit';
 import rootReducer from '../store/rootReducer';
 
+beforeAll(() => {
+  delete window.URL;
+
+  //@ts-ignore
+  window.URL = {
+    createObjectURL: jest.fn(() => 'url'),
+    revokeObjectURL: jest.fn(),
+  };
+});
+
 describe('<App />', () => {
   let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
 
