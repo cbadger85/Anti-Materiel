@@ -14,7 +14,7 @@ export const SinglePaneLayout: React.FC<MasterPageProps> = ({
       <main className="page-content__container">
         <div className="editor">
           <div className="editor-content">
-            <div>{mainContent()}</div>
+            <div className="editor-content__main">{mainContent()}</div>
           </div>
         </div>
       </main>

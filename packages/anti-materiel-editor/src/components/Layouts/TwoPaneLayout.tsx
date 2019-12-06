@@ -82,7 +82,7 @@ export const TwoPaneLayout: React.FC<MasterPageProps> = ({
       <main className="page-content__container">
         <div className="editor" ref={contentRef}>
           <div className="editor-content">
-            <div>{mainContent()}</div>
+            <div className="editor-content__main">{mainContent()}</div>
             {isDeleteShown && (
               <div className="danger-zone">
                 <h2>Danger Zone</h2>

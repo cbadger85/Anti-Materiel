@@ -2,6 +2,7 @@ import weaponsSlice, {
   addWeapon,
   updateWeapon,
   removeWeapon,
+  loadWeapons,
 } from '../../store/weaponsSlice';
 import { Weapon } from '@anti-materiel/types';
 
@@ -91,6 +92,17 @@ describe('weaponsSlice', () => {
       });
 
       expect(updatedWeaponList).toEqual([]);
+    });
+  });
+
+  describe('loadWeapons', () => {
+    it('should load replace state with an array of weapons', () => {
+      const updatedWeaponList = weaponsSlice([], {
+        type: loadWeapons.type,
+        payload: [weapon1, weapon2],
+      });
+
+      expect(updatedWeaponList).toEqual([weapon1, weapon2]);
     });
   });
 });

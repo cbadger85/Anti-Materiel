@@ -58,7 +58,7 @@
   flex-direction: column;
   height: 100%;
 
-  div:first-child {
+  .editor-content__main {
     flex-grow: 1;
   }
 
