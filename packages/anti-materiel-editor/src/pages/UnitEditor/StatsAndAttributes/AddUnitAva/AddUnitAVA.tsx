@@ -1,7 +1,7 @@
 import React from 'react';
 import { DragDropContext, DropResult } from 'react-beautiful-dnd';
 import { Button } from '../../../../components/Button/Button';
-import { AddIcon } from '../../../../components/Icons';
+import { Plus } from 'react-feather';
 import { Input } from '../../../../components/Input/Input';
 import { Select } from '../../../../components/Select/Select';
 import { useForm } from '../../../../hooks/useForm';
@@ -9,6 +9,7 @@ import { sectorialSelectOptions } from '../../UnitInfo/UnitInfoFormOptions';
 import './AddUnitAva.scss';
 import { AvaListItemContainer } from './AvaListItemContainer';
 import { move } from '../../../../utils/move';
+import { color } from '../../../../styles/colors';
 
 export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
   addUnitAva,
@@ -75,7 +76,11 @@ export const AddUnitAVA: React.FC<AddUnitAvaProps> = ({
           width="100%"
           id="add-unit-ava-button"
         >
-          <AddIcon color={addButtonDisabled ? 'disabled' : 'secondary'} />
+          <Plus
+            color={
+              addButtonDisabled ? color.neutral[4] : color.supporting.indigo[0]
+            }
+          />
           <span>Add AVA</span>
         </Button>
       </div>

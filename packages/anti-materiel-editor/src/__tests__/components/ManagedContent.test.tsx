@@ -3,7 +3,7 @@ import { mount, ReactWrapper } from 'enzyme';
 import { ManagedContent } from '../../components/ManagedContent/ManagedContent';
 import { SideDrawer } from '../../components/SideDrawer/SideDrawer';
 import { ConfirmModal } from '../../components/Modal/ConfirmModal';
-import { AddIcon, EditIcon } from '../../components/Icons';
+import { Plus, Edit2 } from 'react-feather';
 import { Button } from '../../components/Button/Button';
 
 describe('<ManagedContent />', () => {
@@ -31,22 +31,22 @@ describe('<ManagedContent />', () => {
     expect(title.text()).toBe('test');
   });
 
-  it('should show the AddIcon when edit is false', () => {
+  it('should show the add icon when edit is false', () => {
     wrapper = mount(
       <ManagedContent title="test" content={jest.fn()} form={jest.fn()} />,
     );
 
-    const addIcon = wrapper.find(AddIcon);
+    const addIcon = wrapper.find(Plus);
 
     expect(addIcon).toHaveLength(1);
   });
 
-  it('should show the EditIcon when edit is true', () => {
+  it('should show the edit icon when edit is true', () => {
     wrapper = mount(
       <ManagedContent title="test" content={jest.fn()} form={jest.fn()} edit />,
     );
 
-    const editIcon = wrapper.find(EditIcon);
+    const editIcon = wrapper.find(Edit2);
 
     expect(editIcon).toHaveLength(1);
   });

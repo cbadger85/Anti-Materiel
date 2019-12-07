@@ -31,7 +31,7 @@ export const SideDrawerForm: React.FC<SideDrawerFormProps> = ({
           onClick={onSubmit}
           disabled={disableSubmit}
         >
-          Save
+          Done
         </Button>
       </div>
     </div>

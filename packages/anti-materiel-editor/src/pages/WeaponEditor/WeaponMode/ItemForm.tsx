@@ -1,10 +1,11 @@
 import React from 'react';
-import { useForm } from '../../../hooks/useForm';
-import { Input } from '../../../components/Input/Input';
+import { Plus } from 'react-feather';
 import { Button } from '../../../components/Button/Button';
-import { getClasses } from '../../../utils/getClasses';
+import { Input } from '../../../components/Input/Input';
+import { useForm } from '../../../hooks/useForm';
+import { color } from '../../../styles/colors';
 import { isEmpty } from '../../../utils/formValidators';
-import { AddIcon } from '../../../components/Icons';
+import { getClasses } from '../../../utils/getClasses';
 
 export const ListItem: React.FC<AvaListItemProps> = ({
   item,
@@ -94,11 +95,11 @@ export const ItemForm: React.FC<ItemFormProps> = ({
           width="100%"
           id={`weapon-mode-add-${id}-button`}
         >
-          <AddIcon
+          <Plus
             color={
               isEmpty(fields.wikiLink) || isEmpty(fields.name)
-                ? 'disabled'
-                : 'secondary'
+                ? color.neutral[4]
+                : color.supporting.indigo[0]
             }
           />
           <span className="weapon-mode__item-form-control-button-label">

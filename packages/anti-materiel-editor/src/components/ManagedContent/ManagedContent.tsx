@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { Edit2, Plus } from 'react-feather';
 import { SideDrawer } from '../../components/SideDrawer/SideDrawer';
+import { color } from '../../styles/colors';
 import { Button } from '../Button/Button';
 import { ConfirmModal } from '../Modal/ConfirmModal';
-import { AddIcon, EditIcon } from '../Icons';
 import './ManagedContent.scss';
 
 export const ManagedContent: React.FC<ManagedContentProps> = ({
@@ -53,11 +54,11 @@ export const ManagedContent: React.FC<ManagedContentProps> = ({
       >
         {edit ? (
           <>
-            <EditIcon color="secondary" /> Edit
+            <Edit2 color={color.supporting.indigo[0]} /> Edit
           </>
         ) : (
           <>
-            <AddIcon color="secondary" /> Add
+            <Plus color={color.supporting.indigo[0]} /> Add
           </>
         )}
       </Button>

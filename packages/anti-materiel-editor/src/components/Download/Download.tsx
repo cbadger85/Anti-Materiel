@@ -1,11 +1,9 @@
 import React, { useEffect, useRef } from 'react';
+import { Download as DownloadIcon } from 'react-feather';
 import './Download.scss';
+import { color } from '../../styles/colors';
 
-export const Download: React.FC<DownloadProps> = ({
-  data,
-  filename,
-  children,
-}) => {
+export const Download: React.FC<DownloadProps> = ({ data, filename }) => {
   const anchor = useRef<HTMLAnchorElement>(null);
 
   const blob = new Blob([JSON.stringify(data, null, 2)], {
@@ -29,7 +27,8 @@ export const Download: React.FC<DownloadProps> = ({
           className="button button--secondary button--download"
           ref={anchor}
         >
-          {children}
+          <DownloadIcon color={color.supporting.indigo[0]} size="1rem" />
+          <span>Save</span>
         </a>
       </div>
     </div>
