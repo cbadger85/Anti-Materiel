@@ -3,9 +3,10 @@ import { WeaponModeData } from './WeaponModeTypes';
 import { WeaponRangeBand } from './WeaponModeTypes';
 import { Button } from '../../../components/Button/Button';
 import { getClasses } from '../../../utils/getClasses';
-import { EditIcon } from '../../../components/Icons';
+import { Edit2, X } from 'react-feather';
 import { ConfirmModal } from '../../../components/Modal/ConfirmModal';
 import { useState } from 'react';
+import { color } from '../../../styles/colors';
 
 const rangeBandModifierColor: {
   [key: string]: { bgColor: string; color: string };
@@ -180,10 +181,10 @@ export const WeaponModeContentItem: React.FC<WeaponModeContentItem> = ({
           color="delete-light"
           onClick={() => editWeaponMode(weaponMode.id)}
         >
-          <EditIcon />
+          <Edit2 color={color.neutral[1]} />
         </Button>
         <Button color="delete-light" onClick={() => setIsModalShown(true)}>
-          ×
+          <X color={color.supporting.red[7]} />
         </Button>
       </div>
       <ConfirmModal

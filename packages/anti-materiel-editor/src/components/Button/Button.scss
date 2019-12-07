@@ -3,12 +3,17 @@
 
 .button {
   @include clear-button-defaults;
+  @include vertically-horizontally-center;
   text-align: center;
   padding: 0.5rem 2rem;
   transition: all 100ms linear;
   background-color: $supporting-indigo-6;
   color: $neutral-0;
   display: inline-block;
+
+  svg {
+    margin-right: 0.5rem;
+  }
 
   &:hover {
     background-color: $supporting-indigo-7;

@@ -2,12 +2,11 @@ import React, { useRef, useState } from 'react';
 import { Button } from '../Button/Button';
 import './Upload.scss';
 import { readFileAsText } from '../../utils/readFileAsText';
+import { FilePlus } from 'react-feather';
+import { color } from '../../styles/colors';
+import { Upload as UploadIcon } from 'react-feather';
 
-export const Upload: React.FC<UploadProps> = ({
-  onLoad,
-  onError,
-  children,
-}) => {
+export const Upload: React.FC<UploadProps> = ({ onLoad, onError }) => {
   const [filename, setFilname] = useState<string>();
   const [fileText, setFileText] = useState<string>();
   const inputRef = useRef<HTMLInputElement>(null);
@@ -66,7 +65,10 @@ export const Upload: React.FC<UploadProps> = ({
             accept="application/json"
             className="upload__input"
           />
-          <Button onClick={handleOnClickSelectFile}>Select File...</Button>
+          <Button onClick={handleOnClickSelectFile} width="8.5rem">
+            <FilePlus size="0.9rem" color={color.neutral[0]} />
+            <span>File...</span>
+          </Button>
           {filename ? (
             <span className="upload__filename">
               <span className="upload__filename__label">filename:</span>{' '}
@@ -83,8 +85,13 @@ export const Upload: React.FC<UploadProps> = ({
           onClick={handleOnClickLoad}
           disabled={!fileText}
           className="upload__load-button"
+          width="8.5rem"
         >
-          {children}
+          <UploadIcon
+            color={fileText ? color.supporting.indigo[0] : color.neutral[4]}
+            size="1rem"
+          />
+          <span>Load</span>
         </Button>
       </div>
     </div>
