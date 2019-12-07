@@ -3,3 +3,5 @@
 # Anti-Materiel
 
 An Army Builder for Infinity the Game
+
+[Editor](https://anti-materiel-editor.netlify.com/) on Netlify
