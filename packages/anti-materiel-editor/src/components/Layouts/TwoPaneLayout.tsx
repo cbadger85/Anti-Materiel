@@ -50,7 +50,7 @@ export const TwoPaneLayout: React.FC<MasterPageProps> = ({
 
   const handleCancel = (): void => {
     setTimeout(() => {
-      history.replace(`/${uri}`);
+      history.replace(`${uri}`);
     }, 0);
   };
 

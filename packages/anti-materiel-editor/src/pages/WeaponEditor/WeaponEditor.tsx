@@ -18,6 +18,7 @@ import { WeaponInfo } from './WeaponInfo/WeaponInfo';
 import { WeaponInfoData } from './WeaponInfo/WeaponInfoTypes';
 import { WeaponMode } from './WeaponMode/WeaponMode';
 import { WeaponModeData } from './WeaponMode/WeaponModeTypes';
+import { routeConfig } from '../routeConfig';
 
 const filteredWeaponList = createSelector(
   (state: RootState) => state.weapons,
@@ -43,7 +44,7 @@ export const WeaponEditor: React.FC = () => {
       setWeaponInfo(undefined);
       setWeaponModes([]);
       const redirect = setTimeout(() => {
-        selectedWeaponId && history.replace('/weapon-editor');
+        selectedWeaponId && history.replace(routeConfig.addWeapon.path);
       }, 0);
       return () => clearTimeout(redirect);
     }
@@ -132,7 +133,7 @@ export const WeaponEditor: React.FC = () => {
     makeToast(`${weapon.name} has been saved!`);
 
     setTimeout(() => {
-      history.replace('/weapon-editor');
+      history.replace(routeConfig.addWeapon.path);
     }, 0);
   };
 
@@ -146,14 +147,14 @@ export const WeaponEditor: React.FC = () => {
     makeToast(`${editedWeapon.name} has been removed!`, { color: 'danger' });
 
     setTimeout(() => {
-      history.replace('/weapon-editor');
+      history.replace(routeConfig.addWeapon.path);
     }, 0);
   };
 
   return (
     <TwoPaneLayout
       title="Weapons Editor"
-      uri="weapon-editor"
+      uri={routeConfig.addWeapon.path}
       sidePanelContent={uri => (
         <SidePanelWeaponList uri={uri} weaponList={weaponList} />
       )}

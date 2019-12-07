@@ -2,9 +2,7 @@ import React from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { animated, config, useTransition } from 'react-spring';
 import { Header } from '../components/Header/Header';
-import { UnitEditor } from './UnitEditor/UnitEditor';
-import { WeaponEditor } from './WeaponEditor/WeaponEditor';
-import { Index } from './Index';
+import { routeConfig } from './routeConfig';
 
 export const Routes: React.FC = () => {
   const location = useLocation();
@@ -32,21 +30,11 @@ export const Routes: React.FC = () => {
           style={{ position: 'absolute', height: 'auto', ...props }}
         >
           <Switch location={item}>
-            <Route exact path="/">
-              <Index />
-            </Route>
-            <Route exact path="/unit-editor">
-              <UnitEditor />
-            </Route>
-            <Route exact path="/unit-editor/:id">
-              <UnitEditor />
-            </Route>
-            <Route exact path="/weapon-editor">
-              <WeaponEditor />
-            </Route>
-            <Route exact path="/weapon-editor/:id">
-              <WeaponEditor />
-            </Route>
+            {Object.values(routeConfig).map(route => (
+              <Route exact path={route.path} key={route.path}>
+                <route.component />
+              </Route>
+            ))}
           </Switch>
         </animated.div>
       ))}
