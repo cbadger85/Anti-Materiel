@@ -1,3 +1,27 @@
-.upload__input {
-  display: none;
+@import '../../styles/colors';
+
+.upload {
+  color: $neutral-1;
+
+  .upload__input {
+    display: none;
+  }
+
+  .upload__filename {
+    margin-left: 1rem;
+  }
+
+  .upload__filename__label {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  .upload__filename--none-specified {
+    font-style: italic;
+    color: $neutral-3;
+  }
+
+  .upload__load-button {
+    margin-top: 1rem;
+  }
 }
