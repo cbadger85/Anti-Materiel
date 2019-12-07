@@ -56,16 +56,16 @@ export const Upload: React.FC<UploadProps> = ({
 
   return (
     <div className="upload">
-      <input
-        ref={inputRef}
-        type="file"
-        onChange={handleOnChange}
-        accept="application/json"
-        className="upload__input"
-      />
-      <h2 className={'managed-content__title'}>Upload Army Data</h2>
+      <h2 className="managed-content__title">Upload Army Data</h2>
       <div>
         <div>
+          <input
+            ref={inputRef}
+            type="file"
+            onChange={handleOnChange}
+            accept="application/json"
+            className="upload__input"
+          />
           <Button onClick={handleOnClickSelectFile}>Select File...</Button>
           {filename ? (
             <span className="upload__filename">

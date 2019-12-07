@@ -1,5 +1,11 @@
 @import '../../styles/mixins';
 
 .button--download {
-  display: none;
+  text-decoration: none;
+}
+
+.download {
+  div {
+    margin-bottom: 2rem;
+  }
 }
