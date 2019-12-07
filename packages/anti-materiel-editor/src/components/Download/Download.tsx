@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import { Button } from '../Button/Button';
 import './Download.scss';
 
 export const Download: React.FC<DownloadProps> = ({
@@ -20,28 +19,20 @@ export const Download: React.FC<DownloadProps> = ({
     };
   });
 
-  const handleOnClick = (): void => {
-    if (!anchor.current) {
-      return;
-    }
-
-    anchor.current.click();
-  };
-
   return (
-    <>
-      <a
-        href={url}
-        download={`${filename}.json`}
-        className="button--download"
-        ref={anchor}
-      >
-        <span />
-      </a>
-      <Button color="secondary" onClick={handleOnClick}>
-        {children}
-      </Button>
-    </>
+    <div className="download">
+      <h2 className="managed-content__title">Download Army Data</h2>
+      <div>
+        <a
+          href={url}
+          download={`${filename}.json`}
+          className="button button--secondary button--download"
+          ref={anchor}
+        >
+          {children}
+        </a>
+      </div>
+    </div>
   );
 };
 
