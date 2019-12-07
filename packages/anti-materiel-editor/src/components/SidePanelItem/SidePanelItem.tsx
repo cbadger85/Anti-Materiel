@@ -10,7 +10,7 @@ export const SidePanelItem: React.FC<SidePanelItemProps> = ({
   return (
     <NavLink
       replace
-      to={`/${uri}/${id}`}
+      to={`${uri}/${id}`}
       className="side-panel-item"
       activeClassName="side-panel-item--active"
     >

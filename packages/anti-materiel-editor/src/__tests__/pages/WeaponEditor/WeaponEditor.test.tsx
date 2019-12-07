@@ -98,8 +98,8 @@ describe('<WeaponEditor />', () => {
 
     wrapper = mount(
       <Provider store={store}>
-        <MemoryRouter initialEntries={['/weapon-editor']}>
-          <Route exact path="/weapon-editor">
+        <MemoryRouter initialEntries={['/weapons']}>
+          <Route exact path="/weapons">
             <WeaponEditor />
           </Route>
         </MemoryRouter>
@@ -124,8 +124,8 @@ describe('<WeaponEditor />', () => {
 
     wrapper = mount(
       <Provider store={store}>
-        <MemoryRouter initialEntries={['/weapon-editor/1234']}>
-          <Route exact path="/weapon-editor/:id">
+        <MemoryRouter initialEntries={['/weapons/1234']}>
+          <Route exact path="/weapons/:id">
             <WeaponEditor />
           </Route>
         </MemoryRouter>
@@ -171,8 +171,8 @@ describe('<WeaponEditor />', () => {
 
     wrapper = mount(
       <Provider store={store}>
-        <MemoryRouter initialEntries={['/weapon-editor/1234']}>
-          <Route exact path="/weapon-editor/:id">
+        <MemoryRouter initialEntries={['/weapons/1234']}>
+          <Route exact path="/weapons/:id">
             <WeaponEditor />
           </Route>
         </MemoryRouter>
@@ -194,8 +194,8 @@ describe('<WeaponEditor />', () => {
 
     wrapper = mount(
       <Provider store={store}>
-        <MemoryRouter initialEntries={['/weapon-editor/1234']}>
-          <Route exact path="/weapon-editor/:id">
+        <MemoryRouter initialEntries={['/weapons/1234']}>
+          <Route exact path="/weapons/:id">
             <WeaponEditor />
           </Route>
         </MemoryRouter>
@@ -233,8 +233,8 @@ describe('<WeaponEditor />', () => {
 
     wrapper = mount(
       <Provider store={store}>
-        <MemoryRouter initialEntries={['/weapon-editor/1234']}>
-          <Route exact path="/weapon-editor/:id">
+        <MemoryRouter initialEntries={['/weapons/1234']}>
+          <Route exact path="/weapons/:id">
             <WeaponEditor />
           </Route>
         </MemoryRouter>
@@ -274,10 +274,10 @@ describe('<WeaponEditor />', () => {
       <Provider store={store}>
         <ToastProvider>
           <MemoryRouter
-            initialEntries={['/weapon-editor/1234']}
+            initialEntries={['/weapons/1234']}
             getUserConfirmation={(message, callback) => callback(false)}
           >
-            <Route exact path="/weapon-editor/:id">
+            <Route exact path="/weapons/:id">
               <WeaponEditor />
             </Route>
           </MemoryRouter>
@@ -322,10 +322,10 @@ describe('<WeaponEditor />', () => {
     wrapper = mount(
       <Provider store={store}>
         <MemoryRouter
-          initialEntries={['/weapon-editor/1234']}
+          initialEntries={['/weapons/1234']}
           getUserConfirmation={(message, callback) => callback(false)}
         >
-          <Route exact path="/weapon-editor/:id">
+          <Route exact path="/weapons/:id">
             <WeaponEditor />
           </Route>
         </MemoryRouter>
@@ -369,10 +369,10 @@ describe('<WeaponEditor />', () => {
     wrapper = mount(
       <Provider store={store}>
         <MemoryRouter
-          initialEntries={['/weapon-editor/1234']}
+          initialEntries={['/weapons/1234']}
           getUserConfirmation={(message, callback) => callback(false)}
         >
-          <Route exact path="/weapon-editor/:id">
+          <Route exact path="/weapons/:id">
             <WeaponEditor />
           </Route>
         </MemoryRouter>
@@ -400,10 +400,10 @@ describe('<WeaponEditor />', () => {
     wrapper = mount(
       <Provider store={store}>
         <MemoryRouter
-          initialEntries={['/weapon-editor/1234']}
+          initialEntries={['/weapons/1234']}
           getUserConfirmation={(message, callback) => callback(false)}
         >
-          <Route exact path="/weapon-editor/:id">
+          <Route exact path="/weapons/:id">
             <WeaponEditor />
           </Route>
         </MemoryRouter>
@@ -438,10 +438,10 @@ describe('<WeaponEditor />', () => {
     wrapper = mount(
       <Provider store={store}>
         <MemoryRouter
-          initialEntries={['/weapon-editor/1234']}
+          initialEntries={['/weapons/1234']}
           getUserConfirmation={(message, callback) => callback(false)}
         >
-          <Route exact path="/weapon-editor/:id">
+          <Route exact path="/weapons/:id">
             <WeaponEditor />
           </Route>
         </MemoryRouter>
@@ -476,10 +476,10 @@ describe('<WeaponEditor />', () => {
     wrapper = mount(
       <Provider store={store}>
         <MemoryRouter
-          initialEntries={['/weapon-editor/1234']}
+          initialEntries={['/weapons/1234']}
           getUserConfirmation={(message, callback) => callback(false)}
         >
-          <Route exact path="/weapon-editor/:id">
+          <Route exact path="/weapons/:id">
             <WeaponEditor />
           </Route>
         </MemoryRouter>
@@ -515,10 +515,10 @@ describe('<WeaponEditor />', () => {
       <Provider store={store}>
         <ToastProvider>
           <MemoryRouter
-            initialEntries={['/weapon-editor/1234']}
+            initialEntries={['/weapons/1234']}
             getUserConfirmation={(message, callback) => callback(false)}
           >
-            <Route exact path="/weapon-editor/:id">
+            <Route exact path="/weapons/:id">
               <WeaponEditor />
             </Route>
           </MemoryRouter>
