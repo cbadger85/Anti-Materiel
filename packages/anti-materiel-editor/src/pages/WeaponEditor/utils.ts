@@ -1,13 +1,16 @@
-import { WeaponInfoData } from './WeaponInfo/WeaponInfoTypes';
-import { WeaponModeData } from './WeaponMode/WeaponModeTypes';
 import {
   Weapon,
   WeaponMode,
-  WeaponRangeBand,
   WeaponRange,
+  WeaponRangeBand,
 } from '@anti-materiel/types';
-import { WeaponRangeBand as WeaponRangeBandData } from './WeaponMode/WeaponModeTypes';
 import uuid from 'uuid/v4';
+import { removeUndefinedValues } from '../../utils/removeUndefinedValues';
+import { WeaponInfoData } from './WeaponInfo/WeaponInfoTypes';
+import {
+  WeaponModeData,
+  WeaponRangeBand as WeaponRangeBandData,
+} from './WeaponMode/WeaponModeTypes';
 
 export const convertRangeBand = (
   rangeBand: WeaponRangeBandData | undefined,
@@ -94,12 +97,12 @@ export const convertWeaponDataToWeapon = ({
     }),
   }));
 
-  return {
+  return removeUndefinedValues({
     id: weaponInfoData.id,
     name: weaponInfoData.name,
     wikiLink: weaponInfoData.wikiLink,
     weaponModes,
-  };
+  });
 };
 
 export const convertWeaponRangeData = (

@@ -20,9 +20,17 @@ const weaponsSlice = createSlice({
     removeWeapon(state, action: PayloadAction<{ id: string }>) {
       return state.filter(w => w.id !== action.payload.id);
     },
+    loadWeapons(state, action: PayloadAction<Weapon[]>) {
+      return action.payload;
+    },
   },
 });
 
-export const { addWeapon, updateWeapon, removeWeapon } = weaponsSlice.actions;
+export const {
+  addWeapon,
+  updateWeapon,
+  removeWeapon,
+  loadWeapons,
+} = weaponsSlice.actions;
 
 export default weaponsSlice.reducer;

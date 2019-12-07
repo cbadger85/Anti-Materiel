@@ -18,7 +18,7 @@ import rootReducer from '../../../store/rootReducer';
 const weapon: Weapon = {
   name: 'foo',
   id: '1234',
-  wikiLink: undefined,
+  wikiLink: '',
   weaponModes: [
     {
       name: 'bar',
@@ -30,8 +30,6 @@ const weapon: Weapon = {
       weaponRange: {
         short: { min: '0', max: '8', modifier: '+3' },
         medium: { min: '8', max: '24', modifier: '-3' },
-        long: undefined,
-        maximum: undefined,
       },
     },
   ],
@@ -40,7 +38,7 @@ const weapon: Weapon = {
 const weapon2: Weapon = {
   name: 'foo',
   id: '1234',
-  wikiLink: undefined,
+  wikiLink: '',
   weaponModes: [
     {
       name: 'bar',
