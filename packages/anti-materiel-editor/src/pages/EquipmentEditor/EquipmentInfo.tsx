@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Equipment } from '@anti-materiel/types';
 import { ManagedContent } from '../../components/ManagedContent/ManagedContent';
 import { EquipmentInfoForm } from './EquipmentInfoForm';
+import { EquipmentInfoContent } from './EquipmentInfoContent';
 
 export const EquipmentInfo: React.FC<EquipmentInfoProps> = ({
   equipment,
@@ -14,7 +15,7 @@ export const EquipmentInfo: React.FC<EquipmentInfoProps> = ({
       edit={!!equipment}
       warn={warn}
       title="Equipment"
-      content={() => null}
+      content={() => <EquipmentInfoContent equipment={equipment} />}
       form={(closeSideDrawer, onCancel) => (
         <EquipmentInfoForm
           onCancel={onCancel}

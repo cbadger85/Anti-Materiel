@@ -16,6 +16,7 @@ import {
   addEquipment,
   removeEquipment,
 } from '../../store/EquipmentSlice';
+import { SidePanelItem } from '../../components/SidePanelItem/SidePanelItem';
 
 const filteredEquipmentList = createSelector(
   (state: RootState) => state.equipment,
@@ -102,8 +103,16 @@ export const EquipmentEditor: React.FC = () => {
     <TwoPaneLayout
       title="Equipment Editor"
       uri={routeConfig.addEquipment.path}
-      sidePanelContent={uri => null}
-      mainContent={() => <EquipmentInfo addEquipment={setEquipment} />}
+      sidePanelContent={uri => (
+        <div>
+          {equipmentList.map(eq => (
+            <SidePanelItem key={eq.id} name={eq.name} id={eq.id} uri={uri} />
+          ))}
+        </div>
+      )}
+      mainContent={() => (
+        <EquipmentInfo addEquipment={setEquipment} equipment={equipment} />
+      )}
       isSaveDisabled={isSaveDisabled}
       onSave={handleOnSave}
       isDeleteShown={!!selectedEquipmentId}

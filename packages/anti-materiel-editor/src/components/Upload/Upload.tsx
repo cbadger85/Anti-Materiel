@@ -5,6 +5,7 @@ import { readFileAsText } from '../../utils/readFileAsText';
 import { FilePlus } from 'react-feather';
 import { color } from '../../styles/colors';
 import { Upload as UploadIcon } from 'react-feather';
+import { RootState } from '../../store/rootReducer';
 
 export const Upload: React.FC<UploadProps> = ({ onLoad, onError }) => {
   const [filename, setFilname] = useState<string>();
@@ -99,6 +100,6 @@ export const Upload: React.FC<UploadProps> = ({ onLoad, onError }) => {
 };
 
 interface UploadProps {
-  onLoad: (data: any) => void; //TODO: make this unknown when type validation is added to the handleLoadFunction
+  onLoad: (data: RootState) => void; //TODO: make this unknown when type validation is added to the handleLoadFunction
   onError: () => void;
 }
