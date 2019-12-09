@@ -96,13 +96,15 @@ describe('weaponsSlice', () => {
   });
 
   describe('loadWeapons', () => {
-    it('should load replace state with an array of weapons', () => {
+    it('should replace the state with an array of weapons', () => {
+      const weapon3 = { ...weapon1, id: '5678' };
+
       const updatedWeaponList = weaponsSlice([], {
         type: loadWeapons.type,
-        payload: [weapon1, weapon2],
+        payload: [weapon2, weapon3],
       });
 
-      expect(updatedWeaponList).toEqual([weapon1, weapon2]);
+      expect(updatedWeaponList).toEqual([weapon2, weapon3]);
     });
   });
 });

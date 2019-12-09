@@ -1,6 +1,7 @@
 import { Index } from './Index';
 import { UnitEditor } from './UnitEditor/UnitEditor';
 import { WeaponEditor } from './WeaponEditor/WeaponEditor';
+import { EquipmentEditor } from './EquipmentEditor/EquipmentEditor';
 
 export const routeConfig = {
   index: {
@@ -22,5 +23,13 @@ export const routeConfig = {
   editWeapon: {
     path: '/weapons/:id',
     component: WeaponEditor,
+  },
+  addEquipment: {
+    path: '/equipment',
+    component: EquipmentEditor,
+  },
+  editEquipment: {
+    path: '/equipment/:id',
+    component: EquipmentEditor,
   },
 };
