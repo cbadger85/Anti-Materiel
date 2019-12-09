@@ -21,7 +21,13 @@ export const EditorMenu: React.FC = () => {
         >
           Weapons
         </MenuLink>
-        <span className="menu__item">Equipment</span>
+        <MenuLink
+          to={routeConfig.addEquipment.path}
+          className="menu__item"
+          activeClassName="menu__item--active"
+        >
+          Equipment
+        </MenuLink>
         <span className="menu__item">Special Rules</span>
         <span className="menu__item">Hacking Programs</span>
         <span className="menu__item">Pheroware</span>

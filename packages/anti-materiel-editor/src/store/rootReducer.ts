@@ -1,8 +1,10 @@
 import { combineReducers } from '@reduxjs/toolkit';
 import weaponsSlice from './weaponsSlice';
+import equipmentSlice from './EquipmentSlice';
 
 const rootReducer = combineReducers({
   weapons: weaponsSlice,
+  equipment: equipmentSlice,
 });
 
 export type RootState = ReturnType<typeof rootReducer>;
