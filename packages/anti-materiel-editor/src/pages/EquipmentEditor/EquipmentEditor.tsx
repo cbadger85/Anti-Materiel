@@ -15,7 +15,7 @@ import {
   updateEquipment,
   addEquipment,
   removeEquipment,
-} from '../../store/EquipmentSlice';
+} from '../../store/equipmentSlice';
 import { SidePanelItem } from '../../components/SidePanelItem/SidePanelItem';
 
 const filteredEquipmentList = createSelector(

@@ -4,7 +4,7 @@ import { Download } from '../../components/Download/Download';
 import { SinglePaneLayout } from '../../components/Layouts/SinglePaneLayout';
 import { useToast } from '../../components/Toasts/useToast';
 import { Upload } from '../../components/Upload/Upload';
-import { loadEquipment } from '../../store/EquipmentSlice';
+import { loadEquipment } from '../../store/equipmentSlice';
 import { RootState } from '../../store/rootReducer';
 import { loadWeapons } from '../../store/weaponsSlice';
 import './index.scss';
