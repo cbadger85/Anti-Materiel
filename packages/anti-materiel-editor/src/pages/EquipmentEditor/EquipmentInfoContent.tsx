@@ -4,8 +4,6 @@ import { Equipment } from '@anti-materiel/types';
 export const EquipmentInfoContent: React.FC<EqupimentInfoContentProps> = ({
   equipment,
 }) => {
-  console.log(equipment);
-
   return (
     <div className="weapon-info-content__wrapper">
       {equipment ? (
