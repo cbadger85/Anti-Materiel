@@ -44,12 +44,12 @@ export const routeConfig = {
   },
   addSpecialRules: {
     name: 'Special Rules',
-    path: '/special-rule',
+    path: '/special-rules',
     component: SpecialRuleEditor,
   },
   editSpecialRules: {
     name: 'Special Rules',
-    path: '/special-rule/:id',
+    path: '/special-rules/:id',
     component: SpecialRuleEditor,
   },
   addHackingPrograms: {

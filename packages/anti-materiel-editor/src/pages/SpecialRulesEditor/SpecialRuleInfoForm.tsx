@@ -63,6 +63,7 @@ export const SpecialRuleInfoForm: React.FC<SpecialRulesInfoFormProps> = ({
       <MultiSelect
         name="skillType"
         label="Skill Type"
+        id="special-rules-form-skill-type"
         onChange={onChangeInput}
         list={fields.skillType}
         options={skillTypeFormOptions}
