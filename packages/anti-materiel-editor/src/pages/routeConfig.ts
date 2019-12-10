@@ -2,7 +2,7 @@ import { Index } from './Index';
 import { UnitEditor } from './UnitEditor/UnitEditor';
 import { WeaponEditor } from './WeaponEditor/WeaponEditor';
 import { EquipmentEditor } from './EquipmentEditor/EquipmentEditor';
-import { SpecialRulesEditor } from './SpecialRulesEditor/SpecialRulesEditor';
+import { SpecialRuleEditor } from './SpecialRulesEditor/SpecialRuleEditor';
 import { HackingProgramsEditor } from './HackingProgramsEditor/HackingProgramsEditor';
 import { PherowareTacticsEditor } from './PherowareTacticsEditor/PherowareTacticsEditor';
 
@@ -44,13 +44,13 @@ export const routeConfig = {
   },
   addSpecialRules: {
     name: 'Special Rules',
-    path: '/special-rules',
-    component: SpecialRulesEditor,
+    path: '/special-rule',
+    component: SpecialRuleEditor,
   },
   editSpecialRules: {
     name: 'Special Rules',
-    path: '/special-rules/:id',
-    component: SpecialRulesEditor,
+    path: '/special-rule/:id',
+    component: SpecialRuleEditor,
   },
   addHackingPrograms: {
     name: 'Hacking Programs',
