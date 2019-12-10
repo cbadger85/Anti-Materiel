@@ -181,10 +181,10 @@ export const WeaponModeContentItem: React.FC<WeaponModeContentItem> = ({
           color="delete-light"
           onClick={() => editWeaponMode(weaponMode.id)}
         >
-          <Edit2 color={color.neutral[1]} />
+          <Edit2 color={color.neutral[1]} size="1.25rem" />
         </Button>
         <Button color="delete-light" onClick={() => setIsModalShown(true)}>
-          <X color={color.supporting.red[7]} />
+          <X color={color.supporting.red[7]} size="1.25rem" />
         </Button>
       </div>
       <ConfirmModal

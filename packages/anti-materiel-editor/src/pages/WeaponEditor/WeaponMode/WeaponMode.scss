@@ -103,7 +103,7 @@
   }
 
   .weapon-mode-table__col-2 {
-    flex: 6;
+    flex: 5;
     text-align: center;
   }
 
@@ -123,7 +123,7 @@
   }
 
   .weapon-mode-table__col-6 {
-    flex: 3;
+    flex: 4;
   }
 
   .weapon-mode-table__col-7 {
@@ -134,11 +134,10 @@
 .weapon-mode-table__col-7 {
   display: flex;
   align-items: center;
-  height: 2.5rem;
+  // height: 2.5rem;
 
   button:first-child {
-    margin: 0 1rem;
-    padding: 0.25rem 0.4rem;
+    margin: 0 0.5rem;
   }
 
   button:last-child {
