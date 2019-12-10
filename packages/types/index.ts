@@ -131,6 +131,7 @@ export interface HackingProgram extends WikiInfo {
   effect: string;
   skillType: SkillType[];
   special: string;
+  devicesById?: string[];
 }
 
 export interface Availability {

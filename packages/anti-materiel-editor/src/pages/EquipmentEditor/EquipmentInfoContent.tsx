@@ -27,7 +27,7 @@ export const EquipmentInfoContent: React.FC<EqupimentInfoContentProps> = ({
           </div>
         </div>
       ) : (
-        <p className="empty-content">No Weapon Info added yet...</p>
+        <p className="empty-content">No Equipment Info added yet...</p>
       )}
     </div>
   );

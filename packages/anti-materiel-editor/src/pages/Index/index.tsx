@@ -8,6 +8,7 @@ import { loadEquipment } from '../../store/equipmentSlice';
 import { RootState } from '../../store/rootReducer';
 import { loadWeapons } from '../../store/weaponsSlice';
 import './index.scss';
+import { loadSpecialRules } from '../../store/specialRulesSlice';
 
 export const Index: React.FC = () => {
   const data = useSelector((state: RootState) => state);
@@ -17,6 +18,7 @@ export const Index: React.FC = () => {
   const handleOnLoad = (data: RootState): void => {
     dispatch(loadWeapons(data.weapons));
     dispatch(loadEquipment(data.equipment));
+    dispatch(loadSpecialRules(data.specialRules));
     makeToast('Data loaded!');
   };
 

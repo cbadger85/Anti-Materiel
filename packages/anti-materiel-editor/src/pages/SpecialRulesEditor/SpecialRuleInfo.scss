@@ -1,0 +1,45 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+
+.special-rule-info-content__wrapper {
+  margin-bottom: 1rem;
+  color: $neutral-1;
+  display: inline-block;
+  width: 25rem;
+}
+
+.special-rule-info-content-table__header,
+.special-rule-info-content-table__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem;
+
+  @include content-anchor-tags;
+}
+
+.special-rule-info-content-table__column-1 {
+  flex: 1;
+}
+
+.special-rule-info-content-table__column-2 {
+  flex: 2;
+}
+
+.special-rule-info-content-table__header {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: $neutral-2;
+  background-color: $neutral-0;
+  padding-right: 4rem;
+  height: 2.5rem;
+  align-items: center;
+}
+
+.special-rule-info-content-table__row {
+  background-color: $neutral-9;
+  padding-right: 4rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
